@@ -112,9 +112,6 @@ Dates show the earliest public release (`YY/MM`) when known, otherwise the publi
 
 [SVG and Vector Graphics](#svg-and-vector-graphics) · [Visual Design and Editing](#visual-design-and-editing) · [Scientific Figures and Diagrams](#scientific-figures-and-diagrams) · [Data Visualization](#data-visualization) · [Documents and Presentations](#documents-and-presentations)
 
-![2D Graphics overview](assets/figures/2d_graphics.png)
-
-*PaperBanana generates paper-ready academic illustrations by orchestrating specialized agents for retrieval, planning, styling, rendering, and self-feedback refinement.*
 
 #### SVG and Vector Graphics
 
@@ -190,9 +187,6 @@ Dates show the earliest public release (`YY/MM`) when known, otherwise the publi
 
 [Object Modeling](#object-modeling) · [CAD Modeling](#cad-modeling) · [Scene Modeling](#scene-modeling)
 
-![Static 3D Assets overview](assets/figures/static_3d.png)
-
-*VIGA reconstructs scenes through a code–render–inspect loop, gathering visual evidence to localize spatial discrepancies and guide targeted program revisions.*
 
 #### Object Modeling
 
@@ -270,9 +264,6 @@ Dates show the earliest public release (`YY/MM`) when known, otherwise the publi
 
 [Articulation](#articulation) · [Animation](#animation) · [Simulation](#simulation)
 
-![Dynamic 3D Assets overview](assets/figures/dynamic_3d.png)
-
-*Top: Articraft builds articulated assets through an SDK that couples part geometry with joint axes and motion limits. Bottom: Artisan adds part materials and masses, using physics feedback to guide repairs.*
 
 #### Articulation
 
