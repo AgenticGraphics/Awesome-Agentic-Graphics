@@ -75,8 +75,14 @@ To keep pace with the field, we built an agentic system that maintains this list
 
 *The agent discovers candidate papers, annotates them against the taxonomy with source evidence, and curates records that inform later runs.*
 
-> [!NOTE]
-> We plan to release the survey system publicly. This section will link to it once available.
+### Use the system
+
+The [Agentic Literature System](agentic-literature-system/README.md) is available in two forms:
+
+- **[Research skill](agentic-literature-system/skill/README.md):** install the workflow, taxonomy references, schemas, and offline helpers into an existing agent with web and PDF tools.
+- **[Standalone harness](agentic-literature-system/harness/README.md):** run the Python research loop with configurable model access, bounded budgets, evidence checkpoints, recovery, and auditable reports.
+
+Both preserve paper identities, primary evidence, date semantics, taxonomy annotations, and coverage limits. The code release pins the October 15, 2026 experimental research snapshot; its versioned codebook is distinct from later survey terminology. The two execution modes do not guarantee identical results or exhaustive literature coverage. Configuration and credentials are supplied by the user; private experiment data is not included.
 
 ### Key Findings
 

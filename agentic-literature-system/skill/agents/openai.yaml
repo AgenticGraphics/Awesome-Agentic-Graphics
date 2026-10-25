@@ -1,0 +1,4 @@
+interface:
+  display_name: "Agentic Graphics Research"
+  short_description: "Portable discovery, screening, curation, and research intelligence"
+  default_prompt: "Use $agentic-graphics-research as a self-contained Agentic Graphics research agent. Use the bounded browser workflow for same-day work or one resumable 60-second checkpoint for historical work, then return the English, evidence-grounded result without silently extending the run."

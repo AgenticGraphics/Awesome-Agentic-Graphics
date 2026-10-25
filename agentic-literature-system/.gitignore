@@ -1,0 +1,15 @@
+**/__pycache__/
+**/*.py[cod]
+**/.pytest_cache/
+**/.venv/
+**/venv/
+**/.env
+**/.env.*
+!**/.env.example
+**/.DS_Store
+**/._*
+harness/runs/
+harness/cache/
+harness/knowledge/daily-history/
+*.zip
+*.tar.gz

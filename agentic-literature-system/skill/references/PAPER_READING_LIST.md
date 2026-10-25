@@ -1,0 +1,265 @@
+# Current discussed paper corpus
+
+Source revision: public-research-snapshot-2026-10-15
+Retrieved: 2026-10-15
+
+Membership is discussion history, not an acceptance label.
+- [Agentic Designer: Progressive Multi-Agent Collaboration for Structure-Aware Interior Layout Generation](https://arxiv.org/abs/2607.20866) — 2D Graphics / Primary papers
+- [ManimAgent: Self-Evolving Multimodal Agents for Visual Education](https://arxiv.org/abs/2606.30296) — 2D Graphics / Primary papers
+- [World Craft: Agentic Framework to Create Visualizable Worlds via Text](https://arxiv.org/abs/2601.09150) — 2D Graphics / Primary papers
+- [DrawAI: Agentic Benchmark and Workflow for Making Raster Images Editable](https://arxiv.org/abs/2608.00548) — 2D Graphics / Primary papers
+- [PosterMELD: Multi-Agent Paper-to-Poster Generation for Controllable Design Diversity with Editable Print-Ready Outputs](https://arxiv.org/abs/2608.02218) — 2D Graphics / Primary papers
+- [Crafter: A Multi-Agent Harness for Editable Scientific Figure Generation from Diverse Inputs](https://arxiv.org/abs/2605.30611) — 2D Graphics / Primary papers
+- [LiveFigure: Generating Editable Scientific Illustration with VLM Agents](https://arxiv.org/abs/2605.23527) — 2D Graphics / Primary papers
+- [Render-in-the-Loop: Vector Graphics Generation via Visual Self-Feedback](https://arxiv.org/abs/2604.20730) — 2D Graphics / Primary papers
+- [See it. Say it. Sorted: Agentic System for Compositional Diagram Generation](https://arxiv.org/abs/2508.15222) — 2D Graphics / Primary papers
+- [SketchAgent: Language-Driven Sequential Sketch Generation](https://arxiv.org/abs/2411.17673) — 2D Graphics / Primary papers
+- [PlotGen: Multi-Agent LLM-based Scientific Data Visualization via Multimodal Feedback](https://arxiv.org/abs/2502.00988) — 2D Graphics / Primary papers
+- [Automated Visualization Code Synthesis via Multi-Path Reasoning and Feedback-Driven Optimization](https://arxiv.org/abs/2502.11140) — 2D Graphics / Primary papers
+- [SeaSlides: Semantic Abstraction Layer for Agentic Slide Generation](https://arxiv.org/abs/2608.03298) — 2D Graphics / Primary papers
+- [BannerAgency: Advertising Banner Design with Multimodal LLM Agents](https://arxiv.org/abs/2503.11060) — 2D Graphics / Primary papers
+- [SLIDEFORGE: An LLM Agent for Controllable Editing of Slides as Structured Artifacts](https://arxiv.org/abs/2609.03109) — 2D Graphics / Primary papers
+- [Compositional SVG Generation via VLM-Driven Hierarchical Semantic Parsing](https://arxiv.org/abs/2609.14657) — 2D Graphics / Primary papers
+- [MatPlotAgent: Method and Evaluation for LLM-Based Agentic Scientific Data Visualization](https://arxiv.org/abs/2402.11453) — 2D Graphics / Primary papers
+- [DeTikZify: Synthesizing Graphics Programs for Scientific Figures and Sketches with TikZ](https://arxiv.org/abs/2405.15306) — 2D Graphics / Primary papers
+- [From Words to Structured Visuals: A Benchmark and Framework for Text-to-Diagram Generation and Editing](https://arxiv.org/abs/2411.11916) — 2D Graphics / Primary papers
+- [MagicGeo: Training-Free Text-Guided Geometric Diagram Generation](https://arxiv.org/abs/2502.13855) — 2D Graphics / Primary papers
+- [Draw with Thought: Unleashing Multimodal Reasoning for Scientific Diagram Generation](https://arxiv.org/abs/2504.09479) — 2D Graphics / Primary papers
+- [VisCoder: Fine-Tuning LLMs for Executable Python Visualization Code Generation](https://arxiv.org/abs/2506.03930) — 2D Graphics / Primary papers
+- [VisCoder2: Building Multi-Language Visualization Coding Agents](https://arxiv.org/abs/2510.23642) — 2D Graphics / Primary papers
+- [VinciCoder: Unifying Multimodal Code Generation via Coarse-to-fine Visual Reinforcement Learning](https://arxiv.org/abs/2511.00391) — 2D Graphics / Primary papers
+- [Decomate: Leveraging Generative Models for Co-Creative SVG Animation](https://arxiv.org/abs/2511.06297) — 2D Graphics / Primary papers
+- [SciFig: Towards Automating Editable Figure Generation for Scientific Papers](https://arxiv.org/abs/2601.04390) — 2D Graphics / Primary papers
+- [PaperBanana: Automating Academic Illustration for AI Scientists](https://arxiv.org/abs/2601.23265) — 2D Graphics / Primary papers
+- [AutoFigure: Generating and Refining Publication-Ready Scientific Illustrations](https://arxiv.org/abs/2602.03828) — 2D Graphics / Primary papers
+- [AutoFigure-Edit: Generating Editable Scientific Illustration](https://arxiv.org/abs/2603.06674) — 2D Graphics / Primary papers
+- [IntroSVG: Learning from Rendering Feedback for Text-to-SVG Generation via an Introspective Generator-Critic Framework](https://arxiv.org/abs/2603.09312) — 2D Graphics / Primary papers
+- [RefineSVG: Visual Feedback-Driven Reinforcement Learning for Image-to-SVG Generation](https://arxiv.org/abs/2607.27699) — 2D Graphics / Primary papers
+- [GVR-Coder: A Visual-Feedback Framework for Structured SVG Generation in Complex Document and Meeting Scenarios](https://arxiv.org/abs/2607.28073) — 2D Graphics / Primary papers
+- [CANVAS: Consistency-Aware Navigation via Visual Adaptive Sampling for Long-Context Text-to-SVG Generation](https://arxiv.org/abs/2608.30689) — 2D Graphics / Primary papers
+- [AI Co-Artist: A LLM-Powered Framework for Interactive GLSL Shader Animation Evolution](https://arxiv.org/abs/2512.08951) — 2D Graphics / Primary papers
+- [LogoMotion: Visually-Grounded Code Synthesis for Creating and Editing Animation](https://arxiv.org/abs/2405.07065) — 2D Graphics / Primary papers
+- [TheoremExplainAgent: Towards Video-based Multimodal Explanations for LLM Theorem Understanding](https://arxiv.org/abs/2502.19400) — 2D Graphics / Primary papers
+- [AutoPresent: Designing Structured Visuals from Scratch](https://arxiv.org/abs/2501.00912) — 2D Graphics / Primary papers
+- [PPTAgent: Generating and Evaluating Presentations Beyond Text-to-Slides](https://arxiv.org/abs/2501.03936) — 2D Graphics / Primary papers
+- [PreGenie: An Agentic Framework for High-quality Visual Presentation Generation](https://arxiv.org/abs/2505.21660) — 2D Graphics / Primary papers
+- [Paper2Poster: Towards Multimodal Poster Automation from Scientific Papers](https://arxiv.org/abs/2505.21497) — 2D Graphics / Primary papers
+- [PosterForest: Hierarchical Multi-Agent Collaboration for Scientific Poster Generation](https://arxiv.org/abs/2508.21720) — 2D Graphics / Primary papers
+- [SlideGen: Collaborative Multimodal Agents for Scientific Slide Generation](https://arxiv.org/abs/2512.04529) — 2D Graphics / Primary papers
+- [DeepPresenter: Environment-Grounded Reflection for Agentic Presentation Generation](https://arxiv.org/abs/2602.22839) — 2D Graphics / Primary papers
+- [PSDesigner: Automated Graphic Design with a Human-Like Creative Workflow](https://arxiv.org/abs/2603.25738) — 2D Graphics / Primary papers
+- [MemSlides: A Hierarchical Memory Driven Agent Framework for Personalized Slide Generation with Multi-turn Local Revision](https://arxiv.org/abs/2606.17162) — 2D Graphics / Primary papers
+- [AutoDesign: Meta-Harness Optimization for Long-Horizon Agentic Design](https://arxiv.org/abs/2608.13560) — 2D Graphics / Primary papers
+- [Editable Visual Design](https://arxiv.org/abs/2609.04034) — 2D Graphics / Primary papers
+- [See Before You Code: Learning Visual Priors for Spatially Aware Educational Animation Generation](https://arxiv.org/abs/2605.15585) — 2D Graphics / Primary papers
+- [ViCo: Visual-oriented Coding with Self-Reflection for Chart Replication](https://arxiv.org/abs/2609.16014) — 2D Graphics / Primary papers
+- [TemplateCraft: Agentic Visual Template Generation](https://arxiv.org/abs/2609.31451) — 2D Graphics / Primary papers
+- [Vision-as-Inverse-Graphics Agent via Interleaved Multimodal Reasoning](https://arxiv.org/abs/2601.11109) — 2D Graphics / Cross-category applications
+- [LL3M: Large Language 3D Modelers](https://arxiv.org/abs/2508.08228) — Modeling Static Assets / Object Modeling: Shape and Appearance / Generation
+- [ShapeCraft: LLM Agents for Structured, Textured and Interactive 3D Modeling](https://arxiv.org/abs/2510.17603) — Modeling Static Assets / Object Modeling: Shape and Appearance / Generation
+- [aDSL: Agentic 3D Creation via Joint Agent-Program Design](https://arxiv.org/abs/2608.17975) — Modeling Static Assets / Object Modeling: Shape and Appearance / Generation
+- [L3GO: Language Agents with Chain-of-3D-Thoughts for Generating Unconventional Objects](https://arxiv.org/abs/2402.09052) — Modeling Static Assets / Object Modeling: Shape and Appearance / Generation
+- [SmartAvatar: Text- and Image-Guided Human Avatar Generation with VLM AI Agents](https://arxiv.org/abs/2506.04606) — Modeling Static Assets / Object Modeling: Shape and Appearance / Generation
+- [Nova3D: Code-Native Generation of Programmable 3D Assets](https://arxiv.org/abs/2607.22738) — Modeling Static Assets / Object Modeling: Shape and Appearance / Generation
+- [Procedura: Agentic 3D Modeling with Procedural Control](https://arxiv.org/abs/2608.26238) — Modeling Static Assets / Object Modeling: Shape and Appearance / Generation
+- [3DFroMLLM: 3D Prototype Generation only from Pretrained Multimodal LLMs](https://arxiv.org/abs/2508.08821) — Modeling Static Assets / Object Modeling: Shape and Appearance / Generation
+- [3D-PreMise: Can Large Language Models Generate 3D Shapes with Sharp Features and Parametric Control?](https://arxiv.org/abs/2401.06437) — Modeling Static Assets / Object Modeling: Shape and Appearance / Generation
+- [Idea23D: Collaborative LMM Agents Enable 3D Model Generation from Interleaved Multimodal Inputs](https://arxiv.org/abs/2404.04363) — Modeling Static Assets / Object Modeling: Shape and Appearance / Generation
+- [MatLoom: Layered Text-to-Material Generation in a Compact Program Space](https://arxiv.org/abs/2609.40322) — Modeling Static Assets / Object Modeling: Shape and Appearance / Generation
+- [3D-CoS: A New 3D Reconstruction Paradigm Based on VLM Code Synthesis](https://arxiv.org/abs/2606.10478) — Modeling Static Assets / Object Modeling: Shape and Appearance / Reconstruction
+- [MultiMat: Multimodal Program Synthesis for Procedural Materials using Large Multimodal Models](https://arxiv.org/abs/2509.22151) — Modeling Static Assets / Object Modeling: Shape and Appearance / Reconstruction
+- [ViSculpt: Visual-Centric Agentic Geometry Editing](https://arxiv.org/abs/2608.24169) — Modeling Static Assets / Object Modeling: Shape and Appearance / Editing
+- [From Idea to Co-Creation: A Planner-Actor-Critic Framework for Agent Augmented 3D Modeling](https://arxiv.org/abs/2601.05016) — Modeling Static Assets / Object Modeling: Shape and Appearance / Editing
+- [BlenderAlchemy: Editing 3D Graphics with Vision-Language Models](https://arxiv.org/abs/2404.17672) — Modeling Static Assets / Object Modeling: Shape and Appearance / Editing
+- [CADIR: A Cross-Backend Editable Intermediate Representation for Agentic CAD Generation](https://arxiv.org/abs/2608.00891) — Modeling Static Assets / Parametric CAD and Engineering Design
+- [IterCAD: An Iterative Multimodal Agent for Visually-Grounded CAD Generation and Editing](https://arxiv.org/abs/2606.13368) — Modeling Static Assets / Parametric CAD and Engineering Design
+- [CAD-Assistant: Tool-Augmented VLLMs as Generic CAD Task Solvers](https://arxiv.org/abs/2412.13810) — Modeling Static Assets / Parametric CAD and Engineering Design
+- [Physics-in-the-Loop: A Hybrid Agentic Architecture for Validated CAD Engineering Design](https://arxiv.org/abs/2605.19717) — Modeling Static Assets / Parametric CAD and Engineering Design
+- [AgentsCAD: Automated Design for Manufacturing of FDM Parts via Multi-Agent LLM Reasoning and Geometric Feature Recognition](https://arxiv.org/abs/2607.02448) — Modeling Static Assets / Parametric CAD and Engineering Design
+- [CADReasoner: Iterative Program Editing for CAD Reverse Engineering](https://arxiv.org/abs/2603.29847) — Modeling Static Assets / Parametric CAD and Engineering Design
+- [Self-Improving CAD Generation Agents with Finite Element Analysis as Feedback](https://arxiv.org/abs/2605.17448) — Modeling Static Assets / Parametric CAD and Engineering Design
+- [CADReview: Automatically Reviewing CAD Programs with Error Detection and Correction](https://arxiv.org/abs/2505.22304) — Modeling Static Assets / Parametric CAD and Engineering Design
+- [CAD-Judge: Toward Efficient Morphological Grading and Verification for Text-to-CAD Generation](https://arxiv.org/abs/2508.04002) — Modeling Static Assets / Parametric CAD and Engineering Design
+- [AgenticCADedit: A Stateful, Tool-Mediated Agentic Approach to Multimodal 3D CAD Editing](https://arxiv.org/abs/2609.29621) — Modeling Static Assets / Parametric CAD and Engineering Design
+- [RA-CAD: Learning Post-Execution Critique for State-Aware Text-to-CAD Generation](https://arxiv.org/abs/2608.05714) — Modeling Static Assets / Parametric CAD and Engineering Design
+- [ArtisanCAD: An Industrial-Level CAD Agent with Expert-Grounded Knowledge Distillation](https://arxiv.org/abs/2607.05750) — Modeling Static Assets / Parametric CAD and Engineering Design
+- [Query2CAD: Generating CAD models using natural language queries](https://arxiv.org/abs/2406.00144) — Modeling Static Assets / Parametric CAD and Engineering Design
+- [Generating CAD Code with Vision-Language Models for 3D Designs](https://arxiv.org/abs/2410.05340) — Modeling Static Assets / Parametric CAD and Engineering Design
+- [From Idea to CAD: A Language Model-Driven Multi-Agent System for Collaborative Design](https://arxiv.org/abs/2503.04417) — Modeling Static Assets / Parametric CAD and Engineering Design
+- [Seek-CAD: A Self-refined Generative Modeling for 3D Parametric CAD Using Local Inference via DeepSeek](https://arxiv.org/abs/2505.17702) — Modeling Static Assets / Parametric CAD and Engineering Design
+- [Generative AI for CAD Automation: Leveraging Large Language Models for 3D Modelling](https://arxiv.org/abs/2508.00843) — Modeling Static Assets / Parametric CAD and Engineering Design
+- [CADDesigner: Conceptual CAD Model Generation with a General-Purpose Agent](https://arxiv.org/abs/2508.01031) — Modeling Static Assets / Parametric CAD and Engineering Design
+- [EvoCAD: Evolutionary CAD Code Generation with Vision Language Models](https://arxiv.org/abs/2510.11631) — Modeling Static Assets / Parametric CAD and Engineering Design
+- [CADSmith: Multi-Agent CAD Generation with Programmatic Geometric Validation](https://arxiv.org/abs/2603.26512) — Modeling Static Assets / Parametric CAD and Engineering Design
+- [TOOLCAD: Exploring Tool-Using Large Language Models in Text-to-CAD Generation with Reinforcement Learning](https://arxiv.org/abs/2604.07960) — Modeling Static Assets / Parametric CAD and Engineering Design
+- [Embodied CAD: Solver-Grounded LLM Agents for Parametric B-Rep Assembly Modeling](https://arxiv.org/abs/2606.31252) — Modeling Static Assets / Parametric CAD and Engineering Design
+- [SOV-CAD: Stepwise Orthographic Views Guided CAD Modeling Sequence Reconstruction](https://arxiv.org/abs/2607.04119) — Modeling Static Assets / Parametric CAD and Engineering Design
+- [CADENA: Stepwise CAD Reverse Engineering](https://arxiv.org/abs/2608.00799) — Modeling Static Assets / Parametric CAD and Engineering Design
+- [IterCAD: Iterative Program Repair for CAD Code Generation from Orthographic Views](https://arxiv.org/abs/2608.24020) — Modeling Static Assets / Parametric CAD and Engineering Design
+- [ExpConCAD: Experience-Guided Text-to-CAD Generation from Shape Descriptions with Implicit Spatial Constraints](https://arxiv.org/abs/2608.24760) — Modeling Static Assets / Parametric CAD and Engineering Design
+- [LLM-Aided Design for Manufacturing: A Multi-Agent System for Intent-Preserving Redesign of CAD for Improved Manufacturability](https://arxiv.org/abs/2609.05559) — Modeling Static Assets / Parametric CAD and Engineering Design
+- [CIT-CAD: Constraint Intent Tree-based CAD Code Generation and Verification](https://arxiv.org/abs/2609.07434) — Modeling Static Assets / Parametric CAD and Engineering Design
+- [ReliCAD: From Uncertain LLM Generation to Reliable Parametric CAD Modeling](https://arxiv.org/abs/2609.22325) — Modeling Static Assets / Parametric CAD and Engineering Design
+- [Vision2CAD: A Visual Agent Harness for Explicit Geometry Referencing and Localization in Parametric CAD Modeling](https://arxiv.org/abs/2609.22688) — Modeling Static Assets / Parametric CAD and Engineering Design
+- [VLMgineer: Vision Language Models as Robotic Toolsmiths](https://arxiv.org/abs/2507.12644) — Modeling Static Assets / Parametric CAD and Engineering Design
+- [SceneCraft: An LLM Agent for Synthesizing 3D Scene as Blender Code](https://arxiv.org/abs/2403.01248) — Modeling Static Assets / 3D Scene Modeling / Generation
+- [I-Design: Personalized LLM Interior Designer](https://arxiv.org/abs/2404.02838) — Modeling Static Assets / 3D Scene Modeling / Generation
+- [Global-Local Tree Search in VLMs for 3D Indoor Scene Generation](https://arxiv.org/abs/2503.18476) — Modeling Static Assets / 3D Scene Modeling / Generation
+- [Global-Local Monte Carlo Tree Search in Vision-Language Models for Text-to-3D Indoor Scene Generation](https://arxiv.org/abs/2606.06002) — Modeling Static Assets / 3D Scene Modeling / Generation
+- [Text-to-Scene with Large Reasoning Models](https://arxiv.org/abs/2509.26091) — Modeling Static Assets / 3D Scene Modeling / Generation
+- [INTERIORAGENT: LLM Agent for Interior Design aware 3D Layout Generation](https://openreview.net/forum?id=ypBfokcXvA) — Modeling Static Assets / 3D Scene Modeling / Generation
+- [HSM: Hierarchical Scene Motifs for Multi-Scale Indoor Scene Generation](https://arxiv.org/abs/2503.16848) — Modeling Static Assets / 3D Scene Modeling / Generation
+- [SpatialGrammar: A Domain-Specific Language for LLM-Based 3D Indoor Scene Generation](https://arxiv.org/abs/2604.27555) — Modeling Static Assets / 3D Scene Modeling / Generation
+- [HDSL: A Hierarchical Domain-Specific Language for Structured 3D Indoor Scene Generation and Localized Editing with LLM Agents](https://arxiv.org/abs/2606.09738) — Modeling Static Assets / 3D Scene Modeling / Generation
+- [SceneCode: Executable World Programs for Editable Indoor Scenes with Articulated Objects](https://arxiv.org/abs/2605.19587) — Modeling Static Assets / 3D Scene Modeling / Generation
+- [SceneGenAgent: Precise Industrial Scene Generation with Coding Agent](https://arxiv.org/abs/2410.21909) — Modeling Static Assets / 3D Scene Modeling / Generation
+- [PhyScensis: Physics-Augmented LLM Agents for Complex Physical Scene Arrangement](https://arxiv.org/abs/2602.14968) — Modeling Static Assets / 3D Scene Modeling / Generation
+- [GIF: Agentic Generation of Interactive and Functional Object Compositions for Robot Learning](https://arxiv.org/abs/2609.05927) — Modeling Static Assets / 3D Scene Modeling / Generation
+- [SceneMosaic: Efficient and Diverse Simulation-Ready Scene Generation via Hybrid Agentic Layout Evolution](https://arxiv.org/abs/2609.05594) — Modeling Static Assets / 3D Scene Modeling / Generation
+- [3D-Generalist: Self-Improving Vision-Language-Action Models for Crafting 3D Worlds](https://arxiv.org/abs/2507.06484) — Modeling Static Assets / 3D Scene Modeling / Generation
+- [SceneAssistant: A Visual Feedback Agent for Open-Vocabulary 3D Scene Generation](https://arxiv.org/abs/2603.12238) — Modeling Static Assets / 3D Scene Modeling / Generation
+- [HOLODECK 2.0: Vision-Language-Guided 3D World Generation with Editing](https://arxiv.org/abs/2508.05899) — Modeling Static Assets / 3D Scene Modeling / Generation
+- [SceneWeaver: All-in-One 3D Scene Synthesis with an Extensible and Self-Reflective Agent](https://arxiv.org/abs/2509.20414) — Modeling Static Assets / 3D Scene Modeling / Generation
+- [SAGE: Scalable Agentic 3D Scene Generation for Embodied AI](https://arxiv.org/abs/2602.10116) — Modeling Static Assets / 3D Scene Modeling / Generation
+- [SceneSmith: Agentic Generation of Simulation-Ready Indoor Scenes](https://arxiv.org/abs/2602.09153) — Modeling Static Assets / 3D Scene Modeling / Generation
+- [HomeWorld: A Unified Floorplan-to-Furnished Framework for Generating Controllable, Densely Interactive Whole-Home Scenes](https://arxiv.org/abs/2606.06390) — Modeling Static Assets / 3D Scene Modeling / Generation
+- [EmbodiedGen V2: An Agentic, Simulation-Ready 3D World Engine for Embodied AI](https://arxiv.org/abs/2607.07459) — Modeling Static Assets / 3D Scene Modeling / Generation
+- [SimWorld Studio: Automatic Environment Generation with Evolving Coding Agent for Embodied Agent Learning](https://arxiv.org/abs/2605.09423) — Modeling Static Assets / 3D Scene Modeling / Generation
+- [Awomo-SimDataEngine: Agentic Simulation-Ready World Generation](https://arxiv.org/abs/2610.02274) — Modeling Static Assets / 3D Scene Modeling / Generation
+- [GenSim: Generating Robotic Simulation Tasks via Large Language Models](https://arxiv.org/abs/2310.01361) — Modeling Static Assets / 3D Scene Modeling / Generation
+- [BIMgent: Towards Autonomous Building Modeling via Computer-use Agents](https://arxiv.org/abs/2506.07217) — Modeling Static Assets / 3D Scene Modeling / Generation
+- [APT: Architectural Planning and Text-to-Blueprint Construction Using Large Language Models for Open-World Agents](https://arxiv.org/abs/2411.17255) — Modeling Static Assets / 3D Scene Modeling / Generation
+- [CityX: Controllable Procedural Content Generation for Unbounded 3D Cities](https://arxiv.org/abs/2407.17572) — Modeling Static Assets / 3D Scene Modeling / Generation
+- [MajutsuCity: Language-driven Aesthetic-adaptive City Generation with Controllable 3D Assets and Layouts](https://arxiv.org/abs/2511.20415) — Modeling Static Assets / 3D Scene Modeling / Generation
+- [WorldClaw: Agentic 3D Open-World Generation at Scale](https://arxiv.org/abs/2608.05248) — Modeling Static Assets / 3D Scene Modeling / Generation
+- [MAGIC: Transition-Aware Generation of Navigable Multi-Scene Game Worlds with Large Language Models](https://arxiv.org/abs/2607.11594) — Modeling Static Assets / 3D Scene Modeling / Generation
+- [UnrealLLM: Towards Highly Controllable and Interactable 3D Scene Generation by LLM-powered Procedural Content Generation](https://aclanthology.org/2025.findings-acl.994/) — Modeling Static Assets / 3D Scene Modeling / Generation
+- [WorldAgents: Can Foundation Image Models be Agents for 3D World Models?](https://arxiv.org/abs/2603.19708) — Modeling Static Assets / 3D Scene Modeling / Generation
+- [WorldWeave: Growing Persistent Geometric Worlds for Video Generation](https://arxiv.org/abs/2609.34221) — Modeling Static Assets / 3D Scene Modeling / Generation
+- [Agentic 3D Scene Generation with Spatially Contextualized VLMs](https://arxiv.org/abs/2505.20129) — Modeling Static Assets / 3D Scene Modeling / Generation
+- [Chat Modeling: Interaction-Enhanced Agent Framework for Visualizing Literature-Grounded Biological Structures](https://arxiv.org/abs/2404.01063) — Modeling Static Assets / 3D Scene Modeling / Generation
+- [SceneConductor: 3D Scene Generation from a Single Image with Multi-Agent Orchestration](https://arxiv.org/abs/2606.08402) — Modeling Static Assets / 3D Scene Modeling / Reconstruction
+- [Code-as-Room: Generating 3D Rooms from Top-Down View Images via Agentic Code Synthesis](https://arxiv.org/abs/2605.18451) — Modeling Static Assets / 3D Scene Modeling / Reconstruction
+- [HARMONY: Hierarchical Agentic Reasoning for MONocular Image-to-Scene Synthesis](https://arxiv.org/abs/2609.26793) — Modeling Static Assets / 3D Scene Modeling / Reconstruction
+- [LiteReality-Agent: An Agentic System for Interactable 3D Indoor Scene Reconstruction](https://arxiv.org/abs/2610.01863) — Modeling Static Assets / 3D Scene Modeling / Reconstruction
+- [LEGO-Anything: Coding Agents for 3D Scene Reconstruction](https://arxiv.org/abs/2609.36380) — Modeling Static Assets / 3D Scene Modeling / Reconstruction
+- [Recursive Code World Models: Building Complex Worlds through Recursive Scene Programs](https://arxiv.org/abs/2609.11499) — Modeling Static Assets / 3D Scene Modeling / Reconstruction
+- [Vision-as-Inverse-Graphics Agent via Interleaved Multimodal Reasoning](https://arxiv.org/abs/2601.11109) — Modeling Static Assets / 3D Scene Modeling / Reconstruction
+- [Thinking in Blender: Staged Executable Inverse Graphics with Vision-Language Models](https://arxiv.org/abs/2606.02580) — Modeling Static Assets / 3D Scene Modeling / Reconstruction
+- [Engine-Native Editable 3D World Reconstruction with Objects and Lighting](https://arxiv.org/abs/2607.20889) — Modeling Static Assets / 3D Scene Modeling / Reconstruction
+- [AstraLOD3: Zero-shot multimodal agentic reconstruction of LOD3 building models](https://arxiv.org/abs/2609.28061) — Modeling Static Assets / 3D Scene Modeling / Reconstruction
+- [Sketch2BIM: A Multi-Agent Human-AI Collaborative Pipeline to Convert Hand-Drawn Floor Plans to 3D BIM](https://arxiv.org/abs/2510.20838) — Modeling Static Assets / 3D Scene Modeling / Reconstruction
+- [CoDimRecon: Agentic Reconstruction of Sim-Ready 3D Scenes with Deformable Curves, Surfaces, and Volumes](https://arxiv.org/abs/2609.36024) — Modeling Static Assets / 3D Scene Modeling / Reconstruction
+- [REST3D: Reconstructing Physically Stable 3D Scenes from a Single Image](https://arxiv.org/abs/2605.30338) — Modeling Static Assets / 3D Scene Modeling / Reconstruction
+- [MUSE: Agentic 3D Scene Authoring via Memory-Grounded Incremental Requirement Satisfaction](https://arxiv.org/abs/2606.14168) — Modeling Static Assets / 3D Scene Modeling / Editing
+- [VULCAN: Tool-Augmented Multi Agents for Iterative 3D Object Arrangement](https://arxiv.org/abs/2512.22351) — Modeling Static Assets / 3D Scene Modeling / Editing
+- [FirePlace: Geometric Refinements of LLM Common Sense Reasoning for 3D Object Placement](https://arxiv.org/abs/2503.04919) — Modeling Static Assets / 3D Scene Modeling / Editing
+- [Chat2Layout: Interactive 3D Furniture Layout with a Multimodal LLM](https://arxiv.org/abs/2407.21333) — Modeling Static Assets / 3D Scene Modeling / Editing
+- [AgentSGEN: Multi-Agent LLM in the Loop for Semantic Collaboration and GENeration of Synthetic Data](https://arxiv.org/abs/2505.13466) — Modeling Static Assets / 3D Scene Modeling / Editing
+- [Text-Guided 6D Object Pose Rearrangement via Closed-Loop VLM Agents](https://arxiv.org/abs/2604.09781) — Modeling Static Assets / 3D Scene Modeling / Editing
+- [EZBlender: Efficient 3D Editing with Plan-and-ReAct Agent](https://arxiv.org/abs/2601.07143) — Modeling Static Assets / 3D Scene Modeling / Editing
+- [AGE: Agentic Gaussian Editing in 3D Scenarios](https://doi.org/10.1007/978-3-032-37553-7_13) — Modeling Static Assets / 3D Scene Modeling / Editing
+- [SPHERE: Adaptive VR Indoor Scene Generation via LLM-Enhanced Spatial Preference Learning and Human-in-the-Loop RL](https://arxiv.org/abs/2610.02023) — Modeling Static Assets / 3D Scene Modeling / Editing
+- [Articraft: An Agentic System for Scalable Articulated 3D Asset Generation](https://arxiv.org/abs/2605.15187) — Modeling Dynamic Assets / Articulated asset modeling
+- [Articulate-Anything: Automatic Modeling of Articulated Objects via a Vision-Language Foundation Model](https://arxiv.org/abs/2410.13882) — Modeling Dynamic Assets / Articulated asset modeling
+- [ArtiCAD: Articulated CAD Assembly Design via Multi-Agent Code Generation](https://arxiv.org/abs/2604.10992) — Modeling Dynamic Assets / Articulated asset modeling
+- [FACT: Fidelity-Aware Construction of Articulated Twins](https://arxiv.org/abs/2609.37067) — Modeling Dynamic Assets / Articulated asset modeling
+- [Compositional Machine Design as Program Synthesis with LLMs](https://arxiv.org/abs/2510.14980) — Modeling Dynamic Assets / Articulated asset modeling
+- [Agent-Aided Design for Dynamic CAD Models](https://arxiv.org/abs/2604.15184) — Modeling Dynamic Assets / Articulated asset modeling
+- [Cutscene Agent: An LLM Agent Framework for Automated 3D Cutscene Generation](https://arxiv.org/abs/2604.25318) — Modeling Dynamic Assets / Animation and temporal scene authoring
+- [StateFlow: Building, Evolving, and Accessing 3D World States for Previsualization](https://arxiv.org/abs/2608.12314) — Modeling Dynamic Assets / Animation and temporal scene authoring
+- [SimWorlds: A Multi-Agent System for Dynamic 3D Scene Creation](https://arxiv.org/abs/2607.01766) — Modeling Dynamic Assets / Animation and temporal scene authoring
+- [Code2Worlds: Empowering Coding LLMs for 4D World Generation](https://arxiv.org/abs/2602.11757) — Modeling Dynamic Assets / Animation and temporal scene authoring
+- [Kubrick: Multimodal Agent Collaborations for Synthetic Video Generation](https://arxiv.org/abs/2408.10453) — Modeling Dynamic Assets / Animation and temporal scene authoring
+- [FilmAgent: A Multi-Agent Framework for End-to-End Film Automation in Virtual 3D Spaces](https://arxiv.org/abs/2501.12909) — Modeling Dynamic Assets / Animation and temporal scene authoring
+- [InterPose: Learning to Generate Human-Object Interactions from Large-Scale Web Videos](https://arxiv.org/abs/2509.00767) — Modeling Dynamic Assets / Animation and temporal scene authoring
+- [ParticleGen: A Multi-Agent System for Particle Effects Generation](https://arxiv.org/abs/2608.00629) — Modeling Dynamic Assets / Physical simulation and effects authoring
+- [Text2Sim: Agentic Physics-Based Simulation Generation with Distilled Expertise](https://arxiv.org/abs/2609.36593) — Modeling Dynamic Assets / Physical simulation and effects authoring
+- [CoDimRecon: Agentic Reconstruction of Sim-Ready 3D Scenes with Deformable Curves, Surfaces, and Volumes](https://arxiv.org/abs/2609.36024) — Modeling Dynamic Assets / Physical simulation and effects authoring
+- [GS-Agent: Creating 4D Physical Worlds With Generative Simulation](https://arxiv.org/abs/2607.21522) — Modeling Dynamic Assets / Physical simulation and effects authoring
+- [WorldAgent: Verification-Guided Agentic Physical World Construction](https://arxiv.org/abs/2609.33208) — Modeling Dynamic Assets / Physical simulation and effects authoring
+- [ESG: Generating Physically Consistent Dynamic 3D Scenes from Text Descriptions](https://arxiv.org/abs/2609.15392) — Modeling Dynamic Assets / Physical simulation and effects authoring
+- [Beyond Placement and Articulation: Usage-Driven Code Scenes for Embodied Interaction](https://arxiv.org/abs/2608.18840) — Modeling Dynamic Assets / Physical simulation and effects authoring
+- [Code as Worlds: Agentic Discovery of Executable World Representations for Physical Reasoning](https://arxiv.org/abs/2608.27549) — Modeling Dynamic Assets / Physical simulation and effects authoring
+- [In-Context Model Predictive Generation: Open-Vocabulary Motion Synthesis from Language Models to Physics](https://arxiv.org/abs/2606.26981) — Modeling Dynamic Assets / Physical simulation and effects authoring
+- [PhysAgent: Reflective Agentic Physics Control for Physically Plausible Video Generation](https://arxiv.org/abs/2607.16355) — Modeling Dynamic Assets / Scope-dependent additions and video bridges
+- [VideoCoCo: Code-as-CoT for Physically-Consistent Video Generation via an Agentic Dual-Engine System](https://arxiv.org/abs/2607.27380) — Modeling Dynamic Assets / Scope-dependent additions and video bridges
+- [GenRA: End-to-end Framework for LLM-Driven Animation of Rigged 3D Models](https://research.macpaw.com/publications/genra) — Modeling Dynamic Assets / Scope-dependent additions and video bridges
+- [InstantMimic: A High Performance System for Learning Physics-based Skills in Seconds](https://arxiv.org/abs/2609.09821) — Modeling Dynamic Assets / Scope-dependent additions and video bridges
+- [Vision-as-Inverse-Graphics Agent via Interleaved Multimodal Reasoning](https://arxiv.org/abs/2601.11109) — Modeling Dynamic Assets / Cross-category applications and reported extensions
+- [SceneCode: Executable World Programs for Editable Indoor Scenes with Articulated Objects](https://arxiv.org/abs/2605.19587) — Modeling Dynamic Assets / Cross-category applications and reported extensions
+- [ShapeCraft: LLM Agents for Structured, Textured and Interactive 3D Modeling](https://arxiv.org/abs/2510.17603) — Modeling Dynamic Assets / Cross-category applications and reported extensions
+- [aDSL: Agentic 3D Creation via Joint Agent-Program Design](https://arxiv.org/abs/2608.17975) — Modeling Dynamic Assets / Cross-category applications and reported extensions
+- [Nova3D: Code-Native Generation of Programmable 3D Assets](https://arxiv.org/abs/2607.22738) — Modeling Dynamic Assets / Cross-category applications and reported extensions
+- [Procedura: Agentic 3D Modeling with Procedural Control](https://arxiv.org/abs/2608.26238) — Modeling Dynamic Assets / Cross-category applications and reported extensions
+- [LiteReality-Agent: An Agentic System for Interactable 3D Indoor Scene Reconstruction](https://arxiv.org/abs/2610.01863) — Modeling Dynamic Assets / Cross-category applications and reported extensions
+- [Awomo-SimDataEngine: Agentic Simulation-Ready World Generation](https://arxiv.org/abs/2610.02274) — Modeling Dynamic Assets / Cross-category applications and reported extensions
+- [WorldAuditBench: Interactive 3D World Auditing with Multimodal Agents](https://arxiv.org/abs/2609.40325) — Datasets and Benchmarks / Interactive 3D World Auditing
+- [DiagrammerGPT: Generating Open-Domain, Open-Platform Diagrams via LLM Planning](https://arxiv.org/abs/2310.12128) — Supplementary papers — 10-round literature audit (13 October 2026) / 2D graphics — 8 papers
+- [PlotEdit: Natural Language-Driven Accessible Chart Editing in PDFs via Multimodal LLM Agents](https://arxiv.org/abs/2501.11233) — Supplementary papers — 10-round literature audit (13 October 2026) / 2D graphics — 8 papers
+- [PosterGen: Aesthetic-Aware Multi-Modal Paper-to-Poster Generation via Multi-Agent LLMs](https://arxiv.org/abs/2508.17188) — Supplementary papers — 10-round literature audit (13 October 2026) / 2D graphics — 8 papers
+- [EvoDesign: Agentic Editable Diagram Creation via Design Expertise Evolution](https://arxiv.org/abs/2604.09568) — Supplementary papers — 10-round literature audit (13 October 2026) / 2D graphics — 8 papers
+- [Learning to Present: Inverse Specification Rewards for Agentic Slide Generation](https://arxiv.org/abs/2603.16839) — Supplementary papers — 10-round literature audit (13 October 2026) / 2D graphics — 8 papers
+- [SciVisAgentSkills: Design and Evaluation of Agent Skills for Scientific Data Analysis and Visualization](https://arxiv.org/abs/2606.05525) — Supplementary papers — 10-round literature audit (13 October 2026) / 2D graphics — 8 papers
+- [ACE: A Self-Correcting Agentic Canvas Editor for Multi-Slide Presentation Automation](https://arxiv.org/abs/2608.24103) — Supplementary papers — 10-round literature audit (13 October 2026) / 2D graphics — 8 papers
+- [Figures as Programs: Recursive Generation of Editable Scientific Figures](https://arxiv.org/abs/2609.01006) — Supplementary papers — 10-round literature audit (13 October 2026) / 2D graphics — 8 papers
+- [3D-GPT: Procedural 3D Modeling with Large Language Models](https://arxiv.org/abs/2310.12945) — Supplementary papers — 10-round literature audit (13 October 2026) / Scene and object modeling — 8 papers
+- [CityCraft: A Real Crafter for 3D City Generation](https://arxiv.org/abs/2406.04983) — Supplementary papers — 10-round literature audit (13 October 2026) / Scene and object modeling — 8 papers
+- [UrbanWorld: An Urban World Model for 3D City Generation](https://arxiv.org/abs/2407.11965) — Supplementary papers — 10-round literature audit (13 October 2026) / Scene and object modeling — 8 papers
+- [Scenethesis: A Language and Vision Agentic Framework for 3D Scene Generation](https://arxiv.org/abs/2505.02836) — Supplementary papers — 10-round literature audit (13 October 2026) / Scene and object modeling — 8 papers
+- [3Dify: a Framework for Procedural 3D-CG Generation Assisted by LLMs Using MCP and RAG](https://arxiv.org/abs/2510.04536) — Supplementary papers — 10-round literature audit (13 October 2026) / Scene and object modeling — 8 papers
+- [Vinedresser3D: Agentic Text-guided 3D Editing](https://arxiv.org/abs/2602.19542) — Supplementary papers — 10-round literature audit (13 October 2026) / Scene and object modeling — 8 papers
+- [WorldAct: Activating Monolithic 3D Worlds into Interactive-Ready Object-Centric Scenes](https://arxiv.org/abs/2605.15843) — Supplementary papers — 10-round literature audit (13 October 2026) / Scene and object modeling — 8 papers
+- [Roomer: Reflective Object-Grounded Model Editing and Repair for 3D Indoor Layout Synthesis](https://arxiv.org/abs/2608.01973) — Supplementary papers — 10-round literature audit (13 October 2026) / Scene and object modeling — 8 papers
+- [Clarify Before You Draw: Proactive Agents for Robust Text-to-CAD Generation](https://arxiv.org/abs/2602.03045) — Supplementary papers — 10-round literature audit (13 October 2026) / CAD — 3 papers
+- [Zero-to-CAD: Agentic Synthesis of Interpretable CAD Programs at Million-Scale Without Real Data](https://arxiv.org/abs/2604.24479) — Supplementary papers — 10-round literature audit (13 October 2026) / CAD — 3 papers
+- [TraceCAD: Trace-Guided Repair for Agentic CAD Generation](https://arxiv.org/abs/2608.03062) — Supplementary papers — 10-round literature audit (13 October 2026) / CAD — 3 papers
+- [AGILE: Hand-Object Interaction Reconstruction from Video via Agentic Generation](https://arxiv.org/abs/2602.04672) — Supplementary papers — 10-round literature audit (13 October 2026) / Animation and simulation — 9 papers
+- [Perceptual Self-Reflection in Agentic Physics Simulation Code Generation](https://arxiv.org/abs/2602.12311) — Supplementary papers — 10-round literature audit (13 October 2026) / Animation and simulation — 9 papers
+- [PhysAgent: Automating Physics-Based 4D Synthesis via Trajectory-Grounded Multi-Agent Feedback](https://arxiv.org/abs/2606.08688) — Supplementary papers — 10-round literature audit (13 October 2026) / Animation and simulation — 9 papers
+- [Agentic Real2Sim: Physics-based World Modeling with Vision-Language Agents](https://arxiv.org/abs/2607.19190) — Supplementary papers — 10-round literature audit (13 October 2026) / Animation and simulation — 9 papers
+- [ArtiMo: Agent-Driven Articulated Mesh Animation](https://arxiv.org/abs/2608.20699) — Supplementary papers — 10-round literature audit (13 October 2026) / Animation and simulation — 9 papers
+- [4DSynth: Controllable Procedural World Synthesis for Dynamic Embodied Simulation](https://arxiv.org/abs/2608.26947) — Supplementary papers — 10-round literature audit (13 October 2026) / Animation and simulation — 9 papers
+- [DiagGen: Agentic Generation of Deformable Assets with Sim-based Diagnostics for Robotic Simulation](https://arxiv.org/abs/2609.23103) — Supplementary papers — 10-round literature audit (13 October 2026) / Animation and simulation — 9 papers
+- [AgentSTAR: Agentic Shape Tracking and Reconstruction from Monocular Videos](https://arxiv.org/abs/2609.24487) — Supplementary papers — 10-round literature audit (13 October 2026) / Animation and simulation — 9 papers
+- [Fysiverse-3D-SimReady Technical Report: Agentic Physical Simulation for Pragmatic 3D World Reconstruction](https://arxiv.org/abs/2609.31715) — Supplementary papers — 10-round literature audit (13 October 2026) / Animation and simulation — 9 papers
+- [BlenderGym: Benchmarking Foundational Model Systems for Graphics Editing](https://arxiv.org/abs/2504.01786) — Supplementary papers — 10-round literature audit (13 October 2026) / Graphics benchmarks — 10 papers
+- [IR3D-Bench: Evaluating Vision-Language Model Scene Understanding as Agentic Inverse Rendering](https://arxiv.org/abs/2506.23329) — Supplementary papers — 10-round literature audit (13 October 2026) / Graphics benchmarks — 10 papers
+- [BuildArena: A Physics-Aligned Interactive Benchmark of LLMs for Engineering Construction](https://arxiv.org/abs/2510.16559) — Supplementary papers — 10-round literature audit (13 October 2026) / Graphics benchmarks — 10 papers
+- [3DCodeBench: Benchmarking Agentic Procedural 3D Modeling Via Code](https://arxiv.org/abs/2606.01057) — Supplementary papers — 10-round literature audit (13 October 2026) / Graphics benchmarks — 10 papers
+- [SceneActBench: Can Agents Act on the 3D Scenes They See?](https://arxiv.org/abs/2607.22393) — Supplementary papers — 10-round literature audit (13 October 2026) / Graphics benchmarks — 10 papers
+- [PPTBench: Can Coding Agents Reconstruct the Visual World through Structured, Editable Slides](https://arxiv.org/abs/2609.29718) — Supplementary papers — 10-round literature audit (13 October 2026) / Graphics benchmarks — 10 papers
+- [3DHarnessBench: Probing Agentic 3D-to-Code Capabilities of Frontier Vision-Language Models](https://arxiv.org/abs/2609.06535) — Supplementary papers — 10-round literature audit (13 October 2026) / Graphics benchmarks — 10 papers
+- [BVB: Benchmarking Agentic Video Understanding via Programmatic Reconstruction in Blender](https://arxiv.org/abs/2609.15478) — Supplementary papers — 10-round literature audit (13 October 2026) / Graphics benchmarks — 10 papers
+- [CADWorld: Computer-Use Benchmark for Long-Horizon Computer-Aided Design](https://arxiv.org/abs/2609.16251) — Supplementary papers — 10-round literature audit (13 October 2026) / Graphics benchmarks — 10 papers
+- [Code4Scene: Benchmarking Coding Agents for Constructing and Editing 3D Scenes](https://arxiv.org/abs/2609.36777) — Supplementary papers — 10-round literature audit (13 October 2026) / Graphics benchmarks — 10 papers
+- [Re-Thinking Inverse Graphics With Large Language Models](https://arxiv.org/abs/2404.15228) — Supplementary papers — 10-round literature audit (13 October 2026) / Enabling methods — 9 papers
+- [BlenderLLM: Training Large Language Models for Computer-Aided Design with Self-improvement](https://arxiv.org/abs/2412.14203) — Supplementary papers — 10-round literature audit (13 October 2026) / Enabling methods — 9 papers
+- [VLMaterial: Procedural Material Generation with Large Vision-Language Models](https://arxiv.org/abs/2501.18623) — Supplementary papers — 10-round literature audit (13 October 2026) / Enabling methods — 9 papers
+- [VectorGym: A Multi-Task Benchmark for SVG Code Generation, Sketching and Editing](https://arxiv.org/abs/2603.29852) — Supplementary papers — 10-round literature audit (13 October 2026) / Enabling methods — 9 papers
+- [GIFT: Bootstrapping Image-to-CAD Program Synthesis via Geometric Feedback](https://arxiv.org/abs/2603.27448) — Supplementary papers — 10-round literature audit (13 October 2026) / Enabling methods — 9 papers
+- [VoxelCodeBench: Benchmarking 3D World Modeling Through Code Generation](https://arxiv.org/abs/2604.02580) — Supplementary papers — 10-round literature audit (13 October 2026) / Enabling methods — 9 papers
+- [PhysForge: Generating Physics-Grounded 3D Assets for Interactive Virtual World](https://arxiv.org/abs/2605.05163) — Supplementary papers — 10-round literature audit (13 October 2026) / Enabling methods — 9 papers
+- [Flame3D: Zero-shot Compositional Reasoning of 3D Scenes with Agentic Language Models](https://arxiv.org/abs/2605.09218) — Supplementary papers — 10-round literature audit (13 October 2026) / Enabling methods — 9 papers
+- [NaLA: A 3D Native LLM Layout Agent for High-quality 3D Scene Generation](https://arxiv.org/abs/2606.29395) — Supplementary papers — 10-round literature audit (13 October 2026) / Enabling methods — 9 papers
+- [4DCodeBench: Benchmarking Agents on Inverse Graphics of Dynamic Scenes](https://arxiv.org/abs/2610.03715) — Supplementary papers — 10-round literature audit (13 October 2026) / After September cutoff — 1 papers
+- [LIDA: A Tool for Automatic Generation of Grammar-Agnostic Visualizations and Infographics using Large Language Models](https://arxiv.org/abs/2303.02927) — Supplementary papers — historical count audit (14 October 2026)
+- [Holodeck: Language Guided Generation of 3D Embodied AI Environments](https://arxiv.org/abs/2312.09067) — Supplementary papers — historical count audit (14 October 2026)
+- [Chat-Edit-3D: Interactive 3D Scene Editing via Text Prompts](https://arxiv.org/abs/2407.06842) — Supplementary papers — historical count audit (14 October 2026)
+- [WorldCraft: Photo-Realistic 3D World Creation and Customization via LLM Agents](https://arxiv.org/abs/2502.15601) — Supplementary papers — historical count audit (14 October 2026)
+- [From text to design: a framework to leverage LLM agents for automated CAD generation](https://doi.org/10.1017/pds.2025.10203) — Supplementary papers — historical count audit (14 October 2026)
+- [Towards Physically Grounded Articulated 3D Assets: A Multi-Agent Pipeline and Benchmark](https://arxiv.org/abs/2610.13947) — Supplementary papers — conversation update (15 October 2026) / Articulated assets and simulation
+- [CFD Forge: A Physics-Constrained Agentic Framework for Autonomous CFD](https://arxiv.org/abs/2610.14104) — Supplementary papers — conversation update (15 October 2026) / Articulated assets and simulation
+- [MeshCoder: LLM-Powered Structured Mesh Code Generation from Point Clouds](https://arxiv.org/abs/2508.14879) — Supplementary papers — conversation update (15 October 2026) / Object and scene modeling — related methods
+- [The Scene Language: Representing Scenes with Programs, Words, and Embeddings](https://arxiv.org/abs/2410.16770) — Supplementary papers — conversation update (15 October 2026) / Object and scene modeling — related methods
+- [CAD-Editor: A Locate-then-Infill Framework with Automated Training Data Synthesis for Text-Based CAD Editing](https://arxiv.org/abs/2502.03997) — Supplementary papers — conversation update (15 October 2026) / CAD modeling — related methods
+- [CAD-Refiner: A Unified Framework for CAD Generation and Iterative Editing](https://openaccess.thecvf.com/content/CVPR2026/html/Yuan_CAD-Refiner_A_Unified_Framework_for_CAD_Generation_and_Iterative_Editing_CVPR_2026_paper.html) — Supplementary papers — conversation update (15 October 2026) / CAD modeling — related methods
+- [WorldSolver: Can LLM Agents Simulate the Physical Dynamics via Solver Generation?](https://arxiv.org/abs/2610.08720) — Supplementary papers — conversation update (15 October 2026) / Benchmarks
+- [neuralCAD-Edit: An Expert Benchmark for Multimodal-Instructed 3D CAD Model Editing](https://arxiv.org/abs/2604.16170) — Supplementary papers — conversation update (15 October 2026) / Benchmarks
+- [Neurosymbolic Models for Computer Graphics](https://arxiv.org/abs/2304.10320) — Supplementary papers — conversation update (15 October 2026) / Surveys and background references
+- [Scaling Large Reasoning Models beyond Human Supervision: A Path toward Superintelligence](https://arxiv.org/abs/2608.31075) — Supplementary papers — conversation update (15 October 2026) / Surveys and background references
+- [Learning to Infer and Execute 3D Shape Programs](https://arxiv.org/abs/1901.02875) — Supplementary papers — conversation update (15 October 2026) / Surveys and background references
+- [Unsupervised Learning of Shape Programs with Repeatable Implicit Parts](https://openreview.net/forum?id=EENzpzcs4Vy) — Supplementary papers — conversation update (15 October 2026) / Surveys and background references
+- [Evaluating Large Language Models Trained on Code](https://arxiv.org/abs/2107.03374) — Supplementary papers — conversation update (15 October 2026) / Surveys and background references
+- [ReAct: Synergizing Reasoning and Acting in Language Models](https://arxiv.org/abs/2210.03629) — Supplementary papers — conversation update (15 October 2026) / Surveys and background references
+- [Reflexion: Language Agents with Verbal Reinforcement Learning](https://arxiv.org/abs/2303.11366) — Supplementary papers — conversation update (15 October 2026) / Surveys and background references
