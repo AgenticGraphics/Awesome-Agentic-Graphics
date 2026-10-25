@@ -1,0 +1,159 @@
+{
+  "verified_date": "2026-10-23",
+  "order_source": "User-provided author screenshot",
+  "affiliation_policy": "Author order and author display names follow the supplied screenshot; institution names are normalized. The screenshot omitted Leonidas Guibas's affiliation, which is verified from Stanford's official profile.",
+  "authors": [
+    {
+      "name": "Hengyu Liu",
+      "affiliation": "University of Texas at Austin",
+      "url": "https://liuhengyu321.github.io/",
+      "evidence_urls": [
+        "https://liuhengyu321.github.io/"
+      ],
+      "notes": "Personal homepage identifies Hengyu Liu as a UT Austin PhD student and an Agentic Graphics workshop organizer. Homepage contact email differs from the screenshot; no email is published in this website author record.",
+      "equal_contribution": true
+    },
+    {
+      "name": "Jihyeon Je",
+      "affiliation": "Stanford University",
+      "url": "https://jihyeonje.com/",
+      "evidence_urls": [
+        "https://jihyeonje.com/",
+        "https://profiles.stanford.edu/jihyeon-je",
+        "https://geometry.stanford.edu/?member=jihyeonj"
+      ],
+      "notes": "Stanford profile matches the screenshot email; Guibas Lab links this personal homepage.",
+      "equal_contribution": true
+    },
+    {
+      "name": "Ruiqi Wang",
+      "affiliation": "Simon Fraser University",
+      "url": "https://suikei-wang.github.io/",
+      "evidence_urls": [
+        "https://suikei-wang.github.io/"
+      ],
+      "notes": "Personal homepage identifies SFU PhD student supervised by Hao (Richard) Zhang and includes rwa135@sfu.ca, matching the screenshot.",
+      "equal_contribution": true
+    },
+    {
+      "name": "Mingxuan Wu",
+      "affiliation": "University of Texas at Austin",
+      "url": "https://mingxuan-w.github.io/website/",
+      "evidence_urls": [
+        "https://mingxuan-w.github.io/website/"
+      ],
+      "notes": "Personal homepage identifies a UT Austin CS PhD student advised by Qixing Huang and Georgios Pavlakos, working in 3D vision and computer graphics.",
+      "equal_contribution": false
+    },
+    {
+      "name": "Haven Feng",
+      "affiliation": "University of California, Berkeley",
+      "url": "https://havenfeng.github.io/",
+      "evidence_urls": [
+        "https://havenfeng.github.io/",
+        "https://people.eecs.berkeley.edu/~kanazawa/"
+      ],
+      "notes": "Homepage uses Haiwen (Haven) Feng and matches havenfeng422@gmail.com. Homepage and Berkeley faculty lab page identify the UC Berkeley postdoctoral affiliation. Display name preserves the screenshot.",
+      "equal_contribution": false
+    },
+    {
+      "name": "Qixing Huang",
+      "affiliation": "University of Texas at Austin",
+      "url": "https://www.cs.utexas.edu/~huangqx/",
+      "evidence_urls": [
+        "https://www.cs.utexas.edu/~huangqx/",
+        "https://ml.utexas.edu/node/97"
+      ],
+      "notes": "University-hosted personal homepage confirms name, affiliation and screenshot email.",
+      "equal_contribution": false
+    },
+    {
+      "name": "Georgios Pavlakos",
+      "affiliation": "University of Texas at Austin",
+      "url": "https://geopavlakos.github.io/",
+      "evidence_urls": [
+        "https://www.cs.utexas.edu/people/faculty-researchers/georgios-pavlakos",
+        "https://geopavlakos.github.io/files/pavlakos-cv.pdf"
+      ],
+      "notes": "UT Austin official faculty profile and personal CV link this homepage and match the screenshot email. Direct homepage fetch returned a tool error; identity and destination are verified by the official university page.",
+      "equal_contribution": false
+    },
+    {
+      "name": "Hao (Richard) Zhang",
+      "affiliation": "Simon Fraser University",
+      "url": "https://www.cs.sfu.ca/~haoz/",
+      "evidence_urls": [
+        "https://www.cs.sfu.ca/~haoz/",
+        "https://www.sfu.ca/fas/computing/people/faculty/faculty-members/haoz.html"
+      ],
+      "notes": "University homepage and faculty profile confirm name, SFU affiliation and haoz@sfu.ca.",
+      "equal_contribution": false
+    },
+    {
+      "name": "Jiajun Wu",
+      "affiliation": "Stanford University",
+      "url": "https://www.jiajunwu.net/",
+      "evidence_urls": [
+        "https://www.jiajunwu.net/",
+        "https://profiles.stanford.edu/jiajun-wu"
+      ],
+      "notes": "Personal homepage and official Stanford profile confirm affiliation; homepage email matches screenshot.",
+      "equal_contribution": false
+    },
+    {
+      "name": "Maneesh Agrawala",
+      "affiliation": "Stanford University",
+      "url": "https://graphics.stanford.edu/~maneesh/",
+      "evidence_urls": [
+        "https://graphics.stanford.edu/~maneesh/",
+        "https://profiles.stanford.edu/maneesh-agrawala"
+      ],
+      "notes": "University-hosted personal homepage confirms name, Stanford affiliation and screenshot email.",
+      "equal_contribution": false
+    },
+    {
+      "name": "Leonidas Guibas",
+      "affiliation": "Stanford University",
+      "url": "https://profiles.stanford.edu/leonidas-guibas",
+      "evidence_urls": [
+        "https://profiles.stanford.edu/leonidas-guibas"
+      ],
+      "notes": "Screenshot affiliation is blank. Stanford official faculty profile verifies affiliation. Using the accessible official profile because legacy graphics and geometry personal-page URLs could not be fetched.",
+      "equal_contribution": false
+    },
+    {
+      "name": "R. Kenny Jones",
+      "affiliation": "Stanford University",
+      "url": "https://rkjones4.github.io/",
+      "evidence_urls": [
+        "https://rkjones4.github.io/",
+        "https://graphics.stanford.edu/~maneesh/"
+      ],
+      "notes": "Personal homepage identifies a Stanford postdoctoral scholar working with Maneesh Agrawala and Jiajun Wu; Maneesh Agrawala's university homepage lists him.",
+      "equal_contribution": false
+    },
+    {
+      "name": "Shangzhe Wu",
+      "affiliation": "University of Cambridge",
+      "url": "https://www.elliottwu.com/",
+      "evidence_urls": [
+        "https://www.elliottwu.com/",
+        "https://www.eng.cam.ac.uk/profiles/sw2181"
+      ],
+      "notes": "Personal homepage uses Elliott / Shangzhe Wu; Cambridge faculty page and homepage match sw2181@cam.ac.uk. Display name preserves screenshot.",
+      "equal_contribution": false
+    },
+    {
+      "name": "Guandao Yang",
+      "affiliation": "University of Texas at Austin",
+      "url": "https://www.guandaoyang.com/",
+      "evidence_urls": [
+        "https://www.guandaoyang.com/",
+        "https://oden.utexas.edu/people/directory/guandao-yang-2562/"
+      ],
+      "notes": "Personal homepage and UT Austin Oden Institute faculty profile confirm UT Austin affiliation. Oden faculty directory links this personal homepage.",
+      "equal_contribution": false
+    }
+  ],
+  "contribution_note": "Hengyu Liu, Jihyeon Je, and Ruiqi Wang contributed equally, as specified by the user."
+}
