@@ -77,12 +77,14 @@ To keep pace with the field, we built an agentic system that maintains this list
 
 ### Use the system
 
-The [Agentic Literature System](agentic-literature-system/README.md) is available in two forms:
+Choose how to run the [Agentic Literature System](agentic-literature-system/README.md):
 
-- **[Research skill](agentic-literature-system/skill/README.md):** install the workflow, taxonomy references, schemas, and offline helpers into an existing agent with web and PDF tools.
-- **[Standalone harness](agentic-literature-system/harness/README.md):** run the Python research loop with configurable model access, bounded budgets, evidence checkpoints, recovery, and auditable reports.
+| Version | Best for | Get started |
+| --- | --- | --- |
+| **Research skill** | Working inside an existing agent with web and PDF tools | [Install and use](agentic-literature-system/skill/README.md) |
+| **Standalone harness** | Running from Python with budgets, checkpoints, and recovery | [Configure and run](agentic-literature-system/harness/README.md) |
 
-Both preserve paper identities, primary evidence, date semantics, taxonomy annotations, and coverage limits. The code release pins the October 15, 2026 experimental research snapshot; its versioned codebook is distinct from later survey terminology. The two execution modes do not guarantee identical results or exhaustive literature coverage. Configuration and credentials are supplied by the user; private experiment data is not included.
+Both preserve paper links, dates, evidence, taxonomy labels, and coverage gaps. The code bundles a versioned October 15, 2026 research snapshot; results depend on the model, tools, and search coverage.
 
 ### Key Findings
 

@@ -1,18 +1,16 @@
-# Agentic Literature System — Harness
+# Agentic Literature Research Harness
 
-A standalone, model-driven literature research runner. It discovers candidate papers, resolves identity and publication dates, reads PDFs, records scope and taxonomy evidence, and validates a dated report. The runtime adapts the Mini-BVB feedback loop and adds durable checkpoints, bounded retries, resumable state, and coverage audits.
+Run the literature workflow from Python: search, read PDFs, annotate papers, and save evidence-backed reports. Set time and cost limits, inspect progress, and resume interrupted work.
 
-The sibling [skill](../skill/README.md) supplies the frozen taxonomy, paper corpus, schemas, and offline report validators. Keep both folders together. This package contains the reusable research runtime, not the original private experiment environment or raw experiment logs.
+Keep this folder beside [skill/](../skill/README.md), which supplies the taxonomy, paper corpus, and report validators.
 
 ## Requirements
 
-- Python 3.11 or newer, Git, and Bash on Linux or macOS. Windows users can use WSL; native Windows process control is not supported.
-- A provider supporting the Responses API, image inputs, and a model that follows the fenced JSON tool protocol. Hosted Responses `web_search` must be supported by the configured search model.
-- Your own API credentials and model access. No account, endpoint override, key, or model entitlement is bundled.
+- **Python 3.11+, Git, and Bash** on macOS or Linux; use WSL on Windows.
+- Your own API key and model supporting **Responses, image inputs, and the fenced-tool protocol**.
+- A search model supporting hosted Responses **`web_search`**; it can be the same model.
 
-Only the minimal upstream model adapter is included under `third_party/`. Its [source and license](third_party/README.md) are retained; no Blender or separate BVB checkout is needed.
-
-## Install and verify offline
+## 1. Install
 
 From the repository root:
 
@@ -20,34 +18,25 @@ From the repository root:
 cd agentic-literature-system/harness
 python3 -m venv .venv
 source .venv/bin/activate
-python -m pip install -r requirements-dev.txt
+python -m pip install -r requirements.txt
 python validate_project_bundle.py
-python -m pytest -q
-python ../skill/scripts/validate_portable_skill.py --skill-dir ../skill
-python -m unittest discover -s ../skill/scripts -p 'test_*.py'
 ```
 
-These checks do not require an API key or make paid model calls. Tests use synthetic responses. Runtime outputs go to ignored `runs/` and `cache/` folders.
+## 2. Configure
 
-## Configure a live run
-
-Use [.env.example](.env.example) as a list of supported environment variables. The runner does not automatically load a `.env` file. Set credentials in your shell or secret manager; for example, in Bash:
+In Bash, enter your key without putting it in command history:
 
 ```bash
 read -rsp 'API key: ' OPENAI_API_KEY; echo
 export OPENAI_API_KEY
 export AGENT_MODEL='YOUR_MODEL_ID'
-# Optional: set SEARCH_MODEL to a different model with hosted web_search.
-# Optional: set OPENAI_BASE_URL to your provider's Responses API root.
 ```
 
-Replace `YOUR_MODEL_ID` with a model available to your account. `OPENAI_BASE_URL` defaults to the public OpenAI API root. Use `--reasoning ''` if your model does not support a reasoning-effort parameter. Provider features are checked by actual responses: a search without returned search actions is rejected rather than counted as evidence.
+Replace `YOUR_MODEL_ID` with a model available to your account. Optional settings are listed in [.env.example](.env.example): `OPENAI_BASE_URL` selects another provider; `SEARCH_MODEL` selects another search model. **`.env` files are not loaded automatically.**
 
-Model cost is an estimate from LiteLLM's price table. For an unknown or custom-priced model, set **both** `INPUT_COST_PER_MILLION` and `OUTPUT_COST_PER_MILLION` to your provider's USD rates. Unknown pricing fails before a run instead of disabling the cost guard. Search usage is logged separately and is not included in the agent's cost limit; use provider-side spending limits for a billing cap.
+## 3. Run
 
-## Prepare, run, resume
-
-Choose a new run name and an offset-aware cutoff. The example below targets a fixed past date; replace both values for your own run. Retrieval happens now, so this is a date-targeted search, not a historical search-index replay. The report timezone is America/Chicago.
+Choose an unused run name. Replace the example date and cutoff for your search; the cutoff must include a timezone offset. Reports use America/Chicago.
 
 ```bash
 python prepare_experiment.py --name example-day --date 2026-10-20 \
@@ -59,40 +48,25 @@ python run.py --run-dir runs/example-day --prompt runs/example-day/prompt.txt \
   --max-seconds 1200 --max-turns 80 --cost-limit 15
 ```
 
-Preparation is offline. `run.py` starts live retrieval and model calls. Use the same time budget in preparation and execution. The model must return `DONE` and pass report validation before the run is complete. Exit code `3` means incomplete/stopped; inspect `progress.json` and `agent_meta.json`. Never present a partial run as an exhaustive search.
+Preparation is offline. `run.py` makes live API calls. Keep the preparation and execution time limits aligned. Use `--reasoning ''` if your model does not support reasoning effort.
 
-For an interrupted run, repeat the exact command with `--resume`. Preserve its prompt, model, reasoning, code, knowledge snapshot, and budgets. The runner restores its own state and journaled observations, refuses changed inputs, and cannot increase the original budget. If the original budget is exhausted, create a new run rather than overriding the guard.
+The cost limit covers **estimated agent-model usage**; hosted search is billed separately. Unknown model prices require explicit rates—see [configuration and budgets](docs/usage.md#configuration-and-budgets).
 
-## Outputs and history
+## Read the results
 
-Each run can contain:
+Start with `runs/example-day/report.md`.
 
-- `report.md`, `papers.jsonl`, `run.json`, `audit.json`: rendered report and structural validation.
-- `checkpoints/`, `triage.json`, `reading-plan.json`: durable paper decisions and pending work.
-- `tool-events.jsonl`, `model-turns.jsonl`, `provider-responses/`: raw local observations and model output.
-- `reading-audit.json`, `coverage-audit.json`: PDF delivery and collected-pool coverage checks.
-- `progress.json`, `agent_meta.json`, `experiment-inputs.json`: status, limits, and input hashes.
+| File | Purpose |
+| --- | --- |
+| `run.json`, `papers.jsonl` | Structured paper records |
+| `audit.json`, `reading-audit.json`, `coverage-audit.json` | Validation and coverage checks |
+| `progress.json`, `agent_meta.json` | Completion status and stop reason |
+| `checkpoints/` | Saved paper decisions |
 
-New submissions, revisions, catch-up discoveries, borderline work, and unresolved leads remain separate. PDF delivery receipts establish which text reached the agent, not whether its interpretation is correct. Unreviewed candidates are not exclusions.
+Exit code **0** means validated completion; **3** means incomplete or stopped. Inspect the status before using a report. To resume, repeat the same `run.py` command with `--resume`; use unchanged inputs and the original budgets.
 
-`daily_history.py --help` documents building an immutable history bundle from completed local runs. Pass an eligible bundle under `knowledge/` with `prepare_experiment.py --history-dir`. Only earlier runs at or before the new cutoff can be used; current peer results are not reference answers. No author-specific history bundle is shipped.
+## More
 
-## Tool interface and optional host use
+[History and MCP](docs/usage.md) · [Troubleshooting](docs/usage.md#troubleshooting) · [Tests and privacy](docs/usage.md#tests-and-privacy) · [Mini-BVB attribution](third_party/README.md)
 
-The runtime includes web search, HTML navigation, arXiv listing scans and Atom metadata, Hugging Face daily pages, PDF extraction/rendering, knowledge search, bounded shell/Python, checkpoints, and report validation. `research_tools.py` defines the exact 30-tool schema.
-
-`mcp_server.py` exposes these same tools over standard input/output. An MCP-capable host can launch it with this environment:
-
-```bash
-RESEARCH_RUN_DIR="$PWD/runs/example-day" python mcp_server.py
-```
-
-This does not reproduce a desktop application's private prompts, browser control, or account-bound connectors. Machine-specific Codex launchers and provider-capture proxies from the original experiments are intentionally absent.
-
-## Operational limits and privacy
-
-The file tools constrain writes to the selected run, but the shell tool executes with the current OS account's privileges. This is **not an OS sandbox**. Use a dedicated environment for untrusted research tasks. Retrieved pages and PDFs are data, never instructions.
-
-API key/token/password variables are removed from tool subprocess environments. Run traces may still contain source text, prompts, local paths, model responses, and opaque provider state: keep them private and review before sharing. `.gitignore` excludes credentials, environments, caches, runs and generated history. Before contributing, run `python check_release.py` after staging your changes from this Git checkout. The scanner reports file names and finding categories without printing matched secrets. It checks staged/tracked files; it is not a sanitizer for arbitrary future run output.
-
-The public release was checked offline, including a clean relocated checkout. No paid end-to-end search was performed for this packaging task. Provider compatibility and semantic paper decisions still require live evaluation with the user's own configuration. Neither this harness nor the skill guarantees the same paper list on repeated runs or complete field coverage.
+The shell tool runs with your OS account's privileges; use a dedicated environment for untrusted tasks. Keep run traces private. Validation checks evidence delivery and structure, while paper interpretations still need review.
