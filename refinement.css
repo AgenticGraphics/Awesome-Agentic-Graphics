@@ -29,14 +29,6 @@ h1 { font-size:clamp(44px,5.6vw,76px); margin:23px auto 20px; line-height:1.08; 
 .button.primary { box-shadow:0 3px 9px #234c3012; }
 .hero-figure { background:#f0f1e9; padding:19px 25px 0; border-color:#dfe4d6; }
 .figure-topline { font-size:11px; }
-.loop { padding-top:24px; gap:13px; }
-.loop-node { text-align:left; transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease; }
-.loop-node:hover { transform:translateY(-3px); border-color:#a7b29b; box-shadow:0 8px 20px #45583c0c; }
-.loop-node:focus-visible { outline-offset:3px; }
-.loop-node strong { font-size:17px; }
-.loop-node>span:last-child { font-size:12px; }
-.feedback-line span { background:#f0f1e9; }
-.artifact-strip { margin-top:30px; padding-block:13px; }
 .intro { padding-block:74px; gap:80px; }
 h2 { text-wrap:balance; }
 .section-heading { margin-bottom:32px; }
@@ -113,8 +105,6 @@ footer>div { color:#6b785f; }
 @media(max-width:1050px) {
   .hero-authors { max-width:820px; gap:5px 16px; font-size:14px; }
   .taxonomy-explorer { grid-template-columns:220px 1fr; gap:18px; }
-  .loop-node strong { font-size:16px; }
-  .loop-node>span:last-child { font-size:11px; }
   .example-image { height:155px; }
 }
 @media(max-width:760px) {
@@ -134,12 +124,6 @@ footer>div { color:#6b785f; }
   .hero-actions { margin:23px 0 28px; }
   .hero-figure { padding:17px 15px 0; }
   .figure-topline { font-size:10px; letter-spacing:.7px; }
-  .loop { padding-top:18px; gap:10px; }
-  .loop-node { padding:14px 12px; }
-  .loop-node strong { font-size:16px; }
-  .loop-node>span:last-child { font-size:11px; line-height:1.7; display:block; }
-  .artifact-strip { font-size:11px; padding-block:13px; gap:7px; }
-  .artifact-strip i { display:none; }
   .intro { padding-block:48px; gap:22px; }
   .section-heading { margin-bottom:26px; }
   .taxonomy-section { padding-top:44px; }
@@ -236,24 +220,6 @@ footer>div { color:#6b785f; }
  .application-example button { padding:12px; }
 }
 
-/* Use matching directional glyphs for horizontal connectors and model feedback. */
-.feedback-line::after, .loop-node.tooling::after {
- content:"↑"; position:absolute; width:22px; height:22px;
- font:21px/22px Arial,Helvetica,sans-serif; text-align:center;
- color:#829079; pointer-events:none;
-}
-@media(min-width:761px) {
- .feedback-line { border-color:#829079; }
- .feedback-line::after { left:-11px; top:-2px; background:#f0f1e9; }
- .loop-node.tooling::after { display:none; }
-}
-@media(max-width:760px) {
- .loop { row-gap:22px; }
- .loop-node.tooling::after { top:-23px; left:calc(50% - 11px); }
- .feedback-line { border:0; }
- .feedback-line::after { display:none; }
-}
-
 .taxonomy-controls, .taxonomy-foot { justify-content:flex-end; }
 
 /* Every application task selects its own visual and source caption. */
@@ -264,8 +230,6 @@ footer>div { color:#6b785f; }
 .application-task[aria-selected=true] { background:var(--chip-bg); border-color:var(--chip-border); border-radius:7px; }
 .application-task:hover { background:var(--chip-bg); }
 .task-label { display:flex; justify-content:space-between; gap:10px; font-size:15px; font-weight:600; }
-.task-label>span { opacity:0; font-weight:400; color:var(--chip-ink); }
-.application-task[aria-selected=true] .task-label>span, .application-task:hover .task-label>span { opacity:1; }
 .task-description { display:block; font-size:14px; line-height:1.7; color:var(--muted); margin-top:5px; }
 .application-example { min-width:0; scroll-margin-top:90px; }
 .task-visual-heading { display:flex; justify-content:space-between; gap:14px; align-items:center; min-height:32px; margin-bottom:9px; }
