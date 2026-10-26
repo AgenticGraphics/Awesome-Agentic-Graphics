@@ -1,0 +1,17 @@
+{
+  "date": "2026-10-26",
+  "leads": [
+    {
+      "title": "DirCast: Live Esports Directing and Commentary with a Single Streaming Video-Language Model",
+      "url": "https://arxiv.org/abs/2610.31734",
+      "status": "needs_primary_read",
+      "reason": "Observed listing title; agentic scope and exact date not verified."
+    },
+    {
+      "title": "4DMemory: Benchmarking Long-Horizon Spatiotemporal Memory with Harness-Augmented Agents",
+      "url": "https://arxiv.org/abs/2610.32332",
+      "status": "needs_primary_read",
+      "reason": "Observed listing title; graphics-authoring relevance not established."
+    }
+  ]
+}

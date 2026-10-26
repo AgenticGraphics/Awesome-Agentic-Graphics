@@ -4,12 +4,12 @@
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="description" content="Advances in Agentic Computer Graphics: a unified taxonomy and an evidence-based agentic literature survey system.">
 <meta name="theme-color" content="#f6f5ef"><title>Advances in Agentic Computer Graphics</title>
-<link rel="icon" href="assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="style.css"><link rel="stylesheet" href="refinement.css"><link rel="stylesheet" href="polish.css">
-<script defer src="data.js"></script><script defer src="app.js"></script>
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="style.css"><link rel="stylesheet" href="refinement.css"><link rel="stylesheet" href="polish.css"><link rel="stylesheet" href="assets/feed.css">
+<script defer src="data.js"></script><script defer src="assets/feed-validation.js"></script><script defer src="assets/feed-loader.js"></script><script defer src="app.js"></script><script defer src="assets/feed-model.js"></script><script defer src="assets/feed-proposals.js"></script><script defer src="assets/feed-feedback.js"></script><script defer src="assets/feed-contribute.js"></script><script defer src="assets/feed.js"></script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
-<header><a class="brand" href="#"><span class="brand-mark">a<span>g</span></span><span class="brand-name">AGENTIC GRAPHICS</span></a><nav aria-label="Main navigation"><a href="#overview">Overview</a><a href="#taxonomy">Taxonomy</a><a href="#applications">Applications</a><a href="#discovery">Daily papers</a></nav><a class="nav-paper" href="assets/survey-draft.pdf" target="_blank" rel="noopener">Read the survey</a></header>
+<header><a class="brand" href="#"><span class="brand-mark">a<span>g</span></span><span class="brand-name">AGENTIC GRAPHICS</span></a><nav aria-label="Main navigation"><a href="#overview">Overview</a><a href="#taxonomy">Taxonomy</a><a href="#applications">Applications</a><a href="#discovery">Daily paper feed</a></nav><a class="nav-paper" href="assets/survey-draft.pdf" target="_blank" rel="noopener">Read the survey</a></header>
 <main id="main">
 <section class="hero wrap" id="overview">
 <h1><span class="title-lead">Advances in</span><br><span class="title-accent">Agentic</span> Computer Graphics<span class="title-period">.</span></h1>
@@ -41,14 +41,46 @@
 <div class="taxonomy-track application-track" id="application-track" tabindex="0" aria-label="Scroll through application areas"></div>
 <div class="taxonomy-controls"><div class="tax-pagination"><button class="tax-arrow" id="application-prev" aria-label="Previous application">←</button><span class="application-progress" id="application-progress" aria-live="polite" aria-atomic="true">01 / 03</span><button class="tax-arrow" id="application-next" aria-label="Next application">→</button></div></div>
 </div></section>
-<section class="discovery-section" id="discovery"><div class="wrap"><div class="section-heading"><div><span class="section-index">02 / AGENTIC LITERATURE SURVEY SYSTEM</span><h2>Automated literature<br>discovery and curation.</h2></div><p>Our system discovers relevant papers, assigns taxonomy labels grounded in source evidence, and maintains records of paper versions, annotations, and unresolved candidates for future updates. Explore the results by date below.</p></div>
-<figure class="growth"><div class="growth-head"><div class="growth-total"><strong id="growth-total"></strong><span>papers and counting</span></div><span class="growth-live" id="growth-live" hidden><span class="live-dot"></span><span></span></span></div><div class="growth-chart" id="growth-chart"></div><figcaption>Cumulative papers in our collected corpus (survey Fig. 2a), extended by new papers from the daily feed.</figcaption></figure>
-<ol class="pipeline"><li><span>01</span><div><strong>Discover</strong><p>Search sources, reconcile versions,<br>and prioritize candidates.</p></div></li><li><span>02</span><div><strong>Read & annotate</strong><p>Check scope and assign labels<br>with supporting evidence.</p></div></li><li><span>03</span><div><strong>Curate</strong><p>Validate records and retain<br>knowledge for the next run.</p></div></li></ol>
-<div class="results-shell"><div class="results-heading"><div><span class="live-dot"></span><strong>Daily search results</strong><span class="year-label">OCTOBER 2026 · DATE-TARGETED RERUNS</span></div><a class="text-link" id="data-download" href="data/daily-results.json" download>Download data</a></div><div class="date-tabs" id="date-tabs" role="tablist" aria-label="Daily search dates"></div><div id="results-panel" role="tabpanel" tabindex="0"></div></div>
+<section class="discovery-section" id="discovery"><div class="wrap">
+<div class="section-heading feed-heading"><div><span class="section-index">02 / AGENTIC LITERATURE SURVEY SYSTEM</span><h2>Daily paper feed.</h2><p>Discover graphics papers, explore their taxonomy, and follow new work.</p></div><a class="text-link" href="https://github.com/AgenticGraphics/Awesome-Agentic-Graphics/tree/main/agentic-literature-system" target="_blank" rel="noopener">Use the system ↗</a></div>
+<div class="feed-shell" id="paper-feed"><aside class="feed-sidebar" aria-label="Report dates"><div id="feed-calendar"></div><div class="feed-calendar-key"><span></span> Search available</div><button class="feed-all-dates" id="feed-all-dates" aria-pressed="false">Browse all dates</button><details class="feed-contribute"><summary>Help improve the feed</summary><p>Use “Suggest a correction” on a paper to propose changes. Our team checks the evidence before updating the feed.</p><button class="feed-feedback-link" data-feedback>Share feedback</button><a href="data/contributing.md" target="_blank">Contribution guide</a></details></aside>
+<div class="feed-main"><div class="feed-date-heading"><div><span class="feed-eyebrow">SEARCH RESULTS</span><h3 id="feed-date-title">Loading papers…</h3></div><label class="feed-search"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg><input id="feed-search" type="search" placeholder="Search papers…" aria-label="Search papers"></label></div>
+<p id="feed-date-note" class="feed-date-note"></p>
+<div class="feed-filters" id="feed-filters" aria-label="Filter papers by taxonomy"></div>
+<div class="feed-active" id="feed-active" aria-label="Active filters"></div>
+<div class="feed-result-line"><p id="feed-result-count" role="status" aria-live="polite" aria-atomic="true"></p><label>Show <select id="feed-event" aria-label="Filter by paper event"><option value="all">All papers</option><option value="new">New submissions</option><option value="update">Revisions</option><option value="catchup">Earlier papers</option></select></label></div>
+<div id="feed-papers"></div><div id="feed-run-details"></div>
+</div></div>
+<figure class="growth"><div class="growth-head"><div class="growth-total"><strong id="growth-total"></strong><span>papers and counting</span></div><span class="growth-live" id="growth-live" hidden><span class="live-dot"></span><span></span></span></div><div class="growth-chart" id="growth-chart"></div><figcaption>Cumulative papers in our collected corpus (survey Fig. 2a), extended by new papers from the daily feed.</figcaption></figure><div class="feed-system-links"><span>Build on the workflow</span><a href="https://github.com/AgenticGraphics/Awesome-Agentic-Graphics/tree/main/agentic-literature-system/skill" target="_blank" rel="noopener">Skill ↗</a><a href="https://github.com/AgenticGraphics/Awesome-Agentic-Graphics/tree/main/agentic-literature-system/harness" target="_blank" rel="noopener">Harness ↗</a><a href="data/daily-results.json" download>Download data ↓</a></div>
 </div></section>
 
 <footer class="wrap"><a href="#" class="footer-title">Agentic Graphics</a><div>Advances in Agentic Computer Graphics · 2026</div></footer>
 </main>
+<dialog id="feedback-dialog" class="feedback-dialog" aria-labelledby="feedback-title" aria-describedby="feedback-description">
+<div class="feedback-top"><span class="feed-eyebrow">COMMUNITY FEEDBACK</span><button type="button" class="feedback-close" aria-label="Close feedback">×</button></div>
+<h2 id="feedback-title">Help improve the feed.</h2>
+<p id="feedback-description">Describe a correction or share a suggestion. Our team reviews every proposed change.</p>
+<ol class="correction-steps" aria-label="Correction process"><li><span>1</span> Your suggestion</li><li><span>2</span> Automatic PR</li><li><span>3</span> Human review</li></ol>
+<p id="feedback-context" class="feedback-context"></p>
+<form id="feedback-form">
+<label>Suggestion type<select id="feedback-type"><option value="correction">Correct paper information</option><option value="feedback">General feedback</option></select></label>
+<div id="correction-fields">
+<label>What needs correcting?<select id="correction-field"></select></label>
+<div class="correction-current"><span>Current value</span><p id="correction-current-value"></p></div>
+<div id="correction-value"></div>
+<label class="correction-all-dates" id="correction-all-wrap" hidden><input type="checkbox" id="correction-all"><span id="correction-all-label"></span></label>
+</div>
+<label><span id="feedback-message-label">Why is this change needed?</span><textarea id="feedback-message" required maxlength="1200" rows="3" placeholder="Explain the correction and what the paper says."></textarea></label>
+<div class="feedback-evidence-grid"><label>Evidence URL <span id="feedback-evidence-optional" hidden>(optional)</span><input id="feedback-evidence" type="url" maxlength="500" placeholder="https://arxiv.org/abs/…"></label><label id="feedback-locator-label">Section, page or figure<input id="feedback-locator" maxlength="200" placeholder="Section 3.2, page 5"></label></div>
+<p class="feedback-hint">Confirm your suggestion on GitHub. Once automation is enabled, a valid correction creates a pull request for our team to review. The feed changes only after a maintainer merges it.</p>
+<p id="feedback-error" role="alert"></p>
+<div class="feedback-actions"><button class="button primary" type="submit">Review suggestion</button><button type="button" class="feedback-cancel">Cancel</button></div>
+<section id="feedback-review" tabindex="-1" class="feedback-review" aria-label="Review your suggestion" hidden>
+<h3>Ready for review</h3><div id="feedback-review-summary"></div><p id="feedback-next-step"></p>
+<div class="feedback-review-actions"><button type="button" id="feedback-copy" class="button secondary" hidden>Copy suggestion</button><a id="feedback-draft" class="button primary" target="_blank" rel="noopener noreferrer">Continue on GitHub ↗</a></div>
+<p id="feedback-copy-status" role="status"></p><textarea id="feedback-copy-fallback" readonly aria-label="Prepared suggestion to copy" hidden></textarea>
+</section>
+</form></dialog>
 <dialog id="image-dialog"><button class="dialog-close" aria-label="Close figure">×</button><img id="dialog-image" alt=""><p id="dialog-caption"></p></dialog>
 <noscript><p class="wrap">Enable JavaScript to explore the taxonomy and dated reports. The <a href="assets/survey-draft.pdf">survey PDF</a> remains available.</p></noscript>
 </body></html>

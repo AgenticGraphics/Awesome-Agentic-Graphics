@@ -1,0 +1,852 @@
+{
+  "target_date": "2026-10-26",
+  "timezone": "America/Chicago",
+  "as_of": "2026-10-26T15:59:56-05:00",
+  "window_start": "2026-10-26T00:00:00-05:00",
+  "window_end": "2026-10-26T15:59:56-05:00",
+  "taxonomy_version": "google-doc-taxonomy-v3-2026-10-11",
+  "source_snapshot": {
+    "retrieved_date": "2026-10-11",
+    "status": "source_changed_not_reconciled",
+    "fields": 18
+  },
+  "snapshot_status": "source_changed_not_reconciled",
+  "budget": {
+    "minutes": 6,
+    "search_batches": 10,
+    "primary_opens": 24
+  },
+  "counts": {
+    "search_batches": 5,
+    "search_queries": 20,
+    "primary_opens": 24,
+    "screened": 3,
+    "retained": 2
+  },
+  "source_ledger": [
+    {
+      "family": "arxiv",
+      "status": "partial",
+      "checks": [
+        {
+          "query_or_url": "https://arxiv.org/abs/2610.29014",
+          "checked_at": null,
+          "time_basis": "recorded_only",
+          "recorded_at": "2026-10-26T16:01:50-05:00",
+          "outcome": "Opened in the live research pass; candidate dates and selected method evidence recorded separately."
+        },
+        {
+          "query_or_url": "https://arxiv.org/abs/2610.31803",
+          "checked_at": null,
+          "time_basis": "recorded_only",
+          "recorded_at": "2026-10-26T16:01:50-05:00",
+          "outcome": "Opened in the live research pass; candidate dates and selected method evidence recorded separately."
+        },
+        {
+          "query_or_url": "https://arxiv.org/abs/2610.32978",
+          "checked_at": null,
+          "time_basis": "recorded_only",
+          "recorded_at": "2026-10-26T16:01:50-05:00",
+          "outcome": "Opened in the live research pass; candidate dates and selected method evidence recorded separately."
+        },
+        {
+          "query_or_url": "https://arxiv.org/html/2610.29014v2",
+          "checked_at": null,
+          "time_basis": "recorded_only",
+          "recorded_at": "2026-10-26T16:01:50-05:00",
+          "outcome": "Opened in the live research pass; candidate dates and selected method evidence recorded separately."
+        },
+        {
+          "query_or_url": "https://arxiv.org/list/cs.AI/new",
+          "checked_at": null,
+          "time_basis": "recorded_only",
+          "recorded_at": "2026-10-26T16:01:50-05:00",
+          "outcome": "Opened in the live research pass; candidate dates and selected method evidence recorded separately."
+        },
+        {
+          "query_or_url": "https://arxiv.org/list/cs.CV/recent",
+          "checked_at": null,
+          "time_basis": "recorded_only",
+          "recorded_at": "2026-10-26T16:01:50-05:00",
+          "outcome": "Opened in the live research pass; candidate dates and selected method evidence recorded separately."
+        },
+        {
+          "query_or_url": "https://arxiv.org/list/cs.CV/recent?show=50&skip=100",
+          "checked_at": null,
+          "time_basis": "recorded_only",
+          "recorded_at": "2026-10-26T16:01:50-05:00",
+          "outcome": "Opened in the live research pass; candidate dates and selected method evidence recorded separately."
+        },
+        {
+          "query_or_url": "https://arxiv.org/list/cs.CV/recent?show=50&skip=50",
+          "checked_at": null,
+          "time_basis": "recorded_only",
+          "recorded_at": "2026-10-26T16:01:50-05:00",
+          "outcome": "Opened in the live research pass; candidate dates and selected method evidence recorded separately."
+        },
+        {
+          "query_or_url": "https://arxiv.org/list/cs.GR/new",
+          "checked_at": null,
+          "time_basis": "recorded_only",
+          "recorded_at": "2026-10-26T16:01:50-05:00",
+          "outcome": "Opened in the live research pass; candidate dates and selected method evidence recorded separately."
+        },
+        {
+          "query_or_url": "https://arxiv.org/list/cs.HC/new",
+          "checked_at": null,
+          "time_basis": "recorded_only",
+          "recorded_at": "2026-10-26T16:01:50-05:00",
+          "outcome": "Opened in the live research pass; candidate dates and selected method evidence recorded separately."
+        }
+      ],
+      "limitations": "Selective listing and method inspection; exact tool calls preserved in retrieval-ledger.json."
+    },
+    {
+      "family": "hugging_face",
+      "status": "failed",
+      "checks": [
+        {
+          "query_or_url": "https://huggingface.co/papers/date/2026-10-26",
+          "checked_at": null,
+          "time_basis": "recorded_only",
+          "recorded_at": "2026-10-26T16:01:50-05:00",
+          "outcome": "Target-date page inaccessible on initial attempt and one retry."
+        }
+      ],
+      "limitations": "Daily curation unavailable; related indexed pages do not substitute for target-day coverage."
+    },
+    {
+      "family": "openreview",
+      "status": "partial",
+      "checks": [
+        {
+          "query_or_url": "site:openreview.net agent graphics CAD 2026",
+          "checked_at": null,
+          "time_basis": "recorded_only",
+          "recorded_at": "2026-10-26T16:01:50-05:00",
+          "outcome": "Indexed search; no target-day event verified."
+        }
+      ],
+      "limitations": "No full forum traversal."
+    },
+    {
+      "family": "official_venues",
+      "status": "partial",
+      "checks": [
+        {
+          "query_or_url": "site:dl.acm.org agent graphics 2026",
+          "checked_at": null,
+          "time_basis": "recorded_only",
+          "recorded_at": "2026-10-26T16:01:50-05:00",
+          "outcome": "Indexed search; no target-day event verified."
+        },
+        {
+          "query_or_url": "site:openaccess.thecvf.com agent CAD feedback 2026",
+          "checked_at": null,
+          "time_basis": "recorded_only",
+          "recorded_at": "2026-10-26T16:01:50-05:00",
+          "outcome": "Indexed search; no target-day event verified."
+        }
+      ],
+      "limitations": "No full proceedings traversal."
+    },
+    {
+      "family": "project_author_lab",
+      "status": "partial",
+      "checks": [
+        {
+          "query_or_url": "https://github.com/Tinaliu0123/scenebloom",
+          "checked_at": null,
+          "time_basis": "recorded_only",
+          "recorded_at": "2026-10-26T16:01:50-05:00",
+          "outcome": "Official repository reached from the paper; not used to establish submission timing."
+        }
+      ],
+      "limitations": "Only the selected official repository inspected."
+    }
+  ],
+  "query_coverage": [
+    {
+      "family": "2d",
+      "status": "partial",
+      "checks": [
+        {
+          "query_or_url": "agent graphics CAD SVG visualization \"October 26, 2026\"",
+          "checked_at": null,
+          "time_basis": "recorded_only",
+          "recorded_at": "2026-10-26T16:01:50-05:00",
+          "outcome": "Executed live search; returned leads and failures preserved in retrieval-ledger.json."
+        },
+        {
+          "query_or_url": "site:arxiv.org \"agent\" \"2610\" \"SVG\"",
+          "checked_at": null,
+          "time_basis": "recorded_only",
+          "recorded_at": "2026-10-26T16:01:50-05:00",
+          "outcome": "Executed live search; returned leads and failures preserved in retrieval-ledger.json."
+        },
+        {
+          "query_or_url": "agent SVG diagram poster visual feedback October 2026",
+          "checked_at": null,
+          "time_basis": "recorded_only",
+          "recorded_at": "2026-10-26T16:01:50-05:00",
+          "outcome": "Executed live search; returned leads and failures preserved in retrieval-ledger.json."
+        },
+        {
+          "query_or_url": "agent scientific figure diagram slides October 2026 arxiv",
+          "checked_at": null,
+          "time_basis": "recorded_only",
+          "recorded_at": "2026-10-26T16:01:50-05:00",
+          "outcome": "Executed live search; returned leads and failures preserved in retrieval-ledger.json."
+        },
+        {
+          "query_or_url": "\"agent\" \"SVG\" \"Oct 26\" \"2026\" paper",
+          "checked_at": null,
+          "time_basis": "recorded_only",
+          "recorded_at": "2026-10-26T16:01:50-05:00",
+          "outcome": "Executed live search; returned leads and failures preserved in retrieval-ledger.json."
+        }
+      ]
+    },
+    {
+      "family": "object",
+      "status": "partial",
+      "checks": [
+        {
+          "query_or_url": "agent 3D object Blender material generation October 2026",
+          "checked_at": null,
+          "time_basis": "recorded_only",
+          "recorded_at": "2026-10-26T16:01:50-05:00",
+          "outcome": "Executed live search; returned leads and failures preserved in retrieval-ledger.json."
+        }
+      ]
+    },
+    {
+      "family": "cad",
+      "status": "partial",
+      "checks": [
+        {
+          "query_or_url": "agent graphics CAD SVG visualization \"October 26, 2026\"",
+          "checked_at": null,
+          "time_basis": "recorded_only",
+          "recorded_at": "2026-10-26T16:01:50-05:00",
+          "outcome": "Executed live search; returned leads and failures preserved in retrieval-ledger.json."
+        },
+        {
+          "query_or_url": "site:openreview.net agent graphics CAD 2026",
+          "checked_at": null,
+          "time_basis": "recorded_only",
+          "recorded_at": "2026-10-26T16:01:50-05:00",
+          "outcome": "Executed live search; returned leads and failures preserved in retrieval-ledger.json."
+        },
+        {
+          "query_or_url": "site:arxiv.org \"agent\" \"2610\" \"CAD\"",
+          "checked_at": null,
+          "time_basis": "recorded_only",
+          "recorded_at": "2026-10-26T16:01:50-05:00",
+          "outcome": "Executed live search; returned leads and failures preserved in retrieval-ledger.json."
+        },
+        {
+          "query_or_url": "site:openaccess.thecvf.com agent CAD feedback 2026",
+          "checked_at": null,
+          "time_basis": "recorded_only",
+          "recorded_at": "2026-10-26T16:01:50-05:00",
+          "outcome": "Executed live search; returned leads and failures preserved in retrieval-ledger.json."
+        },
+        {
+          "query_or_url": "\"agent\" \"CAD\" \"Oct 26\" \"2026\" paper",
+          "checked_at": null,
+          "time_basis": "recorded_only",
+          "recorded_at": "2026-10-26T16:01:50-05:00",
+          "outcome": "Executed live search; returned leads and failures preserved in retrieval-ledger.json."
+        }
+      ]
+    },
+    {
+      "family": "scene",
+      "status": "partial",
+      "checks": [
+        {
+          "query_or_url": "site:arxiv.org \"agent\" \"2610\" \"scene\"",
+          "checked_at": null,
+          "time_basis": "recorded_only",
+          "recorded_at": "2026-10-26T16:01:50-05:00",
+          "outcome": "Executed live search; returned leads and failures preserved in retrieval-ledger.json."
+        },
+        {
+          "query_or_url": "\"SceneBloom\" project",
+          "checked_at": null,
+          "time_basis": "recorded_only",
+          "recorded_at": "2026-10-26T16:01:50-05:00",
+          "outcome": "Executed live search; returned leads and failures preserved in retrieval-ledger.json."
+        }
+      ]
+    },
+    {
+      "family": "articulation",
+      "status": "partial",
+      "checks": [
+        {
+          "query_or_url": "agent articulated asset joint rig simulation October 2026",
+          "checked_at": null,
+          "time_basis": "recorded_only",
+          "recorded_at": "2026-10-26T16:01:50-05:00",
+          "outcome": "Executed live search; returned leads and failures preserved in retrieval-ledger.json."
+        }
+      ]
+    },
+    {
+      "family": "animation",
+      "status": "partial",
+      "checks": [
+        {
+          "query_or_url": "site:arxiv.org agent graphics simulation animation 2610",
+          "checked_at": null,
+          "time_basis": "recorded_only",
+          "recorded_at": "2026-10-26T16:01:50-05:00",
+          "outcome": "Executed live search; returned leads and failures preserved in retrieval-ledger.json."
+        },
+        {
+          "query_or_url": "site:arxiv.org \"agent\" \"2610\" \"animation\"",
+          "checked_at": null,
+          "time_basis": "recorded_only",
+          "recorded_at": "2026-10-26T16:01:50-05:00",
+          "outcome": "Executed live search; returned leads and failures preserved in retrieval-ledger.json."
+        }
+      ]
+    },
+    {
+      "family": "simulation",
+      "status": "partial",
+      "checks": [
+        {
+          "query_or_url": "site:arxiv.org agent graphics simulation animation 2610",
+          "checked_at": null,
+          "time_basis": "recorded_only",
+          "recorded_at": "2026-10-26T16:01:50-05:00",
+          "outcome": "Executed live search; returned leads and failures preserved in retrieval-ledger.json."
+        },
+        {
+          "query_or_url": "agent articulated asset joint rig simulation October 2026",
+          "checked_at": null,
+          "time_basis": "recorded_only",
+          "recorded_at": "2026-10-26T16:01:50-05:00",
+          "outcome": "Executed live search; returned leads and failures preserved in retrieval-ledger.json."
+        },
+        {
+          "query_or_url": "agent physical simulation particle effects October 2026 paper",
+          "checked_at": null,
+          "time_basis": "recorded_only",
+          "recorded_at": "2026-10-26T16:01:50-05:00",
+          "outcome": "Executed live search; returned leads and failures preserved in retrieval-ledger.json."
+        }
+      ]
+    },
+    {
+      "family": "benchmark",
+      "status": "partial",
+      "checks": [
+        {
+          "query_or_url": "graphics agent memory replanning benchmark October 2026 paper",
+          "checked_at": null,
+          "time_basis": "recorded_only",
+          "recorded_at": "2026-10-26T16:01:50-05:00",
+          "outcome": "Executed live search; returned leads and failures preserved in retrieval-ledger.json."
+        }
+      ]
+    },
+    {
+      "family": "harness",
+      "status": "partial",
+      "checks": [
+        {
+          "query_or_url": "graphics agent memory replanning benchmark October 2026 paper",
+          "checked_at": null,
+          "time_basis": "recorded_only",
+          "recorded_at": "2026-10-26T16:01:50-05:00",
+          "outcome": "Executed live search; returned leads and failures preserved in retrieval-ledger.json."
+        }
+      ]
+    }
+  ],
+  "coverage_limits": [
+    "Bounded live search on October 26, 2026. No qualifying same-day submission or revision was verified in the browsed source set; two newly discovered earlier papers are retained separately.",
+    "arXiv new/recent pages for cs.GR, cs.CV, cs.HC and cs.AI were inspected selectively. Three CV pages were opened, not every abstract was read. cs.RO, cs.MM and eess.IV were not separately enumerated.",
+    "Hugging Face target-date page failed twice. OpenReview and official venues were searched through the web index only. These checks cannot establish complete coverage.",
+    "Same-day submission timestamps differ from public listing dates. Both retained papers have primary-source submission dates before October 26.",
+    "The live source document revision differs from the pinned October 11 research codebook; classifications deliberately use the pinned 18 fields and are not silently aligned to the newer manuscript.",
+    "The installed skill workflow and its offline prepare/finalize scripts ran with live browser retrieval. This is not a separate API harness benchmark run.",
+    "Two candidates received selected primary-method reading, one was excluded from its abstract. General graphics-model and product-release leads were not treated as agent papers.",
+    "Publication indexes may lag. Unread leads remain in pending-queue.json; no field-wide completeness is claimed."
+  ],
+  "papers": [
+    {
+      "canonical_title": "SceneBloom: Agentic Indoor Environment Generation with Realistic and Diverse Layouts for Embodied Learning",
+      "authors": [
+        "Yuhan Liu",
+        "Lianhui Qin",
+        "Shenji Wan"
+      ],
+      "identifiers": {
+        "arxiv": "2610.32978"
+      },
+      "canonical_urls": [
+        "https://arxiv.org/abs/2610.32978"
+      ],
+      "abstract": "Combines VLM zone planning, diffusion-based furniture layouts, and geometric compilation to create simulation-ready indoor scenes.",
+      "abstract_kind": "paraphrased_summary",
+      "source_records": [
+        {
+          "family": "arxiv",
+          "url": "https://arxiv.org/abs/2610.32978",
+          "discovery_url": "https://arxiv.org/list/cs.CV/recent"
+        }
+      ],
+      "events": [
+        {
+          "type": "first_submission",
+          "value": "2026-10-23T17:59:21+00:00",
+          "precision": "timestamp",
+          "timezone": "UTC",
+          "primary_url": "https://arxiv.org/abs/2610.32978",
+          "authority": "primary",
+          "evidence": "arXiv submission history: v1, 2026-10-23T17:59:21+00:00.",
+          "version": "v1",
+          "prior_event_status": "not_seen_in_supplied_history"
+        }
+      ],
+      "screening_status": "scope_dependent",
+      "screening_reason": "Relevant scene authoring; the inspected repair stage uses fixed geometric operators rather than an established feedback-driven model revision loop.",
+      "screening_evidence": [
+        {
+          "primary_url": "https://arxiv.org/pdf/2610.32978",
+          "locator": "Section 3, pp. 3–5",
+          "evidence": "A VLM plans zones and extracts relations. Geometry fitting and relation-specific local corrections produce the scene."
+        }
+      ],
+      "confidence": "Medium",
+      "application_families": [
+        "Static / Scene"
+      ],
+      "operations": [
+        "Generation"
+      ],
+      "contribution": "Combines VLM zone planning, diffusion-based furniture layouts, and geometric compilation to create simulation-ready indoor scenes.",
+      "limitations": "Scope needs review. Simulation-ready geometry alone is not dynamic authoring.",
+      "taxonomy_cells": {
+        "task": [
+          "Modeling"
+        ],
+        "input_form": [
+          "Language"
+        ],
+        "output": [
+          "Graphics Artifact"
+        ],
+        "model_type": [
+          "VLM"
+        ],
+        "model_training": [
+          "Not Reported"
+        ],
+        "planning": [
+          "Not Reported"
+        ],
+        "workflow": [
+          "Not Reported"
+        ],
+        "update_strategy": [
+          "Not Reported"
+        ],
+        "verifier": [
+          "Not Reported"
+        ],
+        "feedback_assessment": [
+          "Not Reported"
+        ],
+        "feedback_observation": [
+          "Not Reported"
+        ],
+        "memory_time": [
+          "Not Reported"
+        ],
+        "memory_reach": [
+          "Not Reported"
+        ],
+        "action_type": [
+          "Not Reported"
+        ],
+        "graphics_software": [
+          "Not Reported"
+        ],
+        "tools": [
+          "Not Reported"
+        ],
+        "resources": [
+          "Not Reported"
+        ],
+        "representation": [
+          "Geometry",
+          "Layouts"
+        ]
+      },
+      "field_evidence": {
+        "task": {
+          "primary_url": "https://arxiv.org/pdf/2610.32978",
+          "locator": "Section 3, pp. 3–5",
+          "evidence": "A VLM plans zones and extracts relations. Geometry fitting and relation-specific local corrections produce the scene.",
+          "level": "derived",
+          "reasoning": "Mapping of the inspected method to the pinned research codebook; not a new empirical result."
+        },
+        "input_form": {
+          "primary_url": "https://arxiv.org/pdf/2610.32978",
+          "locator": "Section 3, pp. 3–5",
+          "evidence": "A VLM plans zones and extracts relations. Geometry fitting and relation-specific local corrections produce the scene.",
+          "level": "derived",
+          "reasoning": "Mapping of the inspected method to the pinned research codebook; not a new empirical result."
+        },
+        "output": {
+          "primary_url": "https://arxiv.org/pdf/2610.32978",
+          "locator": "Section 3, pp. 3–5",
+          "evidence": "A VLM plans zones and extracts relations. Geometry fitting and relation-specific local corrections produce the scene.",
+          "level": "derived",
+          "reasoning": "Mapping of the inspected method to the pinned research codebook; not a new empirical result."
+        },
+        "model_type": {
+          "primary_url": "https://arxiv.org/pdf/2610.32978",
+          "locator": "Section 3, pp. 3–5",
+          "evidence": "A VLM plans zones and extracts relations. Geometry fitting and relation-specific local corrections produce the scene.",
+          "level": "derived",
+          "reasoning": "Mapping of the inspected method to the pinned research codebook; not a new empirical result."
+        },
+        "representation": {
+          "primary_url": "https://arxiv.org/pdf/2610.32978",
+          "locator": "Section 3, pp. 3–5",
+          "evidence": "A VLM plans zones and extracts relations. Geometry fitting and relation-specific local corrections produce the scene.",
+          "level": "derived",
+          "reasoning": "Mapping of the inspected method to the pinned research codebook; not a new empirical result."
+        }
+      },
+      "taxonomy_delta": [],
+      "reading_level": "abstract_and_selected_method_passages",
+      "known_corpus_status": "new_relative_to_snapshot",
+      "report_bucket": "late_discovery"
+    },
+    {
+      "canonical_title": "GenXR-Bench: Benchmarking Coding Agents for Interactive XR Development",
+      "authors": [
+        "William Huang",
+        "David Li",
+        "Xiang 'Anthony' Chen",
+        "Xun Qian",
+        "Nels Numan",
+        "Zhongyi Zhou",
+        "Hyunsung Cho",
+        "Salman Muin Kayser Chishti",
+        "Ding Xia",
+        "Xincheng Huang",
+        "Jiahao Ren",
+        "Faraz Faruqi",
+        "Tianyu Xu",
+        "Yang Zhang",
+        "David Kim",
+        "Ruofei Du"
+      ],
+      "identifiers": {
+        "arxiv": "2610.29014"
+      },
+      "canonical_urls": [
+        "https://arxiv.org/abs/2610.29014"
+      ],
+      "abstract": "Tests coding agents on 112 XR development tasks, including application creation and repairs, with simulated interactions and visual or programmatic checks.",
+      "abstract_kind": "paraphrased_summary",
+      "source_records": [
+        {
+          "family": "arxiv",
+          "url": "https://arxiv.org/abs/2610.29014",
+          "discovery_url": "https://arxiv.org/list/cs.AI/new"
+        }
+      ],
+      "events": [
+        {
+          "type": "first_submission",
+          "value": "2026-10-21T00:28:16+00:00",
+          "precision": "timestamp",
+          "timezone": "UTC",
+          "primary_url": "https://arxiv.org/abs/2610.29014",
+          "authority": "primary",
+          "evidence": "arXiv submission history: v1, 2026-10-21T00:28:16+00:00.",
+          "version": "v1",
+          "prior_event_status": "not_seen_in_supplied_history"
+        },
+        {
+          "type": "revision",
+          "value": "2026-10-22T18:09:19+00:00",
+          "precision": "timestamp",
+          "timezone": "UTC",
+          "primary_url": "https://arxiv.org/abs/2610.29014",
+          "authority": "primary",
+          "evidence": "arXiv submission history: v2, 2026-10-22T18:09:19+00:00.",
+          "version": "v2",
+          "prior_event_status": "not_seen_in_supplied_history"
+        }
+      ],
+      "screening_status": "enabling_or_adjacent",
+      "screening_reason": "An evaluation benchmark for interactive XR authoring, not one graphics-generation method.",
+      "screening_evidence": [
+        {
+          "primary_url": "https://arxiv.org/html/2610.29014v2",
+          "locator": "Sections 3.1–3.4",
+          "evidence": "Tasks supply instructions, editable XR Blocks projects, assets and documentation; a separate held-out suite evaluates behavior."
+        }
+      ],
+      "confidence": "Medium",
+      "application_families": [
+        "Datasets and Benchmarks",
+        "Cross-category"
+      ],
+      "operations": [
+        "Generation",
+        "Editing",
+        "Auditing"
+      ],
+      "contribution": "Tests coding agents on 112 XR development tasks, including application creation and repairs, with simulated interactions and visual or programmatic checks.",
+      "limitations": "Held-out evaluation checks must not be mistaken for feedback available to the coding agent.",
+      "taxonomy_cells": {
+        "task": [
+          "Not Reported"
+        ],
+        "input_form": [
+          "Language"
+        ],
+        "output": [
+          "Program"
+        ],
+        "model_type": [
+          "Not Reported"
+        ],
+        "model_training": [
+          "Not Reported"
+        ],
+        "planning": [
+          "Not Reported"
+        ],
+        "workflow": [
+          "Not Reported"
+        ],
+        "update_strategy": [
+          "Not Reported"
+        ],
+        "verifier": [
+          "Not Reported"
+        ],
+        "feedback_assessment": [
+          "Not Reported"
+        ],
+        "feedback_observation": [
+          "Not Reported"
+        ],
+        "memory_time": [
+          "Not Reported"
+        ],
+        "memory_reach": [
+          "Not Reported"
+        ],
+        "action_type": [
+          "Code/Script"
+        ],
+        "graphics_software": [
+          "Not Reported"
+        ],
+        "tools": [
+          "Not Reported"
+        ],
+        "resources": [
+          "Assets",
+          "Documentation & Rules"
+        ],
+        "representation": [
+          "Code"
+        ]
+      },
+      "field_evidence": {
+        "input_form": {
+          "primary_url": "https://arxiv.org/html/2610.29014v2",
+          "locator": "Sections 3.1–3.4",
+          "evidence": "Tasks supply instructions, editable XR Blocks projects, assets and documentation; a separate held-out suite evaluates behavior.",
+          "level": "derived",
+          "reasoning": "Mapping of the inspected method to the pinned research codebook; not a new empirical result."
+        },
+        "output": {
+          "primary_url": "https://arxiv.org/html/2610.29014v2",
+          "locator": "Sections 3.1–3.4",
+          "evidence": "Tasks supply instructions, editable XR Blocks projects, assets and documentation; a separate held-out suite evaluates behavior.",
+          "level": "derived",
+          "reasoning": "Mapping of the inspected method to the pinned research codebook; not a new empirical result."
+        },
+        "action_type": {
+          "primary_url": "https://arxiv.org/html/2610.29014v2",
+          "locator": "Sections 3.1–3.4",
+          "evidence": "Tasks supply instructions, editable XR Blocks projects, assets and documentation; a separate held-out suite evaluates behavior.",
+          "level": "derived",
+          "reasoning": "Mapping of the inspected method to the pinned research codebook; not a new empirical result."
+        },
+        "representation": {
+          "primary_url": "https://arxiv.org/html/2610.29014v2",
+          "locator": "Sections 3.1–3.4",
+          "evidence": "Tasks supply instructions, editable XR Blocks projects, assets and documentation; a separate held-out suite evaluates behavior.",
+          "level": "derived",
+          "reasoning": "Mapping of the inspected method to the pinned research codebook; not a new empirical result."
+        },
+        "resources": {
+          "primary_url": "https://arxiv.org/html/2610.29014v2",
+          "locator": "Sections 3.1–3.4",
+          "evidence": "Tasks supply instructions, editable XR Blocks projects, assets and documentation; a separate held-out suite evaluates behavior.",
+          "level": "derived",
+          "reasoning": "Mapping of the inspected method to the pinned research codebook; not a new empirical result."
+        }
+      },
+      "taxonomy_delta": [
+        {
+          "concept": "Interactive XR applications",
+          "note": "XR interaction authoring is not fully represented by the pinned task labels; task remains Not Reported."
+        }
+      ],
+      "reading_level": "abstract_and_selected_method_passages",
+      "known_corpus_status": "new_relative_to_snapshot",
+      "report_bucket": "late_discovery"
+    },
+    {
+      "canonical_title": "StackGen3D: Stable 3D Block Stack Generation from Multiview Silhouettes",
+      "authors": [
+        "Xiaopeng Zhang",
+        "Luzhe Sun",
+        "Yiqing Xu",
+        "Matthew R. Walter"
+      ],
+      "identifiers": {
+        "arxiv": "2610.31803"
+      },
+      "canonical_urls": [
+        "https://arxiv.org/abs/2610.31803"
+      ],
+      "abstract": "Generates stable block arrangements with a learned stability predictor and conditional flow matching.",
+      "abstract_kind": "paraphrased_summary",
+      "source_records": [
+        {
+          "family": "arxiv",
+          "url": "https://arxiv.org/abs/2610.31803",
+          "discovery_url": "https://arxiv.org/list/cs.CV/recent"
+        }
+      ],
+      "events": [
+        {
+          "type": "first_submission",
+          "value": "2026-10-22T18:41:21+00:00",
+          "precision": "timestamp",
+          "timezone": "UTC",
+          "primary_url": "https://arxiv.org/abs/2610.31803",
+          "authority": "primary",
+          "evidence": "arXiv submission history: v1, 2026-10-22T18:41:21+00:00.",
+          "version": "v1",
+          "prior_event_status": "not_seen_in_supplied_history"
+        }
+      ],
+      "screening_status": "excluded",
+      "screening_reason": "The abstract describes a generative model with geometric refinement, not a language-model agent directing graphics actions.",
+      "screening_evidence": [
+        {
+          "primary_url": "https://arxiv.org/abs/2610.31803",
+          "locator": "Abstract",
+          "evidence": "PI-GNN curates stable examples, and flow matching generates block configurations."
+        }
+      ],
+      "confidence": "Medium",
+      "application_families": [
+        "Static / Object"
+      ],
+      "operations": [
+        "Generation"
+      ],
+      "contribution": "Generates stable block arrangements with a learned stability predictor and conditional flow matching.",
+      "limitations": "Abstract-level exclusion; no full-paper review.",
+      "taxonomy_cells": {
+        "task": [
+          "Not Reported"
+        ],
+        "input_form": [
+          "Not Reported"
+        ],
+        "output": [
+          "Not Reported"
+        ],
+        "model_type": [
+          "Not Reported"
+        ],
+        "model_training": [
+          "Not Reported"
+        ],
+        "planning": [
+          "Not Reported"
+        ],
+        "workflow": [
+          "Not Reported"
+        ],
+        "update_strategy": [
+          "Not Reported"
+        ],
+        "verifier": [
+          "Not Reported"
+        ],
+        "feedback_assessment": [
+          "Not Reported"
+        ],
+        "feedback_observation": [
+          "Not Reported"
+        ],
+        "memory_time": [
+          "Not Reported"
+        ],
+        "memory_reach": [
+          "Not Reported"
+        ],
+        "action_type": [
+          "Not Reported"
+        ],
+        "graphics_software": [
+          "Not Reported"
+        ],
+        "tools": [
+          "Not Reported"
+        ],
+        "resources": [
+          "Not Reported"
+        ],
+        "representation": [
+          "Not Reported"
+        ]
+      },
+      "field_evidence": {},
+      "taxonomy_delta": [],
+      "reading_level": "abstract_only",
+      "known_corpus_status": "new_relative_to_snapshot",
+      "report_bucket": "excluded"
+    }
+  ],
+  "execution_mode": "portable_skill_browser_daily_pass",
+  "retrieved_at": "2026-10-26T16:01:50-05:00",
+  "history_comparison": {
+    "files": [
+      "2026-10-20/run.json",
+      "2026-10-21/run.json",
+      "2026-10-22/run.json",
+      "2026-10-23/run.json"
+    ],
+    "status": "compared"
+  },
+  "input_hashes": {
+    "taxonomy-codebook.json": "5212eb0f8e6f55ca3930633933b811995ac5397e6554f127f892b35d39969dbd",
+    "paper-corpus.json": "f0ffdda59f889dc680b9d8ed138d1b6467999cc50ab86485d078e70de40b899a",
+    "source-manifest.json": "a223ace0de27c50f9592a9b6d76228fbcc0a9084ecffad06ff9a5773f12bdbb7"
+  },
+  "public_export_note": "Private source identifiers and local history paths removed; validation was performed on the original local run."
+}

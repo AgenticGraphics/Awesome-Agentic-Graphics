@@ -208,45 +208,9 @@ const applicationSizeObserver=new ResizeObserver(()=>{applicationTrack.style.hei
 applicationSlides.forEach(slide=>applicationSizeObserver.observe(slide));
 selectApplication(0,'auto');
 
-const days=data.daily.dates || [];
-let currentDay=days.length-1, currentFilter='all', query='';
-const weekday = date => new Date(date+'T12:00:00').toLocaleDateString('en-US',{weekday:'short'}).toUpperCase();
-const kind = p => {
- const type=(p.bucket || p.eventType || p.event_type || '').toLowerCase();
- if(type.includes('update')||type.includes('revision'))return 'update';
- if(type.includes('catch')||type.includes('late'))return 'catchup';
- if(type.includes('unresolved')||type.includes('pending'))return 'pending';
- return 'new';
-};
-const kindName={new:'New paper',update:'Revision',catchup:'Catch-up',pending:'Pending'};
-function updateDateTabs(){
- $('#date-tabs').innerHTML=days.map((d,i)=>`<button class="date-tab" role="tab" id="day-${d.date}" aria-controls="results-panel" aria-selected="${i===currentDay}" tabindex="${i===currentDay?0:-1}" data-day="${i}"><span class="date-num">${d.date.slice(-2)}</span><span><small>${weekday(d.date)}</small><span class="date-count">${(d.papers||[]).length} ${(d.papers||[]).length===1?'paper':'papers'}</span></span></button>`).join('');
- $$('[data-day]').forEach(b=>b.addEventListener('click',()=>selectDay(Number(b.dataset.day))));
-}
-function selectDay(i){currentDay=i;currentFilter='all';query='';renderDay();}
-function renderDay(){
- updateDateTabs();const d=days[currentDay];if(!d)return;
- const papers=d.papers||[], counts={new:0,update:0,catchup:0,pending:0};papers.forEach(p=>counts[kind(p)]++);
- const status=d.status==='partial_verified'?'Sources checked · partial coverage':d.status||'Verified output';const limited=/partial|limited|progress|prepar|blocked|incomplete/i.test(status);
- const panel=$('#results-panel');panel.setAttribute('aria-labelledby',`day-${d.date}`);
- const coverage=Array.isArray(d.coverage)?d.coverage:typeof d.coverage==='string'?[d.coverage]:[...(d.coverage?.limitations||[])];
- const artifactLinks=(d.artifacts||[]);const links=Array.isArray(artifactLinks)?artifactLinks:Object.entries(artifactLinks).map(([label,url])=>({label,url}));
- panel.innerHTML=`<div class="result-content"><div class="result-summary"><div><h3>October ${Number(d.date.slice(-2))}, 2026</h3><p>${escapeHTML(d.summary||'Evidence-based results from the agentic literature survey workflow.')}</p></div><span class="status ${limited?'limited':''}">${escapeHTML(status)}</span></div><div class="result-stats"><div class="stat"><strong>${papers.length}</strong><span>Candidates</span></div><div class="stat"><strong>${counts.new}</strong><span>New submissions</span></div><div class="stat"><strong>${counts.update}</strong><span>Revisions</span></div><div class="stat"><strong>${counts.catchup}</strong><span>Older discoveries</span></div></div><div class="scope-overview" aria-label="Candidate scope distribution"><div class="scope-bar">${[{key:"core",color:"#789566"},{key:"scope_dependent",color:"#c3ac7b"},{key:"enabling_or_adjacent",color:"#a6b1bf"}].map(c=>`<span style="flex:${papers.filter(p=>p.scope===c.key).length};background:${c.color}"></span>`).join("")}</div><div class="scope-legend"><span><i style="background:#789566"></i>${papers.filter(p=>p.scope==="core").length} core</span><span><i style="background:#c3ac7b"></i>${papers.filter(p=>p.scope==="scope_dependent").length} scope-dependent</span><span><i style="background:#a6b1bf"></i>${papers.filter(p=>p.scope==="enabling_or_adjacent").length} adjacent</span></div></div><div class="result-tools"><div class="filter-group" aria-label="Filter papers by event"><button class="filter" data-filter="all" aria-pressed="true">All results</button><button class="filter" data-filter="new" aria-pressed="false">New</button><button class="filter" data-filter="update" aria-pressed="false">Revisions</button><button class="filter" data-filter="catchup" aria-pressed="false">Catch-up</button></div><label class="search-box"><span aria-hidden="true">⌕</span><input type="search" aria-label="Search this day's papers" placeholder="Search this day…"></label></div><div id="paper-list" aria-live="polite"></div><details class="coverage"><summary>Run details & source coverage <span>+</span></summary><div class="coverage-body">${coverage.map(c=>`<p>${escapeHTML(typeof c==='object'?JSON.stringify(c):c)}</p>`).join('')}${d.coverage?.sources?`<p><strong>Sources:</strong> ${d.coverage.sources.map(s=>escapeHTML(s.family.replaceAll('_',' '))+': '+escapeHTML(s.status)).join(' · ')}</p>`:''}${data.daily.taxonomyNote?`<p>${escapeHTML(data.daily.taxonomyNote)}</p>`:''}${data.daily.executedAt?`<p>Executed: ${escapeHTML(data.daily.executedAt)} · America/Chicago</p>`:''}<div class="report-links">${links.map(a=>`<a href="${escapeHTML(safeURL(a.url||a.path))}" target="_blank" rel="noopener">${escapeHTML(a.label||a.name||'Run artifact')}</a>`).join('')}</div></div></details></div>`;
- $$('[data-filter]').forEach(b=>b.addEventListener('click',()=>{currentFilter=b.dataset.filter;$$('[data-filter]').forEach(x=>x.setAttribute('aria-pressed',String(x===b)));renderPapers();}));
- $('.search-box input').addEventListener('input',e=>{query=e.target.value.trim().toLowerCase();renderPapers();});
- renderPapers();
-}
-function renderPapers(){
- const d=days[currentDay];const all=d.papers||[];
- const filtered=all.filter(p=>(currentFilter==='all'||kind(p)===currentFilter)&&`${p.title} ${p.summary} ${p.application} ${(p.tags||[]).join(' ')}`.toLowerCase().includes(query));
- if(!filtered.length){$('#paper-list').innerHTML=`<div class="empty-state"><div class="empty-symbol">⌕</div><h4>${all.length?'No matching papers':'No verified papers in this view'}</h4><p>${all.length?'Try another filter or search term.':escapeHTML(d.emptyMessage||'No qualifying same-day Agentic Graphics paper was verified in the browsed source set. See the run details for source coverage and unresolved leads.')}</p></div>`;return;}
- $('#paper-list').innerHTML=filtered.map((p,i)=>{
- const event=kind(p), tags=p.tags||[], evidence=Array.isArray(p.evidence)?p.evidence:p.evidence?[p.evidence]:[];
- return `<details class="paper-row"><summary><span class="paper-number">${String(i+1).padStart(2,'0')}</span><div class="paper-main"><h4>${escapeHTML(p.title)}</h4><p>${escapeHTML(p.application||p.scope||'Agentic graphics')} · ${escapeHTML(p.scopeLabel||p.scope||'Candidate')}${p.eventDate?' · '+escapeHTML(p.eventDate.slice(0,10)):''}</p></div><span class="paper-badge ${event}">${kindName[event]}</span><span class="paper-plus" aria-hidden="true">+</span></summary><div class="paper-detail"><p>${escapeHTML(p.summary||'See the linked primary source and report for supporting evidence.')}</p>${p.scope?`<p><strong>Scope:</strong> ${escapeHTML(p.scopeLabel||p.scope.replaceAll('_',' '))}</p>`:''}${p.scopeReason?`<p>${escapeHTML(p.scopeReason)}</p>`:''}${p.limitations?`<p><strong>Limit:</strong> ${escapeHTML(p.limitations)}</p>`:''}${p.dateNote?`<p><strong>Date evidence:</strong> ${escapeHTML(p.dateNote)}</p>`:''}${tags.length?`<div class="tags">${tags.map(t=>`<span>${escapeHTML(t)}</span>`).join('')}</div>`:''}<a href="${escapeHTML(safeURL(p.url))}" target="_blank" rel="noopener">Read the paper</a>${p.taxonomy?`<details class="paper-taxonomy"><summary>Taxonomy annotation</summary><p class="annotation-note">Partial evidence annotations; unassessed fields remain Not Reported. Research codebook: October 11 snapshot.</p><dl>${Object.entries(p.taxonomy).map(([k,v])=>`<div><dt>${escapeHTML(k.replaceAll('_',' '))}</dt><dd>${escapeHTML(v.join(' · '))}</dd></div>`).join('')}</dl></details>`:''}${evidence.length?`<details style="margin-top:14px"><summary>Supporting evidence</summary>${evidence.map(e=>typeof e==='string'?`<p>${escapeHTML(e)}</p>`:`<p>${escapeHTML(e.text||e.quote||e.note||e.description||e.evidence||'')}${(e.url||e.primary_url)?` <a href="${escapeHTML(safeURL(e.url||e.primary_url))}" target="_blank" rel="noopener">Source</a>`:''}</p>`).join('')}</details>`:''}</div></details>`;
- }).join('');
-}
-$('#date-tabs').addEventListener('keydown',e=>{let i=currentDay;if(e.key==='ArrowRight')i=(i+1)%days.length;else if(e.key==='ArrowLeft')i=(i+days.length-1)%days.length;else if(e.key==='Home')i=0;else if(e.key==='End')i=days.length-1;else return;e.preventDefault();selectDay(i);$(`[data-day="${i}"]`).focus();});
-renderDay();
+(async function renderLiveCorpus(){
+ await window.feedReady;
+ const days=data.daily?.dates || [];
 const dialog=$('#image-dialog');
 $$('[data-image]').forEach(button=>button.addEventListener('click',()=>{$('#dialog-image').src=button.dataset.image;$('#dialog-image').alt=button.dataset.caption;$('#dialog-caption').textContent=button.dataset.caption;dialog.showModal();document.documentElement.classList.add('figure-open');}));
 $('.dialog-close').addEventListener('click',()=>dialog.close());
@@ -261,10 +225,11 @@ document.querySelectorAll('[data-pending-link]').forEach(link=>link.addEventList
 const growth=data.growth;
 if(growth){
  const monthName=(key,style='short')=>new Date(key+'-15T12:00:00').toLocaleDateString('en-US',{month:style,year:'numeric'});
- const firstSeen={};
+ const firstSeen={},latestScopes={};
+ days.slice().sort((a,b)=>a.date.localeCompare(b.date)).forEach(d=>(d.papers||[]).forEach(p=>latestScopes[p.id]=p.scope));
  days.forEach(d=>(d.papers||[]).forEach(p=>{
   const date=(p.eventDate||'').slice(0,10);
-  if(p.eventType==='first_submission'&&growth.liveScopes.includes(p.scope)&&date>growth.cutoff&&!(p.id in firstSeen))firstSeen[p.id]=date;
+  if(p.eventType==='first_submission'&&growth.liveScopes.includes(latestScopes[p.id])&&date>growth.cutoff&&!(p.id in firstSeen))firstSeen[p.id]=date;
  }));
  const points=growth.monthly.map(([month,count])=>({month,count}));
  const liveByMonth={};
@@ -305,3 +270,5 @@ if(growth){
  };
  new ResizeObserver(()=>{if(chart.clientWidth!==chartWidth){chartWidth=chart.clientWidth;renderGrowth();}}).observe(chart);
 }
+
+})();
