@@ -413,7 +413,6 @@ dialog img { max-height:calc(90vh - 140px); max-height:calc(90dvh - 140px); }
 .growth-tip { position:absolute; transform:translate(-50%,-100%); pointer-events:none; display:flex; flex-direction:column; gap:1px; padding:7px 10px; background:#fff; border:1px solid #d5ddcb; border-radius:6px; box-shadow:0 4px 14px #25342c14; font-size:12px; color:var(--muted); white-space:nowrap; }
 .growth-tip[hidden] { display:none; }
 .growth-tip strong { font-size:14px; font-weight:600; color:var(--ink); }
-.growth-table { position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap; }
 .growth figcaption { margin-top:10px; font-size:12px; color:#7d8970; }
 @media(max-width:760px) {
  .growth { padding:18px 14px 14px; margin-bottom:30px; }
