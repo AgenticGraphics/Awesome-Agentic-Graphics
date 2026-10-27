@@ -8,7 +8,7 @@ function client(token,repository){
  if(!/^[A-Za-z0-9_.-]+\/[A-Za-z0-9_.-]+$/.test(repository))throw new Error('Invalid repository.');
  return async(method,path,body)=>{
   const response=await fetch(`https://api.github.com/repos/${repository}/${path}`,{
-   method,headers:{Authorization:`Bearer ${token}`,Accept:'application/vnd.github+json','X-GitHub-Api-Version':'2022-11-28','Content-Type':'application/json','User-Agent':'agentic-graphics-correction-bot'},
+   method,headers:{Authorization:`Bearer ${token}`,Accept:method==='GET'&&path.startsWith('contents/')?'application/vnd.github.object+json':'application/vnd.github+json','X-GitHub-Api-Version':'2022-11-28','Content-Type':'application/json','User-Agent':'agentic-graphics-correction-bot'},
    body:body===undefined?undefined:JSON.stringify(body),signal:AbortSignal.timeout(30000)
   });
   if(!response.ok){const error=new Error(`GitHub ${method} ${path.split('?')[0]} returned ${response.status}.`);error.status=response.status;throw error;}
@@ -16,8 +16,23 @@ function client(token,repository){
  };
 }
 function content(file){
- if(file.type!=='file'||file.encoding!=='base64'||typeof file.content!=='string'||file.size>2000000)throw new Error('Expected a bounded repository data file.');
- return Buffer.from(file.content,'base64').toString('utf8');
+ if(file.type!=='file'||file.encoding!=='base64'||typeof file.content!=='string'||!Number.isSafeInteger(file.size)||file.size<0||file.size>8000000)throw new Error('Expected a bounded repository data file.');
+ const bytes=Buffer.from(file.content,'base64');
+ if(bytes.length!==file.size)throw new Error('Repository data size does not match its metadata.');
+ return bytes.toString('utf8');
+}
+async function repositoryFile(api,path,ref){
+ const file=await api('GET',`contents/${path}?ref=${ref}`);
+ if(file.type!=='file'||!Number.isSafeInteger(file.size)||file.size<0||file.size>8000000)throw new Error('Expected a bounded repository data file.');
+ // GitHub omits content for files over 1 MB. Read the immutable Git blob,
+ // using only the SHA from this trusted repository's contents response.
+ if(file.encoding==='none'){
+  if(!/^[a-f0-9]{40}$/.test(file.sha))throw new Error('Invalid repository blob identity.');
+  const blob=await api('GET',`git/blobs/${file.sha}`);
+  if(blob.sha!==file.sha||blob.size!==file.size)throw new Error('Repository blob metadata changed.');
+  return {sha:file.sha,text:content({...blob,type:'file'})};
+ }
+ return {sha:file.sha,text:content(file)};
 }
 async function comment(api,number,text){
  const marker=`<!-- feed-correction-bot:${number} -->`,body=`${text}\n\n${marker}`;
@@ -41,11 +56,11 @@ async function run({api,number,repository,runURL}){
   return {status:'existing',url:pr.html_url};
  }
  const base=await api('GET','git/ref/heads/page'),baseSHA=base.object.sha;
- const source=await api('GET',`contents/${FILE}?ref=${baseSHA}`);
- const labels=JSON.parse(content(await api('GET',`contents/data/taxonomy-labels.json?ref=${baseSHA}`)));
- const data=JSON.parse(content(source)),next=apply(data,proposal,labels);validate(next,labels);
+ const source=await repositoryFile(api,FILE,baseSHA);
+ const labels=JSON.parse((await repositoryFile(api,'data/taxonomy-labels.json',baseSHA)).text);
+ const data=JSON.parse(source.text),next=apply(data,proposal,labels);validate(next,labels);
  const nextText=JSON.stringify(next,null,2)+'\n';
- if(nextText===content(source))throw new Error('There is no data change to propose.');
+ if(nextText===source.text)throw new Error('There is no data change to propose.');
  // Recheck the live issue before writing so closed or edited submissions are not processed silently.
  const fresh=await api('GET',`issues/${number}`);
  if(fresh.state!=='open'||fresh.body!==issue.body)throw new Error('The issue changed during processing. Edit or reopen it to retry.');
@@ -55,7 +70,7 @@ async function run({api,number,repository,runURL}){
  if(head&&head.object.sha!==baseSHA){
   // Recover only an exact bot-generated commit after a partial previous attempt.
   const commit=await api('GET',`commits/${head.object.sha}`);
-  const proposed=content(await api('GET',`contents/${FILE}?ref=${head.object.sha}`));
+  const proposed=(await repositoryFile(api,FILE,head.object.sha)).text;
   if(commit.commit.message!==commitMessage||commit.parents.length!==1||commit.parents[0].sha!==baseSHA||commit.files.length!==1||commit.files[0].filename!==FILE||proposed!==nextText)throw new Error('The correction branch already contains different changes. A maintainer must inspect it; nothing was overwritten.');
   commitSHA=head.object.sha;
  }else{
@@ -86,5 +101,5 @@ async function main(){
   throw error;
  }
 }
-module.exports={run,client,content};
+module.exports={run,client,content,repositoryFile};
 if(require.main===module)main().catch(error=>{console.error(error.message);process.exitCode=1;});

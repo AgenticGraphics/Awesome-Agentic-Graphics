@@ -35,7 +35,7 @@
   async function open(p,button){
    const token=++opening;paper=p;opener=button;form.reset();clearReview();
    $('#feedback-copy-status').textContent='';$('#feedback-copy-fallback').hidden=true;
-   $('#feedback-context').textContent=p?`${p.title} · ${p.id}`:'General feedback about the daily paper feed';
+   $('#feedback-context').textContent=p?`${p.title} · ${p.id}`:'General feedback about the paper library';
    $('#feedback-type').value=p?'correction':'feedback';$('#feedback-type').querySelector('[value="correction"]').disabled=!p;
    labels=await labelsReady;if(token!==opening)return;
    if(!labels){$('#feedback-type').value='feedback';$('#feedback-type').querySelector('[value="correction"]').disabled=true;}
@@ -45,7 +45,7 @@
     $('#correction-field').value='taxonomy.model_type';
     const count=days.filter(d=>d.papers.some(record=>record.id===p.id)).length;
     $('#correction-all-wrap').hidden=count<2;
-    $('#correction-all-label').textContent=`Also update other search dates (${count} saved entries)`;
+    $('#correction-all-label').textContent=`Also update other saved entries (${count} records)`;
     $('#feedback-evidence').value=p.url;
    }
    renderMode();if(!labels)$('#feedback-error').textContent='Correction options could not load. You can still share feedback, or reload the page to try again.';

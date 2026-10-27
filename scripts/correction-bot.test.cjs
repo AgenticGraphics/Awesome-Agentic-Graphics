@@ -72,3 +72,11 @@ test('permission errors propagate instead of claiming that a PR exists',async()=
  const f=fixture(),api=async(...args)=>{if(args[0]==='POST'&&args[1]==='pulls'){const e=new Error('GitHub permission denied');e.status=403;throw e;}return f.api(...args);};
  await assert.rejects(run({api,number:12,repository:'example/repo'}),/permission denied/);assert.equal(f.state.pulls.length,0);assert.equal(f.state.comments.length,0);
 });
+test('large library uses the immutable Git blob when Contents omits file bytes',async()=>{
+ const {repositoryFile}=require('./correction-bot.cjs'),text=JSON.stringify(data),sha='a'.repeat(40),calls=[];
+ const api=async(method,url)=>{calls.push(url);return url.startsWith('contents/')?{type:'file',sha,size:Buffer.byteLength(text),encoding:'none',content:''}:{sha,size:Buffer.byteLength(text),encoding:'base64',content:Buffer.from(text).toString('base64')};};
+ assert.equal((await repositoryFile(api,'data/daily-results.json','trusted-head')).text,text);
+ assert.deepEqual(calls,['contents/data/daily-results.json?ref=trusted-head',`git/blobs/${sha}`]);
+ await assert.rejects(repositoryFile(async()=>({type:'file',size:9000000,encoding:'none',sha}),'data/daily-results.json','head'),/bounded/);
+ await assert.rejects(repositoryFile(async()=>({type:'file',size:4,encoding:'none',sha:'../../elsewhere'}),'data/daily-results.json','head'),/identity/);
+});

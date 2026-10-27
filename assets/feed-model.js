@@ -4,6 +4,7 @@
  const sentinels = new Set(['Not Reported', 'Not Applicable', 'Unclear']);
  const kind = p => {
   const bucket = (p.bucket || '').toLowerCase();
+  if (bucket === 'survey_collection') return 'archive';
   if (/late|catch/.test(bucket)) return 'catchup';
   if (/unresolved|pending/.test(bucket)) return 'pending';
   if (/update|revision/.test(bucket) || (!bucket && p.eventType === 'revision')) return 'update';
@@ -12,7 +13,7 @@
  const values = (p, key) => key === 'application' ? (p.applications || [p.application].filter(Boolean)) : key === 'scope' ? [p.scope] : key === 'operations' ? (p.operations || []) : (p.taxonomy?.[key] || ['Not Reported']);
  const identity = p => p.id || p.url || p.title;
  const collect = (days, date) => {
-  const reports = date === 'all' ? days : days.filter(d => d.date === date);
+  const reports = date === 'all' ? days : date === 'survey' ? days.filter(d => d.collectionType === 'survey') : date === 'daily' ? days.filter(d => d.collectionType !== 'survey') : days.filter(d => d.date === date);
   const unique = new Map();
   reports.slice().sort((a,b) => a.date.localeCompare(b.date)).forEach(d => (d.papers || []).forEach(p => {
    unique.set(identity(p), {...p, reportDate:d.date});

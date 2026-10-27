@@ -13,9 +13,10 @@
   return;
  }
  const days = (daily.dates || []).slice().sort((a,b)=>a.date.localeCompare(b.date));
- const dateSet = new Set(days.map(d=>d.date)), latest = days.at(-1)?.date;
+ const reports = days.filter(d=>d.collectionType !== 'survey');
+ const dateSet = new Set(reports.map(d=>d.date)), latest = reports.at(-1)?.date;
  const params = new URLSearchParams(location.search);
- const state = {date:dateSet.has(params.get('date')) || params.get('date') === 'all' ? params.get('date') : latest, filters:{}, query:'',event:'all'};
+ const state = {date:dateSet.has(params.get('date')) || ['all','survey','daily'].includes(params.get('date')) ? params.get('date') : 'all', filters:{}, query:'',event:'all',limit:12};
  const groups = [
   {name:'Specification',tone:'spec',keys:['task','input_form','output']},
   {name:'Base model',tone:'model',keys:['model_type','model_training']},
@@ -35,60 +36,69 @@
  $$('[data-facet]').forEach(s=>s.addEventListener('change',()=>{if(s.value)state.filters[s.dataset.facet]=s.value;else delete state.filters[s.dataset.facet];renderResults();}));
  $('#feed-search').addEventListener('input',e=>{state.query=e.target.value;renderResults();});
  $('#feed-event').addEventListener('change',e=>{state.event=e.target.value;renderResults();});
- let month=(state.date==='all'?latest:state.date)?.slice(0,7), calendarFocus;
- const months=[...new Set(days.map(d=>d.date.slice(0,7)))];
+ let month=(dateSet.has(state.date)?state.date:latest)?.slice(0,7), calendarFocus;
+ const months=[...new Set(reports.map(d=>d.date.slice(0,7)))];
  function renderCalendar(){
   if(!month)return;
   const first=new Date(month+'-01T12:00:00'), last=new Date(first.getFullYear(),first.getMonth()+1,0).getDate(), offset=(first.getDay()+6)%7;
   $('#feed-calendar').innerHTML=`<div class="feed-month-nav"><button data-month-step="-1" aria-label="Previous report month" ${months.indexOf(month)<=0?'disabled':''}>←</button><strong>${formatDate(month+'-01',{month:'long',year:'numeric'})}</strong><button data-month-step="1" aria-label="Next report month" ${months.indexOf(month)===months.length-1?'disabled':''}>→</button></div><div class="feed-month" role="group" aria-label="Select a search date"><div class="feed-weekdays" aria-hidden="true">${['M','T','W','T','F','S','S'].map(d=>`<span>${d}</span>`).join('')}</div><div class="feed-month-days">${'<span aria-hidden="true"></span>'.repeat(offset)}${Array.from({length:last},(_,i)=>{const d=month+'-'+String(i+1).padStart(2,'0'),available=dateSet.has(d);return available?`<button data-date="${d}" aria-pressed="${state.date===d}" aria-label="${formatDate(d)}, ${M.collect(days,d).length} papers"><span>${i+1}</span><i></i></button>`:`<span class="feed-no-run" aria-label="${formatDate(d)}, no search report">${i+1}</span>`;}).join('')}</div></div>`;
   $$('[data-date]').forEach(b=>b.addEventListener('click',()=>{calendarFocus=b.dataset.date;selectDate(b.dataset.date);$(`[data-date="${calendarFocus}"]`)?.focus({preventScroll:true});}));
   $$('[data-month-step]').forEach(b=>b.addEventListener('click',()=>{const step=Number(b.dataset.monthStep);month=months[months.indexOf(month)+step];renderCalendar();const next=$(`[data-month-step="${step}"]:not(:disabled)`);(next||$('[data-date]'))?.focus();}));
-  $('#feed-all-dates').setAttribute('aria-pressed',String(state.date==='all'));
+  [['#feed-library','all'],['#feed-survey','survey'],['#feed-all-dates','daily']].forEach(([id,value])=>$(id).setAttribute('aria-pressed',String(state.date===value)));
  }
  function selectDate(date){
   state.date=date;
-  if(date!=='all')month=date.slice(0,7);
+  if(dateSet.has(date))month=date.slice(0,7);
+  state.event='all';$('#feed-event').value='all';
   const next=new URL(location.href);next.searchParams.set('date',date);history.replaceState(null,'',next);
   renderCalendar();renderResults();
  }
- $('#feed-all-dates').addEventListener('click',()=>selectDate(state.date==='all'?latest:'all'));
+ [['#feed-library','all'],['#feed-survey','survey'],['#feed-all-dates','daily']].forEach(([id,value])=>$(id).addEventListener('click',()=>selectDate(value)));
+ $('#feed-library-count').textContent=M.collect(days,'all').length;
+ $('#feed-survey-count').textContent=M.collect(days,'survey').length;
+ $('#feed-daily-count').textContent=M.collect(days,'daily').length;
  const chip=(key,value,tone)=>`<button class="feed-chip tone-${tone}" data-chip-key="${key}" data-chip-value="${esc(value)}" title="Filter by ${names[key]}: ${esc(label(value))}">${icon(tone)}<span>${esc(label(value))}</span></button>`;
  function annotation(p){
-  return `<div class="feed-annotation"><p class="feed-annotation-note">Evidence-based annotations · ${esc(p.taxonomyVersion||'Pinned October 11 research codebook')}. Unassessed fields remain “Not Reported”.</p>${groups.map(g=>`<section class="feed-tax-group tone-${g.tone}"><h5>${icon(g.tone)}${g.name}</h5><dl>${g.keys.map(k=>{const ev=p.taxonomyEvidence?.[k],vals=M.values(p,k);return `<div><dt>${names[k]}</dt><dd>${vals.map(v=>M.sentinels.has(v)?`<span class="feed-unknown">${esc(v)}</span>`:chip(k,v,g.tone)).join('')}${ev?`<details class="feed-field-evidence"><summary>Evidence</summary><p>${esc(ev.evidence)} <a href="${url(ev.primary_url)}" target="_blank" rel="noopener">${esc(ev.locator||'Source')}</a></p></details>`:''}</dd></div>`;}).join('')}</dl></section>`).join('')}<div class="feed-scope-evidence"><strong>Why this paper?</strong><p>${esc(p.scopeReason||p.scopeLabel||'See the source report.')}</p>${p.limitations?`<p>${esc(p.limitations)}</p>`:''}${(p.evidence||[]).map(e=>`<p>${esc(typeof e==='string'?e:e.evidence||e.text||'')}${e.primary_url?` <a href="${url(e.primary_url)}" target="_blank" rel="noopener">Source</a>`:''}</p>`).join('')}</div></div>`;
+  return `<div class="feed-annotation"><p class="feed-annotation-note">Evidence-based annotations · ${p.bucket==='survey_collection'?'From the survey’s retained reading records. Provisional labels are shown as “Unclear”.':'Unassessed fields remain “Not Reported”.'}</p>${groups.map(g=>`<section class="feed-tax-group tone-${g.tone}"><h5>${icon(g.tone)}${g.name}</h5><dl>${g.keys.map(k=>{const ev=p.taxonomyEvidence?.[k],vals=M.values(p,k);return `<div><dt>${names[k]}</dt><dd>${vals.map(v=>M.sentinels.has(v)?`<span class="feed-unknown">${esc(v)}</span>`:chip(k,v,g.tone)).join('')}${ev?`<details class="feed-field-evidence"><summary>Evidence</summary><p>${esc(ev.evidence)}${ev.reasoning?` <span class="feed-evidence-basis">${esc(ev.reasoning)}</span>`:''} <a href="${url(ev.primary_url)}" target="_blank" rel="noopener">${esc(ev.locator||'Source')}</a></p></details>`:''}</dd></div>`;}).join('')}</dl></section>`).join('')}<div class="feed-scope-evidence"><strong>Why this paper?</strong><p>${esc(p.scopeReason||p.scopeLabel||'See the source report.')}</p>${p.limitations?`<p>${esc(p.limitations)}</p>`:''}${(p.evidence||[]).map(e=>`<p>${esc(typeof e==='string'?e:e.evidence||e.text||'')}${e.primary_url?` <a href="${url(e.primary_url)}" target="_blank" rel="noopener">Source</a>`:''}</p>`).join('')}</div></div>`;
  }
  function card(p,i){
-  const kind=M.kind(p), eventNames={new:'New submission',update:'Revision',catchup:'Earlier paper',pending:'Pending'};
+  const kind=M.kind(p), eventNames={new:'New submission',update:'Revision',catchup:'Earlier paper',pending:'Pending',archive:'Survey collection'};
   const featured=[['application',M.values(p,'application')[0],'spec'],['model_type',M.values(p,'model_type').find(v=>!M.sentinels.has(v)),'model'],['verifier',M.values(p,'verifier').find(v=>!M.sentinels.has(v)),'harness'],['action_type',M.values(p,'action_type').find(v=>!M.sentinels.has(v)),'interface']].filter(x=>x[1]);
-  return `<article class="feed-card" aria-labelledby="feed-paper-${i}"><div class="feed-card-meta"><span class="feed-event feed-event-${kind}">${eventNames[kind]}</span><span>${p.eventType==='revision'?'Revised':'Submitted'} ${esc(p.eventDate?formatDate(p.eventDate.slice(0,10),{month:'short',day:'numeric',year:'numeric'}):'date unverified')}</span><span class="feed-scope">${esc(label(p.scope))}</span></div><h4 id="feed-paper-${i}"><a href="${url(p.url)}" target="_blank" rel="noopener">${esc(p.title)}</a></h4><p class="feed-card-summary">${esc(p.summary)}</p><div class="feed-card-tags">${featured.map(x=>chip(...x)).join('')}</div><div class="feed-card-links"><a class="feed-read-paper" href="${url(p.url)}" target="_blank" rel="noopener">Read paper</a><button class="feed-feedback-link feed-correction-button" data-feedback-id="${esc(p.id)}"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 5 4 4M4 20l4-1L20 7a2.8 2.8 0 0 0-4-4L4 15z"/></svg><span>Suggest a correction</span><span aria-hidden="true">→</span></button></div><details class="feed-paper-details"><summary>Taxonomy & evidence <span aria-hidden="true">＋</span></summary>${annotation(p)}<p class="feed-correction-note">Use “Suggest a correction” to propose a new value and supporting evidence. Our team reviews suggestions before updating the feed.</p></details></article>`;
+  return `<article class="feed-card" aria-labelledby="feed-paper-${i}"><div class="feed-card-meta"><span class="feed-event feed-event-${kind}">${eventNames[kind]}</span><span>${kind==='archive'?'Published':p.eventType==='revision'?'Revised':'Submitted'} ${esc(p.eventDate?formatDate(p.eventDate.slice(0,10),{month:'short',day:'numeric',year:'numeric'}):'date unverified')}</span><span class="feed-scope">${esc(label(p.scope))}</span></div><h4 id="feed-paper-${i}" tabindex="-1"><a href="${url(p.url)}" target="_blank" rel="noopener">${esc(p.title)}</a></h4><p class="feed-card-summary">${esc(p.summary)}</p><div class="feed-card-tags">${featured.map(x=>chip(...x)).join('')}</div><div class="feed-card-links"><a class="feed-read-paper" href="${url(p.url)}" target="_blank" rel="noopener">Read paper</a><button class="feed-feedback-link feed-correction-button" data-feedback-id="${esc(p.id)}"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 5 4 4M4 20l4-1L20 7a2.8 2.8 0 0 0-4-4L4 15z"/></svg><span>Suggest a correction</span><span aria-hidden="true">→</span></button></div><details class="feed-paper-details"><summary>Taxonomy & evidence <span aria-hidden="true">＋</span></summary>${annotation(p)}</details></article>`;
  }
  function renderRun(d){
-  if(!d){$('#feed-run-details').innerHTML='<p class="feed-run-note">One record per paper, using its latest saved annotation. Dates refer to search reports; submission dates stay on each card.</p>';return;}
+  if(!d){$('#feed-run-details').innerHTML='<a class="feed-collection-notes" href="data/survey-collection.md" target="_blank">About this collection</a>';return;}
   const cov=d.coverage||{},limits=Array.isArray(cov)?cov:cov.limitations||[];
   const artifacts=Array.isArray(d.artifacts)?d.artifacts:Object.entries(d.artifacts||{}).map(([label,url])=>({label,url}));
-  $('#feed-run-details').innerHTML=`<details class="feed-run-details"><summary>Search coverage & report <span aria-hidden="true">＋</span></summary><div><p>${esc(d.summary||'Bounded search results.')}</p>${limits.map(l=>`<p>${esc(l)}</p>`).join('')}<ul>${(cov.sources||[]).map(s=>`<li>${esc(s.family.replaceAll('_',' '))}: ${esc(s.status)}</li>`).join('')}</ul><div class="feed-report-links">${artifacts.map(a=>`<a href="${url(a.url||a.path)}" target="_blank" rel="noopener">${esc(a.label||a.name)}</a>`).join('')}</div></div></details>`;
+  $('#feed-run-details').innerHTML=`<details class="feed-run-details"><summary>${d.collectionType==='survey'?'Collection notes':'Search coverage & report'} <span aria-hidden="true">＋</span></summary><div><p>${esc(d.summary||'Bounded search results.')}</p>${limits.map(l=>`<p>${esc(l)}</p>`).join('')}<ul>${(cov.sources||[]).map(s=>`<li>${esc(s.family.replaceAll('_',' '))}: ${esc(s.status)}</li>`).join('')}</ul><div class="feed-report-links">${artifacts.map(a=>`<a href="${url(a.url||a.path)}" target="_blank" rel="noopener">${esc(a.label||a.name)}</a>`).join('')}</div></div></details>`;
  }
  function focusFacet(key){
   if(!primaryKeys.includes(key))$('.feed-more-filters').open=true;
   $(`[data-facet="${key}"]`)?.focus({preventScroll:true});
  }
- function renderResults(){
-  const d=days.find(d=>d.date===state.date),papers=M.collect(days,state.date),filtered=papers.filter(p=>M.matches(p,state.filters,state.query,state.event));
-  $('#feed-date-title').textContent=d?formatDate(d.date):'All search dates';
-  $('#feed-date-note').textContent=d?(d.feedNote||'Papers found in this search. Submission and revision dates are shown below.'):'Explore the collected papers across all saved searches.';
+ function renderResults(keepLimit=false){
+  if(!keepLimit)state.limit=12;
+  const d=state.date==='survey'?days.find(d=>d.collectionType==='survey'):reports.find(d=>d.date===state.date),papers=M.collect(days,state.date),filtered=papers.filter(p=>M.matches(p,state.filters,state.query,state.event));
+  $('#feed-date-title').textContent=state.date==='survey'?'Survey collection':state.date==='all'?'All papers':state.date==='daily'?'Daily discoveries':formatDate(d.date);
+  $('#feed-date-note').textContent=d?(d.feedNote||'Papers found in this search. Submission and revision dates are shown below.'):state.date==='all'?'The survey collection and daily discoveries, with duplicate papers combined.':'Papers found in daily searches. Choose a date to view one report.';
+  $('#feed-event').parentElement.hidden=state.date==='survey';
   const filterEntries=Object.entries(state.filters),active=filterEntries.length+Number(!!state.query)+Number(state.event!=='all');
-  $('#feed-result-count').textContent=`${filtered.length} ${filtered.length===1?'paper':'papers'}${active?` of ${papers.length}`:''}${state.date==='all'?' · duplicates combined':''}`;
+  $('#feed-result-count').textContent=`${filtered.length} ${filtered.length===1?'paper':'papers'}${active?` of ${papers.length}`:''}`;
   $('#feed-more-count').textContent=filterEntries.filter(([k])=>!primaryKeys.includes(k)).length||'';
   $('#feed-active').innerHTML=filterEntries.map(([k,v])=>`<button data-remove="${k}">${names[k]}: ${esc(label(v))} <span aria-hidden="true">×</span><span class="sr-only"> Remove filter</span></button>`).join('')+(active?'<button class="feed-reset" data-reset>Clear filters</button>':'');
   $$('[data-facet]').forEach(s=>s.value=state.filters[s.dataset.facet]||'');
   $$('[data-remove]').forEach(b=>b.addEventListener('click',()=>{delete state.filters[b.dataset.remove];renderResults();focusFacet(b.dataset.remove);}));
   const reset=()=>{state.filters={};state.query='';state.event='all';$('#feed-search').value='';$('#feed-event').value='all';renderResults();$('#feed-search').focus({preventScroll:true});};
   $('[data-reset]')?.addEventListener('click',reset);
-  $('#feed-papers').innerHTML=filtered.length?filtered.map(card).join(''):`<div class="feed-empty"><span aria-hidden="true">⌕</span><h4>${active?'No matching papers':'No verified papers in this search'}</h4><p>${active?'Try a different combination or browse another date.':'See the search report for checked sources and pending candidates.'}</p>${active?'<button id="feed-empty-reset">Clear filters</button>':''}</div>`;
+  $('#feed-papers').innerHTML=filtered.length?filtered.slice(0,state.limit).map(card).join(''):`<div class="feed-empty"><span aria-hidden="true">⌕</span><h4>${active?'No matching papers':'No verified papers in this search'}</h4><p>${active?'Try a different combination or browse another date.':'See the search report for checked sources and pending candidates.'}</p>${active?'<button id="feed-empty-reset">Clear filters</button>':''}</div>`;
   $('#feed-empty-reset')?.addEventListener('click',reset);
   $$('[data-chip-key]').forEach(b=>b.addEventListener('click',()=>{state.filters[b.dataset.chipKey]=b.dataset.chipValue;renderResults();focusFacet(b.dataset.chipKey);}));
+  const shown=Math.min(state.limit,filtered.length);
+  $('#feed-pagination').innerHTML=shown<filtered.length?`<span>Showing ${shown} of ${filtered.length}</span><button id="feed-load-more">Show more papers</button>`:'';
+  $('#feed-load-more')?.addEventListener('click',()=>{const next=state.limit;state.limit+=12;renderResults(true);$(`#feed-paper-${next}`)?.focus({preventScroll:true});});
   renderRun(d);
  }
- if(!latest){$('#feed-date-title').textContent='No searches yet';return;}
+ if(!days.length){$('#feed-date-title').textContent='No papers yet';return;}
  window.FeedContribute.init({days,getDate:()=>state.date});
  renderCalendar();renderResults();
 })();

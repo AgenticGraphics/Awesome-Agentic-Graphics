@@ -420,3 +420,26 @@ dialog img { max-height:calc(90vh - 140px); max-height:calc(90dvh - 140px); }
  .growth-axis { font-size:11px; }
  .growth-event { font-size:11px; }
 }
+
+/* Keep the taxonomy navigation concise and let labels use the available width. */
+.tax-tab { display:block; min-width:0; }
+.tax-tab>span:first-child { display:block; width:auto; font-size:inherit; font-family:inherit; color:inherit; }
+.tax-tab strong { display:block; line-height:1.4; }
+.tax-tab small { display:block; margin-top:5px; }
+.taxonomy-explorer { grid-template-columns:260px minmax(0,1fr); }
+.tax-options { display:flex; flex-wrap:wrap; align-items:flex-start; gap:8px; }
+.tax-chip { flex:0 1 auto; white-space:normal; overflow-wrap:normal; word-break:normal; }
+.application-tabs .tax-tab>span:first-child { margin:0; }
+.section-heading>p { max-width:850px; }
+.intro h2 { max-width:400px; }
+@media(max-width:1050px) and (min-width:761px) {
+ .taxonomy-explorer { grid-template-columns:220px minmax(0,1fr); gap:20px; }
+ .tax-row { grid-template-columns:1fr; gap:10px; }
+}
+@media(max-width:760px) {
+ .taxonomy-explorer { display:block; }
+ .tax-tab { min-height:70px; }
+ .tax-tab small { display:none; }
+ .taxonomy-tabs .tax-tab strong { font-size:14px; }
+ .application-tabs .tax-tab { min-height:62px; }
+}

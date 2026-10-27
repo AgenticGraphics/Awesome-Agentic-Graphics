@@ -10,6 +10,7 @@ const {validate}=require('../assets/feed-validation.js');
 const data=JSON.parse(fs.readFileSync(path.join(__dirname,'../data/daily-results.json')));
 const labels=JSON.parse(fs.readFileSync(path.join(__dirname,'../data/taxonomy-labels.json')));
 const paper=data.dates[0].papers[0];
+const nextDate=new Date(Date.parse(data.dates.map(d=>d.date).sort().at(-1)+'T00:00:00Z')+86400000).toISOString().slice(0,10);
 const evidence={primary_url:paper.url,locator:'Section 3.2, page 5',evidence:'The model reads rendered images.'};
 const create=(extra={})=>P.create({days:data.dates,paperId:paper.id,date:data.dates[0].date,field:'taxonomy.model_type',value:['VLM'],evidence,...extra},labels);
 test('form values map to one exact taxonomy field, with evidence and a saved before-value',()=>{
@@ -26,9 +27,9 @@ test('date-specific correction leaves other search reports unchanged',()=>{
  const next=P.apply(data,proposal,labels);assert.deepEqual(next.dates.slice(1),data.dates.slice(1));
 });
 test('all-date correction records and checks each affected before-value',()=>{
- const days=structuredClone(data.dates);days.push({...structuredClone(days[0]),date:'2026-10-27'});
+ const days=structuredClone(data.dates);days.push({...structuredClone(days[0]),date:nextDate});
  const proposal=P.create({days,paperId:paper.id,date:days[0].date,field:'taxonomy.model_type',value:['VLM'],evidence,allDates:true},labels);
- assert.ok(proposal.entries.some(e=>e.date==='2026-10-27'));
+ assert.ok(proposal.entries.some(e=>e.date===nextDate));
  const next=P.apply({...data,dates:days},proposal,labels);assert.deepEqual(next.dates.at(-1).papers[0].taxonomy.model_type,['VLM']);
 });
 test('edited summaries require no generated JavaScript file; application aliases stay consistent',()=>{
@@ -78,8 +79,8 @@ test('review tool is dry-run by default and writes only with explicit --write',(
  }finally{fs.rmSync(dir,{recursive:true,force:true});}
 });
 test('latest exclusion is respected across all dates and updates the derived unique count',()=>{
- const days=structuredClone(data.dates);days.push({...structuredClone(days[0]),date:'2026-10-27'});
- const proposal=P.create({days,paperId:paper.id,date:'2026-10-27',field:'scope',value:'excluded',evidence},labels);
+ const days=structuredClone(data.dates);days.push({...structuredClone(days[0]),date:nextDate});
+ const proposal=P.create({days,paperId:paper.id,date:nextDate,field:'scope',value:'excluded',evidence},labels);
  const next=P.apply({...data,dates:days},proposal,labels);
  require('../assets/feed-model.js');
  const all=globalThis.FeedModel.collect(next.dates,'all');

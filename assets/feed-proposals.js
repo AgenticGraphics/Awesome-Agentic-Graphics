@@ -55,7 +55,7 @@
    if(key.startsWith('taxonomy.')){
     const name=key.slice(9),oldEvidence=paper.taxonomyEvidence?.[name]||null;
     if(!equal(oldEvidence,entry.beforeEvidence))throw new Error('Saved evidence has changed since this suggestion. Review it against the latest record.');
-    paper.taxonomy[name]=clone(entry.after);paper.taxonomyEvidence=paper.taxonomyEvidence||{};
+    paper.taxonomy[name]=clone(entry.after);if(paper.taxonomyGrades)paper.taxonomyGrades[name]='reviewed';paper.taxonomyEvidence=paper.taxonomyEvidence||{};
     paper.taxonomyEvidence[name]={primary_url:proposal.evidence.primary_url,locator:proposal.evidence.locator,evidence:proposal.evidence.evidence,level:'derived',reasoning:'Community correction with cited evidence; requires review before publication.'};
    }else{
     paper[key]=clone(entry.after);

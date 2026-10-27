@@ -12,17 +12,14 @@ $('#abstract-text').textContent = data.abstract;
 let currentTax = 0, pendingTax = null;
 const taxTrack = $('#taxonomy-panel');
 const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
-$('#taxonomy-tabs').innerHTML=data.taxonomy.map((t,i)=>`<button class="tax-tab" role="tab" id="tax-${t.id}" aria-selected="${i===0}" aria-controls="panel-${t.id}" tabindex="${i===0?0:-1}" data-tax="${i}"><span>0${i+1}</span><span><strong>${escapeHTML(t.title)}</strong><small>${escapeHTML(t.kicker)}</small></span></button>`).join('');
-taxTrack.innerHTML=data.taxonomy.map((item,index)=>`<div class="taxonomy-panel tax-slide" data-dimension="${item.id}" id="panel-${item.id}" role="tabpanel" aria-labelledby="tax-${item.id}"><div class="panel-title"><h3>${escapeHTML(item.title)}</h3><span class="panel-number">0${index+1}</span></div><p class="panel-description">${escapeHTML(item.description)}</p>${item.fields.map(f=>`<div class="tax-row"><div class="tax-field">${escapeHTML(f.name)}</div><div class="tax-options">${f.options.map(o=>`<span class="tax-chip">${escapeHTML(o)}</span>`).join('')}</div></div>`).join('')}<p class="tax-caption">Based on Section 3 of the survey manuscript.</p></div>`).join('');
+$('#taxonomy-tabs').innerHTML=data.taxonomy.map((t,i)=>`<button class="tax-tab" role="tab" id="tax-${t.id}" aria-selected="${i===0}" aria-controls="panel-${t.id}" tabindex="${i===0?0:-1}" data-tax="${i}"><span><strong>${escapeHTML(t.title)}</strong><small>${escapeHTML(t.kicker)}</small></span></button>`).join('');
+taxTrack.innerHTML=data.taxonomy.map((item,index)=>`<div class="taxonomy-panel tax-slide" data-dimension="${item.id}" id="panel-${item.id}" role="tabpanel" aria-labelledby="tax-${item.id}"><div class="panel-title"><h3>${escapeHTML(item.title)}</h3></div><p class="panel-description">${escapeHTML(item.description)}</p>${item.fields.map(f=>`<div class="tax-row"><div class="tax-field">${escapeHTML(f.name)}</div><div class="tax-options">${f.options.map(o=>`<span class="tax-chip">${escapeHTML(o)}</span>`).join('')}</div></div>`).join('')}</div>`).join('');
 const taxSlides=$$('.tax-slide');
 function updateTax(index){
  currentTax=index;
  $$('[data-tax]').forEach((button,i)=>{button.setAttribute('aria-selected',String(i===index));button.tabIndex=i===index?0:-1;});
  taxSlides.forEach((slide,i)=>{slide.inert=i!==index;slide.setAttribute('aria-hidden',String(i!==index));});
  taxTrack.style.height=taxSlides[index].offsetHeight+'px';
- $('#tax-progress').textContent=`0${index+1} / 0${taxSlides.length}`;
- $('#tax-prev').disabled=index===0;
- $('#tax-next').disabled=index===taxSlides.length-1;
 }
 function renderTax(index, behavior=reducedMotion.matches?'auto':'smooth'){
  pendingTax=index;
@@ -30,8 +27,6 @@ function renderTax(index, behavior=reducedMotion.matches?'auto':'smooth'){
  taxTrack.scrollTo({left:taxSlides[index].offsetLeft,behavior});
 }
 $$('[data-tax]').forEach(button=>button.addEventListener('click',()=>renderTax(Number(button.dataset.tax))));
-$('#tax-prev').addEventListener('click',()=>renderTax(Math.max(0,currentTax-1)));
-$('#tax-next').addEventListener('click',()=>renderTax(Math.min(taxSlides.length-1,currentTax+1)));
 function taxKeyboard(e){
  let index=currentTax;
  if(e.key==='ArrowRight'||e.key==='ArrowDown')index=(index+1)%taxSlides.length;
@@ -128,10 +123,10 @@ const taskVisuals={
 };
 const applicationTrack=$('#application-track');
 const applicationTabs=$('#application-tabs');
-applicationTabs.innerHTML=applicationGroups.map((g,i)=>`<button class="tax-tab" role="tab" id="application-tab-${g.id}" aria-controls="application-${g.id}" aria-selected="${i===0}" tabindex="${i===0?0:-1}"><span>0${i+1}</span><span><strong>${g.title}</strong><small>${g.kicker}</small></span></button>`).join('');
+applicationTabs.innerHTML=applicationGroups.map((g,i)=>`<button class="tax-tab" role="tab" id="application-tab-${g.id}" aria-controls="application-${g.id}" aria-selected="${i===0}" tabindex="${i===0?0:-1}"><span><strong>${g.title}</strong><small>${g.kicker}</small></span></button>`).join('');
 applicationTrack.innerHTML=applicationGroups.map((g,i)=>{
  const visual=taskVisuals[g.id][0];
- return `<article class="taxonomy-panel application-slide" id="application-${g.id}" data-dimension="${g.dimension}" role="tabpanel" aria-labelledby="application-tab-${g.id}"><div class="panel-title"><h3>${g.title}</h3><span class="panel-number">0${i+1}</span></div><p class="panel-description">${g.description}</p><div class="application-body"><ul class="application-points" role="tablist" aria-label="${g.title} tasks" aria-orientation="vertical">${g.points.map(([title,description],j)=>`<li role="presentation"><button class="application-task" role="tab" id="task-${g.id}-${j}" aria-controls="visual-${g.id}" aria-selected="${j===0}" tabindex="${j===0?0:-1}" data-task-group="${g.id}" data-task-index="${j}"><span class="task-label">${escapeHTML(title)}</span><span class="task-description">${escapeHTML(description)}</span></button></li>`).join('')}</ul><figure class="application-example" id="visual-${g.id}" role="tabpanel" aria-labelledby="task-${g.id}-0" tabindex="0"><div class="task-visual-heading"><span class="task-visual-type">${escapeHTML(visual.type)}</span><span class="task-visual-count">01 / 0${g.points.length}</span></div><button data-image="${visual.image}" data-caption="${escapeHTML(visual.caption)}" aria-label="Enlarge ${escapeHTML(g.points[0][0])} visualization"><img src="${visual.image}" alt="${escapeHTML(visual.caption)}" decoding="async"><span>View full size</span></button><figcaption>${escapeHTML(visual.caption)}</figcaption><a class="task-source" href="${escapeHTML(safeURL(visual.source))}" target="_blank" rel="noopener"${visual.source?'':' hidden'}>Source paper · Figure ${visual.figure||''}</a></figure></div></article>`;
+ return `<article class="taxonomy-panel application-slide" id="application-${g.id}" data-dimension="${g.dimension}" role="tabpanel" aria-labelledby="application-tab-${g.id}"><div class="panel-title"><h3>${g.title}</h3></div><p class="panel-description">${g.description}</p><div class="application-body"><ul class="application-points" role="tablist" aria-label="${g.title} tasks" aria-orientation="vertical">${g.points.map(([title,description],j)=>`<li role="presentation"><button class="application-task" role="tab" id="task-${g.id}-${j}" aria-controls="visual-${g.id}" aria-selected="${j===0}" tabindex="${j===0?0:-1}" data-task-group="${g.id}" data-task-index="${j}"><span class="task-label">${escapeHTML(title)}</span><span class="task-description">${escapeHTML(description)}</span></button></li>`).join('')}</ul><figure class="application-example" id="visual-${g.id}" role="tabpanel" aria-labelledby="task-${g.id}-0" tabindex="0"><div class="task-visual-heading"><span class="task-visual-type">${escapeHTML(visual.type)}</span></div><button data-image="${visual.image}" data-caption="${escapeHTML(visual.caption)}" aria-label="Enlarge ${escapeHTML(g.points[0][0])} visualization"><img src="${visual.image}" alt="${escapeHTML(visual.caption)}" decoding="async"><span>View full size</span></button><figcaption>${escapeHTML(visual.caption)}</figcaption><a class="task-source" href="${escapeHTML(safeURL(visual.source))}" target="_blank" rel="noopener"${visual.source?'':' hidden'}>Source paper · Figure ${visual.figure||''}</a></figure></div></article>`;
 }).join('');
 function selectTask(group,index,scrollToVisual=false){
  const g=applicationGroups.find(item=>item.id===group),visual=taskVisuals[group][index];
@@ -139,7 +134,6 @@ function selectTask(group,index,scrollToVisual=false){
  const figure=$(`#visual-${group}`),button=$('[data-image]',figure),img=$('img',figure);
  figure.setAttribute('aria-labelledby',`task-${group}-${index}`);
  $('.task-visual-type',figure).textContent=visual.type;
- $('.task-visual-count',figure).textContent=`0${index+1} / 0${g.points.length}`;
  button.dataset.image=visual.image;button.dataset.caption=visual.caption;
  button.setAttribute('aria-label',`Enlarge ${g.points[index][0]} visualization`);
  img.src=visual.image;img.alt=visual.caption;$('figcaption',figure).textContent=visual.caption;
@@ -172,17 +166,12 @@ function updateApplication(index){
  applicationButtons.forEach((button,i)=>{button.setAttribute('aria-selected',String(i===index));button.tabIndex=i===index?0:-1;});
  applicationSlides.forEach((slide,i)=>{slide.inert=i!==index;slide.setAttribute('aria-hidden',String(i!==index));});
  applicationTrack.style.height=applicationSlides[index].offsetHeight+'px';
- $('#application-progress').textContent=`0${index+1} / 03`;
- $('#application-prev').disabled=index===0;
- $('#application-next').disabled=index===2;
 }
 function selectApplication(index,behavior=reducedMotion.matches?'auto':'smooth'){
  pendingApplication=index;
  updateApplication(index);applicationTrack.scrollTo({left:applicationSlides[index].offsetLeft,behavior});
 }
 applicationButtons.forEach((button,i)=>button.addEventListener('click',()=>selectApplication(i)));
-$('#application-prev').addEventListener('click',()=>selectApplication(Math.max(0,currentApplication-1)));
-$('#application-next').addEventListener('click',()=>selectApplication(Math.min(2,currentApplication+1)));
 function applicationKeyboard(e){
  let index=currentApplication;
  if(e.key==='ArrowRight')index=(index+1)%3;else if(e.key==='ArrowLeft')index=(index+2)%3;else if(e.key==='Home')index=0;else if(e.key==='End')index=2;else return;

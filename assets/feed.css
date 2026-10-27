@@ -245,3 +245,46 @@
 .correction-steps li>span { display:grid; place-items:center; border:1px solid #c3d5b8; background:#edf4e5; border-radius:50%; width:23px; height:23px; flex-shrink:0; font-size:10px; }
 @media(max-width:600px) { .feed-card-links .feed-correction-button { min-height:46px; padding:10px 12px; } .correction-steps { gap:6px; } .correction-steps li { align-items:flex-start; font-size:10px; } }
 @media(max-width:420px) { .feed-card-links .feed-correction-button { width:100%; margin:4px 0; } }
+
+/* A single library, with a clearly separate historical collection and daily runs. */
+.feed-collections { display:grid; gap:6px; margin-bottom:25px; }
+.feed-collections button { display:flex; align-items:center; justify-content:space-between; gap:10px; width:100%; min-height:44px; padding:10px 11px; text-align:left; border:1px solid transparent; border-radius:7px; font-size:13px; color:#66735e; }
+.feed-collections button span { font-size:11px; font-variant-numeric:tabular-nums; opacity:.75; }
+.feed-collections button[aria-pressed=true] { background:#e5eddd; border-color:#cbd8be; color:#285b43; font-weight:600; }
+.feed-collections button:hover { background:#edf2e6; }
+.feed-calendar-label { display:block; font-size:11px; color:#758168; margin-bottom:12px; }
+.feed-select select,.feed-result-line select { -webkit-appearance:none; appearance:none; background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='m1 1 5 5 5-5' fill='none' stroke='%2366755b' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E"); background-repeat:no-repeat; background-position:right 12px center; background-size:10px 7px; padding-right:32px; }
+.feed-result-line select { padding-left:8px; }
+.feed-pagination { display:flex; align-items:center; justify-content:center; gap:20px; padding:16px 0; font-size:12px; color:#748169; }
+.feed-pagination:empty { display:none; }
+.feed-pagination button { border:1px solid #cbd8be; border-radius:7px; min-height:44px; padding:10px 20px; color:#285b43; background:#f2f6ed; }
+.feed-pagination button:hover { background:#e5eddd; }
+.feed-collection-notes { display:inline-block; padding-block:15px; color:#718165; font-size:12px; text-decoration:underline; text-underline-offset:3px; }
+.feed-event-archive { background:#edeef4; color:#69718b; }
+.feed-evidence-basis { color:#8a947e; }
+.feed-heading>.text-link { display:inline-block; margin-top:15px; }
+@media(max-width:760px) {
+ .feed-sidebar { grid-template-columns:minmax(0,1fr) minmax(0,1fr); }
+ .feed-collections { grid-column:1/-1; grid-template-columns:repeat(3,minmax(0,1fr)); gap:6px; margin:0 0 5px; }
+ .feed-collections button { display:block; padding:10px 7px; text-align:center; font-size:12px; }
+ .feed-collections button span { display:block; margin-top:4px; }
+ .feed-calendar-label { grid-column:1/-1; margin:0; }
+ #feed-calendar { grid-row:span 3; }
+ .feed-select select { padding-right:30px; }
+ .feed-pagination { gap:12px; }
+}
+@media(max-width:420px) {
+ .feed-sidebar { display:block; padding:18px; }
+ .feed-collections { display:grid; margin-bottom:20px; }
+ .feed-calendar-label { margin-bottom:10px; }
+}
+@media(forced-colors:active) {
+ .feed-select select,.feed-result-line select { appearance:auto; background-image:none; }
+ .feed-collections button[aria-pressed=true] { outline:2px solid Highlight; }
+}
+
+.feed-result-line label[hidden] { display:none; }
+@media(min-width:761px) {
+ .feed-heading { display:flex; justify-content:space-between; }
+ .feed-heading>.text-link { margin-top:0; }
+}
