@@ -6,9 +6,9 @@
   "executionMode": "retrospective_multi_date_portable_browser_pass",
   "status": "partial",
   "intro": "Browse the survey collection and daily discoveries, or choose a search date.",
-  "methodNote": "October 20–23 are retrospective date-targeted reports. October 26–27 are live skill-based searches; each report preserves its own provenance and actual paper dates.",
+  "methodNote": "Each report preserves its actual execution time, checked sources and paper event dates. October 28–29 were searched retrospectively on October 30; October 30 covers the period through 06:40 CDT. Same-day events use America/Chicago. Coverage is partial.",
   "taxonomyNote": "Research annotations use the pinned October 11 codebook; the live document changed and was not reconciled in this run.",
-  "uniquePapers": 351,
+  "uniquePapers": 359,
   "sharedRetrieval": {
     "searchBatches": 6,
     "searchQueries": 24,
@@ -52772,8 +52772,1603 @@
           }
         }
       ]
+    },
+    {
+      "date": "2026-10-28",
+      "label": "Oct 28",
+      "status": "partial_verified",
+      "executedAt": "2026-10-30T11:44:52+00:00",
+      "feedNote": "1 new submission and 3 earlier papers. Dates use America/Chicago; this retrospective search was run on October 30.",
+      "summary": "CAD-WAM, plus earlier 3DCodeEdit, CodeCap-Bench and the scope-dependent ScIntBench.",
+      "counts": {
+        "papers": 4,
+        "new": 1,
+        "updates": 0,
+        "catchUp": 3,
+        "core": 1,
+        "scopeDependent": 1,
+        "adjacent": 2
+      },
+      "coverage": {
+        "label": "Bounded source coverage",
+        "sources": [
+          {
+            "family": "arxiv",
+            "status": "partial"
+          },
+          {
+            "family": "hugging_face",
+            "status": "partial"
+          },
+          {
+            "family": "openreview",
+            "status": "partial"
+          },
+          {
+            "family": "official_venues",
+            "status": "partial"
+          },
+          {
+            "family": "project_author_lab",
+            "status": "partial"
+          }
+        ],
+        "limitations": [
+          "Executed on October 30, 2026. October 28 and 29 are retrospective date-targeted passes; October 30 ends at 06:40:59 America/Chicago. Original UTC event times are retained.",
+          "Three separate bounded browser passes were executed. Related evidence found in another pass is explicitly recorded as a cross-pass supplement, not a new search. Papers with verified October 28 or 29 local dates are assigned to those reports.",
+          "Selective arXiv cs.GR, cs.CV and cs.HC listing inspection; other arXiv categories were not separately enumerated. OpenReview and official venues received indexed searches only.",
+          "The installed skill prepare/finalize workflow ran with live browser retrieval. This was not a separate API harness benchmark run.",
+          "The live taxonomy document revision differs from the pinned October 11 codebook. Classifications retain the pinned codebook; the new document was not reconciled.",
+          "Seven-day lookback results are distinguished from same-day submissions. Known IDs are deduplicated against the existing website; title changes do not create a new paper.",
+          "Search indexes may lag. This bounded pass does not establish field-wide completeness. Selected-method and abstract-only readings are identified per record."
+        ],
+        "validationPassed": true
+      },
+      "artifacts": {
+        "report": "data/2026-10-28/report.md",
+        "data": "data/2026-10-28/run.json",
+        "audit": "data/2026-10-28/audit.json"
+      },
+      "papers": [
+        {
+          "id": "2610.39306",
+          "title": "CAD-WAM: Anticipating Geometry for Text-to-CAD Generation",
+          "shortTitle": "CAD-WAM",
+          "url": "https://arxiv.org/abs/2610.39306",
+          "eventType": "first_submission",
+          "eventDate": "2026-10-28T22:52:21-05:00",
+          "sourceEventTime": "2026-10-29T03:52:21+00:00",
+          "bucket": "same_day_new",
+          "scope": "core",
+          "scopeLabel": "Core",
+          "application": "Static / CAD",
+          "applications": [
+            "Static / CAD"
+          ],
+          "operations": [
+            "Generation"
+          ],
+          "summary": "Builds CAD solids step by step, conditioning each modeling action on geometry produced by the CAD kernel.",
+          "tags": [
+            "Modeling",
+            "Structural Scene State"
+          ],
+          "evidence": [
+            {
+              "primary_url": "https://arxiv.org/html/2610.39306v1",
+              "locator": "Sections 3.1–3.4",
+              "evidence": "Each DSL action executes in a CAD kernel. Surface samples of the resulting solid are encoded as geometric state for the next action; the end action terminates construction."
+            }
+          ],
+          "scopeReason": "An LLM chooses executable modeling actions from the target description and observed intermediate solid.",
+          "limitations": "Next-state prediction is training supervision; it is not evidence of inference-time search or a separate critic.",
+          "authors": [
+            "Zhengyang Li",
+            "Weijie Zheng",
+            "Yuxin Cui",
+            "Sijie Wang",
+            "Wenjie Feng",
+            "Qiyu Kang"
+          ],
+          "taxonomy": {
+            "task": [
+              "Modeling"
+            ],
+            "input_form": [
+              "Language"
+            ],
+            "output": [
+              "Structured Specification",
+              "Graphics Artifact"
+            ],
+            "model_type": [
+              "Not Reported"
+            ],
+            "model_training": [
+              "Not Reported"
+            ],
+            "planning": [
+              "Not Reported"
+            ],
+            "workflow": [
+              "Sequential"
+            ],
+            "update_strategy": [
+              "Not Reported"
+            ],
+            "verifier": [
+              "Not Reported"
+            ],
+            "feedback_assessment": [
+              "Not Reported"
+            ],
+            "feedback_observation": [
+              "Structural Scene State"
+            ],
+            "memory_time": [
+              "Not Reported"
+            ],
+            "memory_reach": [
+              "Not Reported"
+            ],
+            "action_type": [
+              "Structured Specification"
+            ],
+            "graphics_software": [
+              "Not Reported"
+            ],
+            "tools": [
+              "Not Reported"
+            ],
+            "resources": [
+              "Not Reported"
+            ],
+            "representation": [
+              "Geometry",
+              "Learned State"
+            ]
+          },
+          "taxonomyVersion": "google-doc-taxonomy-v3-2026-10-11",
+          "taxonomyEvidence": {
+            "task": {
+              "primary_url": "https://arxiv.org/html/2610.39306v1",
+              "locator": "Sections 3.1–3.4",
+              "evidence": "Each DSL action executes in a CAD kernel. Surface samples of the resulting solid are encoded as geometric state for the next action; the end action terminates construction.",
+              "level": "derived",
+              "reasoning": "Conservative mapping of the inspected passage to the pinned codebook."
+            },
+            "input_form": {
+              "primary_url": "https://arxiv.org/html/2610.39306v1",
+              "locator": "Sections 3.1–3.4",
+              "evidence": "Each DSL action executes in a CAD kernel. Surface samples of the resulting solid are encoded as geometric state for the next action; the end action terminates construction.",
+              "level": "derived",
+              "reasoning": "Conservative mapping of the inspected passage to the pinned codebook."
+            },
+            "output": {
+              "primary_url": "https://arxiv.org/html/2610.39306v1",
+              "locator": "Sections 3.1–3.4",
+              "evidence": "Each DSL action executes in a CAD kernel. Surface samples of the resulting solid are encoded as geometric state for the next action; the end action terminates construction.",
+              "level": "derived",
+              "reasoning": "Conservative mapping of the inspected passage to the pinned codebook."
+            },
+            "action_type": {
+              "primary_url": "https://arxiv.org/html/2610.39306v1",
+              "locator": "Sections 3.1–3.4",
+              "evidence": "Each DSL action executes in a CAD kernel. Surface samples of the resulting solid are encoded as geometric state for the next action; the end action terminates construction.",
+              "level": "derived",
+              "reasoning": "Conservative mapping of the inspected passage to the pinned codebook."
+            },
+            "feedback_observation": {
+              "primary_url": "https://arxiv.org/html/2610.39306v1",
+              "locator": "Sections 3.1–3.4",
+              "evidence": "Each DSL action executes in a CAD kernel. Surface samples of the resulting solid are encoded as geometric state for the next action; the end action terminates construction.",
+              "level": "derived",
+              "reasoning": "Conservative mapping of the inspected passage to the pinned codebook."
+            },
+            "representation": {
+              "primary_url": "https://arxiv.org/html/2610.39306v1",
+              "locator": "Sections 3.1–3.4",
+              "evidence": "Each DSL action executes in a CAD kernel. Surface samples of the resulting solid are encoded as geometric state for the next action; the end action terminates construction.",
+              "level": "derived",
+              "reasoning": "Conservative mapping of the inspected passage to the pinned codebook."
+            },
+            "workflow": {
+              "primary_url": "https://arxiv.org/html/2610.39306v1",
+              "locator": "Sections 3.1–3.4",
+              "evidence": "Each DSL action executes in a CAD kernel. Surface samples of the resulting solid are encoded as geometric state for the next action; the end action terminates construction.",
+              "level": "derived",
+              "reasoning": "Conservative mapping of the inspected passage to the pinned codebook."
+            }
+          },
+          "knownCorpusStatus": "new_relative_to_snapshot",
+          "events": [
+            {
+              "type": "first_submission",
+              "value": "2026-10-29T03:52:21+00:00",
+              "precision": "timestamp",
+              "timezone": "UTC",
+              "primary_url": "https://arxiv.org/abs/2610.39306",
+              "authority": "primary",
+              "evidence": "arXiv submission history: v1, 2026-10-29T03:52:21+00:00.",
+              "version": "v1",
+              "prior_event_status": "not_seen_in_supplied_history"
+            }
+          ],
+          "readingLevel": "abstract_and_selected_method_passages"
+        },
+        {
+          "id": "2610.38231",
+          "title": "3DCodeEdit: Benchmarking Instruction-Guided 3D Program Editing",
+          "shortTitle": "3DCodeEdit",
+          "url": "https://arxiv.org/abs/2610.38231",
+          "eventType": "first_submission",
+          "eventDate": "2026-10-27T22:29:59-05:00",
+          "sourceEventTime": "2026-10-28T03:29:59+00:00",
+          "bucket": "late_discovery",
+          "scope": "enabling_or_adjacent",
+          "scopeLabel": "Adjacent / enabling",
+          "application": "Datasets and Benchmarks",
+          "applications": [
+            "Datasets and Benchmarks",
+            "Static / Object"
+          ],
+          "operations": [
+            "Editing",
+            "Auditing"
+          ],
+          "summary": "Benchmarks edits to procedural Blender objects and compares several forms of render-based revision feedback.",
+          "tags": [
+            "Modeling",
+            "Self",
+            "Critic",
+            "Visual"
+          ],
+          "evidence": [
+            {
+              "primary_url": "https://arxiv.org/html/2610.38231v1",
+              "locator": "Section 4.4",
+              "evidence": "Editors revise Blender programs after self-inspection or separate reviewer feedback on rendered views, for a bounded number of rounds."
+            }
+          ],
+          "scopeReason": "Directly tests agentic 3D program editing and reviewer-guided revision.",
+          "limitations": "Selected method passages inspected; single-shot benchmark evaluation and feedback-enabled experiments are distinct.",
+          "authors": [
+            "Binjie Wang",
+            "Xinran Zhao",
+            "Shoubin Yu",
+            "Xiang Li",
+            "Silong Yong",
+            "Chenyang Yang",
+            "Tianyu Chen",
+            "Ruofei Du",
+            "He He",
+            "Chen Zhao",
+            "Tongshuang Wu"
+          ],
+          "taxonomy": {
+            "task": [
+              "Modeling"
+            ],
+            "input_form": [
+              "Language"
+            ],
+            "output": [
+              "Program"
+            ],
+            "model_type": [
+              "Not Reported"
+            ],
+            "model_training": [
+              "Not Reported"
+            ],
+            "planning": [
+              "Not Reported"
+            ],
+            "workflow": [
+              "Not Reported"
+            ],
+            "update_strategy": [
+              "Not Reported"
+            ],
+            "verifier": [
+              "Self",
+              "Critic"
+            ],
+            "feedback_assessment": [
+              "Not Reported"
+            ],
+            "feedback_observation": [
+              "Visual"
+            ],
+            "memory_time": [
+              "Not Reported"
+            ],
+            "memory_reach": [
+              "Not Reported"
+            ],
+            "action_type": [
+              "Code/Script"
+            ],
+            "graphics_software": [
+              "Not Reported"
+            ],
+            "tools": [
+              "Not Reported"
+            ],
+            "resources": [
+              "Not Reported"
+            ],
+            "representation": [
+              "Code"
+            ]
+          },
+          "taxonomyVersion": "google-doc-taxonomy-v3-2026-10-11",
+          "taxonomyEvidence": {
+            "task": {
+              "primary_url": "https://arxiv.org/html/2610.38231v1",
+              "locator": "Section 4.4",
+              "evidence": "Editors revise Blender programs after self-inspection or separate reviewer feedback on rendered views, for a bounded number of rounds.",
+              "level": "derived",
+              "reasoning": "Conservative mapping of the inspected passage to the pinned codebook."
+            },
+            "input_form": {
+              "primary_url": "https://arxiv.org/html/2610.38231v1",
+              "locator": "Section 4.4",
+              "evidence": "Editors revise Blender programs after self-inspection or separate reviewer feedback on rendered views, for a bounded number of rounds.",
+              "level": "derived",
+              "reasoning": "Conservative mapping of the inspected passage to the pinned codebook."
+            },
+            "output": {
+              "primary_url": "https://arxiv.org/html/2610.38231v1",
+              "locator": "Section 4.4",
+              "evidence": "Editors revise Blender programs after self-inspection or separate reviewer feedback on rendered views, for a bounded number of rounds.",
+              "level": "derived",
+              "reasoning": "Conservative mapping of the inspected passage to the pinned codebook."
+            },
+            "action_type": {
+              "primary_url": "https://arxiv.org/html/2610.38231v1",
+              "locator": "Section 4.4",
+              "evidence": "Editors revise Blender programs after self-inspection or separate reviewer feedback on rendered views, for a bounded number of rounds.",
+              "level": "derived",
+              "reasoning": "Conservative mapping of the inspected passage to the pinned codebook."
+            },
+            "verifier": {
+              "primary_url": "https://arxiv.org/html/2610.38231v1",
+              "locator": "Section 4.4",
+              "evidence": "Editors revise Blender programs after self-inspection or separate reviewer feedback on rendered views, for a bounded number of rounds.",
+              "level": "derived",
+              "reasoning": "Conservative mapping of the inspected passage to the pinned codebook."
+            },
+            "feedback_observation": {
+              "primary_url": "https://arxiv.org/html/2610.38231v1",
+              "locator": "Section 4.4",
+              "evidence": "Editors revise Blender programs after self-inspection or separate reviewer feedback on rendered views, for a bounded number of rounds.",
+              "level": "derived",
+              "reasoning": "Conservative mapping of the inspected passage to the pinned codebook."
+            },
+            "representation": {
+              "primary_url": "https://arxiv.org/html/2610.38231v1",
+              "locator": "Section 4.4",
+              "evidence": "Editors revise Blender programs after self-inspection or separate reviewer feedback on rendered views, for a bounded number of rounds.",
+              "level": "derived",
+              "reasoning": "Conservative mapping of the inspected passage to the pinned codebook."
+            }
+          },
+          "knownCorpusStatus": "new_relative_to_snapshot",
+          "events": [
+            {
+              "type": "first_submission",
+              "value": "2026-10-28T03:29:59+00:00",
+              "precision": "timestamp",
+              "timezone": "UTC",
+              "primary_url": "https://arxiv.org/abs/2610.38231",
+              "authority": "primary",
+              "evidence": "arXiv submission history: v1, 2026-10-28T03:29:59+00:00.",
+              "version": "v1",
+              "prior_event_status": "not_seen_in_supplied_history"
+            }
+          ],
+          "readingLevel": "abstract_and_selected_method_passages"
+        },
+        {
+          "id": "2610.37341",
+          "title": "CodeCap-Bench: Can Code Serve as a Good Video Caption?",
+          "shortTitle": "CodeCap-Bench",
+          "url": "https://arxiv.org/abs/2610.37341",
+          "eventType": "first_submission",
+          "eventDate": "2026-10-27T09:47:31-05:00",
+          "sourceEventTime": "2026-10-27T14:47:31+00:00",
+          "bucket": "late_discovery",
+          "scope": "enabling_or_adjacent",
+          "scopeLabel": "Adjacent / enabling",
+          "application": "Datasets and Benchmarks",
+          "applications": [
+            "Datasets and Benchmarks",
+            "2D Graphics"
+          ],
+          "operations": [
+            "Reconstruction",
+            "Auditing"
+          ],
+          "summary": "Evaluates executable reconstructions of structured 2D videos, comparing agentic and single-pass code generation.",
+          "tags": [
+            "Visual"
+          ],
+          "evidence": [
+            {
+              "primary_url": "https://arxiv.org/html/2610.37341v1",
+              "locator": "Section 4.1",
+              "evidence": "Agents inspect video frames through tools, generate executable code, and refine it using rendered results; the comparison condition has no tool or rendering feedback."
+            }
+          ],
+          "scopeReason": "The agentic setting inspects reference frames and revises executable graphics using rendering feedback.",
+          "limitations": "Rendering successfully does not establish fidelity; benchmark scores are distinct from the agent feedback channel.",
+          "authors": [
+            "Jiafu Tang",
+            "Yifan Xu",
+            "Eric Tang",
+            "Junjie Zhao",
+            "Shipeng Luo",
+            "Te Sun",
+            "Haoxuan Hu",
+            "Yiyan Ji",
+            "Xinlong Chen",
+            "Zihao Wang",
+            "Yang Shi",
+            "Yuanxing Zhang",
+            "Pengfei Wan",
+            "Jiaheng Liu"
+          ],
+          "taxonomy": {
+            "task": [
+              "Not Reported"
+            ],
+            "input_form": [
+              "Video"
+            ],
+            "output": [
+              "Program",
+              "Rendered Media"
+            ],
+            "model_type": [
+              "Not Reported"
+            ],
+            "model_training": [
+              "Not Reported"
+            ],
+            "planning": [
+              "Not Reported"
+            ],
+            "workflow": [
+              "Not Reported"
+            ],
+            "update_strategy": [
+              "Not Reported"
+            ],
+            "verifier": [
+              "Not Reported"
+            ],
+            "feedback_assessment": [
+              "Not Reported"
+            ],
+            "feedback_observation": [
+              "Visual"
+            ],
+            "memory_time": [
+              "Not Reported"
+            ],
+            "memory_reach": [
+              "Not Reported"
+            ],
+            "action_type": [
+              "Code/Script",
+              "Tool/Function Call"
+            ],
+            "graphics_software": [
+              "Not Reported"
+            ],
+            "tools": [
+              "Not Reported"
+            ],
+            "resources": [
+              "Not Reported"
+            ],
+            "representation": [
+              "Code"
+            ]
+          },
+          "taxonomyVersion": "google-doc-taxonomy-v3-2026-10-11",
+          "taxonomyEvidence": {
+            "input_form": {
+              "primary_url": "https://arxiv.org/html/2610.37341v1",
+              "locator": "Section 4.1",
+              "evidence": "Agents inspect video frames through tools, generate executable code, and refine it using rendered results; the comparison condition has no tool or rendering feedback.",
+              "level": "derived",
+              "reasoning": "Conservative mapping of the inspected passage to the pinned codebook."
+            },
+            "output": {
+              "primary_url": "https://arxiv.org/html/2610.37341v1",
+              "locator": "Section 4.1",
+              "evidence": "Agents inspect video frames through tools, generate executable code, and refine it using rendered results; the comparison condition has no tool or rendering feedback.",
+              "level": "derived",
+              "reasoning": "Conservative mapping of the inspected passage to the pinned codebook."
+            },
+            "action_type": {
+              "primary_url": "https://arxiv.org/html/2610.37341v1",
+              "locator": "Section 4.1",
+              "evidence": "Agents inspect video frames through tools, generate executable code, and refine it using rendered results; the comparison condition has no tool or rendering feedback.",
+              "level": "derived",
+              "reasoning": "Conservative mapping of the inspected passage to the pinned codebook."
+            },
+            "feedback_observation": {
+              "primary_url": "https://arxiv.org/html/2610.37341v1",
+              "locator": "Section 4.1",
+              "evidence": "Agents inspect video frames through tools, generate executable code, and refine it using rendered results; the comparison condition has no tool or rendering feedback.",
+              "level": "derived",
+              "reasoning": "Conservative mapping of the inspected passage to the pinned codebook."
+            },
+            "representation": {
+              "primary_url": "https://arxiv.org/html/2610.37341v1",
+              "locator": "Section 4.1",
+              "evidence": "Agents inspect video frames through tools, generate executable code, and refine it using rendered results; the comparison condition has no tool or rendering feedback.",
+              "level": "derived",
+              "reasoning": "Conservative mapping of the inspected passage to the pinned codebook."
+            }
+          },
+          "knownCorpusStatus": "new_relative_to_snapshot",
+          "events": [
+            {
+              "type": "first_submission",
+              "value": "2026-10-27T14:47:31+00:00",
+              "precision": "timestamp",
+              "timezone": "UTC",
+              "primary_url": "https://arxiv.org/abs/2610.37341",
+              "authority": "primary",
+              "evidence": "arXiv submission history: v1, 2026-10-27T14:47:31+00:00.",
+              "version": "v1",
+              "prior_event_status": "not_seen_in_supplied_history"
+            }
+          ],
+          "readingLevel": "abstract_and_selected_method_passages"
+        },
+        {
+          "id": "2610.37326",
+          "title": "ScIntBench: Physical Interaction Plausibility in 3D Scene Generation",
+          "shortTitle": "ScIntBench",
+          "url": "https://arxiv.org/abs/2610.37326",
+          "eventType": "first_submission",
+          "eventDate": "2026-10-27T09:36:04-05:00",
+          "sourceEventTime": "2026-10-27T14:36:04+00:00",
+          "bucket": "late_discovery",
+          "scope": "scope_dependent",
+          "scopeLabel": "Scope-dependent",
+          "application": "Datasets and Benchmarks",
+          "applications": [
+            "Datasets and Benchmarks",
+            "Static / Scene"
+          ],
+          "operations": [
+            "Auditing"
+          ],
+          "summary": "Tests whether generated indoor scenes support prescribed physical interactions in simulation.",
+          "tags": [],
+          "evidence": [
+            {
+              "primary_url": "https://arxiv.org/abs/2610.37326",
+              "locator": "Abstract",
+              "evidence": "The benchmark executes prescribed manipulation actions in generated scenes and measures interaction success and physical plausibility."
+            }
+          ],
+          "scopeReason": "Relevant evaluation substrate for generated scenes; the inspected abstract does not establish which evaluated systems are agentic.",
+          "limitations": "Abstract-only screening; retain as scope-dependent pending methods review.",
+          "authors": [
+            "Wendi Ying",
+            "Daochang Liu",
+            "Leonid Sigal",
+            "Ajmal Saeed Mian"
+          ],
+          "taxonomy": {
+            "task": [
+              "Not Reported"
+            ],
+            "input_form": [
+              "Not Reported"
+            ],
+            "output": [
+              "Not Reported"
+            ],
+            "model_type": [
+              "Not Reported"
+            ],
+            "model_training": [
+              "Not Reported"
+            ],
+            "planning": [
+              "Not Reported"
+            ],
+            "workflow": [
+              "Not Reported"
+            ],
+            "update_strategy": [
+              "Not Reported"
+            ],
+            "verifier": [
+              "Not Reported"
+            ],
+            "feedback_assessment": [
+              "Not Reported"
+            ],
+            "feedback_observation": [
+              "Not Reported"
+            ],
+            "memory_time": [
+              "Not Reported"
+            ],
+            "memory_reach": [
+              "Not Reported"
+            ],
+            "action_type": [
+              "Not Reported"
+            ],
+            "graphics_software": [
+              "Not Reported"
+            ],
+            "tools": [
+              "Not Reported"
+            ],
+            "resources": [
+              "Not Reported"
+            ],
+            "representation": [
+              "Not Reported"
+            ]
+          },
+          "taxonomyVersion": "google-doc-taxonomy-v3-2026-10-11",
+          "taxonomyEvidence": {},
+          "knownCorpusStatus": "new_relative_to_snapshot",
+          "events": [
+            {
+              "type": "first_submission",
+              "value": "2026-10-27T14:36:04+00:00",
+              "precision": "timestamp",
+              "timezone": "UTC",
+              "primary_url": "https://arxiv.org/abs/2610.37326",
+              "authority": "primary",
+              "evidence": "arXiv submission history: v1, 2026-10-27T14:36:04+00:00.",
+              "version": "v1",
+              "prior_event_status": "not_seen_in_supplied_history"
+            }
+          ],
+          "readingLevel": "abstract_only"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-29",
+      "label": "Oct 29",
+      "status": "partial_verified",
+      "executedAt": "2026-10-30T11:45:58+00:00",
+      "feedNote": "4 new submissions and 1 earlier revision. Dates use America/Chicago; this retrospective search was run on October 30.",
+      "summary": "PhysAg3D and AdMuse; Inkitiate is scope-dependent, and Video Generation Meets Agent Harness is a related report. DIP-CAD updates the existing Vision2CAD record.",
+      "counts": {
+        "papers": 5,
+        "new": 4,
+        "updates": 0,
+        "catchUp": 1,
+        "core": 3,
+        "scopeDependent": 1,
+        "adjacent": 1
+      },
+      "coverage": {
+        "label": "Bounded source coverage",
+        "sources": [
+          {
+            "family": "arxiv",
+            "status": "partial"
+          },
+          {
+            "family": "hugging_face",
+            "status": "partial"
+          },
+          {
+            "family": "openreview",
+            "status": "partial"
+          },
+          {
+            "family": "official_venues",
+            "status": "partial"
+          },
+          {
+            "family": "project_author_lab",
+            "status": "not_reached_within_budget"
+          }
+        ],
+        "limitations": [
+          "Executed on October 30, 2026. October 28 and 29 are retrospective date-targeted passes; October 30 ends at 06:40:59 America/Chicago. Original UTC event times are retained.",
+          "Three separate bounded browser passes were executed. Related evidence found in another pass is explicitly recorded as a cross-pass supplement, not a new search. Papers with verified October 28 or 29 local dates are assigned to those reports.",
+          "Selective arXiv cs.GR, cs.CV and cs.HC listing inspection; other arXiv categories were not separately enumerated. OpenReview and official venues received indexed searches only.",
+          "The installed skill prepare/finalize workflow ran with live browser retrieval. This was not a separate API harness benchmark run.",
+          "The live taxonomy document revision differs from the pinned October 11 codebook. Classifications retain the pinned codebook; the new document was not reconciled.",
+          "Seven-day lookback results are distinguished from same-day submissions. Known IDs are deduplicated against the existing website; title changes do not create a new paper.",
+          "Search indexes may lag. This bounded pass does not establish field-wide completeness. Selected-method and abstract-only readings are identified per record."
+        ],
+        "validationPassed": true
+      },
+      "artifacts": {
+        "report": "data/2026-10-29/report.md",
+        "data": "data/2026-10-29/run.json",
+        "audit": "data/2026-10-29/audit.json"
+      },
+      "papers": [
+        {
+          "id": "2610.39924",
+          "title": "PhysAg3D: Bridging 3D Generative and Agentic Models for High-Fidelity and Physically-Interactive Assets",
+          "shortTitle": "PhysAg3D",
+          "url": "https://arxiv.org/abs/2610.39924",
+          "eventType": "first_submission",
+          "eventDate": "2026-10-29T07:29:27-05:00",
+          "sourceEventTime": "2026-10-29T12:29:27+00:00",
+          "bucket": "same_day_new",
+          "scope": "core",
+          "scopeLabel": "Core",
+          "application": "Dynamic / Articulated assets",
+          "applications": [
+            "Dynamic / Articulated assets",
+            "Dynamic / Physical simulation and effects",
+            "Static / Object"
+          ],
+          "operations": [
+            "Generation",
+            "Editing"
+          ],
+          "summary": "Combines image-based mesh generation with agent-guided construction and repair of physical interactions.",
+          "tags": [
+            "Modeling",
+            "Simulation",
+            "Local Patch",
+            "Visual",
+            "Runtime"
+          ],
+          "evidence": [
+            {
+              "primary_url": "https://arxiv.org/html/2610.39924v1",
+              "locator": "Sections 3.2–3.4",
+              "evidence": "The agent inspects generated meshes, constructs physical structures, and uses rendered interactions plus execution checks to target bounded revisions."
+            }
+          ],
+          "scopeReason": "The agent uses geometry tools and simulated interaction evidence to revise joints, parts and surface bindings.",
+          "limitations": "Single-image physical properties are inferred; selected passages were inspected, without reproducing the experiments.",
+          "authors": [
+            "Bi'an Du",
+            "Fanpeng Meng",
+            "Jiemin Fang",
+            "Chen Yang",
+            "Pufan Li",
+            "Daizong Liu",
+            "Qi Tian",
+            "Wei Hu"
+          ],
+          "taxonomy": {
+            "task": [
+              "Modeling",
+              "Simulation"
+            ],
+            "input_form": [
+              "Image"
+            ],
+            "output": [
+              "Graphics Artifact"
+            ],
+            "model_type": [
+              "VLM"
+            ],
+            "model_training": [
+              "Not Reported"
+            ],
+            "planning": [
+              "Not Reported"
+            ],
+            "workflow": [
+              "Not Reported"
+            ],
+            "update_strategy": [
+              "Local Patch"
+            ],
+            "verifier": [
+              "Not Reported"
+            ],
+            "feedback_assessment": [
+              "Not Reported"
+            ],
+            "feedback_observation": [
+              "Visual",
+              "Runtime"
+            ],
+            "memory_time": [
+              "Not Reported"
+            ],
+            "memory_reach": [
+              "Not Reported"
+            ],
+            "action_type": [
+              "Tool/Function Call"
+            ],
+            "graphics_software": [
+              "Not Reported"
+            ],
+            "tools": [
+              "Not Reported"
+            ],
+            "resources": [
+              "Not Reported"
+            ],
+            "representation": [
+              "Geometry",
+              "Dynamic State"
+            ]
+          },
+          "taxonomyVersion": "google-doc-taxonomy-v3-2026-10-11",
+          "taxonomyEvidence": {
+            "task": {
+              "primary_url": "https://arxiv.org/html/2610.39924v1",
+              "locator": "Sections 3.2–3.4",
+              "evidence": "The agent inspects generated meshes, constructs physical structures, and uses rendered interactions plus execution checks to target bounded revisions.",
+              "level": "derived",
+              "reasoning": "Conservative mapping of the inspected passage to the pinned codebook."
+            },
+            "input_form": {
+              "primary_url": "https://arxiv.org/html/2610.39924v1",
+              "locator": "Sections 3.2–3.4",
+              "evidence": "The agent inspects generated meshes, constructs physical structures, and uses rendered interactions plus execution checks to target bounded revisions.",
+              "level": "derived",
+              "reasoning": "Conservative mapping of the inspected passage to the pinned codebook."
+            },
+            "output": {
+              "primary_url": "https://arxiv.org/html/2610.39924v1",
+              "locator": "Sections 3.2–3.4",
+              "evidence": "The agent inspects generated meshes, constructs physical structures, and uses rendered interactions plus execution checks to target bounded revisions.",
+              "level": "derived",
+              "reasoning": "Conservative mapping of the inspected passage to the pinned codebook."
+            },
+            "model_type": {
+              "primary_url": "https://arxiv.org/html/2610.39924v1",
+              "locator": "Sections 3.2–3.4",
+              "evidence": "The agent inspects generated meshes, constructs physical structures, and uses rendered interactions plus execution checks to target bounded revisions.",
+              "level": "derived",
+              "reasoning": "Conservative mapping of the inspected passage to the pinned codebook."
+            },
+            "action_type": {
+              "primary_url": "https://arxiv.org/html/2610.39924v1",
+              "locator": "Sections 3.2–3.4",
+              "evidence": "The agent inspects generated meshes, constructs physical structures, and uses rendered interactions plus execution checks to target bounded revisions.",
+              "level": "derived",
+              "reasoning": "Conservative mapping of the inspected passage to the pinned codebook."
+            },
+            "feedback_observation": {
+              "primary_url": "https://arxiv.org/html/2610.39924v1",
+              "locator": "Sections 3.2–3.4",
+              "evidence": "The agent inspects generated meshes, constructs physical structures, and uses rendered interactions plus execution checks to target bounded revisions.",
+              "level": "derived",
+              "reasoning": "Conservative mapping of the inspected passage to the pinned codebook."
+            },
+            "update_strategy": {
+              "primary_url": "https://arxiv.org/html/2610.39924v1",
+              "locator": "Sections 3.2–3.4",
+              "evidence": "The agent inspects generated meshes, constructs physical structures, and uses rendered interactions plus execution checks to target bounded revisions.",
+              "level": "derived",
+              "reasoning": "Conservative mapping of the inspected passage to the pinned codebook."
+            },
+            "representation": {
+              "primary_url": "https://arxiv.org/html/2610.39924v1",
+              "locator": "Sections 3.2–3.4",
+              "evidence": "The agent inspects generated meshes, constructs physical structures, and uses rendered interactions plus execution checks to target bounded revisions.",
+              "level": "derived",
+              "reasoning": "Conservative mapping of the inspected passage to the pinned codebook."
+            }
+          },
+          "knownCorpusStatus": "new_relative_to_snapshot",
+          "events": [
+            {
+              "type": "first_submission",
+              "value": "2026-10-29T12:29:27+00:00",
+              "precision": "timestamp",
+              "timezone": "UTC",
+              "primary_url": "https://arxiv.org/abs/2610.39924",
+              "authority": "primary",
+              "evidence": "arXiv submission history: v1, 2026-10-29T12:29:27+00:00.",
+              "version": "v1",
+              "prior_event_status": "not_seen_in_supplied_history"
+            }
+          ],
+          "readingLevel": "abstract_and_selected_method_passages"
+        },
+        {
+          "id": "2610.40190",
+          "title": "AdMuse: Skill-Guided Creative Advertising Image Generation",
+          "shortTitle": "AdMuse",
+          "url": "https://arxiv.org/abs/2610.40190",
+          "eventType": "first_submission",
+          "eventDate": "2026-10-29T09:47:22-05:00",
+          "sourceEventTime": "2026-10-29T14:47:22+00:00",
+          "bucket": "same_day_new",
+          "scope": "core",
+          "scopeLabel": "Core",
+          "application": "2D Graphics",
+          "applications": [
+            "2D Graphics"
+          ],
+          "operations": [
+            "Generation",
+            "Editing"
+          ],
+          "summary": "Routes reusable creative skills to advertising briefs, selects concepts, and refines generated images with visual critique.",
+          "tags": [
+            "Candidate Selection",
+            "Regeneration",
+            "Critic",
+            "Visual"
+          ],
+          "evidence": [
+            {
+              "primary_url": "https://arxiv.org/html/2610.40190v1",
+              "locator": "Section 3.2",
+              "evidence": "Concepts compete before rendering. A critic then approves the image or requests prompt revisions; rejected attempts are summarized and the loop has a round limit."
+            }
+          ],
+          "scopeReason": "A critic checks the rendered advertisement and feeds revisions back into prompt generation.",
+          "limitations": "Evidence covers the main method; supplementary details and experimental results were not independently reproduced.",
+          "authors": [
+            "Minyan Luo",
+            "Yuxin Zhang",
+            "Meng Zhao",
+            "Xincan Wang",
+            "Fuzhang Wu",
+            "Tong-Yee Lee",
+            "Oliver Deussen",
+            "Fan Tang",
+            "Weiming Dong"
+          ],
+          "taxonomy": {
+            "task": [
+              "Not Reported"
+            ],
+            "input_form": [
+              "Language",
+              "Image"
+            ],
+            "output": [
+              "Rendered Media"
+            ],
+            "model_type": [
+              "Not Reported"
+            ],
+            "model_training": [
+              "Not Reported"
+            ],
+            "planning": [
+              "Not Reported"
+            ],
+            "workflow": [
+              "Not Reported"
+            ],
+            "update_strategy": [
+              "Candidate Selection",
+              "Regeneration"
+            ],
+            "verifier": [
+              "Critic"
+            ],
+            "feedback_assessment": [
+              "Not Reported"
+            ],
+            "feedback_observation": [
+              "Visual"
+            ],
+            "memory_time": [
+              "Not Reported"
+            ],
+            "memory_reach": [
+              "Not Reported"
+            ],
+            "action_type": [
+              "Not Reported"
+            ],
+            "graphics_software": [
+              "Not Reported"
+            ],
+            "tools": [
+              "Not Reported"
+            ],
+            "resources": [
+              "Not Reported"
+            ],
+            "representation": [
+              "Pixels"
+            ]
+          },
+          "taxonomyVersion": "google-doc-taxonomy-v3-2026-10-11",
+          "taxonomyEvidence": {
+            "input_form": {
+              "primary_url": "https://arxiv.org/html/2610.40190v1",
+              "locator": "Section 3.2",
+              "evidence": "Concepts compete before rendering. A critic then approves the image or requests prompt revisions; rejected attempts are summarized and the loop has a round limit.",
+              "level": "derived",
+              "reasoning": "Conservative mapping of the inspected passage to the pinned codebook."
+            },
+            "output": {
+              "primary_url": "https://arxiv.org/html/2610.40190v1",
+              "locator": "Section 3.2",
+              "evidence": "Concepts compete before rendering. A critic then approves the image or requests prompt revisions; rejected attempts are summarized and the loop has a round limit.",
+              "level": "derived",
+              "reasoning": "Conservative mapping of the inspected passage to the pinned codebook."
+            },
+            "verifier": {
+              "primary_url": "https://arxiv.org/html/2610.40190v1",
+              "locator": "Section 3.2",
+              "evidence": "Concepts compete before rendering. A critic then approves the image or requests prompt revisions; rejected attempts are summarized and the loop has a round limit.",
+              "level": "derived",
+              "reasoning": "Conservative mapping of the inspected passage to the pinned codebook."
+            },
+            "feedback_observation": {
+              "primary_url": "https://arxiv.org/html/2610.40190v1",
+              "locator": "Section 3.2",
+              "evidence": "Concepts compete before rendering. A critic then approves the image or requests prompt revisions; rejected attempts are summarized and the loop has a round limit.",
+              "level": "derived",
+              "reasoning": "Conservative mapping of the inspected passage to the pinned codebook."
+            },
+            "update_strategy": {
+              "primary_url": "https://arxiv.org/html/2610.40190v1",
+              "locator": "Section 3.2",
+              "evidence": "Concepts compete before rendering. A critic then approves the image or requests prompt revisions; rejected attempts are summarized and the loop has a round limit.",
+              "level": "derived",
+              "reasoning": "Conservative mapping of the inspected passage to the pinned codebook."
+            },
+            "representation": {
+              "primary_url": "https://arxiv.org/html/2610.40190v1",
+              "locator": "Section 3.2",
+              "evidence": "Concepts compete before rendering. A critic then approves the image or requests prompt revisions; rejected attempts are summarized and the loop has a round limit.",
+              "level": "derived",
+              "reasoning": "Conservative mapping of the inspected passage to the pinned codebook."
+            }
+          },
+          "knownCorpusStatus": "new_relative_to_snapshot",
+          "events": [
+            {
+              "type": "first_submission",
+              "value": "2026-10-29T14:47:22+00:00",
+              "precision": "timestamp",
+              "timezone": "UTC",
+              "primary_url": "https://arxiv.org/abs/2610.40190",
+              "authority": "primary",
+              "evidence": "arXiv submission history: v1, 2026-10-29T14:47:22+00:00.",
+              "version": "v1",
+              "prior_event_status": "not_seen_in_supplied_history"
+            }
+          ],
+          "readingLevel": "abstract_and_selected_method_passages"
+        },
+        {
+          "id": "2610.39905",
+          "title": "Inkitiate: Initiating and Steering Agent Assistance through Ink in a Spatial Workspace",
+          "shortTitle": "Inkitiate",
+          "url": "https://arxiv.org/abs/2610.39905",
+          "eventType": "first_submission",
+          "eventDate": "2026-10-29T07:16:16-05:00",
+          "sourceEventTime": "2026-10-29T12:16:16+00:00",
+          "bucket": "same_day_new",
+          "scope": "scope_dependent",
+          "scopeLabel": "Scope-dependent",
+          "application": "2D Graphics",
+          "applications": [
+            "2D Graphics"
+          ],
+          "operations": [
+            "Generation",
+            "Editing"
+          ],
+          "summary": "Lets users steer agents with handwriting and sketches, returning reusable content and layouts to a spatial canvas.",
+          "tags": [],
+          "evidence": [
+            {
+              "primary_url": "https://arxiv.org/html/2610.39905v1",
+              "locator": "Sections 4.1–4.2",
+              "evidence": "Ink requests bind canvas objects and agent capabilities. The prototype supports image generation and canvas organization; agent outputs remain editable and reusable."
+            }
+          ],
+          "scopeReason": "Image generation and canvas organization overlap graphics authoring; the broader system primarily supports knowledge work.",
+          "limitations": "Scope-dependent: resource retrieval and knowledge work alone are outside the graphics-authoring focus.",
+          "authors": [
+            "Liangwei Wang",
+            "Nan Chen",
+            "Luna K. Qiu",
+            "Zilong Wang",
+            "Fugee Tsung",
+            "Yuyu Luo",
+            "Yuqing Yang"
+          ],
+          "taxonomy": {
+            "task": [
+              "Not Reported"
+            ],
+            "input_form": [
+              "Language",
+              "Image",
+              "Document"
+            ],
+            "output": [
+              "Graphics Artifact"
+            ],
+            "model_type": [
+              "Not Reported"
+            ],
+            "model_training": [
+              "Not Reported"
+            ],
+            "planning": [
+              "Not Reported"
+            ],
+            "workflow": [
+              "Not Reported"
+            ],
+            "update_strategy": [
+              "Not Reported"
+            ],
+            "verifier": [
+              "Not Reported"
+            ],
+            "feedback_assessment": [
+              "Not Reported"
+            ],
+            "feedback_observation": [
+              "Not Reported"
+            ],
+            "memory_time": [
+              "Not Reported"
+            ],
+            "memory_reach": [
+              "Not Reported"
+            ],
+            "action_type": [
+              "Tool/Function Call"
+            ],
+            "graphics_software": [
+              "Not Reported"
+            ],
+            "tools": [
+              "Not Reported"
+            ],
+            "resources": [
+              "Not Reported"
+            ],
+            "representation": [
+              "Layouts"
+            ]
+          },
+          "taxonomyVersion": "google-doc-taxonomy-v3-2026-10-11",
+          "taxonomyEvidence": {
+            "input_form": {
+              "primary_url": "https://arxiv.org/html/2610.39905v1",
+              "locator": "Sections 4.1–4.2",
+              "evidence": "Ink requests bind canvas objects and agent capabilities. The prototype supports image generation and canvas organization; agent outputs remain editable and reusable.",
+              "level": "derived",
+              "reasoning": "Conservative mapping of the inspected passage to the pinned codebook."
+            },
+            "output": {
+              "primary_url": "https://arxiv.org/html/2610.39905v1",
+              "locator": "Sections 4.1–4.2",
+              "evidence": "Ink requests bind canvas objects and agent capabilities. The prototype supports image generation and canvas organization; agent outputs remain editable and reusable.",
+              "level": "derived",
+              "reasoning": "Conservative mapping of the inspected passage to the pinned codebook."
+            },
+            "representation": {
+              "primary_url": "https://arxiv.org/html/2610.39905v1",
+              "locator": "Sections 4.1–4.2",
+              "evidence": "Ink requests bind canvas objects and agent capabilities. The prototype supports image generation and canvas organization; agent outputs remain editable and reusable.",
+              "level": "derived",
+              "reasoning": "Conservative mapping of the inspected passage to the pinned codebook."
+            },
+            "action_type": {
+              "primary_url": "https://arxiv.org/html/2610.39905v1",
+              "locator": "Sections 4.1–4.2",
+              "evidence": "Ink requests bind canvas objects and agent capabilities. The prototype supports image generation and canvas organization; agent outputs remain editable and reusable.",
+              "level": "derived",
+              "reasoning": "Conservative mapping of the inspected passage to the pinned codebook."
+            }
+          },
+          "knownCorpusStatus": "new_relative_to_snapshot",
+          "events": [
+            {
+              "type": "first_submission",
+              "value": "2026-10-29T12:16:16+00:00",
+              "precision": "timestamp",
+              "timezone": "UTC",
+              "primary_url": "https://arxiv.org/abs/2610.39905",
+              "authority": "primary",
+              "evidence": "arXiv submission history: v1, 2026-10-29T12:16:16+00:00.",
+              "version": "v1",
+              "prior_event_status": "not_seen_in_supplied_history"
+            }
+          ],
+          "readingLevel": "abstract_and_selected_method_passages"
+        },
+        {
+          "id": "2610.40191",
+          "title": "Video Generation Meets Agent Harness: Agentic Video Generation, Agentic World Modeling and Recursive Self-Improvement",
+          "shortTitle": "Video Generation Meets Agent Harness",
+          "url": "https://arxiv.org/abs/2610.40191",
+          "eventType": "first_submission",
+          "eventDate": "2026-10-29T09:47:39-05:00",
+          "sourceEventTime": "2026-10-29T14:47:39+00:00",
+          "bucket": "same_day_new",
+          "scope": "enabling_or_adjacent",
+          "scopeLabel": "Adjacent / enabling",
+          "application": "Cross-category",
+          "applications": [
+            "Cross-category"
+          ],
+          "operations": [
+            "Other"
+          ],
+          "summary": "Discusses agent harnesses for video production, interactive world models and recursive improvement.",
+          "tags": [],
+          "evidence": [
+            {
+              "primary_url": "https://arxiv.org/abs/2610.40191",
+              "locator": "Abstract",
+              "evidence": "The report examines harness-managed tools, context, state, feedback and budgets across video generation, world modeling and recursive improvement."
+            }
+          ],
+          "scopeReason": "A directly relevant synthesis of graphics-related agent runtimes, rather than a new implemented authoring system.",
+          "limitations": "Review/report; no single system taxonomy or empirical improvement is inferred from its overview.",
+          "authors": [
+            "Liaoyuan Fan",
+            "Yuhao Zheng",
+            "Dongxing Mao",
+            "Hangyu Ran",
+            "Siyuan Hu",
+            "Weijia Mao",
+            "Rui Zhao",
+            "Weijia Wu",
+            "Guian Fang",
+            "Yanzhe Chen",
+            "Zeyu Zhu",
+            "Yuxin Jiang",
+            "Yiren Song",
+            "Yuchao Gu",
+            "Junchao Yi",
+            "Qi Hu",
+            "Dan Kong",
+            "Alex Jinpeng Wang",
+            "Kevin Qinghong Lin",
+            "Mike Zheng Shou",
+            "Wei Liu"
+          ],
+          "taxonomy": {
+            "task": [
+              "Not Reported"
+            ],
+            "input_form": [
+              "Not Reported"
+            ],
+            "output": [
+              "Not Reported"
+            ],
+            "model_type": [
+              "Not Reported"
+            ],
+            "model_training": [
+              "Not Reported"
+            ],
+            "planning": [
+              "Not Reported"
+            ],
+            "workflow": [
+              "Not Reported"
+            ],
+            "update_strategy": [
+              "Not Reported"
+            ],
+            "verifier": [
+              "Not Reported"
+            ],
+            "feedback_assessment": [
+              "Not Reported"
+            ],
+            "feedback_observation": [
+              "Not Reported"
+            ],
+            "memory_time": [
+              "Not Reported"
+            ],
+            "memory_reach": [
+              "Not Reported"
+            ],
+            "action_type": [
+              "Not Reported"
+            ],
+            "graphics_software": [
+              "Not Reported"
+            ],
+            "tools": [
+              "Not Reported"
+            ],
+            "resources": [
+              "Not Reported"
+            ],
+            "representation": [
+              "Not Reported"
+            ]
+          },
+          "taxonomyVersion": "google-doc-taxonomy-v3-2026-10-11",
+          "taxonomyEvidence": {},
+          "knownCorpusStatus": "new_relative_to_snapshot",
+          "events": [
+            {
+              "type": "first_submission",
+              "value": "2026-10-29T14:47:39+00:00",
+              "precision": "timestamp",
+              "timezone": "UTC",
+              "primary_url": "https://arxiv.org/abs/2610.40191",
+              "authority": "primary",
+              "evidence": "arXiv submission history: v1, 2026-10-29T14:47:39+00:00.",
+              "version": "v1",
+              "prior_event_status": "not_seen_in_supplied_history"
+            }
+          ],
+          "readingLevel": "abstract_only"
+        },
+        {
+          "id": "2609.22688",
+          "title": "DIP-CAD: A Design-Intent-Preserving Agent Harness for Parametric CAD Modeling",
+          "shortTitle": "DIP-CAD",
+          "url": "https://arxiv.org/abs/2609.22688",
+          "eventType": "revision",
+          "eventDate": "2026-10-27T06:52:45-05:00",
+          "sourceEventTime": "2026-10-27T11:52:45+00:00",
+          "bucket": "late_discovery",
+          "scope": "core",
+          "scopeLabel": "Core",
+          "application": "Static / CAD",
+          "applications": [
+            "Static / CAD"
+          ],
+          "operations": [
+            "Generation",
+            "Editing"
+          ],
+          "summary": "Uses explicit geometry references and sketch constraints to preserve parametric CAD design intent.",
+          "tags": [
+            "Modeling",
+            "Visual",
+            "Structural Scene State"
+          ],
+          "evidence": [
+            {
+              "primary_url": "https://arxiv.org/html/2609.22688v3",
+              "locator": "Sections 3.1–3.2",
+              "evidence": "The VLM predicts commands from tagged model views and geometry tables; sketch primitives are mapped into CAD coordinates and constraints are validated by the solver."
+            }
+          ],
+          "scopeReason": "VLM-guided modeling commands and sketches interact with CAD geometry and solver checks.",
+          "limitations": "Already in the library under the earlier title Vision2CAD. This record captures the verified v3 title and timing; version-to-version changes were not audited.",
+          "authors": [
+            "Xi Cheng",
+            "Chenxi Zhai",
+            "Hang Cheng",
+            "Mingyu Fan",
+            "Pingfa Feng",
+            "Long Zeng"
+          ],
+          "taxonomy": {
+            "task": [
+              "Modeling"
+            ],
+            "input_form": [
+              "Image"
+            ],
+            "output": [
+              "Graphics Artifact"
+            ],
+            "model_type": [
+              "VLM"
+            ],
+            "model_training": [
+              "Not Reported"
+            ],
+            "planning": [
+              "Not Reported"
+            ],
+            "workflow": [
+              "Not Reported"
+            ],
+            "update_strategy": [
+              "Not Reported"
+            ],
+            "verifier": [
+              "Not Reported"
+            ],
+            "feedback_assessment": [
+              "Not Reported"
+            ],
+            "feedback_observation": [
+              "Visual",
+              "Structural Scene State"
+            ],
+            "memory_time": [
+              "Not Reported"
+            ],
+            "memory_reach": [
+              "Not Reported"
+            ],
+            "action_type": [
+              "Structured Specification"
+            ],
+            "graphics_software": [
+              "Not Reported"
+            ],
+            "tools": [
+              "Not Reported"
+            ],
+            "resources": [
+              "Not Reported"
+            ],
+            "representation": [
+              "Geometry"
+            ]
+          },
+          "taxonomyVersion": "google-doc-taxonomy-v3-2026-10-11",
+          "taxonomyEvidence": {
+            "task": {
+              "primary_url": "https://arxiv.org/html/2609.22688v3",
+              "locator": "Sections 3.1–3.2",
+              "evidence": "The VLM predicts commands from tagged model views and geometry tables; sketch primitives are mapped into CAD coordinates and constraints are validated by the solver.",
+              "level": "derived",
+              "reasoning": "Conservative mapping of the inspected passage to the pinned codebook."
+            },
+            "input_form": {
+              "primary_url": "https://arxiv.org/html/2609.22688v3",
+              "locator": "Sections 3.1–3.2",
+              "evidence": "The VLM predicts commands from tagged model views and geometry tables; sketch primitives are mapped into CAD coordinates and constraints are validated by the solver.",
+              "level": "derived",
+              "reasoning": "Conservative mapping of the inspected passage to the pinned codebook."
+            },
+            "output": {
+              "primary_url": "https://arxiv.org/html/2609.22688v3",
+              "locator": "Sections 3.1–3.2",
+              "evidence": "The VLM predicts commands from tagged model views and geometry tables; sketch primitives are mapped into CAD coordinates and constraints are validated by the solver.",
+              "level": "derived",
+              "reasoning": "Conservative mapping of the inspected passage to the pinned codebook."
+            },
+            "model_type": {
+              "primary_url": "https://arxiv.org/html/2609.22688v3",
+              "locator": "Sections 3.1–3.2",
+              "evidence": "The VLM predicts commands from tagged model views and geometry tables; sketch primitives are mapped into CAD coordinates and constraints are validated by the solver.",
+              "level": "derived",
+              "reasoning": "Conservative mapping of the inspected passage to the pinned codebook."
+            },
+            "action_type": {
+              "primary_url": "https://arxiv.org/html/2609.22688v3",
+              "locator": "Sections 3.1–3.2",
+              "evidence": "The VLM predicts commands from tagged model views and geometry tables; sketch primitives are mapped into CAD coordinates and constraints are validated by the solver.",
+              "level": "derived",
+              "reasoning": "Conservative mapping of the inspected passage to the pinned codebook."
+            },
+            "feedback_observation": {
+              "primary_url": "https://arxiv.org/html/2609.22688v3",
+              "locator": "Sections 3.1–3.2",
+              "evidence": "The VLM predicts commands from tagged model views and geometry tables; sketch primitives are mapped into CAD coordinates and constraints are validated by the solver.",
+              "level": "derived",
+              "reasoning": "Conservative mapping of the inspected passage to the pinned codebook."
+            },
+            "representation": {
+              "primary_url": "https://arxiv.org/html/2609.22688v3",
+              "locator": "Sections 3.1–3.2",
+              "evidence": "The VLM predicts commands from tagged model views and geometry tables; sketch primitives are mapped into CAD coordinates and constraints are validated by the solver.",
+              "level": "derived",
+              "reasoning": "Conservative mapping of the inspected passage to the pinned codebook."
+            }
+          },
+          "knownCorpusStatus": "known_discussed_paper",
+          "events": [
+            {
+              "type": "first_submission",
+              "value": "2026-09-19T01:45:11+00:00",
+              "precision": "timestamp",
+              "timezone": "UTC",
+              "primary_url": "https://arxiv.org/abs/2609.22688",
+              "authority": "primary",
+              "evidence": "arXiv submission history: v1, 2026-09-19T01:45:11+00:00.",
+              "version": "v1",
+              "prior_event_status": "not_seen_in_supplied_history"
+            },
+            {
+              "type": "revision",
+              "value": "2026-10-24T06:06:52+00:00",
+              "precision": "timestamp",
+              "timezone": "UTC",
+              "primary_url": "https://arxiv.org/abs/2609.22688",
+              "authority": "primary",
+              "evidence": "arXiv submission history: v2, 2026-10-24T06:06:52+00:00.",
+              "version": "v2",
+              "prior_event_status": "not_seen_in_supplied_history"
+            },
+            {
+              "type": "revision",
+              "value": "2026-10-27T11:52:45+00:00",
+              "precision": "timestamp",
+              "timezone": "UTC",
+              "primary_url": "https://arxiv.org/abs/2609.22688",
+              "authority": "primary",
+              "evidence": "arXiv submission history: v3, 2026-10-27T11:52:45+00:00.",
+              "version": "v3",
+              "prior_event_status": "not_seen_in_supplied_history"
+            }
+          ],
+          "readingLevel": "abstract_and_selected_method_passages",
+          "previousTitle": "Vision2CAD: A Visual Agent Harness for Explicit Geometry Referencing and Localization in Parametric CAD Modeling"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-30",
+      "label": "Oct 30",
+      "status": "partial_verified",
+      "executedAt": "2026-10-30T11:47:35+00:00",
+      "feedNote": "No qualifying October 30 submission or revision verified as of 06:40 CDT. Checked on October 30; source coverage is partial.",
+      "summary": "A bounded search completed with no verified same-day addition. Relevant October 29 papers are included in the October 29 report.",
+      "counts": {
+        "papers": 0,
+        "new": 0,
+        "updates": 0,
+        "catchUp": 0,
+        "core": 0,
+        "scopeDependent": 0,
+        "adjacent": 0
+      },
+      "coverage": {
+        "label": "Bounded source coverage",
+        "sources": [
+          {
+            "family": "arxiv",
+            "status": "partial"
+          },
+          {
+            "family": "hugging_face",
+            "status": "failed"
+          },
+          {
+            "family": "openreview",
+            "status": "partial"
+          },
+          {
+            "family": "official_venues",
+            "status": "partial"
+          },
+          {
+            "family": "project_author_lab",
+            "status": "partial"
+          }
+        ],
+        "limitations": [
+          "Executed on October 30, 2026. October 28 and 29 are retrospective date-targeted passes; October 30 ends at 06:40:59 America/Chicago. Original UTC event times are retained.",
+          "Three separate bounded browser passes were executed. Related evidence found in another pass is explicitly recorded as a cross-pass supplement, not a new search. Papers with verified October 28 or 29 local dates are assigned to those reports.",
+          "Selective arXiv cs.GR, cs.CV and cs.HC listing inspection; other arXiv categories were not separately enumerated. OpenReview and official venues received indexed searches only.",
+          "The installed skill prepare/finalize workflow ran with live browser retrieval. This was not a separate API harness benchmark run.",
+          "The live taxonomy document revision differs from the pinned October 11 codebook. Classifications retain the pinned codebook; the new document was not reconciled.",
+          "Seven-day lookback results are distinguished from same-day submissions. Known IDs are deduplicated against the existing website; title changes do not create a new paper.",
+          "Search indexes may lag. This bounded pass does not establish field-wide completeness. Selected-method and abstract-only readings are identified per record.",
+          "No qualifying October 30 submission or revision was verified by the stated cutoff. The target-date Hugging Face page was inaccessible after one retry."
+        ],
+        "validationPassed": true
+      },
+      "artifacts": {
+        "report": "data/2026-10-30/report.md",
+        "data": "data/2026-10-30/run.json",
+        "audit": "data/2026-10-30/audit.json"
+      },
+      "papers": []
     }
   ],
-  "lastUpdatedAt": "2026-10-27T12:35:34-05:00",
+  "lastUpdatedAt": "2026-10-30T11:47:35+00:00",
   "collectionNote": "The historical survey snapshot is stored separately from daily search reports using collectionType=survey."
 }

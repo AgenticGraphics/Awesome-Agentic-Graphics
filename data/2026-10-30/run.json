@@ -1,0 +1,566 @@
+{
+  "target_date": "2026-10-30",
+  "timezone": "America/Chicago",
+  "as_of": "2026-10-30T06:40:59-05:00",
+  "window_start": "2026-10-30T00:00:00-05:00",
+  "window_end": "2026-10-30T06:40:59-05:00",
+  "taxonomy_version": "google-doc-taxonomy-v3-2026-10-11",
+  "snapshot_status": "source_changed_not_reconciled",
+  "budget": {
+    "minutes": 6,
+    "search_batches": 10,
+    "primary_opens": 24
+  },
+  "counts": {
+    "search_batches": 3,
+    "search_queries": 11,
+    "primary_opens": 22,
+    "screened": 2,
+    "retained": 0,
+    "supplemental_checks": 0
+  },
+  "source_ledger": [
+    {
+      "family": "arxiv",
+      "status": "partial",
+      "checks": [
+        {
+          "query_or_url": "https://arxiv.org/list/cs.GR/new",
+          "checked_at": "2026-10-30T11:46:06+00:00",
+          "outcome": "Live browser retrieval; exact returned evidence is preserved in the private retrieval ledger."
+        },
+        {
+          "query_or_url": "https://arxiv.org/list/cs.HC/recent",
+          "checked_at": "2026-10-30T11:46:06+00:00",
+          "outcome": "Live browser retrieval; exact returned evidence is preserved in the private retrieval ledger."
+        },
+        {
+          "query_or_url": "https://arxiv.org/list/cs.CV/recent",
+          "checked_at": "2026-10-30T11:46:06+00:00",
+          "outcome": "Live browser retrieval; exact returned evidence is preserved in the private retrieval ledger."
+        },
+        {
+          "query_or_url": "https://arxiv.org/abs/2610.40191",
+          "checked_at": "2026-10-30T11:46:25+00:00",
+          "outcome": "Live browser retrieval; exact returned evidence is preserved in the private retrieval ledger."
+        },
+        {
+          "query_or_url": "https://arxiv.org/abs/2610.40190",
+          "checked_at": "2026-10-30T11:46:25+00:00",
+          "outcome": "Live browser retrieval; exact returned evidence is preserved in the private retrieval ledger."
+        },
+        {
+          "query_or_url": "https://arxiv.org/abs/2610.39658",
+          "checked_at": "2026-10-30T11:46:25+00:00",
+          "outcome": "Live browser retrieval; exact returned evidence is preserved in the private retrieval ledger."
+        },
+        {
+          "query_or_url": "https://arxiv.org/abs/2610.40653",
+          "checked_at": "2026-10-30T11:46:25+00:00",
+          "outcome": "Live browser retrieval; exact returned evidence is preserved in the private retrieval ledger."
+        },
+        {
+          "query_or_url": "https://arxiv.org/html/2610.40190v1",
+          "checked_at": "2026-10-30T11:46:42+00:00",
+          "outcome": "Live browser retrieval; exact returned evidence is preserved in the private retrieval ledger."
+        },
+        {
+          "query_or_url": "https://arxiv.org/html/2610.40653v1",
+          "checked_at": "2026-10-30T11:46:42+00:00",
+          "outcome": "Live browser retrieval; exact returned evidence is preserved in the private retrieval ledger."
+        },
+        {
+          "query_or_url": "https://arxiv.org/html/2610.40191v1",
+          "checked_at": "2026-10-30T11:46:52+00:00",
+          "outcome": "Live browser retrieval; exact returned evidence is preserved in the private retrieval ledger."
+        },
+        {
+          "query_or_url": "site:arxiv.org agent CAD object scene articulation animation simulation",
+          "checked_at": "2026-10-30T11:46:06+00:00",
+          "outcome": "Live browser retrieval; exact returned evidence is preserved in the private retrieval ledger."
+        },
+        {
+          "query_or_url": "site:arxiv.org \"agent\" \"graphics\" \"30 Oct 2026\"",
+          "checked_at": "2026-10-30T11:46:14+00:00",
+          "outcome": "Live browser retrieval; exact returned evidence is preserved in the private retrieval ledger."
+        },
+        {
+          "query_or_url": "site:arxiv.org \"agent\" \"CAD\" \"30 Oct 2026\"",
+          "checked_at": "2026-10-30T11:46:14+00:00",
+          "outcome": "Live browser retrieval; exact returned evidence is preserved in the private retrieval ledger."
+        }
+      ],
+      "limitations": "Selective browser inspection or indexed search only; not exhaustive enumeration."
+    },
+    {
+      "family": "hugging_face",
+      "status": "failed",
+      "checks": [
+        {
+          "query_or_url": "https://huggingface.co/papers/date/2026-10-30",
+          "checked_at": "2026-10-30T11:46:06+00:00",
+          "outcome": "Page inaccessible; no target-date curation content obtained."
+        },
+        {
+          "query_or_url": "https://huggingface.co/papers/date/2026-10-30",
+          "checked_at": "2026-10-30T11:46:14+00:00",
+          "outcome": "Page inaccessible; no target-date curation content obtained."
+        }
+      ],
+      "limitations": "Target-date page inaccessible on the initial attempt and one retry."
+    },
+    {
+      "family": "openreview",
+      "status": "partial",
+      "checks": [
+        {
+          "query_or_url": "site:openreview.net agent graphics benchmark 2026",
+          "checked_at": "2026-10-30T11:46:06+00:00",
+          "outcome": "Live browser retrieval; exact returned evidence is preserved in the private retrieval ledger."
+        }
+      ],
+      "limitations": "Selective browser inspection or indexed search only; not exhaustive enumeration."
+    },
+    {
+      "family": "official_venues",
+      "status": "partial",
+      "checks": [
+        {
+          "query_or_url": "site:dl.acm.org graphics agent 2026",
+          "checked_at": "2026-10-30T11:46:06+00:00",
+          "outcome": "Live browser retrieval; exact returned evidence is preserved in the private retrieval ledger."
+        },
+        {
+          "query_or_url": "site:openaccess.thecvf.com agent graphics 2026",
+          "checked_at": "2026-10-30T11:46:14+00:00",
+          "outcome": "Live browser retrieval; exact returned evidence is preserved in the private retrieval ledger."
+        }
+      ],
+      "limitations": "Selective browser inspection or indexed search only; not exhaustive enumeration."
+    },
+    {
+      "family": "project_author_lab",
+      "status": "partial",
+      "checks": [
+        {
+          "query_or_url": "https://agentic-videogen.github.io/",
+          "checked_at": "2026-10-30T11:46:42+00:00",
+          "outcome": "Live browser retrieval; exact returned evidence is preserved in the private retrieval ledger."
+        },
+        {
+          "query_or_url": "graphics agent object CAD scene animation simulation paper October 2026 github",
+          "checked_at": "2026-10-30T11:46:52+00:00",
+          "outcome": "Live browser retrieval; exact returned evidence is preserved in the private retrieval ledger."
+        }
+      ],
+      "limitations": "Selective browser inspection or indexed search only; not exhaustive enumeration."
+    }
+  ],
+  "query_coverage": [
+    {
+      "family": "2d",
+      "status": "partial",
+      "checks": [
+        {
+          "query_or_url": "agent graphics SVG scientific diagram chart slide poster \"October 30\" \"2026\"",
+          "checked_at": "2026-10-30T11:46:06+00:00",
+          "outcome": "Live browser retrieval; exact returned evidence is preserved in the private retrieval ledger."
+        },
+        {
+          "query_or_url": "\"agent\" \"2026-10-30\" SVG CAD visualization paper",
+          "checked_at": "2026-10-30T11:46:52+00:00",
+          "outcome": "Live browser retrieval; exact returned evidence is preserved in the private retrieval ledger."
+        }
+      ]
+    },
+    {
+      "family": "object",
+      "status": "partial",
+      "checks": [
+        {
+          "query_or_url": "site:arxiv.org agent CAD object scene articulation animation simulation",
+          "checked_at": "2026-10-30T11:46:06+00:00",
+          "outcome": "Live browser retrieval; exact returned evidence is preserved in the private retrieval ledger."
+        },
+        {
+          "query_or_url": "graphics agent object CAD scene animation simulation paper October 2026 github",
+          "checked_at": "2026-10-30T11:46:52+00:00",
+          "outcome": "Live browser retrieval; exact returned evidence is preserved in the private retrieval ledger."
+        }
+      ]
+    },
+    {
+      "family": "cad",
+      "status": "partial",
+      "checks": [
+        {
+          "query_or_url": "site:arxiv.org agent CAD object scene articulation animation simulation",
+          "checked_at": "2026-10-30T11:46:06+00:00",
+          "outcome": "Live browser retrieval; exact returned evidence is preserved in the private retrieval ledger."
+        },
+        {
+          "query_or_url": "site:arxiv.org \"agent\" \"CAD\" \"30 Oct 2026\"",
+          "checked_at": "2026-10-30T11:46:14+00:00",
+          "outcome": "Live browser retrieval; exact returned evidence is preserved in the private retrieval ledger."
+        },
+        {
+          "query_or_url": "\"agent\" \"2026-10-30\" SVG CAD visualization paper",
+          "checked_at": "2026-10-30T11:46:52+00:00",
+          "outcome": "Live browser retrieval; exact returned evidence is preserved in the private retrieval ledger."
+        },
+        {
+          "query_or_url": "graphics agent object CAD scene animation simulation paper October 2026 github",
+          "checked_at": "2026-10-30T11:46:52+00:00",
+          "outcome": "Live browser retrieval; exact returned evidence is preserved in the private retrieval ledger."
+        }
+      ]
+    },
+    {
+      "family": "scene",
+      "status": "partial",
+      "checks": [
+        {
+          "query_or_url": "site:arxiv.org agent CAD object scene articulation animation simulation",
+          "checked_at": "2026-10-30T11:46:06+00:00",
+          "outcome": "Live browser retrieval; exact returned evidence is preserved in the private retrieval ledger."
+        },
+        {
+          "query_or_url": "graphics agent object CAD scene animation simulation paper October 2026 github",
+          "checked_at": "2026-10-30T11:46:52+00:00",
+          "outcome": "Live browser retrieval; exact returned evidence is preserved in the private retrieval ledger."
+        }
+      ]
+    },
+    {
+      "family": "articulation",
+      "status": "partial",
+      "checks": [
+        {
+          "query_or_url": "site:arxiv.org agent CAD object scene articulation animation simulation",
+          "checked_at": "2026-10-30T11:46:06+00:00",
+          "outcome": "Live browser retrieval; exact returned evidence is preserved in the private retrieval ledger."
+        }
+      ]
+    },
+    {
+      "family": "animation",
+      "status": "partial",
+      "checks": [
+        {
+          "query_or_url": "site:arxiv.org agent CAD object scene articulation animation simulation",
+          "checked_at": "2026-10-30T11:46:06+00:00",
+          "outcome": "Live browser retrieval; exact returned evidence is preserved in the private retrieval ledger."
+        },
+        {
+          "query_or_url": "graphics agent object CAD scene animation simulation paper October 2026 github",
+          "checked_at": "2026-10-30T11:46:52+00:00",
+          "outcome": "Live browser retrieval; exact returned evidence is preserved in the private retrieval ledger."
+        }
+      ]
+    },
+    {
+      "family": "simulation",
+      "status": "partial",
+      "checks": [
+        {
+          "query_or_url": "site:arxiv.org agent CAD object scene articulation animation simulation",
+          "checked_at": "2026-10-30T11:46:06+00:00",
+          "outcome": "Live browser retrieval; exact returned evidence is preserved in the private retrieval ledger."
+        },
+        {
+          "query_or_url": "graphics agent object CAD scene animation simulation paper October 2026 github",
+          "checked_at": "2026-10-30T11:46:52+00:00",
+          "outcome": "Live browser retrieval; exact returned evidence is preserved in the private retrieval ledger."
+        }
+      ]
+    },
+    {
+      "family": "benchmark",
+      "status": "partial",
+      "checks": [
+        {
+          "query_or_url": "site:openreview.net agent graphics benchmark 2026",
+          "checked_at": "2026-10-30T11:46:06+00:00",
+          "outcome": "Live browser retrieval; exact returned evidence is preserved in the private retrieval ledger."
+        },
+        {
+          "query_or_url": "agent graphics harness benchmark memory replanning",
+          "checked_at": "2026-10-30T11:46:14+00:00",
+          "outcome": "Live browser retrieval; exact returned evidence is preserved in the private retrieval ledger."
+        }
+      ]
+    },
+    {
+      "family": "harness",
+      "status": "partial",
+      "checks": [
+        {
+          "query_or_url": "agent graphics harness benchmark memory replanning",
+          "checked_at": "2026-10-30T11:46:14+00:00",
+          "outcome": "Live browser retrieval; exact returned evidence is preserved in the private retrieval ledger."
+        }
+      ]
+    }
+  ],
+  "coverage_limits": [
+    "Executed on October 30, 2026. October 28 and 29 are retrospective date-targeted passes; October 30 ends at 06:40:59 America/Chicago. Original UTC event times are retained.",
+    "Three separate bounded browser passes were executed. Related evidence found in another pass is explicitly recorded as a cross-pass supplement, not a new search. Papers with verified October 28 or 29 local dates are assigned to those reports.",
+    "Selective arXiv cs.GR, cs.CV and cs.HC listing inspection; other arXiv categories were not separately enumerated. OpenReview and official venues received indexed searches only.",
+    "The installed skill prepare/finalize workflow ran with live browser retrieval. This was not a separate API harness benchmark run.",
+    "The live taxonomy document revision differs from the pinned October 11 codebook. Classifications retain the pinned codebook; the new document was not reconciled.",
+    "Seven-day lookback results are distinguished from same-day submissions. Known IDs are deduplicated against the existing website; title changes do not create a new paper.",
+    "Search indexes may lag. This bounded pass does not establish field-wide completeness. Selected-method and abstract-only readings are identified per record.",
+    "No qualifying October 30 submission or revision was verified by the stated cutoff. The target-date Hugging Face page was inaccessible after one retry."
+  ],
+  "papers": [
+    {
+      "canonical_title": "Towards Audience-Driven Real-Time Data Storytelling",
+      "authors": [
+        "Angelica Lo Duca"
+      ],
+      "identifiers": {
+        "arxiv": "2610.39658"
+      },
+      "canonical_urls": [
+        "https://arxiv.org/abs/2610.39658"
+      ],
+      "abstract": "Lets audience responses select branches in a pre-authored data story.",
+      "abstract_kind": "paraphrased_summary",
+      "source_records": [
+        {
+          "family": "arxiv",
+          "url": "https://arxiv.org/abs/2610.39658"
+        }
+      ],
+      "events": [
+        {
+          "type": "first_submission",
+          "value": "2026-10-29T09:12:25+00:00",
+          "precision": "timestamp",
+          "timezone": "UTC",
+          "primary_url": "https://arxiv.org/abs/2610.39658",
+          "authority": "primary",
+          "evidence": "arXiv submission history: v1, 2026-10-29T09:12:25+00:00.",
+          "version": "v1",
+          "prior_event_status": "not_seen_in_supplied_history"
+        }
+      ],
+      "screening_status": "excluded",
+      "screening_reason": "A pre-authored branching decision tree does not establish a graphics-authoring agent.",
+      "screening_evidence": [
+        {
+          "primary_url": "https://arxiv.org/abs/2610.39658",
+          "locator": "Abstract",
+          "evidence": "A pre-authored branching decision tree does not establish a graphics-authoring agent."
+        }
+      ],
+      "confidence": "Medium",
+      "application_families": [
+        "Cross-category"
+      ],
+      "operations": [
+        "Other"
+      ],
+      "contribution": "Lets audience responses select branches in a pre-authored data story.",
+      "limitations": "Abstract-only scope decision; not a full method review.",
+      "taxonomy_cells": {
+        "task": [
+          "Not Reported"
+        ],
+        "input_form": [
+          "Not Reported"
+        ],
+        "output": [
+          "Not Reported"
+        ],
+        "model_type": [
+          "Not Reported"
+        ],
+        "model_training": [
+          "Not Reported"
+        ],
+        "planning": [
+          "Not Reported"
+        ],
+        "workflow": [
+          "Not Reported"
+        ],
+        "update_strategy": [
+          "Not Reported"
+        ],
+        "verifier": [
+          "Not Reported"
+        ],
+        "feedback_assessment": [
+          "Not Reported"
+        ],
+        "feedback_observation": [
+          "Not Reported"
+        ],
+        "memory_time": [
+          "Not Reported"
+        ],
+        "memory_reach": [
+          "Not Reported"
+        ],
+        "action_type": [
+          "Not Reported"
+        ],
+        "graphics_software": [
+          "Not Reported"
+        ],
+        "tools": [
+          "Not Reported"
+        ],
+        "resources": [
+          "Not Reported"
+        ],
+        "representation": [
+          "Not Reported"
+        ]
+      },
+      "field_evidence": {},
+      "taxonomy_delta": [],
+      "reading_level": "abstract_only",
+      "known_corpus_status": "new_relative_to_snapshot",
+      "report_bucket": "excluded"
+    },
+    {
+      "canonical_title": "Micro-Edits: Computational Support for Fine-Scale Edits in Film",
+      "authors": [
+        "Nhan Tran",
+        "Hijung Valentina Shin",
+        "Abe Davis",
+        "Mackenzie Leake"
+      ],
+      "identifiers": {
+        "arxiv": "2610.40653"
+      },
+      "canonical_urls": [
+        "https://arxiv.org/abs/2610.40653"
+      ],
+      "abstract": "Combines offline visual analysis with interactive controls for fine-scale film edits.",
+      "abstract_kind": "paraphrased_summary",
+      "source_records": [
+        {
+          "family": "arxiv",
+          "url": "https://arxiv.org/abs/2610.40653"
+        }
+      ],
+      "events": [
+        {
+          "type": "first_submission",
+          "value": "2026-10-29T17:59:49+00:00",
+          "precision": "timestamp",
+          "timezone": "UTC",
+          "primary_url": "https://arxiv.org/abs/2610.40653",
+          "authority": "primary",
+          "evidence": "arXiv submission history: v1, 2026-10-29T17:59:49+00:00.",
+          "version": "v1",
+          "prior_event_status": "not_seen_in_supplied_history"
+        }
+      ],
+      "screening_status": "excluded",
+      "screening_reason": "The inspected architecture separates offline analysis from direct user editing; an autonomous revision loop is not established.",
+      "screening_evidence": [
+        {
+          "primary_url": "https://arxiv.org/html/2610.40653v1",
+          "locator": "Sections 4–5",
+          "evidence": "A backend annotates clips and proposes cuts; the user applies timeline changes through dedicated editing controls."
+        }
+      ],
+      "confidence": "Medium",
+      "application_families": [
+        "2D Graphics"
+      ],
+      "operations": [
+        "Editing"
+      ],
+      "contribution": "Combines offline visual analysis with interactive controls for fine-scale film edits.",
+      "limitations": "Potentially useful related HCI work, excluded from the daily agent-system feed.",
+      "taxonomy_cells": {
+        "task": [
+          "Not Reported"
+        ],
+        "input_form": [
+          "Not Reported"
+        ],
+        "output": [
+          "Not Reported"
+        ],
+        "model_type": [
+          "Not Reported"
+        ],
+        "model_training": [
+          "Not Reported"
+        ],
+        "planning": [
+          "Not Reported"
+        ],
+        "workflow": [
+          "Not Reported"
+        ],
+        "update_strategy": [
+          "Not Reported"
+        ],
+        "verifier": [
+          "Not Reported"
+        ],
+        "feedback_assessment": [
+          "Not Reported"
+        ],
+        "feedback_observation": [
+          "Not Reported"
+        ],
+        "memory_time": [
+          "Not Reported"
+        ],
+        "memory_reach": [
+          "Not Reported"
+        ],
+        "action_type": [
+          "Not Reported"
+        ],
+        "graphics_software": [
+          "Not Reported"
+        ],
+        "tools": [
+          "Not Reported"
+        ],
+        "resources": [
+          "Not Reported"
+        ],
+        "representation": [
+          "Not Reported"
+        ]
+      },
+      "field_evidence": {},
+      "taxonomy_delta": [],
+      "reading_level": "abstract_and_selected_method_passages",
+      "known_corpus_status": "new_relative_to_snapshot",
+      "report_bucket": "excluded"
+    }
+  ],
+  "execution_mode": "portable_skill_browser_daily_pass",
+  "retrieved_at": "2026-10-30T11:47:35+00:00",
+  "supplemental_evidence": [],
+  "history_comparison": {
+    "status": "compared",
+    "files": [
+      "2026-10-20/run.json",
+      "2026-10-21/run.json",
+      "2026-10-22/run.json",
+      "2026-10-23/run.json",
+      "2026-10-26/run.json",
+      "2026-10-27/run.json",
+      "2026-10-28/run.json",
+      "2026-10-29/run.json"
+    ]
+  },
+  "input_hashes": {
+    "taxonomy-codebook.json": "5212eb0f8e6f55ca3930633933b811995ac5397e6554f127f892b35d39969dbd",
+    "paper-corpus.json": "f0ffdda59f889dc680b9d8ed138d1b6467999cc50ab86485d078e70de40b899a",
+    "source-manifest.json": "a223ace0de27c50f9592a9b6d76228fbcc0a9084ecffad06ff9a5773f12bdbb7"
+  },
+  "public_export_note": "Private source identifiers and local paths removed. Validation was performed on the original local run."
+}

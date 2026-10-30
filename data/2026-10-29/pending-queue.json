@@ -1,0 +1,17 @@
+{
+  "date": "2026-10-29",
+  "leads": [
+    {
+      "title": "LLM Agents for Visualization Generation and Vision-First Evaluation",
+      "url": "https://ns60.ieeevis.org/year/2026/program/content/9044e003-36ee-4c64-a932-2ee823d1a19c/",
+      "status": "carried_forward_unreviewed",
+      "reason": "Prior October 27 lead; no new primary inspection in this run."
+    },
+    {
+      "title": "LayoutGen: An evaluation guided multiagent framework for generating floor plans that comply with municipal building regulations",
+      "url": "https://link.springer.com/article/10.1007/s44163-026-02481-9",
+      "status": "carried_forward_unreviewed",
+      "reason": "Prior lead; primary event date and method remain unverified."
+    }
+  ]
+}
