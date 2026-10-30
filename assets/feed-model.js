@@ -20,9 +20,24 @@
   }));
   return [...unique.values()].filter(p=>!['excluded','unresolved'].includes(p.scope)).sort((a,b) => (b.eventDate || '').localeCompare(a.eventDate || '') || a.title.localeCompare(b.title));
  };
+ // Publication dates are independent of discovery reports and later revisions.
+ const publication = p => p.publication || (p.eventType === 'first_submission' ? {
+  date:(p.sourceEventTime || p.eventDate || '').slice(0,10),
+  precision:(p.eventDate || '').length === 7 ? 'month' : 'day',
+  basis:'first_submission',source:p.url
+ } : null);
+ const published = days => {
+  const dates = new Map();
+  days.slice().sort((a,b)=>a.date.localeCompare(b.date)).forEach(d=>(d.papers||[]).forEach(p=>{
+   const info=publication(p), previous=dates.get(identity(p));
+   if(info && (!previous || info.date < previous.date))dates.set(identity(p),info);
+  }));
+  return collect(days,'all').map(p=>({...p,publication:dates.get(identity(p)) || null})).sort((a,b)=>(b.publication?.date || '').localeCompare(a.publication?.date || '') || a.title.localeCompare(b.title));
+ };
+ const byPublication = (days,date) => published(days).filter(p=>p.publication?.date.startsWith(date));
  const matches = (p, filters, query, event) => {
   const haystack = [p.title,p.summary,p.abstract,p.application,...(p.authors || []),...(p.tags || []),...Object.values(p.taxonomy || {}).flat()].join(' ').toLowerCase();
   return (event === 'all' || kind(p) === event) && haystack.includes(query.trim().toLowerCase()) && Object.entries(filters).every(([key,value]) => !value || values(p,key).includes(value));
  };
- root.FeedModel = {sentinels,kind,values,identity,collect,matches};
+ root.FeedModel = {sentinels,kind,values,identity,collect,matches,publication,published,byPublication};
 })(typeof window === 'undefined' ? globalThis : window);

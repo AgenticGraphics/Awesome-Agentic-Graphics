@@ -38,3 +38,10 @@ test('network failures and malformed feeds do not silently display stale data',a
  assert.equal(await load(async()=>({ok:false})),null);
  assert.equal(await load(async()=>({ok:true,json:async()=>({dates:'bad'})})),null);
 });
+
+test('rejects invalid publication precision, dates, source links and conflicting timestamps',()=>{
+ for(const patch of [{precision:'year'},{date:'2025-02-30'},{source:'javascript:alert(1)'},{timestamp:'2020-01-01T00:00:00Z'}]){
+  const d=copy(),p=d.dates.find(d=>d.collectionType==='survey').papers[0];
+  Object.assign(p.publication,patch);assert.throws(()=>validate(d,labels));
+ }
+});

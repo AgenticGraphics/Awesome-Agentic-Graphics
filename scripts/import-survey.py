@@ -115,6 +115,11 @@ def main():
     labels=read(Path(__file__).resolve().parents[1]/'data/taxonomy-labels.json')
     records=build(read(args.papers),read(args.taxonomy),read(args.tasks),labels,read(args.summaries) if args.summaries else ())
     data=read(args.output)
+    # Preserve verified date provenance when refreshing the historical annotations.
+    dates={p['id']:p['publication'] for d in data['dates'] if d.get('collectionType')=='survey' for p in d['papers'] if p.get('publication')}
+    for record in records:
+        if record['id'] in dates:
+            record['publication']=dates[record['id']]
     data['title']='Agentic graphics paper library'
     data['intro']='Browse the survey collection and daily discoveries, or choose a search date.'
     data['collectionNote']='The historical survey snapshot is stored separately from daily search reports using collectionType=survey.'

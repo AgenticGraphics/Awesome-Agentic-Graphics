@@ -288,3 +288,16 @@
  .feed-heading { display:flex; justify-content:space-between; }
  .feed-heading>.text-link { margin-top:0; }
 }
+
+/* Publication history shares the calendar with actual search reports. */
+.feed-date-basis { width:100%; min-height:42px; padding:8px 10px; border:1px solid #ccd8c3; border-radius:7px; background:#fffefa; color:var(--green); font:inherit; font-size:14px; margin-bottom:16px; }
+.feed-month-nav select { min-width:0; width:100%; min-height:42px; border:0; border-radius:6px; background:transparent; color:#40563b; font:inherit; font-size:13px; font-weight:600; cursor:pointer; }
+.feed-month-nav button { flex:0 0 27px; }
+.feed-month-all { display:flex; justify-content:space-between; gap:10px; width:100%; min-height:42px; margin-top:12px; padding:10px; border:1px solid #d5dfcd; border-radius:7px; font-size:13px; color:var(--green); }
+.feed-month-all:hover,.feed-month-all[aria-pressed=true] { background:#e5eddd; border-color:#a6bb97; }
+.feed-calendar-key>#feed-calendar-key-text { width:auto; height:auto; border-radius:0; background:none; }
+@media(max-width:760px) {
+ .feed-date-basis { grid-column:1/-1; margin-bottom:0; }
+ #feed-calendar { min-width:0; }
+}
+@media(max-width:420px) { .feed-date-basis { margin-bottom:16px; } }

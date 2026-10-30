@@ -23,6 +23,13 @@
         if(!['core','scope_dependent','enabling_or_adjacent','excluded','unresolved'].includes(paper.scope))fail(`${at}: invalid scope.`);
         if(!['first_submission','revision'].includes(paper.eventType))fail(`${at}: invalid event type.`);
         if(!text(paper.eventDate)||Number.isNaN(Date.parse(paper.eventDate)))fail(`${at}: invalid event date.`);
+        if(paper.publication!==undefined){
+          const p=paper.publication;
+          if(!p || !['day','month'].includes(p.precision) || !https(p.source))fail(`${at}: invalid publication provenance.`);
+          if(p.precision==='day'?!dateOK(p.date):!/^\d{4}-\d{2}$/.test(p.date)||!dateOK(p.date+'-01'))fail(`${at}: invalid publication date.`);
+          if(!['arxiv_first_submission','publication','first_submission'].includes(p.basis))fail(`${at}: invalid publication date basis.`);
+          if(p.timestamp && (Number.isNaN(Date.parse(p.timestamp)) || !/(Z|\+00:00)$/.test(p.timestamp) || p.timestamp.slice(0,10)!==p.date))fail(`${at}: inconsistent publication timestamp.`);
+        }
         for(const key of ['applications','operations','authors','tags'])if(paper[key]!==undefined&&!strings(paper[key]))fail(`${at}: ${key} must be a string array.`);
         if(!paper.taxonomy || typeof paper.taxonomy!=='object')fail(`${at}: missing taxonomy.`);
         for(const key of Object.keys(paper.taxonomy))if(!fields.includes(key))fail(`${at}: unknown taxonomy field ${key}.`);

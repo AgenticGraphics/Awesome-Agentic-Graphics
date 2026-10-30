@@ -2,7 +2,7 @@
  'use strict';
  const $=s=>document.querySelector(s);
  const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
- function init({days,getDate}){
+ function init({days,getDate,getPapers}){
   const P=root.FeedProposals,dialog=$('#feedback-dialog'),form=$('#feedback-form');
   const labelsReady=fetch(new URL('data/taxonomy-labels.json',document.baseURI),{cache:'no-store'}).then(r=>{if(!r.ok)throw new Error();return r.json();}).catch(()=>null);
   let paper=null,opener=null,labels=null,draft=null,opening=0;
@@ -54,7 +54,7 @@
   function close(){dialog.close();opener?.focus({preventScroll:true});}
   document.addEventListener('click',e=>{
    const button=e.target.closest('[data-feedback-id],[data-feedback]');if(!button)return;
-   const p=button.dataset.feedbackId?root.FeedModel.collect(days,getDate()).find(p=>p.id===button.dataset.feedbackId):null;
+   const p=button.dataset.feedbackId?(getPapers?getPapers():root.FeedModel.collect(days,getDate())).find(p=>p.id===button.dataset.feedbackId):null;
    open(p,button);
   });
   $('.feedback-close').addEventListener('click',close);$('.feedback-cancel').addEventListener('click',close);
