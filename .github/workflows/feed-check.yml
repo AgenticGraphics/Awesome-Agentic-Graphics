@@ -1,0 +1,23 @@
+name: Validate daily feed
+on:
+  pull_request:
+    branches: [page]
+  push:
+    branches: [page]
+permissions:
+  contents: read
+jobs:
+  validate:
+    name: Validate daily feed
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: node scripts/check-feed.cjs
+      - run: node --test scripts/*.test.cjs
+      - run: node --check app.js && node --check assets/feed.js

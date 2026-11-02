@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 450"><defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M 0 1 L 8 5 L 0 9" fill="none" stroke="#84917d" stroke-width="1.5"/></marker></defs><rect width="720" height="450" rx="16" fill="#fafaf6"/><style>text{font-family:Arial,Helvetica,sans-serif;fill:#354537}.small{font-size:12px;fill:#77836e;letter-spacing:1.5px}.label{font-size:16px}.note{font-size:13px;fill:#6e7964}.title{font-family:Georgia,serif;font-size:27px}.line{stroke:#84917d;stroke-width:1.5;fill:none;marker-end:url(#arrow)}</style>
+<text x="32" y="39" class="small">EDITABLE GEOMETRY</text><text x="32" y="78" class="title">From control points to vector artwork</text>
+<rect x="32" y="108" width="280" height="245" rx="12" fill="#f0edf5" stroke="#ddd4e7"/>
+<path d="M55 150H288M55 195H288M55 240H288M55 285H288M100 127V330M145 127V330M190 127V330M235 127V330M280 127V330" stroke="#e4dfeb" fill="none"/>
+<path d="M83 290 C75 132 251 123 266 287 Q175 240 83 290Z" fill="#d7cce6" stroke="#806995" stroke-width="3"/>
+<path d="M83 290L75 132M266 287L251 123" stroke="#9f90b0" stroke-dasharray="5 5"/>
+<g fill="#fff" stroke="#806995" stroke-width="2"><rect x="78" y="285" width="10" height="10"/><rect x="261" y="282" width="10" height="10"/><circle cx="75" cy="132" r="5"/><circle cx="251" cy="123" r="5"/></g>
+<path d="M329 229H382" class="line"/>
+<rect x="400" y="108" width="288" height="245" rx="12" fill="#eef3e7" stroke="#dbe4d0"/>
+<path d="M458 290 C450 132 626 123 641 287 Q550 240 458 290Z" fill="#b6c7a6" stroke="#536e47" stroke-width="3"/>
+<path d="M488 270Q547 213 606 268" stroke="#fff" stroke-width="4" fill="none"/>
+<text x="172" y="385" class="label" text-anchor="middle">Paths &amp; control points</text><text x="544" y="385" class="label" text-anchor="middle">Scalable, editable SVG</text>
+<text x="360" y="420" class="note" text-anchor="middle">Generate → render → inspect → refine individual shapes</text></svg>

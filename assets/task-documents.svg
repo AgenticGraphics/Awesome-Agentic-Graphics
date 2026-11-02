@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 450"><defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M 0 1 L 8 5 L 0 9" fill="none" stroke="#84917d" stroke-width="1.5"/></marker></defs><rect width="720" height="450" rx="16" fill="#fafaf6"/><style>text{font-family:Arial,Helvetica,sans-serif;fill:#354537}.small{font-size:12px;fill:#77836e;letter-spacing:1.5px}.label{font-size:16px}.note{font-size:13px;fill:#6e7964}.title{font-family:Georgia,serif;font-size:27px}.line{stroke:#84917d;stroke-width:1.5;fill:none;marker-end:url(#arrow)}</style>
+<text x="32" y="39" class="small">CONTENT TO COMPOSITION</text><text x="32" y="78" class="title">Organize a coherent visual story</text>
+<rect x="32" y="120" width="164" height="205" rx="9" fill="#f1edf6" stroke="#ddd4e7"/>
+<rect x="54" y="143" width="85" height="9" rx="3" fill="#8f7da3"/>
+<path d="M54 178H173M54 191H161M54 204H170M54 248H172M54 261H165M54 274H141" stroke="#c4b8d0" stroke-width="5"/>
+<path d="M215 226H259" class="line"/>
+<g transform="translate(280 121)"><rect width="185" height="126" rx="8" fill="white" stroke="#dce3d4"/><rect x="16" y="16" width="105" height="8" rx="3" fill="#728968"/><rect x="16" y="40" width="67" height="68" rx="4" fill="#e3ebd9"/><path d="M98 47H166M98 61H158M98 75H165M98 89H148" stroke="#d8ded1" stroke-width="5"/></g>
+<g transform="translate(495 121)"><rect width="193" height="126" rx="8" fill="white" stroke="#dce3d4"/><rect x="16" y="16" width="105" height="8" rx="3" fill="#728968"/><rect x="20" y="73" width="30" height="35" rx="3" fill="#b9c9a9"/><rect x="62" y="53" width="30" height="55" rx="3" fill="#8ea67c"/><rect x="104" y="40" width="30" height="68" rx="3" fill="#7f6c94"/><path d="M149 47H174M149 61H174M149 75H170" stroke="#d8ded1" stroke-width="5"/></g>
+<path d="M293 280H675" stroke="#d9dfcf"/>
+<rect x="280" y="298" width="408" height="39" rx="7" fill="#edf2e5"/><text x="484" y="323" class="note" text-anchor="middle">Shared typography · aligned grids · consistent color</text>
+<text x="114" y="373" class="label" text-anchor="middle">Source content</text><text x="484" y="373" class="label" text-anchor="middle">Editable pages &amp; slides</text>
+<text x="360" y="417" class="note" text-anchor="middle">Plan the narrative, compose the layout, refine each page</text></svg>

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 450"><defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M 0 1 L 8 5 L 0 9" fill="none" stroke="#84917d" stroke-width="1.5"/></marker></defs><rect width="720" height="450" rx="16" fill="#fafaf6"/><style>text{font-family:Arial,Helvetica,sans-serif;fill:#354537}.small{font-size:12px;fill:#77836e;letter-spacing:1.5px}.label{font-size:16px}.note{font-size:13px;fill:#6e7964}.title{font-family:Georgia,serif;font-size:27px}.line{stroke:#84917d;stroke-width:1.5;fill:none;marker-end:url(#arrow)}</style>
+<text x="32" y="39" class="small">DATA TO GRAPHICS</text><text x="32" y="78" class="title">Turn data into an executable chart</text>
+<rect x="32" y="113" width="190" height="230" rx="12" fill="white" stroke="#dce2d4"/>
+<text x="53" y="145" class="label">Example data</text><path d="M52 161H202M52 205H202M52 249H202M52 293H202M123 161V325" stroke="#dce2d4"/>
+<g class="note"><text x="65" y="190">A</text><text x="148" y="190">24</text><text x="65" y="234">B</text><text x="148" y="234">42</text><text x="65" y="278">C</text><text x="148" y="278">31</text><text x="65" y="318">D</text><text x="148" y="318">56</text></g>
+<path d="M239 229H299" class="line"/>
+<rect x="316" y="113" width="372" height="230" rx="12" fill="white" stroke="#dce2d4"/>
+<path d="M357 154V302H658M357 252H658M357 202H658M357 152H658" stroke="#e5e9df" fill="none"/>
+<g fill="#99ae86"><rect x="381" y="242" width="40" height="60" rx="4"/><rect x="451" y="197" width="40" height="105" rx="4"/><rect x="521" y="224.5" width="40" height="77.5" rx="4"/></g><rect x="591" y="162" width="40" height="140" rx="4" fill="#7e6a96"/>
+<g class="note" text-anchor="middle"><text x="401" y="323">A</text><text x="471" y="323">B</text><text x="541" y="323">C</text><text x="611" y="323">D</text></g>
+<text x="127" y="378" class="label" text-anchor="middle">Data + request</text><text x="502" y="378" class="label" text-anchor="middle">Code + rendered plot</text>
+<text x="360" y="418" class="note" text-anchor="middle">Check values, visual encodings, labels, and layout</text></svg>

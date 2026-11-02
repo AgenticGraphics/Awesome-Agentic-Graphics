@@ -1,0 +1,133 @@
+{
+  "version": "google-doc-taxonomy-v3-2026-10-11",
+  "sentinels": [
+    "Not Reported",
+    "Not Applicable",
+    "Unclear"
+  ],
+  "fields": {
+    "task": [
+      "Modeling",
+      "Animation",
+      "Simulation",
+      "Visualization"
+    ],
+    "input_form": [
+      "Language",
+      "Image",
+      "Video",
+      "3D Representation",
+      "Document"
+    ],
+    "output": [
+      "Program",
+      "Structured Specification",
+      "Graphics Artifact",
+      "Rendered Media"
+    ],
+    "model_type": [
+      "LLM",
+      "VLM",
+      "Hybrid"
+    ],
+    "model_training": [
+      "Off-the-Shelf",
+      "Supervised Fine-Tuning",
+      "RL Post-Training"
+    ],
+    "planning": [
+      "PO-1",
+      "PO-2",
+      "PO-3"
+    ],
+    "workflow": [
+      "Sequential",
+      "Parallel",
+      "Graph-Structured"
+    ],
+    "update_strategy": [
+      "Regeneration",
+      "Local Patch",
+      "Replanning",
+      "Rollback",
+      "Candidate Selection"
+    ],
+    "verifier": [
+      "Self",
+      "Critic",
+      "Programmatic",
+      "Environment",
+      "Human"
+    ],
+    "feedback_assessment": [
+      "Binary",
+      "Score",
+      "Ranking",
+      "Diagnosis"
+    ],
+    "feedback_observation": [
+      "Visual",
+      "Structural Scene State",
+      "Runtime"
+    ],
+    "memory_time": [
+      "Working Memory",
+      "Short-Term Memory",
+      "Long-Term Memory"
+    ],
+    "memory_reach": [
+      "Local Memory",
+      "Global Memory"
+    ],
+    "action_type": [
+      "Code/Script",
+      "Structured Specification",
+      "Tool/Function Call",
+      "GUI Action"
+    ],
+    "graphics_software": [
+      "Agent-Ready",
+      "Agent-Adapted",
+      "General-Purpose"
+    ],
+    "tools": [
+      "Execution Utilities",
+      "Graphics Operations",
+      "Perception models",
+      "Solver Validator",
+      "Static Validator"
+    ],
+    "resources": [
+      "Assets",
+      "Examples & Trajectories",
+      "Documentation & Rules"
+    ],
+    "representation": [
+      "Code",
+      "Geometry",
+      "Dynamic State",
+      "Layouts",
+      "Pixels",
+      "Learned State"
+    ]
+  },
+  "application_families": [
+    "2D Graphics",
+    "Static / Object",
+    "Static / CAD",
+    "Static / Scene",
+    "Dynamic / Articulated assets",
+    "Dynamic / Animation and temporal scene",
+    "Dynamic / Physical simulation and effects",
+    "Datasets and Benchmarks",
+    "Cross-category"
+  ],
+  "operations": [
+    "Generation",
+    "Reconstruction",
+    "Editing",
+    "Auditing",
+    "Other",
+    "Unclear"
+  ]
+}

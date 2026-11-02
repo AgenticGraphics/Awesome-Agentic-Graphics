@@ -1,0 +1,917 @@
+{
+  "target_date": "2026-10-22",
+  "timezone": "America/Chicago",
+  "as_of": "2026-10-23T21:43:54-05:00",
+  "window_start": "2026-10-22T00:00:00-05:00",
+  "window_end": "2026-10-23T00:00:00-05:00",
+  "taxonomy_version": "google-doc-taxonomy-v3-2026-10-11",
+  "source_snapshot": {
+    "document_id": "1WuP9GAmOaoXpbRzfmH1cIuoAqikJH-fA5DqNtdPBaG0",
+    "document_url": "https://docs.google.com/document/d/1WuP9GAmOaoXpbRzfmH1cIuoAqikJH-fA5DqNtdPBaG0/edit",
+    "revision_id": "AHj4eMQpdTmUACEKDk45AZkNB9vie0NoMZGQTkNVTYAHrD_ubTeJGqOFsCN30XbfsEVTUdOgcSYNMubYXvb-5Ck28snDSHnq9mWpEjwuiEe6",
+    "retrieved_date": "2026-10-11",
+    "taxonomy_tab": "t.ag0oh98sr95w",
+    "taxonomy_tab_title": "Taxonomy v3",
+    "taxonomy_body_heading": "Taxonomy v2",
+    "paper_list_tab": "t.e89njez6bdp5",
+    "paper_occurrences": 190,
+    "unique_link_sets": 180,
+    "status": "source_snapshot; source draft ambiguities preserved"
+  },
+  "snapshot_status": "source_changed_not_reconciled",
+  "budget": {
+    "minutes": 24,
+    "search_batches": 40,
+    "primary_opens": 96,
+    "scope": "Shared budget for four target dates; 4 × portable daily defaults."
+  },
+  "counts": {
+    "search_batches": 6,
+    "search_queries": 24,
+    "primary_opens": 38,
+    "scope": "shared_pass_do_not_sum_across_dates"
+  },
+  "source_ledger": [
+    {
+      "family": "arxiv",
+      "status": "partial",
+      "checks": [
+        {
+          "query_or_url": "https://arxiv.org/list/cs.GR/new",
+          "checked_at": null,
+          "time_basis": "recorded_only",
+          "recorded_at": "2026-10-23T21:46:54-05:00",
+          "outcome": "Inspected current listing or dated listing page; pagination limitations retained."
+        },
+        {
+          "query_or_url": "https://arxiv.org/list/cs.GR/recent",
+          "checked_at": null,
+          "time_basis": "recorded_only",
+          "recorded_at": "2026-10-23T21:46:54-05:00",
+          "outcome": "Inspected current listing or dated listing page; pagination limitations retained."
+        },
+        {
+          "query_or_url": "https://arxiv.org/list/cs.CV/new",
+          "checked_at": null,
+          "time_basis": "recorded_only",
+          "recorded_at": "2026-10-23T21:46:54-05:00",
+          "outcome": "Inspected current listing or dated listing page; pagination limitations retained."
+        },
+        {
+          "query_or_url": "https://arxiv.org/list/cs.CV/recent",
+          "checked_at": null,
+          "time_basis": "recorded_only",
+          "recorded_at": "2026-10-23T21:46:54-05:00",
+          "outcome": "Inspected current listing or dated listing page; pagination limitations retained."
+        },
+        {
+          "query_or_url": "https://arxiv.org/abs/2610.28210",
+          "checked_at": null,
+          "time_basis": "recorded_only",
+          "recorded_at": "2026-10-23T21:46:54-05:00",
+          "outcome": "Verified identity and UTC submission history; method evidence retained per paper."
+        },
+        {
+          "query_or_url": "https://arxiv.org/abs/2610.28346",
+          "checked_at": null,
+          "time_basis": "recorded_only",
+          "recorded_at": "2026-10-23T21:46:54-05:00",
+          "outcome": "Verified identity and UTC submission history; method evidence retained per paper."
+        },
+        {
+          "query_or_url": "https://arxiv.org/abs/2610.23121",
+          "checked_at": null,
+          "time_basis": "recorded_only",
+          "recorded_at": "2026-10-23T21:46:54-05:00",
+          "outcome": "Verified identity and UTC submission history; method evidence retained per paper."
+        },
+        {
+          "query_or_url": "https://arxiv.org/abs/2610.21755",
+          "checked_at": null,
+          "time_basis": "recorded_only",
+          "recorded_at": "2026-10-23T21:46:54-05:00",
+          "outcome": "Verified identity and UTC submission history; method evidence retained per paper."
+        },
+        {
+          "query_or_url": "https://arxiv.org/abs/2610.24451",
+          "checked_at": null,
+          "time_basis": "recorded_only",
+          "recorded_at": "2026-10-23T21:46:54-05:00",
+          "outcome": "Verified identity and UTC submission history; method evidence retained per paper."
+        },
+        {
+          "query_or_url": "https://arxiv.org/abs/2610.30679",
+          "checked_at": null,
+          "time_basis": "recorded_only",
+          "recorded_at": "2026-10-23T21:46:54-05:00",
+          "outcome": "Verified identity and UTC submission history; method evidence retained per paper."
+        },
+        {
+          "query_or_url": "https://arxiv.org/abs/2610.30468",
+          "checked_at": null,
+          "time_basis": "recorded_only",
+          "recorded_at": "2026-10-23T21:46:54-05:00",
+          "outcome": "Verified identity and UTC submission history; method evidence retained per paper."
+        },
+        {
+          "query_or_url": "https://arxiv.org/abs/2610.30753",
+          "checked_at": null,
+          "time_basis": "recorded_only",
+          "recorded_at": "2026-10-23T21:46:54-05:00",
+          "outcome": "Verified identity and UTC submission history; method evidence retained per paper."
+        },
+        {
+          "query_or_url": "https://arxiv.org/abs/2610.31651",
+          "checked_at": null,
+          "time_basis": "recorded_only",
+          "recorded_at": "2026-10-23T21:46:54-05:00",
+          "outcome": "Verified identity and UTC submission history; method evidence retained per paper."
+        }
+      ],
+      "limitations": "Current indexes, partial category/page coverage; exact tool references and failures in retrieval-ledger.json."
+    },
+    {
+      "family": "hugging_face",
+      "status": "partial",
+      "checks": [
+        {
+          "query_or_url": "https://huggingface.co/papers/date/2026-10-22",
+          "checked_at": null,
+          "time_basis": "recorded_only",
+          "recorded_at": "2026-10-23T21:46:54-05:00",
+          "outcome": "Opened target-date daily curation page; curation date not used as publication date."
+        }
+      ],
+      "limitations": "Community-curated subset, not exhaustive."
+    },
+    {
+      "family": "openreview",
+      "status": "partial",
+      "checks": [
+        {
+          "query_or_url": "site:openreview.net agentic graphics scene CAD 2026",
+          "checked_at": null,
+          "time_basis": "recorded_only",
+          "recorded_at": "2026-10-23T21:46:54-05:00",
+          "outcome": "Indexed search returned older leads; no qualifying target-day event established."
+        }
+      ],
+      "limitations": "Search-only; direct forum enumeration not performed."
+    },
+    {
+      "family": "official_venues",
+      "status": "partial",
+      "checks": [
+        {
+          "query_or_url": "site:dl.acm.org \"agentic\" \"2026\" graphics",
+          "checked_at": null,
+          "time_basis": "recorded_only",
+          "recorded_at": "2026-10-23T21:46:54-05:00",
+          "outcome": "Executed official-venue query; no target-day event verified."
+        }
+      ],
+      "limitations": "No full proceedings archive traversal."
+    },
+    {
+      "family": "project_author_lab",
+      "status": "partial",
+      "checks": [
+        {
+          "query_or_url": "https://avalovelace1.github.io/brickwright/",
+          "checked_at": null,
+          "time_basis": "recorded_only",
+          "recorded_at": "2026-10-23T21:46:54-05:00",
+          "outcome": "Opened official project linked by arXiv."
+        },
+        {
+          "query_or_url": "https://cv.snu.ac.kr/research/AgentDreamer/",
+          "checked_at": null,
+          "time_basis": "recorded_only",
+          "recorded_at": "2026-10-23T21:46:54-05:00",
+          "outcome": "Opened official project linked by arXiv."
+        }
+      ],
+      "limitations": "Only selected official projects inspected."
+    }
+  ],
+  "query_coverage": [
+    {
+      "family": "2d",
+      "status": "partial",
+      "checks": [
+        {
+          "query_or_url": "agentic graphics CAD scene generation October 20 2026 arxiv",
+          "checked_at": null,
+          "time_basis": "recorded_only",
+          "recorded_at": "2026-10-23T21:46:54-05:00",
+          "outcome": "Executed in the shared browser discovery pass; inspect raw tool output for returned leads."
+        },
+        {
+          "query_or_url": "agentic graphics SVG animation October 21 2026 arxiv",
+          "checked_at": null,
+          "time_basis": "recorded_only",
+          "recorded_at": "2026-10-23T21:46:54-05:00",
+          "outcome": "Executed in the shared browser discovery pass; inspect raw tool output for returned leads."
+        },
+        {
+          "query_or_url": "agentic graphics simulation October 22 2026 arxiv",
+          "checked_at": null,
+          "time_basis": "recorded_only",
+          "recorded_at": "2026-10-23T21:46:54-05:00",
+          "outcome": "Executed in the shared browser discovery pass; inspect raw tool output for returned leads."
+        },
+        {
+          "query_or_url": "agentic graphics October 23 2026 arxiv",
+          "checked_at": null,
+          "time_basis": "recorded_only",
+          "recorded_at": "2026-10-23T21:46:54-05:00",
+          "outcome": "Executed in the shared browser discovery pass; inspect raw tool output for returned leads."
+        },
+        {
+          "query_or_url": "site:arxiv.org agentic graphics CAD scene \"Oct\" \"2026\" \"2610.2\"",
+          "checked_at": null,
+          "time_basis": "recorded_only",
+          "recorded_at": "2026-10-23T21:46:54-05:00",
+          "outcome": "Executed in the shared browser discovery pass; inspect raw tool output for returned leads."
+        },
+        {
+          "query_or_url": "site:arxiv.org agentic SVG animation articulated simulation \"October 2026\"",
+          "checked_at": null,
+          "time_basis": "recorded_only",
+          "recorded_at": "2026-10-23T21:46:54-05:00",
+          "outcome": "Executed in the shared browser discovery pass; inspect raw tool output for returned leads."
+        },
+        {
+          "query_or_url": "site:openreview.net agentic graphics scene CAD 2026",
+          "checked_at": null,
+          "time_basis": "recorded_only",
+          "recorded_at": "2026-10-23T21:46:54-05:00",
+          "outcome": "Executed in the shared browser discovery pass; inspect raw tool output for returned leads."
+        },
+        {
+          "query_or_url": "site:dl.acm.org \"agentic\" \"2026\" graphics",
+          "checked_at": null,
+          "time_basis": "recorded_only",
+          "recorded_at": "2026-10-23T21:46:54-05:00",
+          "outcome": "Executed in the shared browser discovery pass; inspect raw tool output for returned leads."
+        },
+        {
+          "query_or_url": "site:arxiv.org/abs/ \"agentic\" \"Oct 21\" \"2026\" graphics",
+          "checked_at": null,
+          "time_basis": "recorded_only",
+          "recorded_at": "2026-10-23T21:46:54-05:00",
+          "outcome": "Executed in the shared browser discovery pass; inspect raw tool output for returned leads."
+        },
+        {
+          "query_or_url": "\"agentic\" \"graphic\" \"October 2026\" paper",
+          "checked_at": null,
+          "time_basis": "recorded_only",
+          "recorded_at": "2026-10-23T21:46:54-05:00",
+          "outcome": "Executed in the shared browser discovery pass; inspect raw tool output for returned leads."
+        },
+        {
+          "query_or_url": "site:arxiv.org \"agent\" \"Oct 19, 2026\" graphics",
+          "checked_at": null,
+          "time_basis": "recorded_only",
+          "recorded_at": "2026-10-23T21:46:54-05:00",
+          "outcome": "Executed in the shared browser discovery pass; inspect raw tool output for returned leads."
+        },
+        {
+          "query_or_url": "agentic 3D graphics October 2026 project lab research latest",
+          "checked_at": null,
+          "time_basis": "recorded_only",
+          "recorded_at": "2026-10-23T21:46:54-05:00",
+          "outcome": "Executed in the shared browser discovery pass; inspect raw tool output for returned leads."
+        },
+        {
+          "query_or_url": "\"agent\" \"graphics\" \"2026-10-20\"",
+          "checked_at": null,
+          "time_basis": "recorded_only",
+          "recorded_at": "2026-10-23T21:46:54-05:00",
+          "outcome": "Executed in the shared browser discovery pass; inspect raw tool output for returned leads."
+        },
+        {
+          "query_or_url": "\"agent\" \"graphics\" \"2026-10-21\"",
+          "checked_at": null,
+          "time_basis": "recorded_only",
+          "recorded_at": "2026-10-23T21:46:54-05:00",
+          "outcome": "Executed in the shared browser discovery pass; inspect raw tool output for returned leads."
+        },
+        {
+          "query_or_url": "\"agent\" \"graphics\" \"2026-10-22\"",
+          "checked_at": null,
+          "time_basis": "recorded_only",
+          "recorded_at": "2026-10-23T21:46:54-05:00",
+          "outcome": "Executed in the shared browser discovery pass; inspect raw tool output for returned leads."
+        },
+        {
+          "query_or_url": "agent SVG diagram chart slide poster editable visual feedback October 2026",
+          "checked_at": null,
+          "time_basis": "recorded_only",
+          "recorded_at": "2026-10-23T21:46:54-05:00",
+          "outcome": "Executed in the shared browser discovery pass; inspect raw tool output for returned leads."
+        },
+        {
+          "query_or_url": "agent graphics benchmark world auditing verification October 2026",
+          "checked_at": null,
+          "time_basis": "recorded_only",
+          "recorded_at": "2026-10-23T21:46:54-05:00",
+          "outcome": "Executed in the shared browser discovery pass; inspect raw tool output for returned leads."
+        },
+        {
+          "query_or_url": "graphics agent memory replanning tool interface feedback program synthesis October 2026",
+          "checked_at": null,
+          "time_basis": "recorded_only",
+          "recorded_at": "2026-10-23T21:46:54-05:00",
+          "outcome": "Executed in the shared browser discovery pass; inspect raw tool output for returned leads."
+        }
+      ]
+    },
+    {
+      "family": "object",
+      "status": "partial",
+      "checks": [
+        {
+          "query_or_url": "agentic graphics CAD scene generation October 20 2026 arxiv",
+          "checked_at": null,
+          "time_basis": "recorded_only",
+          "recorded_at": "2026-10-23T21:46:54-05:00",
+          "outcome": "Executed in the shared browser discovery pass; inspect raw tool output for returned leads."
+        },
+        {
+          "query_or_url": "site:arxiv.org agentic graphics CAD scene \"Oct\" \"2026\" \"2610.2\"",
+          "checked_at": null,
+          "time_basis": "recorded_only",
+          "recorded_at": "2026-10-23T21:46:54-05:00",
+          "outcome": "Executed in the shared browser discovery pass; inspect raw tool output for returned leads."
+        },
+        {
+          "query_or_url": "site:openreview.net agentic graphics scene CAD 2026",
+          "checked_at": null,
+          "time_basis": "recorded_only",
+          "recorded_at": "2026-10-23T21:46:54-05:00",
+          "outcome": "Executed in the shared browser discovery pass; inspect raw tool output for returned leads."
+        },
+        {
+          "query_or_url": "site:arxiv.org \"agent\" \"Oct 20, 2026\" scene",
+          "checked_at": null,
+          "time_basis": "recorded_only",
+          "recorded_at": "2026-10-23T21:46:54-05:00",
+          "outcome": "Executed in the shared browser discovery pass; inspect raw tool output for returned leads."
+        },
+        {
+          "query_or_url": "agentic 3D graphics October 2026 project lab research latest",
+          "checked_at": null,
+          "time_basis": "recorded_only",
+          "recorded_at": "2026-10-23T21:46:54-05:00",
+          "outcome": "Executed in the shared browser discovery pass; inspect raw tool output for returned leads."
+        }
+      ]
+    },
+    {
+      "family": "cad",
+      "status": "partial",
+      "checks": [
+        {
+          "query_or_url": "agentic graphics CAD scene generation October 20 2026 arxiv",
+          "checked_at": null,
+          "time_basis": "recorded_only",
+          "recorded_at": "2026-10-23T21:46:54-05:00",
+          "outcome": "Executed in the shared browser discovery pass; inspect raw tool output for returned leads."
+        },
+        {
+          "query_or_url": "site:arxiv.org agentic graphics CAD scene \"Oct\" \"2026\" \"2610.2\"",
+          "checked_at": null,
+          "time_basis": "recorded_only",
+          "recorded_at": "2026-10-23T21:46:54-05:00",
+          "outcome": "Executed in the shared browser discovery pass; inspect raw tool output for returned leads."
+        },
+        {
+          "query_or_url": "site:openreview.net agentic graphics scene CAD 2026",
+          "checked_at": null,
+          "time_basis": "recorded_only",
+          "recorded_at": "2026-10-23T21:46:54-05:00",
+          "outcome": "Executed in the shared browser discovery pass; inspect raw tool output for returned leads."
+        },
+        {
+          "query_or_url": "site:arxiv.org/abs/ \"CAD\" \"Oct\" \"2026\" agent",
+          "checked_at": null,
+          "time_basis": "recorded_only",
+          "recorded_at": "2026-10-23T21:46:54-05:00",
+          "outcome": "Executed in the shared browser discovery pass; inspect raw tool output for returned leads."
+        },
+        {
+          "query_or_url": "site:arxiv.org \"agent\" \"Oct 21, 2026\" CAD",
+          "checked_at": null,
+          "time_basis": "recorded_only",
+          "recorded_at": "2026-10-23T21:46:54-05:00",
+          "outcome": "Executed in the shared browser discovery pass; inspect raw tool output for returned leads."
+        }
+      ]
+    },
+    {
+      "family": "scene",
+      "status": "partial",
+      "checks": [
+        {
+          "query_or_url": "agentic graphics CAD scene generation October 20 2026 arxiv",
+          "checked_at": null,
+          "time_basis": "recorded_only",
+          "recorded_at": "2026-10-23T21:46:54-05:00",
+          "outcome": "Executed in the shared browser discovery pass; inspect raw tool output for returned leads."
+        },
+        {
+          "query_or_url": "site:arxiv.org agentic graphics CAD scene \"Oct\" \"2026\" \"2610.2\"",
+          "checked_at": null,
+          "time_basis": "recorded_only",
+          "recorded_at": "2026-10-23T21:46:54-05:00",
+          "outcome": "Executed in the shared browser discovery pass; inspect raw tool output for returned leads."
+        },
+        {
+          "query_or_url": "site:openreview.net agentic graphics scene CAD 2026",
+          "checked_at": null,
+          "time_basis": "recorded_only",
+          "recorded_at": "2026-10-23T21:46:54-05:00",
+          "outcome": "Executed in the shared browser discovery pass; inspect raw tool output for returned leads."
+        },
+        {
+          "query_or_url": "site:arxiv.org \"agent\" \"Oct 20, 2026\" scene",
+          "checked_at": null,
+          "time_basis": "recorded_only",
+          "recorded_at": "2026-10-23T21:46:54-05:00",
+          "outcome": "Executed in the shared browser discovery pass; inspect raw tool output for returned leads."
+        }
+      ]
+    },
+    {
+      "family": "articulation",
+      "status": "partial",
+      "checks": [
+        {
+          "query_or_url": "site:arxiv.org agentic SVG animation articulated simulation \"October 2026\"",
+          "checked_at": null,
+          "time_basis": "recorded_only",
+          "recorded_at": "2026-10-23T21:46:54-05:00",
+          "outcome": "Executed in the shared browser discovery pass; inspect raw tool output for returned leads."
+        },
+        {
+          "query_or_url": "agent articulated asset joint mechanism rig generation October 2026",
+          "checked_at": null,
+          "time_basis": "recorded_only",
+          "recorded_at": "2026-10-23T21:46:54-05:00",
+          "outcome": "Executed in the shared browser discovery pass; inspect raw tool output for returned leads."
+        }
+      ]
+    },
+    {
+      "family": "animation",
+      "status": "partial",
+      "checks": [
+        {
+          "query_or_url": "agentic graphics SVG animation October 21 2026 arxiv",
+          "checked_at": null,
+          "time_basis": "recorded_only",
+          "recorded_at": "2026-10-23T21:46:54-05:00",
+          "outcome": "Executed in the shared browser discovery pass; inspect raw tool output for returned leads."
+        },
+        {
+          "query_or_url": "site:arxiv.org agentic SVG animation articulated simulation \"October 2026\"",
+          "checked_at": null,
+          "time_basis": "recorded_only",
+          "recorded_at": "2026-10-23T21:46:54-05:00",
+          "outcome": "Executed in the shared browser discovery pass; inspect raw tool output for returned leads."
+        },
+        {
+          "query_or_url": "\"Learn to Modify\" motion arxiv",
+          "checked_at": null,
+          "time_basis": "recorded_only",
+          "recorded_at": "2026-10-23T21:46:54-05:00",
+          "outcome": "Executed in the shared browser discovery pass; inspect raw tool output for returned leads."
+        }
+      ]
+    },
+    {
+      "family": "simulation",
+      "status": "partial",
+      "checks": [
+        {
+          "query_or_url": "agentic graphics simulation October 22 2026 arxiv",
+          "checked_at": null,
+          "time_basis": "recorded_only",
+          "recorded_at": "2026-10-23T21:46:54-05:00",
+          "outcome": "Executed in the shared browser discovery pass; inspect raw tool output for returned leads."
+        },
+        {
+          "query_or_url": "site:arxiv.org agentic SVG animation articulated simulation \"October 2026\"",
+          "checked_at": null,
+          "time_basis": "recorded_only",
+          "recorded_at": "2026-10-23T21:46:54-05:00",
+          "outcome": "Executed in the shared browser discovery pass; inspect raw tool output for returned leads."
+        }
+      ]
+    },
+    {
+      "family": "benchmark",
+      "status": "partial",
+      "checks": [
+        {
+          "query_or_url": "agent graphics benchmark world auditing verification October 2026",
+          "checked_at": null,
+          "time_basis": "recorded_only",
+          "recorded_at": "2026-10-23T21:46:54-05:00",
+          "outcome": "Executed in the shared browser discovery pass; inspect raw tool output for returned leads."
+        }
+      ]
+    },
+    {
+      "family": "harness",
+      "status": "partial",
+      "checks": [
+        {
+          "query_or_url": "graphics agent memory replanning tool interface feedback program synthesis October 2026",
+          "checked_at": null,
+          "time_basis": "recorded_only",
+          "recorded_at": "2026-10-23T21:46:54-05:00",
+          "outcome": "Executed in the shared browser discovery pass; inspect raw tool output for returned leads."
+        }
+      ]
+    }
+  ],
+  "coverage_limits": [
+    "Retrospective date-targeted reports executed together on October 23, 2026 (America/Chicago); not historical logs of execution on October 20–22.",
+    "The shared retrieval pass used current search indexes. Later discoverability is not proof that a paper was public on its submission day.",
+    "Publication/submission dates, arXiv listing dates, report targets and retrieval timestamps remain separate. Older papers remain catch-up results.",
+    "The installed portable browser workflow was executed; the remote Mini-BVB/Astra experiment was not rerun.",
+    "Live Google Docs revision differs from the pinned October 11 snapshot; these research annotations use that pinned 18-field codebook, not a silently refreshed taxonomy.",
+    "cs.GR new/recent and cs.CV new/recent were checked, with only initial date-specific CV pages inspected. No exhaustive CV pagination; cs.AI/cs.HC/cs.RO/cs.MM/eess.IV category enumeration was not performed.",
+    "OpenReview and venue checks used indexed search only. Official venue full archives were not enumerated. Search indexes may lag.",
+    "Paper screening uses abstracts and selected primary method passages; full-PDF delivery/comprehension audit was not performed. Untested fields remain Not Reported.",
+    "One shared retrieval ledger supports all four date reports; counts must not be summed across days. Structural validation does not establish recall or semantic accuracy."
+  ],
+  "papers": [
+    {
+      "canonical_title": "FilmFlow: Agentic System for 3D Virtual Film Cinematography",
+      "authors": [
+        "Yiming Zhang",
+        "Jiarui Guo",
+        "Haojia Wei",
+        "Yifei Liu",
+        "Yifan Yang",
+        "Hongjie Zhang",
+        "Xue Yang",
+        "Zhihang Zhong"
+      ],
+      "identifiers": {
+        "arxiv": "2610.30753"
+      },
+      "canonical_urls": [
+        "https://arxiv.org/abs/2610.30753"
+      ],
+      "abstract": "Four specialized agents translate cinematographic intent into executable camera plans and refine them from rendered evidence.",
+      "source_records": [
+        {
+          "family": "arxiv",
+          "url": "https://arxiv.org/abs/2610.30753",
+          "retrieval_basis": "Live browser inspection; raw observations in retrieval-ledger.json"
+        }
+      ],
+      "events": [
+        {
+          "type": "first_submission",
+          "value": "2026-10-22T05:22:16+00:00",
+          "precision": "timestamp",
+          "timezone": "UTC",
+          "primary_url": "https://arxiv.org/abs/2610.30753",
+          "authority": "primary",
+          "evidence": "arXiv submission history records v1 at 2026-10-22T05:22:16+00:00.",
+          "version": "v1",
+          "prior_event_status": "not_seen_in_supplied_history"
+        }
+      ],
+      "screening_status": "core",
+      "screening_reason": "A Director revises camera operations in response to Critic diagnoses and execution checks.",
+      "screening_evidence": [
+        {
+          "primary_url": "https://arxiv.org/html/2610.30753v1",
+          "locator": "Section 3.2",
+          "evidence": "Section 3.2 checks camera collisions and execution, scores rendered plans, and revises motion operations until approval."
+        }
+      ],
+      "confidence": "Medium",
+      "application_families": [
+        "Dynamic / Animation and temporal scene"
+      ],
+      "operations": [
+        "Generation",
+        "Editing"
+      ],
+      "contribution": "Four specialized agents translate cinematographic intent into executable camera plans and refine them from rendered evidence.",
+      "limitations": "The system authors camera motion within existing dynamic scenes.",
+      "taxonomy_cells": {
+        "task": [
+          "Animation"
+        ],
+        "input_form": [
+          "Language",
+          "Video"
+        ],
+        "output": [
+          "Program"
+        ],
+        "model_type": [
+          "Not Reported"
+        ],
+        "model_training": [
+          "Not Reported"
+        ],
+        "planning": [
+          "Not Reported"
+        ],
+        "workflow": [
+          "Not Reported"
+        ],
+        "update_strategy": [
+          "Replanning"
+        ],
+        "verifier": [
+          "Critic",
+          "Programmatic"
+        ],
+        "feedback_assessment": [
+          "Score",
+          "Diagnosis"
+        ],
+        "feedback_observation": [
+          "Visual",
+          "Runtime"
+        ],
+        "memory_time": [
+          "Not Reported"
+        ],
+        "memory_reach": [
+          "Not Reported"
+        ],
+        "action_type": [
+          "Not Reported"
+        ],
+        "graphics_software": [
+          "Not Reported"
+        ],
+        "tools": [
+          "Not Reported"
+        ],
+        "resources": [
+          "Not Reported"
+        ],
+        "representation": [
+          "Not Reported"
+        ]
+      },
+      "field_evidence": {
+        "task": {
+          "primary_url": "https://arxiv.org/html/2610.30753v1",
+          "locator": "Section 3.2",
+          "evidence": "Section 3.2 checks camera collisions and execution, scores rendered plans, and revises motion operations until approval.",
+          "level": "derived",
+          "reasoning": "Controlled labels summarize the explicitly described mechanism; only the listed observed dimensions are annotated."
+        },
+        "input_form": {
+          "primary_url": "https://arxiv.org/html/2610.30753v1",
+          "locator": "Section 3.2",
+          "evidence": "Section 3.2 checks camera collisions and execution, scores rendered plans, and revises motion operations until approval.",
+          "level": "derived",
+          "reasoning": "Controlled labels summarize the explicitly described mechanism; only the listed observed dimensions are annotated."
+        },
+        "output": {
+          "primary_url": "https://arxiv.org/html/2610.30753v1",
+          "locator": "Section 3.2",
+          "evidence": "Section 3.2 checks camera collisions and execution, scores rendered plans, and revises motion operations until approval.",
+          "level": "derived",
+          "reasoning": "Controlled labels summarize the explicitly described mechanism; only the listed observed dimensions are annotated."
+        },
+        "verifier": {
+          "primary_url": "https://arxiv.org/html/2610.30753v1",
+          "locator": "Section 3.2",
+          "evidence": "Section 3.2 checks camera collisions and execution, scores rendered plans, and revises motion operations until approval.",
+          "level": "derived",
+          "reasoning": "Controlled labels summarize the explicitly described mechanism; only the listed observed dimensions are annotated."
+        },
+        "feedback_observation": {
+          "primary_url": "https://arxiv.org/html/2610.30753v1",
+          "locator": "Section 3.2",
+          "evidence": "Section 3.2 checks camera collisions and execution, scores rendered plans, and revises motion operations until approval.",
+          "level": "derived",
+          "reasoning": "Controlled labels summarize the explicitly described mechanism; only the listed observed dimensions are annotated."
+        },
+        "feedback_assessment": {
+          "primary_url": "https://arxiv.org/html/2610.30753v1",
+          "locator": "Section 3.2",
+          "evidence": "Section 3.2 checks camera collisions and execution, scores rendered plans, and revises motion operations until approval.",
+          "level": "derived",
+          "reasoning": "Controlled labels summarize the explicitly described mechanism; only the listed observed dimensions are annotated."
+        },
+        "update_strategy": {
+          "primary_url": "https://arxiv.org/html/2610.30753v1",
+          "locator": "Section 3.2",
+          "evidence": "Section 3.2 checks camera collisions and execution, scores rendered plans, and revises motion operations until approval.",
+          "level": "derived",
+          "reasoning": "Controlled labels summarize the explicitly described mechanism; only the listed observed dimensions are annotated."
+        }
+      },
+      "taxonomy_delta": [],
+      "next_action": "Review full paper and reconcile annotations with current manuscript taxonomy before corpus inclusion.",
+      "short_title": "FilmFlow",
+      "known_corpus_status": "new_relative_to_snapshot",
+      "report_bucket": "same_day_new"
+    },
+    {
+      "canonical_title": "BrickWright: Agentic Creation of Physically Feasible Brick Builds",
+      "authors": [
+        "Ava Pun",
+        "Kevin Dai",
+        "Sally Chen",
+        "Maxwell Jones",
+        "Ruixuan Liu",
+        "Kangle Deng",
+        "Changliu Liu",
+        "Maneesh Agrawala",
+        "Deva Ramanan",
+        "Jun-Yan Zhu"
+      ],
+      "identifiers": {
+        "arxiv": "2610.31651"
+      },
+      "canonical_urls": [
+        "https://arxiv.org/abs/2610.31651"
+      ],
+      "abstract": "Coding agents assemble real brick parts and repair invalid builds using deterministic collision and connectivity checks.",
+      "source_records": [
+        {
+          "family": "arxiv",
+          "url": "https://arxiv.org/abs/2610.31651",
+          "retrieval_basis": "Live browser inspection; raw observations in retrieval-ledger.json"
+        }
+      ],
+      "events": [
+        {
+          "type": "first_submission",
+          "value": "2026-10-22T17:57:20+00:00",
+          "precision": "timestamp",
+          "timezone": "UTC",
+          "primary_url": "https://arxiv.org/abs/2610.31651",
+          "authority": "primary",
+          "evidence": "arXiv submission history records v1 at 2026-10-22T17:57:20+00:00.",
+          "version": "v1",
+          "prior_event_status": "not_seen_in_supplied_history"
+        }
+      ],
+      "screening_status": "core",
+      "screening_reason": "A coding agent changes an assembly in response to executable physical-feasibility feedback.",
+      "screening_evidence": [
+        {
+          "primary_url": "https://arxiv.org/html/2610.31651v1",
+          "locator": "Sections 2–3",
+          "evidence": "BrickLayer supplies an assembly API and validator; agents repair builds without task-specific training."
+        }
+      ],
+      "confidence": "Medium",
+      "application_families": [
+        "Static / Object"
+      ],
+      "operations": [
+        "Generation",
+        "Editing"
+      ],
+      "contribution": "Coding agents assemble real brick parts and repair invalid builds using deterministic collision and connectivity checks.",
+      "limitations": "Feasibility checks cover collisions, floating parts and connectivity; force-based stability is a separate extension.",
+      "taxonomy_cells": {
+        "task": [
+          "Modeling"
+        ],
+        "input_form": [
+          "Language",
+          "Image"
+        ],
+        "output": [
+          "Program",
+          "Graphics Artifact"
+        ],
+        "model_type": [
+          "Not Reported"
+        ],
+        "model_training": [
+          "Off-the-Shelf"
+        ],
+        "planning": [
+          "Not Reported"
+        ],
+        "workflow": [
+          "Not Reported"
+        ],
+        "update_strategy": [
+          "Not Reported"
+        ],
+        "verifier": [
+          "Programmatic"
+        ],
+        "feedback_assessment": [
+          "Not Reported"
+        ],
+        "feedback_observation": [
+          "Not Reported"
+        ],
+        "memory_time": [
+          "Not Reported"
+        ],
+        "memory_reach": [
+          "Not Reported"
+        ],
+        "action_type": [
+          "Code/Script"
+        ],
+        "graphics_software": [
+          "Not Reported"
+        ],
+        "tools": [
+          "Not Reported"
+        ],
+        "resources": [
+          "Assets"
+        ],
+        "representation": [
+          "Not Reported"
+        ]
+      },
+      "field_evidence": {
+        "task": {
+          "primary_url": "https://arxiv.org/html/2610.31651v1",
+          "locator": "Sections 2–3",
+          "evidence": "BrickLayer supplies an assembly API and validator; agents repair builds without task-specific training.",
+          "level": "derived",
+          "reasoning": "Controlled labels summarize the explicitly described mechanism; only the listed observed dimensions are annotated."
+        },
+        "input_form": {
+          "primary_url": "https://arxiv.org/html/2610.31651v1",
+          "locator": "Sections 2–3",
+          "evidence": "BrickLayer supplies an assembly API and validator; agents repair builds without task-specific training.",
+          "level": "derived",
+          "reasoning": "Controlled labels summarize the explicitly described mechanism; only the listed observed dimensions are annotated."
+        },
+        "output": {
+          "primary_url": "https://arxiv.org/html/2610.31651v1",
+          "locator": "Sections 2–3",
+          "evidence": "BrickLayer supplies an assembly API and validator; agents repair builds without task-specific training.",
+          "level": "derived",
+          "reasoning": "Controlled labels summarize the explicitly described mechanism; only the listed observed dimensions are annotated."
+        },
+        "model_training": {
+          "primary_url": "https://arxiv.org/html/2610.31651v1",
+          "locator": "Sections 2–3",
+          "evidence": "BrickLayer supplies an assembly API and validator; agents repair builds without task-specific training.",
+          "level": "derived",
+          "reasoning": "Controlled labels summarize the explicitly described mechanism; only the listed observed dimensions are annotated."
+        },
+        "action_type": {
+          "primary_url": "https://arxiv.org/html/2610.31651v1",
+          "locator": "Sections 2–3",
+          "evidence": "BrickLayer supplies an assembly API and validator; agents repair builds without task-specific training.",
+          "level": "derived",
+          "reasoning": "Controlled labels summarize the explicitly described mechanism; only the listed observed dimensions are annotated."
+        },
+        "verifier": {
+          "primary_url": "https://arxiv.org/html/2610.31651v1",
+          "locator": "Sections 2–3",
+          "evidence": "BrickLayer supplies an assembly API and validator; agents repair builds without task-specific training.",
+          "level": "derived",
+          "reasoning": "Controlled labels summarize the explicitly described mechanism; only the listed observed dimensions are annotated."
+        },
+        "resources": {
+          "primary_url": "https://arxiv.org/html/2610.31651v1",
+          "locator": "Sections 2–3",
+          "evidence": "BrickLayer supplies an assembly API and validator; agents repair builds without task-specific training.",
+          "level": "derived",
+          "reasoning": "Controlled labels summarize the explicitly described mechanism; only the listed observed dimensions are annotated."
+        }
+      },
+      "taxonomy_delta": [],
+      "next_action": "Review full paper and reconcile annotations with current manuscript taxonomy before corpus inclusion.",
+      "short_title": "BrickWright",
+      "known_corpus_status": "new_relative_to_snapshot",
+      "report_bucket": "same_day_new"
+    }
+  ],
+  "execution_mode": "retrospective_multi_date_portable_browser_pass",
+  "retrieved_at": "2026-10-23T21:46:54-05:00",
+  "history_comparison": {
+    "files": [
+      "data/2026-10-20/run.json",
+      "data/2026-10-21/run.json"
+    ],
+    "status": "compared"
+  },
+  "input_hashes": {
+    "taxonomy-codebook.json": "5212eb0f8e6f55ca3930633933b811995ac5397e6554f127f892b35d39969dbd",
+    "paper-corpus.json": "f0ffdda59f889dc680b9d8ed138d1b6467999cc50ab86485d078e70de40b899a",
+    "source-manifest.json": "a223ace0de27c50f9592a9b6d76228fbcc0a9084ecffad06ff9a5773f12bdbb7"
+  }
+}

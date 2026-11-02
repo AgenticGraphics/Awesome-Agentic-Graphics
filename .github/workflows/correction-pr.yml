@@ -1,0 +1,34 @@
+# Install this same file on the default main branch: issues events do not run from page alone.
+name: Create correction PR
+on:
+  issues:
+    types: [opened, edited, reopened]
+permissions: {}
+concurrency:
+  group: feed-correction-${{ github.event.issue.number }}
+  cancel-in-progress: false
+jobs:
+  correction:
+    if: >-
+      github.event.issue.state == 'open' &&
+      startsWith(github.event.issue.title, '[Feed correction]') &&
+      contains(github.event.issue.body, '<!-- agentic-feed-proposal:v1 -->')
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: write
+      pull-requests: write
+      issues: write
+    steps:
+      - name: Check out maintained website code (never a contributor branch)
+        uses: actions/checkout@v4
+        with:
+          ref: page
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Validate suggestion and create a PR for manual review
+        run: node scripts/correction-bot.cjs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

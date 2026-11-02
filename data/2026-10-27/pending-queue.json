@@ -1,0 +1,17 @@
+{
+  "date": "2026-10-27",
+  "leads": [
+    {
+      "title": "LLM Agents for Visualization Generation and Vision-First Evaluation",
+      "url": "https://ns60.ieeevis.org/year/2026/program/content/9044e003-36ee-4c64-a932-2ee823d1a19c/",
+      "status": "needs_primary_read",
+      "reason": "Indexed official venue lead; publication timing and full method not verified."
+    },
+    {
+      "title": "An evaluation guided multiagent framework for generating floor plans that comply with municipal building regulations",
+      "url": "https://link.springer.com/article/10.1007/s44163-026-02481-9",
+      "status": "needs_primary_read",
+      "reason": "Indexed publisher lead; exact event date and evidence review pending."
+    }
+  ]
+}
