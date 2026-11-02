@@ -1,0 +1,482 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Agentic Graphics taxonomy curation record",
+  "type": "object",
+  "required": [
+    "canonical_title",
+    "authors",
+    "identifiers",
+    "canonical_urls",
+    "source_records",
+    "published_date",
+    "updated_date",
+    "event_type",
+    "abstract",
+    "known_corpus_status",
+    "triage_status",
+    "screening_status",
+    "screening_reason",
+    "screening_evidence",
+    "extracted_system_evidence",
+    "taxonomy_cells",
+    "field_evidence",
+    "outside_current_taxonomy",
+    "taxonomy_delta",
+    "confidence"
+  ],
+  "properties": {
+    "canonical_title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "authors": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "identifiers": {
+      "type": "object"
+    },
+    "canonical_urls": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "source_records": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "published_date": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "updated_date": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "event_type": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "abstract": {
+      "type": "string"
+    },
+    "known_corpus_status": {
+      "type": "string"
+    },
+    "triage_status": {
+      "enum": [
+        "retain",
+        "needs_full_read",
+        "reject_obvious"
+      ]
+    },
+    "screening_status": {
+      "enum": [
+        "core",
+        "enabling_or_adjacent",
+        "scope_dependent",
+        "excluded",
+        "unresolved"
+      ]
+    },
+    "screening_reason": {
+      "type": "string",
+      "minLength": 1
+    },
+    "screening_evidence": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "extracted_system_evidence": {
+      "type": "object"
+    },
+    "taxonomy_cells": {
+      "type": "object",
+      "required": [
+        "task",
+        "input_form",
+        "output",
+        "model_type",
+        "model_training",
+        "planning",
+        "workflow",
+        "update_strategy",
+        "verifier",
+        "feedback_assessment",
+        "feedback_observation",
+        "memory_time",
+        "memory_reach",
+        "action_type",
+        "graphics_software",
+        "tools",
+        "resources",
+        "representation"
+      ],
+      "properties": {
+        "task": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "enum": [
+              "Modeling",
+              "Animation",
+              "Simulation",
+              "Visualization",
+              "Not Reported",
+              "Not Applicable",
+              "Unclear"
+            ]
+          }
+        },
+        "input_form": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "enum": [
+              "Language",
+              "Image",
+              "Video",
+              "3D Representation",
+              "Document",
+              "Not Reported",
+              "Not Applicable",
+              "Unclear"
+            ]
+          }
+        },
+        "output": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "enum": [
+              "Program",
+              "Structured Specification",
+              "Graphics Artifact",
+              "Rendered Media",
+              "Not Reported",
+              "Not Applicable",
+              "Unclear"
+            ]
+          }
+        },
+        "model_type": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "enum": [
+              "LLM",
+              "VLM",
+              "Hybrid",
+              "Not Reported",
+              "Not Applicable",
+              "Unclear"
+            ]
+          }
+        },
+        "model_training": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "enum": [
+              "Off-the-Shelf",
+              "Supervised Fine-Tuning",
+              "RL Post-Training",
+              "Not Reported",
+              "Not Applicable",
+              "Unclear"
+            ]
+          }
+        },
+        "planning": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "enum": [
+              "PO-1",
+              "PO-2",
+              "PO-3",
+              "Not Reported",
+              "Not Applicable",
+              "Unclear"
+            ]
+          }
+        },
+        "workflow": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "enum": [
+              "Sequential",
+              "Parallel",
+              "Graph-Structured",
+              "Not Reported",
+              "Not Applicable",
+              "Unclear"
+            ]
+          }
+        },
+        "update_strategy": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "enum": [
+              "Regeneration",
+              "Local Patch",
+              "Replanning",
+              "Rollback",
+              "Candidate Selection",
+              "Not Reported",
+              "Not Applicable",
+              "Unclear"
+            ]
+          }
+        },
+        "verifier": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "enum": [
+              "Self",
+              "Critic",
+              "Programmatic",
+              "Environment",
+              "Human",
+              "Not Reported",
+              "Not Applicable",
+              "Unclear"
+            ]
+          }
+        },
+        "feedback_assessment": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "enum": [
+              "Binary",
+              "Score",
+              "Ranking",
+              "Diagnosis",
+              "Not Reported",
+              "Not Applicable",
+              "Unclear"
+            ]
+          }
+        },
+        "feedback_observation": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "enum": [
+              "Visual",
+              "Structural Scene State",
+              "Runtime",
+              "Not Reported",
+              "Not Applicable",
+              "Unclear"
+            ]
+          }
+        },
+        "memory_time": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "enum": [
+              "Working Memory",
+              "Short-Term Memory",
+              "Long-Term Memory",
+              "Not Reported",
+              "Not Applicable",
+              "Unclear"
+            ]
+          }
+        },
+        "memory_reach": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "enum": [
+              "Local Memory",
+              "Global Memory",
+              "Not Reported",
+              "Not Applicable",
+              "Unclear"
+            ]
+          }
+        },
+        "action_type": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "enum": [
+              "Code/Script",
+              "Structured Specification",
+              "Tool/Function Call",
+              "GUI Action",
+              "Not Reported",
+              "Not Applicable",
+              "Unclear"
+            ]
+          }
+        },
+        "graphics_software": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "enum": [
+              "Agent-Ready",
+              "Agent-Adapted",
+              "General-Purpose",
+              "Not Reported",
+              "Not Applicable",
+              "Unclear"
+            ]
+          }
+        },
+        "tools": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "enum": [
+              "Execution Utilities",
+              "Graphics Operations",
+              "Perception models",
+              "Solver Validator",
+              "Static Validator",
+              "Not Reported",
+              "Not Applicable",
+              "Unclear"
+            ]
+          }
+        },
+        "resources": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "enum": [
+              "Assets",
+              "Examples & Trajectories",
+              "Documentation & Rules",
+              "Not Reported",
+              "Not Applicable",
+              "Unclear"
+            ]
+          }
+        },
+        "representation": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "enum": [
+              "Code",
+              "Geometry",
+              "Dynamic State",
+              "Layouts",
+              "Pixels",
+              "Learned State",
+              "Not Reported",
+              "Not Applicable",
+              "Unclear"
+            ]
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "field_evidence": {
+      "type": "object"
+    },
+    "outside_current_taxonomy": {
+      "type": "boolean"
+    },
+    "taxonomy_delta": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "type",
+          "proposal",
+          "evidence",
+          "recommendation"
+        ],
+        "properties": {
+          "type": {
+            "enum": [
+              "new_value",
+              "split_value",
+              "new_field",
+              "definition_change",
+              "scope_boundary"
+            ]
+          },
+          "field": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "proposal": {
+            "type": "string",
+            "minLength": 1
+          },
+          "evidence": {
+            "type": "string",
+            "minLength": 1
+          },
+          "affected_papers": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "recommendation": {
+            "enum": [
+              "accept",
+              "monitor",
+              "reject"
+            ]
+          }
+        },
+        "additionalProperties": true
+      }
+    },
+    "confidence": {
+      "enum": [
+        "High",
+        "Medium",
+        "Low"
+      ]
+    }
+  },
+  "additionalProperties": true
+}

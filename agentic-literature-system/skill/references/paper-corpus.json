@@ -1,0 +1,4218 @@
+{
+  "source": {
+    "document_id": "bundled-survey-snapshot",
+    "document_url": "https://github.com/AgenticGraphics/Awesome-Agentic-Graphics",
+    "revision_id": "public-research-snapshot-2026-10-15",
+    "retrieved_date": "2026-10-15",
+    "taxonomy_tab": "taxonomy",
+    "taxonomy_tab_title": "Taxonomy v3",
+    "taxonomy_body_heading": "Taxonomy v2",
+    "paper_list_tab": "discussed-papers",
+    "paper_occurrences": 259,
+    "unique_link_sets": 249,
+    "status": "public frozen snapshot; private source identifiers removed; source ambiguities preserved"
+  },
+  "records": [
+    {
+      "title": "Agentic Designer: Progressive Multi-Agent Collaboration for Structure-Aware Interior Layout Generation",
+      "urls": [
+        "https://arxiv.org/abs/2607.20866"
+      ],
+      "arxiv_ids": [
+        "2607.20866"
+      ],
+      "discussion_path": [
+        "2D Graphics",
+        "Primary papers"
+      ],
+      "source_note": "Agentic Designer: Progressive Multi-Agent Collaboration for Structure-Aware Interior Layout Generation",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "ManimAgent: Self-Evolving Multimodal Agents for Visual Education",
+      "urls": [
+        "https://arxiv.org/abs/2606.30296"
+      ],
+      "arxiv_ids": [
+        "2606.30296"
+      ],
+      "discussion_path": [
+        "2D Graphics",
+        "Primary papers"
+      ],
+      "source_note": "ManimAgent: Self-Evolving Multimodal Agents for Visual Education",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "World Craft: Agentic Framework to Create Visualizable Worlds via Text",
+      "urls": [
+        "https://arxiv.org/abs/2601.09150"
+      ],
+      "arxiv_ids": [
+        "2601.09150"
+      ],
+      "discussion_path": [
+        "2D Graphics",
+        "Primary papers"
+      ],
+      "source_note": "World Craft: Agentic Framework to Create Visualizable Worlds via Text",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "DrawAI: Agentic Benchmark and Workflow for Making Raster Images Editable",
+      "urls": [
+        "https://arxiv.org/abs/2608.00548"
+      ],
+      "arxiv_ids": [
+        "2608.00548"
+      ],
+      "discussion_path": [
+        "2D Graphics",
+        "Primary papers"
+      ],
+      "source_note": "DrawAI: Agentic Benchmark and Workflow for Making Raster Images Editable",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "PosterMELD: Multi-Agent Paper-to-Poster Generation for Controllable Design Diversity with Editable Print-Ready Outputs",
+      "urls": [
+        "https://arxiv.org/abs/2608.02218"
+      ],
+      "arxiv_ids": [
+        "2608.02218"
+      ],
+      "discussion_path": [
+        "2D Graphics",
+        "Primary papers"
+      ],
+      "source_note": "PosterMELD: Multi-Agent Paper-to-Poster Generation for Controllable Design Diversity with Editable Print-Ready Outputs",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "Crafter: A Multi-Agent Harness for Editable Scientific Figure Generation from Diverse Inputs",
+      "urls": [
+        "https://arxiv.org/abs/2605.30611"
+      ],
+      "arxiv_ids": [
+        "2605.30611"
+      ],
+      "discussion_path": [
+        "2D Graphics",
+        "Primary papers"
+      ],
+      "source_note": "Crafter: A Multi-Agent Harness for Editable Scientific Figure Generation from Diverse Inputs",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "LiveFigure: Generating Editable Scientific Illustration with VLM Agents",
+      "urls": [
+        "https://arxiv.org/abs/2605.23527"
+      ],
+      "arxiv_ids": [
+        "2605.23527"
+      ],
+      "discussion_path": [
+        "2D Graphics",
+        "Primary papers"
+      ],
+      "source_note": "LiveFigure: Generating Editable Scientific Illustration with VLM Agents",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "Render-in-the-Loop: Vector Graphics Generation via Visual Self-Feedback",
+      "urls": [
+        "https://arxiv.org/abs/2604.20730"
+      ],
+      "arxiv_ids": [
+        "2604.20730"
+      ],
+      "discussion_path": [
+        "2D Graphics",
+        "Primary papers"
+      ],
+      "source_note": "Render-in-the-Loop: Vector Graphics Generation via Visual Self-Feedback",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "See it. Say it. Sorted: Agentic System for Compositional Diagram Generation",
+      "urls": [
+        "https://arxiv.org/abs/2508.15222"
+      ],
+      "arxiv_ids": [
+        "2508.15222"
+      ],
+      "discussion_path": [
+        "2D Graphics",
+        "Primary papers"
+      ],
+      "source_note": "See it. Say it. Sorted: Agentic System for Compositional Diagram Generation",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "SketchAgent: Language-Driven Sequential Sketch Generation",
+      "urls": [
+        "https://arxiv.org/abs/2411.17673"
+      ],
+      "arxiv_ids": [
+        "2411.17673"
+      ],
+      "discussion_path": [
+        "2D Graphics",
+        "Primary papers"
+      ],
+      "source_note": "SketchAgent: Language-Driven Sequential Sketch Generation",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "PlotGen: Multi-Agent LLM-based Scientific Data Visualization via Multimodal Feedback",
+      "urls": [
+        "https://arxiv.org/abs/2502.00988"
+      ],
+      "arxiv_ids": [
+        "2502.00988"
+      ],
+      "discussion_path": [
+        "2D Graphics",
+        "Primary papers"
+      ],
+      "source_note": "PlotGen: Multi-Agent LLM-based Scientific Data Visualization via Multimodal Feedback",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "Automated Visualization Code Synthesis via Multi-Path Reasoning and Feedback-Driven Optimization",
+      "urls": [
+        "https://arxiv.org/abs/2502.11140"
+      ],
+      "arxiv_ids": [
+        "2502.11140"
+      ],
+      "discussion_path": [
+        "2D Graphics",
+        "Primary papers"
+      ],
+      "source_note": "Automated Visualization Code Synthesis via Multi-Path Reasoning and Feedback-Driven Optimization",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "SeaSlides: Semantic Abstraction Layer for Agentic Slide Generation",
+      "urls": [
+        "https://arxiv.org/abs/2608.03298"
+      ],
+      "arxiv_ids": [
+        "2608.03298"
+      ],
+      "discussion_path": [
+        "2D Graphics",
+        "Primary papers"
+      ],
+      "source_note": "SeaSlides: Semantic Abstraction Layer for Agentic Slide Generation",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "BannerAgency: Advertising Banner Design with Multimodal LLM Agents",
+      "urls": [
+        "https://arxiv.org/abs/2503.11060"
+      ],
+      "arxiv_ids": [
+        "2503.11060"
+      ],
+      "discussion_path": [
+        "2D Graphics",
+        "Primary papers"
+      ],
+      "source_note": "BannerAgency: Advertising Banner Design with Multimodal LLM Agents",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "SLIDEFORGE: An LLM Agent for Controllable Editing of Slides as Structured Artifacts",
+      "urls": [
+        "https://arxiv.org/abs/2609.03109"
+      ],
+      "arxiv_ids": [
+        "2609.03109"
+      ],
+      "discussion_path": [
+        "2D Graphics",
+        "Primary papers"
+      ],
+      "source_note": "SLIDEFORGE: An LLM Agent for Controllable Editing of Slides as Structured Artifacts",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "Compositional SVG Generation via VLM-Driven Hierarchical Semantic Parsing",
+      "urls": [
+        "https://arxiv.org/abs/2609.14657"
+      ],
+      "arxiv_ids": [
+        "2609.14657"
+      ],
+      "discussion_path": [
+        "2D Graphics",
+        "Primary papers"
+      ],
+      "source_note": "Compositional SVG Generation via VLM-Driven Hierarchical Semantic Parsing",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "MatPlotAgent: Method and Evaluation for LLM-Based Agentic Scientific Data Visualization",
+      "urls": [
+        "https://arxiv.org/abs/2402.11453"
+      ],
+      "arxiv_ids": [
+        "2402.11453"
+      ],
+      "discussion_path": [
+        "2D Graphics",
+        "Primary papers"
+      ],
+      "source_note": "MatPlotAgent: Method and Evaluation for LLM-Based Agentic Scientific Data Visualization",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "DeTikZify: Synthesizing Graphics Programs for Scientific Figures and Sketches with TikZ",
+      "urls": [
+        "https://arxiv.org/abs/2405.15306"
+      ],
+      "arxiv_ids": [
+        "2405.15306"
+      ],
+      "discussion_path": [
+        "2D Graphics",
+        "Primary papers"
+      ],
+      "source_note": "DeTikZify: Synthesizing Graphics Programs for Scientific Figures and Sketches with TikZ",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "From Words to Structured Visuals: A Benchmark and Framework for Text-to-Diagram Generation and Editing",
+      "urls": [
+        "https://arxiv.org/abs/2411.11916"
+      ],
+      "arxiv_ids": [
+        "2411.11916"
+      ],
+      "discussion_path": [
+        "2D Graphics",
+        "Primary papers"
+      ],
+      "source_note": "From Words to Structured Visuals: A Benchmark and Framework for Text-to-Diagram Generation and Editing",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "MagicGeo: Training-Free Text-Guided Geometric Diagram Generation",
+      "urls": [
+        "https://arxiv.org/abs/2502.13855"
+      ],
+      "arxiv_ids": [
+        "2502.13855"
+      ],
+      "discussion_path": [
+        "2D Graphics",
+        "Primary papers"
+      ],
+      "source_note": "MagicGeo: Training-Free Text-Guided Geometric Diagram Generation",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "Draw with Thought: Unleashing Multimodal Reasoning for Scientific Diagram Generation",
+      "urls": [
+        "https://arxiv.org/abs/2504.09479"
+      ],
+      "arxiv_ids": [
+        "2504.09479"
+      ],
+      "discussion_path": [
+        "2D Graphics",
+        "Primary papers"
+      ],
+      "source_note": "Draw with Thought: Unleashing Multimodal Reasoning for Scientific Diagram Generation",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "VisCoder: Fine-Tuning LLMs for Executable Python Visualization Code Generation",
+      "urls": [
+        "https://arxiv.org/abs/2506.03930"
+      ],
+      "arxiv_ids": [
+        "2506.03930"
+      ],
+      "discussion_path": [
+        "2D Graphics",
+        "Primary papers"
+      ],
+      "source_note": "VisCoder: Fine-Tuning LLMs for Executable Python Visualization Code Generation",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "VisCoder2: Building Multi-Language Visualization Coding Agents",
+      "urls": [
+        "https://arxiv.org/abs/2510.23642"
+      ],
+      "arxiv_ids": [
+        "2510.23642"
+      ],
+      "discussion_path": [
+        "2D Graphics",
+        "Primary papers"
+      ],
+      "source_note": "VisCoder2: Building Multi-Language Visualization Coding Agents",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "VinciCoder: Unifying Multimodal Code Generation via Coarse-to-fine Visual Reinforcement Learning",
+      "urls": [
+        "https://arxiv.org/abs/2511.00391"
+      ],
+      "arxiv_ids": [
+        "2511.00391"
+      ],
+      "discussion_path": [
+        "2D Graphics",
+        "Primary papers"
+      ],
+      "source_note": "VinciCoder: Unifying Multimodal Code Generation via Coarse-to-fine Visual Reinforcement Learning",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "Decomate: Leveraging Generative Models for Co-Creative SVG Animation",
+      "urls": [
+        "https://arxiv.org/abs/2511.06297"
+      ],
+      "arxiv_ids": [
+        "2511.06297"
+      ],
+      "discussion_path": [
+        "2D Graphics",
+        "Primary papers"
+      ],
+      "source_note": "Decomate: Leveraging Generative Models for Co-Creative SVG Animation",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "SciFig: Towards Automating Editable Figure Generation for Scientific Papers",
+      "urls": [
+        "https://arxiv.org/abs/2601.04390"
+      ],
+      "arxiv_ids": [
+        "2601.04390"
+      ],
+      "discussion_path": [
+        "2D Graphics",
+        "Primary papers"
+      ],
+      "source_note": "SciFig: Towards Automating Editable Figure Generation for Scientific Papers",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "PaperBanana: Automating Academic Illustration for AI Scientists",
+      "urls": [
+        "https://arxiv.org/abs/2601.23265"
+      ],
+      "arxiv_ids": [
+        "2601.23265"
+      ],
+      "discussion_path": [
+        "2D Graphics",
+        "Primary papers"
+      ],
+      "source_note": "PaperBanana: Automating Academic Illustration for AI Scientists",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "AutoFigure: Generating and Refining Publication-Ready Scientific Illustrations",
+      "urls": [
+        "https://arxiv.org/abs/2602.03828"
+      ],
+      "arxiv_ids": [
+        "2602.03828"
+      ],
+      "discussion_path": [
+        "2D Graphics",
+        "Primary papers"
+      ],
+      "source_note": "AutoFigure: Generating and Refining Publication-Ready Scientific Illustrations",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "AutoFigure-Edit: Generating Editable Scientific Illustration",
+      "urls": [
+        "https://arxiv.org/abs/2603.06674"
+      ],
+      "arxiv_ids": [
+        "2603.06674"
+      ],
+      "discussion_path": [
+        "2D Graphics",
+        "Primary papers"
+      ],
+      "source_note": "AutoFigure-Edit: Generating Editable Scientific Illustration",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "IntroSVG: Learning from Rendering Feedback for Text-to-SVG Generation via an Introspective Generator-Critic Framework",
+      "urls": [
+        "https://arxiv.org/abs/2603.09312"
+      ],
+      "arxiv_ids": [
+        "2603.09312"
+      ],
+      "discussion_path": [
+        "2D Graphics",
+        "Primary papers"
+      ],
+      "source_note": "IntroSVG: Learning from Rendering Feedback for Text-to-SVG Generation via an Introspective Generator-Critic Framework",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "RefineSVG: Visual Feedback-Driven Reinforcement Learning for Image-to-SVG Generation",
+      "urls": [
+        "https://arxiv.org/abs/2607.27699"
+      ],
+      "arxiv_ids": [
+        "2607.27699"
+      ],
+      "discussion_path": [
+        "2D Graphics",
+        "Primary papers"
+      ],
+      "source_note": "RefineSVG: Visual Feedback-Driven Reinforcement Learning for Image-to-SVG Generation",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "GVR-Coder: A Visual-Feedback Framework for Structured SVG Generation in Complex Document and Meeting Scenarios",
+      "urls": [
+        "https://arxiv.org/abs/2607.28073"
+      ],
+      "arxiv_ids": [
+        "2607.28073"
+      ],
+      "discussion_path": [
+        "2D Graphics",
+        "Primary papers"
+      ],
+      "source_note": "GVR-Coder: A Visual-Feedback Framework for Structured SVG Generation in Complex Document and Meeting Scenarios",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "CANVAS: Consistency-Aware Navigation via Visual Adaptive Sampling for Long-Context Text-to-SVG Generation",
+      "urls": [
+        "https://arxiv.org/abs/2608.30689"
+      ],
+      "arxiv_ids": [
+        "2608.30689"
+      ],
+      "discussion_path": [
+        "2D Graphics",
+        "Primary papers"
+      ],
+      "source_note": "CANVAS: Consistency-Aware Navigation via Visual Adaptive Sampling for Long-Context Text-to-SVG Generation",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "AI Co-Artist: A LLM-Powered Framework for Interactive GLSL Shader Animation Evolution",
+      "urls": [
+        "https://arxiv.org/abs/2512.08951"
+      ],
+      "arxiv_ids": [
+        "2512.08951"
+      ],
+      "discussion_path": [
+        "2D Graphics",
+        "Primary papers"
+      ],
+      "source_note": "AI Co-Artist: A LLM-Powered Framework for Interactive GLSL Shader Animation Evolution",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "LogoMotion: Visually-Grounded Code Synthesis for Creating and Editing Animation",
+      "urls": [
+        "https://arxiv.org/abs/2405.07065"
+      ],
+      "arxiv_ids": [
+        "2405.07065"
+      ],
+      "discussion_path": [
+        "2D Graphics",
+        "Primary papers"
+      ],
+      "source_note": "LogoMotion: Visually-Grounded Code Synthesis for Creating and Editing Animation",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "TheoremExplainAgent: Towards Video-based Multimodal Explanations for LLM Theorem Understanding",
+      "urls": [
+        "https://arxiv.org/abs/2502.19400"
+      ],
+      "arxiv_ids": [
+        "2502.19400"
+      ],
+      "discussion_path": [
+        "2D Graphics",
+        "Primary papers"
+      ],
+      "source_note": "TheoremExplainAgent: Towards Video-based Multimodal Explanations for LLM Theorem Understanding",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "AutoPresent: Designing Structured Visuals from Scratch",
+      "urls": [
+        "https://arxiv.org/abs/2501.00912"
+      ],
+      "arxiv_ids": [
+        "2501.00912"
+      ],
+      "discussion_path": [
+        "2D Graphics",
+        "Primary papers"
+      ],
+      "source_note": "AutoPresent: Designing Structured Visuals from Scratch",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "PPTAgent: Generating and Evaluating Presentations Beyond Text-to-Slides",
+      "urls": [
+        "https://arxiv.org/abs/2501.03936"
+      ],
+      "arxiv_ids": [
+        "2501.03936"
+      ],
+      "discussion_path": [
+        "2D Graphics",
+        "Primary papers"
+      ],
+      "source_note": "PPTAgent: Generating and Evaluating Presentations Beyond Text-to-Slides",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "PreGenie: An Agentic Framework for High-quality Visual Presentation Generation",
+      "urls": [
+        "https://arxiv.org/abs/2505.21660"
+      ],
+      "arxiv_ids": [
+        "2505.21660"
+      ],
+      "discussion_path": [
+        "2D Graphics",
+        "Primary papers"
+      ],
+      "source_note": "PreGenie: An Agentic Framework for High-quality Visual Presentation Generation",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "Paper2Poster: Towards Multimodal Poster Automation from Scientific Papers",
+      "urls": [
+        "https://arxiv.org/abs/2505.21497"
+      ],
+      "arxiv_ids": [
+        "2505.21497"
+      ],
+      "discussion_path": [
+        "2D Graphics",
+        "Primary papers"
+      ],
+      "source_note": "Paper2Poster: Towards Multimodal Poster Automation from Scientific Papers",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "PosterForest: Hierarchical Multi-Agent Collaboration for Scientific Poster Generation",
+      "urls": [
+        "https://arxiv.org/abs/2508.21720"
+      ],
+      "arxiv_ids": [
+        "2508.21720"
+      ],
+      "discussion_path": [
+        "2D Graphics",
+        "Primary papers"
+      ],
+      "source_note": "PosterForest: Hierarchical Multi-Agent Collaboration for Scientific Poster Generation",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "SlideGen: Collaborative Multimodal Agents for Scientific Slide Generation",
+      "urls": [
+        "https://arxiv.org/abs/2512.04529"
+      ],
+      "arxiv_ids": [
+        "2512.04529"
+      ],
+      "discussion_path": [
+        "2D Graphics",
+        "Primary papers"
+      ],
+      "source_note": "SlideGen: Collaborative Multimodal Agents for Scientific Slide Generation",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "DeepPresenter: Environment-Grounded Reflection for Agentic Presentation Generation",
+      "urls": [
+        "https://arxiv.org/abs/2602.22839"
+      ],
+      "arxiv_ids": [
+        "2602.22839"
+      ],
+      "discussion_path": [
+        "2D Graphics",
+        "Primary papers"
+      ],
+      "source_note": "DeepPresenter: Environment-Grounded Reflection for Agentic Presentation Generation",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "PSDesigner: Automated Graphic Design with a Human-Like Creative Workflow",
+      "urls": [
+        "https://arxiv.org/abs/2603.25738"
+      ],
+      "arxiv_ids": [
+        "2603.25738"
+      ],
+      "discussion_path": [
+        "2D Graphics",
+        "Primary papers"
+      ],
+      "source_note": "PSDesigner: Automated Graphic Design with a Human-Like Creative Workflow",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "MemSlides: A Hierarchical Memory Driven Agent Framework for Personalized Slide Generation with Multi-turn Local Revision",
+      "urls": [
+        "https://arxiv.org/abs/2606.17162"
+      ],
+      "arxiv_ids": [
+        "2606.17162"
+      ],
+      "discussion_path": [
+        "2D Graphics",
+        "Primary papers"
+      ],
+      "source_note": "MemSlides: A Hierarchical Memory Driven Agent Framework for Personalized Slide Generation with Multi-turn Local Revision",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "AutoDesign: Meta-Harness Optimization for Long-Horizon Agentic Design",
+      "urls": [
+        "https://arxiv.org/abs/2608.13560"
+      ],
+      "arxiv_ids": [
+        "2608.13560"
+      ],
+      "discussion_path": [
+        "2D Graphics",
+        "Primary papers"
+      ],
+      "source_note": "AutoDesign: Meta-Harness Optimization for Long-Horizon Agentic Design",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "Editable Visual Design",
+      "urls": [
+        "https://arxiv.org/abs/2609.04034"
+      ],
+      "arxiv_ids": [
+        "2609.04034"
+      ],
+      "discussion_path": [
+        "2D Graphics",
+        "Primary papers"
+      ],
+      "source_note": "Editable Visual Design",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "See Before You Code: Learning Visual Priors for Spatially Aware Educational Animation Generation",
+      "urls": [
+        "https://arxiv.org/abs/2605.15585"
+      ],
+      "arxiv_ids": [
+        "2605.15585"
+      ],
+      "discussion_path": [
+        "2D Graphics",
+        "Primary papers"
+      ],
+      "source_note": "See Before You Code: Learning Visual Priors for Spatially Aware Educational Animation Generation",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "ViCo: Visual-oriented Coding with Self-Reflection for Chart Replication",
+      "urls": [
+        "https://arxiv.org/abs/2609.16014"
+      ],
+      "arxiv_ids": [
+        "2609.16014"
+      ],
+      "discussion_path": [
+        "2D Graphics",
+        "Primary papers"
+      ],
+      "source_note": "ViCo: Visual-oriented Coding with Self-Reflection for Chart Replication",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "TemplateCraft: Agentic Visual Template Generation",
+      "urls": [
+        "https://arxiv.org/abs/2609.31451"
+      ],
+      "arxiv_ids": [
+        "2609.31451"
+      ],
+      "discussion_path": [
+        "2D Graphics",
+        "Primary papers"
+      ],
+      "source_note": "TemplateCraft: Agentic Visual Template Generation",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "Vision-as-Inverse-Graphics Agent via Interleaved Multimodal Reasoning",
+      "urls": [
+        "https://arxiv.org/abs/2601.11109"
+      ],
+      "arxiv_ids": [
+        "2601.11109"
+      ],
+      "discussion_path": [
+        "2D Graphics",
+        "Cross-category applications"
+      ],
+      "source_note": "Vision-as-Inverse-Graphics Agent via Interleaved Multimodal Reasoning",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "LL3M: Large Language 3D Modelers",
+      "urls": [
+        "https://arxiv.org/abs/2508.08228"
+      ],
+      "arxiv_ids": [
+        "2508.08228"
+      ],
+      "discussion_path": [
+        "Modeling Static Assets",
+        "Object Modeling: Shape and Appearance",
+        "Generation"
+      ],
+      "source_note": "LL3M: Large Language 3D Modelers — also supports iterative asset editing",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "ShapeCraft: LLM Agents for Structured, Textured and Interactive 3D Modeling",
+      "urls": [
+        "https://arxiv.org/abs/2510.17603"
+      ],
+      "arxiv_ids": [
+        "2510.17603"
+      ],
+      "discussion_path": [
+        "Modeling Static Assets",
+        "Object Modeling: Shape and Appearance",
+        "Generation"
+      ],
+      "source_note": "ShapeCraft: LLM Agents for Structured, Textured and Interactive 3D Modeling",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "aDSL: Agentic 3D Creation via Joint Agent-Program Design",
+      "urls": [
+        "https://arxiv.org/abs/2608.17975"
+      ],
+      "arxiv_ids": [
+        "2608.17975"
+      ],
+      "discussion_path": [
+        "Modeling Static Assets",
+        "Object Modeling: Shape and Appearance",
+        "Generation"
+      ],
+      "source_note": "aDSL: Agentic 3D Creation via Joint Agent-Program Design — also supports reference-based reconstruction and editing",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "L3GO: Language Agents with Chain-of-3D-Thoughts for Generating Unconventional Objects",
+      "urls": [
+        "https://arxiv.org/abs/2402.09052"
+      ],
+      "arxiv_ids": [
+        "2402.09052"
+      ],
+      "discussion_path": [
+        "Modeling Static Assets",
+        "Object Modeling: Shape and Appearance",
+        "Generation"
+      ],
+      "source_note": "L3GO: Language Agents with Chain-of-3D-Thoughts for Generating Unconventional Objects",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "SmartAvatar: Text- and Image-Guided Human Avatar Generation with VLM AI Agents",
+      "urls": [
+        "https://arxiv.org/abs/2506.04606"
+      ],
+      "arxiv_ids": [
+        "2506.04606"
+      ],
+      "discussion_path": [
+        "Modeling Static Assets",
+        "Object Modeling: Shape and Appearance",
+        "Generation"
+      ],
+      "source_note": "SmartAvatar: Text- and Image-Guided Human Avatar Generation with VLM AI Agents — also supports identity-preserving shape and appearance editing",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "Nova3D: Code-Native Generation of Programmable 3D Assets",
+      "urls": [
+        "https://arxiv.org/abs/2607.22738"
+      ],
+      "arxiv_ids": [
+        "2607.22738"
+      ],
+      "discussion_path": [
+        "Modeling Static Assets",
+        "Object Modeling: Shape and Appearance",
+        "Generation"
+      ],
+      "source_note": "Nova3D: Code-Native Generation of Programmable 3D Assets — also supports local editing; articulation is a dynamic extension",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "Procedura: Agentic 3D Modeling with Procedural Control",
+      "urls": [
+        "https://arxiv.org/abs/2608.26238"
+      ],
+      "arxiv_ids": [
+        "2608.26238"
+      ],
+      "discussion_path": [
+        "Modeling Static Assets",
+        "Object Modeling: Shape and Appearance",
+        "Generation"
+      ],
+      "source_note": "Procedura: Agentic 3D Modeling with Procedural Control — bridge to CAD; retained here for procedural asset construction",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "3DFroMLLM: 3D Prototype Generation only from Pretrained Multimodal LLMs",
+      "urls": [
+        "https://arxiv.org/abs/2508.08821"
+      ],
+      "arxiv_ids": [
+        "2508.08821"
+      ],
+      "discussion_path": [
+        "Modeling Static Assets",
+        "Object Modeling: Shape and Appearance",
+        "Generation"
+      ],
+      "source_note": "3DFroMLLM: 3D Prototype Generation only from Pretrained Multimodal LLMs",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "3D-PreMise: Can Large Language Models Generate 3D Shapes with Sharp Features and Parametric Control?",
+      "urls": [
+        "https://arxiv.org/abs/2401.06437"
+      ],
+      "arxiv_ids": [
+        "2401.06437"
+      ],
+      "discussion_path": [
+        "Modeling Static Assets",
+        "Object Modeling: Shape and Appearance",
+        "Generation"
+      ],
+      "source_note": "3D-PreMise: Can Large Language Models Generate 3D Shapes with Sharp Features and Parametric Control? — dimension-controlled Blender shapes; CAD-adjacent",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "Idea23D: Collaborative LMM Agents Enable 3D Model Generation from Interleaved Multimodal Inputs",
+      "urls": [
+        "https://arxiv.org/abs/2404.04363"
+      ],
+      "arxiv_ids": [
+        "2404.04363"
+      ],
+      "discussion_path": [
+        "Modeling Static Assets",
+        "Object Modeling: Shape and Appearance",
+        "Generation"
+      ],
+      "source_note": "Idea23D: Collaborative LMM Agents Enable 3D Model Generation from Interleaved Multimodal Inputs",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "MatLoom: Layered Text-to-Material Generation in a Compact Program Space",
+      "urls": [
+        "https://arxiv.org/abs/2609.40322"
+      ],
+      "arxiv_ids": [
+        "2609.40322"
+      ],
+      "discussion_path": [
+        "Modeling Static Assets",
+        "Object Modeling: Shape and Appearance",
+        "Generation"
+      ],
+      "source_note": "MatLoom: Layered Text-to-Material Generation in a Compact Program Space — reusable procedural material assets",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "3D-CoS: A New 3D Reconstruction Paradigm Based on VLM Code Synthesis",
+      "urls": [
+        "https://arxiv.org/abs/2606.10478"
+      ],
+      "arxiv_ids": [
+        "2606.10478"
+      ],
+      "discussion_path": [
+        "Modeling Static Assets",
+        "Object Modeling: Shape and Appearance",
+        "Reconstruction"
+      ],
+      "source_note": "3D-CoS: A New 3D Reconstruction Paradigm Based on VLM Code Synthesis — also supports targeted program editing",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "MultiMat: Multimodal Program Synthesis for Procedural Materials using Large Multimodal Models",
+      "urls": [
+        "https://arxiv.org/abs/2509.22151"
+      ],
+      "arxiv_ids": [
+        "2509.22151"
+      ],
+      "discussion_path": [
+        "Modeling Static Assets",
+        "Object Modeling: Shape and Appearance",
+        "Reconstruction"
+      ],
+      "source_note": "MultiMat: Multimodal Program Synthesis for Procedural Materials using Large Multimodal Models — inverse material modeling; also supports material generation",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "ViSculpt: Visual-Centric Agentic Geometry Editing",
+      "urls": [
+        "https://arxiv.org/abs/2608.24169"
+      ],
+      "arxiv_ids": [
+        "2608.24169"
+      ],
+      "discussion_path": [
+        "Modeling Static Assets",
+        "Object Modeling: Shape and Appearance",
+        "Editing"
+      ],
+      "source_note": "ViSculpt: Visual-Centric Agentic Geometry Editing",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "From Idea to Co-Creation: A Planner-Actor-Critic Framework for Agent Augmented 3D Modeling",
+      "urls": [
+        "https://arxiv.org/abs/2601.05016"
+      ],
+      "arxiv_ids": [
+        "2601.05016"
+      ],
+      "discussion_path": [
+        "Modeling Static Assets",
+        "Object Modeling: Shape and Appearance",
+        "Editing"
+      ],
+      "source_note": "From Idea to Co-Creation: A Planner-Actor-Critic Framework for Agent Augmented 3D Modeling — interactive object/scene co-modeling",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "BlenderAlchemy: Editing 3D Graphics with Vision-Language Models",
+      "urls": [
+        "https://arxiv.org/abs/2404.17672"
+      ],
+      "arxiv_ids": [
+        "2404.17672"
+      ],
+      "discussion_path": [
+        "Modeling Static Assets",
+        "Object Modeling: Shape and Appearance",
+        "Editing"
+      ],
+      "source_note": "BlenderAlchemy: Editing 3D Graphics with Vision-Language Models — geometry and material editing; lighting is a scene-level extension",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "CADIR: A Cross-Backend Editable Intermediate Representation for Agentic CAD Generation",
+      "urls": [
+        "https://arxiv.org/abs/2608.00891"
+      ],
+      "arxiv_ids": [
+        "2608.00891"
+      ],
+      "discussion_path": [
+        "Modeling Static Assets",
+        "Parametric CAD and Engineering Design"
+      ],
+      "source_note": "CADIR: A Cross-Backend Editable Intermediate Representation for Agentic CAD Generation",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "IterCAD: An Iterative Multimodal Agent for Visually-Grounded CAD Generation and Editing",
+      "urls": [
+        "https://arxiv.org/abs/2606.13368"
+      ],
+      "arxiv_ids": [
+        "2606.13368"
+      ],
+      "discussion_path": [
+        "Modeling Static Assets",
+        "Parametric CAD and Engineering Design"
+      ],
+      "source_note": "IterCAD: An Iterative Multimodal Agent for Visually-Grounded CAD Generation and Editing",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "CAD-Assistant: Tool-Augmented VLLMs as Generic CAD Task Solvers",
+      "urls": [
+        "https://arxiv.org/abs/2412.13810"
+      ],
+      "arxiv_ids": [
+        "2412.13810"
+      ],
+      "discussion_path": [
+        "Modeling Static Assets",
+        "Parametric CAD and Engineering Design"
+      ],
+      "source_note": "CAD-Assistant: Tool-Augmented VLLMs as Generic CAD Task Solvers",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "Physics-in-the-Loop: A Hybrid Agentic Architecture for Validated CAD Engineering Design",
+      "urls": [
+        "https://arxiv.org/abs/2605.19717"
+      ],
+      "arxiv_ids": [
+        "2605.19717"
+      ],
+      "discussion_path": [
+        "Modeling Static Assets",
+        "Parametric CAD and Engineering Design"
+      ],
+      "source_note": "Physics-in-the-Loop: A Hybrid Agentic Architecture for Validated CAD Engineering Design",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "AgentsCAD: Automated Design for Manufacturing of FDM Parts via Multi-Agent LLM Reasoning and Geometric Feature Recognition",
+      "urls": [
+        "https://arxiv.org/abs/2607.02448"
+      ],
+      "arxiv_ids": [
+        "2607.02448"
+      ],
+      "discussion_path": [
+        "Modeling Static Assets",
+        "Parametric CAD and Engineering Design"
+      ],
+      "source_note": "AgentsCAD: Automated Design for Manufacturing of FDM Parts via Multi-Agent LLM Reasoning and Geometric Feature Recognition",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "CADReasoner: Iterative Program Editing for CAD Reverse Engineering",
+      "urls": [
+        "https://arxiv.org/abs/2603.29847"
+      ],
+      "arxiv_ids": [
+        "2603.29847"
+      ],
+      "discussion_path": [
+        "Modeling Static Assets",
+        "Parametric CAD and Engineering Design"
+      ],
+      "source_note": "CADReasoner: Iterative Program Editing for CAD Reverse Engineering",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "Self-Improving CAD Generation Agents with Finite Element Analysis as Feedback",
+      "urls": [
+        "https://arxiv.org/abs/2605.17448"
+      ],
+      "arxiv_ids": [
+        "2605.17448"
+      ],
+      "discussion_path": [
+        "Modeling Static Assets",
+        "Parametric CAD and Engineering Design"
+      ],
+      "source_note": "Self-Improving CAD Generation Agents with Finite Element Analysis as Feedback",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "CADReview: Automatically Reviewing CAD Programs with Error Detection and Correction",
+      "urls": [
+        "https://arxiv.org/abs/2505.22304"
+      ],
+      "arxiv_ids": [
+        "2505.22304"
+      ],
+      "discussion_path": [
+        "Modeling Static Assets",
+        "Parametric CAD and Engineering Design"
+      ],
+      "source_note": "CADReview: Automatically Reviewing CAD Programs with Error Detection and Correction",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "CAD-Judge: Toward Efficient Morphological Grading and Verification for Text-to-CAD Generation",
+      "urls": [
+        "https://arxiv.org/abs/2508.04002"
+      ],
+      "arxiv_ids": [
+        "2508.04002"
+      ],
+      "discussion_path": [
+        "Modeling Static Assets",
+        "Parametric CAD and Engineering Design"
+      ],
+      "source_note": "CAD-Judge: Toward Efficient Morphological Grading and Verification for Text-to-CAD Generation",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "AgenticCADedit: A Stateful, Tool-Mediated Agentic Approach to Multimodal 3D CAD Editing",
+      "urls": [
+        "https://arxiv.org/abs/2609.29621"
+      ],
+      "arxiv_ids": [
+        "2609.29621"
+      ],
+      "discussion_path": [
+        "Modeling Static Assets",
+        "Parametric CAD and Engineering Design"
+      ],
+      "source_note": "AgenticCADedit: A Stateful, Tool-Mediated Agentic Approach to Multimodal 3D CAD Editing",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "RA-CAD: Learning Post-Execution Critique for State-Aware Text-to-CAD Generation",
+      "urls": [
+        "https://arxiv.org/abs/2608.05714"
+      ],
+      "arxiv_ids": [
+        "2608.05714"
+      ],
+      "discussion_path": [
+        "Modeling Static Assets",
+        "Parametric CAD and Engineering Design"
+      ],
+      "source_note": "RA-CAD: Learning Post-Execution Critique for State-Aware Text-to-CAD Generation",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "ArtisanCAD: An Industrial-Level CAD Agent with Expert-Grounded Knowledge Distillation",
+      "urls": [
+        "https://arxiv.org/abs/2607.05750"
+      ],
+      "arxiv_ids": [
+        "2607.05750"
+      ],
+      "discussion_path": [
+        "Modeling Static Assets",
+        "Parametric CAD and Engineering Design"
+      ],
+      "source_note": "ArtisanCAD: An Industrial-Level CAD Agent with Expert-Grounded Knowledge Distillation",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "Query2CAD: Generating CAD models using natural language queries",
+      "urls": [
+        "https://arxiv.org/abs/2406.00144"
+      ],
+      "arxiv_ids": [
+        "2406.00144"
+      ],
+      "discussion_path": [
+        "Modeling Static Assets",
+        "Parametric CAD and Engineering Design"
+      ],
+      "source_note": "Query2CAD: Generating CAD models using natural language queries",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "Generating CAD Code with Vision-Language Models for 3D Designs",
+      "urls": [
+        "https://arxiv.org/abs/2410.05340"
+      ],
+      "arxiv_ids": [
+        "2410.05340"
+      ],
+      "discussion_path": [
+        "Modeling Static Assets",
+        "Parametric CAD and Engineering Design"
+      ],
+      "source_note": "Generating CAD Code with Vision-Language Models for 3D Designs — CADCodeVerify, Alrashedy et al., ICLR 2025. Requirement-specific visual questions guide CAD code refinement.",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "From Idea to CAD: A Language Model-Driven Multi-Agent System for Collaborative Design",
+      "urls": [
+        "https://arxiv.org/abs/2503.04417"
+      ],
+      "arxiv_ids": [
+        "2503.04417"
+      ],
+      "discussion_path": [
+        "Modeling Static Assets",
+        "Parametric CAD and Engineering Design"
+      ],
+      "source_note": "From Idea to CAD: A Language Model-Driven Multi-Agent System for Collaborative Design",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "Seek-CAD: A Self-refined Generative Modeling for 3D Parametric CAD Using Local Inference via DeepSeek",
+      "urls": [
+        "https://arxiv.org/abs/2505.17702"
+      ],
+      "arxiv_ids": [
+        "2505.17702"
+      ],
+      "discussion_path": [
+        "Modeling Static Assets",
+        "Parametric CAD and Engineering Design"
+      ],
+      "source_note": "Seek-CAD: A Self-refined Generative Modeling for 3D Parametric CAD Using Local Inference via DeepSeek — Li et al., ICLR 2026. Intermediate shapes and design reasoning guide visual feedback for CAD code refinement.",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "Generative AI for CAD Automation: Leveraging Large Language Models for 3D Modelling",
+      "urls": [
+        "https://arxiv.org/abs/2508.00843"
+      ],
+      "arxiv_ids": [
+        "2508.00843"
+      ],
+      "discussion_path": [
+        "Modeling Static Assets",
+        "Parametric CAD and Engineering Design"
+      ],
+      "source_note": "Generative AI for CAD Automation: Leveraging Large Language Models for 3D Modelling",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "CADDesigner: Conceptual CAD Model Generation with a General-Purpose Agent",
+      "urls": [
+        "https://arxiv.org/abs/2508.01031"
+      ],
+      "arxiv_ids": [
+        "2508.01031"
+      ],
+      "discussion_path": [
+        "Modeling Static Assets",
+        "Parametric CAD and Engineering Design"
+      ],
+      "source_note": "CADDesigner: Conceptual CAD Model Generation with a General-Purpose Agent",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "EvoCAD: Evolutionary CAD Code Generation with Vision Language Models",
+      "urls": [
+        "https://arxiv.org/abs/2510.11631"
+      ],
+      "arxiv_ids": [
+        "2510.11631"
+      ],
+      "discussion_path": [
+        "Modeling Static Assets",
+        "Parametric CAD and Engineering Design"
+      ],
+      "source_note": "EvoCAD: Evolutionary CAD Code Generation with Vision Language Models",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "CADSmith: Multi-Agent CAD Generation with Programmatic Geometric Validation",
+      "urls": [
+        "https://arxiv.org/abs/2603.26512"
+      ],
+      "arxiv_ids": [
+        "2603.26512"
+      ],
+      "discussion_path": [
+        "Modeling Static Assets",
+        "Parametric CAD and Engineering Design"
+      ],
+      "source_note": "CADSmith: Multi-Agent CAD Generation with Programmatic Geometric Validation",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "TOOLCAD: Exploring Tool-Using Large Language Models in Text-to-CAD Generation with Reinforcement Learning",
+      "urls": [
+        "https://arxiv.org/abs/2604.07960"
+      ],
+      "arxiv_ids": [
+        "2604.07960"
+      ],
+      "discussion_path": [
+        "Modeling Static Assets",
+        "Parametric CAD and Engineering Design"
+      ],
+      "source_note": "TOOLCAD: Exploring Tool-Using Large Language Models in Text-to-CAD Generation with Reinforcement Learning",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "Embodied CAD: Solver-Grounded LLM Agents for Parametric B-Rep Assembly Modeling",
+      "urls": [
+        "https://arxiv.org/abs/2606.31252"
+      ],
+      "arxiv_ids": [
+        "2606.31252"
+      ],
+      "discussion_path": [
+        "Modeling Static Assets",
+        "Parametric CAD and Engineering Design"
+      ],
+      "source_note": "Embodied CAD: Solver-Grounded LLM Agents for Parametric B-Rep Assembly Modeling",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "SOV-CAD: Stepwise Orthographic Views Guided CAD Modeling Sequence Reconstruction",
+      "urls": [
+        "https://arxiv.org/abs/2607.04119"
+      ],
+      "arxiv_ids": [
+        "2607.04119"
+      ],
+      "discussion_path": [
+        "Modeling Static Assets",
+        "Parametric CAD and Engineering Design"
+      ],
+      "source_note": "SOV-CAD: Stepwise Orthographic Views Guided CAD Modeling Sequence Reconstruction",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "CADENA: Stepwise CAD Reverse Engineering",
+      "urls": [
+        "https://arxiv.org/abs/2608.00799"
+      ],
+      "arxiv_ids": [
+        "2608.00799"
+      ],
+      "discussion_path": [
+        "Modeling Static Assets",
+        "Parametric CAD and Engineering Design"
+      ],
+      "source_note": "CADENA: Stepwise CAD Reverse Engineering",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "IterCAD: Iterative Program Repair for CAD Code Generation from Orthographic Views",
+      "urls": [
+        "https://arxiv.org/abs/2608.24020"
+      ],
+      "arxiv_ids": [
+        "2608.24020"
+      ],
+      "discussion_path": [
+        "Modeling Static Assets",
+        "Parametric CAD and Engineering Design"
+      ],
+      "source_note": "IterCAD: Iterative Program Repair for CAD Code Generation from Orthographic Views",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "ExpConCAD: Experience-Guided Text-to-CAD Generation from Shape Descriptions with Implicit Spatial Constraints",
+      "urls": [
+        "https://arxiv.org/abs/2608.24760"
+      ],
+      "arxiv_ids": [
+        "2608.24760"
+      ],
+      "discussion_path": [
+        "Modeling Static Assets",
+        "Parametric CAD and Engineering Design"
+      ],
+      "source_note": "ExpConCAD: Experience-Guided Text-to-CAD Generation from Shape Descriptions with Implicit Spatial Constraints",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "LLM-Aided Design for Manufacturing: A Multi-Agent System for Intent-Preserving Redesign of CAD for Improved Manufacturability",
+      "urls": [
+        "https://arxiv.org/abs/2609.05559"
+      ],
+      "arxiv_ids": [
+        "2609.05559"
+      ],
+      "discussion_path": [
+        "Modeling Static Assets",
+        "Parametric CAD and Engineering Design"
+      ],
+      "source_note": "LLM-Aided Design for Manufacturing: A Multi-Agent System for Intent-Preserving Redesign of CAD for Improved Manufacturability",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "CIT-CAD: Constraint Intent Tree-based CAD Code Generation and Verification",
+      "urls": [
+        "https://arxiv.org/abs/2609.07434"
+      ],
+      "arxiv_ids": [
+        "2609.07434"
+      ],
+      "discussion_path": [
+        "Modeling Static Assets",
+        "Parametric CAD and Engineering Design"
+      ],
+      "source_note": "CIT-CAD: Constraint Intent Tree-based CAD Code Generation and Verification",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "ReliCAD: From Uncertain LLM Generation to Reliable Parametric CAD Modeling",
+      "urls": [
+        "https://arxiv.org/abs/2609.22325"
+      ],
+      "arxiv_ids": [
+        "2609.22325"
+      ],
+      "discussion_path": [
+        "Modeling Static Assets",
+        "Parametric CAD and Engineering Design"
+      ],
+      "source_note": "ReliCAD: From Uncertain LLM Generation to Reliable Parametric CAD Modeling",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "Vision2CAD: A Visual Agent Harness for Explicit Geometry Referencing and Localization in Parametric CAD Modeling",
+      "urls": [
+        "https://arxiv.org/abs/2609.22688"
+      ],
+      "arxiv_ids": [
+        "2609.22688"
+      ],
+      "discussion_path": [
+        "Modeling Static Assets",
+        "Parametric CAD and Engineering Design"
+      ],
+      "source_note": "Vision2CAD: A Visual Agent Harness for Explicit Geometry Referencing and Localization in Parametric CAD Modeling",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "VLMgineer: Vision Language Models as Robotic Toolsmiths",
+      "urls": [
+        "https://arxiv.org/abs/2507.12644"
+      ],
+      "arxiv_ids": [
+        "2507.12644"
+      ],
+      "discussion_path": [
+        "Modeling Static Assets",
+        "Parametric CAD and Engineering Design"
+      ],
+      "source_note": "VLMgineer: Vision Language Models as Robotic Toolsmiths",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "SceneCraft: An LLM Agent for Synthesizing 3D Scene as Blender Code",
+      "urls": [
+        "https://arxiv.org/abs/2403.01248"
+      ],
+      "arxiv_ids": [
+        "2403.01248"
+      ],
+      "discussion_path": [
+        "Modeling Static Assets",
+        "3D Scene Modeling",
+        "Generation"
+      ],
+      "source_note": "SceneCraft: An LLM Agent for Synthesizing 3D Scene as Blender Code",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "I-Design: Personalized LLM Interior Designer",
+      "urls": [
+        "https://arxiv.org/abs/2404.02838"
+      ],
+      "arxiv_ids": [
+        "2404.02838"
+      ],
+      "discussion_path": [
+        "Modeling Static Assets",
+        "3D Scene Modeling",
+        "Generation"
+      ],
+      "source_note": "I-Design: Personalized LLM Interior Designer",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "Global-Local Tree Search in VLMs for 3D Indoor Scene Generation",
+      "urls": [
+        "https://arxiv.org/abs/2503.18476"
+      ],
+      "arxiv_ids": [
+        "2503.18476"
+      ],
+      "discussion_path": [
+        "Modeling Static Assets",
+        "3D Scene Modeling",
+        "Generation"
+      ],
+      "source_note": "Global-Local Tree Search in VLMs for 3D Indoor Scene Generation",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "Global-Local Monte Carlo Tree Search in Vision-Language Models for Text-to-3D Indoor Scene Generation",
+      "urls": [
+        "https://arxiv.org/abs/2606.06002"
+      ],
+      "arxiv_ids": [
+        "2606.06002"
+      ],
+      "discussion_path": [
+        "Modeling Static Assets",
+        "3D Scene Modeling",
+        "Generation"
+      ],
+      "source_note": "Global-Local Monte Carlo Tree Search in Vision-Language Models for Text-to-3D Indoor Scene Generation — related research line to Global-Local Tree Search (2025)",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "Text-to-Scene with Large Reasoning Models",
+      "urls": [
+        "https://arxiv.org/abs/2509.26091"
+      ],
+      "arxiv_ids": [
+        "2509.26091"
+      ],
+      "discussion_path": [
+        "Modeling Static Assets",
+        "3D Scene Modeling",
+        "Generation"
+      ],
+      "source_note": "Text-to-Scene with Large Reasoning Models",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "INTERIORAGENT: LLM Agent for Interior Design aware 3D Layout Generation",
+      "urls": [
+        "https://openreview.net/forum?id=ypBfokcXvA"
+      ],
+      "arxiv_ids": [],
+      "discussion_path": [
+        "Modeling Static Assets",
+        "3D Scene Modeling",
+        "Generation"
+      ],
+      "source_note": "INTERIORAGENT: LLM Agent for Interior Design aware 3D Layout Generation — also supports layout editing",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "HSM: Hierarchical Scene Motifs for Multi-Scale Indoor Scene Generation",
+      "urls": [
+        "https://arxiv.org/abs/2503.16848"
+      ],
+      "arxiv_ids": [
+        "2503.16848"
+      ],
+      "discussion_path": [
+        "Modeling Static Assets",
+        "3D Scene Modeling",
+        "Generation"
+      ],
+      "source_note": "HSM: Hierarchical Scene Motifs for Multi-Scale Indoor Scene Generation",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "SpatialGrammar: A Domain-Specific Language for LLM-Based 3D Indoor Scene Generation",
+      "urls": [
+        "https://arxiv.org/abs/2604.27555"
+      ],
+      "arxiv_ids": [
+        "2604.27555"
+      ],
+      "discussion_path": [
+        "Modeling Static Assets",
+        "3D Scene Modeling",
+        "Generation"
+      ],
+      "source_note": "SpatialGrammar: A Domain-Specific Language for LLM-Based 3D Indoor Scene Generation — also supports localized editing",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "HDSL: A Hierarchical Domain-Specific Language for Structured 3D Indoor Scene Generation and Localized Editing with LLM Agents",
+      "urls": [
+        "https://arxiv.org/abs/2606.09738"
+      ],
+      "arxiv_ids": [
+        "2606.09738"
+      ],
+      "discussion_path": [
+        "Modeling Static Assets",
+        "3D Scene Modeling",
+        "Generation"
+      ],
+      "source_note": "HDSL: A Hierarchical Domain-Specific Language for Structured 3D Indoor Scene Generation and Localized Editing with LLM Agents — also supports localized scene editing",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "SceneCode: Executable World Programs for Editable Indoor Scenes with Articulated Objects",
+      "urls": [
+        "https://arxiv.org/abs/2605.19587"
+      ],
+      "arxiv_ids": [
+        "2605.19587"
+      ],
+      "discussion_path": [
+        "Modeling Static Assets",
+        "3D Scene Modeling",
+        "Generation"
+      ],
+      "source_note": "SceneCode: Executable World Programs for Editable Indoor Scenes with Articulated Objects — static scene construction; articulated objects are a dynamic extension",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "SceneGenAgent: Precise Industrial Scene Generation with Coding Agent",
+      "urls": [
+        "https://arxiv.org/abs/2410.21909"
+      ],
+      "arxiv_ids": [
+        "2410.21909"
+      ],
+      "discussion_path": [
+        "Modeling Static Assets",
+        "3D Scene Modeling",
+        "Generation"
+      ],
+      "source_note": "SceneGenAgent: Precise Industrial Scene Generation with Coding Agent",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "PhyScensis: Physics-Augmented LLM Agents for Complex Physical Scene Arrangement",
+      "urls": [
+        "https://arxiv.org/abs/2602.14968"
+      ],
+      "arxiv_ids": [
+        "2602.14968"
+      ],
+      "discussion_path": [
+        "Modeling Static Assets",
+        "3D Scene Modeling",
+        "Generation"
+      ],
+      "source_note": "PhyScensis: Physics-Augmented LLM Agents for Complex Physical Scene Arrangement",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "GIF: Agentic Generation of Interactive and Functional Object Compositions for Robot Learning",
+      "urls": [
+        "https://arxiv.org/abs/2609.05927"
+      ],
+      "arxiv_ids": [
+        "2609.05927"
+      ],
+      "discussion_path": [
+        "Modeling Static Assets",
+        "3D Scene Modeling",
+        "Generation"
+      ],
+      "source_note": "GIF: Agentic Generation of Interactive and Functional Object Compositions for Robot Learning",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "SceneMosaic: Efficient and Diverse Simulation-Ready Scene Generation via Hybrid Agentic Layout Evolution",
+      "urls": [
+        "https://arxiv.org/abs/2609.05594"
+      ],
+      "arxiv_ids": [
+        "2609.05594"
+      ],
+      "discussion_path": [
+        "Modeling Static Assets",
+        "3D Scene Modeling",
+        "Generation"
+      ],
+      "source_note": "SceneMosaic: Efficient and Diverse Simulation-Ready Scene Generation via Hybrid Agentic Layout Evolution — layout generation and augmentation from reference initialization",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "3D-Generalist: Self-Improving Vision-Language-Action Models for Crafting 3D Worlds",
+      "urls": [
+        "https://arxiv.org/abs/2507.06484"
+      ],
+      "arxiv_ids": [
+        "2507.06484"
+      ],
+      "discussion_path": [
+        "Modeling Static Assets",
+        "3D Scene Modeling",
+        "Generation"
+      ],
+      "source_note": "3D-Generalist: Self-Improving Vision-Language-Action Models for Crafting 3D Worlds",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "SceneAssistant: A Visual Feedback Agent for Open-Vocabulary 3D Scene Generation",
+      "urls": [
+        "https://arxiv.org/abs/2603.12238"
+      ],
+      "arxiv_ids": [
+        "2603.12238"
+      ],
+      "discussion_path": [
+        "Modeling Static Assets",
+        "3D Scene Modeling",
+        "Generation"
+      ],
+      "source_note": "SceneAssistant: A Visual Feedback Agent for Open-Vocabulary 3D Scene Generation — also supports interactive rearrangement",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "HOLODECK 2.0: Vision-Language-Guided 3D World Generation with Editing",
+      "urls": [
+        "https://arxiv.org/abs/2508.05899"
+      ],
+      "arxiv_ids": [
+        "2508.05899"
+      ],
+      "discussion_path": [
+        "Modeling Static Assets",
+        "3D Scene Modeling",
+        "Generation"
+      ],
+      "source_note": "HOLODECK 2.0: Vision-Language-Guided 3D World Generation with Editing — also supports scene editing",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "SceneWeaver: All-in-One 3D Scene Synthesis with an Extensible and Self-Reflective Agent",
+      "urls": [
+        "https://arxiv.org/abs/2509.20414"
+      ],
+      "arxiv_ids": [
+        "2509.20414"
+      ],
+      "discussion_path": [
+        "Modeling Static Assets",
+        "3D Scene Modeling",
+        "Generation"
+      ],
+      "source_note": "SceneWeaver: All-in-One 3D Scene Synthesis with an Extensible and Self-Reflective Agent",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "SAGE: Scalable Agentic 3D Scene Generation for Embodied AI",
+      "urls": [
+        "https://arxiv.org/abs/2602.10116"
+      ],
+      "arxiv_ids": [
+        "2602.10116"
+      ],
+      "discussion_path": [
+        "Modeling Static Assets",
+        "3D Scene Modeling",
+        "Generation"
+      ],
+      "source_note": "SAGE: Scalable Agentic 3D Scene Generation for Embodied AI",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "SceneSmith: Agentic Generation of Simulation-Ready Indoor Scenes",
+      "urls": [
+        "https://arxiv.org/abs/2602.09153"
+      ],
+      "arxiv_ids": [
+        "2602.09153"
+      ],
+      "discussion_path": [
+        "Modeling Static Assets",
+        "3D Scene Modeling",
+        "Generation"
+      ],
+      "source_note": "SceneSmith: Agentic Generation of Simulation-Ready Indoor Scenes",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "HomeWorld: A Unified Floorplan-to-Furnished Framework for Generating Controllable, Densely Interactive Whole-Home Scenes",
+      "urls": [
+        "https://arxiv.org/abs/2606.06390"
+      ],
+      "arxiv_ids": [
+        "2606.06390"
+      ],
+      "discussion_path": [
+        "Modeling Static Assets",
+        "3D Scene Modeling",
+        "Generation"
+      ],
+      "source_note": "HomeWorld: A Unified Floorplan-to-Furnished Framework for Generating Controllable, Densely Interactive Whole-Home Scenes",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "EmbodiedGen V2: An Agentic, Simulation-Ready 3D World Engine for Embodied AI",
+      "urls": [
+        "https://arxiv.org/abs/2607.07459"
+      ],
+      "arxiv_ids": [
+        "2607.07459"
+      ],
+      "discussion_path": [
+        "Modeling Static Assets",
+        "3D Scene Modeling",
+        "Generation"
+      ],
+      "source_note": "EmbodiedGen V2: An Agentic, Simulation-Ready 3D World Engine for Embodied AI — world generation and editing; asset and dynamic modules are cross-application",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "SimWorld Studio: Automatic Environment Generation with Evolving Coding Agent for Embodied Agent Learning",
+      "urls": [
+        "https://arxiv.org/abs/2605.09423"
+      ],
+      "arxiv_ids": [
+        "2605.09423"
+      ],
+      "discussion_path": [
+        "Modeling Static Assets",
+        "3D Scene Modeling",
+        "Generation"
+      ],
+      "source_note": "SimWorld Studio: Automatic Environment Generation with Evolving Coding Agent for Embodied Agent Learning — also supports environment editing",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "Awomo-SimDataEngine: Agentic Simulation-Ready World Generation",
+      "urls": [
+        "https://arxiv.org/abs/2610.02274"
+      ],
+      "arxiv_ids": [
+        "2610.02274"
+      ],
+      "discussion_path": [
+        "Modeling Static Assets",
+        "3D Scene Modeling",
+        "Generation"
+      ],
+      "source_note": "Awomo-SimDataEngine: Agentic Simulation-Ready World Generation — also supports scene reconstruction; asset/dynamic modules are cross-application",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "GenSim: Generating Robotic Simulation Tasks via Large Language Models",
+      "urls": [
+        "https://arxiv.org/abs/2310.01361"
+      ],
+      "arxiv_ids": [
+        "2310.01361"
+      ],
+      "discussion_path": [
+        "Modeling Static Assets",
+        "3D Scene Modeling",
+        "Generation"
+      ],
+      "source_note": "GenSim: Generating Robotic Simulation Tasks via Large Language Models — environment-construction component of robotic task generation",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "BIMgent: Towards Autonomous Building Modeling via Computer-use Agents",
+      "urls": [
+        "https://arxiv.org/abs/2506.07217"
+      ],
+      "arxiv_ids": [
+        "2506.07217"
+      ],
+      "discussion_path": [
+        "Modeling Static Assets",
+        "3D Scene Modeling",
+        "Generation"
+      ],
+      "source_note": "BIMgent: Towards Autonomous Building Modeling via Computer-use Agents — architectural/BIM modeling; bridge to CAD",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "APT: Architectural Planning and Text-to-Blueprint Construction Using Large Language Models for Open-World Agents",
+      "urls": [
+        "https://arxiv.org/abs/2411.17255"
+      ],
+      "arxiv_ids": [
+        "2411.17255"
+      ],
+      "discussion_path": [
+        "Modeling Static Assets",
+        "3D Scene Modeling",
+        "Generation"
+      ],
+      "source_note": "APT: Architectural Planning and Text-to-Blueprint Construction Using Large Language Models for Open-World Agents",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "CityX: Controllable Procedural Content Generation for Unbounded 3D Cities",
+      "urls": [
+        "https://arxiv.org/abs/2407.17572"
+      ],
+      "arxiv_ids": [
+        "2407.17572"
+      ],
+      "discussion_path": [
+        "Modeling Static Assets",
+        "3D Scene Modeling",
+        "Generation"
+      ],
+      "source_note": "CityX: Controllable Procedural Content Generation for Unbounded 3D Cities",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "MajutsuCity: Language-driven Aesthetic-adaptive City Generation with Controllable 3D Assets and Layouts",
+      "urls": [
+        "https://arxiv.org/abs/2511.20415"
+      ],
+      "arxiv_ids": [
+        "2511.20415"
+      ],
+      "discussion_path": [
+        "Modeling Static Assets",
+        "3D Scene Modeling",
+        "Generation"
+      ],
+      "source_note": "MajutsuCity: Language-driven Aesthetic-adaptive City Generation with Controllable 3D Assets and Layouts — also supports urban scene editing",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "WorldClaw: Agentic 3D Open-World Generation at Scale",
+      "urls": [
+        "https://arxiv.org/abs/2608.05248"
+      ],
+      "arxiv_ids": [
+        "2608.05248"
+      ],
+      "discussion_path": [
+        "Modeling Static Assets",
+        "3D Scene Modeling",
+        "Generation"
+      ],
+      "source_note": "WorldClaw: Agentic 3D Open-World Generation at Scale",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "MAGIC: Transition-Aware Generation of Navigable Multi-Scene Game Worlds with Large Language Models",
+      "urls": [
+        "https://arxiv.org/abs/2607.11594"
+      ],
+      "arxiv_ids": [
+        "2607.11594"
+      ],
+      "discussion_path": [
+        "Modeling Static Assets",
+        "3D Scene Modeling",
+        "Generation"
+      ],
+      "source_note": "MAGIC: Transition-Aware Generation of Navigable Multi-Scene Game Worlds with Large Language Models",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "UnrealLLM: Towards Highly Controllable and Interactable 3D Scene Generation by LLM-powered Procedural Content Generation",
+      "urls": [
+        "https://aclanthology.org/2025.findings-acl.994/"
+      ],
+      "arxiv_ids": [],
+      "discussion_path": [
+        "Modeling Static Assets",
+        "3D Scene Modeling",
+        "Generation"
+      ],
+      "source_note": "UnrealLLM: Towards Highly Controllable and Interactable 3D Scene Generation by LLM-powered Procedural Content Generation",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "WorldAgents: Can Foundation Image Models be Agents for 3D World Models?",
+      "urls": [
+        "https://arxiv.org/abs/2603.19708"
+      ],
+      "arxiv_ids": [
+        "2603.19708"
+      ],
+      "discussion_path": [
+        "Modeling Static Assets",
+        "3D Scene Modeling",
+        "Generation"
+      ],
+      "source_note": "WorldAgents: Can Foundation Image Models be Agents for 3D World Models?",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "WorldWeave: Growing Persistent Geometric Worlds for Video Generation",
+      "urls": [
+        "https://arxiv.org/abs/2609.34221"
+      ],
+      "arxiv_ids": [
+        "2609.34221"
+      ],
+      "discussion_path": [
+        "Modeling Static Assets",
+        "3D Scene Modeling",
+        "Generation"
+      ],
+      "source_note": "WorldWeave: Growing Persistent Geometric Worlds for Video Generation — persistent static geometry; video generation is downstream",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "Agentic 3D Scene Generation with Spatially Contextualized VLMs",
+      "urls": [
+        "https://arxiv.org/abs/2505.20129"
+      ],
+      "arxiv_ids": [
+        "2505.20129"
+      ],
+      "discussion_path": [
+        "Modeling Static Assets",
+        "3D Scene Modeling",
+        "Generation"
+      ],
+      "source_note": "Agentic 3D Scene Generation with Spatially Contextualized VLMs — generation/reconstruction workflow with spatial refinement",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "Chat Modeling: Interaction-Enhanced Agent Framework for Visualizing Literature-Grounded Biological Structures",
+      "urls": [
+        "https://arxiv.org/abs/2404.01063"
+      ],
+      "arxiv_ids": [
+        "2404.01063"
+      ],
+      "discussion_path": [
+        "Modeling Static Assets",
+        "3D Scene Modeling",
+        "Generation"
+      ],
+      "source_note": "Chat Modeling: Interaction-Enhanced Agent Framework for Visualizing Literature-Grounded Biological Structures — scientific composition of biological components, rather than room layout",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "SceneConductor: 3D Scene Generation from a Single Image with Multi-Agent Orchestration",
+      "urls": [
+        "https://arxiv.org/abs/2606.08402"
+      ],
+      "arxiv_ids": [
+        "2606.08402"
+      ],
+      "discussion_path": [
+        "Modeling Static Assets",
+        "3D Scene Modeling",
+        "Reconstruction"
+      ],
+      "source_note": "SceneConductor: 3D Scene Generation from a Single Image with Multi-Agent Orchestration",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "Code-as-Room: Generating 3D Rooms from Top-Down View Images via Agentic Code Synthesis",
+      "urls": [
+        "https://arxiv.org/abs/2605.18451"
+      ],
+      "arxiv_ids": [
+        "2605.18451"
+      ],
+      "discussion_path": [
+        "Modeling Static Assets",
+        "3D Scene Modeling",
+        "Reconstruction"
+      ],
+      "source_note": "Code-as-Room: Generating 3D Rooms from Top-Down View Images via Agentic Code Synthesis",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "HARMONY: Hierarchical Agentic Reasoning for MONocular Image-to-Scene Synthesis",
+      "urls": [
+        "https://arxiv.org/abs/2609.26793"
+      ],
+      "arxiv_ids": [
+        "2609.26793"
+      ],
+      "discussion_path": [
+        "Modeling Static Assets",
+        "3D Scene Modeling",
+        "Reconstruction"
+      ],
+      "source_note": "HARMONY: Hierarchical Agentic Reasoning for MONocular Image-to-Scene Synthesis",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "LiteReality-Agent: An Agentic System for Interactable 3D Indoor Scene Reconstruction",
+      "urls": [
+        "https://arxiv.org/abs/2610.01863"
+      ],
+      "arxiv_ids": [
+        "2610.01863"
+      ],
+      "discussion_path": [
+        "Modeling Static Assets",
+        "3D Scene Modeling",
+        "Reconstruction"
+      ],
+      "source_note": "LiteReality-Agent: An Agentic System for Interactable 3D Indoor Scene Reconstruction",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "LEGO-Anything: Coding Agents for 3D Scene Reconstruction",
+      "urls": [
+        "https://arxiv.org/abs/2609.36380"
+      ],
+      "arxiv_ids": [
+        "2609.36380"
+      ],
+      "discussion_path": [
+        "Modeling Static Assets",
+        "3D Scene Modeling",
+        "Reconstruction"
+      ],
+      "source_note": "LEGO-Anything: Coding Agents for 3D Scene Reconstruction",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "Recursive Code World Models: Building Complex Worlds through Recursive Scene Programs",
+      "urls": [
+        "https://arxiv.org/abs/2609.11499"
+      ],
+      "arxiv_ids": [
+        "2609.11499"
+      ],
+      "discussion_path": [
+        "Modeling Static Assets",
+        "3D Scene Modeling",
+        "Reconstruction"
+      ],
+      "source_note": "Recursive Code World Models: Building Complex Worlds through Recursive Scene Programs",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "Vision-as-Inverse-Graphics Agent via Interleaved Multimodal Reasoning",
+      "urls": [
+        "https://arxiv.org/abs/2601.11109"
+      ],
+      "arxiv_ids": [
+        "2601.11109"
+      ],
+      "discussion_path": [
+        "Modeling Static Assets",
+        "3D Scene Modeling",
+        "Reconstruction"
+      ],
+      "source_note": "Vision-as-Inverse-Graphics Agent via Interleaved Multimodal Reasoning",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "Thinking in Blender: Staged Executable Inverse Graphics with Vision-Language Models",
+      "urls": [
+        "https://arxiv.org/abs/2606.02580"
+      ],
+      "arxiv_ids": [
+        "2606.02580"
+      ],
+      "discussion_path": [
+        "Modeling Static Assets",
+        "3D Scene Modeling",
+        "Reconstruction"
+      ],
+      "source_note": "Thinking in Blender: Staged Executable Inverse Graphics with Vision-Language Models — executable inverse graphics; evaluation is mainly object-centric",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "Engine-Native Editable 3D World Reconstruction with Objects and Lighting",
+      "urls": [
+        "https://arxiv.org/abs/2607.20889"
+      ],
+      "arxiv_ids": [
+        "2607.20889"
+      ],
+      "discussion_path": [
+        "Modeling Static Assets",
+        "3D Scene Modeling",
+        "Reconstruction"
+      ],
+      "source_note": "Engine-Native Editable 3D World Reconstruction with Objects and Lighting",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "AstraLOD3: Zero-shot multimodal agentic reconstruction of LOD3 building models",
+      "urls": [
+        "https://arxiv.org/abs/2609.28061"
+      ],
+      "arxiv_ids": [
+        "2609.28061"
+      ],
+      "discussion_path": [
+        "Modeling Static Assets",
+        "3D Scene Modeling",
+        "Reconstruction"
+      ],
+      "source_note": "AstraLOD3: Zero-shot multimodal agentic reconstruction of LOD3 building models",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "Sketch2BIM: A Multi-Agent Human-AI Collaborative Pipeline to Convert Hand-Drawn Floor Plans to 3D BIM",
+      "urls": [
+        "https://arxiv.org/abs/2510.20838"
+      ],
+      "arxiv_ids": [
+        "2510.20838"
+      ],
+      "discussion_path": [
+        "Modeling Static Assets",
+        "3D Scene Modeling",
+        "Reconstruction"
+      ],
+      "source_note": "Sketch2BIM: A Multi-Agent Human-AI Collaborative Pipeline to Convert Hand-Drawn Floor Plans to 3D BIM — architectural reconstruction; bridge to CAD/BIM",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "CoDimRecon: Agentic Reconstruction of Sim-Ready 3D Scenes with Deformable Curves, Surfaces, and Volumes",
+      "urls": [
+        "https://arxiv.org/abs/2609.36024"
+      ],
+      "arxiv_ids": [
+        "2609.36024"
+      ],
+      "discussion_path": [
+        "Modeling Static Assets",
+        "3D Scene Modeling",
+        "Reconstruction"
+      ],
+      "source_note": "CoDimRecon: Agentic Reconstruction of Sim-Ready 3D Scenes with Deformable Curves, Surfaces, and Volumes — static reconstruction component; deformable modeling remains in Dynamic Assets",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "REST3D: Reconstructing Physically Stable 3D Scenes from a Single Image",
+      "urls": [
+        "https://arxiv.org/abs/2605.30338"
+      ],
+      "arxiv_ids": [
+        "2605.30338"
+      ],
+      "discussion_path": [
+        "Modeling Static Assets",
+        "3D Scene Modeling",
+        "Reconstruction"
+      ],
+      "source_note": "REST3D: Reconstructing Physically Stable 3D Scenes from a Single Image — SIGGRAPH Asia 2026; agentic segmentation verification and support-relation reasoning guide scene reconstruction, followed by numerical physics-constrained optimization for stability.",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "MUSE: Agentic 3D Scene Authoring via Memory-Grounded Incremental Requirement Satisfaction",
+      "urls": [
+        "https://arxiv.org/abs/2606.14168"
+      ],
+      "arxiv_ids": [
+        "2606.14168"
+      ],
+      "discussion_path": [
+        "Modeling Static Assets",
+        "3D Scene Modeling",
+        "Editing"
+      ],
+      "source_note": "MUSE: Agentic 3D Scene Authoring via Memory-Grounded Incremental Requirement Satisfaction — preservation-aware editing; also supports scene generation",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "VULCAN: Tool-Augmented Multi Agents for Iterative 3D Object Arrangement",
+      "urls": [
+        "https://arxiv.org/abs/2512.22351"
+      ],
+      "arxiv_ids": [
+        "2512.22351"
+      ],
+      "discussion_path": [
+        "Modeling Static Assets",
+        "3D Scene Modeling",
+        "Editing"
+      ],
+      "source_note": "VULCAN: Tool-Augmented Multi Agents for Iterative 3D Object Arrangement",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "FirePlace: Geometric Refinements of LLM Common Sense Reasoning for 3D Object Placement",
+      "urls": [
+        "https://arxiv.org/abs/2503.04919"
+      ],
+      "arxiv_ids": [
+        "2503.04919"
+      ],
+      "discussion_path": [
+        "Modeling Static Assets",
+        "3D Scene Modeling",
+        "Editing"
+      ],
+      "source_note": "FirePlace: Geometric Refinements of LLM Common Sense Reasoning for 3D Object Placement — insertion/placement in an existing scene",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "Chat2Layout: Interactive 3D Furniture Layout with a Multimodal LLM",
+      "urls": [
+        "https://arxiv.org/abs/2407.21333"
+      ],
+      "arxiv_ids": [
+        "2407.21333"
+      ],
+      "discussion_path": [
+        "Modeling Static Assets",
+        "3D Scene Modeling",
+        "Editing"
+      ],
+      "source_note": "Chat2Layout: Interactive 3D Furniture Layout with a Multimodal LLM — interactive layout editing; also supports generation",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "AgentSGEN: Multi-Agent LLM in the Loop for Semantic Collaboration and GENeration of Synthetic Data",
+      "urls": [
+        "https://arxiv.org/abs/2505.13466"
+      ],
+      "arxiv_ids": [
+        "2505.13466"
+      ],
+      "discussion_path": [
+        "Modeling Static Assets",
+        "3D Scene Modeling",
+        "Editing"
+      ],
+      "source_note": "AgentSGEN: Multi-Agent LLM in the Loop for Semantic Collaboration and GENeration of Synthetic Data",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "Text-Guided 6D Object Pose Rearrangement via Closed-Loop VLM Agents",
+      "urls": [
+        "https://arxiv.org/abs/2604.09781"
+      ],
+      "arxiv_ids": [
+        "2604.09781"
+      ],
+      "discussion_path": [
+        "Modeling Static Assets",
+        "3D Scene Modeling",
+        "Editing"
+      ],
+      "source_note": "Text-Guided 6D Object Pose Rearrangement via Closed-Loop VLM Agents",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "EZBlender: Efficient 3D Editing with Plan-and-ReAct Agent",
+      "urls": [
+        "https://arxiv.org/abs/2601.07143"
+      ],
+      "arxiv_ids": [
+        "2601.07143"
+      ],
+      "discussion_path": [
+        "Modeling Static Assets",
+        "3D Scene Modeling",
+        "Editing"
+      ],
+      "source_note": "EZBlender: Efficient 3D Editing with Plan-and-ReAct Agent",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "AGE: Agentic Gaussian Editing in 3D Scenarios",
+      "urls": [
+        "https://doi.org/10.1007/978-3-032-37553-7_13"
+      ],
+      "arxiv_ids": [],
+      "discussion_path": [
+        "Modeling Static Assets",
+        "3D Scene Modeling",
+        "Editing"
+      ],
+      "source_note": "AGE: Agentic Gaussian Editing in 3D Scenarios",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "SPHERE: Adaptive VR Indoor Scene Generation via LLM-Enhanced Spatial Preference Learning and Human-in-the-Loop RL",
+      "urls": [
+        "https://arxiv.org/abs/2610.02023"
+      ],
+      "arxiv_ids": [
+        "2610.02023"
+      ],
+      "discussion_path": [
+        "Modeling Static Assets",
+        "3D Scene Modeling",
+        "Editing"
+      ],
+      "source_note": "SPHERE: Adaptive VR Indoor Scene Generation via LLM-Enhanced Spatial Preference Learning and Human-in-the-Loop RL — personalized layout editing and generation",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "Articraft: An Agentic System for Scalable Articulated 3D Asset Generation",
+      "urls": [
+        "https://arxiv.org/abs/2605.15187"
+      ],
+      "arxiv_ids": [
+        "2605.15187"
+      ],
+      "discussion_path": [
+        "Modeling Dynamic Assets",
+        "Articulated asset modeling"
+      ],
+      "source_note": "Articraft: An Agentic System for Scalable Articulated 3D Asset Generation — representative; text-driven geometry and joint construction",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "Articulate-Anything: Automatic Modeling of Articulated Objects via a Vision-Language Foundation Model",
+      "urls": [
+        "https://arxiv.org/abs/2410.13882"
+      ],
+      "arxiv_ids": [
+        "2410.13882"
+      ],
+      "discussion_path": [
+        "Modeling Dynamic Assets",
+        "Articulated asset modeling"
+      ],
+      "source_note": "Articulate-Anything: Automatic Modeling of Articulated Objects via a Vision-Language Foundation Model — representative; reference-conditioned articulation, with motion critique in the video configuration",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "ArtiCAD: Articulated CAD Assembly Design via Multi-Agent Code Generation",
+      "urls": [
+        "https://arxiv.org/abs/2604.10992"
+      ],
+      "arxiv_ids": [
+        "2604.10992"
+      ],
+      "discussion_path": [
+        "Modeling Dynamic Assets",
+        "Articulated asset modeling"
+      ],
+      "source_note": "ArtiCAD: Articulated CAD Assembly Design via Multi-Agent Code Generation — retained alternative; articulated CAD assembly; bridge to CAD",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "FACT: Fidelity-Aware Construction of Articulated Twins",
+      "urls": [
+        "https://arxiv.org/abs/2609.37067"
+      ],
+      "arxiv_ids": [
+        "2609.37067"
+      ],
+      "discussion_path": [
+        "Modeling Dynamic Assets",
+        "Articulated asset modeling"
+      ],
+      "source_note": "FACT: Fidelity-Aware Construction of Articulated Twins — retained alternative; geometric, contact, and dynamic fidelity of articulated twins",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "Compositional Machine Design as Program Synthesis with LLMs",
+      "urls": [
+        "https://arxiv.org/abs/2510.14980"
+      ],
+      "arxiv_ids": [
+        "2510.14980"
+      ],
+      "discussion_path": [
+        "Modeling Dynamic Assets",
+        "Articulated asset modeling"
+      ],
+      "source_note": "Compositional Machine Design as Program Synthesis with LLMs — retained alternative; provisional primary placement under mechanism design",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "Agent-Aided Design for Dynamic CAD Models",
+      "urls": [
+        "https://arxiv.org/abs/2604.15184"
+      ],
+      "arxiv_ids": [
+        "2604.15184"
+      ],
+      "discussion_path": [
+        "Modeling Dynamic Assets",
+        "Articulated asset modeling"
+      ],
+      "source_note": "Agent-Aided Design for Dynamic CAD Models — retained alternative; dynamic CAD; bridge to CAD",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "Cutscene Agent: An LLM Agent Framework for Automated 3D Cutscene Generation",
+      "urls": [
+        "https://arxiv.org/abs/2604.25318"
+      ],
+      "arxiv_ids": [
+        "2604.25318"
+      ],
+      "discussion_path": [
+        "Modeling Dynamic Assets",
+        "Animation and temporal scene authoring"
+      ],
+      "source_note": "Cutscene Agent: An LLM Agent Framework for Automated 3D Cutscene Generation — representative; editable cinematic tracks and visual camera refinement",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "StateFlow: Building, Evolving, and Accessing 3D World States for Previsualization",
+      "urls": [
+        "https://arxiv.org/abs/2608.12314"
+      ],
+      "arxiv_ids": [
+        "2608.12314"
+      ],
+      "discussion_path": [
+        "Modeling Dynamic Assets",
+        "Animation and temporal scene authoring"
+      ],
+      "source_note": "StateFlow: Building, Evolving, and Accessing 3D World States for Previsualization — representative; persistent world state; some events use target-state asset substitution",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "SimWorlds: A Multi-Agent System for Dynamic 3D Scene Creation",
+      "urls": [
+        "https://arxiv.org/abs/2607.01766"
+      ],
+      "arxiv_ids": [
+        "2607.01766"
+      ],
+      "discussion_path": [
+        "Modeling Dynamic Assets",
+        "Animation and temporal scene authoring"
+      ],
+      "source_note": "SimWorlds: A Multi-Agent System for Dynamic 3D Scene Creation — representative; staged dynamic-scene authoring with engine-state checks; overlaps simulation",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "Code2Worlds: Empowering Coding LLMs for 4D World Generation",
+      "urls": [
+        "https://arxiv.org/abs/2602.11757"
+      ],
+      "arxiv_ids": [
+        "2602.11757"
+      ],
+      "discussion_path": [
+        "Modeling Dynamic Assets",
+        "Animation and temporal scene authoring"
+      ],
+      "source_note": "Code2Worlds: Empowering Coding LLMs for 4D World Generation — retained alternative; executable 4D-world programs",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "Kubrick: Multimodal Agent Collaborations for Synthetic Video Generation",
+      "urls": [
+        "https://arxiv.org/abs/2408.10453"
+      ],
+      "arxiv_ids": [
+        "2408.10453"
+      ],
+      "discussion_path": [
+        "Modeling Dynamic Assets",
+        "Animation and temporal scene authoring"
+      ],
+      "source_note": "Kubrick: Multimodal Agent Collaborations for Synthetic Video Generation — retained alternative; 3D-grounded synthetic-video production",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "FilmAgent: A Multi-Agent Framework for End-to-End Film Automation in Virtual 3D Spaces",
+      "urls": [
+        "https://arxiv.org/abs/2501.12909"
+      ],
+      "arxiv_ids": [
+        "2501.12909"
+      ],
+      "discussion_path": [
+        "Modeling Dynamic Assets",
+        "Animation and temporal scene authoring"
+      ],
+      "source_note": "FilmAgent: A Multi-Agent Framework for End-to-End Film Automation in Virtual 3D Spaces — added to this section; role-based planning of character actions and cinematography; already present in the local bibliography",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "InterPose: Learning to Generate Human-Object Interactions from Large-Scale Web Videos",
+      "urls": [
+        "https://arxiv.org/abs/2509.00767"
+      ],
+      "arxiv_ids": [
+        "2509.00767"
+      ],
+      "discussion_path": [
+        "Modeling Dynamic Assets",
+        "Animation and temporal scene authoring"
+      ],
+      "source_note": "InterPose: Learning to Generate Human-Object Interactions from Large-Scale Web Videos — new candidate; discuss the HOI-Agent component (Sec. 4.4 / App. D), not the dataset alone; checks execution outcomes and replans",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "ParticleGen: A Multi-Agent System for Particle Effects Generation",
+      "urls": [
+        "https://arxiv.org/abs/2608.00629"
+      ],
+      "arxiv_ids": [
+        "2608.00629"
+      ],
+      "discussion_path": [
+        "Modeling Dynamic Assets",
+        "Physical simulation and effects authoring"
+      ],
+      "source_note": "ParticleGen: A Multi-Agent System for Particle Effects Generation — representative; procedural particle effects; visual alignment does not establish physical accuracy",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "Text2Sim: Agentic Physics-Based Simulation Generation with Distilled Expertise",
+      "urls": [
+        "https://arxiv.org/abs/2609.36593"
+      ],
+      "arxiv_ids": [
+        "2609.36593"
+      ],
+      "discussion_path": [
+        "Modeling Dynamic Assets",
+        "Physical simulation and effects authoring"
+      ],
+      "source_note": "Text2Sim: Agentic Physics-Based Simulation Generation with Distilled Expertise — representative; simulation programs and diagnosis-driven module repair",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "CoDimRecon: Agentic Reconstruction of Sim-Ready 3D Scenes with Deformable Curves, Surfaces, and Volumes",
+      "urls": [
+        "https://arxiv.org/abs/2609.36024"
+      ],
+      "arxiv_ids": [
+        "2609.36024"
+      ],
+      "discussion_path": [
+        "Modeling Dynamic Assets",
+        "Physical simulation and effects authoring"
+      ],
+      "source_note": "CoDimRecon: Agentic Reconstruction of Sim-Ready 3D Scenes with Deformable Curves, Surfaces, and Volumes — representative; deformable geometry/material models and behavioral tests; static reconstruction remains in Scene",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "GS-Agent: Creating 4D Physical Worlds With Generative Simulation",
+      "urls": [
+        "https://arxiv.org/abs/2607.21522"
+      ],
+      "arxiv_ids": [
+        "2607.21522"
+      ],
+      "discussion_path": [
+        "Modeling Dynamic Assets",
+        "Physical simulation and effects authoring"
+      ],
+      "source_note": "GS-Agent: Creating 4D Physical Worlds With Generative Simulation — retained alternative; physics-driven 4D generation",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "WorldAgent: Verification-Guided Agentic Physical World Construction",
+      "urls": [
+        "https://arxiv.org/abs/2609.33208"
+      ],
+      "arxiv_ids": [
+        "2609.33208"
+      ],
+      "discussion_path": [
+        "Modeling Dynamic Assets",
+        "Physical simulation and effects authoring"
+      ],
+      "source_note": "WorldAgent: Verification-Guided Agentic Physical World Construction — retained alternative; verification-guided physical-world construction",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "ESG: Generating Physically Consistent Dynamic 3D Scenes from Text Descriptions",
+      "urls": [
+        "https://arxiv.org/abs/2609.15392"
+      ],
+      "arxiv_ids": [
+        "2609.15392"
+      ],
+      "discussion_path": [
+        "Modeling Dynamic Assets",
+        "Physical simulation and effects authoring"
+      ],
+      "source_note": "ESG: Generating Physically Consistent Dynamic 3D Scenes from Text Descriptions — retained alternative; event-driven scene representation and physical optimization",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "Beyond Placement and Articulation: Usage-Driven Code Scenes for Embodied Interaction",
+      "urls": [
+        "https://arxiv.org/abs/2608.18840"
+      ],
+      "arxiv_ids": [
+        "2608.18840"
+      ],
+      "discussion_path": [
+        "Modeling Dynamic Assets",
+        "Physical simulation and effects authoring"
+      ],
+      "source_note": "Beyond Placement and Articulation: Usage-Driven Code Scenes for Embodied Interaction — retained alternative; usage-driven interaction; provisional primary placement",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "Code as Worlds: Agentic Discovery of Executable World Representations for Physical Reasoning",
+      "urls": [
+        "https://arxiv.org/abs/2608.27549"
+      ],
+      "arxiv_ids": [
+        "2608.27549"
+      ],
+      "discussion_path": [
+        "Modeling Dynamic Assets",
+        "Physical simulation and effects authoring"
+      ],
+      "source_note": "Code as Worlds: Agentic Discovery of Executable World Representations for Physical Reasoning — retained alternative; executable physical representations; distinguish reasoning from content authoring",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "In-Context Model Predictive Generation: Open-Vocabulary Motion Synthesis from Language Models to Physics",
+      "urls": [
+        "https://arxiv.org/abs/2606.26981"
+      ],
+      "arxiv_ids": [
+        "2606.26981"
+      ],
+      "discussion_path": [
+        "Modeling Dynamic Assets",
+        "Physical simulation and effects authoring"
+      ],
+      "source_note": "In-Context Model Predictive Generation: Open-Vocabulary Motion Synthesis from Language Models to Physics — retained alternative; physics-based motion/control; overlaps animation",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "PhysAgent: Reflective Agentic Physics Control for Physically Plausible Video Generation",
+      "urls": [
+        "https://arxiv.org/abs/2607.16355"
+      ],
+      "arxiv_ids": [
+        "2607.16355"
+      ],
+      "discussion_path": [
+        "Modeling Dynamic Assets",
+        "Scope-dependent additions and video bridges"
+      ],
+      "source_note": "PhysAgent: Reflective Agentic Physics Control for Physically Plausible Video Generation — video bridge; include the explicit simulation/control component only",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "VideoCoCo: Code-as-CoT for Physically-Consistent Video Generation via an Agentic Dual-Engine System",
+      "urls": [
+        "https://arxiv.org/abs/2607.27380"
+      ],
+      "arxiv_ids": [
+        "2607.27380"
+      ],
+      "discussion_path": [
+        "Modeling Dynamic Assets",
+        "Scope-dependent additions and video bridges"
+      ],
+      "source_note": "VideoCoCo: Code-as-CoT for Physically-Consistent Video Generation via an Agentic Dual-Engine System — video bridge; include the explicit executable-world component only",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "GenRA: End-to-end Framework for LLM-Driven Animation of Rigged 3D Models",
+      "urls": [
+        "https://research.macpaw.com/publications/genra"
+      ],
+      "arxiv_ids": [],
+      "discussion_path": [
+        "Modeling Dynamic Assets",
+        "Scope-dependent additions and video bridges"
+      ],
+      "source_note": "GenRA: End-to-end Framework for LLM-Driven Animation of Rigged 3D Models — new supporting candidate; editable rig-preserving motion and user-directed refinement; autonomous execution-feedback loop not established by the reviewed method",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "InstantMimic: A High Performance System for Learning Physics-based Skills in Seconds",
+      "urls": [
+        "https://arxiv.org/abs/2609.09821"
+      ],
+      "arxiv_ids": [
+        "2609.09821"
+      ],
+      "discussion_path": [
+        "Modeling Dynamic Assets",
+        "Scope-dependent additions and video bridges"
+      ],
+      "source_note": "InstantMimic: A High Performance System for Learning Physics-based Skills in Seconds — new scope-dependent candidate; Sec. 5 has LLM-driven controller-training hyperparameter search; separate training-time optimization from asset authoring",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "Vision-as-Inverse-Graphics Agent via Interleaved Multimodal Reasoning",
+      "urls": [
+        "https://arxiv.org/abs/2601.11109"
+      ],
+      "arxiv_ids": [
+        "2601.11109"
+      ],
+      "discussion_path": [
+        "Modeling Dynamic Assets",
+        "Cross-category applications and reported extensions"
+      ],
+      "source_note": "Vision-as-Inverse-Graphics Agent via Interleaved Multimodal Reasoning",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "SceneCode: Executable World Programs for Editable Indoor Scenes with Articulated Objects",
+      "urls": [
+        "https://arxiv.org/abs/2605.19587"
+      ],
+      "arxiv_ids": [
+        "2605.19587"
+      ],
+      "discussion_path": [
+        "Modeling Dynamic Assets",
+        "Cross-category applications and reported extensions"
+      ],
+      "source_note": "SceneCode: Executable World Programs for Editable Indoor Scenes with Articulated Objects",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "ShapeCraft: LLM Agents for Structured, Textured and Interactive 3D Modeling",
+      "urls": [
+        "https://arxiv.org/abs/2510.17603"
+      ],
+      "arxiv_ids": [
+        "2510.17603"
+      ],
+      "discussion_path": [
+        "Modeling Dynamic Assets",
+        "Cross-category applications and reported extensions"
+      ],
+      "source_note": "ShapeCraft: LLM Agents for Structured, Textured and Interactive 3D Modeling",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "aDSL: Agentic 3D Creation via Joint Agent-Program Design",
+      "urls": [
+        "https://arxiv.org/abs/2608.17975"
+      ],
+      "arxiv_ids": [
+        "2608.17975"
+      ],
+      "discussion_path": [
+        "Modeling Dynamic Assets",
+        "Cross-category applications and reported extensions"
+      ],
+      "source_note": "aDSL: Agentic 3D Creation via Joint Agent-Program Design",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "Nova3D: Code-Native Generation of Programmable 3D Assets",
+      "urls": [
+        "https://arxiv.org/abs/2607.22738"
+      ],
+      "arxiv_ids": [
+        "2607.22738"
+      ],
+      "discussion_path": [
+        "Modeling Dynamic Assets",
+        "Cross-category applications and reported extensions"
+      ],
+      "source_note": "Nova3D: Code-Native Generation of Programmable 3D Assets",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "Procedura: Agentic 3D Modeling with Procedural Control",
+      "urls": [
+        "https://arxiv.org/abs/2608.26238"
+      ],
+      "arxiv_ids": [
+        "2608.26238"
+      ],
+      "discussion_path": [
+        "Modeling Dynamic Assets",
+        "Cross-category applications and reported extensions"
+      ],
+      "source_note": "Procedura: Agentic 3D Modeling with Procedural Control",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "LiteReality-Agent: An Agentic System for Interactable 3D Indoor Scene Reconstruction",
+      "urls": [
+        "https://arxiv.org/abs/2610.01863"
+      ],
+      "arxiv_ids": [
+        "2610.01863"
+      ],
+      "discussion_path": [
+        "Modeling Dynamic Assets",
+        "Cross-category applications and reported extensions"
+      ],
+      "source_note": "LiteReality-Agent: An Agentic System for Interactable 3D Indoor Scene Reconstruction",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "Awomo-SimDataEngine: Agentic Simulation-Ready World Generation",
+      "urls": [
+        "https://arxiv.org/abs/2610.02274"
+      ],
+      "arxiv_ids": [
+        "2610.02274"
+      ],
+      "discussion_path": [
+        "Modeling Dynamic Assets",
+        "Cross-category applications and reported extensions"
+      ],
+      "source_note": "Awomo-SimDataEngine: Agentic Simulation-Ready World Generation",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "WorldAuditBench: Interactive 3D World Auditing with Multimodal Agents",
+      "urls": [
+        "https://arxiv.org/abs/2609.40325"
+      ],
+      "arxiv_ids": [
+        "2609.40325"
+      ],
+      "discussion_path": [
+        "Datasets and Benchmarks",
+        "Interactive 3D World Auditing"
+      ],
+      "source_note": "WorldAuditBench: Interactive 3D World Auditing with Multimodal Agents",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "DiagrammerGPT: Generating Open-Domain, Open-Platform Diagrams via LLM Planning",
+      "urls": [
+        "https://arxiv.org/abs/2310.12128"
+      ],
+      "arxiv_ids": [
+        "2310.12128"
+      ],
+      "discussion_path": [
+        "Supplementary papers — 10-round literature audit (13 October 2026)",
+        "2D graphics — 8 papers"
+      ],
+      "source_note": "DiagrammerGPT: Generating Open-Domain, Open-Platform Diagrams via LLM Planning",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "PlotEdit: Natural Language-Driven Accessible Chart Editing in PDFs via Multimodal LLM Agents",
+      "urls": [
+        "https://arxiv.org/abs/2501.11233"
+      ],
+      "arxiv_ids": [
+        "2501.11233"
+      ],
+      "discussion_path": [
+        "Supplementary papers — 10-round literature audit (13 October 2026)",
+        "2D graphics — 8 papers"
+      ],
+      "source_note": "PlotEdit: Natural Language-Driven Accessible Chart Editing in PDFs via Multimodal LLM Agents",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "PosterGen: Aesthetic-Aware Multi-Modal Paper-to-Poster Generation via Multi-Agent LLMs",
+      "urls": [
+        "https://arxiv.org/abs/2508.17188"
+      ],
+      "arxiv_ids": [
+        "2508.17188"
+      ],
+      "discussion_path": [
+        "Supplementary papers — 10-round literature audit (13 October 2026)",
+        "2D graphics — 8 papers"
+      ],
+      "source_note": "PosterGen: Aesthetic-Aware Multi-Modal Paper-to-Poster Generation via Multi-Agent LLMs",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "EvoDesign: Agentic Editable Diagram Creation via Design Expertise Evolution",
+      "urls": [
+        "https://arxiv.org/abs/2604.09568"
+      ],
+      "arxiv_ids": [
+        "2604.09568"
+      ],
+      "discussion_path": [
+        "Supplementary papers — 10-round literature audit (13 October 2026)",
+        "2D graphics — 8 papers"
+      ],
+      "source_note": "EvoDesign: Agentic Editable Diagram Creation via Design Expertise Evolution",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "Learning to Present: Inverse Specification Rewards for Agentic Slide Generation",
+      "urls": [
+        "https://arxiv.org/abs/2603.16839"
+      ],
+      "arxiv_ids": [
+        "2603.16839"
+      ],
+      "discussion_path": [
+        "Supplementary papers — 10-round literature audit (13 October 2026)",
+        "2D graphics — 8 papers"
+      ],
+      "source_note": "Learning to Present: Inverse Specification Rewards for Agentic Slide Generation",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "SciVisAgentSkills: Design and Evaluation of Agent Skills for Scientific Data Analysis and Visualization",
+      "urls": [
+        "https://arxiv.org/abs/2606.05525"
+      ],
+      "arxiv_ids": [
+        "2606.05525"
+      ],
+      "discussion_path": [
+        "Supplementary papers — 10-round literature audit (13 October 2026)",
+        "2D graphics — 8 papers"
+      ],
+      "source_note": "SciVisAgentSkills: Design and Evaluation of Agent Skills for Scientific Data Analysis and Visualization",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "ACE: A Self-Correcting Agentic Canvas Editor for Multi-Slide Presentation Automation",
+      "urls": [
+        "https://arxiv.org/abs/2608.24103"
+      ],
+      "arxiv_ids": [
+        "2608.24103"
+      ],
+      "discussion_path": [
+        "Supplementary papers — 10-round literature audit (13 October 2026)",
+        "2D graphics — 8 papers"
+      ],
+      "source_note": "ACE: A Self-Correcting Agentic Canvas Editor for Multi-Slide Presentation Automation",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "Figures as Programs: Recursive Generation of Editable Scientific Figures",
+      "urls": [
+        "https://arxiv.org/abs/2609.01006"
+      ],
+      "arxiv_ids": [
+        "2609.01006"
+      ],
+      "discussion_path": [
+        "Supplementary papers — 10-round literature audit (13 October 2026)",
+        "2D graphics — 8 papers"
+      ],
+      "source_note": "Figures as Programs: Recursive Generation of Editable Scientific Figures",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "3D-GPT: Procedural 3D Modeling with Large Language Models",
+      "urls": [
+        "https://arxiv.org/abs/2310.12945"
+      ],
+      "arxiv_ids": [
+        "2310.12945"
+      ],
+      "discussion_path": [
+        "Supplementary papers — 10-round literature audit (13 October 2026)",
+        "Scene and object modeling — 8 papers"
+      ],
+      "source_note": "3D-GPT: Procedural 3D Modeling with Large Language Models",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "CityCraft: A Real Crafter for 3D City Generation",
+      "urls": [
+        "https://arxiv.org/abs/2406.04983"
+      ],
+      "arxiv_ids": [
+        "2406.04983"
+      ],
+      "discussion_path": [
+        "Supplementary papers — 10-round literature audit (13 October 2026)",
+        "Scene and object modeling — 8 papers"
+      ],
+      "source_note": "CityCraft: A Real Crafter for 3D City Generation",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "UrbanWorld: An Urban World Model for 3D City Generation",
+      "urls": [
+        "https://arxiv.org/abs/2407.11965"
+      ],
+      "arxiv_ids": [
+        "2407.11965"
+      ],
+      "discussion_path": [
+        "Supplementary papers — 10-round literature audit (13 October 2026)",
+        "Scene and object modeling — 8 papers"
+      ],
+      "source_note": "UrbanWorld: An Urban World Model for 3D City Generation",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "Scenethesis: A Language and Vision Agentic Framework for 3D Scene Generation",
+      "urls": [
+        "https://arxiv.org/abs/2505.02836"
+      ],
+      "arxiv_ids": [
+        "2505.02836"
+      ],
+      "discussion_path": [
+        "Supplementary papers — 10-round literature audit (13 October 2026)",
+        "Scene and object modeling — 8 papers"
+      ],
+      "source_note": "Scenethesis: A Language and Vision Agentic Framework for 3D Scene Generation",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "3Dify: a Framework for Procedural 3D-CG Generation Assisted by LLMs Using MCP and RAG",
+      "urls": [
+        "https://arxiv.org/abs/2510.04536"
+      ],
+      "arxiv_ids": [
+        "2510.04536"
+      ],
+      "discussion_path": [
+        "Supplementary papers — 10-round literature audit (13 October 2026)",
+        "Scene and object modeling — 8 papers"
+      ],
+      "source_note": "3Dify: a Framework for Procedural 3D-CG Generation Assisted by LLMs Using MCP and RAG",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "Vinedresser3D: Agentic Text-guided 3D Editing",
+      "urls": [
+        "https://arxiv.org/abs/2602.19542"
+      ],
+      "arxiv_ids": [
+        "2602.19542"
+      ],
+      "discussion_path": [
+        "Supplementary papers — 10-round literature audit (13 October 2026)",
+        "Scene and object modeling — 8 papers"
+      ],
+      "source_note": "Vinedresser3D: Agentic Text-guided 3D Editing",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "WorldAct: Activating Monolithic 3D Worlds into Interactive-Ready Object-Centric Scenes",
+      "urls": [
+        "https://arxiv.org/abs/2605.15843"
+      ],
+      "arxiv_ids": [
+        "2605.15843"
+      ],
+      "discussion_path": [
+        "Supplementary papers — 10-round literature audit (13 October 2026)",
+        "Scene and object modeling — 8 papers"
+      ],
+      "source_note": "WorldAct: Activating Monolithic 3D Worlds into Interactive-Ready Object-Centric Scenes",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "Roomer: Reflective Object-Grounded Model Editing and Repair for 3D Indoor Layout Synthesis",
+      "urls": [
+        "https://arxiv.org/abs/2608.01973"
+      ],
+      "arxiv_ids": [
+        "2608.01973"
+      ],
+      "discussion_path": [
+        "Supplementary papers — 10-round literature audit (13 October 2026)",
+        "Scene and object modeling — 8 papers"
+      ],
+      "source_note": "Roomer: Reflective Object-Grounded Model Editing and Repair for 3D Indoor Layout Synthesis",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "Clarify Before You Draw: Proactive Agents for Robust Text-to-CAD Generation",
+      "urls": [
+        "https://arxiv.org/abs/2602.03045"
+      ],
+      "arxiv_ids": [
+        "2602.03045"
+      ],
+      "discussion_path": [
+        "Supplementary papers — 10-round literature audit (13 October 2026)",
+        "CAD — 3 papers"
+      ],
+      "source_note": "Clarify Before You Draw: Proactive Agents for Robust Text-to-CAD Generation",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "Zero-to-CAD: Agentic Synthesis of Interpretable CAD Programs at Million-Scale Without Real Data",
+      "urls": [
+        "https://arxiv.org/abs/2604.24479"
+      ],
+      "arxiv_ids": [
+        "2604.24479"
+      ],
+      "discussion_path": [
+        "Supplementary papers — 10-round literature audit (13 October 2026)",
+        "CAD — 3 papers"
+      ],
+      "source_note": "Zero-to-CAD: Agentic Synthesis of Interpretable CAD Programs at Million-Scale Without Real Data",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "TraceCAD: Trace-Guided Repair for Agentic CAD Generation",
+      "urls": [
+        "https://arxiv.org/abs/2608.03062"
+      ],
+      "arxiv_ids": [
+        "2608.03062"
+      ],
+      "discussion_path": [
+        "Supplementary papers — 10-round literature audit (13 October 2026)",
+        "CAD — 3 papers"
+      ],
+      "source_note": "TraceCAD: Trace-Guided Repair for Agentic CAD Generation",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "AGILE: Hand-Object Interaction Reconstruction from Video via Agentic Generation",
+      "urls": [
+        "https://arxiv.org/abs/2602.04672"
+      ],
+      "arxiv_ids": [
+        "2602.04672"
+      ],
+      "discussion_path": [
+        "Supplementary papers — 10-round literature audit (13 October 2026)",
+        "Animation and simulation — 9 papers"
+      ],
+      "source_note": "AGILE: Hand-Object Interaction Reconstruction from Video via Agentic Generation",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "Perceptual Self-Reflection in Agentic Physics Simulation Code Generation",
+      "urls": [
+        "https://arxiv.org/abs/2602.12311"
+      ],
+      "arxiv_ids": [
+        "2602.12311"
+      ],
+      "discussion_path": [
+        "Supplementary papers — 10-round literature audit (13 October 2026)",
+        "Animation and simulation — 9 papers"
+      ],
+      "source_note": "Perceptual Self-Reflection in Agentic Physics Simulation Code Generation",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "PhysAgent: Automating Physics-Based 4D Synthesis via Trajectory-Grounded Multi-Agent Feedback",
+      "urls": [
+        "https://arxiv.org/abs/2606.08688"
+      ],
+      "arxiv_ids": [
+        "2606.08688"
+      ],
+      "discussion_path": [
+        "Supplementary papers — 10-round literature audit (13 October 2026)",
+        "Animation and simulation — 9 papers"
+      ],
+      "source_note": "PhysAgent: Automating Physics-Based 4D Synthesis via Trajectory-Grounded Multi-Agent Feedback",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "Agentic Real2Sim: Physics-based World Modeling with Vision-Language Agents",
+      "urls": [
+        "https://arxiv.org/abs/2607.19190"
+      ],
+      "arxiv_ids": [
+        "2607.19190"
+      ],
+      "discussion_path": [
+        "Supplementary papers — 10-round literature audit (13 October 2026)",
+        "Animation and simulation — 9 papers"
+      ],
+      "source_note": "Agentic Real2Sim: Physics-based World Modeling with Vision-Language Agents",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "ArtiMo: Agent-Driven Articulated Mesh Animation",
+      "urls": [
+        "https://arxiv.org/abs/2608.20699"
+      ],
+      "arxiv_ids": [
+        "2608.20699"
+      ],
+      "discussion_path": [
+        "Supplementary papers — 10-round literature audit (13 October 2026)",
+        "Animation and simulation — 9 papers"
+      ],
+      "source_note": "ArtiMo: Agent-Driven Articulated Mesh Animation",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "4DSynth: Controllable Procedural World Synthesis for Dynamic Embodied Simulation",
+      "urls": [
+        "https://arxiv.org/abs/2608.26947"
+      ],
+      "arxiv_ids": [
+        "2608.26947"
+      ],
+      "discussion_path": [
+        "Supplementary papers — 10-round literature audit (13 October 2026)",
+        "Animation and simulation — 9 papers"
+      ],
+      "source_note": "4DSynth: Controllable Procedural World Synthesis for Dynamic Embodied Simulation",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "DiagGen: Agentic Generation of Deformable Assets with Sim-based Diagnostics for Robotic Simulation",
+      "urls": [
+        "https://arxiv.org/abs/2609.23103"
+      ],
+      "arxiv_ids": [
+        "2609.23103"
+      ],
+      "discussion_path": [
+        "Supplementary papers — 10-round literature audit (13 October 2026)",
+        "Animation and simulation — 9 papers"
+      ],
+      "source_note": "DiagGen: Agentic Generation of Deformable Assets with Sim-based Diagnostics for Robotic Simulation",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "AgentSTAR: Agentic Shape Tracking and Reconstruction from Monocular Videos",
+      "urls": [
+        "https://arxiv.org/abs/2609.24487"
+      ],
+      "arxiv_ids": [
+        "2609.24487"
+      ],
+      "discussion_path": [
+        "Supplementary papers — 10-round literature audit (13 October 2026)",
+        "Animation and simulation — 9 papers"
+      ],
+      "source_note": "AgentSTAR: Agentic Shape Tracking and Reconstruction from Monocular Videos",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "Fysiverse-3D-SimReady Technical Report: Agentic Physical Simulation for Pragmatic 3D World Reconstruction",
+      "urls": [
+        "https://arxiv.org/abs/2609.31715"
+      ],
+      "arxiv_ids": [
+        "2609.31715"
+      ],
+      "discussion_path": [
+        "Supplementary papers — 10-round literature audit (13 October 2026)",
+        "Animation and simulation — 9 papers"
+      ],
+      "source_note": "Fysiverse-3D-SimReady Technical Report: Agentic Physical Simulation for Pragmatic 3D World Reconstruction",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "BlenderGym: Benchmarking Foundational Model Systems for Graphics Editing",
+      "urls": [
+        "https://arxiv.org/abs/2504.01786"
+      ],
+      "arxiv_ids": [
+        "2504.01786"
+      ],
+      "discussion_path": [
+        "Supplementary papers — 10-round literature audit (13 October 2026)",
+        "Graphics benchmarks — 10 papers"
+      ],
+      "source_note": "BlenderGym: Benchmarking Foundational Model Systems for Graphics Editing",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "IR3D-Bench: Evaluating Vision-Language Model Scene Understanding as Agentic Inverse Rendering",
+      "urls": [
+        "https://arxiv.org/abs/2506.23329"
+      ],
+      "arxiv_ids": [
+        "2506.23329"
+      ],
+      "discussion_path": [
+        "Supplementary papers — 10-round literature audit (13 October 2026)",
+        "Graphics benchmarks — 10 papers"
+      ],
+      "source_note": "IR3D-Bench: Evaluating Vision-Language Model Scene Understanding as Agentic Inverse Rendering",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "BuildArena: A Physics-Aligned Interactive Benchmark of LLMs for Engineering Construction",
+      "urls": [
+        "https://arxiv.org/abs/2510.16559"
+      ],
+      "arxiv_ids": [
+        "2510.16559"
+      ],
+      "discussion_path": [
+        "Supplementary papers — 10-round literature audit (13 October 2026)",
+        "Graphics benchmarks — 10 papers"
+      ],
+      "source_note": "BuildArena: A Physics-Aligned Interactive Benchmark of LLMs for Engineering Construction",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "3DCodeBench: Benchmarking Agentic Procedural 3D Modeling Via Code",
+      "urls": [
+        "https://arxiv.org/abs/2606.01057"
+      ],
+      "arxiv_ids": [
+        "2606.01057"
+      ],
+      "discussion_path": [
+        "Supplementary papers — 10-round literature audit (13 October 2026)",
+        "Graphics benchmarks — 10 papers"
+      ],
+      "source_note": "3DCodeBench: Benchmarking Agentic Procedural 3D Modeling Via Code",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "SceneActBench: Can Agents Act on the 3D Scenes They See?",
+      "urls": [
+        "https://arxiv.org/abs/2607.22393"
+      ],
+      "arxiv_ids": [
+        "2607.22393"
+      ],
+      "discussion_path": [
+        "Supplementary papers — 10-round literature audit (13 October 2026)",
+        "Graphics benchmarks — 10 papers"
+      ],
+      "source_note": "SceneActBench: Can Agents Act on the 3D Scenes They See?",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "PPTBench: Can Coding Agents Reconstruct the Visual World through Structured, Editable Slides",
+      "urls": [
+        "https://arxiv.org/abs/2609.29718"
+      ],
+      "arxiv_ids": [
+        "2609.29718"
+      ],
+      "discussion_path": [
+        "Supplementary papers — 10-round literature audit (13 October 2026)",
+        "Graphics benchmarks — 10 papers"
+      ],
+      "source_note": "PPTBench: Can Coding Agents Reconstruct the Visual World through Structured, Editable Slides",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "3DHarnessBench: Probing Agentic 3D-to-Code Capabilities of Frontier Vision-Language Models",
+      "urls": [
+        "https://arxiv.org/abs/2609.06535"
+      ],
+      "arxiv_ids": [
+        "2609.06535"
+      ],
+      "discussion_path": [
+        "Supplementary papers — 10-round literature audit (13 October 2026)",
+        "Graphics benchmarks — 10 papers"
+      ],
+      "source_note": "3DHarnessBench: Probing Agentic 3D-to-Code Capabilities of Frontier Vision-Language Models",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "BVB: Benchmarking Agentic Video Understanding via Programmatic Reconstruction in Blender",
+      "urls": [
+        "https://arxiv.org/abs/2609.15478"
+      ],
+      "arxiv_ids": [
+        "2609.15478"
+      ],
+      "discussion_path": [
+        "Supplementary papers — 10-round literature audit (13 October 2026)",
+        "Graphics benchmarks — 10 papers"
+      ],
+      "source_note": "BVB: Benchmarking Agentic Video Understanding via Programmatic Reconstruction in Blender",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "CADWorld: Computer-Use Benchmark for Long-Horizon Computer-Aided Design",
+      "urls": [
+        "https://arxiv.org/abs/2609.16251"
+      ],
+      "arxiv_ids": [
+        "2609.16251"
+      ],
+      "discussion_path": [
+        "Supplementary papers — 10-round literature audit (13 October 2026)",
+        "Graphics benchmarks — 10 papers"
+      ],
+      "source_note": "CADWorld: Computer-Use Benchmark for Long-Horizon Computer-Aided Design",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "Code4Scene: Benchmarking Coding Agents for Constructing and Editing 3D Scenes",
+      "urls": [
+        "https://arxiv.org/abs/2609.36777"
+      ],
+      "arxiv_ids": [
+        "2609.36777"
+      ],
+      "discussion_path": [
+        "Supplementary papers — 10-round literature audit (13 October 2026)",
+        "Graphics benchmarks — 10 papers"
+      ],
+      "source_note": "Code4Scene: Benchmarking Coding Agents for Constructing and Editing 3D Scenes",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "Re-Thinking Inverse Graphics With Large Language Models",
+      "urls": [
+        "https://arxiv.org/abs/2404.15228"
+      ],
+      "arxiv_ids": [
+        "2404.15228"
+      ],
+      "discussion_path": [
+        "Supplementary papers — 10-round literature audit (13 October 2026)",
+        "Enabling methods — 9 papers"
+      ],
+      "source_note": "Re-Thinking Inverse Graphics With Large Language Models",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "BlenderLLM: Training Large Language Models for Computer-Aided Design with Self-improvement",
+      "urls": [
+        "https://arxiv.org/abs/2412.14203"
+      ],
+      "arxiv_ids": [
+        "2412.14203"
+      ],
+      "discussion_path": [
+        "Supplementary papers — 10-round literature audit (13 October 2026)",
+        "Enabling methods — 9 papers"
+      ],
+      "source_note": "BlenderLLM: Training Large Language Models for Computer-Aided Design with Self-improvement",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "VLMaterial: Procedural Material Generation with Large Vision-Language Models",
+      "urls": [
+        "https://arxiv.org/abs/2501.18623"
+      ],
+      "arxiv_ids": [
+        "2501.18623"
+      ],
+      "discussion_path": [
+        "Supplementary papers — 10-round literature audit (13 October 2026)",
+        "Enabling methods — 9 papers"
+      ],
+      "source_note": "VLMaterial: Procedural Material Generation with Large Vision-Language Models",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "VectorGym: A Multi-Task Benchmark for SVG Code Generation, Sketching and Editing",
+      "urls": [
+        "https://arxiv.org/abs/2603.29852"
+      ],
+      "arxiv_ids": [
+        "2603.29852"
+      ],
+      "discussion_path": [
+        "Supplementary papers — 10-round literature audit (13 October 2026)",
+        "Enabling methods — 9 papers"
+      ],
+      "source_note": "VectorGym: A Multi-Task Benchmark for SVG Code Generation, Sketching and Editing",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "GIFT: Bootstrapping Image-to-CAD Program Synthesis via Geometric Feedback",
+      "urls": [
+        "https://arxiv.org/abs/2603.27448"
+      ],
+      "arxiv_ids": [
+        "2603.27448"
+      ],
+      "discussion_path": [
+        "Supplementary papers — 10-round literature audit (13 October 2026)",
+        "Enabling methods — 9 papers"
+      ],
+      "source_note": "GIFT: Bootstrapping Image-to-CAD Program Synthesis via Geometric Feedback",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "VoxelCodeBench: Benchmarking 3D World Modeling Through Code Generation",
+      "urls": [
+        "https://arxiv.org/abs/2604.02580"
+      ],
+      "arxiv_ids": [
+        "2604.02580"
+      ],
+      "discussion_path": [
+        "Supplementary papers — 10-round literature audit (13 October 2026)",
+        "Enabling methods — 9 papers"
+      ],
+      "source_note": "VoxelCodeBench: Benchmarking 3D World Modeling Through Code Generation",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "PhysForge: Generating Physics-Grounded 3D Assets for Interactive Virtual World",
+      "urls": [
+        "https://arxiv.org/abs/2605.05163"
+      ],
+      "arxiv_ids": [
+        "2605.05163"
+      ],
+      "discussion_path": [
+        "Supplementary papers — 10-round literature audit (13 October 2026)",
+        "Enabling methods — 9 papers"
+      ],
+      "source_note": "PhysForge: Generating Physics-Grounded 3D Assets for Interactive Virtual World",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "Flame3D: Zero-shot Compositional Reasoning of 3D Scenes with Agentic Language Models",
+      "urls": [
+        "https://arxiv.org/abs/2605.09218"
+      ],
+      "arxiv_ids": [
+        "2605.09218"
+      ],
+      "discussion_path": [
+        "Supplementary papers — 10-round literature audit (13 October 2026)",
+        "Enabling methods — 9 papers"
+      ],
+      "source_note": "Flame3D: Zero-shot Compositional Reasoning of 3D Scenes with Agentic Language Models",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "NaLA: A 3D Native LLM Layout Agent for High-quality 3D Scene Generation",
+      "urls": [
+        "https://arxiv.org/abs/2606.29395"
+      ],
+      "arxiv_ids": [
+        "2606.29395"
+      ],
+      "discussion_path": [
+        "Supplementary papers — 10-round literature audit (13 October 2026)",
+        "Enabling methods — 9 papers"
+      ],
+      "source_note": "NaLA: A 3D Native LLM Layout Agent for High-quality 3D Scene Generation",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "4DCodeBench: Benchmarking Agents on Inverse Graphics of Dynamic Scenes",
+      "urls": [
+        "https://arxiv.org/abs/2610.03715"
+      ],
+      "arxiv_ids": [
+        "2610.03715"
+      ],
+      "discussion_path": [
+        "Supplementary papers — 10-round literature audit (13 October 2026)",
+        "After September cutoff — 1 papers"
+      ],
+      "source_note": "4DCodeBench: Benchmarking Agents on Inverse Graphics of Dynamic Scenes",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "LIDA: A Tool for Automatic Generation of Grammar-Agnostic Visualizations and Infographics using Large Language Models",
+      "urls": [
+        "https://arxiv.org/abs/2303.02927"
+      ],
+      "arxiv_ids": [
+        "2303.02927"
+      ],
+      "discussion_path": [
+        "Supplementary papers — historical count audit (14 October 2026)"
+      ],
+      "source_note": "LIDA: A Tool for Automatic Generation of Grammar-Agnostic Visualizations and Infographics using Large Language Models",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "Holodeck: Language Guided Generation of 3D Embodied AI Environments",
+      "urls": [
+        "https://arxiv.org/abs/2312.09067"
+      ],
+      "arxiv_ids": [
+        "2312.09067"
+      ],
+      "discussion_path": [
+        "Supplementary papers — historical count audit (14 October 2026)"
+      ],
+      "source_note": "Holodeck: Language Guided Generation of 3D Embodied AI Environments",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "Chat-Edit-3D: Interactive 3D Scene Editing via Text Prompts",
+      "urls": [
+        "https://arxiv.org/abs/2407.06842"
+      ],
+      "arxiv_ids": [
+        "2407.06842"
+      ],
+      "discussion_path": [
+        "Supplementary papers — historical count audit (14 October 2026)"
+      ],
+      "source_note": "Chat-Edit-3D: Interactive 3D Scene Editing via Text Prompts",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "WorldCraft: Photo-Realistic 3D World Creation and Customization via LLM Agents",
+      "urls": [
+        "https://arxiv.org/abs/2502.15601"
+      ],
+      "arxiv_ids": [
+        "2502.15601"
+      ],
+      "discussion_path": [
+        "Supplementary papers — historical count audit (14 October 2026)"
+      ],
+      "source_note": "WorldCraft: Photo-Realistic 3D World Creation and Customization via LLM Agents",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "From text to design: a framework to leverage LLM agents for automated CAD generation",
+      "urls": [
+        "https://doi.org/10.1017/pds.2025.10203"
+      ],
+      "arxiv_ids": [
+        "2025.10203"
+      ],
+      "discussion_path": [
+        "Supplementary papers — historical count audit (14 October 2026)"
+      ],
+      "source_note": "From text to design: a framework to leverage LLM agents for automated CAD generation",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "Towards Physically Grounded Articulated 3D Assets: A Multi-Agent Pipeline and Benchmark",
+      "urls": [
+        "https://arxiv.org/abs/2610.13947"
+      ],
+      "arxiv_ids": [
+        "2610.13947"
+      ],
+      "discussion_path": [
+        "Supplementary papers — conversation update (15 October 2026)",
+        "Articulated assets and simulation"
+      ],
+      "source_note": "Towards Physically Grounded Articulated 3D Assets: A Multi-Agent Pipeline and Benchmark",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "CFD Forge: A Physics-Constrained Agentic Framework for Autonomous CFD",
+      "urls": [
+        "https://arxiv.org/abs/2610.14104"
+      ],
+      "arxiv_ids": [
+        "2610.14104"
+      ],
+      "discussion_path": [
+        "Supplementary papers — conversation update (15 October 2026)",
+        "Articulated assets and simulation"
+      ],
+      "source_note": "CFD Forge: A Physics-Constrained Agentic Framework for Autonomous CFD",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "MeshCoder: LLM-Powered Structured Mesh Code Generation from Point Clouds",
+      "urls": [
+        "https://arxiv.org/abs/2508.14879"
+      ],
+      "arxiv_ids": [
+        "2508.14879"
+      ],
+      "discussion_path": [
+        "Supplementary papers — conversation update (15 October 2026)",
+        "Object and scene modeling — related methods"
+      ],
+      "source_note": "MeshCoder: LLM-Powered Structured Mesh Code Generation from Point Clouds",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "The Scene Language: Representing Scenes with Programs, Words, and Embeddings",
+      "urls": [
+        "https://arxiv.org/abs/2410.16770"
+      ],
+      "arxiv_ids": [
+        "2410.16770"
+      ],
+      "discussion_path": [
+        "Supplementary papers — conversation update (15 October 2026)",
+        "Object and scene modeling — related methods"
+      ],
+      "source_note": "The Scene Language: Representing Scenes with Programs, Words, and Embeddings",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "CAD-Editor: A Locate-then-Infill Framework with Automated Training Data Synthesis for Text-Based CAD Editing",
+      "urls": [
+        "https://arxiv.org/abs/2502.03997"
+      ],
+      "arxiv_ids": [
+        "2502.03997"
+      ],
+      "discussion_path": [
+        "Supplementary papers — conversation update (15 October 2026)",
+        "CAD modeling — related methods"
+      ],
+      "source_note": "CAD-Editor: A Locate-then-Infill Framework with Automated Training Data Synthesis for Text-Based CAD Editing",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "CAD-Refiner: A Unified Framework for CAD Generation and Iterative Editing",
+      "urls": [
+        "https://openaccess.thecvf.com/content/CVPR2026/html/Yuan_CAD-Refiner_A_Unified_Framework_for_CAD_Generation_and_Iterative_Editing_CVPR_2026_paper.html"
+      ],
+      "arxiv_ids": [],
+      "discussion_path": [
+        "Supplementary papers — conversation update (15 October 2026)",
+        "CAD modeling — related methods"
+      ],
+      "source_note": "CAD-Refiner: A Unified Framework for CAD Generation and Iterative Editing",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "WorldSolver: Can LLM Agents Simulate the Physical Dynamics via Solver Generation?",
+      "urls": [
+        "https://arxiv.org/abs/2610.08720"
+      ],
+      "arxiv_ids": [
+        "2610.08720"
+      ],
+      "discussion_path": [
+        "Supplementary papers — conversation update (15 October 2026)",
+        "Benchmarks"
+      ],
+      "source_note": "WorldSolver: Can LLM Agents Simulate the Physical Dynamics via Solver Generation?",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "neuralCAD-Edit: An Expert Benchmark for Multimodal-Instructed 3D CAD Model Editing",
+      "urls": [
+        "https://arxiv.org/abs/2604.16170"
+      ],
+      "arxiv_ids": [
+        "2604.16170"
+      ],
+      "discussion_path": [
+        "Supplementary papers — conversation update (15 October 2026)",
+        "Benchmarks"
+      ],
+      "source_note": "neuralCAD-Edit: An Expert Benchmark for Multimodal-Instructed 3D CAD Model Editing",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "Neurosymbolic Models for Computer Graphics",
+      "urls": [
+        "https://arxiv.org/abs/2304.10320"
+      ],
+      "arxiv_ids": [
+        "2304.10320"
+      ],
+      "discussion_path": [
+        "Supplementary papers — conversation update (15 October 2026)",
+        "Surveys and background references"
+      ],
+      "source_note": "Neurosymbolic Models for Computer Graphics",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "Scaling Large Reasoning Models beyond Human Supervision: A Path toward Superintelligence",
+      "urls": [
+        "https://arxiv.org/abs/2608.31075"
+      ],
+      "arxiv_ids": [
+        "2608.31075"
+      ],
+      "discussion_path": [
+        "Supplementary papers — conversation update (15 October 2026)",
+        "Surveys and background references"
+      ],
+      "source_note": "Scaling Large Reasoning Models beyond Human Supervision: A Path toward Superintelligence",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "Learning to Infer and Execute 3D Shape Programs",
+      "urls": [
+        "https://arxiv.org/abs/1901.02875"
+      ],
+      "arxiv_ids": [
+        "1901.02875"
+      ],
+      "discussion_path": [
+        "Supplementary papers — conversation update (15 October 2026)",
+        "Surveys and background references"
+      ],
+      "source_note": "Learning to Infer and Execute 3D Shape Programs",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "Unsupervised Learning of Shape Programs with Repeatable Implicit Parts",
+      "urls": [
+        "https://openreview.net/forum?id=EENzpzcs4Vy"
+      ],
+      "arxiv_ids": [],
+      "discussion_path": [
+        "Supplementary papers — conversation update (15 October 2026)",
+        "Surveys and background references"
+      ],
+      "source_note": "Unsupervised Learning of Shape Programs with Repeatable Implicit Parts",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "Evaluating Large Language Models Trained on Code",
+      "urls": [
+        "https://arxiv.org/abs/2107.03374"
+      ],
+      "arxiv_ids": [
+        "2107.03374"
+      ],
+      "discussion_path": [
+        "Supplementary papers — conversation update (15 October 2026)",
+        "Surveys and background references"
+      ],
+      "source_note": "Evaluating Large Language Models Trained on Code",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "ReAct: Synergizing Reasoning and Acting in Language Models",
+      "urls": [
+        "https://arxiv.org/abs/2210.03629"
+      ],
+      "arxiv_ids": [
+        "2210.03629"
+      ],
+      "discussion_path": [
+        "Supplementary papers — conversation update (15 October 2026)",
+        "Surveys and background references"
+      ],
+      "source_note": "ReAct: Synergizing Reasoning and Acting in Language Models",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    },
+    {
+      "title": "Reflexion: Language Agents with Verbal Reinforcement Learning",
+      "urls": [
+        "https://arxiv.org/abs/2303.11366"
+      ],
+      "arxiv_ids": [
+        "2303.11366"
+      ],
+      "discussion_path": [
+        "Supplementary papers — conversation update (15 October 2026)",
+        "Surveys and background references"
+      ],
+      "source_note": "Reflexion: Language Agents with Verbal Reinforcement Learning",
+      "membership": "known_discussed_paper",
+      "acceptance": "not_inferred"
+    }
+  ]
+}

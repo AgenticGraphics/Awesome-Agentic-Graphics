@@ -1,0 +1,90 @@
+{
+  "version": "google-doc-taxonomy-v3-2026-10-11",
+  "families": [
+    {
+      "id": "2d",
+      "taxonomy_hints": [
+        "2D Graphics"
+      ],
+      "queries": [
+        "agent SVG diagram chart slide poster editable visual feedback",
+        "agent scientific illustration Manim animation code"
+      ]
+    },
+    {
+      "id": "object",
+      "taxonomy_hints": [
+        "Static / Object"
+      ],
+      "queries": [
+        "agent 3D object procedural modeling Blender material",
+        "agent inverse graphics shape geometry editing"
+      ]
+    },
+    {
+      "id": "cad",
+      "taxonomy_hints": [
+        "Static / CAD"
+      ],
+      "queries": [
+        "agent CAD generation reconstruction editing constraint solver",
+        "CAD program repair manufacturing visual feedback"
+      ]
+    },
+    {
+      "id": "scene",
+      "taxonomy_hints": [
+        "Static / Scene"
+      ],
+      "queries": [
+        "agent 3D scene layout world generation reconstruction editing",
+        "agent BIM architecture environment spatial arrangement"
+      ]
+    },
+    {
+      "id": "articulation",
+      "taxonomy_hints": [
+        "Dynamic / Articulated assets"
+      ],
+      "queries": [
+        "agent articulated asset joint mechanism rig generation"
+      ]
+    },
+    {
+      "id": "animation",
+      "taxonomy_hints": [
+        "Dynamic / Animation and temporal scene"
+      ],
+      "queries": [
+        "agent animation cutscene temporal world scene cinematography"
+      ]
+    },
+    {
+      "id": "simulation",
+      "taxonomy_hints": [
+        "Dynamic / Physical simulation and effects"
+      ],
+      "queries": [
+        "agent physical simulation particle effects deformable world"
+      ]
+    },
+    {
+      "id": "benchmark",
+      "taxonomy_hints": [
+        "Datasets and Benchmarks"
+      ],
+      "queries": [
+        "agent graphics benchmark world auditing verification"
+      ]
+    },
+    {
+      "id": "harness",
+      "taxonomy_hints": [
+        "Cross-category"
+      ],
+      "queries": [
+        "graphics agent memory replanning tool interface feedback program synthesis"
+      ]
+    }
+  ]
+}
