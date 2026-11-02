@@ -407,13 +407,14 @@ Paper suggestions are welcome. To be in scope, a work must meet the three criter
 
 ## Citation
 
-If you find this survey or repository useful, please cite:
+If you find this repository useful, please cite:
 
 ```bibtex
-@article{agenticgraphics2026,
-  title   = {Advances in Agentic Computer Graphics},
-  author  = {TBD},
-  journal = {arXiv preprint arXiv:TBD},
-  year    = {2026}
+@misc{awesome-agentic-graphics,
+  title        = {Awesome Agentic Graphics},
+  author       = {{Agentic Graphics}},
+  year         = {2026},
+  howpublished = {\url{https://github.com/AgenticGraphics/Awesome-Agentic-Graphics}},
+  note         = {GitHub repository}
 }
 ```
