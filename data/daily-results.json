@@ -2,13 +2,13 @@
   "schemaVersion": 1,
   "title": "Agentic graphics paper library",
   "timezone": "America/Chicago",
-  "executedAt": "2026-11-07T21:44:23.133668+00:00",
+  "executedAt": "2026-11-07T22:02:43.715987+00:00",
   "executionMode": "retrospective_multi_date_portable_browser_pass",
   "status": "partial",
   "intro": "Browse the survey collection and daily discoveries, or choose a search date.",
   "methodNote": "Each dated report preserves its execution time, source coverage, and research method. Server reports use the pinned October 15 snapshot; older browser reports retain their original snapshot.",
   "taxonomyNote": "Research annotations use the pinned October 11 codebook; the live document changed and was not reconciled in this run.",
-  "uniquePapers": 374,
+  "uniquePapers": 382,
   "sharedRetrieval": {
     "searchBatches": 6,
     "searchQueries": 24,
@@ -60542,6 +60542,1859 @@
         "report": "data/2026-11-03/report.md",
         "data": "data/2026-11-03/run.json",
         "audit": "data/2026-11-03/audit.json"
+      }
+    },
+    {
+      "date": "2026-11-04",
+      "label": "Nov 04",
+      "status": "partial_verified",
+      "executedAt": "2026-11-07T22:02:43.715987+00:00",
+      "summary": "Retrospective date-targeted server run. See the report for source coverage and unresolved candidates.",
+      "feedNote": "Retrospective date-targeted server run.",
+      "papers": [
+        {
+          "id": "2611.06856",
+          "title": "LongBanana: An Expert-Verified Benchmark for Long-Context Multi-Reference Image Synthesis",
+          "shortTitle": "LongBanana: An Expert-Verified Benchmark for Long-Context Multi-Reference Image Synthesis",
+          "url": "https://arxiv.org/abs/2611.06856",
+          "eventType": "first_submission",
+          "eventDate": "2026-11-04T18:11:56+00:00",
+          "sourceEventTime": "2026-11-04T18:11:56+00:00",
+          "eventLabel": "New submission",
+          "bucket": "same_day_new",
+          "scope": "core",
+          "scopeLabel": "Core",
+          "summary": "Evaluated agent harness selects references, plans image generation and revises drafts using visual feedback.",
+          "applications": [
+            "2D Graphics",
+            "Datasets and Benchmarks"
+          ],
+          "operations": [
+            "Generation"
+          ],
+          "tags": [],
+          "taxonomy": {
+            "task": [
+              "Visualization"
+            ],
+            "input_form": [
+              "Language",
+              "Image"
+            ],
+            "output": [
+              "Rendered Media"
+            ],
+            "model_type": [
+              "VLM"
+            ],
+            "model_training": [
+              "Not Reported"
+            ],
+            "planning": [
+              "PO-2"
+            ],
+            "workflow": [
+              "Sequential"
+            ],
+            "update_strategy": [
+              "Local Patch"
+            ],
+            "verifier": [
+              "Self"
+            ],
+            "feedback_assessment": [
+              "Diagnosis"
+            ],
+            "feedback_observation": [
+              "Visual"
+            ],
+            "memory_time": [
+              "Short-Term Memory"
+            ],
+            "memory_reach": [
+              "Global Memory"
+            ],
+            "action_type": [
+              "Tool/Function Call"
+            ],
+            "graphics_software": [
+              "Agent-Adapted"
+            ],
+            "tools": [
+              "Execution Utilities",
+              "Perception models"
+            ],
+            "resources": [
+              "Assets"
+            ],
+            "representation": [
+              "Pixels"
+            ]
+          },
+          "taxonomyEvidence": {
+            "task": {
+              "primary_url": "https://arxiv.org/pdf/2611.06856v1",
+              "locator": "pp.1,4,25",
+              "evidence": "Composes reference-grounded advertisements, posters and visual compositions.",
+              "level": "derived",
+              "reasoning": "2D visual communication fits Visualization; no explicit geometric model is produced."
+            },
+            "input_form": {
+              "primary_url": "https://arxiv.org/pdf/2611.06856v1",
+              "locator": "p.36 Fig.18",
+              "evidence": "User instruction and approximately 32 reference images.",
+              "level": "reported"
+            },
+            "output": {
+              "primary_url": "https://arxiv.org/pdf/2611.06856v1",
+              "locator": "p.36",
+              "evidence": "Final output: synthesized image.",
+              "level": "reported"
+            },
+            "model_type": {
+              "primary_url": "https://arxiv.org/pdf/2611.06856v1",
+              "locator": "pp.7,33,36",
+              "evidence": "Claude Sonnet 4.6 plans and inspects drafts and references.",
+              "level": "derived",
+              "reasoning": "Controller reasons over visual and textual evidence, hence VLM; image backend is not the controller."
+            },
+            "model_training": {
+              "primary_url": "https://arxiv.org/pdf/2611.06856v1",
+              "locator": "Appendix C.1 and full-text training search",
+              "evidence": "Shared agent model and harness versions identified, but controller adaptation explicitly neither specified nor denied.",
+              "level": "derived",
+              "reasoning": "Do not infer Off-the-Shelf from a commercial model name."
+            },
+            "planning": {
+              "primary_url": "https://arxiv.org/pdf/2611.06856v1",
+              "locator": "pp.7,36",
+              "evidence": "Fixed ReAct/Plan–Exec/Reflect stages; agent builds subgoals and prompt schedule.",
+              "level": "derived",
+              "reasoning": "Fixed outer workflow plus generated inner plan supports PO-2."
+            },
+            "workflow": {
+              "primary_url": "https://arxiv.org/pdf/2611.06856v1",
+              "locator": "p.3",
+              "evidence": "RPR is a serial workflow.",
+              "level": "reported"
+            },
+            "update_strategy": {
+              "primary_url": "https://arxiv.org/pdf/2611.06856v1",
+              "locator": "p.36",
+              "evidence": "Detect missing content or wrong bindings and revise prompts and repair drafts.",
+              "level": "derived",
+              "reasoning": "Targeted repair of the current draft supports Local Patch; no rollback shown."
+            },
+            "verifier": {
+              "primary_url": "https://arxiv.org/pdf/2611.06856v1",
+              "locator": "pp.7,36",
+              "evidence": "Reflect lets the agent inspect drafts and decide revision.",
+              "level": "derived",
+              "reasoning": "Same orchestration agent judges its draft; separate benchmark judge is not used as loop evidence."
+            },
+            "feedback_assessment": {
+              "primary_url": "https://arxiv.org/pdf/2611.06856v1",
+              "locator": "p.36",
+              "evidence": "Missing content and wrong bindings drive repair.",
+              "level": "derived",
+              "reasoning": "Defect diagnoses, not final benchmark scores, change subsequent actions."
+            },
+            "feedback_observation": {
+              "primary_url": "https://arxiv.org/pdf/2611.06856v1",
+              "locator": "p.36",
+              "evidence": "Agent-directed draft review.",
+              "level": "reported"
+            },
+            "memory_time": {
+              "primary_url": "https://arxiv.org/pdf/2611.06856v1",
+              "locator": "pp.7,36",
+              "evidence": "Harness maintains reference state and records revisions across generation steps.",
+              "level": "derived",
+              "reasoning": "State persists across calls within a task; cross-run persistence not established."
+            },
+            "memory_reach": {
+              "primary_url": "https://arxiv.org/pdf/2611.06856v1",
+              "locator": "p.36 Fig.18",
+              "evidence": "Shared agent state connects ReAct, Plan–Exec and Reflect.",
+              "level": "derived",
+              "reasoning": "This single orchestrator's stages share task state."
+            },
+            "action_type": {
+              "primary_url": "https://arxiv.org/pdf/2611.06856v1",
+              "locator": "p.33 C.1",
+              "evidence": "Harness calls reference browsing and image-generation tools.",
+              "level": "reported"
+            },
+            "graphics_software": {
+              "primary_url": "https://arxiv.org/pdf/2611.06856v1",
+              "locator": "pp.3,33",
+              "evidence": "Harness wraps fixed image generator and tool inventory.",
+              "level": "derived",
+              "reasoning": "Agent-facing adapter around image backends."
+            },
+            "tools": {
+              "primary_url": "https://arxiv.org/pdf/2611.06856v1",
+              "locator": "p.33",
+              "evidence": "Image-generation, OCR/count/layout, file or prompt-management tools.",
+              "level": "derived",
+              "reasoning": "Image synthesis/analysis maps to Perception models; file/prompt management to Execution Utilities."
+            },
+            "resources": {
+              "primary_url": "https://arxiv.org/pdf/2611.06856v1",
+              "locator": "pp.7,36",
+              "evidence": "Reference image inventory is retrieved during synthesis.",
+              "level": "derived",
+              "reasoning": "Reusable visual references are assets, not hidden evaluator checklists."
+            },
+            "representation": {
+              "primary_url": "https://arxiv.org/pdf/2611.06856v1",
+              "locator": "pp.7,36",
+              "evidence": "Draft and final images materialize generation state.",
+              "level": "reported"
+            }
+          },
+          "limitations": "Only 90 high-density image tasks; no 3D or video coverage. RPR gains depend on harness and can induce drift. Reproduction commands, runtime and API cost are omitted. Checklist release declarations conflict with linked project availability; not independently reproduced.",
+          "application": "2D Graphics"
+        },
+        {
+          "id": "2611.06748",
+          "title": "EvoWorld: Towards Out-of-Sight World Evolution in Generative Video Models",
+          "shortTitle": "EvoWorld: Towards Out-of-Sight World Evolution in Generative Video Models",
+          "url": "https://arxiv.org/abs/2611.06748",
+          "eventType": "first_submission",
+          "eventDate": "2026-11-04T16:26:45+00:00",
+          "sourceEventTime": "2026-11-04T16:26:45+00:00",
+          "eventLabel": "New submission",
+          "bucket": "same_day_new",
+          "scope": "core",
+          "scopeLabel": "Core",
+          "summary": "World brain's observed-event reasoning directly specifies subsequent video state; not merely a transferable world model.",
+          "applications": [
+            "Dynamic / Animation and temporal scene"
+          ],
+          "operations": [
+            "Generation"
+          ],
+          "tags": [],
+          "taxonomy": {
+            "task": [
+              "Animation"
+            ],
+            "input_form": [
+              "Language",
+              "Image"
+            ],
+            "output": [
+              "Rendered Media"
+            ],
+            "model_type": [
+              "VLM"
+            ],
+            "model_training": [
+              "Not Reported"
+            ],
+            "planning": [
+              "Not Reported"
+            ],
+            "workflow": [
+              "Sequential"
+            ],
+            "update_strategy": [
+              "Not Applicable"
+            ],
+            "verifier": [
+              "Self"
+            ],
+            "feedback_assessment": [
+              "Diagnosis"
+            ],
+            "feedback_observation": [
+              "Visual"
+            ],
+            "memory_time": [
+              "Short-Term Memory"
+            ],
+            "memory_reach": [
+              "Local Memory"
+            ],
+            "action_type": [
+              "Tool/Function Call"
+            ],
+            "graphics_software": [
+              "Agent-Adapted"
+            ],
+            "tools": [
+              "Perception models"
+            ],
+            "resources": [
+              "Assets"
+            ],
+            "representation": [
+              "Pixels",
+              "Learned State"
+            ]
+          },
+          "taxonomyEvidence": {
+            "task": {
+              "primary_url": "https://arxiv.org/pdf/2611.06748v2",
+              "locator": "§3.1",
+              "evidence": "Render event and off-screen subject reaction.",
+              "level": "derived",
+              "reasoning": "Temporal scene synthesis rather than numerical physical simulation."
+            },
+            "input_form": {
+              "primary_url": "https://arxiv.org/pdf/2611.06748v2",
+              "locator": "pp.16-17",
+              "evidence": "Controlled I2V benchmark supplies initial frame and switched prompts.",
+              "level": "reported"
+            },
+            "output": {
+              "primary_url": "https://arxiv.org/pdf/2611.06748v2",
+              "locator": "§4.2",
+              "evidence": "896x512 video at 24fps.",
+              "level": "reported"
+            },
+            "model_type": {
+              "primary_url": "https://arxiv.org/pdf/2611.06748v2",
+              "locator": "§4.2",
+              "evidence": "VLM brain instantiated with Qwen3.8-27B.",
+              "level": "reported"
+            },
+            "model_training": {
+              "primary_url": "https://arxiv.org/pdf/2611.06748v2",
+              "locator": "§4.2, Appendices B-D; full-text frozen/brain search",
+              "evidence": "LoRA training explicitly describes renderer; brain adaptation is not specified.",
+              "level": "derived",
+              "reasoning": "Do not transfer renderer training to decision-maker."
+            },
+            "planning": {
+              "primary_url": "https://arxiv.org/pdf/2611.06748v2",
+              "locator": "Appendix D; full-text plan search",
+              "evidence": "Brain produces a next-segment prompt; no explicit multi-step task plan reported.",
+              "level": "derived",
+              "reasoning": "A next action request is not a task plan; fixed benchmark phases are not brain planning."
+            },
+            "workflow": {
+              "primary_url": "https://arxiv.org/pdf/2611.06748v2",
+              "locator": "§3.3.5",
+              "evidence": "Each completed segment is observed then next segment generated.",
+              "level": "derived",
+              "reasoning": "Repeated serial observation-reason-render path."
+            },
+            "update_strategy": {
+              "primary_url": "https://arxiv.org/pdf/2611.06748v2",
+              "locator": "Appendix D and repair search",
+              "evidence": "Continuation follows realized event; prior segments are not repaired or regenerated.",
+              "level": "derived",
+              "reasoning": "No corrective artifact update of the types in codebook; semantic evolution is a new action."
+            },
+            "verifier": {
+              "primary_url": "https://arxiv.org/pdf/2611.06748v2",
+              "locator": "Appendix D Fig.7",
+              "evidence": "Brain assesses realized threat and checks resultant response.",
+              "level": "derived",
+              "reasoning": "Same brain assesses its generated scene; final benchmark judge excluded."
+            },
+            "feedback_assessment": {
+              "primary_url": "https://arxiv.org/pdf/2611.06748v2",
+              "locator": "p.18 Fig.7",
+              "evidence": "Threat assessment: DANGEROUS; observed charging changes response.",
+              "level": "derived",
+              "reasoning": "Semantic diagnosis controls subsequent prompt, not scalar benchmark scores."
+            },
+            "feedback_observation": {
+              "primary_url": "https://arxiv.org/pdf/2611.06748v2",
+              "locator": "Appendix D",
+              "evidence": "Temporally sampled frames from new segment are observed.",
+              "level": "reported"
+            },
+            "memory_time": {
+              "primary_url": "https://arxiv.org/pdf/2611.06748v2",
+              "locator": "Appendix D",
+              "evidence": "Accumulated textual world record supplied at each call.",
+              "level": "derived",
+              "reasoning": "Persistence within rollout, not cross-run Long-Term Memory."
+            },
+            "memory_reach": {
+              "primary_url": "https://arxiv.org/pdf/2611.06748v2",
+              "locator": "Appendix D",
+              "evidence": "World record provided to brain, renderer gets inferred prompt and anchors.",
+              "level": "derived",
+              "reasoning": "Brain-local record is not established as shared by all components."
+            },
+            "action_type": {
+              "primary_url": "https://arxiv.org/pdf/2611.06748v2",
+              "locator": "§3.3.5",
+              "evidence": "Concrete generation prompt conditions next renderer segment.",
+              "level": "derived",
+              "reasoning": "Renderer invocation with prompt constitutes tool action; prose is not declarative scene specification."
+            },
+            "graphics_software": {
+              "primary_url": "https://arxiv.org/pdf/2611.06748v2",
+              "locator": "§3.3, Appendix E",
+              "evidence": "Brain and anchors integrated with LTX conditioning path.",
+              "level": "derived",
+              "reasoning": "Agent adapter around video renderer."
+            },
+            "tools": {
+              "primary_url": "https://arxiv.org/pdf/2611.06748v2",
+              "locator": "§3.3",
+              "evidence": "Segment-autoregressive video renderer called with inferred instruction.",
+              "level": "derived",
+              "reasoning": "Callable generation model is Perception models under provisional codebook."
+            },
+            "resources": {
+              "primary_url": "https://arxiv.org/pdf/2611.06748v2",
+              "locator": "pp.17-18",
+              "evidence": "Opening frame used as persistent entity reference in evaluated configuration.",
+              "level": "derived",
+              "reasoning": "Visual reference asset; generated history is memory, not external examples."
+            },
+            "representation": {
+              "primary_url": "https://arxiv.org/pdf/2611.06748v2",
+              "locator": "§3.3.2",
+              "evidence": "Decoded frames and reference/temporal latents condition generation.",
+              "level": "derived",
+              "reasoning": "Frames are Pixels; video latents are Learned State. No explicit geometry."
+            }
+          },
+          "limitations": "Single event and subject reaction, mostly horizontal camera pans; no systematic complex 6-DoF or multi-event test. Controlled I2V uses first frame rather than demonstrating adaptive retrieval in main evaluation. VLM-based assessment may bias results.",
+          "application": "Dynamic / Animation and temporal scene"
+        },
+        {
+          "id": "2611.06433",
+          "title": "DreamRealm: Exploring and Materializing Hallucination Worlds for Trustworthy Vision-Language Models",
+          "shortTitle": "DreamRealm: Exploring and Materializing Hallucination Worlds for Trustworthy Vision-Language Models",
+          "url": "https://arxiv.org/abs/2611.06433",
+          "eventType": "first_submission",
+          "eventDate": "2026-11-04T12:34:12+00:00",
+          "sourceEventTime": "2026-11-04T12:34:12+00:00",
+          "eventLabel": "New submission",
+          "bucket": "same_day_new",
+          "scope": "core",
+          "scopeLabel": "Core",
+          "summary": "Data-generation planner selects image-edit type, preservation regions and candidate prompts; verified quality gates control retries and redraw fallback.",
+          "applications": [
+            "2D Graphics",
+            "Datasets and Benchmarks"
+          ],
+          "operations": [
+            "Editing"
+          ],
+          "tags": [],
+          "taxonomy": {
+            "task": [
+              "Modeling"
+            ],
+            "input_form": [
+              "Image",
+              "Language"
+            ],
+            "output": [
+              "Rendered Media"
+            ],
+            "model_type": [
+              "VLM"
+            ],
+            "model_training": [
+              "Not Reported"
+            ],
+            "planning": [
+              "PO-2"
+            ],
+            "workflow": [
+              "Graph-Structured"
+            ],
+            "update_strategy": [
+              "Regeneration",
+              "Candidate Selection"
+            ],
+            "verifier": [
+              "Self",
+              "Human"
+            ],
+            "feedback_assessment": [
+              "Binary",
+              "Score"
+            ],
+            "feedback_observation": [
+              "Visual"
+            ],
+            "memory_time": [
+              "Short-Term Memory"
+            ],
+            "memory_reach": [
+              "Local Memory"
+            ],
+            "action_type": [
+              "Tool/Function Call"
+            ],
+            "graphics_software": [
+              "Agent-Adapted"
+            ],
+            "tools": [
+              "Perception models",
+              "Execution Utilities"
+            ],
+            "resources": [
+              "Assets"
+            ],
+            "representation": [
+              "Pixels"
+            ]
+          },
+          "taxonomyEvidence": {
+            "task": {
+              "primary_url": "https://arxiv.org/pdf/2611.06433v2",
+              "locator": "§3.2",
+              "evidence": "Controlled content and structure edits materialize counterfactual scenes.",
+              "level": "derived",
+              "reasoning": "2D content modeling rather than chart-specific Visualization; task boundary noted."
+            },
+            "input_form": {
+              "primary_url": "https://arxiv.org/pdf/2611.06433v2",
+              "locator": "Alg.1",
+              "evidence": "Original image, question, ground truth and target answer.",
+              "level": "reported"
+            },
+            "output": {
+              "primary_url": "https://arxiv.org/pdf/2611.06433v2",
+              "locator": "Alg.1",
+              "evidence": "Curated edited image with QA metadata.",
+              "level": "derived",
+              "reasoning": "Exposed graphic product is raster media, not a program."
+            },
+            "model_type": {
+              "primary_url": "https://arxiv.org/pdf/2611.06433v2",
+              "locator": "p.21",
+              "evidence": "Gemini verifier observes images and plans edits.",
+              "level": "reported"
+            },
+            "model_training": {
+              "primary_url": "https://arxiv.org/pdf/2611.06433v2",
+              "locator": "Appendices E-F; training search",
+              "evidence": "Gemini API version named; adaptation not stated. Qwen training is separate.",
+              "level": "derived",
+              "reasoning": "Controller training cannot be inferred from downstream SFT or model name."
+            },
+            "planning": {
+              "primary_url": "https://arxiv.org/pdf/2611.06433v2",
+              "locator": "Alg.1 lines 6-12",
+              "evidence": "Model chooses edit type and ordered instructions within bounded loops.",
+              "level": "derived",
+              "reasoning": "Generated edit plan within fixed fallback structure."
+            },
+            "workflow": {
+              "primary_url": "https://arxiv.org/pdf/2611.06433v2",
+              "locator": "Alg.1",
+              "evidence": "Strict/relaxed/skip verification branches, retries and redraw fallback.",
+              "level": "derived",
+              "reasoning": "Substantive conditional branches exceed a single serial path."
+            },
+            "update_strategy": {
+              "primary_url": "https://arxiv.org/pdf/2611.06433v2",
+              "locator": "pp.13-14",
+              "evidence": "Failed synthesis retries; quality failure advances edit type or instruction; redraw fallback.",
+              "level": "derived",
+              "reasoning": "Regeneration retries images; Candidate Selection advances preplanned alternatives. Edits restart from original, not patch failed candidate."
+            },
+            "verifier": {
+              "primary_url": "https://arxiv.org/pdf/2611.06433v2",
+              "locator": "Alg.1, Appendix D.2",
+              "evidence": "Same V plans and verifies; human rejects final samples.",
+              "level": "derived",
+              "reasoning": "Self for planner-verifier; Human for acceptance gating, not iterative correction."
+            },
+            "feedback_assessment": {
+              "primary_url": "https://arxiv.org/pdf/2611.06433v2",
+              "locator": "Alg.1 lines 14-28",
+              "evidence": "Three 1-5 scores plus semantic-equivalence and human approval gates.",
+              "level": "derived",
+              "reasoning": "Scores route retries; binary results route acceptance or rejection."
+            },
+            "feedback_observation": {
+              "primary_url": "https://arxiv.org/pdf/2611.06433v2",
+              "locator": "§3.2",
+              "evidence": "V compares original and edited images and answers blind questions.",
+              "level": "reported"
+            },
+            "memory_time": {
+              "primary_url": "https://arxiv.org/pdf/2611.06433v2",
+              "locator": "Alg.1",
+              "evidence": "Preservation regions and instruction list retained through subsequent calls.",
+              "level": "derived",
+              "reasoning": "Explicit per-example state across calls, not cross-run learned memory."
+            },
+            "memory_reach": {
+              "primary_url": "https://arxiv.org/pdf/2611.06433v2",
+              "locator": "Alg.1",
+              "evidence": "Local per-edit plan and retry counters.",
+              "level": "derived",
+              "reasoning": "Stage-local state; universal agent sharing unestablished."
+            },
+            "action_type": {
+              "primary_url": "https://arxiv.org/pdf/2611.06433v2",
+              "locator": "Alg.1 Synth",
+              "evidence": "Invoke editor with wrapped instruction and chosen edit mode.",
+              "level": "reported"
+            },
+            "graphics_software": {
+              "primary_url": "https://arxiv.org/pdf/2611.06433v2",
+              "locator": "Alg.1",
+              "evidence": "Pipeline wraps editor modes and verification.",
+              "level": "derived",
+              "reasoning": "Agent-adapted API orchestration rather than native GUI."
+            },
+            "tools": {
+              "primary_url": "https://arxiv.org/pdf/2611.06433v2",
+              "locator": "Alg.1",
+              "evidence": "GPT-Image-2 synthesis; UploadOSS storage.",
+              "level": "derived",
+              "reasoning": "Generation is Perception models; upload is Execution Utilities."
+            },
+            "resources": {
+              "primary_url": "https://arxiv.org/pdf/2611.06433v2",
+              "locator": "Appendix D",
+              "evidence": "VisCoR original images supply edit material.",
+              "level": "derived",
+              "reasoning": "Source images are reusable assets; training examples are downstream, not demonstrations to this controller."
+            },
+            "representation": {
+              "primary_url": "https://arxiv.org/pdf/2611.06433v2",
+              "locator": "§3.2",
+              "evidence": "Original and edited raster images.",
+              "level": "reported"
+            }
+          },
+          "limitations": "Only 30.07% editing yield after human review; closed-source generation and annotation costs; planner adaptation and conversational memory unspecified. Minimality is judged, not globally optimized.",
+          "application": "2D Graphics"
+        },
+        {
+          "id": "2611.07301",
+          "title": "ArtiVidRM: Verifiable Artifact-as-Rubric Reward Modeling for Explicit Quality Articulation in Video Generation",
+          "shortTitle": "ArtiVidRM: Verifiable Artifact-as-Rubric Reward Modeling for Explicit Quality Articulation in Video Generation",
+          "url": "https://arxiv.org/abs/2611.07301",
+          "eventType": "first_submission",
+          "eventDate": "2026-11-05T01:37:25+00:00",
+          "sourceEventTime": "2026-11-05T01:37:25+00:00",
+          "eventLabel": "New submission",
+          "bucket": "same_day_new",
+          "scope": "core",
+          "scopeLabel": "Core",
+          "summary": "In the demonstrated two-round refinement application, model-chosen visual defects determine prompt feedback that changes subsequent video generation; simple fixed control rather than autonomous planning.",
+          "applications": [
+            "Dynamic / Animation and temporal scene"
+          ],
+          "operations": [
+            "Generation"
+          ],
+          "tags": [],
+          "taxonomy": {
+            "task": [
+              "Animation"
+            ],
+            "input_form": [
+              "Language",
+              "Video"
+            ],
+            "output": [
+              "Rendered Media"
+            ],
+            "model_type": [
+              "VLM"
+            ],
+            "model_training": [
+              "Supervised Fine-Tuning",
+              "RL Post-Training"
+            ],
+            "planning": [
+              "Not Applicable"
+            ],
+            "workflow": [
+              "Sequential"
+            ],
+            "update_strategy": [
+              "Regeneration"
+            ],
+            "verifier": [
+              "Critic"
+            ],
+            "feedback_assessment": [
+              "Diagnosis"
+            ],
+            "feedback_observation": [
+              "Visual"
+            ],
+            "memory_time": [
+              "Short-Term Memory"
+            ],
+            "memory_reach": [
+              "Local Memory"
+            ],
+            "action_type": [
+              "Tool/Function Call"
+            ],
+            "graphics_software": [
+              "Agent-Adapted"
+            ],
+            "tools": [
+              "Perception models"
+            ],
+            "resources": [
+              "Not Reported"
+            ],
+            "representation": [
+              "Pixels"
+            ]
+          },
+          "taxonomyEvidence": {
+            "task": {
+              "primary_url": "https://arxiv.org/pdf/2611.07301v1",
+              "locator": "§4.3",
+              "evidence": "Refines generated video motion, rendering and temporal quality.",
+              "level": "derived",
+              "reasoning": "Temporal media creation maps to Animation."
+            },
+            "input_form": {
+              "primary_url": "https://arxiv.org/pdf/2611.07301v1",
+              "locator": "§4.3",
+              "evidence": "Initial generated video and original text prompt supplied to refinement.",
+              "level": "reported"
+            },
+            "output": {
+              "primary_url": "https://arxiv.org/pdf/2611.07301v1",
+              "locator": "§4.3",
+              "evidence": "Second-round refined video.",
+              "level": "reported"
+            },
+            "model_type": {
+              "primary_url": "https://arxiv.org/pdf/2611.07301v1",
+              "locator": "§4 p.6",
+              "evidence": "Qwen3-VL-8B-Instruct backbone.",
+              "level": "reported"
+            },
+            "model_training": {
+              "primary_url": "https://arxiv.org/pdf/2611.07301v1",
+              "locator": "§3.2",
+              "evidence": "Stage I supervised artifact training; Stage II GRPO with artifact and preference rewards.",
+              "level": "reported"
+            },
+            "planning": {
+              "primary_url": "https://arxiv.org/pdf/2611.07301v1",
+              "locator": "§4.3; full-text plan search",
+              "evidence": "Fixed two-round generation with no explicit task plan.",
+              "level": "derived",
+              "reasoning": "This local critique operation does not plan; avoid equating fixed order with explicit plan."
+            },
+            "workflow": {
+              "primary_url": "https://arxiv.org/pdf/2611.07301v1",
+              "locator": "§4.3",
+              "evidence": "Initial video, critique, append feedback, regenerate.",
+              "level": "reported"
+            },
+            "update_strategy": {
+              "primary_url": "https://arxiv.org/pdf/2611.07301v1",
+              "locator": "p.9",
+              "evidence": "Refined video is a fresh generation rather than edit.",
+              "level": "reported"
+            },
+            "verifier": {
+              "primary_url": "https://arxiv.org/pdf/2611.07301v1",
+              "locator": "§4.3",
+              "evidence": "ArtiVidRM critiques separate Veo output.",
+              "level": "derived",
+              "reasoning": "Distinct model critic, not self or human loop evaluator."
+            },
+            "feedback_assessment": {
+              "primary_url": "https://arxiv.org/pdf/2611.07301v1",
+              "locator": "§4.3",
+              "evidence": "Artifact list becomes feedback; scalar reward use pertains to separate training.",
+              "level": "derived",
+              "reasoning": "Only defect diagnosis is demonstrated to affect second-round prompt."
+            },
+            "feedback_observation": {
+              "primary_url": "https://arxiv.org/pdf/2611.07301v1",
+              "locator": "§4.3",
+              "evidence": "Visible generated-video defects inspected.",
+              "level": "reported"
+            },
+            "memory_time": {
+              "primary_url": "https://arxiv.org/pdf/2611.07301v1",
+              "locator": "§4.3",
+              "evidence": "Original prompt and returned artifact list carried to next generation.",
+              "level": "derived",
+              "reasoning": "Minimal retained per-example state across calls, no long-term memory."
+            },
+            "memory_reach": {
+              "primary_url": "https://arxiv.org/pdf/2611.07301v1",
+              "locator": "§4.3",
+              "evidence": "Feedback retained for local second-generation invocation.",
+              "level": "derived",
+              "reasoning": "No shared multi-agent memory store; local controller state only."
+            },
+            "action_type": {
+              "primary_url": "https://arxiv.org/pdf/2611.07301v1",
+              "locator": "§4.3",
+              "evidence": "Invoke Veo with appended critique.",
+              "level": "derived",
+              "reasoning": "Tool invocation, no code or GUI action demonstrated."
+            },
+            "graphics_software": {
+              "primary_url": "https://arxiv.org/pdf/2611.07301v1",
+              "locator": "§4.3",
+              "evidence": "Feedback loop wraps closed-source generator.",
+              "level": "derived",
+              "reasoning": "Agent-adapted conditioning around existing backend."
+            },
+            "tools": {
+              "primary_url": "https://arxiv.org/pdf/2611.07301v1",
+              "locator": "§4.3",
+              "evidence": "Veo-3.1 generation and ArtiVidRM diagnosis.",
+              "level": "derived",
+              "reasoning": "Callable generative/perceptual models under provisional tools definition."
+            },
+            "resources": {
+              "primary_url": "https://arxiv.org/pdf/2611.07301v1",
+              "locator": "§4.3, Appendices A-D; memory search",
+              "evidence": "No retrieved reusable resource specified for task-time loop.",
+              "level": "derived",
+              "reasoning": "Training video datasets are not runtime resources."
+            },
+            "representation": {
+              "primary_url": "https://arxiv.org/pdf/2611.07301v1",
+              "locator": "§4.3",
+              "evidence": "Raster video input/output; no explicit 3D state.",
+              "level": "reported"
+            }
+          },
+          "limitations": "Only one feedback-conditioned regeneration demonstrated, not long-horizon agent planning. Fresh generation can introduce defects; small human evaluation. Principal paper contribution is the critic, so a narrower agent definition could treat this as enabling rather than core.",
+          "application": "Dynamic / Animation and temporal scene"
+        },
+        {
+          "id": "2611.06890",
+          "title": "Procedural Adversarial Learning",
+          "shortTitle": "Procedural Adversarial Learning",
+          "url": "https://arxiv.org/abs/2611.06890",
+          "eventType": "first_submission",
+          "eventDate": "2026-11-04T18:42:28+00:00",
+          "sourceEventTime": "2026-11-04T18:42:28+00:00",
+          "eventLabel": "New submission",
+          "bucket": "same_day_new",
+          "scope": "scope_dependent",
+          "scopeLabel": "Scope dependent",
+          "summary": "Adaptive adversarial scene generation is a defensible transferable graphics-auditing mechanism, but actual controller is numerical CMA-ES, not an established agent system. Do not equate minimax optimization with agency.",
+          "applications": [
+            "Static / Scene",
+            "Datasets and Benchmarks"
+          ],
+          "operations": [
+            "Generation"
+          ],
+          "tags": [],
+          "taxonomy": {
+            "task": [
+              "Modeling"
+            ],
+            "input_form": [
+              "Not Applicable"
+            ],
+            "output": [
+              "Rendered Media"
+            ],
+            "model_type": [
+              "Not Applicable"
+            ],
+            "model_training": [
+              "Not Applicable"
+            ],
+            "planning": [
+              "Not Applicable"
+            ],
+            "workflow": [
+              "Parallel"
+            ],
+            "update_strategy": [
+              "Candidate Selection"
+            ],
+            "verifier": [
+              "Programmatic"
+            ],
+            "feedback_assessment": [
+              "Score"
+            ],
+            "feedback_observation": [
+              "Structural Scene State"
+            ],
+            "memory_time": [
+              "Short-Term Memory"
+            ],
+            "memory_reach": [
+              "Local Memory"
+            ],
+            "action_type": [
+              "Structured Specification"
+            ],
+            "graphics_software": [
+              "General-Purpose"
+            ],
+            "tools": [
+              "Graphics Operations"
+            ],
+            "resources": [
+              "Assets"
+            ],
+            "representation": [
+              "Geometry",
+              "Pixels"
+            ]
+          },
+          "taxonomyEvidence": {
+            "task": {
+              "primary_url": "https://arxiv.org/pdf/2611.06890v1",
+              "locator": "§3",
+              "evidence": "Procedurally configure objects, layout, lighting and static poses.",
+              "level": "derived",
+              "reasoning": "Static scene modeling for synthetic samples, not motion animation."
+            },
+            "input_form": {
+              "primary_url": "https://arxiv.org/pdf/2611.06890v1",
+              "locator": "Alg.1",
+              "evidence": "Input is generator function, numeric losses and sampler hyperparameters.",
+              "level": "derived",
+              "reasoning": "No end-user modality from the codebook is supplied to this optimizer."
+            },
+            "output": {
+              "primary_url": "https://arxiv.org/pdf/2611.06890v1",
+              "locator": "§3",
+              "evidence": "Generator yields rendered image and ground-truth label.",
+              "level": "reported"
+            },
+            "model_type": {
+              "primary_url": "https://arxiv.org/pdf/2611.06890v1",
+              "locator": "§4, Appendix A",
+              "evidence": "CMA-ES is zeroth-order optimizer; trained UNet is learner, not controller.",
+              "level": "derived",
+              "reasoning": "No LLM/VLM decision model in selected subsystem."
+            },
+            "model_training": {
+              "primary_url": "https://arxiv.org/pdf/2611.06890v1",
+              "locator": "§4",
+              "evidence": "Numerical sampler updates are CMA-ES; gradient training concerns learner.",
+              "level": "derived",
+              "reasoning": "No controller model training of permitted types."
+            },
+            "planning": {
+              "primary_url": "https://arxiv.org/pdf/2611.06890v1",
+              "locator": "Alg.1",
+              "evidence": "Fixed optimization iteration without task plan.",
+              "level": "derived",
+              "reasoning": "Task planning does not apply to numeric optimizer."
+            },
+            "workflow": {
+              "primary_url": "https://arxiv.org/pdf/2611.06890v1",
+              "locator": "§4, Appendix A",
+              "evidence": "16 CMA-ES instances contribute samples to one batch before aggregate updates.",
+              "level": "derived",
+              "reasoning": "Parallel proposal paths aggregate to common batch."
+            },
+            "update_strategy": {
+              "primary_url": "https://arxiv.org/pdf/2611.06890v1",
+              "locator": "§4",
+              "evidence": "Fitness selects sampling distributions; least-fit instances replaced.",
+              "level": "derived",
+              "reasoning": "Selection over proposed scene candidates/distributions, not semantic replanning."
+            },
+            "verifier": {
+              "primary_url": "https://arxiv.org/pdf/2611.06890v1",
+              "locator": "Alg.1 FITNESS",
+              "evidence": "Compute numeric prediction error against procedural labels.",
+              "level": "derived",
+              "reasoning": "Code computes feedback, not a language critic."
+            },
+            "feedback_assessment": {
+              "primary_url": "https://arxiv.org/pdf/2611.06890v1",
+              "locator": "pp.6-7",
+              "evidence": "Task error plus separation fitness controls sampler updates.",
+              "level": "reported"
+            },
+            "feedback_observation": {
+              "primary_url": "https://arxiv.org/pdf/2611.06890v1",
+              "locator": "Alg.1",
+              "evidence": "Prediction and label discrepancies and parameter-space distances.",
+              "level": "derived",
+              "reasoning": "Structural/task statistics feed numeric controller, not visual reasoning or runtime errors."
+            },
+            "memory_time": {
+              "primary_url": "https://arxiv.org/pdf/2611.06890v1",
+              "locator": "§4",
+              "evidence": "Mean/covariance and pooled two-generation fitness retained until reset.",
+              "level": "derived",
+              "reasoning": "Optimizer state persists within training run."
+            },
+            "memory_reach": {
+              "primary_url": "https://arxiv.org/pdf/2611.06890v1",
+              "locator": "§4",
+              "evidence": "Each sampler maintains its distribution.",
+              "level": "derived",
+              "reasoning": "Local optimizer memory; reset computes cross-sampler distances without implying global agent memory."
+            },
+            "action_type": {
+              "primary_url": "https://arxiv.org/pdf/2611.06890v1",
+              "locator": "§3",
+              "evidence": "Parameter vector specifies procedural scene.",
+              "level": "derived",
+              "reasoning": "Numeric declarative graphics controls interpreted by generator."
+            },
+            "graphics_software": {
+              "primary_url": "https://arxiv.org/pdf/2611.06890v1",
+              "locator": "§3.2",
+              "evidence": "Custom fast backend adapted from ProcFunc, not an agent interface.",
+              "level": "derived",
+              "reasoning": "General procedural software, agent readiness not demonstrated."
+            },
+            "tools": {
+              "primary_url": "https://arxiv.org/pdf/2611.06890v1",
+              "locator": "§3, Alg.1",
+              "evidence": "Generator creates objects and renders selected scene parameters.",
+              "level": "derived",
+              "reasoning": "Callable graphics creation capability."
+            },
+            "resources": {
+              "primary_url": "https://arxiv.org/pdf/2611.06890v1",
+              "locator": "§3.3",
+              "evidence": "Anny human model, MakeHuman clothing and CMU pose archetypes.",
+              "level": "derived",
+              "reasoning": "Reusable geometric/pose assets used by generator."
+            },
+            "representation": {
+              "primary_url": "https://arxiv.org/pdf/2611.06890v1",
+              "locator": "§3",
+              "evidence": "Explicit room/object/pose geometry rendered as images.",
+              "level": "derived",
+              "reasoning": "Geometry and Pixels both materialize workflow; generated programs not output."
+            }
+          },
+          "limitations": "Simplified 13–69-dimensional generators; finite search cannot certify true worst case, discontinuities hide failures, typical-case error can worsen. Transfer to actual graphics agents is untested.",
+          "application": "Static / Scene"
+        },
+        {
+          "id": "2609.37314",
+          "title": "FLASH: A \"Generate Once, Synthesize Many\" Framework for Synthetic Anomaly Generation in Industrial Anomaly Detection",
+          "shortTitle": "FLASH: A \"Generate Once, Synthesize Many\" Framework for Synthetic Anomaly Generation in Industrial Anomaly Detection",
+          "url": "https://arxiv.org/abs/2609.37314",
+          "eventType": "revision",
+          "eventDate": "2026-11-04T21:21:33+00:00",
+          "sourceEventTime": "2026-11-04T21:21:33+00:00",
+          "eventLabel": "Revision",
+          "bucket": "same_day_updates",
+          "scope": "core",
+          "scopeLabel": "Core",
+          "summary": "VLM selects concrete defect, target and placement instructions that control image generation; schema/semantic rejection retries modify its specification. Validated images are selected for graphics reuse.",
+          "applications": [
+            "2D Graphics"
+          ],
+          "operations": [
+            "Generation",
+            "Editing"
+          ],
+          "tags": [],
+          "taxonomy": {
+            "task": [
+              "Modeling"
+            ],
+            "input_form": [
+              "Image",
+              "Document"
+            ],
+            "output": [
+              "Graphics Artifact"
+            ],
+            "model_type": [
+              "VLM"
+            ],
+            "model_training": [
+              "Not Reported"
+            ],
+            "planning": [
+              "Not Applicable"
+            ],
+            "workflow": [
+              "Sequential"
+            ],
+            "update_strategy": [
+              "Regeneration",
+              "Candidate Selection"
+            ],
+            "verifier": [
+              "Programmatic",
+              "Critic",
+              "Human"
+            ],
+            "feedback_assessment": [
+              "Binary",
+              "Diagnosis"
+            ],
+            "feedback_observation": [
+              "Visual",
+              "Structural Scene State"
+            ],
+            "memory_time": [
+              "Short-Term Memory"
+            ],
+            "memory_reach": [
+              "Local Memory"
+            ],
+            "action_type": [
+              "Structured Specification"
+            ],
+            "graphics_software": [
+              "Agent-Adapted"
+            ],
+            "tools": [
+              "Perception models",
+              "Static Validator",
+              "Graphics Operations"
+            ],
+            "resources": [
+              "Documentation & Rules",
+              "Assets"
+            ],
+            "representation": [
+              "Pixels"
+            ]
+          },
+          "taxonomyEvidence": {
+            "task": {
+              "primary_url": "https://arxiv.org/pdf/2609.37314v2",
+              "locator": "§3.1",
+              "evidence": "Material-specific controlled content alteration of industrial images.",
+              "level": "derived",
+              "reasoning": "2D content modeling, not explanatory visualization."
+            },
+            "input_form": {
+              "primary_url": "https://arxiv.org/pdf/2609.37314v2",
+              "locator": "p.3",
+              "evidence": "Normal image plus Config File with dataset context and constraints.",
+              "level": "derived",
+              "reasoning": "Image and structured configuration document are task inputs."
+            },
+            "output": {
+              "primary_url": "https://arxiv.org/pdf/2609.37314v2",
+              "locator": "Appendix G Storage",
+              "evidence": "Reusable RGB crop, soft alpha mask and scale metadata.",
+              "level": "derived",
+              "reasoning": "Reusable masked graphics artifact rather than only display raster."
+            },
+            "model_type": {
+              "primary_url": "https://arxiv.org/pdf/2609.37314v2",
+              "locator": "pp.3-4",
+              "evidence": "Both VLM roles use Qwen2.5-VL-7B-Instruct.",
+              "level": "reported"
+            },
+            "model_training": {
+              "primary_url": "https://arxiv.org/pdf/2609.37314v2",
+              "locator": "Appendices A-B, G; fine-tun/frozen search",
+              "evidence": "Inference and frozen templates described, but no explicit controller adaptation statement.",
+              "level": "derived",
+              "reasoning": "Frozen configuration does not prove frozen model weights."
+            },
+            "planning": {
+              "primary_url": "https://arxiv.org/pdf/2609.37314v2",
+              "locator": "Appendix B",
+              "evidence": "Single defect specification, no represented multistep plan.",
+              "level": "derived",
+              "reasoning": "Local specification generation does not perform task planning."
+            },
+            "workflow": {
+              "primary_url": "https://arxiv.org/pdf/2609.37314v2",
+              "locator": "Fig.1",
+              "evidence": "Generate, extract, validate, store.",
+              "level": "derived",
+              "reasoning": "Serial staged workflow with bounded local retry."
+            },
+            "update_strategy": {
+              "primary_url": "https://arxiv.org/pdf/2609.37314v2",
+              "locator": "pp.12,18-19",
+              "evidence": "Rejected specs retried; accepted crops enter bank; invalid crops rejected.",
+              "level": "derived",
+              "reasoning": "Regeneration of rejected specification; Candidate Selection for crop admission."
+            },
+            "verifier": {
+              "primary_url": "https://arxiv.org/pdf/2609.37314v2",
+              "locator": "Appendices B,G",
+              "evidence": "Schema/contrast checks; VLM-2 semantic check; human review of rejected crops.",
+              "level": "derived",
+              "reasoning": "Programmatic checks change routing; separate critic role selects crops; human overrides admissions."
+            },
+            "feedback_assessment": {
+              "primary_url": "https://arxiv.org/pdf/2609.37314v2",
+              "locator": "pp.12,18-19",
+              "evidence": "Rejection reasons appended to retry; defect true/false gates storage.",
+              "level": "reported"
+            },
+            "feedback_observation": {
+              "primary_url": "https://arxiv.org/pdf/2609.37314v2",
+              "locator": "Appendices B,G",
+              "evidence": "Normal/anomaly crops inspected; specification schema, contrast and category validity checked.",
+              "level": "derived",
+              "reasoning": "Visual crops and structural validation evidence; no runtime feedback claimed."
+            },
+            "memory_time": {
+              "primary_url": "https://arxiv.org/pdf/2609.37314v2",
+              "locator": "p.12",
+              "evidence": "Used defect names and rejection reasons retained for subsequent attempts.",
+              "level": "derived",
+              "reasoning": "Within-category retained state; stored logs alone do not prove cross-run controller memory."
+            },
+            "memory_reach": {
+              "primary_url": "https://arxiv.org/pdf/2609.37314v2",
+              "locator": "Appendix B",
+              "evidence": "Specification role tracks duplicate names and rejection reasons.",
+              "level": "derived",
+              "reasoning": "Stage-local state; no universal sharing reported."
+            },
+            "action_type": {
+              "primary_url": "https://arxiv.org/pdf/2609.37314v2",
+              "locator": "Appendix B",
+              "evidence": "Four structured fields inserted into generation template.",
+              "level": "derived",
+              "reasoning": "Declarative defect specification interpreted by wrapper, not agent-written executable program."
+            },
+            "graphics_software": {
+              "primary_url": "https://arxiv.org/pdf/2609.37314v2",
+              "locator": "§3.1",
+              "evidence": "Custom template/config wrapper around image model.",
+              "level": "derived",
+              "reasoning": "Agent-adapted generator interface."
+            },
+            "tools": {
+              "primary_url": "https://arxiv.org/pdf/2609.37314v2",
+              "locator": "§3.1-3.3",
+              "evidence": "Image model; schema/contrast validators; registration and crop extraction.",
+              "level": "derived",
+              "reasoning": "Perception models for generation/analysis; Static Validator for checks; Graphics Operations for extraction."
+            },
+            "resources": {
+              "primary_url": "https://arxiv.org/pdf/2609.37314v2",
+              "locator": "Appendix B",
+              "evidence": "Config defect vocabulary and frozen rules; three normal donor images/category.",
+              "level": "derived",
+              "reasoning": "Rules and source assets actually accessed; downstream bank not controller long-term experience."
+            },
+            "representation": {
+              "primary_url": "https://arxiv.org/pdf/2609.37314v2",
+              "locator": "§3",
+              "evidence": "Normal/anomaly RGB frames, masks and crops.",
+              "level": "reported"
+            }
+          },
+          "limitations": "Full text reports estimated 13.8x speedup excluding VLM and extraction costs, unlike abstract-page 11.95x. Human rescue of rejected crops appears in supplement despite main text annotation-free wording. No cross-dataset validation; several simpler ablations improve pixel F1.",
+          "application": "2D Graphics"
+        },
+        {
+          "id": "2611.06627",
+          "title": "Interactive World Simulation with Cosmos for Physical AI",
+          "shortTitle": "Interactive World Simulation with Cosmos for Physical AI",
+          "url": "https://arxiv.org/abs/2611.06627",
+          "eventType": "first_submission",
+          "eventDate": "2026-11-04T15:11:04+00:00",
+          "sourceEventTime": "2026-11-04T15:11:04+00:00",
+          "eventLabel": "New submission",
+          "bucket": "same_day_new",
+          "scope": "enabling_or_adjacent",
+          "scopeLabel": "Adjacent",
+          "summary": "Principal contribution is an explicit agent-facing observation renderer, not a new graphics action planner. Actual GR00T closed-loop simulator evaluation supports enabling scope beyond speculative transfer.",
+          "applications": [
+            "Dynamic / Physical simulation and effects"
+          ],
+          "operations": [
+            "Generation"
+          ],
+          "tags": [],
+          "taxonomy": {
+            "task": [
+              "Simulation"
+            ],
+            "input_form": [
+              "Language",
+              "Video"
+            ],
+            "output": [
+              "Rendered Media"
+            ],
+            "model_type": [
+              "Not Applicable"
+            ],
+            "model_training": [
+              "Not Applicable"
+            ],
+            "planning": [
+              "Not Applicable"
+            ],
+            "workflow": [
+              "Sequential"
+            ],
+            "update_strategy": [
+              "Not Applicable"
+            ],
+            "verifier": [
+              "Not Applicable"
+            ],
+            "feedback_assessment": [
+              "Not Applicable"
+            ],
+            "feedback_observation": [
+              "Not Applicable"
+            ],
+            "memory_time": [
+              "Short-Term Memory"
+            ],
+            "memory_reach": [
+              "Local Memory"
+            ],
+            "action_type": [
+              "Not Applicable"
+            ],
+            "graphics_software": [
+              "Agent-Adapted"
+            ],
+            "tools": [
+              "Perception models"
+            ],
+            "resources": [
+              "Not Reported"
+            ],
+            "representation": [
+              "Pixels",
+              "Learned State"
+            ]
+          },
+          "taxonomyEvidence": {
+            "task": {
+              "primary_url": "https://arxiv.org/pdf/2611.06627v1",
+              "locator": "§6",
+              "evidence": "Generate observations for simulated robot policy experience.",
+              "level": "derived",
+              "reasoning": "Simulation observation role, not static authoring or generic animation."
+            },
+            "input_form": {
+              "primary_url": "https://arxiv.org/pdf/2611.06627v1",
+              "locator": "§6.1",
+              "evidence": "Language appearance prompt and streaming depth/segmentation/edge/blur control frames.",
+              "level": "derived",
+              "reasoning": "Temporal control images constitute Video, not raw 3D representation."
+            },
+            "output": {
+              "primary_url": "https://arxiv.org/pdf/2611.06627v1",
+              "locator": "p.38",
+              "evidence": "Four RGB observations per update.",
+              "level": "reported"
+            },
+            "model_type": {
+              "primary_url": "https://arxiv.org/pdf/2611.06627v1",
+              "locator": "§6.1",
+              "evidence": "Cosmos renders supplied controls; external policy chooses actions.",
+              "level": "derived",
+              "reasoning": "No agentic decision-maker in selected enabling component; MoT architecture alone does not warrant Hybrid."
+            },
+            "model_training": {
+              "primary_url": "https://arxiv.org/pdf/2611.06627v1",
+              "locator": "§6.3",
+              "evidence": "Renderer undergoes RF/teacher-forcing/consistency/DMD training; policy separately fine-tuned.",
+              "level": "derived",
+              "reasoning": "Codebook concerns decision model; no such controller in selected subsystem."
+            },
+            "planning": {
+              "primary_url": "https://arxiv.org/pdf/2611.06627v1",
+              "locator": "§4.1, §6.1; planner search",
+              "evidence": "Predict next chunk under supplied controls.",
+              "level": "derived",
+              "reasoning": "Renderer neither represents nor chooses task plans."
+            },
+            "workflow": {
+              "primary_url": "https://arxiv.org/pdf/2611.06627v1",
+              "locator": "§6.4",
+              "evidence": "Encode controls, denoise chunk, refresh cache, decode and continue.",
+              "level": "derived",
+              "reasoning": "Evaluated transfer path is sequential chunk generation; optional other-backend parallelism not mixed in."
+            },
+            "update_strategy": {
+              "primary_url": "https://arxiv.org/pdf/2611.06627v1",
+              "locator": "§6.4",
+              "evidence": "Continues next chunk; no judge-driven repair.",
+              "level": "derived",
+              "reasoning": "Cache update is not a corrective artifact update."
+            },
+            "verifier": {
+              "primary_url": "https://arxiv.org/pdf/2611.06627v1",
+              "locator": "§6.5",
+              "evidence": "Quality and task-success metrics are final evaluation, not renderer critique.",
+              "level": "derived",
+              "reasoning": "No in-loop verifier in selected renderer."
+            },
+            "feedback_assessment": {
+              "primary_url": "https://arxiv.org/pdf/2611.06627v1",
+              "locator": "§6.4-6.5",
+              "evidence": "No per-chunk judgment changes rendering; completed output becomes history.",
+              "level": "derived",
+              "reasoning": "Autoregressive conditioning is not assessment feedback."
+            },
+            "feedback_observation": {
+              "primary_url": "https://arxiv.org/pdf/2611.06627v1",
+              "locator": "§6.1",
+              "evidence": "Depth is an input control, not verifier evidence.",
+              "level": "derived",
+              "reasoning": "Keep incoming conditions separate from corrective feedback."
+            },
+            "memory_time": {
+              "primary_url": "https://arxiv.org/pdf/2611.06627v1",
+              "locator": "pp.17-18,38",
+              "evidence": "30-latent-frame cache, three sinks and decoder state persist within rollout.",
+              "level": "derived",
+              "reasoning": "Cross-call within-session memory; not cross-run experience."
+            },
+            "memory_reach": {
+              "primary_url": "https://arxiv.org/pdf/2611.06627v1",
+              "locator": "§4.1",
+              "evidence": "Generator history and decoder state internal to renderer.",
+              "level": "derived",
+              "reasoning": "Not shared policy memory."
+            },
+            "action_type": {
+              "primary_url": "https://arxiv.org/pdf/2611.06627v1",
+              "locator": "§6.1",
+              "evidence": "Renderer consumes conditions and emits observations, not commands.",
+              "level": "derived",
+              "reasoning": "External policy's actions are not renderer actions."
+            },
+            "graphics_software": {
+              "primary_url": "https://arxiv.org/pdf/2611.06627v1",
+              "locator": "§6.5 Appendix C.4",
+              "evidence": "Cosmos wrapper connects Isaac depth controls to policy RGB interface.",
+              "level": "derived",
+              "reasoning": "Adapted neural rendering interface within existing simulation environment."
+            },
+            "tools": {
+              "primary_url": "https://arxiv.org/pdf/2611.06627v1",
+              "locator": "§6.4",
+              "evidence": "Causal Wan2.2 encoder/decoder and Cosmos generator.",
+              "level": "derived",
+              "reasoning": "Callable neural rendering components; Isaac physics belongs external environment, not renderer solver validation."
+            },
+            "resources": {
+              "primary_url": "https://arxiv.org/pdf/2611.06627v1",
+              "locator": "§6.4, Appendix C.4",
+              "evidence": "No asset/example/document retrieval inside renderer reported.",
+              "level": "derived",
+              "reasoning": "Training collection and external simulator scene are not retrieved runtime resources of this component."
+            },
+            "representation": {
+              "primary_url": "https://arxiv.org/pdf/2611.06627v1",
+              "locator": "§6.1,6.4",
+              "evidence": "Spatial control frames, RGB output, VAE latents and cached keys/values.",
+              "level": "derived",
+              "reasoning": "Pixels plus Learned State; external physical state is intentionally separate."
+            }
+          },
+          "limitations": "Policy comparison is calibration-set only, not held-out generalization; several checkpoints/appearance variants worsen. Transfer throughput often below real-time playback, and startup is expensive. Long rollouts hallucinate objects, deform geometry and drift. Camera/AV prerecorded controls do not alone demonstrate adaptive agent use.",
+          "application": "Dynamic / Physical simulation and effects"
+        },
+        {
+          "id": "2611.06518",
+          "title": "EmoReward: Self-Evolving Reward Calibration for Emotional Video Generation RL",
+          "shortTitle": "EmoReward: Self-Evolving Reward Calibration for Emotional Video Generation RL",
+          "url": "https://arxiv.org/abs/2611.06518",
+          "eventType": "first_submission",
+          "eventDate": "2026-11-04T13:43:09+00:00",
+          "sourceEventTime": "2026-11-04T13:43:09+00:00",
+          "eventLabel": "New submission",
+          "bucket": "same_day_new",
+          "scope": "scope_dependent",
+          "scopeLabel": "Scope dependent",
+          "summary": "Useful experience-calibrated graphics reward mechanism, but paper expressly says Act does not generate or revise video. Numeric provider allocation and generator RL do not alone establish agent action on graphics; actual planner implementation is underspecified.",
+          "applications": [
+            "Dynamic / Animation and temporal scene"
+          ],
+          "operations": [
+            "Auditing"
+          ],
+          "tags": [],
+          "taxonomy": {
+            "task": [
+              "Animation"
+            ],
+            "input_form": [
+              "Language",
+              "Video"
+            ],
+            "output": [
+              "Not Applicable"
+            ],
+            "model_type": [
+              "Not Reported"
+            ],
+            "model_training": [
+              "Not Reported"
+            ],
+            "planning": [
+              "Unclear"
+            ],
+            "workflow": [
+              "Sequential"
+            ],
+            "update_strategy": [
+              "Not Applicable"
+            ],
+            "verifier": [
+              "Programmatic"
+            ],
+            "feedback_assessment": [
+              "Score"
+            ],
+            "feedback_observation": [
+              "Structural Scene State"
+            ],
+            "memory_time": [
+              "Long-Term Memory"
+            ],
+            "memory_reach": [
+              "Local Memory"
+            ],
+            "action_type": [
+              "Not Applicable"
+            ],
+            "graphics_software": [
+              "Not Applicable"
+            ],
+            "tools": [
+              "Perception models"
+            ],
+            "resources": [
+              "Examples & Trajectories"
+            ],
+            "representation": [
+              "Pixels"
+            ]
+          },
+          "taxonomyEvidence": {
+            "task": {
+              "primary_url": "https://arxiv.org/pdf/2611.06518v1",
+              "locator": "§3",
+              "evidence": "Evaluates emotional gesture, expression and temporal motion in video generation.",
+              "level": "derived",
+              "reasoning": "Animation-quality purpose; evaluator itself does not author animation."
+            },
+            "input_form": {
+              "primary_url": "https://arxiv.org/pdf/2611.06518v1",
+              "locator": "Alg.1",
+              "evidence": "Prompt p and generated video x.",
+              "level": "reported"
+            },
+            "output": {
+              "primary_url": "https://arxiv.org/pdf/2611.06518v1",
+              "locator": "Alg.1 line 15",
+              "evidence": "Returns scalar total reward.",
+              "level": "derived",
+              "reasoning": "Scalar reward is none of four graphics-product labels; EmoScript is intermediate."
+            },
+            "model_type": {
+              "primary_url": "https://arxiv.org/pdf/2611.06518v1",
+              "locator": "§3.3, Appendix C; planner/GPT/Qwen searches",
+              "evidence": "Planner converts prompt to EmoScript but model or algorithm unspecified; named VLMs are scoring providers.",
+              "level": "derived",
+              "reasoning": "Do not use a verifier model to infer planner architecture."
+            },
+            "model_training": {
+              "primary_url": "https://arxiv.org/pdf/2611.06518v1",
+              "locator": "§3.3-3.5; full-text mechanism search",
+              "evidence": "Providers frozen; generator RL specified; planner training not stated.",
+              "level": "derived",
+              "reasoning": "Neither provider freezing nor generator training establishes planner training."
+            },
+            "planning": {
+              "primary_url": "https://arxiv.org/pdf/2611.06518v1",
+              "locator": "§3.3",
+              "evidence": "Called Plan but EmoScript specifies affect targets and expression windows, not clear task steps.",
+              "level": "derived",
+              "reasoning": "Ambiguous whether evaluative rubric constitutes taxonomy task plan."
+            },
+            "workflow": {
+              "primary_url": "https://arxiv.org/pdf/2611.06518v1",
+              "locator": "Algorithms 1-2",
+              "evidence": "Ground, score, gate, look up and fuse; export table after completed reference run.",
+              "level": "derived",
+              "reasoning": "Ordered stages; no reported parallel execution required."
+            },
+            "update_strategy": {
+              "primary_url": "https://arxiv.org/pdf/2611.06518v1",
+              "locator": "§3.3,3.5",
+              "evidence": "No video revisions; table remains frozen during subsequent run.",
+              "level": "derived",
+              "reasoning": "Weight calibration is not artifact regeneration, patching or replanning."
+            },
+            "verifier": {
+              "primary_url": "https://arxiv.org/pdf/2611.06518v1",
+              "locator": "Algorithm 2",
+              "evidence": "Correlation computes provider reliability against outcomes.",
+              "level": "derived",
+              "reasoning": "Programmatic assessment determines next-run allocation; human study is final evaluation only."
+            },
+            "feedback_assessment": {
+              "primary_url": "https://arxiv.org/pdf/2611.06518v1",
+              "locator": "Eq.9-10",
+              "evidence": "Correlations and centered reliability advantages tilt weights.",
+              "level": "reported"
+            },
+            "feedback_observation": {
+              "primary_url": "https://arxiv.org/pdf/2611.06518v1",
+              "locator": "§3.5",
+              "evidence": "Recorded context, provider scores, gates and outcome y.",
+              "level": "derived",
+              "reasoning": "Allocator receives structured task statistics; videos are scorer inputs, not allocator visual feedback."
+            },
+            "memory_time": {
+              "primary_url": "https://arxiv.org/pdf/2611.06518v1",
+              "locator": "§3.5 Appendix E",
+              "evidence": "3,232 completed-run traces create table reused in subsequent training.",
+              "level": "reported"
+            },
+            "memory_reach": {
+              "primary_url": "https://arxiv.org/pdf/2611.06518v1",
+              "locator": "Algorithm 1",
+              "evidence": "Only fusion lookup consumes memory; providers remain unchanged and Plan independent.",
+              "level": "derived",
+              "reasoning": "Local reward-allocation memory, not global access by all agents. Global fallback is statistical scope, not memory reach."
+            },
+            "action_type": {
+              "primary_url": "https://arxiv.org/pdf/2611.06518v1",
+              "locator": "§3.3",
+              "evidence": "Act does not generate or revise video; only scores.",
+              "level": "derived",
+              "reasoning": "No graphics execution action form in selected calibration subsystem."
+            },
+            "graphics_software": {
+              "primary_url": "https://arxiv.org/pdf/2611.06518v1",
+              "locator": "§3.2",
+              "evidence": "Returns reward to separate generator optimizer.",
+              "level": "derived",
+              "reasoning": "No graphics authoring software interface used by allocator."
+            },
+            "tools": {
+              "primary_url": "https://arxiv.org/pdf/2611.06518v1",
+              "locator": "Appendix C",
+              "evidence": "AU head, temporal vision-language encoder, R1-Omni, optical flow and VideoAlign.",
+              "level": "derived",
+              "reasoning": "Callable perceptual scoring providers."
+            },
+            "resources": {
+              "primary_url": "https://arxiv.org/pdf/2611.06518v1",
+              "locator": "Appendix E",
+              "evidence": "Completed-run rollout traces calibrate reusable table.",
+              "level": "derived",
+              "reasoning": "Examples & Trajectories, not unrelated training set."
+            },
+            "representation": {
+              "primary_url": "https://arxiv.org/pdf/2611.06518v1",
+              "locator": "Appendix C",
+              "evidence": "Videos scored as frames and clips.",
+              "level": "reported"
+            }
+          },
+          "limitations": "VideoAlign is both outcome/calibration target and reported metric; macro partly shares evaluator information. Only one reference-to-calibrated transition tested, not sustained evolution. Three channels constant in analyzed traces; image transfers and unequal training budgets show trade-offs. Planner identity unspecified.",
+          "application": "Dynamic / Animation and temporal scene"
+        }
+      ],
+      "counts": {
+        "papers": 8,
+        "new": 7,
+        "updates": 1,
+        "catchUp": 0,
+        "core": 5,
+        "scopeDependent": 2,
+        "adjacent": 1
+      },
+      "coverage": {
+        "label": "Bounded source coverage",
+        "validationPassed": true,
+        "sources": [
+          {
+            "family": "arxiv",
+            "status": "partial",
+            "checks": [
+              {
+                "query_or_url": "https://arxiv.org/list/cs.GR/new?skip=0&show=100",
+                "checked_at": "2026-11-07T21:44:52.746867+00:00",
+                "outcome": "16 entries; scan observed pagination complete=True; errors=[]; unvisited=[]"
+              },
+              {
+                "query_or_url": "https://arxiv.org/list/cs.GR/recent?skip=0&show=100",
+                "checked_at": "2026-11-07T21:44:52.816084+00:00",
+                "outcome": "43 entries; scan observed pagination complete=True; errors=[]; unvisited=[]"
+              },
+              {
+                "query_or_url": "https://arxiv.org/list/cs.CV/new?skip=0&show=100",
+                "checked_at": "2026-11-07T21:44:53.079809+00:00",
+                "outcome": "100 entries; scan observed pagination complete=True; errors=[]; unvisited=[]"
+              },
+              {
+                "query_or_url": "https://arxiv.org/list/cs.CV/new?skip=0&show=2000",
+                "checked_at": "2026-11-07T21:44:53.331347+00:00",
+                "outcome": "258 entries; scan observed pagination complete=True; errors=[]; unvisited=[]"
+              },
+              {
+                "query_or_url": "https://arxiv.org/list/cs.CV/recent?skip=0&show=100",
+                "checked_at": "2026-11-07T21:44:53.460116+00:00",
+                "outcome": "100 entries; scan observed pagination complete=True; errors=[]; unvisited=[]"
+              },
+              {
+                "query_or_url": "https://arxiv.org/list/cs.CV/recent?skip=0&show=2000",
+                "checked_at": "2026-11-07T21:44:54.497228+00:00",
+                "outcome": "943 entries; scan observed pagination complete=True; errors=[]; unvisited=[]"
+              },
+              {
+                "query_or_url": "https://arxiv.org/abs/2611.06856",
+                "checked_at": "2026-11-07T21:52:44.292078+00:00",
+                "outcome": "Canonical paper/history or official project inspected; stored observation available."
+              },
+              {
+                "query_or_url": "https://arxiv.org/abs/2611.06748",
+                "checked_at": "2026-11-07T21:53:49.356340+00:00",
+                "outcome": "Canonical paper/history or official project inspected; stored observation available."
+              },
+              {
+                "query_or_url": "https://arxiv.org/abs/2611.06433",
+                "checked_at": "2026-11-07T21:54:52.983448+00:00",
+                "outcome": "Canonical paper/history or official project inspected; stored observation available."
+              },
+              {
+                "query_or_url": "https://arxiv.org/abs/2611.07301",
+                "checked_at": "2026-11-07T21:55:48.965317+00:00",
+                "outcome": "Canonical paper/history or official project inspected; stored observation available."
+              },
+              {
+                "query_or_url": "https://arxiv.org/abs/2611.06890",
+                "checked_at": "2026-11-07T21:56:43.574074+00:00",
+                "outcome": "Canonical paper/history or official project inspected; stored observation available."
+              },
+              {
+                "query_or_url": "https://arxiv.org/abs/2609.37314",
+                "checked_at": "2026-11-07T21:57:38.168457+00:00",
+                "outcome": "Canonical paper/history or official project inspected; stored observation available."
+              },
+              {
+                "query_or_url": "https://arxiv.org/abs/2608.24212",
+                "checked_at": "2026-11-07T21:58:35.823137+00:00",
+                "outcome": "Canonical paper/history or official project inspected; stored observation available."
+              },
+              {
+                "query_or_url": "https://arxiv.org/abs/2605.15843",
+                "checked_at": "2026-11-07T21:58:51.990810+00:00",
+                "outcome": "Canonical paper/history or official project inspected; stored observation available."
+              },
+              {
+                "query_or_url": "https://arxiv.org/abs/2604.09568",
+                "checked_at": "2026-11-07T21:58:52.084536+00:00",
+                "outcome": "Canonical paper/history or official project inspected; stored observation available."
+              },
+              {
+                "query_or_url": "https://arxiv.org/abs/2611.06627",
+                "checked_at": "2026-11-07T21:59:15.550556+00:00",
+                "outcome": "Canonical paper/history or official project inspected; stored observation available."
+              },
+              {
+                "query_or_url": "https://arxiv.org/abs/2611.06518",
+                "checked_at": "2026-11-07T22:00:29.717005+00:00",
+                "outcome": "Canonical paper/history or official project inspected; stored observation available."
+              }
+            ],
+            "limitations": "Four required listing pagination chains completed with no errors or unvisited links. All 1062 listing IDs resolved. Target/uncertain 247 and catchup attention 334 abstracts delivered and triaged. Other categories not scanned; remaining catalog records and some outside-window title hints not fully reviewed. Listings are current observations, not historical availability proof."
+          },
+          {
+            "family": "hugging_face",
+            "status": "partial",
+            "checks": [
+              {
+                "query_or_url": "https://huggingface.co/papers/date/2026-11-04",
+                "checked_at": "2026-11-07T21:44:54.821837+00:00",
+                "outcome": "Daily page inspected as lead source; curation date is not publication date. Selected leads batch-resolved."
+              }
+            ],
+            "limitations": "One daily page only; not an exhaustive feed history. Selected image/world/curation leads resolved, others remain source signals."
+          },
+          {
+            "family": "openreview",
+            "status": "partial",
+            "checks": [
+              {
+                "query_or_url": "agent CAD generation reconstruction editing constraint solver program repair November 2026 site:openreview.net",
+                "checked_at": "2026-11-07T21:46:02.964525+00:00",
+                "outcome": "Search returned grounded leads; dates and scope are not established from snippets. See tool-events.jsonl."
+              }
+            ],
+            "limitations": "One hosted site-restricted search; no exhaustive venue/API enumeration or new OpenReview PDF reads."
+          },
+          {
+            "family": "official_venues",
+            "status": "partial",
+            "checks": [
+              {
+                "query_or_url": "agent graphics benchmark world auditing verification 2026 site:openaccess.thecvf.com",
+                "checked_at": "2026-11-07T21:48:25.046150+00:00",
+                "outcome": "Search returned grounded leads; dates and scope are not established from snippets. See tool-events.jsonl."
+              },
+              {
+                "query_or_url": "agent 3D object procedural modeling Blender material inverse graphics geometry editing 2026 November",
+                "checked_at": "2026-11-07T21:45:31.706039+00:00",
+                "outcome": "Search returned grounded leads; dates and scope are not established from snippets. See tool-events.jsonl."
+              }
+            ],
+            "limitations": "Hosted CVF/proceedings search and observed citations only; no exhaustive official conference release calendar checked."
+          },
+          {
+            "family": "project_author_lab",
+            "status": "partial",
+            "checks": [
+              {
+                "query_or_url": "https://long-banana.com/",
+                "checked_at": "2026-11-07T21:52:50.370371+00:00",
+                "outcome": "Canonical paper/history or official project inspected; stored observation available."
+              },
+              {
+                "query_or_url": "agent 3D scene layout world generation BIM architecture October November 2026 project",
+                "checked_at": "2026-11-07T21:46:24.230736+00:00",
+                "outcome": "Search returned grounded leads; dates and scope are not established from snippets. See tool-events.jsonl."
+              },
+              {
+                "query_or_url": "agent physical simulation particle effects deformable world generation research project lab 2026",
+                "checked_at": "2026-11-07T21:48:03.104382+00:00",
+                "outcome": "Search returned grounded leads; dates and scope are not established from snippets. See tool-events.jsonl."
+              },
+              {
+                "query_or_url": "graphics agent memory replanning tool interface feedback program synthesis November 2026 github project",
+                "checked_at": "2026-11-07T21:48:50.584066+00:00",
+                "outcome": "Search returned grounded leads; dates and scope are not established from snippets. See tool-events.jsonl."
+              }
+            ],
+            "limitations": "Broad hosted searches and LongBanana project page only; other labs and repositories not exhaustively checked."
+          }
+        ],
+        "limitations": [
+          "Partial bounded research, not field-wide exhaustive discovery. Frozen cutoff and snapshot preserved; later tool retrieval did not extend eligible publication events.",
+          "Harness instructed FINALIZE NOW at turn 38 (elapsed 969 seconds; estimated model cost 36.523 USD), citing time or estimated-cost reserve. Stopped new PDF reads immediately. Eight full papers completed; 12 of maximum 20 slots unused. Wall clock alone did not exhaust 30-minute cap.",
+          "All 1062 listing identities have official metadata; 247 target/uncertain abstracts and 334 catchup attention abstracts were delivered and individually triaged. Catalog records outside reviewed attention remain unreviewed; see unreviewed-catalog.json. Some title hints outside date attention remain unreviewed, not excluded.",
+          "Plausible unread leads persist in reading-plan.json (46 entries), additional-deferred.json (11 outside-plan entries), triage.json and discovery/candidate-catalog.json. Search-only signals remain in search-signals.json.",
+          "Three prior pending backlog slots reserved for CADFather, Reels-RSI and WorldSolver, but none reached before harness finalization. Full authorized INDEX reviewed; details and fresh abstracts checked for these three. See backlog-plan.json for reasons and deviations. No old completed paper imported as newly read.",
+          "NeoWorld-Pro, WorldAct and EvoDesign canonical histories exclude November 4 local revisions: their latest versions are November 5 local. Saved as unresolved later-day leads, not scope exclusions.",
+          "FLASH direct-action revision was read before first-submission enabling papers following shared selected_next; deviation from strict first-submission-first ordering is documented in backlog-plan.json.",
+          "PDF phase began about eight minutes into original 30-minute cap, initially reserving more than 60% for reading; later harness cost reserve curtailed that plan. No claim that all plausible direct-action catchup work was read.",
+          "All five source families and nine query families have executed checks, but OpenReview and official venue coverage is search-limited. No scans of cs.AI/cs.HC/cs.RO/cs.MM/eess.IV; no live taxonomy refresh under frozen experiment instruction.",
+          "Provisional triage rejects are not final exclusions. Authoritative version evidence and full PDF receipt required for every retained classification. No primary-access failure occurred for selected PDFs."
+        ]
+      },
+      "artifacts": {
+        "report": "data/2026-11-04/report.md",
+        "data": "data/2026-11-04/run.json",
+        "audit": "data/2026-11-04/audit.json"
       }
     }
   ],
