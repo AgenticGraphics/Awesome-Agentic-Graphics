@@ -1,0 +1,24 @@
+{
+  "run": "/home/hl35496/agentic-graphics-bvb/runs/scheduled-2026-11-05",
+  "declared_budget": {
+    "minutes": 30,
+    "search_batches": 10,
+    "primary_opens": 60,
+    "read_candidates": 20
+  },
+  "observed": {
+    "distinct_pdf_files_with_delivered_pages": 17,
+    "search_tool_invocations": 9,
+    "active_duration_seconds": 1752.2517943279963,
+    "page_open_tool_invocations": 20
+  },
+  "measured_caps_passed": true,
+  "violations": [],
+  "limitations": [
+    "Incomplete runs cannot establish successful budgeted completion.",
+    "PDF count includes partial delivery; receipts do not prove comprehension.",
+    "Page-open count is informational: candidate primary pages are not automatically distinguished from other pages.",
+    "Metadata/listing scans have separate per-call bounds; native shell retrieval is outside this shared-tool audit.",
+    "Search invocations are not individual search queries or billing units; model usage is separately logged."
+  ]
+}
