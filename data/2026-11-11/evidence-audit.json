@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "errors": [],
+  "unverified": [],
+  "verified_timestamp_count": 5,
+  "limitations": "Checks only directly comparable arXiv timestamps, source identities and explicit page ranges against this run's returned observations. Paraphrases and taxonomy judgments still need substantive review. Unverified is not automatically false."
+}
