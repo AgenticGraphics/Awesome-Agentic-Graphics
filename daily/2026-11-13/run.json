@@ -1,0 +1,1879 @@
+{
+  "target_date": "2026-11-13",
+  "timezone": "America/Chicago",
+  "as_of": "2026-11-19T00:11:04+00:00",
+  "window_start": "2026-11-13T00:00:00-06:00",
+  "window_end": "2026-11-14T00:00:00-06:00",
+  "taxonomy_version": "google-doc-taxonomy-v3-2026-10-15",
+  "source_snapshot": {
+    "status": "Pinned October 15 research snapshot; not refreshed",
+    "taxonomy_version": "google-doc-taxonomy-v3-2026-10-15"
+  },
+  "snapshot_status": "authorized_live_snapshot_reconciled_and_frozen",
+  "budget": {
+    "minutes": 30,
+    "search_batches": 10,
+    "primary_opens": 60,
+    "read_candidates": 20
+  },
+  "counts": {
+    "search_batches": 9,
+    "search_queries": 9,
+    "primary_opens": 11,
+    "arxiv_listing_calls": 4,
+    "hf_daily_calls": 1,
+    "catalog_resolve_batches": 8,
+    "catalog_abstract_pages": 15,
+    "full_paper_reads": 5,
+    "pdf_downloads": 6
+  },
+  "source_ledger": [
+    {
+      "family": "arxiv",
+      "status": "partial",
+      "checks": [
+        {
+          "query_or_url": "cs.GR new/recent and cs.CV new/recent via arxiv_scan",
+          "checked_at": "2026-11-19T00:33:00+00:00",
+          "outcome": "Complete observed pagination for all four required pairs; 1098 collected identities resolved; target-day and catch-up abstract pools triaged, but broad relevance recall and remaining title hints are incomplete."
+        }
+      ],
+      "limitations": "Only cs.GR and cs.CV listing pairs were scanned; other arXiv categories in the prepared plan were not reached. 64 plausible leads remain ranked unread and 38 title-hint/graphics-category abstracts lack ranks."
+    },
+    {
+      "family": "hugging_face",
+      "status": "partial",
+      "checks": [
+        {
+          "query_or_url": "https://huggingface.co/papers/date/2026-11-13",
+          "checked_at": "2026-11-19T00:11:34+00:00",
+          "outcome": "Daily page inspected as a lead source; curation date was not used as publication date."
+        }
+      ],
+      "limitations": "Daily page coverage is a curation snapshot, not publication completeness."
+    },
+    {
+      "family": "openreview",
+      "status": "partial",
+      "checks": [
+        {
+          "query_or_url": "agent CAD generation reconstruction editing constraint solver November 2026 site:openreview.net",
+          "checked_at": "2026-11-19T00:12:21+00:00",
+          "outcome": "Search returned OpenReview CAD leads; no target-day qualifying paper was verified."
+        }
+      ],
+      "limitations": "Search-limited, not exhaustive venue coverage."
+    },
+    {
+      "family": "official_venues",
+      "status": "partial",
+      "checks": [
+        {
+          "query_or_url": "agent SVG diagram chart slide poster editable visual feedback November 2026 research; CVF benchmark search",
+          "checked_at": "2026-11-19T00:12:00+00:00",
+          "outcome": "Publisher/project leads inspected; no additional target-day PDF was completed."
+        }
+      ],
+      "limitations": "Only search-returned publisher pages were inspected."
+    },
+    {
+      "family": "project_author_lab",
+      "status": "partial",
+      "checks": [
+        {
+          "query_or_url": "agent 3D scene/articulation/animation/simulation and graphics harness queries",
+          "checked_at": "2026-11-19T00:15:31+00:00",
+          "outcome": "Project/author links surfaced through search; no additional completed paper beyond catalog cohort."
+        }
+      ],
+      "limitations": "Project/lab coverage was search-result limited."
+    }
+  ],
+  "query_coverage": [
+    {
+      "family": "2d",
+      "status": "partial",
+      "checks": [
+        {
+          "query_or_url": "2d",
+          "checked_at": "2026-11-19T00:33:00+00:00",
+          "outcome": "Covered through broad search terms and/or catalog title/abstract triage; not exhaustive."
+        }
+      ]
+    },
+    {
+      "family": "object",
+      "status": "partial",
+      "checks": [
+        {
+          "query_or_url": "object",
+          "checked_at": "2026-11-19T00:33:00+00:00",
+          "outcome": "Covered through broad search terms and/or catalog title/abstract triage; not exhaustive."
+        }
+      ]
+    },
+    {
+      "family": "cad",
+      "status": "partial",
+      "checks": [
+        {
+          "query_or_url": "cad",
+          "checked_at": "2026-11-19T00:33:00+00:00",
+          "outcome": "Covered through broad search terms and/or catalog title/abstract triage; not exhaustive."
+        }
+      ]
+    },
+    {
+      "family": "scene",
+      "status": "partial",
+      "checks": [
+        {
+          "query_or_url": "scene",
+          "checked_at": "2026-11-19T00:33:00+00:00",
+          "outcome": "Covered through broad search terms and/or catalog title/abstract triage; not exhaustive."
+        }
+      ]
+    },
+    {
+      "family": "articulation",
+      "status": "partial",
+      "checks": [
+        {
+          "query_or_url": "articulation",
+          "checked_at": "2026-11-19T00:33:00+00:00",
+          "outcome": "Covered through broad search terms and/or catalog title/abstract triage; not exhaustive."
+        }
+      ]
+    },
+    {
+      "family": "animation",
+      "status": "partial",
+      "checks": [
+        {
+          "query_or_url": "animation",
+          "checked_at": "2026-11-19T00:33:00+00:00",
+          "outcome": "Covered through broad search terms and/or catalog title/abstract triage; not exhaustive."
+        }
+      ]
+    },
+    {
+      "family": "simulation",
+      "status": "partial",
+      "checks": [
+        {
+          "query_or_url": "simulation",
+          "checked_at": "2026-11-19T00:33:00+00:00",
+          "outcome": "Covered through broad search terms and/or catalog title/abstract triage; not exhaustive."
+        }
+      ]
+    },
+    {
+      "family": "benchmark",
+      "status": "partial",
+      "checks": [
+        {
+          "query_or_url": "benchmark",
+          "checked_at": "2026-11-19T00:33:00+00:00",
+          "outcome": "Covered through broad search terms and/or catalog title/abstract triage; not exhaustive."
+        }
+      ]
+    },
+    {
+      "family": "harness",
+      "status": "partial",
+      "checks": [
+        {
+          "query_or_url": "harness",
+          "checked_at": "2026-11-19T00:33:00+00:00",
+          "outcome": "Covered through broad search terms and/or catalog title/abstract triage; not exhaustive."
+        }
+      ]
+    }
+  ],
+  "coverage_limits": [
+    "Search indexes and public release pages may lag; field-wide completeness is not established.",
+    "Catalog attention pool was fully abstract-read for 210 target_and_uncertain and 258 catch-up routed records, but 64 plausible leads remain ranked unread; 38 delivered graphics/title-hint records still lack provisional ranks.",
+    "One PDF was read (PhysLoop v2) but retained only as unresolved because the checkpoint validator could not bind the downloaded revision to a source-verified timestamp; the raw PDF and failure are preserved.",
+    "No claim of exhaustive discovery; source indexes, HF curation, venue search and metadata API limits remain."
+  ],
+  "papers": [
+    {
+      "canonical_title": "Vision-as-a-Tool: Visual Harness for Multimodal Agentic Coding",
+      "canonical_urls": [
+        "https://arxiv.org/abs/2611.17797v1",
+        "https://arxiv.org/pdf/2611.17797v1",
+        "https://vision-as-a-tool.github.io/"
+      ],
+      "identifiers": {
+        "arxiv": "2611.17797"
+      },
+      "authors": [
+        "Haolin Yang",
+        "Wenshan Wu",
+        "Jin Jiang",
+        "Yu Cheng",
+        "Yan Xia",
+        "Ting Song",
+        "Yangyu Huang",
+        "Zhiliang Peng",
+        "Wenhui Wang",
+        "Hangbo Bao",
+        "Yuzhe Zhang",
+        "Wen-Da Wei",
+        "Tengchao Lv",
+        "Li Dong",
+        "Lei Cui",
+        "Furu Wei"
+      ],
+      "abstract": "Multimodal agentic coding requires robust visual reasoning to analyze observations and evaluate generated artifacts. We introduce the Vision-as-a-Tool paradigm, which treats external multimodal large language models as callable visual utilities, and instantiate it in VHarness with five atomic actions: transcribe, grep, inspect, align, and diff. The framework supports iterative Image-to-HTML, Image-to-SVG, and Image-to-3D generation, improving visual fidelity and geometric accuracy for multimodal agents and enabling text-only coding agents to perform visually grounded tasks.",
+      "events": [
+        {
+          "type": "first_submission",
+          "value": "2026-11-13T06:23:19+00:00",
+          "precision": "timestamp",
+          "timezone": "UTC",
+          "primary_url": "https://arxiv.org/abs/2611.17797v1",
+          "authority": "primary",
+          "version": "v1",
+          "evidence": "Official arXiv metadata; target-local time 2026-11-13T00:23:19-06:00.",
+          "prior_event_status": "not_seen_in_supplied_history"
+        }
+      ],
+      "source_records": [
+        {
+          "source": "arxiv_listing",
+          "url": "https://arxiv.org/list/cs.CV/new?skip=0&show=2000",
+          "observation": "Collected in complete observed cs.CV new listing."
+        },
+        {
+          "source": "arxiv_metadata",
+          "url": "https://export.arxiv.org/api/query?id_list=2611.17797",
+          "observation": "Official title, authors, abstract, v1 timestamp and versioned PDF link."
+        },
+        {
+          "source": "pdf",
+          "url": "https://arxiv.org/pdf/2611.17797v1",
+          "sha256": "e9819a278caa55fd74700cbcc987b85446265c4d75605f17bb94cb34aa0a0ded",
+          "observation": "Full 27-page PDF read."
+        }
+      ],
+      "screening_status": "core",
+      "screening_reason": "A coding agent autonomously invokes visual tools, executes code that creates SVG and Blender artifacts, renders them, and uses visual feedback to revise the artifact.",
+      "screening_evidence": [
+        {
+          "url": "https://arxiv.org/pdf/2611.17797v1",
+          "locator": "pp. 1-3",
+          "evidence": "The coding agent chooses among code writing/editing and five external visual utilities; rendered artifacts are used for iterative refinement."
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.17797v1",
+          "locator": "pp. 4, 11, 17-18",
+          "evidence": "Tasks include Image-to-SVG and Image-to-3D, with agents producing pure SVG or Blender Python scripts and rendering them for comparison."
+        }
+      ],
+      "application_families": [
+        "2D Graphics",
+        "Static / Object",
+        "Dynamic / Animation and temporal scene"
+      ],
+      "operations": [
+        "Generation",
+        "Editing"
+      ],
+      "taxonomy_cells": {
+        "task": [
+          "Modeling"
+        ],
+        "input_form": [
+          "Image",
+          "3D Representation"
+        ],
+        "output": [
+          "Program",
+          "Graphics Artifact"
+        ],
+        "model_type": [
+          "Hybrid"
+        ],
+        "model_training": [
+          "Off-the-Shelf"
+        ],
+        "planning": [
+          "PO-3"
+        ],
+        "workflow": [
+          "Graph-Structured"
+        ],
+        "update_strategy": [
+          "Local Patch",
+          "Replanning"
+        ],
+        "verifier": [
+          "Critic",
+          "Programmatic"
+        ],
+        "feedback_assessment": [
+          "Binary",
+          "Diagnosis"
+        ],
+        "feedback_observation": [
+          "Visual",
+          "Structural Scene State"
+        ],
+        "memory_time": [
+          "Working Memory"
+        ],
+        "memory_reach": [
+          "Local Memory"
+        ],
+        "action_type": [
+          "Code/Script",
+          "Tool/Function Call"
+        ],
+        "graphics_software": [
+          "Agent-Adapted"
+        ],
+        "tools": [
+          "Graphics Operations",
+          "Perception models",
+          "Static Validator"
+        ],
+        "resources": [
+          "Assets",
+          "Documentation & Rules"
+        ],
+        "representation": [
+          "Code",
+          "Geometry",
+          "Layouts",
+          "Pixels"
+        ]
+      },
+      "field_evidence": {
+        "task": {
+          "primary_url": "https://arxiv.org/pdf/2611.17797v1",
+          "locator": "pp. 1-4",
+          "evidence": "The principal task is iterative visual coding for SVG and procedural 3D modeling, with HTML as an additional structured visual artifact.",
+          "level": "reported"
+        },
+        "input_form": {
+          "primary_url": "https://arxiv.org/pdf/2611.17797v1",
+          "locator": "p. 4",
+          "evidence": "Image-to-SVG takes raster target images; Image-to-3D takes four views of a 3D object.",
+          "level": "reported"
+        },
+        "output": {
+          "primary_url": "https://arxiv.org/pdf/2611.17797v1",
+          "locator": "pp. 1, 4, 11",
+          "evidence": "The agent outputs SVG code, Blender Python code, and rendered artifacts/GLB meshes.",
+          "level": "reported"
+        },
+        "model_type": {
+          "primary_url": "https://arxiv.org/pdf/2611.17797v1",
+          "locator": "pp. 1-2, 5",
+          "evidence": "The agent can be multimodal or text-only while external visual utilities are powered by an MLLM; the deployed system is therefore hybrid.",
+          "level": "derived",
+          "reasoning": "The decision-maker and callable visual MLLM jointly comprise the agentic system."
+        },
+        "model_training": {
+          "primary_url": "https://arxiv.org/pdf/2611.17797v1",
+          "locator": "pp. 1-2, 5",
+          "evidence": "Experiments use named pretrained coding agents and Gemini-3.8-Flash as the utility model; no task-specific training of the agentic controller is reported.",
+          "level": "derived",
+          "reasoning": "Use of pretrained models without reported task fine-tuning supports Off-the-Shelf for the analyzed deployment."
+        },
+        "planning": {
+          "primary_url": "https://arxiv.org/pdf/2611.17797v1",
+          "locator": "pp. 2-3, 17-20",
+          "evidence": "The agent autonomously chooses tools and iterations rather than following a fixed workflow.",
+          "level": "derived",
+          "reasoning": "Dynamic tool and revision decisions support PO-3 rather than a fixed plan."
+        },
+        "workflow": {
+          "primary_url": "https://arxiv.org/pdf/2611.17797v1",
+          "locator": "pp. 1-3, 6-8",
+          "evidence": "Code generation, rendering, visual inspection, diagnosis and revision form a loop with alternative callable actions.",
+          "level": "derived",
+          "reasoning": "The tool-mediated loop has non-linear action choices and feedback dependencies, so Graph-Structured is more accurate than merely Sequential."
+        },
+        "update_strategy": {
+          "primary_url": "https://arxiv.org/pdf/2611.17797v1",
+          "locator": "pp. 3, 6-8, 17-18",
+          "evidence": "The agent makes targeted code updates after diff/inspect feedback and can replan by choosing subsequent utilities and revisions.",
+          "level": "reported"
+        },
+        "verifier": {
+          "primary_url": "https://arxiv.org/pdf/2611.17797v1",
+          "locator": "pp. 3, 6, 15-16",
+          "evidence": "External MLLM utilities inspect and compare rendered artifacts; align returns Boolean assertions and diff diagnoses discrepancies.",
+          "level": "reported"
+        },
+        "feedback_assessment": {
+          "primary_url": "https://arxiv.org/pdf/2611.17797v1",
+          "locator": "pp. 3, 15-16",
+          "evidence": "align returns a Boolean match judgment while diff returns ranked discrepancy diagnoses.",
+          "level": "reported"
+        },
+        "feedback_observation": {
+          "primary_url": "https://arxiv.org/pdf/2611.17797v1",
+          "locator": "pp. 3, 15-16",
+          "evidence": "Utilities observe rendered pixels and localized visual/structural discrepancies.",
+          "level": "reported"
+        },
+        "memory_time": {
+          "primary_url": "https://arxiv.org/pdf/2611.17797v1",
+          "locator": "pp. 2-3",
+          "evidence": "The formulation conditions later code updates on prior thoughts, code updates, rendered images and utility feedback within one execution.",
+          "level": "derived",
+          "reasoning": "No cross-run persistence is described; retained trajectory context is working execution memory."
+        },
+        "memory_reach": {
+          "primary_url": "https://arxiv.org/pdf/2611.17797v1",
+          "locator": "pp. 2-3",
+          "evidence": "The coding agent uses feedback from its own current artifact trajectory.",
+          "level": "derived",
+          "reasoning": "No global multi-agent memory is reported; memory is local to the execution."
+        },
+        "action_type": {
+          "primary_url": "https://arxiv.org/pdf/2611.17797v1",
+          "locator": "pp. 2-3, 11, 15-20",
+          "evidence": "The agent writes/edits HTML, SVG and Blender Python and invokes MCP visual tools.",
+          "level": "reported"
+        },
+        "graphics_software": {
+          "primary_url": "https://arxiv.org/pdf/2611.17797v1",
+          "locator": "pp. 3-5, 11, 18",
+          "evidence": "VHarness adds an MCP adapter exposing graphics perception and verification utilities to existing coding agents and renderers.",
+          "level": "derived",
+          "reasoning": "The underlying renderers are general-purpose; the agent-facing VHarness adapter makes the interface Agent-Adapted."
+        },
+        "tools": {
+          "primary_url": "https://arxiv.org/pdf/2611.17797v1",
+          "locator": "pp. 2-3, 11, 15-16",
+          "evidence": "Five callable visual utilities perform structure extraction, localization, inspection, assertion checking and image comparison.",
+          "level": "reported"
+        },
+        "resources": {
+          "primary_url": "https://arxiv.org/pdf/2611.17797v1",
+          "locator": "pp. 4, 11, 17-18",
+          "evidence": "Image-to-HTML uses provided visual assets; task skills and exact tool prompts supply rules/documentation.",
+          "level": "reported"
+        },
+        "representation": {
+          "primary_url": "https://arxiv.org/pdf/2611.17797v1",
+          "locator": "pp. 1, 4, 11, 17-18",
+          "evidence": "The workflow uses HTML/SVG/Blender code, 3D geometry/GLB, layouts and rendered pixels.",
+          "level": "reported"
+        }
+      },
+      "contribution": "Introduces Vision-as-a-Tool and VHarness, a general MCP-based visual utility interface that lets coding agents invoke transcribe, grep, inspect, align and diff during closed-loop visual artifact generation and refinement.",
+      "limitations": "The experiments focus on static single-page, standalone vector, and individual-object 3D reconstruction tasks; the paper explicitly leaves interactive applications and temporal 3D scenes for future work, and the system substantially increases token/tool usage.",
+      "taxonomy_delta": [],
+      "confidence": "High",
+      "analysis_target": "Task-time VHarness controller and its visual feedback loop for agentic SVG and procedural 3D artifact generation; the external MLLM utilities are an enabling subsystem within that deployed loop.",
+      "agent_graphics_relation": {
+        "controller": "The coding agent Pθ, augmented by VHarness callable visual utilities Uϕ",
+        "action_or_decision": "Selects visual tools, writes/edits code, renders, diagnoses discrepancies and decides subsequent revisions",
+        "graphics_target": "Rendered HTML/SVG images and Blender-generated 3D geometry/GLB artifacts",
+        "primary_url": "https://arxiv.org/pdf/2611.17797v1",
+        "locator": "pp. 1-4, 11, 15-18",
+        "evidence": "The paper states that the agent autonomously invokes visual utilities during execution and evaluates Image-to-SVG and Image-to-3D generation with iterative rendered-artifact refinement.",
+        "evidence_status": "demonstrated"
+      },
+      "full_text_reading": {
+        "sha256": "e9819a278caa55fd74700cbcc987b85446265c4d75605f17bb94cb34aa0a0ded",
+        "sections_reviewed": [
+          "abstract",
+          "introduction",
+          "method",
+          "experiments",
+          "limitations"
+        ]
+      },
+      "known_corpus_status": "new_relative_to_snapshot",
+      "report_bucket": "same_day_new"
+    },
+    {
+      "canonical_title": "SceneAgent: A Multi-Agent Framework for Portable Game Scene Generation",
+      "canonical_urls": [
+        "https://arxiv.org/abs/2611.17821v1",
+        "https://arxiv.org/pdf/2611.17821v1",
+        "https://xingyi-li.github.io/sceneagent/"
+      ],
+      "identifiers": {
+        "arxiv": "2611.17821"
+      },
+      "authors": [
+        "Xingyi Li",
+        "Jiahao Yang",
+        "Yiqin Zhu",
+        "Jingwen Ye",
+        "Yang Sun",
+        "Weidong Zhang"
+      ],
+      "abstract": "SCENEAGENT is a multi-agent framework for portable 3D game-scene construction. A canonical SceneContext stores evolving world state, backend adapters isolate engine-specific realization, fresh Builder sessions coordinate through structured handoffs, and human-approved traces are distilled into reusable Layout and Content skills. GameSceneBench evaluates 69 indoor and outdoor prompts across engines and baselines.",
+      "events": [
+        {
+          "type": "first_submission",
+          "value": "2026-11-13T06:57:48+00:00",
+          "precision": "timestamp",
+          "timezone": "UTC",
+          "primary_url": "https://arxiv.org/abs/2611.17821v1",
+          "authority": "primary",
+          "version": "v1",
+          "evidence": "Official arXiv metadata; target-local time 2026-11-13T00:57:48-06:00.",
+          "prior_event_status": "not_seen_in_supplied_history"
+        }
+      ],
+      "source_records": [
+        {
+          "source": "arxiv_metadata",
+          "url": "https://export.arxiv.org/api/query?id_list=2611.17821",
+          "observation": "Official metadata and v1 timestamp."
+        },
+        {
+          "source": "pdf",
+          "url": "https://arxiv.org/pdf/2611.17821v1",
+          "sha256": "34ed2f8964da8a082d164077780968f7905c68a04f6027dd208d069df322f8e2",
+          "observation": "Full 28-page PDF read."
+        }
+      ],
+      "screening_status": "core",
+      "screening_reason": "Planner and Builder agents directly create and edit a canonical 3D scene state through construction tools, geometry checks and backend adapters.",
+      "screening_evidence": [
+        {
+          "url": "https://arxiv.org/pdf/2611.17821v1",
+          "locator": "pp. 1-4",
+          "evidence": "Orchestrator, Planner and fresh Builder sessions modify shared SceneContext through asset, placement, procedural layout, query and targeted-editing tools."
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.17821v1",
+          "locator": "pp. 12-13",
+          "evidence": "The supplementary interface lists scene-changing construction tools, rollback/edit operations and collision verification."
+        }
+      ],
+      "application_families": [
+        "Static / Scene",
+        "Dynamic / Animation and temporal scene"
+      ],
+      "operations": [
+        "Generation",
+        "Editing"
+      ],
+      "taxonomy_cells": {
+        "task": [
+          "Modeling"
+        ],
+        "input_form": [
+          "Language",
+          "Image"
+        ],
+        "output": [
+          "Structured Specification",
+          "Graphics Artifact"
+        ],
+        "model_type": [
+          "LLM"
+        ],
+        "model_training": [
+          "Off-the-Shelf"
+        ],
+        "planning": [
+          "PO-2"
+        ],
+        "workflow": [
+          "Graph-Structured"
+        ],
+        "update_strategy": [
+          "Local Patch",
+          "Replanning",
+          "Rollback"
+        ],
+        "verifier": [
+          "Programmatic",
+          "Human"
+        ],
+        "feedback_assessment": [
+          "Diagnosis",
+          "Binary"
+        ],
+        "feedback_observation": [
+          "Structural Scene State",
+          "Visual"
+        ],
+        "memory_time": [
+          "Short-Term Memory",
+          "Long-Term Memory"
+        ],
+        "memory_reach": [
+          "Global Memory"
+        ],
+        "action_type": [
+          "Tool/Function Call",
+          "Structured Specification"
+        ],
+        "graphics_software": [
+          "Agent-Adapted"
+        ],
+        "tools": [
+          "Graphics Operations",
+          "Static Validator",
+          "Execution Utilities"
+        ],
+        "resources": [
+          "Assets",
+          "Examples & Trajectories",
+          "Documentation & Rules"
+        ],
+        "representation": [
+          "Geometry",
+          "Layouts",
+          "Code"
+        ]
+      },
+      "field_evidence": {
+        "task": {
+          "primary_url": "https://arxiv.org/pdf/2611.17821v1",
+          "locator": "pp. 1-5",
+          "evidence": "The system constructs complete 3D game environments and scene layouts.",
+          "level": "reported"
+        },
+        "input_form": {
+          "primary_url": "https://arxiv.org/pdf/2611.17821v1",
+          "locator": "pp. 1-3",
+          "evidence": "The method accepts text prompts or reference images.",
+          "level": "reported"
+        },
+        "output": {
+          "primary_url": "https://arxiv.org/pdf/2611.17821v1",
+          "locator": "pp. 1-4, 16",
+          "evidence": "It produces an executable game scene via canonical structured SceneContext and backend export payloads.",
+          "level": "reported"
+        },
+        "model_type": {
+          "primary_url": "https://arxiv.org/pdf/2611.17821v1",
+          "locator": "pp. 5-7, 9",
+          "evidence": "DeepSeek-V4-Flash is used for Orchestrator, Planner and Builder decisions; cross-model experiments use other LLMs.",
+          "level": "reported"
+        },
+        "model_training": {
+          "primary_url": "https://arxiv.org/pdf/2611.17821v1",
+          "locator": "pp. 6-7",
+          "evidence": "The deployed construction agents use named language-model backbones; no task-specific controller fine-tuning is reported.",
+          "level": "derived",
+          "reasoning": "The method evaluates prompting/orchestration over pretrained LLMs rather than reporting supervised or RL adaptation of the decision-maker."
+        },
+        "planning": {
+          "primary_url": "https://arxiv.org/pdf/2611.17821v1",
+          "locator": "pp. 2-4, 12-13",
+          "evidence": "An Orchestrator and Planner create an ordered queue of semantic subtasks, while Builders execute them and refinement may revise the scene.",
+          "level": "derived",
+          "reasoning": "The plan is partly explicit and partly model-generated, supporting hybrid PO-2."
+        },
+        "workflow": {
+          "primary_url": "https://arxiv.org/pdf/2611.17821v1",
+          "locator": "pp. 2-4",
+          "evidence": "Subtasks, fresh Builder sessions, shared state queries, reports, validation and refinement have non-linear dependencies.",
+          "level": "derived",
+          "reasoning": "The multi-agent handoff and validation structure is graph-like rather than a single fixed path."
+        },
+        "update_strategy": {
+          "primary_url": "https://arxiv.org/pdf/2611.17821v1",
+          "locator": "pp. 4, 12-13",
+          "evidence": "Builders perform targeted editing and rollback; Orchestrator can revise the plan and invoke bounded refinement.",
+          "level": "reported"
+        },
+        "verifier": {
+          "primary_url": "https://arxiv.org/pdf/2611.17821v1",
+          "locator": "pp. 4-5, 13-18",
+          "evidence": "Automatic geometry checks diagnose violations; a human quality gate approves or rejects experience updates.",
+          "level": "reported"
+        },
+        "feedback_assessment": {
+          "primary_url": "https://arxiv.org/pdf/2611.17821v1",
+          "locator": "pp. 4, 13, 17",
+          "evidence": "Geometry checks produce violation diagnoses; human review makes approve/reject decisions.",
+          "level": "reported"
+        },
+        "feedback_observation": {
+          "primary_url": "https://arxiv.org/pdf/2611.17821v1",
+          "locator": "pp. 3-5, 13",
+          "evidence": "SceneContext exposes actor transforms, bounding boxes, occupancy, provenance and renderings.",
+          "level": "reported"
+        },
+        "memory_time": {
+          "primary_url": "https://arxiv.org/pdf/2611.17821v1",
+          "locator": "pp. 1-5",
+          "evidence": "SceneContext persists evolving world state across Builder sessions and skill libraries persist approved experience across generations.",
+          "level": "reported"
+        },
+        "memory_reach": {
+          "primary_url": "https://arxiv.org/pdf/2611.17821v1",
+          "locator": "pp. 1-5",
+          "evidence": "SceneContext is shared across Builder sessions and Layout/Content skills are retrieved by future Orchestrator/Planner/Builder runs.",
+          "level": "reported"
+        },
+        "action_type": {
+          "primary_url": "https://arxiv.org/pdf/2611.17821v1",
+          "locator": "pp. 3-4, 12-13",
+          "evidence": "Agents invoke construction tools and provide structured subtask specifications and reports.",
+          "level": "reported"
+        },
+        "graphics_software": {
+          "primary_url": "https://arxiv.org/pdf/2611.17821v1",
+          "locator": "pp. 1-4, 16",
+          "evidence": "The agent-facing shared tool interface is adapted across backend engines through adapters and capability wrappers.",
+          "level": "derived",
+          "reasoning": "The system adds a normalized agent interface over general game/scene engines, making the software Agent-Adapted."
+        },
+        "tools": {
+          "primary_url": "https://arxiv.org/pdf/2611.17821v1",
+          "locator": "pp. 4, 12-13",
+          "evidence": "Asset retrieval, placement, procedural geometry, scene queries, targeted editing, rollback and collision checks are callable workflow tools.",
+          "level": "reported"
+        },
+        "resources": {
+          "primary_url": "https://arxiv.org/pdf/2611.17821v1",
+          "locator": "pp. 1-5, 12",
+          "evidence": "Backend asset catalogs, approved Layout/Content traces, construction guides and shared conventions are accessed by the agents.",
+          "level": "reported"
+        },
+        "representation": {
+          "primary_url": "https://arxiv.org/pdf/2611.17821v1",
+          "locator": "pp. 1-4, 16-18",
+          "evidence": "Canonical geometry and layouts are stored as actor-centric SceneContext, with backend export code/payloads and reusable skills.",
+          "level": "reported"
+        }
+      },
+      "contribution": "Provides a portable multi-agent 3D scene-construction protocol separating canonical scene state, task-local reasoning, reusable experience and backend-specific realization.",
+      "limitations": "Porting still requires backend adapters, compatible assets and capability wrappers; multi-agent coordination adds substantial runtime, human approval limits experience-update scalability, and rendered-view/geometry checks do not establish physical stability, navigability or gameplay success.",
+      "taxonomy_delta": [],
+      "confidence": "High",
+      "analysis_target": "Task-time Orchestrator–Planner–Builder subsystem for constructing and refining portable 3D game scenes, with cross-run skill extraction as a secondary experience-update phase.",
+      "agent_graphics_relation": {
+        "controller": "SCENEAGENT Orchestrator, Planner and fresh Builder agents",
+        "action_or_decision": "Decompose prompts, retrieve skills, select assets, place/edit actors, query SceneContext, validate geometry and refine/export the scene",
+        "graphics_target": "Canonical 3D SceneContext and exported game-engine scene",
+        "primary_url": "https://arxiv.org/pdf/2611.17821v1",
+        "locator": "pp. 1-5, 12-13",
+        "evidence": "The paper explicitly describes agents modifying SceneContext through construction tools and geometry gates, then exporting through backend adapters.",
+        "evidence_status": "demonstrated"
+      },
+      "full_text_reading": {
+        "sha256": "34ed2f8964da8a082d164077780968f7905c68a04f6027dd208d069df322f8e2",
+        "sections_reviewed": [
+          "abstract",
+          "introduction",
+          "method",
+          "experiments",
+          "limitations"
+        ]
+      },
+      "known_corpus_status": "new_relative_to_snapshot",
+      "report_bucket": "same_day_new"
+    },
+    {
+      "canonical_title": "RecurIR: Learning When and How to Revise Restoration Policies via Recursive Self-Improvement",
+      "canonical_urls": [
+        "https://arxiv.org/abs/2611.18006v1",
+        "https://arxiv.org/pdf/2611.18006v1"
+      ],
+      "identifiers": {
+        "arxiv": "2611.18006"
+      },
+      "authors": [
+        "Hu Gao",
+        "Haoran Zhang",
+        "Yulong Chen",
+        "Lizhuang Ma"
+      ],
+      "abstract": "RecurIR is a recursive self-improvement framework for agent-based image restoration. Policy-hypothesis discovery learns condition-dependent relationships between degradation states and restoration plans; rule-falsification-driven task evolution generates targeted degradation variations; change-conditioned policy revision adjusts tool selection, order, operation strength and processing regions. Independent transfer and retention tests accept or reject updates.",
+      "events": [
+        {
+          "type": "first_submission",
+          "value": "2026-11-13T10:33:36+00:00",
+          "precision": "timestamp",
+          "timezone": "UTC",
+          "primary_url": "https://arxiv.org/abs/2611.18006v1",
+          "authority": "primary",
+          "version": "v1",
+          "evidence": "Official arXiv metadata; target-local time 2026-11-13T04:33:36-06:00.",
+          "prior_event_status": "not_seen_in_supplied_history"
+        }
+      ],
+      "source_records": [
+        {
+          "source": "arxiv_metadata",
+          "url": "https://export.arxiv.org/api/query?id_list=2611.18006",
+          "observation": "Official metadata and v1 timestamp."
+        },
+        {
+          "source": "pdf",
+          "url": "https://arxiv.org/pdf/2611.18006v1",
+          "sha256": "6504d12411b0ef5e49fd87427de01be6f3cb4df185fa0cd6e1a61928c63beaa0",
+          "observation": "Full 17-page PDF including supplementary material read."
+        }
+      ],
+      "screening_status": "core",
+      "screening_reason": "The restoration agent selects and revises image-processing actions that directly modify image artifacts, using visual/quality feedback and programmatic acceptance tests.",
+      "screening_evidence": [
+        {
+          "url": "https://arxiv.org/pdf/2611.18006v1",
+          "locator": "pp. 1-5",
+          "evidence": "The agent selects restoration tools and revises plans in tool choice, order, strength and processing regions as degradation conditions change."
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.18006v1",
+          "locator": "pp. 5, 8, 12-17",
+          "evidence": "Restored images are evaluated with quality measures, rollback/success criteria and transfer-retention tests controlling policy updates."
+        }
+      ],
+      "application_families": [
+        "2D Graphics",
+        "Cross-category"
+      ],
+      "operations": [
+        "Editing",
+        "Auditing"
+      ],
+      "taxonomy_cells": {
+        "task": [
+          "Modeling"
+        ],
+        "input_form": [
+          "Image",
+          "Language"
+        ],
+        "output": [
+          "Graphics Artifact"
+        ],
+        "model_type": [
+          "Hybrid"
+        ],
+        "model_training": [
+          "Supervised Fine-Tuning"
+        ],
+        "planning": [
+          "PO-2"
+        ],
+        "workflow": [
+          "Sequential"
+        ],
+        "update_strategy": [
+          "Local Patch",
+          "Replanning",
+          "Candidate Selection"
+        ],
+        "verifier": [
+          "Programmatic"
+        ],
+        "feedback_assessment": [
+          "Score",
+          "Diagnosis",
+          "Binary"
+        ],
+        "feedback_observation": [
+          "Visual",
+          "Structural Scene State"
+        ],
+        "memory_time": [
+          "Long-Term Memory"
+        ],
+        "memory_reach": [
+          "Local Memory"
+        ],
+        "action_type": [
+          "Tool/Function Call",
+          "Structured Specification"
+        ],
+        "graphics_software": [
+          "Agent-Adapted"
+        ],
+        "tools": [
+          "Graphics Operations",
+          "Perception models",
+          "Static Validator"
+        ],
+        "resources": [
+          "Assets",
+          "Documentation & Rules"
+        ],
+        "representation": [
+          "Pixels",
+          "Learned State"
+        ]
+      },
+      "field_evidence": {
+        "task": {
+          "primary_url": "https://arxiv.org/pdf/2611.18006v1",
+          "locator": "pp. 1-5",
+          "evidence": "The principal task is adaptive restoration of degraded images.",
+          "level": "reported"
+        },
+        "input_form": {
+          "primary_url": "https://arxiv.org/pdf/2611.18006v1",
+          "locator": "pp. 3, 12",
+          "evidence": "The agent receives a degraded image and generic restoration instruction, while degradation state is estimated from image observations.",
+          "level": "reported"
+        },
+        "output": {
+          "primary_url": "https://arxiv.org/pdf/2611.18006v1",
+          "locator": "pp. 3, 5, 6-8",
+          "evidence": "The workflow outputs restored images and revised restoration plans.",
+          "level": "reported"
+        },
+        "model_type": {
+          "primary_url": "https://arxiv.org/pdf/2611.18006v1",
+          "locator": "pp. 3-5, 12-13",
+          "evidence": "The system combines learned policy modules, a restoration planner and a library of specialized restoration networks/tools.",
+          "level": "derived",
+          "reasoning": "The controller is a learned policy system operating through heterogeneous restoration models, so Hybrid best describes the decision subsystem."
+        },
+        "model_training": {
+          "primary_url": "https://arxiv.org/pdf/2611.18006v1",
+          "locator": "pp. 4-5, 12-14",
+          "evidence": "PDM and CPRM are optimized with explicit classification/regression objectives; supplementary details describe agent training while restoration tools remain frozen.",
+          "level": "reported"
+        },
+        "planning": {
+          "primary_url": "https://arxiv.org/pdf/2611.18006v1",
+          "locator": "pp. 3-5, 12-13",
+          "evidence": "The agent selects tool sequences and parameters, then conditionally revises them based on degradation changes.",
+          "level": "derived",
+          "reasoning": "The restoration plan is partly learned and partly constrained by the available tool library, supporting hybrid PO-2."
+        },
+        "workflow": {
+          "primary_url": "https://arxiv.org/pdf/2611.18006v1",
+          "locator": "pp. 3-5, 17",
+          "evidence": "Tool execution follows a selected restoration plan, with regional operations and subsequent revisions in an ordered pipeline.",
+          "level": "reported"
+        },
+        "update_strategy": {
+          "primary_url": "https://arxiv.org/pdf/2611.18006v1",
+          "locator": "pp. 4-5, 8, 14-17",
+          "evidence": "The controller edits tool selection/order/strength/regions, replans under changed conditions, and selects candidate updates through transfer-retention validation.",
+          "level": "reported"
+        },
+        "verifier": {
+          "primary_url": "https://arxiv.org/pdf/2611.18006v1",
+          "locator": "pp. 5, 8, 12-14",
+          "evidence": "Quality metrics, severe-artifact detection, transfer validation and retention validation accept or reject candidate policy updates.",
+          "level": "reported"
+        },
+        "feedback_assessment": {
+          "primary_url": "https://arxiv.org/pdf/2611.18006v1",
+          "locator": "pp. 4-5, 8, 12-14",
+          "evidence": "PSNR/SSIM and related quality scores provide graded feedback; falsification uses diagnosis of rule contradictions; update acceptance is binary under transfer-retention thresholds.",
+          "level": "reported"
+        },
+        "feedback_observation": {
+          "primary_url": "https://arxiv.org/pdf/2611.18006v1",
+          "locator": "pp. 3-5, 7-8, 17",
+          "evidence": "The system observes degraded/restored pixels, degradation severity and spatial distribution, and image-quality/artifact states.",
+          "level": "reported"
+        },
+        "memory_time": {
+          "primary_url": "https://arxiv.org/pdf/2611.18006v1",
+          "locator": "pp. 2-5, 13-14",
+          "evidence": "Verified hypotheses, applicability regions and revision evidence are retained and reused across recursive improvement rounds.",
+          "level": "reported"
+        },
+        "memory_reach": {
+          "primary_url": "https://arxiv.org/pdf/2611.18006v1",
+          "locator": "pp. 3-5, 13",
+          "evidence": "The accumulated hypotheses and revisions are used by the restoration policy and task-generation components; no cross-system shared memory is reported.",
+          "level": "derived",
+          "reasoning": "The memory is persistent for the local agent/policy rather than described as globally shared across independent agents."
+        },
+        "action_type": {
+          "primary_url": "https://arxiv.org/pdf/2611.18006v1",
+          "locator": "pp. 3-5, 12-13",
+          "evidence": "The agent invokes specialized restoration tools and emits structured plans containing tools, order, parameters and regions.",
+          "level": "reported"
+        },
+        "graphics_software": {
+          "primary_url": "https://arxiv.org/pdf/2611.18006v1",
+          "locator": "pp. 2-3, 12-13",
+          "evidence": "The agent is built around a shared restoration-tool library and an agent-facing coordination layer rather than direct native GUI authoring.",
+          "level": "derived",
+          "reasoning": "The tool adapter and policy interface are tailored to agentic restoration, so Agent-Adapted is appropriate."
+        },
+        "tools": {
+          "primary_url": "https://arxiv.org/pdf/2611.18006v1",
+          "locator": "pp. 12-13",
+          "evidence": "The shared library contains deraining, desnowing, dehazing, deblurring, denoising and all-in-one restoration tools; perception and quality checks guide use.",
+          "level": "reported"
+        },
+        "resources": {
+          "primary_url": "https://arxiv.org/pdf/2611.18006v1",
+          "locator": "pp. 3-5, 12-14",
+          "evidence": "The agent uses a shared pretrained restoration-tool library, degradation rules and accumulated verified hypotheses/evidence.",
+          "level": "reported"
+        },
+        "representation": {
+          "primary_url": "https://arxiv.org/pdf/2611.18006v1",
+          "locator": "pp. 3-5, 13-17",
+          "evidence": "The workflow operates on image pixels and stores learned condition-dependent hypotheses and revision operators.",
+          "level": "reported"
+        }
+      },
+      "contribution": "Introduces a recursive self-improvement loop that discovers condition-dependent restoration rules, actively falsifies them with targeted degradation changes, and learns verified revisions to tool selection, order, strength and regions.",
+      "limitations": "The framework relies on controllable degradation generation, reference-based training supervision and a fixed restoration-tool library; its quality gains and recursive updates are evaluated primarily through image-restoration benchmarks and may not establish general-purpose visual editing beyond restoration.",
+      "taxonomy_delta": [],
+      "confidence": "High",
+      "analysis_target": "Training/data-generation phase of the RecurIR restoration-policy subsystem, with task-time image restoration as its deployed graphics action; the paper's principal novelty is learning when and how to revise the controller's tool-use rules.",
+      "agent_graphics_relation": {
+        "controller": "RecurIR restoration agent and its PDM/RTEM/CPRM policy modules",
+        "action_or_decision": "Selects restoration tools and sequences, changes operation strength and processing regions, and accepts or rejects revised policies",
+        "graphics_target": "Degraded image pixels and restored image artifacts",
+        "primary_url": "https://arxiv.org/pdf/2611.18006v1",
+        "locator": "pp. 1-5, 8, 12-17",
+        "evidence": "The paper explicitly defines restoration plans over image observations, applies them through specialized tools, and uses image-quality and artifact feedback to revise those plans.",
+        "evidence_status": "demonstrated"
+      },
+      "full_text_reading": {
+        "sha256": "6504d12411b0ef5e49fd87427de01be6f3cb4df185fa0cd6e1a61928c63beaa0",
+        "sections_reviewed": [
+          "abstract",
+          "introduction",
+          "method",
+          "experiments",
+          "limitations"
+        ]
+      },
+      "known_corpus_status": "new_relative_to_snapshot",
+      "report_bucket": "same_day_new"
+    },
+    {
+      "canonical_title": "TelePhysica: Agentic Reconstruction of Physically Interactive Scenes",
+      "canonical_urls": [
+        "https://arxiv.org/abs/2611.18078v1",
+        "https://arxiv.org/pdf/2611.18078v1",
+        "https://interactive4d.vercel.app/"
+      ],
+      "identifiers": {
+        "arxiv": "2611.18078"
+      },
+      "authors": [
+        "Ruiqi Shu",
+        "Xufeng Zhan",
+        "Yuanzhi Liang",
+        "Haibin Huang",
+        "Chi Zhang",
+        "Xuelong Li"
+      ],
+      "abstract": "TelePhysica reconstructs an executable, physically interactive world from a single photograph. A vision-language coding agent synthesizes separable visual meshes and declarative physical models, then uses pixel-aligned silhouette critique and zero-force gravitational equilibrium verification before compiling rigid, articulated, cloth and volumetric dynamics. Simulated trajectories condition video diffusion for stateful and counterfactual interactions.",
+      "events": [
+        {
+          "type": "first_submission",
+          "value": "2026-11-13T12:02:43+00:00",
+          "precision": "timestamp",
+          "timezone": "UTC",
+          "primary_url": "https://arxiv.org/abs/2611.18078v1",
+          "authority": "primary",
+          "version": "v1",
+          "evidence": "PDF front matter and official arXiv metadata; target-local time 2026-11-13T06:02:43-06:00.",
+          "prior_event_status": "not_seen_in_supplied_history"
+        }
+      ],
+      "source_records": [
+        {
+          "source": "arxiv_metadata",
+          "url": "https://export.arxiv.org/api/query?id_list=2611.18078",
+          "observation": "Official metadata and v1 timestamp."
+        },
+        {
+          "source": "pdf",
+          "url": "https://arxiv.org/pdf/2611.18078v1",
+          "sha256": "9bfb21d7c084c99829055659f2213093ad7e990d276aecbd0110426108ca5102",
+          "observation": "Full 19-page PDF read."
+        }
+      ],
+      "screening_status": "core",
+      "screening_reason": "A vision-language coding agent directly creates and revises 3D graphics and physical scene state, with rendered and solver feedback controlling subsequent scene edits.",
+      "screening_evidence": [
+        {
+          "url": "https://arxiv.org/pdf/2611.18078v1",
+          "locator": "pp. 1-5",
+          "evidence": "The reconstruction agent synthesizes procedural visual meshes and physical models, then revises them using silhouette and equilibrium diagnostics."
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.18078v1",
+          "locator": "pp. 6-14",
+          "evidence": "The evaluated system constructs scenes, runs physical interventions and feeds verified trajectories to video generation."
+        }
+      ],
+      "application_families": [
+        "Static / Scene",
+        "Dynamic / Physical simulation and effects",
+        "Dynamic / Animation and temporal scene"
+      ],
+      "operations": [
+        "Reconstruction",
+        "Generation",
+        "Editing"
+      ],
+      "taxonomy_cells": {
+        "task": [
+          "Simulation",
+          "Modeling"
+        ],
+        "input_form": [
+          "Image",
+          "Language"
+        ],
+        "output": [
+          "Program",
+          "Graphics Artifact",
+          "Rendered Media"
+        ],
+        "model_type": [
+          "Hybrid"
+        ],
+        "model_training": [
+          "Off-the-Shelf"
+        ],
+        "planning": [
+          "PO-3"
+        ],
+        "workflow": [
+          "Sequential"
+        ],
+        "update_strategy": [
+          "Local Patch",
+          "Replanning",
+          "Candidate Selection"
+        ],
+        "verifier": [
+          "Critic",
+          "Programmatic",
+          "Environment"
+        ],
+        "feedback_assessment": [
+          "Diagnosis",
+          "Binary",
+          "Score"
+        ],
+        "feedback_observation": [
+          "Visual",
+          "Structural Scene State",
+          "Runtime"
+        ],
+        "memory_time": [
+          "Short-Term Memory"
+        ],
+        "memory_reach": [
+          "Local Memory"
+        ],
+        "action_type": [
+          "Code/Script",
+          "Structured Specification",
+          "Tool/Function Call"
+        ],
+        "graphics_software": [
+          "Agent-Adapted"
+        ],
+        "tools": [
+          "Graphics Operations",
+          "Solver Validator",
+          "Perception models",
+          "Static Validator"
+        ],
+        "resources": [
+          "Assets",
+          "Documentation & Rules"
+        ],
+        "representation": [
+          "Code",
+          "Geometry",
+          "Dynamic State",
+          "Pixels"
+        ]
+      },
+      "field_evidence": {
+        "task": {
+          "primary_url": "https://arxiv.org/pdf/2611.18078v1",
+          "locator": "pp. 1-5",
+          "evidence": "The principal purpose is reconstructing and simulating physically interactive 3D scenes, including rigid, articulated and deformable regimes.",
+          "level": "reported"
+        },
+        "input_form": {
+          "primary_url": "https://arxiv.org/pdf/2611.18078v1",
+          "locator": "pp. 1-4",
+          "evidence": "The agent receives a single photograph and a scene description.",
+          "level": "reported"
+        },
+        "output": {
+          "primary_url": "https://arxiv.org/pdf/2611.18078v1",
+          "locator": "pp. 1-6",
+          "evidence": "The system emits executable scene programs/physical models, verified 3D worlds and rendered trajectory-conditioned videos.",
+          "level": "reported"
+        },
+        "model_type": {
+          "primary_url": "https://arxiv.org/pdf/2611.18078v1",
+          "locator": "pp. 1-4, 6",
+          "evidence": "A vision-language coding agent controls code generation and verification while physics solvers and video diffusion provide downstream execution/rendering.",
+          "level": "derived",
+          "reasoning": "The deployed graphics agent combines a VLM controller with procedural graphics, physics and video components, so Hybrid is appropriate."
+        },
+        "model_training": {
+          "primary_url": "https://arxiv.org/pdf/2611.18078v1",
+          "locator": "pp. 1-3, 6, 11-13",
+          "evidence": "The paper uses pretrained coding/video models and reports no task-specific training of the reconstruction controller.",
+          "level": "derived",
+          "reasoning": "The decision-maker is used as a pretrained model with prompting/tool interaction; no controller fine-tuning is reported."
+        },
+        "planning": {
+          "primary_url": "https://arxiv.org/pdf/2611.18078v1",
+          "locator": "pp. 2, 4-5, 7-8",
+          "evidence": "The agent iteratively proposes scripts, renders, critiques, repairs and re-verifies candidate worlds.",
+          "level": "derived",
+          "reasoning": "The next actions are selected at inference time rather than fixed in a complete hard-coded plan, supporting PO-3."
+        },
+        "workflow": {
+          "primary_url": "https://arxiv.org/pdf/2611.18078v1",
+          "locator": "pp. 2-6",
+          "evidence": "Stage-1 visual reconstruction precedes Stage-2 equilibrium verification, followed by physics rollout and video conditioning.",
+          "level": "reported"
+        },
+        "update_strategy": {
+          "primary_url": "https://arxiv.org/pdf/2611.18078v1",
+          "locator": "pp. 2, 4, 6-8, 14",
+          "evidence": "The agent locally repairs camera, geometry, poses, roles and colliders; it replans after structured failures and selects only verified scene submissions.",
+          "level": "reported"
+        },
+        "verifier": {
+          "primary_url": "https://arxiv.org/pdf/2611.18078v1",
+          "locator": "pp. 2, 4, 7-8, 14",
+          "evidence": "Silhouette/edge diagnostics, a deterministic physics solver and equilibrium gates judge candidate worlds; the environment exposes solver health and drift.",
+          "level": "reported"
+        },
+        "feedback_assessment": {
+          "primary_url": "https://arxiv.org/pdf/2611.18078v1",
+          "locator": "pp. 4, 6-8, 14",
+          "evidence": "Mask/edge metrics provide scores, diagnostic overlays and contact/drift traces provide diagnoses, and threshold gates accept or reject candidates.",
+          "level": "reported"
+        },
+        "feedback_observation": {
+          "primary_url": "https://arxiv.org/pdf/2611.18078v1",
+          "locator": "pp. 4-6, 14",
+          "evidence": "The loop observes rendered pixels and masks, structural geometry/contact state, and solver runtime/health and drift traces.",
+          "level": "reported"
+        },
+        "memory_time": {
+          "primary_url": "https://arxiv.org/pdf/2611.18078v1",
+          "locator": "pp. 4-5, 9-10, 14",
+          "evidence": "The agent and solver retain scene programs, current state, contact state and checkpoints during reconstruction and rollout.",
+          "level": "reported"
+        },
+        "memory_reach": {
+          "primary_url": "https://arxiv.org/pdf/2611.18078v1",
+          "locator": "pp. 4-5, 9-10",
+          "evidence": "State and diagnostics are available to the current reconstruction/rollout controller; no cross-run or multi-agent shared memory is described.",
+          "level": "derived",
+          "reasoning": "The retained state is local to the current execution and checkpointed world."
+        },
+        "action_type": {
+          "primary_url": "https://arxiv.org/pdf/2611.18078v1",
+          "locator": "pp. 2, 4-5",
+          "evidence": "The VLM writes procedural 3D scripts/declarative physical models and invokes rendering, physics and verification execution.",
+          "level": "reported"
+        },
+        "graphics_software": {
+          "primary_url": "https://arxiv.org/pdf/2611.18078v1",
+          "locator": "pp. 2-6, 14",
+          "evidence": "The agent-facing interface combines headless rendering, procedural scene compilation and solver adapters.",
+          "level": "derived",
+          "reasoning": "These adapters expose general graphics and physics engines through a dedicated agent workflow, making the software Agent-Adapted."
+        },
+        "tools": {
+          "primary_url": "https://arxiv.org/pdf/2611.18078v1",
+          "locator": "pp. 2, 4-6, 14",
+          "evidence": "Rendering/mask analysis, procedural mesh compilation, rigid and finite-element physics solvers, checkpoint/replay and video conditioning are callable capabilities in the workflow.",
+          "level": "reported"
+        },
+        "resources": {
+          "primary_url": "https://arxiv.org/pdf/2611.18078v1",
+          "locator": "pp. 3-6, 14",
+          "evidence": "The system accesses asset/material priors, declarative physical rules, procedural schemas and pretrained video/renderer components.",
+          "level": "reported"
+        },
+        "representation": {
+          "primary_url": "https://arxiv.org/pdf/2611.18078v1",
+          "locator": "pp. 1-6, 9-10",
+          "evidence": "The workflow uses procedural code, explicit meshes/geometry, dynamic mechanical state, simulation trajectories and rendered pixels.",
+          "level": "reported"
+        }
+      },
+      "contribution": "Introduces a closed-loop agentic reconstruction framework that converts a single photograph into a mechanically verified, executable multi-regime physical world and uses its simulated trajectories to ground video synthesis.",
+      "limitations": "Material parameters are assigned from priors rather than identified online from multi-step visual interaction feedback; the method depends on a fixed solver/model stack and expensive rendering/physics/video components, and its verification is limited to the reported scene regimes and tests.",
+      "taxonomy_delta": [],
+      "confidence": "High",
+      "analysis_target": "Task-time reconstruction agent and its visual/physical verification loop; trajectory-conditioned video synthesis is a downstream rendering phase, not mixed into the controller's primary feedback taxonomy.",
+      "agent_graphics_relation": {
+        "controller": "TelePhysica vision-language coding agent A",
+        "action_or_decision": "Writes procedural meshes and physical models, renders candidates, interprets silhouette/contact/drift diagnostics and revises scene code before executing interventions",
+        "graphics_target": "Executable 3D visual meshes, colliders, finite-element models and their rendered physical rollouts",
+        "primary_url": "https://arxiv.org/pdf/2611.18078v1",
+        "locator": "pp. 1-5, 7-8, 14",
+        "evidence": "The paper explicitly describes an agent that synthesizes and edits scene programs inside a two-stage pixel and gravitational-equilibrium verification loop.",
+        "evidence_status": "demonstrated"
+      },
+      "full_text_reading": {
+        "sha256": "9bfb21d7c084c99829055659f2213093ad7e990d276aecbd0110426108ca5102",
+        "sections_reviewed": [
+          "abstract",
+          "introduction",
+          "method",
+          "experiments",
+          "limitations"
+        ]
+      },
+      "known_corpus_status": "new_relative_to_snapshot",
+      "report_bucket": "same_day_new"
+    },
+    {
+      "canonical_title": "ImpedanceMimic: Learned Impedance as Action Space for Force-Accurate Motion Imitation",
+      "canonical_urls": [
+        "https://arxiv.org/abs/2611.19153v1",
+        "https://arxiv.org/pdf/2611.19153v1",
+        "https://impedancemimic.github.io/ImpedanceMimic/"
+      ],
+      "identifiers": {
+        "arxiv": "2611.19153"
+      },
+      "authors": [
+        "Matthias Jammot",
+        "Pembe Gizem Özdil"
+      ],
+      "abstract": "ImpedanceMimic is a reinforcement-learning policy that modulates per-joint stiffness, damping and position setpoints to imitate human motion while reproducing measured contact forces. It controls subject-specific MuJoCo biomechanical models, transfers to unseen humans and a simulated humanoid robot, and learns an interpretable impedance representation of motor state.",
+      "events": [
+        {
+          "type": "first_submission",
+          "value": "2026-11-14T04:44:36+00:00",
+          "precision": "timestamp",
+          "timezone": "UTC",
+          "primary_url": "https://arxiv.org/abs/2611.19153v1",
+          "authority": "primary",
+          "version": "v1",
+          "evidence": "Official arXiv metadata; target-local time 2026-11-13T22:44:36-06:00.",
+          "prior_event_status": "not_seen_in_supplied_history"
+        }
+      ],
+      "source_records": [
+        {
+          "source": "arxiv_metadata",
+          "url": "https://export.arxiv.org/api/query?id_list=2611.19153",
+          "observation": "Official metadata and v1 timestamp."
+        },
+        {
+          "source": "pdf",
+          "url": "https://arxiv.org/pdf/2611.19153v1",
+          "sha256": "a8825a89869e7c21803b46c53f774d3dd3a0d81d4b39ca85a3017a966eb22b8e",
+          "observation": "Full 39-page PDF read; pages 1-39 delivered across two receipts."
+        }
+      ],
+      "screening_status": "scope_dependent",
+      "screening_reason": "The paper provides an RL controller for simulated articulated human and humanoid bodies, but its principal target is biomechanical force recovery rather than graphics authoring or a graphics-agent task. It is retained as borderline because the controller acts on an executable dynamic character environment and the paper explicitly connects the setting to physics-based character animation.",
+      "screening_evidence": [
+        {
+          "url": "https://arxiv.org/pdf/2611.19153v1",
+          "locator": "pp. 1-3",
+          "evidence": "The controller changes joint impedance in MuJoCo worlds and produces simulated motion/contact forces, while the stated objective is biomechanical force-accurate imitation."
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.19153v1",
+          "locator": "pp. 6-10",
+          "evidence": "Experiments evaluate human and humanoid simulation control, not visual asset authoring, scene construction or rendered-media generation."
+        }
+      ],
+      "application_families": [
+        "Dynamic / Articulated assets",
+        "Dynamic / Physical simulation and effects",
+        "Cross-category"
+      ],
+      "operations": [
+        "Other"
+      ],
+      "taxonomy_cells": {
+        "task": [
+          "Simulation",
+          "Animation"
+        ],
+        "input_form": [
+          "3D Representation",
+          "Video"
+        ],
+        "output": [
+          "Graphics Artifact"
+        ],
+        "model_type": [
+          "Not Applicable"
+        ],
+        "model_training": [
+          "RL Post-Training"
+        ],
+        "planning": [
+          "PO-1"
+        ],
+        "workflow": [
+          "Sequential"
+        ],
+        "update_strategy": [
+          "Local Patch"
+        ],
+        "verifier": [
+          "Environment",
+          "Programmatic"
+        ],
+        "feedback_assessment": [
+          "Score",
+          "Diagnosis"
+        ],
+        "feedback_observation": [
+          "Structural Scene State",
+          "Runtime"
+        ],
+        "memory_time": [
+          "Working Memory"
+        ],
+        "memory_reach": [
+          "Local Memory"
+        ],
+        "action_type": [
+          "Structured Specification",
+          "Tool/Function Call"
+        ],
+        "graphics_software": [
+          "General-Purpose"
+        ],
+        "tools": [
+          "Solver Validator",
+          "Static Validator"
+        ],
+        "resources": [
+          "Examples & Trajectories",
+          "Documentation & Rules"
+        ],
+        "representation": [
+          "Geometry",
+          "Dynamic State"
+        ]
+      },
+      "field_evidence": {
+        "task": {
+          "primary_url": "https://arxiv.org/pdf/2611.19153v1",
+          "locator": "pp. 1-5",
+          "evidence": "The principal task is physics-based motion imitation and contact-force recovery in articulated body simulation; animation is a secondary graphics interpretation.",
+          "level": "reported"
+        },
+        "input_form": {
+          "primary_url": "https://arxiv.org/pdf/2611.19153v1",
+          "locator": "pp. 1-5",
+          "evidence": "Reference motion trajectories and simulated 3D body state are inputs; the method uses motion data rather than a user graphics-authoring request.",
+          "level": "reported"
+        },
+        "output": {
+          "primary_url": "https://arxiv.org/pdf/2611.19153v1",
+          "locator": "pp. 1-6",
+          "evidence": "The controller outputs joint impedance/setpoint actions and produces simulated dynamic states and character motion.",
+          "level": "reported"
+        },
+        "model_type": {
+          "primary_url": "https://arxiv.org/pdf/2611.19153v1",
+          "locator": "pp. 2-5",
+          "evidence": "The decision policy is an MLP actor in an RL controller; no LLM or VLM is used.",
+          "level": "derived",
+          "reasoning": "The taxonomy has no dedicated RL-policy label, and the model is not an LLM/VLM/hybrid graphics agent, so Not Applicable is used for this graphics-agent analysis."
+        },
+        "model_training": {
+          "primary_url": "https://arxiv.org/pdf/2611.19153v1",
+          "locator": "pp. 2, 5, 19-22",
+          "evidence": "The actor and critic are trained with PPO for 2 billion simulation steps using motion and force rewards.",
+          "level": "reported"
+        },
+        "planning": {
+          "primary_url": "https://arxiv.org/pdf/2611.19153v1",
+          "locator": "pp. 3-5, 19",
+          "evidence": "The policy emits an action at each control step; no explicit multi-step task plan is represented.",
+          "level": "derived",
+          "reasoning": "A fixed per-step control loop without a separate plan representation is PO-1."
+        },
+        "workflow": {
+          "primary_url": "https://arxiv.org/pdf/2611.19153v1",
+          "locator": "pp. 2-5, 19-22",
+          "evidence": "Reference observations, policy action, PD simulation and reward computation repeat in one ordered control loop.",
+          "level": "reported"
+        },
+        "update_strategy": {
+          "primary_url": "https://arxiv.org/pdf/2611.19153v1",
+          "locator": "pp. 3-5",
+          "evidence": "The policy continuously changes joint gains and position offsets in response to current simulated state.",
+          "level": "derived",
+          "reasoning": "The update is a local control action on the current dynamic state, not artifact regeneration or global replanning."
+        },
+        "verifier": {
+          "primary_url": "https://arxiv.org/pdf/2611.19153v1",
+          "locator": "pp. 2, 5-6, 17",
+          "evidence": "MuJoCo physics executes the controller and computes contact forces; reward and evaluation metrics quantify tracking and force fidelity.",
+          "level": "reported"
+        },
+        "feedback_assessment": {
+          "primary_url": "https://arxiv.org/pdf/2611.19153v1",
+          "locator": "pp. 5-10, 17",
+          "evidence": "Rewards and evaluation metrics provide continuous scores, while termination and numerical-invalid-state checks provide diagnostic/binary outcomes.",
+          "level": "reported"
+        },
+        "feedback_observation": {
+          "primary_url": "https://arxiv.org/pdf/2611.19153v1",
+          "locator": "pp. 4-5, 19-20",
+          "evidence": "The actor observes proprioception, contact state, lookahead motion/force estimates and foot state; simulator runtime and termination are also used.",
+          "level": "reported"
+        },
+        "memory_time": {
+          "primary_url": "https://arxiv.org/pdf/2611.19153v1",
+          "locator": "pp. 4-5, 21-22",
+          "evidence": "The lagged gain state and current simulated state persist within an episode/control rollout, with reset at episode initialization.",
+          "level": "reported"
+        },
+        "memory_reach": {
+          "primary_url": "https://arxiv.org/pdf/2611.19153v1",
+          "locator": "pp. 4-5",
+          "evidence": "State is available to the single actor/environment loop; no shared or cross-run agent memory is described.",
+          "level": "derived",
+          "reasoning": "The controller's state is local to one control process."
+        },
+        "action_type": {
+          "primary_url": "https://arxiv.org/pdf/2611.19153v1",
+          "locator": "pp. 3-5",
+          "evidence": "The policy emits structured numerical impedance parameters and setpoints that are passed to the PD controller/simulator.",
+          "level": "reported"
+        },
+        "graphics_software": {
+          "primary_url": "https://arxiv.org/pdf/2611.19153v1",
+          "locator": "pp. 1-5",
+          "evidence": "The method directly uses MuJoCo Warp and a general-purpose articulated-body simulator without a graphics-specific agent adapter.",
+          "level": "reported"
+        },
+        "tools": {
+          "primary_url": "https://arxiv.org/pdf/2611.19153v1",
+          "locator": "pp. 2-5, 19-22",
+          "evidence": "MuJoCo Warp, PD control and physical contact computation are callable execution/solver components; kinematic-to-GRF estimation provides observation support.",
+          "level": "reported"
+        },
+        "resources": {
+          "primary_url": "https://arxiv.org/pdf/2611.19153v1",
+          "locator": "pp. 2, 5, 15-22",
+          "evidence": "The system uses motion/force trajectories from nine datasets, biomechanical model rules and simulator configurations.",
+          "level": "reported"
+        },
+        "representation": {
+          "primary_url": "https://arxiv.org/pdf/2611.19153v1",
+          "locator": "pp. 1-5",
+          "evidence": "The workflow represents articulated geometry, joint/dynamic state, contact forces and learned impedance trajectories.",
+          "level": "reported"
+        }
+      },
+      "contribution": "Introduces an RL controller that learns state-dependent joint impedance for force-accurate physics-based motion imitation and transfers across human and robot embodiments.",
+      "limitations": "The principal contribution is biomechanics and simulated control rather than graphics authoring; the method depends on motion/force supervision, a fixed biomechanical model and MuJoCo simulation, and uses future reference lookahead in its estimator/observations.",
+      "taxonomy_delta": [],
+      "confidence": "High",
+      "analysis_target": "Task-time RL control of an articulated simulated body; retained as borderline because the action relation is demonstrated in a dynamic graphics-adjacent simulation, but the paper does not establish an agentic graphics-authoring objective.",
+      "agent_graphics_relation": {
+        "controller": "ImpedanceMimic PPO actor",
+        "action_or_decision": "Modulates per-joint stiffness, damping and position setpoints at each simulation step",
+        "graphics_target": "Simulated articulated human bodies and a Unitree G1 humanoid dynamic state",
+        "primary_url": "https://arxiv.org/pdf/2611.19153v1",
+        "locator": "pp. 1-5, 19-27",
+        "evidence": "The policy directly controls articulated simulated bodies and produces motion/contact trajectories, but the paper's target is biomechanical force recovery rather than graphics artifact authoring; the graphics-scope connection is therefore incomplete.",
+        "evidence_status": "uncertain"
+      },
+      "full_text_reading": {
+        "sha256": "a8825a89869e7c21803b46c53f774d3dd3a0d81d4b39ca85a3017a966eb22b8e",
+        "sections_reviewed": [
+          "abstract",
+          "introduction",
+          "method",
+          "experiments",
+          "limitations",
+          "appendix"
+        ]
+      },
+      "known_corpus_status": "new_relative_to_snapshot",
+      "report_bucket": "same_day_new"
+    },
+    {
+      "canonical_title": "PhysLoop: Harnessing LLMs' Physics Awareness for Self-Improving Video Generation Models",
+      "canonical_urls": [
+        "https://arxiv.org/abs/2611.16748v2",
+        "https://arxiv.org/pdf/2611.16748v2"
+      ],
+      "identifiers": {
+        "arxiv": "2611.16748"
+      },
+      "authors": [
+        "Yuxuan Chen",
+        "Xiaojie Li",
+        "Hao Chen",
+        "Juncheng Ma",
+        "Kewei Zhang",
+        "Zhongjing Du",
+        "Guoqiang Wei",
+        "Fangfang Wang",
+        "Zhen Dong",
+        "Zhiyang Dou",
+        "Liming Zhao",
+        "Yan Zeng",
+        "Jianwei Zhang",
+        "Daquan Zhou"
+      ],
+      "abstract": "PhysLoop is a simulator-grounded harness for physically consistent video generation and repair. Planner, asset-manager, executive, verifier, refiner and final-verifier roles construct scenes, simulate dynamics, generate or repair videos, and feed failure evidence back to responsible stages.",
+      "events": [
+        {
+          "type": "first_submission",
+          "value": "2026-11-12T12:59:35+00:00",
+          "precision": "timestamp",
+          "timezone": "UTC",
+          "primary_url": "https://arxiv.org/abs/2611.16748",
+          "authority": "primary",
+          "evidence": "Official arXiv metadata reports the initial publication timestamp. The precise version history needed to bind the downloaded v2 PDF is not available in the returned metadata.",
+          "prior_event_status": "not_seen_in_supplied_history"
+        }
+      ],
+      "source_records": [
+        {
+          "source": "arxiv_metadata",
+          "url": "https://export.arxiv.org/api/query?id_list=2611.16748",
+          "observation": "Official metadata returned published 2026-11-12T12:59:35Z and updated 2026-11-15T04:55:12Z, but no intermediate version-history receipt."
+        },
+        {
+          "source": "pdf",
+          "url": "https://arxiv.org/pdf/2611.16748v2",
+          "sha256": "f3bb1a2eacbeb10fbe4ff84ed566d832a7df6e9cc347feb7468bf3713a10f7ba",
+          "observation": "Full PDF text was read, but the downloaded version could not be bound to a source-verified version timestamp by the checkpoint validator."
+        }
+      ],
+      "screening_status": "unresolved",
+      "screening_reason": "Full text supports a strong agent-to-graphics relation, but the version-pinned PDF could not be timestamp-validated against the frozen cutoff; preserve as unresolved rather than promote it.",
+      "screening_evidence": [
+        {
+          "url": "https://arxiv.org/pdf/2611.16748v2",
+          "locator": "pp. 3-6",
+          "evidence": "The paper describes LLM roles that construct physical scenes, invoke simulators and repair generated videos."
+        },
+        {
+          "url": "https://arxiv.org/abs/2611.16748",
+          "locator": "official metadata",
+          "evidence": "Initial submission predates the target day, but the downloaded revision's exact source event remains unresolved."
+        }
+      ],
+      "application_families": [
+        "Dynamic / Physical simulation and effects",
+        "Dynamic / Animation and temporal scene",
+        "Datasets and Benchmarks"
+      ],
+      "operations": [
+        "Generation",
+        "Editing",
+        "Auditing"
+      ],
+      "taxonomy_cells": {
+        "task": [
+          "Unclear"
+        ],
+        "input_form": [
+          "Unclear"
+        ],
+        "output": [
+          "Unclear"
+        ],
+        "model_type": [
+          "Unclear"
+        ],
+        "model_training": [
+          "Unclear"
+        ],
+        "planning": [
+          "Unclear"
+        ],
+        "workflow": [
+          "Unclear"
+        ],
+        "update_strategy": [
+          "Unclear"
+        ],
+        "verifier": [
+          "Unclear"
+        ],
+        "feedback_assessment": [
+          "Unclear"
+        ],
+        "feedback_observation": [
+          "Unclear"
+        ],
+        "memory_time": [
+          "Unclear"
+        ],
+        "memory_reach": [
+          "Unclear"
+        ],
+        "action_type": [
+          "Unclear"
+        ],
+        "graphics_software": [
+          "Unclear"
+        ],
+        "tools": [
+          "Unclear"
+        ],
+        "resources": [
+          "Unclear"
+        ],
+        "representation": [
+          "Unclear"
+        ]
+      },
+      "field_evidence": {
+        "task": {
+          "primary_url": "https://arxiv.org/abs/2611.16748",
+          "locator": "metadata and abstract",
+          "evidence": "The abstract indicates simulation-grounded video generation and repair, but the version receipt is unresolved.",
+          "level": "reported"
+        },
+        "input_form": {
+          "primary_url": "https://arxiv.org/abs/2611.16748",
+          "locator": "metadata and abstract",
+          "evidence": "Input modalities are not fully attributable to a validated version record.",
+          "level": "reported"
+        },
+        "output": {
+          "primary_url": "https://arxiv.org/abs/2611.16748",
+          "locator": "metadata and abstract",
+          "evidence": "Output claims are preserved only as unresolved abstract-level evidence.",
+          "level": "reported"
+        },
+        "model_type": {
+          "primary_url": "https://arxiv.org/abs/2611.16748",
+          "locator": "metadata and abstract",
+          "evidence": "Version binding is unresolved.",
+          "level": "reported"
+        },
+        "model_training": {
+          "primary_url": "https://arxiv.org/abs/2611.16748",
+          "locator": "metadata and abstract",
+          "evidence": "Version binding is unresolved.",
+          "level": "reported"
+        },
+        "planning": {
+          "primary_url": "https://arxiv.org/abs/2611.16748",
+          "locator": "metadata and abstract",
+          "evidence": "Version binding is unresolved.",
+          "level": "reported"
+        },
+        "workflow": {
+          "primary_url": "https://arxiv.org/abs/2611.16748",
+          "locator": "metadata and abstract",
+          "evidence": "Version binding is unresolved.",
+          "level": "reported"
+        },
+        "update_strategy": {
+          "primary_url": "https://arxiv.org/abs/2611.16748",
+          "locator": "metadata and abstract",
+          "evidence": "Version binding is unresolved.",
+          "level": "reported"
+        },
+        "verifier": {
+          "primary_url": "https://arxiv.org/abs/2611.16748",
+          "locator": "metadata and abstract",
+          "evidence": "Version binding is unresolved.",
+          "level": "reported"
+        },
+        "feedback_assessment": {
+          "primary_url": "https://arxiv.org/abs/2611.16748",
+          "locator": "metadata and abstract",
+          "evidence": "Version binding is unresolved.",
+          "level": "reported"
+        },
+        "feedback_observation": {
+          "primary_url": "https://arxiv.org/abs/2611.16748",
+          "locator": "metadata and abstract",
+          "evidence": "Version binding is unresolved.",
+          "level": "reported"
+        },
+        "memory_time": {
+          "primary_url": "https://arxiv.org/abs/2611.16748",
+          "locator": "metadata and abstract",
+          "evidence": "Version binding is unresolved.",
+          "level": "reported"
+        },
+        "memory_reach": {
+          "primary_url": "https://arxiv.org/abs/2611.16748",
+          "locator": "metadata and abstract",
+          "evidence": "Version binding is unresolved.",
+          "level": "reported"
+        },
+        "action_type": {
+          "primary_url": "https://arxiv.org/abs/2611.16748",
+          "locator": "metadata and abstract",
+          "evidence": "Version binding is unresolved.",
+          "level": "reported"
+        },
+        "graphics_software": {
+          "primary_url": "https://arxiv.org/abs/2611.16748",
+          "locator": "metadata and abstract",
+          "evidence": "Version binding is unresolved.",
+          "level": "reported"
+        },
+        "tools": {
+          "primary_url": "https://arxiv.org/abs/2611.16748",
+          "locator": "metadata and abstract",
+          "evidence": "Version binding is unresolved.",
+          "level": "reported"
+        },
+        "resources": {
+          "primary_url": "https://arxiv.org/abs/2611.16748",
+          "locator": "metadata and abstract",
+          "evidence": "Version binding is unresolved.",
+          "level": "reported"
+        },
+        "representation": {
+          "primary_url": "https://arxiv.org/abs/2611.16748",
+          "locator": "metadata and abstract",
+          "evidence": "Version binding is unresolved.",
+          "level": "reported"
+        }
+      },
+      "contribution": "Introduces a simulator-grounded harness for physically consistent video generation and repair, with controllable data construction and localized correction.",
+      "limitations": "The exact version event for the read PDF could not be source-validated before the frozen cutoff, so the full-text evidence is not promoted to a final retained classification in this run.",
+      "taxonomy_delta": [],
+      "confidence": "Low",
+      "analysis_target": "Unresolved version-sensitive lead; likely task-time multi-agent scene construction and video repair, but no validated final taxonomy is asserted.",
+      "agent_graphics_relation": {
+        "controller": "PhysLoop LLM role ensemble",
+        "action_or_decision": "Constructs scenes, invokes simulation/video tools and revises generated video artifacts",
+        "graphics_target": "Physical scene configurations and rendered videos",
+        "primary_url": "https://arxiv.org/abs/2611.16748",
+        "locator": "abstract",
+        "evidence": "The abstract describes these relations, but the version-specific full-text receipt is unresolved.",
+        "evidence_status": "uncertain"
+      },
+      "known_corpus_status": "new_relative_to_snapshot",
+      "report_bucket": "unresolved"
+    }
+  ],
+  "evidence_policy": "version-pinned-pdf-v1",
+  "coverage_policy": "source-catalog-v1",
+  "scope_policy": "graphics-action-borderline-v1",
+  "reading_policy": "abstract-first-v2",
+  "history_comparison": {
+    "files": [
+      "/home/hl35496/agentic-graphics-bvb/knowledge/daily-history/through-20261015-bvb-v11/reports/bvb-20261013-robustv10-balanced-r1/run.json",
+      "/home/hl35496/agentic-graphics-bvb/knowledge/daily-history/through-20261015-bvb-v11/reports/bvb-20261013-robustv10-balanced-r2/run.json",
+      "/home/hl35496/agentic-graphics-bvb/knowledge/daily-history/through-20261015-bvb-v11/reports/bvb-20261014-robustv10-balanced-r1/run.json",
+      "/home/hl35496/agentic-graphics-bvb/knowledge/daily-history/through-20261015-bvb-v11/reports/bvb-20261014-robustv10-balanced-r2/run.json",
+      "/home/hl35496/agentic-graphics-bvb/knowledge/daily-history/through-20261015-bvb-v11/reports/bvb-20261015-daily15-history-gapcheck-r1/run.json",
+      "/home/hl35496/agentic-graphics-bvb/knowledge/daily-history/through-20261015-bvb-v11/reports/bvb-20261015-daily15-history-v1-r1/run.json"
+    ],
+    "status": "compared"
+  }
+}
