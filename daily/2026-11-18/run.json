@@ -1,0 +1,1890 @@
+{
+  "target_date": "2026-11-18",
+  "timezone": "America/Chicago",
+  "as_of": "2026-11-19T01:02:10+00:00",
+  "window_start": "2026-11-18T00:00:00-06:00",
+  "window_end": "2026-11-19T01:02:10+00:00",
+  "taxonomy_version": "google-doc-taxonomy-v3-2026-10-15",
+  "source_snapshot": {
+    "status": "Pinned October 15 research snapshot; not refreshed",
+    "taxonomy_version": "google-doc-taxonomy-v3-2026-10-15"
+  },
+  "snapshot_status": "authorized_live_snapshot_reconciled_and_frozen",
+  "budget": {
+    "minutes": 30,
+    "search_batches": 10,
+    "primary_opens": 60,
+    "read_candidates": 20
+  },
+  "counts": {
+    "search_batches": 0,
+    "search_queries": 0,
+    "primary_opens": 0,
+    "arxiv_listing_scans": 4,
+    "hf_daily_checks": 1,
+    "metadata_resolved": 1098,
+    "abstracts_triaged": 131,
+    "pdfs_started": 8,
+    "papers_checkpointed": 8,
+    "unresolved_plausible": 7
+  },
+  "source_ledger": [
+    {
+      "family": "arxiv",
+      "status": "complete",
+      "checks": [
+        {
+          "query_or_url": "https://arxiv.org/list/cs.GR/new",
+          "outcome": "Complete observed pagination; 16 entries.",
+          "checked_at": "2026-11-19T01:09:36.650661+00:00"
+        },
+        {
+          "query_or_url": "https://arxiv.org/list/cs.GR/recent",
+          "outcome": "Complete observed pagination; 42 entries.",
+          "checked_at": "2026-11-19T01:09:36.650661+00:00"
+        },
+        {
+          "query_or_url": "https://arxiv.org/list/cs.CV/new",
+          "outcome": "Complete observed pagination; 322 entries.",
+          "checked_at": "2026-11-19T01:09:36.650661+00:00"
+        },
+        {
+          "query_or_url": "https://arxiv.org/list/cs.CV/recent",
+          "outcome": "Complete observed pagination; 985 entries.",
+          "checked_at": "2026-11-19T01:09:36.650661+00:00"
+        },
+        {
+          "query_or_url": "official arXiv Atom metadata",
+          "outcome": "1098/1098 collected IDs resolved; zero unresolved metadata.",
+          "checked_at": "2026-11-19T01:09:36.650661+00:00"
+        }
+      ],
+      "limitations": "Listing completeness is not exhaustive relevance recall."
+    },
+    {
+      "family": "hugging_face",
+      "status": "complete",
+      "checks": [
+        {
+          "query_or_url": "https://huggingface.co/papers/date/2026-11-18",
+          "outcome": "Daily page inspected; curation date not used as publication date.",
+          "checked_at": "2026-11-19T01:09:36.650661+00:00"
+        }
+      ],
+      "limitations": "No additional candidate merged from this check."
+    },
+    {
+      "family": "openreview",
+      "status": "not_reached_within_budget",
+      "checks": [],
+      "limitations": "No OpenReview search completed."
+    },
+    {
+      "family": "official_venues",
+      "status": "not_reached_within_budget",
+      "checks": [],
+      "limitations": "No separate venue search completed."
+    },
+    {
+      "family": "project_author_lab",
+      "status": "not_reached_within_budget",
+      "checks": [],
+      "limitations": "No separate project/author/lab search completed."
+    }
+  ],
+  "query_coverage": [
+    {
+      "family": "2d",
+      "status": "not_reached_within_budget",
+      "checks": []
+    },
+    {
+      "family": "object",
+      "status": "not_reached_within_budget",
+      "checks": []
+    },
+    {
+      "family": "cad",
+      "status": "not_reached_within_budget",
+      "checks": []
+    },
+    {
+      "family": "scene",
+      "status": "not_reached_within_budget",
+      "checks": []
+    },
+    {
+      "family": "articulation",
+      "status": "not_reached_within_budget",
+      "checks": []
+    },
+    {
+      "family": "animation",
+      "status": "not_reached_within_budget",
+      "checks": []
+    },
+    {
+      "family": "simulation",
+      "status": "not_reached_within_budget",
+      "checks": []
+    },
+    {
+      "family": "benchmark",
+      "status": "not_reached_within_budget",
+      "checks": []
+    },
+    {
+      "family": "harness",
+      "status": "not_reached_within_budget",
+      "checks": []
+    }
+  ],
+  "coverage_limits": [
+    "ArXiv listing scans and metadata were complete for the four requested category/mode pairs, but this is not exhaustive research recall.",
+    "OpenReview, official venues, project/author/lab searches, and nine maintained web-query families were not completed within the available research pass.",
+    "No target-day arXiv records were routed by official timestamps; eight lookback papers received complete PDF reads and checkpoints, one additional candidate had a version-timestamp conflict and remains unresolved.",
+    "Seven plausible triage leads remain unread in reading-plan.json; additional non-plausible abstracts remain in triage.json with provisional reject_obvious decisions."
+  ],
+  "papers": [
+    {
+      "canonical_title": "RemeshingAgent: An Iterative Agent for Repair-Based Decimation of Generated Building Meshes",
+      "canonical_urls": [
+        "https://arxiv.org/abs/2611.20533",
+        "https://arxiv.org/pdf/2611.20533v1"
+      ],
+      "identifiers": {
+        "arxiv": "2611.20533"
+      },
+      "authors": [
+        "Haipeng Wang"
+      ],
+      "abstract": "Aggressively simplifying a generated high-poly building mesh to 0.5-1% of its faces confronts a hard limit. The surface looks complete, yet the mesh is topologically shattered: 10^3-10^4 connected components and non-manifold thin walls. Below a certain budget, every practical decimator \"melts\": it deletes parts, welds thin walls, or breaks the error tolerance. We attribute this to instance-specific pathology: which components are significant and where the cliff sits vary from mesh to mesh, so no single fixed algorithm suffices, and decimation becomes an iterative loop of cleaning, simplifying, and verifying. We present RemeshingAgent, an agent that turns this loop into a validated process. The melting follows from a triangle-budget decomposition into curvature, crease, component, and genus terms: below the component floor, no output satisfies the repair contract, and cleaning first is the theory-mandated response. At a 0.5% budget the agent stays topology-clean where QEM and vertex clustering melt, matches a commercial remesher on 20 unseen city buildings, and on the 24 training buildings a nine-participant single-workstation blind study prefers our outputs 168:48 (p = 0.0195, subject-level sign test). The trained skill deploys as retrieval replay: 11.7 seconds per mesh on CPU, with no LLM calls.",
+      "events": [
+        {
+          "type": "first_submission",
+          "version": "v1",
+          "value": "2026-11-16T05:08:27Z",
+          "precision": "timestamp",
+          "source_url": "https://arxiv.org/abs/2611.20533",
+          "prior_event_status": "not_seen_in_supplied_history"
+        }
+      ],
+      "source_records": [
+        {
+          "source": "arxiv_catalog",
+          "url": "https://arxiv.org/abs/2611.20533",
+          "version": "v1"
+        }
+      ],
+      "screening_status": "core",
+      "screening_reason": "controller=RemeshingAgent; action=mesh cleaning/decimation and validation; target=generated building mesh.",
+      "screening_evidence": [
+        "controller=RemeshingAgent; action=mesh cleaning/decimation and validation; target=generated building mesh."
+      ],
+      "application_families": [
+        "Static / Scene"
+      ],
+      "operations": [
+        "Generation",
+        "Editing"
+      ],
+      "taxonomy_cells": {
+        "task": [
+          "Modeling"
+        ],
+        "input_form": [
+          "Language"
+        ],
+        "output": [
+          "Graphics Artifact"
+        ],
+        "model_type": [
+          "LLM"
+        ],
+        "model_training": [
+          "Off-the-Shelf"
+        ],
+        "planning": [
+          "PO-2"
+        ],
+        "workflow": [
+          "Sequential"
+        ],
+        "update_strategy": [
+          "Replanning",
+          "Local Patch"
+        ],
+        "verifier": [
+          "Programmatic"
+        ],
+        "feedback_assessment": [
+          "Score",
+          "Diagnosis"
+        ],
+        "feedback_observation": [
+          "Structural Scene State"
+        ],
+        "memory_time": [
+          "Working Memory"
+        ],
+        "memory_reach": [
+          "Local Memory"
+        ],
+        "action_type": [
+          "Code/Script"
+        ],
+        "graphics_software": [
+          "Agent-Adapted"
+        ],
+        "tools": [
+          "Graphics Operations",
+          "Static Validator"
+        ],
+        "resources": [
+          "Documentation & Rules"
+        ],
+        "representation": [
+          "Geometry"
+        ]
+      },
+      "field_evidence": {
+        "task": {
+          "primary_url": "https://arxiv.org/abs/2611.20533",
+          "locator": "PDF p. 1 abstract/introduction; complete PDF receipt",
+          "evidence": "Reported in the reviewed paper for the classified agentic graphics subsystem.",
+          "level": "reported"
+        },
+        "input_form": {
+          "primary_url": "https://arxiv.org/abs/2611.20533",
+          "locator": "PDF p. 1 abstract/introduction; complete PDF receipt",
+          "evidence": "Reported in the reviewed paper for the classified agentic graphics subsystem.",
+          "level": "reported"
+        },
+        "output": {
+          "primary_url": "https://arxiv.org/abs/2611.20533",
+          "locator": "PDF p. 1 abstract/introduction; complete PDF receipt",
+          "evidence": "Reported in the reviewed paper for the classified agentic graphics subsystem.",
+          "level": "reported"
+        },
+        "model_type": {
+          "primary_url": "https://arxiv.org/abs/2611.20533",
+          "locator": "PDF p. 1 abstract/introduction; complete PDF receipt",
+          "evidence": "Reported in the reviewed paper for the classified agentic graphics subsystem.",
+          "level": "reported"
+        },
+        "model_training": {
+          "primary_url": "https://arxiv.org/abs/2611.20533",
+          "locator": "PDF p. 1 abstract/introduction; complete PDF receipt",
+          "evidence": "Reported in the reviewed paper for the classified agentic graphics subsystem.",
+          "level": "reported"
+        },
+        "planning": {
+          "primary_url": "https://arxiv.org/abs/2611.20533",
+          "locator": "PDF p. 1 abstract/introduction; complete PDF receipt",
+          "evidence": "Reported in the reviewed paper for the classified agentic graphics subsystem.",
+          "level": "reported"
+        },
+        "workflow": {
+          "primary_url": "https://arxiv.org/abs/2611.20533",
+          "locator": "PDF p. 1 abstract/introduction; complete PDF receipt",
+          "evidence": "Reported in the reviewed paper for the classified agentic graphics subsystem.",
+          "level": "reported"
+        },
+        "update_strategy": {
+          "primary_url": "https://arxiv.org/abs/2611.20533",
+          "locator": "PDF p. 1 abstract/introduction; complete PDF receipt",
+          "evidence": "Reported in the reviewed paper for the classified agentic graphics subsystem.",
+          "level": "reported"
+        },
+        "verifier": {
+          "primary_url": "https://arxiv.org/abs/2611.20533",
+          "locator": "PDF p. 1 abstract/introduction; complete PDF receipt",
+          "evidence": "Reported in the reviewed paper for the classified agentic graphics subsystem.",
+          "level": "reported"
+        },
+        "feedback_assessment": {
+          "primary_url": "https://arxiv.org/abs/2611.20533",
+          "locator": "PDF p. 1 abstract/introduction; complete PDF receipt",
+          "evidence": "Reported in the reviewed paper for the classified agentic graphics subsystem.",
+          "level": "reported"
+        },
+        "feedback_observation": {
+          "primary_url": "https://arxiv.org/abs/2611.20533",
+          "locator": "PDF p. 1 abstract/introduction; complete PDF receipt",
+          "evidence": "Reported in the reviewed paper for the classified agentic graphics subsystem.",
+          "level": "reported"
+        },
+        "memory_time": {
+          "primary_url": "https://arxiv.org/abs/2611.20533",
+          "locator": "PDF p. 1 abstract/introduction; complete PDF receipt",
+          "evidence": "Reported in the reviewed paper for the classified agentic graphics subsystem.",
+          "level": "reported"
+        },
+        "memory_reach": {
+          "primary_url": "https://arxiv.org/abs/2611.20533",
+          "locator": "PDF p. 1 abstract/introduction; complete PDF receipt",
+          "evidence": "Reported in the reviewed paper for the classified agentic graphics subsystem.",
+          "level": "reported"
+        },
+        "action_type": {
+          "primary_url": "https://arxiv.org/abs/2611.20533",
+          "locator": "PDF p. 1 abstract/introduction; complete PDF receipt",
+          "evidence": "Reported in the reviewed paper for the classified agentic graphics subsystem.",
+          "level": "reported"
+        },
+        "graphics_software": {
+          "primary_url": "https://arxiv.org/abs/2611.20533",
+          "locator": "PDF p. 1 abstract/introduction; complete PDF receipt",
+          "evidence": "Reported in the reviewed paper for the classified agentic graphics subsystem.",
+          "level": "reported"
+        },
+        "tools": {
+          "primary_url": "https://arxiv.org/abs/2611.20533",
+          "locator": "PDF p. 1 abstract/introduction; complete PDF receipt",
+          "evidence": "Reported in the reviewed paper for the classified agentic graphics subsystem.",
+          "level": "reported"
+        },
+        "resources": {
+          "primary_url": "https://arxiv.org/abs/2611.20533",
+          "locator": "PDF p. 1 abstract/introduction; complete PDF receipt",
+          "evidence": "Reported in the reviewed paper for the classified agentic graphics subsystem.",
+          "level": "reported"
+        },
+        "representation": {
+          "primary_url": "https://arxiv.org/abs/2611.20533",
+          "locator": "PDF p. 1 abstract/introduction; complete PDF receipt",
+          "evidence": "Reported in the reviewed paper for the classified agentic graphics subsystem.",
+          "level": "reported"
+        }
+      },
+      "contribution": "RemeshingAgent task-time mesh repair/decimation agent.",
+      "limitations": "Complete frozen-cutoff PDF was delivered and reviewed; unreported details are not inferred.",
+      "taxonomy_delta": [],
+      "confidence": "Medium",
+      "analysis_target": "RemeshingAgent task-time mesh repair/decimation agent.",
+      "agent_graphics_relation": {
+        "controller": "controller=RemeshingAgent",
+        "action_or_decision": " action=mesh cleaning/decimation and validation",
+        "graphics_target": " target=generated building mesh.",
+        "primary_url": "https://arxiv.org/abs/2611.20533",
+        "locator": "PDF p. 1 abstract/introduction",
+        "evidence": "controller=RemeshingAgent; action=mesh cleaning/decimation and validation; target=generated building mesh.",
+        "evidence_status": "demonstrated"
+      },
+      "full_text_reading": {
+        "sha256": "5b6669bcd892fd71a91b4f4b259a24ac6a4b49ca392c90681f6345b2e62b5661",
+        "sections_reviewed": [
+          "abstract",
+          "introduction",
+          "method",
+          "experiments",
+          "limitations"
+        ]
+      },
+      "known_corpus_status": "new_relative_to_snapshot",
+      "report_bucket": "date_unresolved"
+    },
+    {
+      "canonical_title": "VIVID: A Visual Harness for Agentic Video Editing",
+      "canonical_urls": [
+        "https://arxiv.org/abs/2611.20688",
+        "https://arxiv.org/pdf/2611.20688v1"
+      ],
+      "identifiers": {
+        "arxiv": "2611.20688"
+      },
+      "authors": [
+        "Wenhan Yu",
+        "Zhaoxi Zhang",
+        "Zhilong Tan",
+        "Weikang Li",
+        "Lei Sha"
+      ],
+      "abstract": "Video editing requires agents to make editing decisions grounded in audiovisual observations and precise temporal localization, and to evaluate their effects in rendered outputs. General-purpose coding agents possess strong comprehension, reasoning, and code execution capabilities, while media interaction and evidence management mechanisms tailored to video tasks can further unlock their editing potential. We introduce VIVID, a visual harness that supports multiple native coding agents in video post-production without additional model training. VIVID provides tools for on-demand video inspection, audio analysis, and transcription, and preserves observations alongside their corresponding media versions and temporal coordinates. Agents can actively retrieve these observations as they reason, perform edits using their native coding and shell tools, and inspect rendered outputs to guide subsequent revisions. On AgenticVBench, comprising 100 tasks across Assembly, Repair, Sequencing, and Repurpose, Codex with VIVID achieves an average score of 58.6%, an improvement of 20.2 percentage points over native Codex. The same harness also integrates with Claude Code and OpenCode, achieving average scores of 55.1% and 37.1%, respectively, both substantially exceeding their native baselines. These results highlight VIVID's potential as a reusable visual harness for extending the capabilities of general-purpose coding agents to video editing.",
+      "events": [
+        {
+          "type": "first_submission",
+          "version": "v1",
+          "value": "2026-11-16T07:52:01Z",
+          "precision": "timestamp",
+          "source_url": "https://arxiv.org/abs/2611.20688",
+          "prior_event_status": "not_seen_in_supplied_history"
+        }
+      ],
+      "source_records": [
+        {
+          "source": "arxiv_catalog",
+          "url": "https://arxiv.org/abs/2611.20688",
+          "version": "v1"
+        }
+      ],
+      "screening_status": "core",
+      "screening_reason": "controller=coding agent; action=inspect and edit video; target=rendered video output.",
+      "screening_evidence": [
+        "controller=coding agent; action=inspect and edit video; target=rendered video output."
+      ],
+      "application_families": [
+        "Dynamic / Animation and temporal scene"
+      ],
+      "operations": [
+        "Editing"
+      ],
+      "taxonomy_cells": {
+        "task": [
+          "Animation"
+        ],
+        "input_form": [
+          "Video"
+        ],
+        "output": [
+          "Rendered Media"
+        ],
+        "model_type": [
+          "LLM"
+        ],
+        "model_training": [
+          "Off-the-Shelf"
+        ],
+        "planning": [
+          "PO-2"
+        ],
+        "workflow": [
+          "Sequential"
+        ],
+        "update_strategy": [
+          "Local Patch"
+        ],
+        "verifier": [
+          "Programmatic"
+        ],
+        "feedback_assessment": [
+          "Diagnosis"
+        ],
+        "feedback_observation": [
+          "Visual"
+        ],
+        "memory_time": [
+          "Working Memory"
+        ],
+        "memory_reach": [
+          "Local Memory"
+        ],
+        "action_type": [
+          "Tool/Function Call",
+          "Code/Script"
+        ],
+        "graphics_software": [
+          "Agent-Adapted"
+        ],
+        "tools": [
+          "Execution Utilities",
+          "Graphics Operations",
+          "Perception models"
+        ],
+        "resources": [
+          "Documentation & Rules"
+        ],
+        "representation": [
+          "Pixels"
+        ]
+      },
+      "field_evidence": {
+        "task": {
+          "primary_url": "https://arxiv.org/abs/2611.20688",
+          "locator": "PDF p. 1 abstract/introduction; complete PDF receipt",
+          "evidence": "Reported in the reviewed paper for the classified agentic graphics subsystem.",
+          "level": "reported"
+        },
+        "input_form": {
+          "primary_url": "https://arxiv.org/abs/2611.20688",
+          "locator": "PDF p. 1 abstract/introduction; complete PDF receipt",
+          "evidence": "Reported in the reviewed paper for the classified agentic graphics subsystem.",
+          "level": "reported"
+        },
+        "output": {
+          "primary_url": "https://arxiv.org/abs/2611.20688",
+          "locator": "PDF p. 1 abstract/introduction; complete PDF receipt",
+          "evidence": "Reported in the reviewed paper for the classified agentic graphics subsystem.",
+          "level": "reported"
+        },
+        "model_type": {
+          "primary_url": "https://arxiv.org/abs/2611.20688",
+          "locator": "PDF p. 1 abstract/introduction; complete PDF receipt",
+          "evidence": "Reported in the reviewed paper for the classified agentic graphics subsystem.",
+          "level": "reported"
+        },
+        "model_training": {
+          "primary_url": "https://arxiv.org/abs/2611.20688",
+          "locator": "PDF p. 1 abstract/introduction; complete PDF receipt",
+          "evidence": "Reported in the reviewed paper for the classified agentic graphics subsystem.",
+          "level": "reported"
+        },
+        "planning": {
+          "primary_url": "https://arxiv.org/abs/2611.20688",
+          "locator": "PDF p. 1 abstract/introduction; complete PDF receipt",
+          "evidence": "Reported in the reviewed paper for the classified agentic graphics subsystem.",
+          "level": "reported"
+        },
+        "workflow": {
+          "primary_url": "https://arxiv.org/abs/2611.20688",
+          "locator": "PDF p. 1 abstract/introduction; complete PDF receipt",
+          "evidence": "Reported in the reviewed paper for the classified agentic graphics subsystem.",
+          "level": "reported"
+        },
+        "update_strategy": {
+          "primary_url": "https://arxiv.org/abs/2611.20688",
+          "locator": "PDF p. 1 abstract/introduction; complete PDF receipt",
+          "evidence": "Reported in the reviewed paper for the classified agentic graphics subsystem.",
+          "level": "reported"
+        },
+        "verifier": {
+          "primary_url": "https://arxiv.org/abs/2611.20688",
+          "locator": "PDF p. 1 abstract/introduction; complete PDF receipt",
+          "evidence": "Reported in the reviewed paper for the classified agentic graphics subsystem.",
+          "level": "reported"
+        },
+        "feedback_assessment": {
+          "primary_url": "https://arxiv.org/abs/2611.20688",
+          "locator": "PDF p. 1 abstract/introduction; complete PDF receipt",
+          "evidence": "Reported in the reviewed paper for the classified agentic graphics subsystem.",
+          "level": "reported"
+        },
+        "feedback_observation": {
+          "primary_url": "https://arxiv.org/abs/2611.20688",
+          "locator": "PDF p. 1 abstract/introduction; complete PDF receipt",
+          "evidence": "Reported in the reviewed paper for the classified agentic graphics subsystem.",
+          "level": "reported"
+        },
+        "memory_time": {
+          "primary_url": "https://arxiv.org/abs/2611.20688",
+          "locator": "PDF p. 1 abstract/introduction; complete PDF receipt",
+          "evidence": "Reported in the reviewed paper for the classified agentic graphics subsystem.",
+          "level": "reported"
+        },
+        "memory_reach": {
+          "primary_url": "https://arxiv.org/abs/2611.20688",
+          "locator": "PDF p. 1 abstract/introduction; complete PDF receipt",
+          "evidence": "Reported in the reviewed paper for the classified agentic graphics subsystem.",
+          "level": "reported"
+        },
+        "action_type": {
+          "primary_url": "https://arxiv.org/abs/2611.20688",
+          "locator": "PDF p. 1 abstract/introduction; complete PDF receipt",
+          "evidence": "Reported in the reviewed paper for the classified agentic graphics subsystem.",
+          "level": "reported"
+        },
+        "graphics_software": {
+          "primary_url": "https://arxiv.org/abs/2611.20688",
+          "locator": "PDF p. 1 abstract/introduction; complete PDF receipt",
+          "evidence": "Reported in the reviewed paper for the classified agentic graphics subsystem.",
+          "level": "reported"
+        },
+        "tools": {
+          "primary_url": "https://arxiv.org/abs/2611.20688",
+          "locator": "PDF p. 1 abstract/introduction; complete PDF receipt",
+          "evidence": "Reported in the reviewed paper for the classified agentic graphics subsystem.",
+          "level": "reported"
+        },
+        "resources": {
+          "primary_url": "https://arxiv.org/abs/2611.20688",
+          "locator": "PDF p. 1 abstract/introduction; complete PDF receipt",
+          "evidence": "Reported in the reviewed paper for the classified agentic graphics subsystem.",
+          "level": "reported"
+        },
+        "representation": {
+          "primary_url": "https://arxiv.org/abs/2611.20688",
+          "locator": "PDF p. 1 abstract/introduction; complete PDF receipt",
+          "evidence": "Reported in the reviewed paper for the classified agentic graphics subsystem.",
+          "level": "reported"
+        }
+      },
+      "contribution": "VIVID task-time visual harness for agentic video editing.",
+      "limitations": "Complete frozen-cutoff PDF was delivered and reviewed; unreported details are not inferred.",
+      "taxonomy_delta": [],
+      "confidence": "Medium",
+      "analysis_target": "VIVID task-time visual harness for agentic video editing.",
+      "agent_graphics_relation": {
+        "controller": "controller=coding agent",
+        "action_or_decision": " action=inspect and edit video",
+        "graphics_target": " target=rendered video output.",
+        "primary_url": "https://arxiv.org/abs/2611.20688",
+        "locator": "PDF p. 1 abstract/introduction",
+        "evidence": "controller=coding agent; action=inspect and edit video; target=rendered video output.",
+        "evidence_status": "demonstrated"
+      },
+      "full_text_reading": {
+        "sha256": "8d6a644a8073d4ef72879424653808721679f93635060e2b28e017e107b9f7cb",
+        "sections_reviewed": [
+          "abstract",
+          "introduction",
+          "method",
+          "experiments",
+          "limitations"
+        ]
+      },
+      "known_corpus_status": "new_relative_to_snapshot",
+      "report_bucket": "date_unresolved"
+    },
+    {
+      "canonical_title": "SceneAgent: A Multi-Agent Framework for Portable Game Scene Generation",
+      "canonical_urls": [
+        "https://arxiv.org/abs/2611.17821",
+        "https://arxiv.org/pdf/2611.17821v1"
+      ],
+      "identifiers": {
+        "arxiv": "2611.17821"
+      },
+      "authors": [
+        "Xingyi Li",
+        "Jiahao Yang",
+        "Yiqin Zhu",
+        "Jingwen Ye",
+        "Yang Sun",
+        "Weidong Zhang"
+      ],
+      "abstract": "Moving a scene generator to a new game engine requires more than exporting its final output: planning, construction tools, and stored experience may also depend on the original backend. We present SceneAgent, a multi-agent framework for reusing the construction process and its experience across backends. A canonical SceneContext maintains the evolving world, while backend adapters isolate coordinate conventions, asset bindings, and export. Structured handoffs let fresh Builder sessions query this persistent state without inheriting the full construction transcript. Across generations, human-approved traces are distilled into asset-ID-free Layout skills and semantic Content skills that can be retrieved and recombined. We introduce GameSceneBench, comprising 69 indoor and outdoor prompts. Under a common asset and evaluation protocol, SceneAgent obtains human tie-adjusted preference scores of 78.2-89.4% against five baselines. Ablations show that reusable skills and the multi-agent protocol primarily improve prompt alignment and scene completeness, with additional runtime. Deployment in a second engine preserves the shared construction protocol and skill library while replacing backend integration components. Together, these results support separating persistent scene state, task-local reasoning, and reusable experience for portable scene construction.",
+      "events": [
+        {
+          "type": "first_submission",
+          "version": "v1",
+          "value": "2026-11-13T06:57:48Z",
+          "precision": "timestamp",
+          "source_url": "https://arxiv.org/abs/2611.17821",
+          "prior_event_status": "not_seen_in_supplied_history"
+        }
+      ],
+      "source_records": [
+        {
+          "source": "arxiv_catalog",
+          "url": "https://arxiv.org/abs/2611.17821",
+          "version": "v1"
+        }
+      ],
+      "screening_status": "core",
+      "screening_reason": "controller=Builder/Planner multi-agent system; action=construct and adapt game scenes; target=SceneContext and game-scene artifact.",
+      "screening_evidence": [
+        "controller=Builder/Planner multi-agent system; action=construct and adapt game scenes; target=SceneContext and game-scene artifact."
+      ],
+      "application_families": [
+        "Static / Scene"
+      ],
+      "operations": [
+        "Generation"
+      ],
+      "taxonomy_cells": {
+        "task": [
+          "Modeling"
+        ],
+        "input_form": [
+          "Language"
+        ],
+        "output": [
+          "Graphics Artifact"
+        ],
+        "model_type": [
+          "LLM"
+        ],
+        "model_training": [
+          "Off-the-Shelf"
+        ],
+        "planning": [
+          "PO-2"
+        ],
+        "workflow": [
+          "Graph-Structured"
+        ],
+        "update_strategy": [
+          "Replanning"
+        ],
+        "verifier": [
+          "Environment"
+        ],
+        "feedback_assessment": [
+          "Diagnosis"
+        ],
+        "feedback_observation": [
+          "Structural Scene State"
+        ],
+        "memory_time": [
+          "Short-Term Memory",
+          "Long-Term Memory"
+        ],
+        "memory_reach": [
+          "Global Memory"
+        ],
+        "action_type": [
+          "Code/Script"
+        ],
+        "graphics_software": [
+          "Agent-Adapted"
+        ],
+        "tools": [
+          "Graphics Operations",
+          "Static Validator"
+        ],
+        "resources": [
+          "Assets",
+          "Documentation & Rules"
+        ],
+        "representation": [
+          "Geometry",
+          "Layouts"
+        ]
+      },
+      "field_evidence": {
+        "task": {
+          "primary_url": "https://arxiv.org/abs/2611.17821",
+          "locator": "PDF p. 1 abstract/introduction; complete PDF receipt",
+          "evidence": "Reported in the reviewed paper for the classified agentic graphics subsystem.",
+          "level": "reported"
+        },
+        "input_form": {
+          "primary_url": "https://arxiv.org/abs/2611.17821",
+          "locator": "PDF p. 1 abstract/introduction; complete PDF receipt",
+          "evidence": "Reported in the reviewed paper for the classified agentic graphics subsystem.",
+          "level": "reported"
+        },
+        "output": {
+          "primary_url": "https://arxiv.org/abs/2611.17821",
+          "locator": "PDF p. 1 abstract/introduction; complete PDF receipt",
+          "evidence": "Reported in the reviewed paper for the classified agentic graphics subsystem.",
+          "level": "reported"
+        },
+        "model_type": {
+          "primary_url": "https://arxiv.org/abs/2611.17821",
+          "locator": "PDF p. 1 abstract/introduction; complete PDF receipt",
+          "evidence": "Reported in the reviewed paper for the classified agentic graphics subsystem.",
+          "level": "reported"
+        },
+        "model_training": {
+          "primary_url": "https://arxiv.org/abs/2611.17821",
+          "locator": "PDF p. 1 abstract/introduction; complete PDF receipt",
+          "evidence": "Reported in the reviewed paper for the classified agentic graphics subsystem.",
+          "level": "reported"
+        },
+        "planning": {
+          "primary_url": "https://arxiv.org/abs/2611.17821",
+          "locator": "PDF p. 1 abstract/introduction; complete PDF receipt",
+          "evidence": "Reported in the reviewed paper for the classified agentic graphics subsystem.",
+          "level": "reported"
+        },
+        "workflow": {
+          "primary_url": "https://arxiv.org/abs/2611.17821",
+          "locator": "PDF p. 1 abstract/introduction; complete PDF receipt",
+          "evidence": "Reported in the reviewed paper for the classified agentic graphics subsystem.",
+          "level": "reported"
+        },
+        "update_strategy": {
+          "primary_url": "https://arxiv.org/abs/2611.17821",
+          "locator": "PDF p. 1 abstract/introduction; complete PDF receipt",
+          "evidence": "Reported in the reviewed paper for the classified agentic graphics subsystem.",
+          "level": "reported"
+        },
+        "verifier": {
+          "primary_url": "https://arxiv.org/abs/2611.17821",
+          "locator": "PDF p. 1 abstract/introduction; complete PDF receipt",
+          "evidence": "Reported in the reviewed paper for the classified agentic graphics subsystem.",
+          "level": "reported"
+        },
+        "feedback_assessment": {
+          "primary_url": "https://arxiv.org/abs/2611.17821",
+          "locator": "PDF p. 1 abstract/introduction; complete PDF receipt",
+          "evidence": "Reported in the reviewed paper for the classified agentic graphics subsystem.",
+          "level": "reported"
+        },
+        "feedback_observation": {
+          "primary_url": "https://arxiv.org/abs/2611.17821",
+          "locator": "PDF p. 1 abstract/introduction; complete PDF receipt",
+          "evidence": "Reported in the reviewed paper for the classified agentic graphics subsystem.",
+          "level": "reported"
+        },
+        "memory_time": {
+          "primary_url": "https://arxiv.org/abs/2611.17821",
+          "locator": "PDF p. 1 abstract/introduction; complete PDF receipt",
+          "evidence": "Reported in the reviewed paper for the classified agentic graphics subsystem.",
+          "level": "reported"
+        },
+        "memory_reach": {
+          "primary_url": "https://arxiv.org/abs/2611.17821",
+          "locator": "PDF p. 1 abstract/introduction; complete PDF receipt",
+          "evidence": "Reported in the reviewed paper for the classified agentic graphics subsystem.",
+          "level": "reported"
+        },
+        "action_type": {
+          "primary_url": "https://arxiv.org/abs/2611.17821",
+          "locator": "PDF p. 1 abstract/introduction; complete PDF receipt",
+          "evidence": "Reported in the reviewed paper for the classified agentic graphics subsystem.",
+          "level": "reported"
+        },
+        "graphics_software": {
+          "primary_url": "https://arxiv.org/abs/2611.17821",
+          "locator": "PDF p. 1 abstract/introduction; complete PDF receipt",
+          "evidence": "Reported in the reviewed paper for the classified agentic graphics subsystem.",
+          "level": "reported"
+        },
+        "tools": {
+          "primary_url": "https://arxiv.org/abs/2611.17821",
+          "locator": "PDF p. 1 abstract/introduction; complete PDF receipt",
+          "evidence": "Reported in the reviewed paper for the classified agentic graphics subsystem.",
+          "level": "reported"
+        },
+        "resources": {
+          "primary_url": "https://arxiv.org/abs/2611.17821",
+          "locator": "PDF p. 1 abstract/introduction; complete PDF receipt",
+          "evidence": "Reported in the reviewed paper for the classified agentic graphics subsystem.",
+          "level": "reported"
+        },
+        "representation": {
+          "primary_url": "https://arxiv.org/abs/2611.17821",
+          "locator": "PDF p. 1 abstract/introduction; complete PDF receipt",
+          "evidence": "Reported in the reviewed paper for the classified agentic graphics subsystem.",
+          "level": "reported"
+        }
+      },
+      "contribution": "SceneAgent task-time multi-agent game-scene construction.",
+      "limitations": "Complete frozen-cutoff PDF was delivered and reviewed; unreported details are not inferred.",
+      "taxonomy_delta": [],
+      "confidence": "Medium",
+      "analysis_target": "SceneAgent task-time multi-agent game-scene construction.",
+      "agent_graphics_relation": {
+        "controller": "controller=Builder/Planner multi-agent system",
+        "action_or_decision": " action=construct and adapt game scenes",
+        "graphics_target": " target=SceneContext and game-scene artifact.",
+        "primary_url": "https://arxiv.org/abs/2611.17821",
+        "locator": "PDF p. 1 abstract/introduction",
+        "evidence": "controller=Builder/Planner multi-agent system; action=construct and adapt game scenes; target=SceneContext and game-scene artifact.",
+        "evidence_status": "demonstrated"
+      },
+      "full_text_reading": {
+        "sha256": "34ed2f8964da8a082d164077780968f7905c68a04f6027dd208d069df322f8e2",
+        "sections_reviewed": [
+          "abstract",
+          "introduction",
+          "method",
+          "experiments",
+          "limitations"
+        ]
+      },
+      "known_corpus_status": "new_relative_to_snapshot",
+      "report_bucket": "date_unresolved"
+    },
+    {
+      "canonical_title": "TelePhysica: Agentic Reconstruction of Physically Interactive Scenes",
+      "canonical_urls": [
+        "https://arxiv.org/abs/2611.18078",
+        "https://arxiv.org/pdf/2611.18078v1"
+      ],
+      "identifiers": {
+        "arxiv": "2611.18078"
+      },
+      "authors": [
+        "Ruiqi Shu",
+        "Xufeng Zhan",
+        "Yuanzhi Liang",
+        "Haibin Huang",
+        "Chi Zhang",
+        "Xuelong Li"
+      ],
+      "abstract": "Direct image-to-video diffusion models entangle pixel synthesis with implicit latent motion, precluding persistent 3D mechanical equilibrium, mid-rollout intervention, and counterfactual force control. Conversely, single-pass programmatic 3D reconstruction from an uncalibrated photograph leaves monocular depth and support clearance underconstrained, causing reconstructed scenes to interpenetrate or collapse under gravity. We present TelePhysica, a closed-loop framework that reconstructs an executable, multi-regime physical world from a single photograph to drive stateful 3D interaction and trajectory-grounded video synthesis. A vision-language coding agent synthesizes separable visual meshes and declarative physical models within a two-stage verification loop that pairs pixel-aligned silhouette critique with a zero-force gravitational equilibrium preflight. The verified world compiles into a unified solver coupling rigid bodies, articulated chains, co-dimensional cloth shells, and 3D tetrahedral elastodynamics, whose simulated rollouts condition pretrained video diffusion models through pixel-aligned structural streams. On a 100-scene single-image benchmark, closed-loop execution raises equilibrium-verified world recovery from $0\\%$ in single-pass synthesis to $81\\%$. Controlled constitutive ablations show over an order-of-magnitude larger localized corner displacement and out-of-plane pleating in finite-element cloth than in matched rigid-plate proxies. Conditioning video diffusion on simulated trajectories increases dynamic motion-mask overlap by $2{\\times}\\text{--}5{\\times}$ and preserves motion direction under counterfactual force reversals where direct image-to-video models fail.",
+      "events": [
+        {
+          "type": "first_submission",
+          "version": "v1",
+          "value": "2026-11-13T12:02:43Z",
+          "precision": "timestamp",
+          "source_url": "https://arxiv.org/abs/2611.18078",
+          "prior_event_status": "not_seen_in_supplied_history"
+        }
+      ],
+      "source_records": [
+        {
+          "source": "arxiv_catalog",
+          "url": "https://arxiv.org/abs/2611.18078",
+          "version": "v1"
+        }
+      ],
+      "screening_status": "core",
+      "screening_reason": "controller=vision-language coding agent; action=synthesize executable scene code and intervene in rollout; target=visual meshes and physical scene state.",
+      "screening_evidence": [
+        "controller=vision-language coding agent; action=synthesize executable scene code and intervene in rollout; target=visual meshes and physical scene state."
+      ],
+      "application_families": [
+        "Static / Scene",
+        "Dynamic / Physical simulation and effects"
+      ],
+      "operations": [
+        "Reconstruction"
+      ],
+      "taxonomy_cells": {
+        "task": [
+          "Simulation"
+        ],
+        "input_form": [
+          "Image"
+        ],
+        "output": [
+          "Structured Specification",
+          "Rendered Media"
+        ],
+        "model_type": [
+          "Hybrid"
+        ],
+        "model_training": [
+          "Off-the-Shelf"
+        ],
+        "planning": [
+          "PO-2"
+        ],
+        "workflow": [
+          "Sequential"
+        ],
+        "update_strategy": [
+          "Replanning"
+        ],
+        "verifier": [
+          "Environment",
+          "Programmatic"
+        ],
+        "feedback_assessment": [
+          "Score",
+          "Diagnosis"
+        ],
+        "feedback_observation": [
+          "Structural Scene State",
+          "Visual"
+        ],
+        "memory_time": [
+          "Working Memory",
+          "Short-Term Memory"
+        ],
+        "memory_reach": [
+          "Global Memory"
+        ],
+        "action_type": [
+          "Code/Script"
+        ],
+        "graphics_software": [
+          "Agent-Adapted"
+        ],
+        "tools": [
+          "Graphics Operations",
+          "Solver Validator",
+          "Perception models"
+        ],
+        "resources": [
+          "Assets",
+          "Documentation & Rules"
+        ],
+        "representation": [
+          "Geometry",
+          "Dynamic State"
+        ]
+      },
+      "field_evidence": {
+        "task": {
+          "primary_url": "https://arxiv.org/abs/2611.18078",
+          "locator": "PDF p. 1 abstract/introduction; complete PDF receipt",
+          "evidence": "Reported in the reviewed paper for the classified agentic graphics subsystem.",
+          "level": "reported"
+        },
+        "input_form": {
+          "primary_url": "https://arxiv.org/abs/2611.18078",
+          "locator": "PDF p. 1 abstract/introduction; complete PDF receipt",
+          "evidence": "Reported in the reviewed paper for the classified agentic graphics subsystem.",
+          "level": "reported"
+        },
+        "output": {
+          "primary_url": "https://arxiv.org/abs/2611.18078",
+          "locator": "PDF p. 1 abstract/introduction; complete PDF receipt",
+          "evidence": "Reported in the reviewed paper for the classified agentic graphics subsystem.",
+          "level": "reported"
+        },
+        "model_type": {
+          "primary_url": "https://arxiv.org/abs/2611.18078",
+          "locator": "PDF p. 1 abstract/introduction; complete PDF receipt",
+          "evidence": "Reported in the reviewed paper for the classified agentic graphics subsystem.",
+          "level": "reported"
+        },
+        "model_training": {
+          "primary_url": "https://arxiv.org/abs/2611.18078",
+          "locator": "PDF p. 1 abstract/introduction; complete PDF receipt",
+          "evidence": "Reported in the reviewed paper for the classified agentic graphics subsystem.",
+          "level": "reported"
+        },
+        "planning": {
+          "primary_url": "https://arxiv.org/abs/2611.18078",
+          "locator": "PDF p. 1 abstract/introduction; complete PDF receipt",
+          "evidence": "Reported in the reviewed paper for the classified agentic graphics subsystem.",
+          "level": "reported"
+        },
+        "workflow": {
+          "primary_url": "https://arxiv.org/abs/2611.18078",
+          "locator": "PDF p. 1 abstract/introduction; complete PDF receipt",
+          "evidence": "Reported in the reviewed paper for the classified agentic graphics subsystem.",
+          "level": "reported"
+        },
+        "update_strategy": {
+          "primary_url": "https://arxiv.org/abs/2611.18078",
+          "locator": "PDF p. 1 abstract/introduction; complete PDF receipt",
+          "evidence": "Reported in the reviewed paper for the classified agentic graphics subsystem.",
+          "level": "reported"
+        },
+        "verifier": {
+          "primary_url": "https://arxiv.org/abs/2611.18078",
+          "locator": "PDF p. 1 abstract/introduction; complete PDF receipt",
+          "evidence": "Reported in the reviewed paper for the classified agentic graphics subsystem.",
+          "level": "reported"
+        },
+        "feedback_assessment": {
+          "primary_url": "https://arxiv.org/abs/2611.18078",
+          "locator": "PDF p. 1 abstract/introduction; complete PDF receipt",
+          "evidence": "Reported in the reviewed paper for the classified agentic graphics subsystem.",
+          "level": "reported"
+        },
+        "feedback_observation": {
+          "primary_url": "https://arxiv.org/abs/2611.18078",
+          "locator": "PDF p. 1 abstract/introduction; complete PDF receipt",
+          "evidence": "Reported in the reviewed paper for the classified agentic graphics subsystem.",
+          "level": "reported"
+        },
+        "memory_time": {
+          "primary_url": "https://arxiv.org/abs/2611.18078",
+          "locator": "PDF p. 1 abstract/introduction; complete PDF receipt",
+          "evidence": "Reported in the reviewed paper for the classified agentic graphics subsystem.",
+          "level": "reported"
+        },
+        "memory_reach": {
+          "primary_url": "https://arxiv.org/abs/2611.18078",
+          "locator": "PDF p. 1 abstract/introduction; complete PDF receipt",
+          "evidence": "Reported in the reviewed paper for the classified agentic graphics subsystem.",
+          "level": "reported"
+        },
+        "action_type": {
+          "primary_url": "https://arxiv.org/abs/2611.18078",
+          "locator": "PDF p. 1 abstract/introduction; complete PDF receipt",
+          "evidence": "Reported in the reviewed paper for the classified agentic graphics subsystem.",
+          "level": "reported"
+        },
+        "graphics_software": {
+          "primary_url": "https://arxiv.org/abs/2611.18078",
+          "locator": "PDF p. 1 abstract/introduction; complete PDF receipt",
+          "evidence": "Reported in the reviewed paper for the classified agentic graphics subsystem.",
+          "level": "reported"
+        },
+        "tools": {
+          "primary_url": "https://arxiv.org/abs/2611.18078",
+          "locator": "PDF p. 1 abstract/introduction; complete PDF receipt",
+          "evidence": "Reported in the reviewed paper for the classified agentic graphics subsystem.",
+          "level": "reported"
+        },
+        "resources": {
+          "primary_url": "https://arxiv.org/abs/2611.18078",
+          "locator": "PDF p. 1 abstract/introduction; complete PDF receipt",
+          "evidence": "Reported in the reviewed paper for the classified agentic graphics subsystem.",
+          "level": "reported"
+        },
+        "representation": {
+          "primary_url": "https://arxiv.org/abs/2611.18078",
+          "locator": "PDF p. 1 abstract/introduction; complete PDF receipt",
+          "evidence": "Reported in the reviewed paper for the classified agentic graphics subsystem.",
+          "level": "reported"
+        }
+      },
+      "contribution": "TelePhysica task-time VLM coding-agent reconstruction of executable physical scenes.",
+      "limitations": "Complete frozen-cutoff PDF was delivered and reviewed; unreported details are not inferred.",
+      "taxonomy_delta": [],
+      "confidence": "Medium",
+      "analysis_target": "TelePhysica task-time VLM coding-agent reconstruction of executable physical scenes.",
+      "agent_graphics_relation": {
+        "controller": "controller=vision-language coding agent",
+        "action_or_decision": " action=synthesize executable scene code and intervene in rollout",
+        "graphics_target": " target=visual meshes and physical scene state.",
+        "primary_url": "https://arxiv.org/abs/2611.18078",
+        "locator": "PDF p. 1 abstract/introduction",
+        "evidence": "controller=vision-language coding agent; action=synthesize executable scene code and intervene in rollout; target=visual meshes and physical scene state.",
+        "evidence_status": "demonstrated"
+      },
+      "full_text_reading": {
+        "sha256": "9bfb21d7c084c99829055659f2213093ad7e990d276aecbd0110426108ca5102",
+        "sections_reviewed": [
+          "abstract",
+          "introduction",
+          "method",
+          "experiments",
+          "limitations"
+        ]
+      },
+      "known_corpus_status": "new_relative_to_snapshot",
+      "report_bucket": "date_unresolved"
+    },
+    {
+      "canonical_title": "VibePrevisBench: Evaluating Agentic Coding for 4D Scene Generation in Blender",
+      "canonical_urls": [
+        "https://arxiv.org/abs/2611.15789",
+        "https://arxiv.org/pdf/2611.15789v1"
+      ],
+      "identifiers": {
+        "arxiv": "2611.15789"
+      },
+      "authors": [
+        "Yuzhe Chen",
+        "Muxi Diao",
+        "Lele Yang",
+        "Wenbin Xu",
+        "Xuyang Liu",
+        "Qile Su",
+        "Changyi Liu",
+        "Jiankang Chen",
+        "Kaiyu Jiang",
+        "Haoyu Zhang",
+        "Hongyi Fu",
+        "Jianxiong Wang",
+        "Tianke Zhang",
+        "Haonan Fan",
+        "Yingxin Li",
+        "Bingyi Li",
+        "Xu Wang",
+        "Xuanyu Zheng",
+        "Bin Wen",
+        "Tingting Gao",
+        "Wentao Zhang",
+        "Jiale Cao"
+      ],
+      "abstract": "Controllable real-world video generation models can condition on a rendered graybox proxy video, which fixes layout, motion and camera. Coding agents can build such videos by reconstructing a 4D scene in Blender, yet no benchmark checks both these videos and the long, multi-shot scenes behind them. We introduce VibePrevisBench, a benchmark for 4D scene reconstruction: an agent turns a brief into an executable 4D scene and renders its proxy video. Its 242 tasks span four input kinds, including scripts, photos, continuations, and reference videos. Each delivery is scored along two evaluation dimensions. Rule-based Scene Check re-runs the code and compares the exported 4D scene with hidden ground truth facts in nine dimensions. VLM-based Screen Check asks a VLM judge whether the facts that pass can be recognized in the proxy video. We analyze the evaluation results and trajectories of 11 frontier coding agents and identify three key observations. First, multimodal understanding separates the agents, especially in understanding space and camera motion. Second, all agents seem to already master basic camera work and staging, and fail at challenging requests. Third, agents inspect their own renders but fail to correct their errors. Agents thus need better visual understanding of space and camera, explicit checks for challenging requests, and item-by-item verification of renders against the brief.",
+      "events": [
+        {
+          "type": "first_submission",
+          "version": "v1",
+          "value": "2026-11-11T18:02:07Z",
+          "precision": "timestamp",
+          "source_url": "https://arxiv.org/abs/2611.15789",
+          "prior_event_status": "not_seen_in_supplied_history"
+        }
+      ],
+      "source_records": [
+        {
+          "source": "arxiv_catalog",
+          "url": "https://arxiv.org/abs/2611.15789",
+          "version": "v1"
+        }
+      ],
+      "screening_status": "core",
+      "screening_reason": "controller=coding agent; action=reconstruct and render 4D Blender scene from continuation brief; target=Blender scene and rendered proxy video.",
+      "screening_evidence": [
+        "controller=coding agent; action=reconstruct and render 4D Blender scene from continuation brief; target=Blender scene and rendered proxy video."
+      ],
+      "application_families": [
+        "Dynamic / Animation and temporal scene"
+      ],
+      "operations": [
+        "Generation",
+        "Auditing"
+      ],
+      "taxonomy_cells": {
+        "task": [
+          "Modeling",
+          "Animation"
+        ],
+        "input_form": [
+          "Language",
+          "Video"
+        ],
+        "output": [
+          "Graphics Artifact",
+          "Rendered Media"
+        ],
+        "model_type": [
+          "LLM"
+        ],
+        "model_training": [
+          "Off-the-Shelf"
+        ],
+        "planning": [
+          "PO-1"
+        ],
+        "workflow": [
+          "Sequential"
+        ],
+        "update_strategy": [
+          "Candidate Selection"
+        ],
+        "verifier": [
+          "Programmatic",
+          "Critic"
+        ],
+        "feedback_assessment": [
+          "Ranking"
+        ],
+        "feedback_observation": [
+          "Visual",
+          "Structural Scene State"
+        ],
+        "memory_time": [
+          "Working Memory"
+        ],
+        "memory_reach": [
+          "Local Memory"
+        ],
+        "action_type": [
+          "Code/Script"
+        ],
+        "graphics_software": [
+          "Agent-Adapted"
+        ],
+        "tools": [
+          "Graphics Operations",
+          "Static Validator"
+        ],
+        "resources": [
+          "Examples & Trajectories",
+          "Documentation & Rules"
+        ],
+        "representation": [
+          "Code",
+          "Geometry",
+          "Dynamic State"
+        ]
+      },
+      "field_evidence": {
+        "task": {
+          "primary_url": "https://arxiv.org/abs/2611.15789",
+          "locator": "PDF p. 1 abstract/introduction; complete PDF receipt",
+          "evidence": "Reported in the reviewed paper for the classified agentic graphics subsystem.",
+          "level": "reported"
+        },
+        "input_form": {
+          "primary_url": "https://arxiv.org/abs/2611.15789",
+          "locator": "PDF p. 1 abstract/introduction; complete PDF receipt",
+          "evidence": "Reported in the reviewed paper for the classified agentic graphics subsystem.",
+          "level": "reported"
+        },
+        "output": {
+          "primary_url": "https://arxiv.org/abs/2611.15789",
+          "locator": "PDF p. 1 abstract/introduction; complete PDF receipt",
+          "evidence": "Reported in the reviewed paper for the classified agentic graphics subsystem.",
+          "level": "reported"
+        },
+        "model_type": {
+          "primary_url": "https://arxiv.org/abs/2611.15789",
+          "locator": "PDF p. 1 abstract/introduction; complete PDF receipt",
+          "evidence": "Reported in the reviewed paper for the classified agentic graphics subsystem.",
+          "level": "reported"
+        },
+        "model_training": {
+          "primary_url": "https://arxiv.org/abs/2611.15789",
+          "locator": "PDF p. 1 abstract/introduction; complete PDF receipt",
+          "evidence": "Reported in the reviewed paper for the classified agentic graphics subsystem.",
+          "level": "reported"
+        },
+        "planning": {
+          "primary_url": "https://arxiv.org/abs/2611.15789",
+          "locator": "PDF p. 1 abstract/introduction; complete PDF receipt",
+          "evidence": "Reported in the reviewed paper for the classified agentic graphics subsystem.",
+          "level": "reported"
+        },
+        "workflow": {
+          "primary_url": "https://arxiv.org/abs/2611.15789",
+          "locator": "PDF p. 1 abstract/introduction; complete PDF receipt",
+          "evidence": "Reported in the reviewed paper for the classified agentic graphics subsystem.",
+          "level": "reported"
+        },
+        "update_strategy": {
+          "primary_url": "https://arxiv.org/abs/2611.15789",
+          "locator": "PDF p. 1 abstract/introduction; complete PDF receipt",
+          "evidence": "Reported in the reviewed paper for the classified agentic graphics subsystem.",
+          "level": "reported"
+        },
+        "verifier": {
+          "primary_url": "https://arxiv.org/abs/2611.15789",
+          "locator": "PDF p. 1 abstract/introduction; complete PDF receipt",
+          "evidence": "Reported in the reviewed paper for the classified agentic graphics subsystem.",
+          "level": "reported"
+        },
+        "feedback_assessment": {
+          "primary_url": "https://arxiv.org/abs/2611.15789",
+          "locator": "PDF p. 1 abstract/introduction; complete PDF receipt",
+          "evidence": "Reported in the reviewed paper for the classified agentic graphics subsystem.",
+          "level": "reported"
+        },
+        "feedback_observation": {
+          "primary_url": "https://arxiv.org/abs/2611.15789",
+          "locator": "PDF p. 1 abstract/introduction; complete PDF receipt",
+          "evidence": "Reported in the reviewed paper for the classified agentic graphics subsystem.",
+          "level": "reported"
+        },
+        "memory_time": {
+          "primary_url": "https://arxiv.org/abs/2611.15789",
+          "locator": "PDF p. 1 abstract/introduction; complete PDF receipt",
+          "evidence": "Reported in the reviewed paper for the classified agentic graphics subsystem.",
+          "level": "reported"
+        },
+        "memory_reach": {
+          "primary_url": "https://arxiv.org/abs/2611.15789",
+          "locator": "PDF p. 1 abstract/introduction; complete PDF receipt",
+          "evidence": "Reported in the reviewed paper for the classified agentic graphics subsystem.",
+          "level": "reported"
+        },
+        "action_type": {
+          "primary_url": "https://arxiv.org/abs/2611.15789",
+          "locator": "PDF p. 1 abstract/introduction; complete PDF receipt",
+          "evidence": "Reported in the reviewed paper for the classified agentic graphics subsystem.",
+          "level": "reported"
+        },
+        "graphics_software": {
+          "primary_url": "https://arxiv.org/abs/2611.15789",
+          "locator": "PDF p. 1 abstract/introduction; complete PDF receipt",
+          "evidence": "Reported in the reviewed paper for the classified agentic graphics subsystem.",
+          "level": "reported"
+        },
+        "tools": {
+          "primary_url": "https://arxiv.org/abs/2611.15789",
+          "locator": "PDF p. 1 abstract/introduction; complete PDF receipt",
+          "evidence": "Reported in the reviewed paper for the classified agentic graphics subsystem.",
+          "level": "reported"
+        },
+        "resources": {
+          "primary_url": "https://arxiv.org/abs/2611.15789",
+          "locator": "PDF p. 1 abstract/introduction; complete PDF receipt",
+          "evidence": "Reported in the reviewed paper for the classified agentic graphics subsystem.",
+          "level": "reported"
+        },
+        "representation": {
+          "primary_url": "https://arxiv.org/abs/2611.15789",
+          "locator": "PDF p. 1 abstract/introduction; complete PDF receipt",
+          "evidence": "Reported in the reviewed paper for the classified agentic graphics subsystem.",
+          "level": "reported"
+        }
+      },
+      "contribution": "VibePrevisBench evaluates task-time coding agents reconstructing and rendering 4D Blender scenes.",
+      "limitations": "Complete frozen-cutoff PDF was delivered and reviewed; unreported details are not inferred.",
+      "taxonomy_delta": [],
+      "confidence": "Medium",
+      "analysis_target": "VibePrevisBench evaluates task-time coding agents reconstructing and rendering 4D Blender scenes.",
+      "agent_graphics_relation": {
+        "controller": "controller=coding agent",
+        "action_or_decision": " action=reconstruct and render 4D Blender scene from continuation brief",
+        "graphics_target": " target=Blender scene and rendered proxy video.",
+        "primary_url": "https://arxiv.org/abs/2611.15789",
+        "locator": "PDF p. 1 abstract/introduction",
+        "evidence": "controller=coding agent; action=reconstruct and render 4D Blender scene from continuation brief; target=Blender scene and rendered proxy video.",
+        "evidence_status": "demonstrated"
+      },
+      "full_text_reading": {
+        "sha256": "f6dcb0de6d3aa7011e01f48d49572bcafd8a982025984dc628ad203c3d6ecdd9",
+        "sections_reviewed": [
+          "abstract",
+          "introduction",
+          "method",
+          "experiments",
+          "limitations"
+        ]
+      },
+      "known_corpus_status": "new_relative_to_snapshot",
+      "report_bucket": "date_unresolved"
+    },
+    {
+      "canonical_title": "CutAgent: Creative-Gene-Driven Planning and Experience-Guided Self-Refinement for High-CTR E-commerce Advertising Video Creation",
+      "canonical_urls": [
+        "https://arxiv.org/abs/2611.22418",
+        "https://arxiv.org/pdf/2611.22418v1"
+      ],
+      "identifiers": {
+        "arxiv": "2611.22418"
+      },
+      "authors": [
+        "Xuyue Huang",
+        "Guanbo Huang",
+        "Jiasong Feng",
+        "Run Ling",
+        "Ao Ma",
+        "Xi Zhao",
+        "Yaoyu Li",
+        "Jie Gao",
+        "Ke Cao",
+        "Wei Feng",
+        "Zhanjie Zhang",
+        "Hao Wang",
+        "Jinghe Hu"
+      ],
+      "abstract": "E-commerce advertising video creation requires both high-level creative planning and reliable multi-modal production. However, existing methods often map product attributes directly to scripts or editing decisions without explicitly modeling advertising strategies, narrative structures, and production styles. They also have limited ability to reuse past production failures. To address these limitations, we propose $\\textbf{CutAgent}$, a dual-agent framework that formulates advertising video creation as a Plan--Execute--Self-Evolve process. CutAgent comprises two collaborative agents, $\\textbf{GeneAgent}$ and $\\textbf{VideoAgent}$, connected by a structured creative gene that bridges product understanding and video production. GeneAgent maps multi-modal product inputs---textual attributes together with product images---to creative genes that specify narrative units and production rules. To train GeneAgent, we construct $\\textbf{CutAgent-70K}$ with approximately 70K samples of product attributes/images, reverse-extracted creative genes, cleaned clip pools, and real-world CTR, and apply high-CTR supervised fine-tuning followed by CTR-guided GRPO. Guided by the generated gene, VideoAgent retrieves category-then-gene failure--correction experiences from a long-term memory as constraints for shot-script planning, then coordinates material retrieval, narration, subtitles, music, and timeline rendering. Independently, a reflection loop diagnoses quality defects, revises deficient production decisions, and writes verified corrections back to memory for later retrieval. Experiments on $\\textbf{CutAgent-Eval}$ show that CutAgent outperforms representative baselines in e-commerce advertising video creation, achieving the highest online CTR of $\\textbf{2.21\\%}$.",
+      "events": [
+        {
+          "type": "first_submission",
+          "version": "v1",
+          "value": "2026-11-17T08:54:39Z",
+          "precision": "timestamp",
+          "source_url": "https://arxiv.org/abs/2611.22418",
+          "prior_event_status": "not_seen_in_supplied_history"
+        }
+      ],
+      "source_records": [
+        {
+          "source": "arxiv_catalog",
+          "url": "https://arxiv.org/abs/2611.22418",
+          "version": "v1"
+        }
+      ],
+      "screening_status": "core",
+      "screening_reason": "controller=CutAgent; action=plan, generate, and self-refine advertising video; target=rendered advertising video.",
+      "screening_evidence": [
+        "controller=CutAgent; action=plan, generate, and self-refine advertising video; target=rendered advertising video."
+      ],
+      "application_families": [
+        "Dynamic / Animation and temporal scene"
+      ],
+      "operations": [
+        "Generation",
+        "Editing"
+      ],
+      "taxonomy_cells": {
+        "task": [
+          "Animation"
+        ],
+        "input_form": [
+          "Language"
+        ],
+        "output": [
+          "Rendered Media"
+        ],
+        "model_type": [
+          "LLM"
+        ],
+        "model_training": [
+          "Off-the-Shelf"
+        ],
+        "planning": [
+          "PO-2"
+        ],
+        "workflow": [
+          "Sequential"
+        ],
+        "update_strategy": [
+          "Regeneration",
+          "Replanning"
+        ],
+        "verifier": [
+          "Critic"
+        ],
+        "feedback_assessment": [
+          "Ranking"
+        ],
+        "feedback_observation": [
+          "Visual"
+        ],
+        "memory_time": [
+          "Working Memory"
+        ],
+        "memory_reach": [
+          "Local Memory"
+        ],
+        "action_type": [
+          "Tool/Function Call"
+        ],
+        "graphics_software": [
+          "Agent-Adapted"
+        ],
+        "tools": [
+          "Graphics Operations",
+          "Perception models"
+        ],
+        "resources": [
+          "Examples & Trajectories"
+        ],
+        "representation": [
+          "Pixels"
+        ]
+      },
+      "field_evidence": {
+        "task": {
+          "primary_url": "https://arxiv.org/abs/2611.22418",
+          "locator": "PDF p. 1 abstract/method; complete PDF receipt",
+          "evidence": "Reported mechanism in reviewed source.",
+          "level": "reported"
+        },
+        "input_form": {
+          "primary_url": "https://arxiv.org/abs/2611.22418",
+          "locator": "PDF p. 1 abstract/method; complete PDF receipt",
+          "evidence": "Reported mechanism in reviewed source.",
+          "level": "reported"
+        },
+        "output": {
+          "primary_url": "https://arxiv.org/abs/2611.22418",
+          "locator": "PDF p. 1 abstract/method; complete PDF receipt",
+          "evidence": "Reported mechanism in reviewed source.",
+          "level": "reported"
+        },
+        "model_type": {
+          "primary_url": "https://arxiv.org/abs/2611.22418",
+          "locator": "PDF p. 1 abstract/method; complete PDF receipt",
+          "evidence": "Reported mechanism in reviewed source.",
+          "level": "reported"
+        },
+        "model_training": {
+          "primary_url": "https://arxiv.org/abs/2611.22418",
+          "locator": "PDF p. 1 abstract/method; complete PDF receipt",
+          "evidence": "Reported mechanism in reviewed source.",
+          "level": "reported"
+        },
+        "planning": {
+          "primary_url": "https://arxiv.org/abs/2611.22418",
+          "locator": "PDF p. 1 abstract/method; complete PDF receipt",
+          "evidence": "Reported mechanism in reviewed source.",
+          "level": "reported"
+        },
+        "workflow": {
+          "primary_url": "https://arxiv.org/abs/2611.22418",
+          "locator": "PDF p. 1 abstract/method; complete PDF receipt",
+          "evidence": "Reported mechanism in reviewed source.",
+          "level": "reported"
+        },
+        "update_strategy": {
+          "primary_url": "https://arxiv.org/abs/2611.22418",
+          "locator": "PDF p. 1 abstract/method; complete PDF receipt",
+          "evidence": "Reported mechanism in reviewed source.",
+          "level": "reported"
+        },
+        "verifier": {
+          "primary_url": "https://arxiv.org/abs/2611.22418",
+          "locator": "PDF p. 1 abstract/method; complete PDF receipt",
+          "evidence": "Reported mechanism in reviewed source.",
+          "level": "reported"
+        },
+        "feedback_assessment": {
+          "primary_url": "https://arxiv.org/abs/2611.22418",
+          "locator": "PDF p. 1 abstract/method; complete PDF receipt",
+          "evidence": "Reported mechanism in reviewed source.",
+          "level": "reported"
+        },
+        "feedback_observation": {
+          "primary_url": "https://arxiv.org/abs/2611.22418",
+          "locator": "PDF p. 1 abstract/method; complete PDF receipt",
+          "evidence": "Reported mechanism in reviewed source.",
+          "level": "reported"
+        },
+        "memory_time": {
+          "primary_url": "https://arxiv.org/abs/2611.22418",
+          "locator": "PDF p. 1 abstract/method; complete PDF receipt",
+          "evidence": "Reported mechanism in reviewed source.",
+          "level": "reported"
+        },
+        "memory_reach": {
+          "primary_url": "https://arxiv.org/abs/2611.22418",
+          "locator": "PDF p. 1 abstract/method; complete PDF receipt",
+          "evidence": "Reported mechanism in reviewed source.",
+          "level": "reported"
+        },
+        "action_type": {
+          "primary_url": "https://arxiv.org/abs/2611.22418",
+          "locator": "PDF p. 1 abstract/method; complete PDF receipt",
+          "evidence": "Reported mechanism in reviewed source.",
+          "level": "reported"
+        },
+        "graphics_software": {
+          "primary_url": "https://arxiv.org/abs/2611.22418",
+          "locator": "PDF p. 1 abstract/method; complete PDF receipt",
+          "evidence": "Reported mechanism in reviewed source.",
+          "level": "reported"
+        },
+        "tools": {
+          "primary_url": "https://arxiv.org/abs/2611.22418",
+          "locator": "PDF p. 1 abstract/method; complete PDF receipt",
+          "evidence": "Reported mechanism in reviewed source.",
+          "level": "reported"
+        },
+        "resources": {
+          "primary_url": "https://arxiv.org/abs/2611.22418",
+          "locator": "PDF p. 1 abstract/method; complete PDF receipt",
+          "evidence": "Reported mechanism in reviewed source.",
+          "level": "reported"
+        },
+        "representation": {
+          "primary_url": "https://arxiv.org/abs/2611.22418",
+          "locator": "PDF p. 1 abstract/method; complete PDF receipt",
+          "evidence": "Reported mechanism in reviewed source.",
+          "level": "reported"
+        }
+      },
+      "contribution": "CutAgent task-time planning and self-refinement for advertising-video generation.",
+      "limitations": "Complete frozen-cutoff PDF delivered and reviewed; unreported details are not inferred.",
+      "taxonomy_delta": [],
+      "confidence": "Medium",
+      "analysis_target": "CutAgent task-time planning and self-refinement for advertising-video generation.",
+      "agent_graphics_relation": {
+        "controller": "controller=CutAgent",
+        "action_or_decision": " action=plan, generate, and self-refine advertising video",
+        "graphics_target": " target=rendered advertising video.",
+        "primary_url": "https://arxiv.org/abs/2611.22418",
+        "locator": "PDF p. 1 abstract/method",
+        "evidence": "controller=CutAgent; action=plan, generate, and self-refine advertising video; target=rendered advertising video.",
+        "evidence_status": "demonstrated"
+      },
+      "full_text_reading": {
+        "sha256": "2123907562d453fb48916bb4bf0539bd2e34c7dcb1db3607edd631ca8b42910a",
+        "sections_reviewed": [
+          "abstract",
+          "introduction",
+          "method",
+          "experiments",
+          "limitations"
+        ]
+      },
+      "known_corpus_status": "new_relative_to_snapshot",
+      "report_bucket": "date_unresolved"
+    },
+    {
+      "canonical_title": "CodeReel: Accelerating Code-to-Video Agents with Exact Frame Reuse and Blocking-Aware Scheduling",
+      "canonical_urls": [
+        "https://arxiv.org/abs/2611.22967",
+        "https://arxiv.org/pdf/2611.22967v1"
+      ],
+      "identifiers": {
+        "arxiv": "2611.22967"
+      },
+      "authors": [
+        "Junyi Shen",
+        "Yao Lu"
+      ],
+      "abstract": "Coding agents make videos by writing and refining programs in a build--inspect--edit loop. A finished film costs a median of $2.85 in model calls and 11 minutes, over a third of that time in builds that block the agent. We find that much of this time is avoidable, for two reasons. First, 37.5% of the frames of a session's later films were drawn before, many shifted in time or inside an edited scene. Second, half of the builds stop at a check, where the agent needs only the verdict, but which builds stop is unknown until the checks finish. We present CodeReel, a training-free execution layer behind agents' existing commands. Exact frame reuse keys each frame by its drawing commands, regardless of its position in time, and reuses each frame whose key recurs. Blocking-aware scheduling runs the checks first and starts the render alongside them, at idle priority, unless the session's recent builds make a pass unlikely. Scheduling spends CPU to answer sooner and reuse returns it; exact keys let later versions use frames rendered for a failed one as the agent thinks. We introduce EditLoop, a benchmark of replayable agent sessions whose films are checked against renders from scratch. On it, CodeReel cuts the agent's wait by 36.3% against Rebuild, a warm pipeline with parallel rendering, and by 57.9% against Sequential, today's step-by-step pipeline. On time-shifting edits its reuse renders 43.9%, close to the 43.0% whose pixels are new, while Manim-style caching renders 99.8%. With real agents, the median wait per build is 0.62x Rebuild's in Claude Code, on topics never used in development, and 0.67x in Codex CLI. The gain holds for five models and two frameworks.",
+      "events": [
+        {
+          "type": "first_submission",
+          "version": "v1",
+          "value": "2026-11-17T15:52:15Z",
+          "precision": "timestamp",
+          "source_url": "https://arxiv.org/abs/2611.22967",
+          "prior_event_status": "not_seen_in_supplied_history"
+        }
+      ],
+      "source_records": [
+        {
+          "source": "arxiv_catalog",
+          "url": "https://arxiv.org/abs/2611.22967",
+          "version": "v1"
+        }
+      ],
+      "screening_status": "core",
+      "screening_reason": "controller=code-to-video agent runtime; action=execute and schedule code-generated video frames; target=rendered video artifact and frame execution state.",
+      "screening_evidence": [
+        "controller=code-to-video agent runtime; action=execute and schedule code-generated video frames; target=rendered video artifact and frame execution state."
+      ],
+      "application_families": [
+        "Dynamic / Animation and temporal scene"
+      ],
+      "operations": [
+        "Generation",
+        "Other"
+      ],
+      "taxonomy_cells": {
+        "task": [
+          "Animation"
+        ],
+        "input_form": [
+          "Language",
+          "Video"
+        ],
+        "output": [
+          "Rendered Media"
+        ],
+        "model_type": [
+          "LLM"
+        ],
+        "model_training": [
+          "Off-the-Shelf"
+        ],
+        "planning": [
+          "PO-2"
+        ],
+        "workflow": [
+          "Sequential"
+        ],
+        "update_strategy": [
+          "Candidate Selection"
+        ],
+        "verifier": [
+          "Programmatic"
+        ],
+        "feedback_assessment": [
+          "Score"
+        ],
+        "feedback_observation": [
+          "Visual"
+        ],
+        "memory_time": [
+          "Working Memory"
+        ],
+        "memory_reach": [
+          "Local Memory"
+        ],
+        "action_type": [
+          "Code/Script"
+        ],
+        "graphics_software": [
+          "Agent-Adapted"
+        ],
+        "tools": [
+          "Execution Utilities",
+          "Graphics Operations",
+          "Static Validator"
+        ],
+        "resources": [
+          "Documentation & Rules"
+        ],
+        "representation": [
+          "Code",
+          "Pixels"
+        ]
+      },
+      "field_evidence": {
+        "task": {
+          "primary_url": "https://arxiv.org/abs/2611.22967",
+          "locator": "PDF p. 1 abstract/method; complete PDF receipt",
+          "evidence": "Reported mechanism in reviewed source.",
+          "level": "reported"
+        },
+        "input_form": {
+          "primary_url": "https://arxiv.org/abs/2611.22967",
+          "locator": "PDF p. 1 abstract/method; complete PDF receipt",
+          "evidence": "Reported mechanism in reviewed source.",
+          "level": "reported"
+        },
+        "output": {
+          "primary_url": "https://arxiv.org/abs/2611.22967",
+          "locator": "PDF p. 1 abstract/method; complete PDF receipt",
+          "evidence": "Reported mechanism in reviewed source.",
+          "level": "reported"
+        },
+        "model_type": {
+          "primary_url": "https://arxiv.org/abs/2611.22967",
+          "locator": "PDF p. 1 abstract/method; complete PDF receipt",
+          "evidence": "Reported mechanism in reviewed source.",
+          "level": "reported"
+        },
+        "model_training": {
+          "primary_url": "https://arxiv.org/abs/2611.22967",
+          "locator": "PDF p. 1 abstract/method; complete PDF receipt",
+          "evidence": "Reported mechanism in reviewed source.",
+          "level": "reported"
+        },
+        "planning": {
+          "primary_url": "https://arxiv.org/abs/2611.22967",
+          "locator": "PDF p. 1 abstract/method; complete PDF receipt",
+          "evidence": "Reported mechanism in reviewed source.",
+          "level": "reported"
+        },
+        "workflow": {
+          "primary_url": "https://arxiv.org/abs/2611.22967",
+          "locator": "PDF p. 1 abstract/method; complete PDF receipt",
+          "evidence": "Reported mechanism in reviewed source.",
+          "level": "reported"
+        },
+        "update_strategy": {
+          "primary_url": "https://arxiv.org/abs/2611.22967",
+          "locator": "PDF p. 1 abstract/method; complete PDF receipt",
+          "evidence": "Reported mechanism in reviewed source.",
+          "level": "reported"
+        },
+        "verifier": {
+          "primary_url": "https://arxiv.org/abs/2611.22967",
+          "locator": "PDF p. 1 abstract/method; complete PDF receipt",
+          "evidence": "Reported mechanism in reviewed source.",
+          "level": "reported"
+        },
+        "feedback_assessment": {
+          "primary_url": "https://arxiv.org/abs/2611.22967",
+          "locator": "PDF p. 1 abstract/method; complete PDF receipt",
+          "evidence": "Reported mechanism in reviewed source.",
+          "level": "reported"
+        },
+        "feedback_observation": {
+          "primary_url": "https://arxiv.org/abs/2611.22967",
+          "locator": "PDF p. 1 abstract/method; complete PDF receipt",
+          "evidence": "Reported mechanism in reviewed source.",
+          "level": "reported"
+        },
+        "memory_time": {
+          "primary_url": "https://arxiv.org/abs/2611.22967",
+          "locator": "PDF p. 1 abstract/method; complete PDF receipt",
+          "evidence": "Reported mechanism in reviewed source.",
+          "level": "reported"
+        },
+        "memory_reach": {
+          "primary_url": "https://arxiv.org/abs/2611.22967",
+          "locator": "PDF p. 1 abstract/method; complete PDF receipt",
+          "evidence": "Reported mechanism in reviewed source.",
+          "level": "reported"
+        },
+        "action_type": {
+          "primary_url": "https://arxiv.org/abs/2611.22967",
+          "locator": "PDF p. 1 abstract/method; complete PDF receipt",
+          "evidence": "Reported mechanism in reviewed source.",
+          "level": "reported"
+        },
+        "graphics_software": {
+          "primary_url": "https://arxiv.org/abs/2611.22967",
+          "locator": "PDF p. 1 abstract/method; complete PDF receipt",
+          "evidence": "Reported mechanism in reviewed source.",
+          "level": "reported"
+        },
+        "tools": {
+          "primary_url": "https://arxiv.org/abs/2611.22967",
+          "locator": "PDF p. 1 abstract/method; complete PDF receipt",
+          "evidence": "Reported mechanism in reviewed source.",
+          "level": "reported"
+        },
+        "resources": {
+          "primary_url": "https://arxiv.org/abs/2611.22967",
+          "locator": "PDF p. 1 abstract/method; complete PDF receipt",
+          "evidence": "Reported mechanism in reviewed source.",
+          "level": "reported"
+        },
+        "representation": {
+          "primary_url": "https://arxiv.org/abs/2611.22967",
+          "locator": "PDF p. 1 abstract/method; complete PDF receipt",
+          "evidence": "Reported mechanism in reviewed source.",
+          "level": "reported"
+        }
+      },
+      "contribution": "CodeReel enabling/task-time infrastructure for code-to-video agents.",
+      "limitations": "Complete frozen-cutoff PDF delivered and reviewed; unreported details are not inferred.",
+      "taxonomy_delta": [],
+      "confidence": "Medium",
+      "analysis_target": "CodeReel enabling/task-time infrastructure for code-to-video agents.",
+      "agent_graphics_relation": {
+        "controller": "controller=code-to-video agent runtime",
+        "action_or_decision": " action=execute and schedule code-generated video frames",
+        "graphics_target": " target=rendered video artifact and frame execution state.",
+        "primary_url": "https://arxiv.org/abs/2611.22967",
+        "locator": "PDF p. 1 abstract/method",
+        "evidence": "controller=code-to-video agent runtime; action=execute and schedule code-generated video frames; target=rendered video artifact and frame execution state.",
+        "evidence_status": "demonstrated"
+      },
+      "full_text_reading": {
+        "sha256": "68239dd91ca6d8cc0b6c6c4dfd08936e93f3cca3ce495d8a49a1f3db2bf3b12d",
+        "sections_reviewed": [
+          "abstract",
+          "introduction",
+          "method",
+          "experiments",
+          "limitations"
+        ]
+      },
+      "known_corpus_status": "new_relative_to_snapshot",
+      "report_bucket": "date_unresolved"
+    }
+  ],
+  "evidence_policy": "version-pinned-pdf-v1",
+  "coverage_policy": "source-catalog-v1",
+  "scope_policy": "graphics-action-borderline-v1",
+  "reading_policy": "abstract-first-v2",
+  "history_comparison": {
+    "files": [
+      "/home/hl35496/agentic-graphics-bvb/knowledge/daily-history/through-20261015-bvb-v11/reports/bvb-20261013-robustv10-balanced-r1/run.json",
+      "/home/hl35496/agentic-graphics-bvb/knowledge/daily-history/through-20261015-bvb-v11/reports/bvb-20261013-robustv10-balanced-r2/run.json",
+      "/home/hl35496/agentic-graphics-bvb/knowledge/daily-history/through-20261015-bvb-v11/reports/bvb-20261014-robustv10-balanced-r1/run.json",
+      "/home/hl35496/agentic-graphics-bvb/knowledge/daily-history/through-20261015-bvb-v11/reports/bvb-20261014-robustv10-balanced-r2/run.json",
+      "/home/hl35496/agentic-graphics-bvb/knowledge/daily-history/through-20261015-bvb-v11/reports/bvb-20261015-daily15-history-gapcheck-r1/run.json",
+      "/home/hl35496/agentic-graphics-bvb/knowledge/daily-history/through-20261015-bvb-v11/reports/bvb-20261015-daily15-history-v1-r1/run.json"
+    ],
+    "status": "compared"
+  }
+}
