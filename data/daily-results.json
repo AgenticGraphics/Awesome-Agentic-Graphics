@@ -2,13 +2,13 @@
   "schemaVersion": 1,
   "title": "Agentic graphics paper library",
   "timezone": "America/Chicago",
-  "executedAt": "2026-11-19T01:23:09.535758+00:00",
+  "executedAt": "2026-11-20T05:25:31.518641+00:00",
   "executionMode": "retrospective_multi_date_portable_browser_pass",
   "status": "partial",
   "intro": "Browse the survey collection and daily discoveries, or choose a search date.",
   "methodNote": "Each dated report preserves its execution time, source coverage, and research method. Server reports use the pinned October 15 snapshot; older browser reports retain their original snapshot.",
   "taxonomyNote": "Research annotations use the pinned October 11 codebook; the live document changed and was not reconciled in this run.",
-  "uniquePapers": 420,
+  "uniquePapers": 421,
   "sharedRetrieval": {
     "searchBatches": 6,
     "searchQueries": 24,
@@ -81251,6 +81251,898 @@
         "report": "data/2026-11-18/report.md",
         "data": "data/2026-11-18/run.json",
         "audit": "data/2026-11-18/audit.json"
+      }
+    },
+    {
+      "date": "2026-11-19",
+      "label": "Nov 19",
+      "status": "partial_verified",
+      "executedAt": "2026-11-20T05:25:31.518641+00:00",
+      "summary": "Bounded server research run. See the report for source coverage and unresolved candidates.",
+      "feedNote": "Bounded server research run.",
+      "papers": [
+        {
+          "id": "2611.22565",
+          "title": "MillBill: A Machining Agent with Geometric Feedback",
+          "shortTitle": "MillBill: A Machining Agent with Geometric Feedback",
+          "url": "https://arxiv.org/abs/2611.22565v2",
+          "eventType": "first_submission",
+          "eventDate": "2026-11-17T10:52:45+00:00",
+          "sourceEventTime": "2026-11-17T10:52:45+00:00",
+          "eventLabel": "New submission",
+          "bucket": "late_discovery",
+          "scope": "core",
+          "scopeLabel": "Core",
+          "summary": "The language-model agent chooses machining operations, tools, parameters, and revisions for a B-rep CAD artifact; the harness executes toolpaths and simulates the resulting geometry, with deviations returned to the agent.",
+          "applications": [
+            "Static / CAD"
+          ],
+          "operations": [
+            "Generation",
+            "Editing",
+            "Auditing"
+          ],
+          "tags": [],
+          "taxonomy": {
+            "task": [
+              "Modeling"
+            ],
+            "input_form": [
+              "3D Representation",
+              "Document"
+            ],
+            "output": [
+              "Program",
+              "Graphics Artifact"
+            ],
+            "model_type": [
+              "Hybrid"
+            ],
+            "model_training": [
+              "Off-the-Shelf"
+            ],
+            "planning": [
+              "PO-2"
+            ],
+            "workflow": [
+              "Sequential"
+            ],
+            "update_strategy": [
+              "Local Patch",
+              "Candidate Selection"
+            ],
+            "verifier": [
+              "Programmatic",
+              "Environment"
+            ],
+            "feedback_assessment": [
+              "Score",
+              "Diagnosis"
+            ],
+            "feedback_observation": [
+              "Structural Scene State",
+              "Runtime"
+            ],
+            "memory_time": [
+              "Short-Term Memory"
+            ],
+            "memory_reach": [
+              "Local Memory"
+            ],
+            "action_type": [
+              "Tool/Function Call",
+              "Structured Specification"
+            ],
+            "graphics_software": [
+              "Agent-Adapted"
+            ],
+            "tools": [
+              "Graphics Operations",
+              "Perception models",
+              "Static Validator",
+              "Execution Utilities"
+            ],
+            "resources": [
+              "Assets",
+              "Documentation & Rules"
+            ],
+            "representation": [
+              "Code",
+              "Geometry"
+            ]
+          },
+          "taxonomyEvidence": {
+            "task": {
+              "primary_url": "https://arxiv.org/pdf/2611.22565v2",
+              "locator": "pp. 1-3",
+              "evidence": "Turning a B-rep part into a machining program and simulated workpiece is the stated task.",
+              "level": "reported"
+            },
+            "input_form": {
+              "primary_url": "https://arxiv.org/pdf/2611.22565v2",
+              "locator": "p. 3",
+              "evidence": "Inputs are target STEP B-rep, stock, material, and optional drawing notes.",
+              "level": "reported"
+            },
+            "output": {
+              "primary_url": "https://arxiv.org/pdf/2611.22565v2",
+              "locator": "p. 3",
+              "evidence": "Output is one G-code program per setup and a machined workpiece after simulation.",
+              "level": "reported"
+            },
+            "model_type": {
+              "primary_url": "https://arxiv.org/pdf/2611.22565v2",
+              "locator": "pp. 1, 7, 13",
+              "evidence": "A language model is paired with geometric and learned perception components.",
+              "level": "reported"
+            },
+            "model_training": {
+              "primary_url": "https://arxiv.org/pdf/2611.22565v2",
+              "locator": "pp. 2, 7",
+              "evidence": "The paper uses Qwen3.8-27B and contrasts its off-the-shelf decision use with trained machining systems.",
+              "level": "derived",
+              "reasoning": "No task-specific decision-model fine-tuning is reported; the paper explicitly emphasizes a local open model and pretrained components."
+            },
+            "planning": {
+              "primary_url": "https://arxiv.org/pdf/2611.22565v2",
+              "locator": "pp. 3-5",
+              "evidence": "Fixed setup/reference planning is combined with ReAct agents revising process and tool plans.",
+              "level": "derived",
+              "reasoning": "Hard-coded geometric stages plus model revision support PO-2."
+            },
+            "workflow": {
+              "primary_url": "https://arxiv.org/pdf/2611.22565v2",
+              "locator": "pp. 3-6",
+              "evidence": "Feature recognition, setup selection, planning, execution, simulation, and refinement form an ordered pipeline.",
+              "level": "reported"
+            },
+            "update_strategy": {
+              "primary_url": "https://arxiv.org/pdf/2611.22565v2",
+              "locator": "p. 6",
+              "evidence": "Harness corrections and model fixes rebuild candidates; the best of at most three builds is retained.",
+              "level": "reported"
+            },
+            "verifier": {
+              "primary_url": "https://arxiv.org/pdf/2611.22565v2",
+              "locator": "pp. 5-6",
+              "evidence": "Safety checks, geometric simulation, and surface-deviation measurement judge programs.",
+              "level": "reported"
+            },
+            "feedback_assessment": {
+              "primary_url": "https://arxiv.org/pdf/2611.22565v2",
+              "locator": "p. 6",
+              "evidence": "Candidates are ranked by safety issues, gouged area, and tolerance score; errors are diagnosed by feature and operation.",
+              "level": "reported"
+            },
+            "feedback_observation": {
+              "primary_url": "https://arxiv.org/pdf/2611.22565v2",
+              "locator": "pp. 3, 5-6",
+              "evidence": "Feedback includes simulated geometry deviations, attributed error regions, and runtime/safety issues.",
+              "level": "reported"
+            },
+            "memory_time": {
+              "primary_url": "https://arxiv.org/pdf/2611.22565v2",
+              "locator": "p. 6",
+              "evidence": "Best builds are retained within the iterative task loop.",
+              "level": "derived",
+              "reasoning": "Retention spans builds within one run, not separate runs."
+            },
+            "memory_reach": {
+              "primary_url": "https://arxiv.org/pdf/2611.22565v2",
+              "locator": "pp. 3-6",
+              "evidence": "State is passed within the selected planning and verification pipeline; no cross-run shared memory is described.",
+              "level": "derived",
+              "reasoning": "The retained state is local to the task workflow."
+            },
+            "action_type": {
+              "primary_url": "https://arxiv.org/pdf/2611.22565v2",
+              "locator": "pp. 3-5",
+              "evidence": "Agents call harness tools and return structured JSON plans that become toolpaths/G-code.",
+              "level": "reported"
+            },
+            "graphics_software": {
+              "primary_url": "https://arxiv.org/pdf/2611.22565v2",
+              "locator": "p. 5",
+              "evidence": "The method adapts FreeCAD CAM with an agent-facing geometric harness.",
+              "level": "derived",
+              "reasoning": "The underlying CAM software is general-purpose, while the paper adds agent-facing operations and verification."
+            },
+            "tools": {
+              "primary_url": "https://arxiv.org/pdf/2611.22565v2",
+              "locator": "pp. 3-6, S1",
+              "evidence": "Feature recognition, reachability, CAM generation, simulation, safety checks, and deviation measurement are used as callable capabilities.",
+              "level": "reported"
+            },
+            "resources": {
+              "primary_url": "https://arxiv.org/pdf/2611.22565v2",
+              "locator": "pp. 4-5, S1",
+              "evidence": "The workflow accesses a B-rep/stock, machining rules and tables, material data, and a cutter library.",
+              "level": "reported"
+            },
+            "representation": {
+              "primary_url": "https://arxiv.org/pdf/2611.22565v2",
+              "locator": "pp. 1-6",
+              "evidence": "B-rep geometry, structured plans/G-code, toolpaths, and simulated workpiece geometry are central representations.",
+              "level": "reported"
+            }
+          },
+          "limitations": "Limited to indexed three-axis machining from six principal directions; workholding, travel, collisions, tool deflection, vibration, wear, and thread geometry are incompletely modeled. The evaluation uses simulated machining, one public model collection, and one run per method and part.",
+          "application": "Static / CAD"
+        },
+        {
+          "id": "2611.22724",
+          "title": "ConserveEdit: Source-Anchored Transactions for Drift-Bounded Iterative Image Editing",
+          "shortTitle": "ConserveEdit: Source-Anchored Transactions for Drift-Bounded Iterative Image Editing",
+          "url": "https://arxiv.org/abs/2611.22724v1",
+          "eventType": "first_submission",
+          "eventDate": "2026-11-17T12:58:37+00:00",
+          "sourceEventTime": "2026-11-17T12:58:37+00:00",
+          "eventLabel": "New submission",
+          "bucket": "late_discovery",
+          "scope": "core",
+          "scopeLabel": "Core",
+          "summary": "The transactional controller makes explicit decisions over candidate image edits: it selects authorized supports and candidate commits, evaluates graphics-state feedback, and rolls back or repairs failed edits. The paper evaluates this controller on iterative image-editing artifacts.",
+          "applications": [
+            "2D Graphics"
+          ],
+          "operations": [
+            "Editing",
+            "Auditing"
+          ],
+          "tags": [],
+          "taxonomy": {
+            "task": [
+              "Modeling"
+            ],
+            "input_form": [
+              "Language",
+              "Image"
+            ],
+            "output": [
+              "Graphics Artifact"
+            ],
+            "model_type": [
+              "Not Applicable"
+            ],
+            "model_training": [
+              "Not Applicable"
+            ],
+            "planning": [
+              "PO-1"
+            ],
+            "workflow": [
+              "Sequential"
+            ],
+            "update_strategy": [
+              "Local Patch",
+              "Rollback",
+              "Candidate Selection"
+            ],
+            "verifier": [
+              "Programmatic"
+            ],
+            "feedback_assessment": [
+              "Binary",
+              "Score",
+              "Diagnosis"
+            ],
+            "feedback_observation": [
+              "Visual",
+              "Structural Scene State"
+            ],
+            "memory_time": [
+              "Short-Term Memory"
+            ],
+            "memory_reach": [
+              "Local Memory"
+            ],
+            "action_type": [
+              "Tool/Function Call"
+            ],
+            "graphics_software": [
+              "Agent-Adapted"
+            ],
+            "tools": [
+              "Graphics Operations",
+              "Perception models",
+              "Static Validator"
+            ],
+            "resources": [
+              "Documentation & Rules"
+            ],
+            "representation": [
+              "Pixels",
+              "Layouts"
+            ]
+          },
+          "taxonomyEvidence": {
+            "task": {
+              "primary_url": "https://arxiv.org/pdf/2611.22724v1",
+              "locator": "pp. 1-5",
+              "evidence": "The task is iterative instruction-driven image editing under source-preservation constraints.",
+              "level": "reported"
+            },
+            "input_form": {
+              "primary_url": "https://arxiv.org/pdf/2611.22724v1",
+              "locator": "pp. 1, 3-4",
+              "evidence": "The controller receives a source image and free-form instruction, and uses masks or grounded image regions.",
+              "level": "reported"
+            },
+            "output": {
+              "primary_url": "https://arxiv.org/pdf/2611.22724v1",
+              "locator": "pp. 1, 5-8",
+              "evidence": "The externally returned product is the committed edited image and decision log.",
+              "level": "reported"
+            },
+            "model_type": {
+              "primary_url": "https://arxiv.org/pdf/2611.22724v1",
+              "locator": "p. 8",
+              "evidence": "The paper explicitly states ConserveEdit itself uses no LLM or MLLM; fixed formulas, detectors, and procedural simulation implement its controller.",
+              "level": "reported"
+            },
+            "model_training": {
+              "primary_url": "https://arxiv.org/pdf/2611.22724v1",
+              "locator": "p. 8",
+              "evidence": "The controller is not a trained decision model; frozen Qwen-Image-Edit is the executor under study.",
+              "level": "reported"
+            },
+            "planning": {
+              "primary_url": "https://arxiv.org/pdf/2611.22724v1",
+              "locator": "pp. 3-5, Algorithm 1",
+              "evidence": "The loop follows fixed contract compilation, candidate generation, audit, commit/rollback, and repair rules.",
+              "level": "derived",
+              "reasoning": "Planning is entirely prescribed by the controller algorithm, so PO-1 is used rather than model-generated planning."
+            },
+            "workflow": {
+              "primary_url": "https://arxiv.org/pdf/2611.22724v1",
+              "locator": "pp. 3-5, Algorithm 1",
+              "evidence": "Iterations operate in an ordered sequential refinement loop.",
+              "level": "reported"
+            },
+            "update_strategy": {
+              "primary_url": "https://arxiv.org/pdf/2611.22724v1",
+              "locator": "pp. 3-5",
+              "evidence": "Candidates are masked into local patches, feasible candidates are selected, and failed candidates are rolled back and repaired.",
+              "level": "reported"
+            },
+            "verifier": {
+              "primary_url": "https://arxiv.org/pdf/2611.22724v1",
+              "locator": "pp. 3-5",
+              "evidence": "Fixed progress, protected-content drift, change-map, and quality tests programmatically audit each candidate.",
+              "level": "reported"
+            },
+            "feedback_assessment": {
+              "primary_url": "https://arxiv.org/pdf/2611.22724v1",
+              "locator": "pp. 3-5",
+              "evidence": "The controller uses thresholded feasibility tests, continuous progress/quality scores, and named violated entities/clauses for diagnosis.",
+              "level": "reported"
+            },
+            "feedback_observation": {
+              "primary_url": "https://arxiv.org/pdf/2611.22724v1",
+              "locator": "pp. 3-5",
+              "evidence": "Observations include pixels, masks, protected-content descriptors, image quality, and candidate output state.",
+              "level": "reported"
+            },
+            "memory_time": {
+              "primary_url": "https://arxiv.org/pdf/2611.22724v1",
+              "locator": "pp. 3-5",
+              "evidence": "The edit contract, cumulative authorized support, current image, and decision log persist across turns within one refinement run.",
+              "level": "reported"
+            },
+            "memory_reach": {
+              "primary_url": "https://arxiv.org/pdf/2611.22724v1",
+              "locator": "pp. 3-5",
+              "evidence": "The state is shared by the single controller loop; no cross-run memory is described.",
+              "level": "derived",
+              "reasoning": "The persistent contract is persistent within a run, but the paper does not establish global or cross-run access."
+            },
+            "action_type": {
+              "primary_url": "https://arxiv.org/pdf/2611.22724v1",
+              "locator": "pp. 3-5, Algorithm 1",
+              "evidence": "The controller invokes a frozen image editor and applies structured masks/commit operations to candidate images.",
+              "level": "derived",
+              "reasoning": "These are tool/executor calls and structured graphics operations rather than GUI actions."
+            },
+            "graphics_software": {
+              "primary_url": "https://arxiv.org/pdf/2611.22724v1",
+              "locator": "pp. 1, 5-8",
+              "evidence": "The method wraps frozen general-purpose image editors with a dedicated agent-facing transaction and audit layer.",
+              "level": "derived",
+              "reasoning": "The controller is an adapter around Qwen-Image-Edit/FLUX-style editors."
+            },
+            "tools": {
+              "primary_url": "https://arxiv.org/pdf/2611.22724v1",
+              "locator": "pp. 3-8",
+              "evidence": "The workflow uses image editors, masks, Grounding DINO, SAM, CLIP/SigLIP predicates, ArcFace/OCR descriptors, and quality/drift checks.",
+              "level": "reported"
+            },
+            "resources": {
+              "primary_url": "https://arxiv.org/pdf/2611.22724v1",
+              "locator": "pp. 4-8, 14-28",
+              "evidence": "The controller accesses source images, edit contracts, masks, descriptors, thresholds, and documented rules; MagicBrush supplies source/instruction/target data for evaluation.",
+              "level": "reported"
+            },
+            "representation": {
+              "primary_url": "https://arxiv.org/pdf/2611.22724v1",
+              "locator": "pp. 1, 3-5",
+              "evidence": "The artifact is represented as pixels and masks; the contract and decision log are structured specifications; the edit support is a 2D layout/region representation.",
+              "level": "reported"
+            }
+          },
+          "limitations": "Grounding is the main bottleneck: missed support can make edits incomplete, automatic masks have low overlap, and the system abstains on many turns. The guarantees cover only represented support and descriptors, not semantic completeness or seam quality. Experiments use one frozen editor, MagicBrush, fixed formulas, and no human preference study.",
+          "application": "2D Graphics"
+        },
+        {
+          "id": "2611.22418",
+          "title": "CutAgent: Creative-Gene-Driven Planning and Experience-Guided Self-Refinement for High-CTR E-commerce Advertising Video Creation",
+          "shortTitle": "CutAgent: Creative-Gene-Driven Planning and Experience-Guided Self-Refinement for High-CTR E-commerce Advertising Video Creation",
+          "url": "https://arxiv.org/abs/2611.22418v1",
+          "eventType": "first_submission",
+          "eventDate": "2026-11-17T08:54:39+00:00",
+          "sourceEventTime": "2026-11-17T08:54:39+00:00",
+          "eventLabel": "New submission",
+          "bucket": "late_discovery",
+          "scope": "core",
+          "scopeLabel": "Core",
+          "summary": "GeneAgent and VideoAgent make explicit planning, retrieval, rendering, revision, and memory-write decisions over advertising video timelines and assets; the reflection loop evaluates rendered graphics and changes subsequent production actions.",
+          "applications": [
+            "Dynamic / Animation and temporal scene"
+          ],
+          "operations": [
+            "Generation",
+            "Editing",
+            "Auditing"
+          ],
+          "tags": [],
+          "taxonomy": {
+            "task": [
+              "Animation"
+            ],
+            "input_form": [
+              "Language",
+              "Image",
+              "Video"
+            ],
+            "output": [
+              "Structured Specification",
+              "Graphics Artifact",
+              "Rendered Media"
+            ],
+            "model_type": [
+              "Hybrid"
+            ],
+            "model_training": [
+              "Supervised Fine-Tuning",
+              "RL Post-Training"
+            ],
+            "planning": [
+              "PO-2"
+            ],
+            "workflow": [
+              "Sequential"
+            ],
+            "update_strategy": [
+              "Local Patch",
+              "Replanning",
+              "Candidate Selection"
+            ],
+            "verifier": [
+              "Critic",
+              "Programmatic"
+            ],
+            "feedback_assessment": [
+              "Score",
+              "Diagnosis"
+            ],
+            "feedback_observation": [
+              "Visual",
+              "Runtime"
+            ],
+            "memory_time": [
+              "Long-Term Memory"
+            ],
+            "memory_reach": [
+              "Global Memory"
+            ],
+            "action_type": [
+              "Structured Specification",
+              "Tool/Function Call"
+            ],
+            "graphics_software": [
+              "Agent-Adapted"
+            ],
+            "tools": [
+              "Execution Utilities",
+              "Graphics Operations",
+              "Perception models",
+              "Static Validator"
+            ],
+            "resources": [
+              "Assets",
+              "Examples & Trajectories",
+              "Documentation & Rules"
+            ],
+            "representation": [
+              "Code",
+              "Layouts",
+              "Pixels",
+              "Learned State"
+            ]
+          },
+          "taxonomyEvidence": {
+            "task": {
+              "primary_url": "https://arxiv.org/pdf/2611.22418v1",
+              "locator": "pp. 1-4",
+              "evidence": "The task is automated e-commerce advertising video creation with narrative planning, timeline rendering, and iterative production.",
+              "level": "reported"
+            },
+            "input_form": {
+              "primary_url": "https://arxiv.org/pdf/2611.22418v1",
+              "locator": "pp. 1, 3-4",
+              "evidence": "Product attributes, review summaries, main/detail product images, and available video assets are inputs.",
+              "level": "reported"
+            },
+            "output": {
+              "primary_url": "https://arxiv.org/pdf/2611.22418v1",
+              "locator": "pp. 3-8, 18-20",
+              "evidence": "The system outputs a structured creative gene, executable storyboard, and rendered advertising video.",
+              "level": "reported"
+            },
+            "model_type": {
+              "primary_url": "https://arxiv.org/pdf/2611.22418v1",
+              "locator": "pp. 3, 5-7, 14",
+              "evidence": "GeneAgent is a vision-language model and VideoAgent uses an LLM with multimodal retrieval and media tools.",
+              "level": "reported"
+            },
+            "model_training": {
+              "primary_url": "https://arxiv.org/pdf/2611.22418v1",
+              "locator": "pp. 1, 4-7, 12-14",
+              "evidence": "GeneAgent receives high-CTR supervised fine-tuning and CTR-guided GRPO; VideoAgent uses a deployed LLM workflow.",
+              "level": "reported"
+            },
+            "planning": {
+              "primary_url": "https://arxiv.org/pdf/2611.22418v1",
+              "locator": "pp. 2-4, 6, 18-19",
+              "evidence": "GeneAgent learns an explicit ordered creative gene and VideoAgent expands it into an executable shot storyboard, while fixed production modules execute the plan.",
+              "level": "derived",
+              "reasoning": "Planning is partly learned/agent-generated and partly constrained by a fixed gene schema and production pipeline, supporting PO-2."
+            },
+            "workflow": {
+              "primary_url": "https://arxiv.org/pdf/2611.22418v1",
+              "locator": "pp. 3-6, 14-15",
+              "evidence": "The workflow orders plan, memory read, shot planning, retrieval, TTS/BGM, rendering, evaluation, diagnosis, revision, verification, and memory write.",
+              "level": "reported"
+            },
+            "update_strategy": {
+              "primary_url": "https://arxiv.org/pdf/2611.22418v1",
+              "locator": "pp. 6, 14-15",
+              "evidence": "Reflection revises only affected shots/modules, re-executes them, and accepts verified candidates; the loop can replan deficient production decisions.",
+              "level": "reported"
+            },
+            "verifier": {
+              "primary_url": "https://arxiv.org/pdf/2611.22418v1",
+              "locator": "pp. 6-8, 14-16",
+              "evidence": "An independent reflection/evaluation module scores six video dimensions and supplies temporally grounded evidence for diagnosis; format and consistency checks are also used.",
+              "level": "reported"
+            },
+            "feedback_assessment": {
+              "primary_url": "https://arxiv.org/pdf/2611.22418v1",
+              "locator": "pp. 6-8, 14-16",
+              "evidence": "The evaluator returns six scalar quality scores and diagnoses localized defects such as missing selling points, repeated clips, mismatched narration, or poor music.",
+              "level": "reported"
+            },
+            "feedback_observation": {
+              "primary_url": "https://arxiv.org/pdf/2611.22418v1",
+              "locator": "pp. 6, 14-16",
+              "evidence": "Feedback observes rendered frames, shot intervals, text/audio segments, timeline elements, and rendering/production conditions.",
+              "level": "reported"
+            },
+            "memory_time": {
+              "primary_url": "https://arxiv.org/pdf/2611.22418v1",
+              "locator": "pp. 1-3, 6, 14-15",
+              "evidence": "Verified failure-correction experiences are written to E and reused on later products and genes.",
+              "level": "reported"
+            },
+            "memory_reach": {
+              "primary_url": "https://arxiv.org/pdf/2611.22418v1",
+              "locator": "pp. 6, 14-15",
+              "evidence": "Category shards are retrieved by VideoAgent for subsequent products, and verified corrections are shared across the production workflow.",
+              "level": "derived",
+              "reasoning": "The memory persists across tasks and is available to the system's later production decisions; the paper does not describe private per-role memory."
+            },
+            "action_type": {
+              "primary_url": "https://arxiv.org/pdf/2611.22418v1",
+              "locator": "pp. 3-7, 18-19",
+              "evidence": "Agents emit structured creative genes/storyboards and invoke clip retrieval, TTS, BGM matching, rendering, evaluation, and revision modules.",
+              "level": "reported"
+            },
+            "graphics_software": {
+              "primary_url": "https://arxiv.org/pdf/2611.22418v1",
+              "locator": "pp. 3-7, 14, 18-20",
+              "evidence": "The method constructs an agent-facing workbench that adapts retrieval, TTS, audio matching, ffmpeg timeline rendering, and reflection around general media tools.",
+              "level": "derived",
+              "reasoning": "The paper's dedicated GeneAgent/VideoAgent workbench and tool orchestration constitute an agent-adapted graphics environment."
+            },
+            "tools": {
+              "primary_url": "https://arxiv.org/pdf/2611.22418v1",
+              "locator": "pp. 3-7, 14-15",
+              "evidence": "Tools include clip retrieval, multimodal embeddings, TTS, subtitle generation, BGM matching, ffmpeg rendering, evaluation, diagnosis, and verification.",
+              "level": "reported"
+            },
+            "resources": {
+              "primary_url": "https://arxiv.org/pdf/2611.22418v1",
+              "locator": "pp. 1, 4-6, 14-15",
+              "evidence": "The workflow accesses product images/attributes, cleaned clip pools, historical ad examples, CutAgent-70K trajectories/genes/CTR, production rules, and the long-term correction memory.",
+              "level": "reported"
+            },
+            "representation": {
+              "primary_url": "https://arxiv.org/pdf/2611.22418v1",
+              "locator": "pp. 3-6, 18-20",
+              "evidence": "Creative genes and storyboards are structured specifications; scripts and ffmpeg timelines are code-like; final videos are pixels/rendered media; learned gene policy is a learned state.",
+              "level": "reported"
+            }
+          },
+          "limitations": "The training data and online evaluation are commercial/product-specific; the CTR reward is a training-time surrogate rather than the reported evaluation metric. The system relies heavily on retrieved clips, fixed schemas, automated multimodal evaluators, and up to three reflection rounds. Generalization beyond e-commerce ads, categories, clip pools, and the reported production stack is not established.",
+          "application": "Dynamic / Animation and temporal scene"
+        },
+        {
+          "id": "2611.22967",
+          "title": "CodeReel: Accelerating Code-to-Video Agents with Exact Frame Reuse and Blocking-Aware Scheduling",
+          "shortTitle": "CodeReel: Accelerating Code-to-Video Agents with Exact Frame Reuse and Blocking-Aware Scheduling",
+          "url": "https://arxiv.org/abs/2611.22967v1",
+          "eventType": "first_submission",
+          "eventDate": "2026-11-17T15:52:15+00:00",
+          "sourceEventTime": "2026-11-17T15:52:15+00:00",
+          "eventLabel": "New submission",
+          "bucket": "late_discovery",
+          "scope": "enabling_or_adjacent",
+          "scopeLabel": "Adjacent",
+          "summary": "CodeReel is an explicit agent-facing graphics execution and validation layer: coding agents write and refine video programs, while CodeReel executes rendering/checking decisions and preserves exact graphics outputs. The paper does not introduce the agent's creative controller, so it is retained as enabling infrastructure.",
+          "applications": [
+            "Dynamic / Animation and temporal scene",
+            "Datasets and Benchmarks",
+            "Cross-category"
+          ],
+          "operations": [
+            "Generation",
+            "Editing",
+            "Auditing"
+          ],
+          "tags": [],
+          "taxonomy": {
+            "task": [
+              "Animation"
+            ],
+            "input_form": [
+              "Language",
+              "Document"
+            ],
+            "output": [
+              "Graphics Artifact",
+              "Rendered Media"
+            ],
+            "model_type": [
+              "Not Applicable"
+            ],
+            "model_training": [
+              "Not Applicable"
+            ],
+            "planning": [
+              "PO-1"
+            ],
+            "workflow": [
+              "Graph-Structured"
+            ],
+            "update_strategy": [
+              "Candidate Selection"
+            ],
+            "verifier": [
+              "Programmatic",
+              "Environment"
+            ],
+            "feedback_assessment": [
+              "Binary"
+            ],
+            "feedback_observation": [
+              "Runtime",
+              "Visual"
+            ],
+            "memory_time": [
+              "Short-Term Memory"
+            ],
+            "memory_reach": [
+              "Local Memory"
+            ],
+            "action_type": [
+              "Tool/Function Call",
+              "Code/Script"
+            ],
+            "graphics_software": [
+              "Agent-Adapted"
+            ],
+            "tools": [
+              "Execution Utilities",
+              "Graphics Operations",
+              "Static Validator"
+            ],
+            "resources": [
+              "Examples & Trajectories",
+              "Documentation & Rules"
+            ],
+            "representation": [
+              "Code",
+              "Pixels",
+              "Layouts"
+            ]
+          },
+          "taxonomyEvidence": {
+            "task": {
+              "primary_url": "https://arxiv.org/pdf/2611.22967v1",
+              "locator": "pp. 1-3",
+              "evidence": "The system supports coding agents that create and refine animated/video graphics programs in a build-inspect-edit loop.",
+              "level": "reported"
+            },
+            "input_form": {
+              "primary_url": "https://arxiv.org/pdf/2611.22967v1",
+              "locator": "pp. 1-5",
+              "evidence": "The agent supplies source programs, scene scripts, narration timelines, assets, and edit requests to build commands.",
+              "level": "reported"
+            },
+            "output": {
+              "primary_url": "https://arxiv.org/pdf/2611.22967v1",
+              "locator": "pp. 1-8",
+              "evidence": "Build calls return verdicts/errors or rendered films; CodeReel also materializes exact frame and segment caches.",
+              "level": "reported"
+            },
+            "model_type": {
+              "primary_url": "https://arxiv.org/pdf/2611.22967v1",
+              "locator": "pp. 1-2, 6-8",
+              "evidence": "CodeReel is training-free and model-agnostic; the study evaluates external coding agents rather than introducing a decision model.",
+              "level": "reported"
+            },
+            "model_training": {
+              "primary_url": "https://arxiv.org/pdf/2611.22967v1",
+              "locator": "pp. 1-2",
+              "evidence": "The execution layer is explicitly training-free.",
+              "level": "reported"
+            },
+            "planning": {
+              "primary_url": "https://arxiv.org/pdf/2611.22967v1",
+              "locator": "pp. 4-5, Algorithm 1",
+              "evidence": "Scheduling follows fixed rules based on build dependencies, blocked consumer, pass-rate history, and resource thresholds.",
+              "level": "reported"
+            },
+            "workflow": {
+              "primary_url": "https://arxiv.org/pdf/2611.22967v1",
+              "locator": "pp. 3-5, Algorithm 1",
+              "evidence": "A build is a DAG of voice, layout, checks, lint, render, film checks, encoding, and work-ahead operations.",
+              "level": "reported"
+            },
+            "update_strategy": {
+              "primary_url": "https://arxiv.org/pdf/2611.22967v1",
+              "locator": "pp. 4-5, 12-14",
+              "evidence": "The scheduler chooses which cached frames/segments to reuse and which operations to execute, while preserving exact outputs.",
+              "level": "derived",
+              "reasoning": "Candidate selection here concerns execution/cache alternatives rather than semantic image editing."
+            },
+            "verifier": {
+              "primary_url": "https://arxiv.org/pdf/2611.22967v1",
+              "locator": "pp. 2-5, 10-13",
+              "evidence": "Automated lint, timeline, overlap, text, pixel, sound, determinism, and from-scratch correctness checks verify builds and cached frames.",
+              "level": "reported"
+            },
+            "feedback_assessment": {
+              "primary_url": "https://arxiv.org/pdf/2611.22967v1",
+              "locator": "pp. 1-5",
+              "evidence": "Build checks return pass/fail verdicts and named errors that determine whether the agent receives a film or correction information.",
+              "level": "reported"
+            },
+            "feedback_observation": {
+              "primary_url": "https://arxiv.org/pdf/2611.22967v1",
+              "locator": "pp. 1-5, 10-14",
+              "evidence": "The layer observes runtime completion/blocking state, check results, source changes, frame keys, rendered pixels, and resource availability.",
+              "level": "reported"
+            },
+            "memory_time": {
+              "primary_url": "https://arxiv.org/pdf/2611.22967v1",
+              "locator": "pp. 4, 10-13",
+              "evidence": "Frame keys, frame stores, segment stores, and build/check results persist across versions within a session but caches start cold for each session.",
+              "level": "reported"
+            },
+            "memory_reach": {
+              "primary_url": "https://arxiv.org/pdf/2611.22967v1",
+              "locator": "pp. 4-7, 14-15",
+              "evidence": "A single execution layer maintains local stores and a shared resource ledger for agents on one machine; caches are not shared across sessions.",
+              "level": "reported"
+            },
+            "action_type": {
+              "primary_url": "https://arxiv.org/pdf/2611.22967v1",
+              "locator": "pp. 1-5, Algorithm 1",
+              "evidence": "CodeReel receives build/tool calls, executes code and rendering operations, schedules checks, and returns verdicts/films.",
+              "level": "reported"
+            },
+            "graphics_software": {
+              "primary_url": "https://arxiv.org/pdf/2611.22967v1",
+              "locator": "pp. 1-8, 11-19",
+              "evidence": "The method adapts Canvas 2D/cv.js and Remotion-style rendering into an execution layer designed for coding agents.",
+              "level": "derived",
+              "reasoning": "The underlying renderers are general-purpose, while CodeReel adds agent-facing execution, exact caching, and blocking-aware scheduling."
+            },
+            "tools": {
+              "primary_url": "https://arxiv.org/pdf/2611.22967v1",
+              "locator": "pp. 3-5, 10-14",
+              "evidence": "Tools include program execution, voice/layout, lint, visual checks, rendering, encoding, frame-key evaluation, frame/segment stores, and resource scheduling.",
+              "level": "reported"
+            },
+            "resources": {
+              "primary_url": "https://arxiv.org/pdf/2611.22967v1",
+              "locator": "pp. 2-3, 10-12",
+              "evidence": "EditLoop provides recorded agent sessions, versions, tool calls, source objects, frame traces, and correctness gates; runtime documentation defines frame contracts.",
+              "level": "reported"
+            },
+            "representation": {
+              "primary_url": "https://arxiv.org/pdf/2611.22967v1",
+              "locator": "pp. 1-5, 11-13",
+              "evidence": "Source programs and drawing commands are code; timelines/pages are layouts; frame stores and films are pixels/rendered media.",
+              "level": "reported"
+            }
+          },
+          "limitations": "The scope is 2D video programs whose drawing commands can be recorded; 3D scenes, GPU rendering, generative footage, and unsupported interfaces are not reused. Correctness depends on deterministic supported renderers and substantial engineering assumptions. The benchmark is based on replayed and selected real coding-agent sessions and does not make CodeReel the creative decision-maker.",
+          "application": "Dynamic / Animation and temporal scene"
+        }
+      ],
+      "counts": {
+        "papers": 4,
+        "new": 0,
+        "updates": 0,
+        "catchUp": 4,
+        "core": 3,
+        "scopeDependent": 0,
+        "adjacent": 1
+      },
+      "coverage": {
+        "label": "Bounded source coverage",
+        "validationPassed": true,
+        "sources": [
+          {
+            "family": "arxiv",
+            "status": "not_reached_within_budget",
+            "checks": [],
+            "limitations": "Not yet attempted"
+          },
+          {
+            "family": "hugging_face",
+            "status": "not_reached_within_budget",
+            "checks": [],
+            "limitations": "Not yet attempted"
+          },
+          {
+            "family": "openreview",
+            "status": "not_reached_within_budget",
+            "checks": [],
+            "limitations": "Not yet attempted"
+          },
+          {
+            "family": "official_venues",
+            "status": "not_reached_within_budget",
+            "checks": [],
+            "limitations": "Not yet attempted"
+          },
+          {
+            "family": "project_author_lab",
+            "status": "not_reached_within_budget",
+            "checks": [],
+            "limitations": "Not yet attempted"
+          }
+        ],
+        "limitations": [
+          "Search indexes and public release pages may lag; field-wide completeness is not established."
+        ]
+      },
+      "artifacts": {
+        "report": "data/2026-11-19/report.md",
+        "data": "data/2026-11-19/run.json",
+        "audit": "data/2026-11-19/audit.json"
       }
     }
   ],
