@@ -1,0 +1,59 @@
+{
+  "id": "03",
+  "target_date": "2026-11-23",
+  "tool": "web.run",
+  "started_at": "2026-11-23T13:48:37+00:00",
+  "recorded_at": "2026-11-23T13:48:39+00:00",
+  "query_families": [
+    "simulation",
+    "benchmark",
+    "harness"
+  ],
+  "source_families": [
+    "arxiv"
+  ],
+  "request": {
+    "search_query": [
+      {
+        "q": "agent physical simulation particle effects deformable world after:2026-11-22 before:2026-11-24"
+      },
+      {
+        "q": "agent graphics benchmark world auditing verification November 23 2026"
+      },
+      {
+        "q": "graphics agent memory replanning tool interface feedback program synthesis November 2026"
+      }
+    ],
+    "open": [
+      {
+        "ref_id": "https://arxiv.org/abs/2603.25063"
+      },
+      {
+        "ref_id": "https://arxiv.org/abs/2611.10088"
+      },
+      {
+        "ref_id": "https://arxiv.org/list/cs.MM/new"
+      }
+    ],
+    "find": [
+      {
+        "ref_id": "turn34view2",
+        "pattern": "Submission history"
+      },
+      {
+        "ref_id": "turn34view2",
+        "pattern": "Abstract"
+      },
+      {
+        "ref_id": "turn34view0",
+        "pattern": "graphics"
+      },
+      {
+        "ref_id": "turn34view1",
+        "pattern": "Title"
+      }
+    ],
+    "response_length": "long"
+  },
+  "response_storage": "Full tool responses retained in the local run; public records include requests, timings, and report evidence."
+}

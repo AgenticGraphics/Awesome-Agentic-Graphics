@@ -1,0 +1,61 @@
+{
+  "id": "10",
+  "target_date": "2026-11-16",
+  "tool": "web.run",
+  "started_at": "2026-11-23T13:35:46+00:00",
+  "recorded_at": "2026-11-23T13:35:48+00:00",
+  "query_families": [
+    "cad",
+    "scene",
+    "2d",
+    "animation",
+    "simulation"
+  ],
+  "source_families": [
+    "arxiv",
+    "openreview",
+    "project_author_lab"
+  ],
+  "request": {
+    "search_query": [
+      {
+        "q": "agent CAD scene generation after:2026-11-15 before:2026-11-18 site:arxiv.org"
+      },
+      {
+        "q": "agent SVG poster slides visual feedback site:openreview.net"
+      },
+      {
+        "q": "agent animation simulation November 16 2026 site:research.nvidia.com"
+      }
+    ],
+    "open": [
+      {
+        "ref_id": "https://arxiv.org/abs/2611.20535"
+      }
+    ],
+    "find": [
+      {
+        "ref_id": "turn7view2",
+        "pattern": "Abstract:"
+      },
+      {
+        "ref_id": "turn7view1",
+        "pattern": "Abstract:"
+      },
+      {
+        "ref_id": "turn7view0",
+        "pattern": "model"
+      },
+      {
+        "ref_id": "turn4view0",
+        "pattern": "VIVID with the native harness"
+      },
+      {
+        "ref_id": "turn2view0",
+        "pattern": "2611.21"
+      }
+    ],
+    "response_length": "long"
+  },
+  "response_storage": "Full tool responses retained in the local run; public records include requests, timings, and report evidence."
+}

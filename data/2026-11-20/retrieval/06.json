@@ -1,0 +1,60 @@
+{
+  "id": "06",
+  "target_date": "2026-11-20",
+  "tool": "web.run",
+  "started_at": "2026-11-23T13:45:55+00:00",
+  "recorded_at": "2026-11-23T13:45:57+00:00",
+  "query_families": [
+    "cad",
+    "animation",
+    "harness",
+    "benchmark"
+  ],
+  "source_families": [
+    "project_author_lab",
+    "arxiv"
+  ],
+  "request": {
+    "search_query": [
+      {
+        "q": "\"SIR-Agent\" skill restoration github"
+      },
+      {
+        "q": "\"November 20, 2026\" agent video editing research"
+      },
+      {
+        "q": "\"20 Nov 2026\" \"agent\" \"CAD\""
+      }
+    ],
+    "open": [
+      {
+        "ref_id": "https://arxiv.org/html/2611.27285v1",
+        "lineno": 78
+      },
+      {
+        "ref_id": "https://arxiv.org/html/2611.26937v1",
+        "lineno": 60
+      }
+    ],
+    "find": [
+      {
+        "ref_id": "turn26view2",
+        "pattern": "github"
+      },
+      {
+        "ref_id": "turn24view0",
+        "pattern": "github"
+      },
+      {
+        "ref_id": "turn22view0",
+        "pattern": "Agent"
+      },
+      {
+        "ref_id": "turn23view2",
+        "pattern": "Agent"
+      }
+    ],
+    "response_length": "long"
+  },
+  "response_storage": "Full tool responses retained in the local run; public records include requests, timings, and report evidence."
+}

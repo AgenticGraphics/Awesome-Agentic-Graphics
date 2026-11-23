@@ -1,0 +1,65 @@
+{
+  "id": "08",
+  "target_date": "2026-11-23",
+  "tool": "web.run",
+  "started_at": "2026-11-23T13:49:41+00:00",
+  "recorded_at": "2026-11-23T13:49:43+00:00",
+  "query_families": [
+    "animation",
+    "cad",
+    "harness"
+  ],
+  "source_families": [
+    "hugging_face",
+    "arxiv"
+  ],
+  "request": {
+    "search_query": [
+      {
+        "q": "site:huggingface.co/papers/date/2026-11-23 agent"
+      },
+      {
+        "q": "site:arxiv.org after:2026-11-22 before:2026-11-24 \"agent\" \"video\""
+      },
+      {
+        "q": "agent CAD program repair manufacturing visual feedback"
+      }
+    ],
+    "open": [
+      {
+        "ref_id": "https://huggingface.co/papers"
+      },
+      {
+        "ref_id": "https://arxiv.org/list/eess.IV/new"
+      }
+    ],
+    "find": [
+      {
+        "ref_id": "turn39view0",
+        "pattern": "Submission history"
+      },
+      {
+        "ref_id": "turn39view0",
+        "pattern": "Abstract"
+      },
+      {
+        "ref_id": "turn39view1",
+        "pattern": "Submission history"
+      },
+      {
+        "ref_id": "turn39view1",
+        "pattern": "Abstract"
+      },
+      {
+        "ref_id": "turn38view1",
+        "pattern": "5.1"
+      },
+      {
+        "ref_id": "turn36view2",
+        "pattern": "fine-tun"
+      }
+    ],
+    "response_length": "long"
+  },
+  "response_storage": "Full tool responses retained in the local run; public records include requests, timings, and report evidence."
+}

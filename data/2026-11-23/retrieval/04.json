@@ -1,0 +1,63 @@
+{
+  "id": "04",
+  "target_date": "2026-11-23",
+  "tool": "web.run",
+  "started_at": "2026-11-23T13:48:46+00:00",
+  "recorded_at": "2026-11-23T13:48:49+00:00",
+  "query_families": [
+    "harness",
+    "cad",
+    "scene",
+    "benchmark"
+  ],
+  "source_families": [
+    "openreview",
+    "hugging_face",
+    "project_author_lab",
+    "arxiv"
+  ],
+  "request": {
+    "search_query": [
+      {
+        "q": "site:openreview.net agent graphics \"2026\" November"
+      },
+      {
+        "q": "site:openreview.net agent CAD scene generation"
+      },
+      {
+        "q": "site:huggingface.co/papers \"Nov 23, 2026\""
+      }
+    ],
+    "open": [
+      {
+        "ref_id": "https://openreview.net/search?term=agent%20graphics"
+      },
+      {
+        "ref_id": "https://github.com/Supra-3D/PhysAg3D"
+      },
+      {
+        "ref_id": "https://arxiv.org/html/2611.22563v2"
+      }
+    ],
+    "find": [
+      {
+        "ref_id": "turn35view0",
+        "pattern": "Submission history"
+      },
+      {
+        "ref_id": "turn35view0",
+        "pattern": "Abstract"
+      },
+      {
+        "ref_id": "turn35view1",
+        "pattern": "Submission history"
+      },
+      {
+        "ref_id": "turn35view1",
+        "pattern": "Abstract"
+      }
+    ],
+    "response_length": "long"
+  },
+  "response_storage": "Full tool responses retained in the local run; public records include requests, timings, and report evidence."
+}

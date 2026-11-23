@@ -1,0 +1,52 @@
+{
+  "id": "04",
+  "target_date": "2026-11-18",
+  "tool": "web.run",
+  "started_at": "2026-11-23T13:39:29+00:00",
+  "recorded_at": "2026-11-23T13:39:31+00:00",
+  "query_families": [
+    "scene",
+    "animation",
+    "cad"
+  ],
+  "source_families": [
+    "arxiv",
+    "official_venues"
+  ],
+  "request": {
+    "search_query": [
+      {
+        "q": "\"agent\" \"18 Nov 2026\" graphics"
+      },
+      {
+        "q": "\"agent\" \"18 Nov 2026\" animation"
+      },
+      {
+        "q": "\"agent\" \"18 Nov 2026\" CAD"
+      }
+    ],
+    "open": [
+      {
+        "ref_id": "https://arxiv.org/abs/2611.17821"
+      },
+      {
+        "ref_id": "https://arxiv.org/abs/2611.18078"
+      },
+      {
+        "ref_id": "https://arxiv.org/abs/2611.22418"
+      }
+    ],
+    "find": [
+      {
+        "ref_id": "turn13view1",
+        "pattern": "Full"
+      },
+      {
+        "ref_id": "turn12view2",
+        "pattern": "Abstract:"
+      }
+    ],
+    "response_length": "long"
+  },
+  "response_storage": "Full tool responses retained in the local run; public records include requests, timings, and report evidence."
+}

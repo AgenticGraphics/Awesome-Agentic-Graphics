@@ -1,0 +1,54 @@
+{
+  "id": "02",
+  "target_date": "2026-11-16",
+  "tool": "web.run",
+  "started_at": "2026-11-23T13:34:13+00:00",
+  "recorded_at": "2026-11-23T13:34:14+00:00",
+  "query_families": [
+    "scene",
+    "articulation",
+    "animation",
+    "simulation"
+  ],
+  "source_families": [
+    "arxiv",
+    "openreview",
+    "hugging_face"
+  ],
+  "request": {
+    "search_query": [
+      {
+        "q": "site:arxiv.org agent scene world generation after:2026-11-09 before:2026-11-18"
+      },
+      {
+        "q": "agent articulated asset rig generation research"
+      },
+      {
+        "q": "agent animation simulation graphics November 2026"
+      }
+    ],
+    "open": [
+      {
+        "ref_id": "https://arxiv.org/list/cs.GR/2611?skip=0&show=2000"
+      },
+      {
+        "ref_id": "https://arxiv.org/list/cs.CV/2611?skip=0&show=2000"
+      },
+      {
+        "ref_id": "https://openreview.net/search?term=graphics%20agent"
+      }
+    ],
+    "find": [
+      {
+        "ref_id": "turn0view2",
+        "pattern": "Agent"
+      },
+      {
+        "ref_id": "turn0view0",
+        "pattern": "Title:"
+      }
+    ],
+    "response_length": "long"
+  },
+  "response_storage": "Full tool responses retained in the local run; public records include requests, timings, and report evidence."
+}

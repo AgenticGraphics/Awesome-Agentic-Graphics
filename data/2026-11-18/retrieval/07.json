@@ -1,0 +1,61 @@
+{
+  "id": "07",
+  "target_date": "2026-11-18",
+  "tool": "web.run",
+  "started_at": "2026-11-23T13:40:14+00:00",
+  "recorded_at": "2026-11-23T13:40:15+00:00",
+  "query_families": [
+    "2d",
+    "cad",
+    "simulation"
+  ],
+  "source_families": [
+    "arxiv",
+    "openreview"
+  ],
+  "request": {
+    "search_query": [
+      {
+        "q": "site:openreview.net \"agent\" \"visualization\" 2026"
+      },
+      {
+        "q": "site:arxiv.org \"agent\" \"November 18\" \"2026\" simulation"
+      },
+      {
+        "q": "\"CADFather\" \"revision\""
+      }
+    ],
+    "open": [
+      {
+        "ref_id": "https://arxiv.org/abs/2610.09127"
+      },
+      {
+        "ref_id": "https://arxiv.org/html/2610.09127v2"
+      }
+    ],
+    "find": [
+      {
+        "ref_id": "turn16view0",
+        "pattern": "Scene Check"
+      },
+      {
+        "ref_id": "turn16view1",
+        "pattern": "feedback"
+      },
+      {
+        "ref_id": "turn14view0",
+        "pattern": "Abstract:"
+      },
+      {
+        "ref_id": "turn14view1",
+        "pattern": "Abstract:"
+      },
+      {
+        "ref_id": "turn14view2",
+        "pattern": "Abstract:"
+      }
+    ],
+    "response_length": "long"
+  },
+  "response_storage": "Full tool responses retained in the local run; public records include requests, timings, and report evidence."
+}

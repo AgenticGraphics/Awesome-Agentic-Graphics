@@ -1,0 +1,62 @@
+{
+  "id": "11",
+  "target_date": "2026-11-20",
+  "tool": "web.run",
+  "started_at": "2026-11-23T13:46:50+00:00",
+  "recorded_at": "2026-11-23T13:46:52+00:00",
+  "query_families": [
+    "harness",
+    "simulation",
+    "animation",
+    "benchmark"
+  ],
+  "source_families": [
+    "arxiv"
+  ],
+  "request": {
+    "find": [
+      {
+        "ref_id": "turn31view0",
+        "pattern": "Submission history"
+      },
+      {
+        "ref_id": "turn31view0",
+        "pattern": "Abstract"
+      },
+      {
+        "ref_id": "turn28view0",
+        "pattern": "explorer"
+      },
+      {
+        "ref_id": "turn25view1",
+        "pattern": "orchestrator"
+      },
+      {
+        "ref_id": "turn25view2",
+        "pattern": "verification"
+      },
+      {
+        "ref_id": "turn30view1",
+        "pattern": "3.2 Agent"
+      },
+      {
+        "ref_id": "turn30view1",
+        "pattern": "3.4 Scene Simulator"
+      },
+      {
+        "ref_id": "turn30view0",
+        "pattern": "ALFWorld"
+      },
+      {
+        "ref_id": "turn24view0",
+        "pattern": "The MLLM examines intermediate"
+      },
+      {
+        "ref_id": "turn26view2",
+        "pattern": "self-verification"
+      }
+    ],
+    "response_length": "long"
+  },
+  "response_storage": "Full tool responses retained in the local run; public records include requests, timings, and report evidence."
+}

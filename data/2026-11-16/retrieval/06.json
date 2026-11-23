@@ -1,0 +1,51 @@
+{
+  "id": "06",
+  "target_date": "2026-11-16",
+  "tool": "web.run",
+  "started_at": "2026-11-23T13:35:00+00:00",
+  "recorded_at": "2026-11-23T13:35:01+00:00",
+  "query_families": [
+    "harness",
+    "animation",
+    "object"
+  ],
+  "source_families": [
+    "arxiv",
+    "project_author_lab"
+  ],
+  "request": {
+    "search_query": [
+      {
+        "q": "\"agent\" \"graphics\" \"November 16, 2026\" paper"
+      },
+      {
+        "q": "\"VIVID\" \"Wenhan Yu\" github"
+      },
+      {
+        "q": "\"RemeshingAgent\" github"
+      }
+    ],
+    "open": [
+      {
+        "ref_id": "https://arxiv.org/html/2611.20688v1",
+        "lineno": 80
+      },
+      {
+        "ref_id": "https://arxiv.org/html/2611.20533v1",
+        "lineno": 65
+      }
+    ],
+    "find": [
+      {
+        "ref_id": "turn4view0",
+        "pattern": "github"
+      },
+      {
+        "ref_id": "turn4view1",
+        "pattern": "github"
+      }
+    ],
+    "response_length": "long"
+  },
+  "response_storage": "Full tool responses retained in the local run; public records include requests, timings, and report evidence."
+}

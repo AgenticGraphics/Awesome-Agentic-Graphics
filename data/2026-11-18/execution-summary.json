@@ -1,0 +1,163 @@
+{
+  "target_date": "2026-11-18",
+  "as_of": "2026-11-23T13:38:33+00:00",
+  "window_start": "2026-11-18T00:00:00-06:00",
+  "window_end": "2026-11-19T00:00:00-06:00",
+  "snapshot_status": "bundled_snapshot_not_live_refreshed",
+  "retrieval_counts": {
+    "search_batches": 10,
+    "search_queries": 30,
+    "primary_opens": 24,
+    "web_tool_invocations": 11,
+    "find_operations": 38
+  },
+  "retrieval_started_at": "2026-11-23T13:38:45+00:00",
+  "retrieval_ended_at": "2026-11-23T13:41:02+00:00",
+  "retrieval_wall_seconds": 137.0,
+  "stop_reason": "search_batch_and_primary_open_caps_reached",
+  "candidate_counts": {
+    "fresh_reviewed_records": 10,
+    "retained_total": 21,
+    "carried_unresolved": 11,
+    "pending_queue": 18
+  },
+  "findings": {
+    "same_day_new": 1,
+    "same_day_updates": 3,
+    "already_reported": 0,
+    "late_discovery": 6,
+    "date_unresolved": 0,
+    "unresolved": 11,
+    "excluded": 0
+  },
+  "verified_additions": [
+    "VOL-Agent: Programming Your Film via Video Orchestration Language Agentic System",
+    "VibePrevisBench: Evaluating Agentic Coding for 4D Scene Generation in Blender",
+    "MillBill: A Machining Agent with Geometric Feedback",
+    "CADFather: Autonomous CAD Reconstruction through Coordinated Tool Use"
+  ],
+  "audit": {
+    "passed": true,
+    "errors": [],
+    "validation_scope": "Structural/date/label checks only; primary evidence truth and retrieval recall require agent review."
+  },
+  "reviewed_primary_sources": [
+    "https://arxiv.org/abs/2610.09127",
+    "https://arxiv.org/abs/2611.15789",
+    "https://arxiv.org/abs/2611.17821",
+    "https://arxiv.org/abs/2611.18078",
+    "https://arxiv.org/abs/2611.20533",
+    "https://arxiv.org/abs/2611.20688",
+    "https://arxiv.org/abs/2611.22418",
+    "https://arxiv.org/abs/2611.22565",
+    "https://arxiv.org/abs/2611.22967",
+    "https://arxiv.org/abs/2611.23950"
+  ],
+  "remaining_limits": [
+    "Search indexes and public release pages may lag; field-wide completeness is not established.",
+    "The original November 18 report is preserved separately. This recheck confirms one new submission and three revisions, so its earlier zero result is not a verified absence.",
+    "Only selected listing portions inspected. cs.GR recent and cs.CV second month page were opened; cs.HC, cs.MM and eess.IV were rotated. cs.AI/cs.RO listings were not opened in this pass.",
+    "OpenReview group rendered only Loading; venue schedule exposed headings but no paper-specific publication timestamps. Restricted web searches supplemented these sources.",
+    "Fresh detailed reads were limited to four methods; the other six plausible records had identity/date and abstract-level rechecks. Revision content differences remain unassessed.",
+    "Ten search batches and 24 attempted primary opens are count caps; retrieval stops when those caps are reached. Actual elapsed time is reported, not padded to six minutes.",
+    "Queries and page reads are grouped by tool invocation in the ledger; a source-family association does not imply every result in that batch came from that family.",
+    "Search snippets and historical daily claims are leads only. Full-paper reproduction, exhaustive listing scans, citation chaining, and independent experimental validation were not performed.",
+    "The tools field remains provisional; the bundled memory definition is internally inconsistent. Unclear cells mean insufficient inspected evidence, not an inferred negative."
+  ],
+  "publication": "Reviewed local CLI skill run, synchronized to GitHub and the website by the authorized publishing workflow.",
+  "attempted_primary_pages": [
+    "https://arxiv.org/list/cs.GR/recent",
+    "https://arxiv.org/list/cs.CV/2026-11?skip=2000&show=2000",
+    "https://huggingface.co/papers/date/2026-11-18",
+    "https://arxiv.org/list/cs.MM/recent",
+    "https://arxiv.org/abs/2611.15789",
+    "https://arxiv.org/abs/2611.22565",
+    "https://openreview.net/group?id=ICLR.cc/2027/Conference",
+    "https://asia.siggraph.org/2026/program/technical-papers/",
+    "https://github.com/kulibinai/MillBill",
+    "https://arxiv.org/abs/2611.17821",
+    "https://arxiv.org/abs/2611.18078",
+    "https://arxiv.org/abs/2611.22418",
+    "https://arxiv.org/abs/2611.22967",
+    "https://arxiv.org/abs/2611.23950",
+    "https://arxiv.org/html/2611.15789v2",
+    "https://arxiv.org/html/2611.22565v2",
+    "https://arxiv.org/abs/2610.09127",
+    "https://arxiv.org/html/2610.09127v2",
+    "https://arxiv.org/html/2611.23950v1",
+    "https://arxiv.org/list/cs.HC/recent",
+    "https://sa2026.conference-schedule.org/",
+    "https://arxiv.org/list/eess.IV/recent",
+    "https://arxiv.org/abs/2611.20688",
+    "https://arxiv.org/abs/2611.20533"
+  ],
+  "older_event_comparison": [
+    {
+      "title": "SceneAgent: A Multi-Agent Framework for Portable Game Scene Generation",
+      "events": [
+        {
+          "type": "first_submission",
+          "version": "v1",
+          "value": "2026-11-13T06:57:48+00:00",
+          "prior_event_status": "already_seen"
+        }
+      ]
+    },
+    {
+      "title": "TelePhysica: Agentic Reconstruction of Physically Interactive Scenes",
+      "events": [
+        {
+          "type": "first_submission",
+          "version": "v1",
+          "value": "2026-11-13T12:02:43+00:00",
+          "prior_event_status": "already_seen"
+        }
+      ]
+    },
+    {
+      "title": "CutAgent: Creative-Gene-Driven Planning and Experience-Guided Self-Refinement for High-CTR E-commerce Advertising Video Creation",
+      "events": [
+        {
+          "type": "first_submission",
+          "version": "v1",
+          "value": "2026-11-17T08:54:39+00:00",
+          "prior_event_status": "already_seen"
+        }
+      ]
+    },
+    {
+      "title": "CodeReel: Accelerating Code-to-Video Agents with Exact Frame Reuse and Blocking-Aware Scheduling",
+      "events": [
+        {
+          "type": "first_submission",
+          "version": "v1",
+          "value": "2026-11-17T15:52:15+00:00",
+          "prior_event_status": "not_seen_in_supplied_history"
+        }
+      ]
+    },
+    {
+      "title": "VIVID: A Visual Harness for Agentic Video Editing",
+      "events": [
+        {
+          "type": "first_submission",
+          "version": "v1",
+          "value": "2026-11-16T07:52:01+00:00",
+          "prior_event_status": "already_seen"
+        }
+      ]
+    },
+    {
+      "title": "RemeshingAgent: An Iterative Agent for Repair-Based Decimation of Generated Building Meshes",
+      "events": [
+        {
+          "type": "first_submission",
+          "version": "v1",
+          "value": "2026-11-16T05:08:27+00:00",
+          "prior_event_status": "already_seen"
+        }
+      ]
+    }
+  ],
+  "dedup_caveat": "Already-seen flags compare identities/events only; historical claims are not corroborating evidence. late_discovery can contain known papers reverified in this pass; see older_event_comparison."
+}

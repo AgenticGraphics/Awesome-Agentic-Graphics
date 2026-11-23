@@ -1,0 +1,97 @@
+{
+  "date": "2026-11-18",
+  "label": "Nov 18",
+  "status": "partial_verified",
+  "executedAt": "2026-11-19T01:23:09.535758+00:00",
+  "summary": "Bounded server research run. See the report for source coverage and unresolved candidates.",
+  "feedNote": "Bounded server research run.",
+  "papers": [],
+  "counts": {
+    "papers": 0,
+    "new": 0,
+    "updates": 0,
+    "catchUp": 0,
+    "core": 0,
+    "scopeDependent": 0,
+    "adjacent": 0
+  },
+  "coverage": {
+    "label": "Bounded source coverage",
+    "validationPassed": true,
+    "sources": [
+      {
+        "family": "arxiv",
+        "status": "complete",
+        "checks": [
+          {
+            "query_or_url": "https://arxiv.org/list/cs.GR/new",
+            "outcome": "Complete observed pagination; 16 entries.",
+            "checked_at": "2026-11-19T01:09:36.650661+00:00"
+          },
+          {
+            "query_or_url": "https://arxiv.org/list/cs.GR/recent",
+            "outcome": "Complete observed pagination; 42 entries.",
+            "checked_at": "2026-11-19T01:09:36.650661+00:00"
+          },
+          {
+            "query_or_url": "https://arxiv.org/list/cs.CV/new",
+            "outcome": "Complete observed pagination; 322 entries.",
+            "checked_at": "2026-11-19T01:09:36.650661+00:00"
+          },
+          {
+            "query_or_url": "https://arxiv.org/list/cs.CV/recent",
+            "outcome": "Complete observed pagination; 985 entries.",
+            "checked_at": "2026-11-19T01:09:36.650661+00:00"
+          },
+          {
+            "query_or_url": "official arXiv Atom metadata",
+            "outcome": "1098/1098 collected IDs resolved; zero unresolved metadata.",
+            "checked_at": "2026-11-19T01:09:36.650661+00:00"
+          }
+        ],
+        "limitations": "Listing completeness is not exhaustive relevance recall."
+      },
+      {
+        "family": "hugging_face",
+        "status": "complete",
+        "checks": [
+          {
+            "query_or_url": "https://huggingface.co/papers/date/2026-11-18",
+            "outcome": "Daily page inspected; curation date not used as publication date.",
+            "checked_at": "2026-11-19T01:09:36.650661+00:00"
+          }
+        ],
+        "limitations": "No additional candidate merged from this check."
+      },
+      {
+        "family": "openreview",
+        "status": "not_reached_within_budget",
+        "checks": [],
+        "limitations": "No OpenReview search completed."
+      },
+      {
+        "family": "official_venues",
+        "status": "not_reached_within_budget",
+        "checks": [],
+        "limitations": "No separate venue search completed."
+      },
+      {
+        "family": "project_author_lab",
+        "status": "not_reached_within_budget",
+        "checks": [],
+        "limitations": "No separate project/author/lab search completed."
+      }
+    ],
+    "limitations": [
+      "ArXiv listing scans and metadata were complete for the four requested category/mode pairs, but this is not exhaustive research recall.",
+      "OpenReview, official venues, project/author/lab searches, and nine maintained web-query families were not completed within the available research pass.",
+      "No target-day arXiv records were routed by official timestamps; eight lookback papers received complete PDF reads and checkpoints, one additional candidate had a version-timestamp conflict and remains unresolved.",
+      "Seven plausible triage leads remain unread in reading-plan.json; additional non-plausible abstracts remain in triage.json with provisional reject_obvious decisions."
+    ]
+  },
+  "artifacts": {
+    "report": "data/2026-11-18/report.md",
+    "data": "data/2026-11-18/run.json",
+    "audit": "data/2026-11-18/audit.json"
+  }
+}

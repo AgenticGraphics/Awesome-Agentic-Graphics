@@ -1,0 +1,56 @@
+{
+  "id": "08",
+  "target_date": "2026-11-20",
+  "tool": "web.run",
+  "started_at": "2026-11-23T13:46:21+00:00",
+  "recorded_at": "2026-11-23T13:46:23+00:00",
+  "query_families": [
+    "simulation",
+    "object",
+    "cad"
+  ],
+  "source_families": [
+    "arxiv"
+  ],
+  "request": {
+    "search_query": [
+      {
+        "q": "agent physical simulation particle effects deformable world November 2026"
+      },
+      {
+        "q": "agent inverse graphics geometry editing after:2026-11-19 before:2026-11-22"
+      },
+      {
+        "q": "agent CAD program repair manufacturing visual feedback November 2026"
+      }
+    ],
+    "open": [
+      {
+        "ref_id": "https://arxiv.org/abs/2611.26296"
+      },
+      {
+        "ref_id": "https://arxiv.org/list/cs.CV/2026-11?skip=2000&show=2000"
+      }
+    ],
+    "find": [
+      {
+        "ref_id": "turn28view0",
+        "pattern": "Submission history"
+      },
+      {
+        "ref_id": "turn28view0",
+        "pattern": "Abstract"
+      },
+      {
+        "ref_id": "turn24view0",
+        "pattern": "Patched skill validation"
+      },
+      {
+        "ref_id": "turn24view0",
+        "pattern": "training"
+      }
+    ],
+    "response_length": "long"
+  },
+  "response_storage": "Full tool responses retained in the local run; public records include requests, timings, and report evidence."
+}

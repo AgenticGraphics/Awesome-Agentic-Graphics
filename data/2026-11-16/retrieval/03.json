@@ -1,0 +1,45 @@
+{
+  "id": "03",
+  "target_date": "2026-11-16",
+  "tool": "web.run",
+  "started_at": "2026-11-23T13:34:24+00:00",
+  "recorded_at": "2026-11-23T13:34:25+00:00",
+  "query_families": [
+    "benchmark",
+    "harness"
+  ],
+  "source_families": [
+    "arxiv",
+    "openreview",
+    "official_venues"
+  ],
+  "request": {
+    "search_query": [
+      {
+        "q": "agent graphics benchmark world auditing after:2026-11-09 before:2026-11-18"
+      },
+      {
+        "q": "graphics agent memory replanning tool interface feedback program synthesis"
+      },
+      {
+        "q": "site:openreview.net graphics agent 2026"
+      },
+      {
+        "q": "site:asia.siggraph.org/2026 technical papers agent"
+      }
+    ],
+    "open": [
+      {
+        "ref_id": "https://arxiv.org/list/cs.GR/2026-11?show=2000"
+      },
+      {
+        "ref_id": "https://openaccess.thecvf.com/CVPR2026?day=all"
+      },
+      {
+        "ref_id": "https://asia.siggraph.org/2026/"
+      }
+    ],
+    "response_length": "long"
+  },
+  "response_storage": "Full tool responses retained in the local run; public records include requests, timings, and report evidence."
+}

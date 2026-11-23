@@ -1,0 +1,53 @@
+{
+  "id": "04",
+  "target_date": "2026-11-16",
+  "tool": "web.run",
+  "started_at": "2026-11-23T13:34:33+00:00",
+  "recorded_at": "2026-11-23T13:34:35+00:00",
+  "query_families": [
+    "animation",
+    "object",
+    "cad"
+  ],
+  "source_families": [
+    "arxiv",
+    "openreview",
+    "hugging_face"
+  ],
+  "request": {
+    "search_query": [
+      {
+        "q": "site:arxiv.org \"2026\" \"VIVID\" \"video\""
+      },
+      {
+        "q": "site:arxiv.org \"RemeshingAgent\""
+      },
+      {
+        "q": "site:openreview.net \"agent\" \"CAD\""
+      }
+    ],
+    "open": [
+      {
+        "ref_id": "https://arxiv.org/abs/2611.20688"
+      },
+      {
+        "ref_id": "https://arxiv.org/abs/2611.20533"
+      },
+      {
+        "ref_id": "https://arxiv.org/list/cs.CV/2026-11?show=2000"
+      }
+    ],
+    "find": [
+      {
+        "ref_id": "turn2view0",
+        "pattern": "16 Nov"
+      },
+      {
+        "ref_id": "turn0view2",
+        "pattern": "###"
+      }
+    ],
+    "response_length": "long"
+  },
+  "response_storage": "Full tool responses retained in the local run; public records include requests, timings, and report evidence."
+}

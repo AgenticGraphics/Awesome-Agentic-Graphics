@@ -1,0 +1,58 @@
+{
+  "id": "09",
+  "target_date": "2026-11-23",
+  "tool": "web.run",
+  "started_at": "2026-11-23T13:49:54+00:00",
+  "recorded_at": "2026-11-23T13:49:55+00:00",
+  "query_families": [
+    "object",
+    "animation",
+    "harness"
+  ],
+  "source_families": [
+    "arxiv",
+    "openreview",
+    "hugging_face"
+  ],
+  "request": {
+    "search_query": [
+      {
+        "q": "\"23 Nov 2026\" \"graphics\" research agent"
+      },
+      {
+        "q": "agent 3D object procedural modeling Blender material after:2026-11-22 before:2026-11-24"
+      },
+      {
+        "q": "site:openreview.net \"2026\" \"animation\" \"agent\""
+      }
+    ],
+    "open": [
+      {
+        "ref_id": "https://arxiv.org/html/2604.09568v3"
+      },
+      {
+        "ref_id": "https://arxiv.org/html/2610.39924v1"
+      }
+    ],
+    "find": [
+      {
+        "ref_id": "turn40view0",
+        "pattern": "Nov 23"
+      },
+      {
+        "ref_id": "turn40view0",
+        "pattern": "Agent"
+      },
+      {
+        "ref_id": "turn36view2",
+        "pattern": "3.2 Named"
+      },
+      {
+        "ref_id": "turn38view1",
+        "pattern": "LLM"
+      }
+    ],
+    "response_length": "long"
+  },
+  "response_storage": "Full tool responses retained in the local run; public records include requests, timings, and report evidence."
+}
