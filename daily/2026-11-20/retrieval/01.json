@@ -1,0 +1,43 @@
+{
+  "id": "01",
+  "target_date": "2026-11-20",
+  "tool": "web.run",
+  "started_at": "2026-11-23T13:44:42+00:00",
+  "recorded_at": "2026-11-23T13:44:43+00:00",
+  "query_families": [
+    "2d",
+    "object",
+    "cad",
+    "scene"
+  ],
+  "source_families": [
+    "arxiv",
+    "hugging_face"
+  ],
+  "request": {
+    "search_query": [
+      {
+        "q": "agent graphics SVG diagram illustration November 20 2026 after:2026-11-19 before:2026-11-22"
+      },
+      {
+        "q": "agent 3D scene CAD generation November 20 2026 arxiv"
+      },
+      {
+        "q": "agent Blender procedural object visual feedback"
+      }
+    ],
+    "open": [
+      {
+        "ref_id": "https://arxiv.org/list/cs.GR/recent"
+      },
+      {
+        "ref_id": "https://huggingface.co/papers/date/2026-11-20"
+      },
+      {
+        "ref_id": "https://arxiv.org/abs/2611.26937"
+      }
+    ],
+    "response_length": "long"
+  },
+  "response_storage": "Full tool responses retained in the local run; public records include requests, timings, and report evidence."
+}

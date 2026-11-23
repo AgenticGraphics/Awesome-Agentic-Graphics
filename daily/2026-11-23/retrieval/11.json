@@ -1,0 +1,62 @@
+{
+  "id": "11",
+  "target_date": "2026-11-23",
+  "tool": "web.run",
+  "started_at": "2026-11-23T13:50:12+00:00",
+  "recorded_at": "2026-11-23T13:50:13+00:00",
+  "query_families": [
+    "harness",
+    "benchmark",
+    "object",
+    "2d"
+  ],
+  "source_families": [
+    "arxiv"
+  ],
+  "request": {
+    "find": [
+      {
+        "ref_id": "turn41view0",
+        "pattern": "Method"
+      },
+      {
+        "ref_id": "turn41view0",
+        "pattern": "expertise"
+      },
+      {
+        "ref_id": "turn41view0",
+        "pattern": "Verifier"
+      },
+      {
+        "ref_id": "turn41view1",
+        "pattern": "Builder"
+      },
+      {
+        "ref_id": "turn41view1",
+        "pattern": "frozen"
+      },
+      {
+        "ref_id": "turn42view0",
+        "pattern": "agent"
+      },
+      {
+        "ref_id": "turn42view0",
+        "pattern": "We evaluate"
+      },
+      {
+        "ref_id": "turn38view1",
+        "pattern": "updates"
+      },
+      {
+        "ref_id": "turn36view2",
+        "pattern": "Qwen"
+      },
+      {
+        "ref_id": "turn39view1",
+        "pattern": "generation"
+      }
+    ],
+    "response_length": "long"
+  },
+  "response_storage": "Full tool responses retained in the local run; public records include requests, timings, and report evidence."
+}

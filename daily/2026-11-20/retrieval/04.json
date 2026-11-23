@@ -1,0 +1,62 @@
+{
+  "id": "04",
+  "target_date": "2026-11-20",
+  "tool": "web.run",
+  "started_at": "2026-11-23T13:45:31+00:00",
+  "recorded_at": "2026-11-23T13:45:34+00:00",
+  "query_families": [
+    "object",
+    "cad",
+    "benchmark",
+    "harness"
+  ],
+  "source_families": [
+    "openreview",
+    "hugging_face",
+    "arxiv"
+  ],
+  "request": {
+    "search_query": [
+      {
+        "q": "site:openreview.net \"agent\" graphics 2026 November"
+      },
+      {
+        "q": "site:openreview.net \"CAD\" \"2026\" agent"
+      },
+      {
+        "q": "site:huggingface.co/papers \"2026-11-20\" agent graphics"
+      }
+    ],
+    "open": [
+      {
+        "ref_id": "https://openreview.net/group?id=ICLR.cc/2027/Conference"
+      },
+      {
+        "ref_id": "https://arxiv.org/abs/2611.26782"
+      },
+      {
+        "ref_id": "https://arxiv.org/abs/2611.25340"
+      }
+    ],
+    "find": [
+      {
+        "ref_id": "turn24view0",
+        "pattern": "3.2"
+      },
+      {
+        "ref_id": "turn24view0",
+        "pattern": "3.3"
+      },
+      {
+        "ref_id": "turn24view1",
+        "pattern": "Submission history"
+      },
+      {
+        "ref_id": "turn24view1",
+        "pattern": "Abstract"
+      }
+    ],
+    "response_length": "long"
+  },
+  "response_storage": "Full tool responses retained in the local run; public records include requests, timings, and report evidence."
+}

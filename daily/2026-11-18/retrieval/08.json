@@ -1,0 +1,62 @@
+{
+  "id": "08",
+  "target_date": "2026-11-18",
+  "tool": "web.run",
+  "started_at": "2026-11-23T13:40:26+00:00",
+  "recorded_at": "2026-11-23T13:40:27+00:00",
+  "query_families": [
+    "2d",
+    "animation",
+    "harness"
+  ],
+  "source_families": [
+    "arxiv",
+    "openreview",
+    "official_venues"
+  ],
+  "request": {
+    "search_query": [
+      {
+        "q": "agent scientific figure editable diagram poster feedback research"
+      },
+      {
+        "q": "site:asia.siggraph.org/2026 \"agent\""
+      },
+      {
+        "q": "site:openreview.net \"VOL-Agent\""
+      }
+    ],
+    "open": [
+      {
+        "ref_id": "https://arxiv.org/html/2611.23950v1"
+      },
+      {
+        "ref_id": "https://arxiv.org/list/cs.HC/recent"
+      }
+    ],
+    "find": [
+      {
+        "ref_id": "turn17view0",
+        "pattern": "Submission history"
+      },
+      {
+        "ref_id": "turn17view0",
+        "pattern": "Abstract:"
+      },
+      {
+        "ref_id": "turn14view1",
+        "pattern": "We"
+      },
+      {
+        "ref_id": "turn14view2",
+        "pattern": "We"
+      },
+      {
+        "ref_id": "turn14view0",
+        "pattern": "Planner"
+      }
+    ],
+    "response_length": "long"
+  },
+  "response_storage": "Full tool responses retained in the local run; public records include requests, timings, and report evidence."
+}

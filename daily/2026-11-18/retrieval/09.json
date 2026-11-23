@@ -1,0 +1,61 @@
+{
+  "id": "09",
+  "target_date": "2026-11-18",
+  "tool": "web.run",
+  "started_at": "2026-11-23T13:40:38+00:00",
+  "recorded_at": "2026-11-23T13:40:40+00:00",
+  "query_families": [
+    "simulation",
+    "2d",
+    "harness"
+  ],
+  "source_families": [
+    "arxiv",
+    "official_venues"
+  ],
+  "request": {
+    "search_query": [
+      {
+        "q": "site:arxiv.org \"agent\" \"18 Nov 2026\" \"simulation\""
+      },
+      {
+        "q": "site:arxiv.org \"SVG\" \"18 Nov 2026\""
+      },
+      {
+        "q": "site:arxiv.org \"poster\" \"18 Nov 2026\""
+      }
+    ],
+    "open": [
+      {
+        "ref_id": "https://sa2026.conference-schedule.org/"
+      },
+      {
+        "ref_id": "https://arxiv.org/list/eess.IV/recent"
+      }
+    ],
+    "find": [
+      {
+        "ref_id": "turn18view0",
+        "pattern": "3.2"
+      },
+      {
+        "ref_id": "turn18view0",
+        "pattern": "memory"
+      },
+      {
+        "ref_id": "turn16view1",
+        "pattern": "3.6"
+      },
+      {
+        "ref_id": "turn17view1",
+        "pattern": "pretrained"
+      },
+      {
+        "ref_id": "turn15view0",
+        "pattern": "Abstract:"
+      }
+    ],
+    "response_length": "long"
+  },
+  "response_storage": "Full tool responses retained in the local run; public records include requests, timings, and report evidence."
+}

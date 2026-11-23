@@ -1,0 +1,53 @@
+{
+  "id": "05",
+  "target_date": "2026-11-18",
+  "tool": "web.run",
+  "started_at": "2026-11-23T13:39:44+00:00",
+  "recorded_at": "2026-11-23T13:39:46+00:00",
+  "query_families": [
+    "animation",
+    "cad",
+    "harness"
+  ],
+  "source_families": [
+    "arxiv",
+    "project_author_lab"
+  ],
+  "request": {
+    "search_query": [
+      {
+        "q": "\"VOL-Agent\" official github"
+      },
+      {
+        "q": "\"CodeReel\" rendering agent"
+      },
+      {
+        "q": "\"CADFather\" \"18 Nov 2026\""
+      }
+    ],
+    "open": [
+      {
+        "ref_id": "https://arxiv.org/abs/2611.22967"
+      },
+      {
+        "ref_id": "https://arxiv.org/abs/2611.23950"
+      }
+    ],
+    "find": [
+      {
+        "ref_id": "turn14view0",
+        "pattern": "Submission history"
+      },
+      {
+        "ref_id": "turn14view1",
+        "pattern": "Submission history"
+      },
+      {
+        "ref_id": "turn14view2",
+        "pattern": "Submission history"
+      }
+    ],
+    "response_length": "long"
+  },
+  "response_storage": "Full tool responses retained in the local run; public records include requests, timings, and report evidence."
+}

@@ -1,0 +1,69 @@
+{
+  "id": "05",
+  "target_date": "2026-11-20",
+  "tool": "web.run",
+  "started_at": "2026-11-23T13:45:45+00:00",
+  "recorded_at": "2026-11-23T13:45:47+00:00",
+  "query_families": [
+    "animation",
+    "cad",
+    "2d",
+    "benchmark"
+  ],
+  "source_families": [
+    "official_venues",
+    "arxiv"
+  ],
+  "request": {
+    "search_query": [
+      {
+        "q": "site:asia.siggraph.org/2026 agent animation generation"
+      },
+      {
+        "q": "site:openaccess.thecvf.com 2026 agent graphics CAD"
+      },
+      {
+        "q": "site:arxiv.org \"20 Nov 2026\" \"SVG\""
+      }
+    ],
+    "open": [
+      {
+        "ref_id": "https://asia.siggraph.org/2026/program/technical-papers/"
+      },
+      {
+        "ref_id": "https://openaccess.thecvf.com/CVPR2026?day=all"
+      },
+      {
+        "ref_id": "https://arxiv.org/html/2611.26937v1"
+      }
+    ],
+    "find": [
+      {
+        "ref_id": "turn24view0",
+        "pattern": "3.1 Overview"
+      },
+      {
+        "ref_id": "turn24view0",
+        "pattern": "compatibility"
+      },
+      {
+        "ref_id": "turn25view1",
+        "pattern": "Abstract"
+      },
+      {
+        "ref_id": "turn25view1",
+        "pattern": "Submission history"
+      },
+      {
+        "ref_id": "turn25view2",
+        "pattern": "Abstract"
+      },
+      {
+        "ref_id": "turn25view2",
+        "pattern": "Submission history"
+      }
+    ],
+    "response_length": "long"
+  },
+  "response_storage": "Full tool responses retained in the local run; public records include requests, timings, and report evidence."
+}

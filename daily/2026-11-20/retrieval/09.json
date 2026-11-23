@@ -1,0 +1,57 @@
+{
+  "id": "09",
+  "target_date": "2026-11-20",
+  "tool": "web.run",
+  "started_at": "2026-11-23T13:46:31+00:00",
+  "recorded_at": "2026-11-23T13:46:33+00:00",
+  "query_families": [
+    "benchmark",
+    "animation",
+    "harness"
+  ],
+  "source_families": [
+    "arxiv",
+    "project_author_lab"
+  ],
+  "request": {
+    "search_query": [
+      {
+        "q": "agent graphics benchmark world auditing verification after:2026-11-19 before:2026-11-22"
+      },
+      {
+        "q": "\"Coda-DaVinci\" code video"
+      },
+      {
+        "q": "agent animation cutscene temporal scene cinematography 2026 research"
+      }
+    ],
+    "open": [
+      {
+        "ref_id": "https://arxiv.org/html/2611.26296v2"
+      },
+      {
+        "ref_id": "https://arxiv.org/html/2611.25005v1"
+      }
+    ],
+    "find": [
+      {
+        "ref_id": "turn29view0",
+        "pattern": "Submission history"
+      },
+      {
+        "ref_id": "turn29view0",
+        "pattern": "Abstract"
+      },
+      {
+        "ref_id": "turn29view1",
+        "pattern": "Agent"
+      },
+      {
+        "ref_id": "turn28view0",
+        "pattern": "We introduce"
+      }
+    ],
+    "response_length": "long"
+  },
+  "response_storage": "Full tool responses retained in the local run; public records include requests, timings, and report evidence."
+}

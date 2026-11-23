@@ -1,0 +1,57 @@
+{
+  "id": "07",
+  "target_date": "2026-11-20",
+  "tool": "web.run",
+  "started_at": "2026-11-23T13:46:07+00:00",
+  "recorded_at": "2026-11-23T13:46:08+00:00",
+  "query_families": [
+    "2d",
+    "scene",
+    "harness"
+  ],
+  "source_families": [
+    "arxiv",
+    "project_author_lab"
+  ],
+  "request": {
+    "search_query": [
+      {
+        "q": "agent scientific illustration Manim animation code after:2026-11-18 before:2026-11-22"
+      },
+      {
+        "q": "agent 3D scene layout world reconstruction BIM after:2026-11-18 before:2026-11-22"
+      },
+      {
+        "q": "\"SKILL.PNG\""
+      }
+    ],
+    "open": [
+      {
+        "ref_id": "https://arxiv.org/abs/2611.25543"
+      },
+      {
+        "ref_id": "https://github.com/Albertlongzi/looking-right-being-right"
+      }
+    ],
+    "find": [
+      {
+        "ref_id": "turn24view0",
+        "pattern": "Given a degraded"
+      },
+      {
+        "ref_id": "turn24view0",
+        "pattern": "frozen"
+      },
+      {
+        "ref_id": "turn24view0",
+        "pattern": "replay"
+      },
+      {
+        "ref_id": "turn26view2",
+        "pattern": "3 Evaluation"
+      }
+    ],
+    "response_length": "long"
+  },
+  "response_storage": "Full tool responses retained in the local run; public records include requests, timings, and report evidence."
+}

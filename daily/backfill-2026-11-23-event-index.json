@@ -1,0 +1,159 @@
+[
+  {
+    "title": "VIVID: A Visual Harness for Agentic Video Editing",
+    "url": "https://arxiv.org/abs/2611.20688",
+    "event_type": "first_submission",
+    "version": "v1",
+    "utc": "2026-11-16T07:52:01+00:00",
+    "chicago_date": "2026-11-16",
+    "screening_status": "core",
+    "verified_in_passes": [
+      "2026-11-16",
+      "2026-11-18"
+    ]
+  },
+  {
+    "title": "VisualArtifactSpec 1.0: Evaluating Visual Artifacts under Task Specifications",
+    "url": "https://arxiv.org/abs/2611.21382",
+    "event_type": "first_submission",
+    "version": "v1",
+    "utc": "2026-11-16T16:42:59+00:00",
+    "chicago_date": "2026-11-16",
+    "screening_status": "core",
+    "verified_in_passes": [
+      "2026-11-16"
+    ]
+  },
+  {
+    "title": "VOL-Agent: Programming Your Film via Video Orchestration Language Agentic System",
+    "url": "https://arxiv.org/abs/2611.23950",
+    "event_type": "first_submission",
+    "version": "v1",
+    "utc": "2026-11-18T06:39:30+00:00",
+    "chicago_date": "2026-11-18",
+    "screening_status": "core",
+    "verified_in_passes": [
+      "2026-11-18"
+    ]
+  },
+  {
+    "title": "VibePrevisBench: Evaluating Agentic Coding for 4D Scene Generation in Blender",
+    "url": "https://arxiv.org/abs/2611.15789",
+    "event_type": "revision",
+    "version": "v2",
+    "utc": "2026-11-18T18:56:21+00:00",
+    "chicago_date": "2026-11-18",
+    "screening_status": "core",
+    "verified_in_passes": [
+      "2026-11-18"
+    ]
+  },
+  {
+    "title": "MillBill: A Machining Agent with Geometric Feedback",
+    "url": "https://arxiv.org/abs/2611.22565",
+    "event_type": "revision",
+    "version": "v2",
+    "utc": "2026-11-18T18:33:02+00:00",
+    "chicago_date": "2026-11-18",
+    "screening_status": "core",
+    "verified_in_passes": [
+      "2026-11-18"
+    ]
+  },
+  {
+    "title": "CADFather: Autonomous CAD Reconstruction through Coordinated Tool Use",
+    "url": "https://arxiv.org/abs/2610.09127",
+    "event_type": "revision",
+    "version": "v2",
+    "utc": "2026-11-18T18:43:31+00:00",
+    "chicago_date": "2026-11-18",
+    "screening_status": "core",
+    "verified_in_passes": [
+      "2026-11-18"
+    ]
+  },
+  {
+    "title": "SIR-Agent: Skill-Augmented Image Restoration Agent with Recursive Self-Improvement",
+    "url": "https://arxiv.org/abs/2611.27285",
+    "event_type": "first_submission",
+    "version": "v1",
+    "utc": "2026-11-20T08:24:50+00:00",
+    "chicago_date": "2026-11-20",
+    "screening_status": "core",
+    "verified_in_passes": [
+      "2026-11-20"
+    ]
+  },
+  {
+    "title": "Inhabitant: An Agent Framework for Long-Horizon Human-Scene Interaction with Spatial Control and Quantitative Feedback",
+    "url": "https://arxiv.org/abs/2611.25005",
+    "event_type": "first_submission",
+    "version": "v1",
+    "utc": "2026-11-18T18:29:20+00:00",
+    "chicago_date": "2026-11-18",
+    "screening_status": "core",
+    "verified_in_passes": [
+      "2026-11-20"
+    ]
+  },
+  {
+    "title": "SceneAnything: Agentic Reconstruction of Large-Scale Mesh Scenes from a Single Video",
+    "url": "https://arxiv.org/abs/2611.25340",
+    "event_type": "first_submission",
+    "version": "v1",
+    "utc": "2026-11-19T01:26:02+00:00",
+    "chicago_date": "2026-11-18",
+    "screening_status": "core",
+    "verified_in_passes": [
+      "2026-11-20"
+    ]
+  },
+  {
+    "title": "Efficient Multimodal Agents for Auditing 3D Worlds",
+    "url": "https://arxiv.org/abs/2611.25543",
+    "event_type": "first_submission",
+    "version": "v1",
+    "utc": "2026-11-19T05:46:09+00:00",
+    "chicago_date": "2026-11-18",
+    "screening_status": "enabling_or_adjacent",
+    "verified_in_passes": [
+      "2026-11-20"
+    ]
+  },
+  {
+    "title": "CADMAGEDDON: High-Fidelity CAD Reconstruction with Local Inference",
+    "url": "https://arxiv.org/abs/2611.22563",
+    "event_type": "revision",
+    "version": "v2",
+    "utc": "2026-11-18T18:34:30+00:00",
+    "chicago_date": "2026-11-18",
+    "screening_status": "core",
+    "verified_in_passes": [
+      "2026-11-23"
+    ]
+  },
+  {
+    "title": "TopoPilot: Reliable Conversational Workflow Automation for Topological Data Analysis and Visualization",
+    "url": "https://arxiv.org/abs/2603.25063",
+    "event_type": "revision",
+    "version": "v3",
+    "utc": "2026-11-20T16:05:56+00:00",
+    "chicago_date": "2026-11-20",
+    "screening_status": "core",
+    "verified_in_passes": [
+      "2026-11-23"
+    ]
+  },
+  {
+    "title": "Exploring Agentic Visual Analytics: A Co-Evolutionary Framework of Roles and Workflows",
+    "url": "https://arxiv.org/abs/2604.15813",
+    "event_type": "revision",
+    "version": "v2",
+    "utc": "2026-11-18T06:01:27+00:00",
+    "chicago_date": "2026-11-18",
+    "screening_status": "enabling_or_adjacent",
+    "verified_in_passes": [
+      "2026-11-23"
+    ]
+  }
+]

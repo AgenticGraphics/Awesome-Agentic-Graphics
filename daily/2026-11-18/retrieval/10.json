@@ -1,0 +1,63 @@
+{
+  "id": "10",
+  "target_date": "2026-11-18",
+  "tool": "web.run",
+  "started_at": "2026-11-23T13:40:48+00:00",
+  "recorded_at": "2026-11-23T13:40:50+00:00",
+  "query_families": [
+    "simulation",
+    "cad",
+    "articulation",
+    "scene"
+  ],
+  "source_families": [
+    "arxiv",
+    "openreview",
+    "project_author_lab"
+  ],
+  "request": {
+    "search_query": [
+      {
+        "q": "agent physical simulation deformable graphics after:2026-11-11 before:2026-11-20"
+      },
+      {
+        "q": "site:openreview.net graphics agent CAD after:2026-11-17 before:2026-11-20"
+      },
+      {
+        "q": "\"SceneSmith\" \"Articraft\" new agent November 2026"
+      }
+    ],
+    "open": [
+      {
+        "ref_id": "https://arxiv.org/abs/2611.20688"
+      },
+      {
+        "ref_id": "https://arxiv.org/abs/2611.20533"
+      }
+    ],
+    "find": [
+      {
+        "ref_id": "turn18view0",
+        "pattern": "Critic"
+      },
+      {
+        "ref_id": "turn18view0",
+        "pattern": "self-improvement"
+      },
+      {
+        "ref_id": "turn16view0",
+        "pattern": "harness"
+      },
+      {
+        "ref_id": "turn18view1",
+        "pattern": "Agent"
+      },
+      {
+        "ref_id": "turn12view0",
+        "pattern": "Agent"
+      }
+    ],
+    "response_length": "long"
+  },
+  "response_storage": "Full tool responses retained in the local run; public records include requests, timings, and report evidence."
+}

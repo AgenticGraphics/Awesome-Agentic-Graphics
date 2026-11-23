@@ -1,0 +1,187 @@
+{
+  "target_date": "2026-11-23",
+  "as_of": "2026-11-23T13:48:18+00:00",
+  "window_start": "2026-11-23T00:00:00-06:00",
+  "window_end": "2026-11-23T13:48:18+00:00",
+  "snapshot_status": "bundled_snapshot_not_live_refreshed",
+  "retrieval_counts": {
+    "search_batches": 10,
+    "search_queries": 30,
+    "primary_opens": 24,
+    "web_tool_invocations": 11,
+    "find_operations": 47
+  },
+  "retrieval_started_at": "2026-11-23T13:48:18+00:00",
+  "retrieval_ended_at": "2026-11-23T13:50:13+00:00",
+  "retrieval_wall_seconds": 115.0,
+  "stop_reason": "search_batch_and_primary_open_caps_reached",
+  "candidate_counts": {
+    "fresh_reviewed_records": 7,
+    "retained_total": 17,
+    "carried_unresolved": 10,
+    "pending_queue": 15
+  },
+  "findings": {
+    "same_day_new": 0,
+    "same_day_updates": 0,
+    "already_reported": 0,
+    "late_discovery": 6,
+    "date_unresolved": 0,
+    "unresolved": 10,
+    "excluded": 1
+  },
+  "verified_additions": [],
+  "audit": {
+    "passed": true,
+    "errors": [],
+    "validation_scope": "Structural/date/label checks only; primary evidence truth and retrieval recall require agent review."
+  },
+  "reviewed_primary_sources": [
+    "https://arxiv.org/abs/2603.25063",
+    "https://arxiv.org/abs/2604.09568",
+    "https://arxiv.org/abs/2604.15813",
+    "https://arxiv.org/abs/2610.39924",
+    "https://arxiv.org/abs/2611.10088",
+    "https://arxiv.org/abs/2611.22563",
+    "https://arxiv.org/abs/2611.26046"
+  ],
+  "remaining_limits": [
+    "Search indexes and public release pages may lag; field-wide completeness is not established.",
+    "No same-day submission or revision was verified as of the morning of November 23 in Chicago; this partial-day search cannot establish full-day absence.",
+    "All selected candidate histories predate November 23. Announcement-page dates were not used as submission dates.",
+    "Hugging Face November 23 date URL was inaccessible; its root Daily Papers page showed November 23 and served as a partial fallback. OpenReview search was inaccessible; the CVPR 2026 index returned 403.",
+    "Inspected all ten cs.GR new/cross/replacement titles, but only selected matches among 271 cs.CV and 351 cs.AI entries. Rotated cs.HC, cs.MM and eess.IV; cs.RO was not opened.",
+    "EvoDesign and PhysAg3D were rechecked beyond the normal seven-day catch-up window to resolve prior pending leads. EvoDesign first-submission anomaly remains pending.",
+    "Revision content differences and empirical result reproduction were not assessed.",
+    "Ten search batches and 24 attempted primary opens are count caps; retrieval stops when those caps are reached. Actual elapsed time is reported, not padded to six minutes.",
+    "Queries and page reads are grouped by tool invocation in the ledger; a source-family association does not imply every result in that batch came from that family.",
+    "Search snippets and historical daily claims are leads only. Full-paper reproduction, exhaustive listing scans, citation chaining, and independent experimental validation were not performed.",
+    "The tools field remains provisional; the bundled memory definition is internally inconsistent. Unclear cells mean insufficient inspected evidence, not an inferred negative."
+  ],
+  "publication": "Reviewed local CLI skill run, synchronized to GitHub and the website by the authorized publishing workflow.",
+  "attempted_primary_pages": [
+    "https://arxiv.org/list/cs.GR/new",
+    "https://arxiv.org/list/cs.CV/new",
+    "https://huggingface.co/papers/date/2026-11-23",
+    "https://arxiv.org/list/cs.AI/new",
+    "https://arxiv.org/list/cs.HC/new",
+    "https://arxiv.org/abs/2611.22563",
+    "https://arxiv.org/abs/2603.25063",
+    "https://arxiv.org/abs/2611.10088",
+    "https://arxiv.org/list/cs.MM/new",
+    "https://openreview.net/search?term=agent%20graphics",
+    "https://github.com/Supra-3D/PhysAg3D",
+    "https://arxiv.org/html/2611.22563v2",
+    "https://siga26.agentic-graphics.com/",
+    "https://openaccess.thecvf.com/CVPR2026?day=all",
+    "https://arxiv.org/abs/2604.15813",
+    "https://arxiv.org/abs/2604.09568",
+    "https://arxiv.org/html/2603.25063v3",
+    "https://arxiv.org/abs/2610.39924",
+    "https://arxiv.org/abs/2611.26046",
+    "https://huggingface.co/papers",
+    "https://arxiv.org/list/eess.IV/new",
+    "https://arxiv.org/html/2604.09568v3",
+    "https://arxiv.org/html/2610.39924v1",
+    "https://arxiv.org/pdf/2611.10088v2"
+  ],
+  "older_event_comparison": [
+    {
+      "title": "CADMAGEDDON: High-Fidelity CAD Reconstruction with Local Inference",
+      "events": [
+        {
+          "type": "first_submission",
+          "version": "v1",
+          "value": "2026-11-17T10:48:35+00:00",
+          "prior_event_status": "already_seen"
+        },
+        {
+          "type": "revision",
+          "version": "v2",
+          "value": "2026-11-18T18:34:30+00:00",
+          "prior_event_status": "not_seen_in_supplied_history"
+        }
+      ]
+    },
+    {
+      "title": "TopoPilot: Reliable Conversational Workflow Automation for Topological Data Analysis and Visualization",
+      "events": [
+        {
+          "type": "first_submission",
+          "version": "v1",
+          "value": "2026-03-26T05:56:53+00:00",
+          "prior_event_status": "not_seen_in_supplied_history"
+        },
+        {
+          "type": "revision",
+          "version": "v2",
+          "value": "2026-10-09T22:53:42+00:00",
+          "prior_event_status": "not_seen_in_supplied_history"
+        },
+        {
+          "type": "revision",
+          "version": "v3",
+          "value": "2026-11-20T16:05:56+00:00",
+          "prior_event_status": "not_seen_in_supplied_history"
+        }
+      ]
+    },
+    {
+      "title": "Exploring Agentic Visual Analytics: A Co-Evolutionary Framework of Roles and Workflows",
+      "events": [
+        {
+          "type": "first_submission",
+          "version": "v1",
+          "value": "2026-04-17T08:11:39+00:00",
+          "prior_event_status": "not_seen_in_supplied_history"
+        },
+        {
+          "type": "revision",
+          "version": "v2",
+          "value": "2026-11-18T06:01:27+00:00",
+          "prior_event_status": "not_seen_in_supplied_history"
+        }
+      ]
+    },
+    {
+      "title": "EvoDesign: Agentic Editable Diagram Creation via Design Expertise Evolution",
+      "events": [
+        {
+          "type": "revision",
+          "version": "v2",
+          "value": "2026-10-05T17:32:59+00:00",
+          "prior_event_status": "already_seen"
+        },
+        {
+          "type": "revision",
+          "version": "v3",
+          "value": "2026-11-05T18:18:33+00:00",
+          "prior_event_status": "already_seen"
+        }
+      ]
+    },
+    {
+      "title": "PhysAg3D: Bridging 3D Generative and Agentic Models for High-Fidelity and Physically-Interactive Assets",
+      "events": [
+        {
+          "type": "first_submission",
+          "version": "v1",
+          "value": "2026-10-29T12:29:27+00:00",
+          "prior_event_status": "not_seen_in_supplied_history"
+        }
+      ]
+    },
+    {
+      "title": "Agentic Scaling of Embodied Tasks in Simulation for Synthetic Data Collection and Policy Evaluation",
+      "events": [
+        {
+          "type": "first_submission",
+          "version": "v1",
+          "value": "2026-11-19T12:55:12+00:00",
+          "prior_event_status": "not_seen_in_supplied_history"
+        }
+      ]
+    }
+  ],
+  "dedup_caveat": "Already-seen flags compare identities/events only; historical claims are not corroborating evidence. late_discovery can contain known papers reverified in this pass; see older_event_comparison."
+}

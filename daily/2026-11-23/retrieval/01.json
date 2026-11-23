@@ -1,0 +1,42 @@
+{
+  "id": "01",
+  "target_date": "2026-11-23",
+  "tool": "web.run",
+  "started_at": "2026-11-23T13:48:18+00:00",
+  "recorded_at": "2026-11-23T13:48:20+00:00",
+  "query_families": [
+    "2d",
+    "object",
+    "cad"
+  ],
+  "source_families": [
+    "arxiv",
+    "hugging_face"
+  ],
+  "request": {
+    "search_query": [
+      {
+        "q": "site:arxiv.org \"23 Nov 2026\" agent graphics"
+      },
+      {
+        "q": "agent SVG diagram chart slide poster visual feedback after:2026-11-22 before:2026-11-24"
+      },
+      {
+        "q": "agent CAD 3D modeling November 23 2026"
+      }
+    ],
+    "open": [
+      {
+        "ref_id": "https://arxiv.org/list/cs.GR/new"
+      },
+      {
+        "ref_id": "https://arxiv.org/list/cs.CV/new"
+      },
+      {
+        "ref_id": "https://huggingface.co/papers/date/2026-11-23"
+      }
+    ],
+    "response_length": "long"
+  },
+  "response_storage": "Full tool responses retained in the local run; public records include requests, timings, and report evidence."
+}

@@ -1,0 +1,61 @@
+{
+  "id": "02",
+  "target_date": "2026-11-20",
+  "tool": "web.run",
+  "started_at": "2026-11-23T13:45:02+00:00",
+  "recorded_at": "2026-11-23T13:45:10+00:00",
+  "query_families": [
+    "animation",
+    "simulation",
+    "articulation",
+    "benchmark"
+  ],
+  "source_families": [
+    "arxiv",
+    "hugging_face"
+  ],
+  "request": {
+    "search_query": [
+      {
+        "q": "site:arxiv.org \"agent\" \"20 Nov 2026\" graphics"
+      },
+      {
+        "q": "site:arxiv.org \"agent\" \"20 Nov 2026\" animation simulation"
+      },
+      {
+        "q": "agent articulated joint rig mechanism generation research"
+      }
+    ],
+    "open": [
+      {
+        "ref_id": "https://arxiv.org/abs/2611.27285"
+      },
+      {
+        "ref_id": "https://arxiv.org/abs/2611.26624"
+      },
+      {
+        "ref_id": "https://arxiv.org/list/cs.CV/recent"
+      }
+    ],
+    "find": [
+      {
+        "ref_id": "turn22view2",
+        "pattern": "Abstract"
+      },
+      {
+        "ref_id": "turn22view2",
+        "pattern": "Submission history"
+      },
+      {
+        "ref_id": "turn22view0",
+        "pattern": "Fri, 20"
+      },
+      {
+        "ref_id": "turn22view1",
+        "pattern": "Agent"
+      }
+    ],
+    "response_length": "long"
+  },
+  "response_storage": "Full tool responses retained in the local run; public records include requests, timings, and report evidence."
+}

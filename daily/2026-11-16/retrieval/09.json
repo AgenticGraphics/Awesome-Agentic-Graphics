@@ -1,0 +1,58 @@
+{
+  "id": "09",
+  "target_date": "2026-11-16",
+  "tool": "web.run",
+  "started_at": "2026-11-23T13:35:37+00:00",
+  "recorded_at": "2026-11-23T13:35:39+00:00",
+  "query_families": [
+    "articulation",
+    "benchmark",
+    "harness"
+  ],
+  "source_families": [
+    "arxiv",
+    "openreview",
+    "project_author_lab"
+  ],
+  "request": {
+    "search_query": [
+      {
+        "q": "\"VAHBench\" arxiv"
+      },
+      {
+        "q": "site:openreview.net \"agent\" \"visual\" after:2026-11-09 before:2026-11-18"
+      },
+      {
+        "q": "\"Articraft\" agent new November 2026"
+      }
+    ],
+    "open": [
+      {
+        "ref_id": "https://accio-lab.github.io/VisualArtifactSpec/"
+      },
+      {
+        "ref_id": "https://arxiv.org/list/cs.AI/recent"
+      }
+    ],
+    "find": [
+      {
+        "ref_id": "turn7view0",
+        "pattern": "Task Fulfillment"
+      },
+      {
+        "ref_id": "turn7view2",
+        "pattern": "Submission history"
+      },
+      {
+        "ref_id": "turn7view1",
+        "pattern": "Submission history"
+      },
+      {
+        "ref_id": "turn3view2",
+        "pattern": "2611.21"
+      }
+    ],
+    "response_length": "long"
+  },
+  "response_storage": "Full tool responses retained in the local run; public records include requests, timings, and report evidence."
+}

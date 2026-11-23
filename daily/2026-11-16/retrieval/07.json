@@ -1,0 +1,53 @@
+{
+  "id": "07",
+  "target_date": "2026-11-16",
+  "tool": "web.run",
+  "started_at": "2026-11-23T13:35:13+00:00",
+  "recorded_at": "2026-11-23T13:35:14+00:00",
+  "query_families": [
+    "benchmark",
+    "harness"
+  ],
+  "source_families": [
+    "arxiv",
+    "openreview",
+    "project_author_lab"
+  ],
+  "request": {
+    "search_query": [
+      {
+        "q": "site:arxiv.org \"agent\" \"16 Nov 2026\" graphics"
+      },
+      {
+        "q": "site:arxiv.org \"VisualArtifactSpec\""
+      },
+      {
+        "q": "site:openreview.net \"graphics\" \"November\" \"2026\""
+      }
+    ],
+    "open": [
+      {
+        "ref_id": "https://github.com/yuwenhan07/VIVID"
+      },
+      {
+        "ref_id": "https://arxiv.org/abs/2611.21382"
+      }
+    ],
+    "find": [
+      {
+        "ref_id": "turn4view0",
+        "pattern": "3.2"
+      },
+      {
+        "ref_id": "turn4view0",
+        "pattern": "memory"
+      },
+      {
+        "ref_id": "turn4view1",
+        "pattern": "Clean"
+      }
+    ],
+    "response_length": "long"
+  },
+  "response_storage": "Full tool responses retained in the local run; public records include requests, timings, and report evidence."
+}

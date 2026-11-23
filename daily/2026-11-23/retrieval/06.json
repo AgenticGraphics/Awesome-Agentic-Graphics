@@ -1,0 +1,57 @@
+{
+  "id": "06",
+  "target_date": "2026-11-23",
+  "tool": "web.run",
+  "started_at": "2026-11-23T13:49:14+00:00",
+  "recorded_at": "2026-11-23T13:49:16+00:00",
+  "query_families": [
+    "object",
+    "simulation",
+    "2d"
+  ],
+  "source_families": [
+    "arxiv",
+    "project_author_lab"
+  ],
+  "request": {
+    "search_query": [
+      {
+        "q": "\"PhysAg3D\" arxiv"
+      },
+      {
+        "q": "\"23 Nov 2026\" \"agent\" \"simulation\""
+      },
+      {
+        "q": "agent inverse graphics shape geometry editing"
+      }
+    ],
+    "open": [
+      {
+        "ref_id": "https://arxiv.org/abs/2604.09568"
+      },
+      {
+        "ref_id": "https://arxiv.org/html/2603.25063v3"
+      }
+    ],
+    "find": [
+      {
+        "ref_id": "turn36view2",
+        "pattern": "3.5 Agent loop"
+      },
+      {
+        "ref_id": "turn36view2",
+        "pattern": "3.4 Construction"
+      },
+      {
+        "ref_id": "turn37view2",
+        "pattern": "Submission history"
+      },
+      {
+        "ref_id": "turn37view2",
+        "pattern": "Abstract"
+      }
+    ],
+    "response_length": "long"
+  },
+  "response_storage": "Full tool responses retained in the local run; public records include requests, timings, and report evidence."
+}

@@ -1,0 +1,37 @@
+{
+  "id": "11",
+  "target_date": "2026-11-16",
+  "tool": "web.run",
+  "started_at": "2026-11-23T13:36:01+00:00",
+  "recorded_at": "2026-11-23T13:36:03+00:00",
+  "query_families": [
+    "benchmark",
+    "harness"
+  ],
+  "source_families": [
+    "arxiv",
+    "project_author_lab"
+  ],
+  "request": {
+    "find": [
+      {
+        "ref_id": "turn9view0",
+        "pattern": "Submission history"
+      },
+      {
+        "ref_id": "turn9view0",
+        "pattern": "Abstract:"
+      },
+      {
+        "ref_id": "turn8view0",
+        "pattern": "Evaluation"
+      },
+      {
+        "ref_id": "turn4view0",
+        "pattern": "Table 4"
+      }
+    ],
+    "response_length": "long"
+  },
+  "response_storage": "Full tool responses retained in the local run; public records include requests, timings, and report evidence."
+}

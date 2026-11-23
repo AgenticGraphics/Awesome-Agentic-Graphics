@@ -1,0 +1,50 @@
+{
+  "id": "05",
+  "target_date": "2026-11-16",
+  "tool": "web.run",
+  "started_at": "2026-11-23T13:34:44+00:00",
+  "recorded_at": "2026-11-23T13:34:45+00:00",
+  "query_families": [
+    "2d",
+    "simulation",
+    "harness"
+  ],
+  "source_families": [
+    "arxiv",
+    "project_author_lab",
+    "hugging_face"
+  ],
+  "request": {
+    "search_query": [
+      {
+        "q": "\"VIVID\" \"Visual Harness\" project"
+      },
+      {
+        "q": "agent SVG diagram scientific figure after:2026-11-09 before:2026-11-17"
+      },
+      {
+        "q": "agent physics simulation particle effects deformable research 2026"
+      }
+    ],
+    "open": [
+      {
+        "ref_id": "https://arxiv.org/html/2611.20688v1"
+      },
+      {
+        "ref_id": "https://arxiv.org/html/2611.20533v1"
+      }
+    ],
+    "find": [
+      {
+        "ref_id": "turn2view0",
+        "pattern": "Agent"
+      },
+      {
+        "ref_id": "turn0view2",
+        "pattern": "Video"
+      }
+    ],
+    "response_length": "long"
+  },
+  "response_storage": "Full tool responses retained in the local run; public records include requests, timings, and report evidence."
+}

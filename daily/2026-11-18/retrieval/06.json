@@ -1,0 +1,53 @@
+{
+  "id": "06",
+  "target_date": "2026-11-18",
+  "tool": "web.run",
+  "started_at": "2026-11-23T13:39:57+00:00",
+  "recorded_at": "2026-11-23T13:39:58+00:00",
+  "query_families": [
+    "benchmark",
+    "scene",
+    "animation"
+  ],
+  "source_families": [
+    "arxiv",
+    "openreview"
+  ],
+  "request": {
+    "search_query": [
+      {
+        "q": "site:arxiv.org \"graphics\" \"18 Nov 2026\""
+      },
+      {
+        "q": "site:openreview.net \"agent\" \"scene generation\""
+      },
+      {
+        "q": "\"VOL-Agent\" \"video\""
+      }
+    ],
+    "open": [
+      {
+        "ref_id": "https://arxiv.org/html/2611.15789v2"
+      },
+      {
+        "ref_id": "https://arxiv.org/html/2611.22565v2"
+      }
+    ],
+    "find": [
+      {
+        "ref_id": "turn15view1",
+        "pattern": "Submission history"
+      },
+      {
+        "ref_id": "turn15view1",
+        "pattern": "Abstract:"
+      },
+      {
+        "ref_id": "turn15view0",
+        "pattern": "Submission history"
+      }
+    ],
+    "response_length": "long"
+  },
+  "response_storage": "Full tool responses retained in the local run; public records include requests, timings, and report evidence."
+}

@@ -1,0 +1,42 @@
+{
+  "id": "01",
+  "target_date": "2026-11-16",
+  "tool": "web.run",
+  "started_at": "2026-11-23T13:34:01+00:00",
+  "recorded_at": "2026-11-23T13:34:02+00:00",
+  "query_families": [
+    "2d",
+    "object",
+    "cad"
+  ],
+  "source_families": [
+    "arxiv",
+    "hugging_face"
+  ],
+  "request": {
+    "search_query": [
+      {
+        "q": "agent graphics SVG diagram poster slides after:2026-11-15 before:2026-11-18"
+      },
+      {
+        "q": "agent Blender procedural 3D modeling after:2026-11-15 before:2026-11-18"
+      },
+      {
+        "q": "agent CAD reconstruction editing after:2026-11-15 before:2026-11-18"
+      }
+    ],
+    "open": [
+      {
+        "ref_id": "https://arxiv.org/list/cs.GR/new"
+      },
+      {
+        "ref_id": "https://arxiv.org/list/cs.CV/recent"
+      },
+      {
+        "ref_id": "https://huggingface.co/papers/date/2026-11-16"
+      }
+    ],
+    "response_length": "long"
+  },
+  "response_storage": "Full tool responses retained in the local run; public records include requests, timings, and report evidence."
+}
