@@ -1,0 +1,60 @@
+{
+  "id": "03",
+  "tool": "web.run",
+  "started_at": "2026-11-24T20:06:03+00:00",
+  "recorded_at": "2026-11-24T20:06:05+00:00",
+  "source_families": [
+    "arxiv",
+    "official_venues",
+    "hugging_face"
+  ],
+  "query_families": [
+    "simulation",
+    "benchmark",
+    "harness"
+  ],
+  "request": {
+    "search_query": [
+      {
+        "q": "site:arxiv.org agent physical simulation particle effects November 2026"
+      },
+      {
+        "q": "site:arxiv.org agent graphics benchmark world auditing \"2026\""
+      },
+      {
+        "q": "graphics agent memory replanning tool interface feedback program synthesis \"November\" \"2026\""
+      }
+    ],
+    "open": [
+      {
+        "ref_id": "https://arxiv.org/list/cs.AI/new"
+      },
+      {
+        "ref_id": "https://siga26.agentic-graphics.com/"
+      },
+      {
+        "ref_id": "https://openaccess.thecvf.com/CVPR2026?day=all"
+      }
+    ],
+    "find": [
+      {
+        "ref_id": "turn0view0",
+        "pattern": "Agent"
+      },
+      {
+        "ref_id": "turn1view2",
+        "pattern": "Nov 24"
+      },
+      {
+        "ref_id": "turn1view2",
+        "pattern": "3D"
+      },
+      {
+        "ref_id": "turn1view0",
+        "pattern": "generation"
+      }
+    ],
+    "response_length": "long"
+  },
+  "response_storage": "Full tool responses retained in the local run; public records include requests, timings, and report evidence."
+}

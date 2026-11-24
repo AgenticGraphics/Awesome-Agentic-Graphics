@@ -1,0 +1,62 @@
+{
+  "id": "07",
+  "tool": "web.run",
+  "started_at": "2026-11-24T20:06:43+00:00",
+  "recorded_at": "2026-11-24T20:06:44+00:00",
+  "source_families": [
+    "arxiv",
+    "project_author_lab"
+  ],
+  "query_families": [
+    "simulation",
+    "animation",
+    "articulation",
+    "harness",
+    "object"
+  ],
+  "request": {
+    "search_query": [
+      {
+        "q": "agent physical simulation deformable world after:2026-11-23 before:2026-11-25"
+      },
+      {
+        "q": "agent animation articulated rig after:2026-11-23 before:2026-11-25"
+      },
+      {
+        "q": "\"Articraft\" OR \"VIGA\" \"November\" \"2026\" agent"
+      }
+    ],
+    "open": [
+      {
+        "ref_id": "https://arxiv.org/abs/2611.26003"
+      },
+      {
+        "ref_id": "https://arxiv.org/html/2611.26003v2"
+      }
+    ],
+    "find": [
+      {
+        "ref_id": "turn5view0",
+        "pattern": "Submission history"
+      },
+      {
+        "ref_id": "turn5view1",
+        "pattern": "3."
+      },
+      {
+        "ref_id": "turn5view1",
+        "pattern": "feedback"
+      },
+      {
+        "ref_id": "turn4view1",
+        "pattern": "Agentic Motion Framework"
+      },
+      {
+        "ref_id": "turn5view2",
+        "pattern": "2611.30013"
+      }
+    ],
+    "response_length": "long"
+  },
+  "response_storage": "Full tool responses retained in the local run; public records include requests, timings, and report evidence."
+}

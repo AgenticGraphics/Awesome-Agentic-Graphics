@@ -2,13 +2,13 @@
   "schemaVersion": 1,
   "title": "Agentic graphics paper library",
   "timezone": "America/Chicago",
-  "executedAt": "2026-11-23T13:48:18+00:00",
+  "executedAt": "2026-11-24T20:05:08+00:00",
   "executionMode": "retrospective_multi_date_portable_browser_pass",
   "status": "partial",
   "intro": "Browse the survey collection and daily discoveries, or choose a search date.",
-  "methodNote": "Each dated report preserves its execution time, source coverage, and research method. November 23 local CLI backfills use the public skill with the frozen October 15 snapshot; earlier server and browser reports retain their original snapshots. Coverage remains bounded.",
+  "methodNote": "Each dated report preserves its execution time, source coverage, and research method. Local CLI daily runs use the public skill with the frozen October 15 snapshot; earlier server and browser reports retain their original snapshots. Coverage remains bounded.",
   "taxonomyNote": "Research annotations use the pinned October 11 codebook; the live document changed and was not reconciled in this run.",
-  "uniquePapers": 438,
+  "uniquePapers": 441,
   "sharedRetrieval": {
     "searchBatches": 6,
     "searchQueries": 24,
@@ -95487,6 +95487,3313 @@
         "report": "data/2026-11-23/report.md",
         "data": "data/2026-11-23/run.json",
         "audit": "data/2026-11-23/audit.json"
+      }
+    },
+    {
+      "date": "2026-11-24",
+      "label": "Nov 24",
+      "status": "partial_verified",
+      "executedAt": "2026-11-24T20:05:08+00:00",
+      "summary": "0 verified same-day new submissions, 0 updates, and 3 catch-up papers. Source coverage is bounded; see the report for unresolved candidates and limitations.",
+      "feedNote": "Local CLI skill run; partial day through the recorded cutoff. 2 previously reported events were rechecked and retained in the report; they are omitted from this daily feed.",
+      "papers": [
+        {
+          "id": "2611.30013",
+          "title": "3AGameFactory-Motion: Agentic Rigging and Reliable Complex Motion Generation for Diverse 3D Assets",
+          "shortTitle": "3AGameFactory-Motion: Agentic Rigging and Reliable Complex Motion Generation for Diverse 3D Assets",
+          "url": "https://arxiv.org/abs/2611.30013",
+          "eventType": "first_submission",
+          "eventDate": "2026-11-22T22:16:51-06:00",
+          "sourceEventTime": "2026-11-23T04:16:51+00:00",
+          "eventLabel": "New submission",
+          "bucket": "late_discovery",
+          "scope": "core",
+          "scopeLabel": "Core",
+          "scopeReason": "Agent-authored skeleton and motion programs drive deterministic rigging and kinematics; DivDynBench evaluates diverse asset morphologies.",
+          "evidence": [
+            {
+              "primary_url": "https://arxiv.org/html/2611.30013v1",
+              "evidence": "Agent-authored skeleton and motion programs drive deterministic rigging and kinematics; DivDynBench evaluates diverse asset morphologies.",
+              "locator": "Abstract and selected method sections"
+            }
+          ],
+          "summary": "Agent-authored skeleton and motion programs drive deterministic rigging and kinematics; DivDynBench evaluates diverse asset morphologies.",
+          "applications": [
+            "Dynamic / Articulated assets",
+            "Dynamic / Animation and temporal scene",
+            "Datasets and Benchmarks"
+          ],
+          "operations": [
+            "Generation"
+          ],
+          "tags": [],
+          "taxonomy": {
+            "task": [
+              "Modeling",
+              "Animation"
+            ],
+            "input_form": [
+              "Language",
+              "Image",
+              "3D Representation"
+            ],
+            "output": [
+              "Program",
+              "Graphics Artifact"
+            ],
+            "model_type": [
+              "VLM"
+            ],
+            "model_training": [
+              "Unclear"
+            ],
+            "planning": [
+              "PO-2"
+            ],
+            "workflow": [
+              "Sequential"
+            ],
+            "update_strategy": [
+              "Local Patch"
+            ],
+            "verifier": [
+              "Programmatic"
+            ],
+            "feedback_assessment": [
+              "Unclear"
+            ],
+            "feedback_observation": [
+              "Structural Scene State"
+            ],
+            "memory_time": [
+              "Unclear"
+            ],
+            "memory_reach": [
+              "Unclear"
+            ],
+            "action_type": [
+              "Code/Script",
+              "Tool/Function Call"
+            ],
+            "graphics_software": [
+              "Unclear"
+            ],
+            "tools": [
+              "Graphics Operations",
+              "Solver Validator"
+            ],
+            "resources": [
+              "Unclear"
+            ],
+            "representation": [
+              "Code",
+              "Geometry",
+              "Dynamic State"
+            ]
+          },
+          "taxonomyEvidence": {
+            "task": {
+              "primary_url": "https://arxiv.org/html/2611.30013v1",
+              "evidence": "Builds rigs and motion.",
+              "locator": "Section 4",
+              "level": "derived",
+              "reasoning": "This described mechanism maps to Modeling, Animation.",
+              "raw_evidence_archives": [
+                "retrieval/04.json",
+                "retrieval/05.json",
+                "retrieval/06.json",
+                "retrieval/07.json",
+                "retrieval/08.json",
+                "retrieval/11.json"
+              ]
+            },
+            "input_form": {
+              "primary_url": "https://arxiv.org/html/2611.30013v1",
+              "evidence": "Instructions, calibrated views, assets.",
+              "locator": "Sections 4.1–4.2",
+              "level": "derived",
+              "reasoning": "This described mechanism maps to Language, Image, 3D Representation.",
+              "raw_evidence_archives": [
+                "retrieval/04.json",
+                "retrieval/05.json",
+                "retrieval/06.json",
+                "retrieval/07.json",
+                "retrieval/08.json",
+                "retrieval/11.json"
+              ]
+            },
+            "output": {
+              "primary_url": "https://arxiv.org/html/2611.30013v1",
+              "evidence": "Programs yield rigs and animations.",
+              "locator": "Section 4, Figure 4",
+              "level": "derived",
+              "reasoning": "This described mechanism maps to Program, Graphics Artifact.",
+              "raw_evidence_archives": [
+                "retrieval/04.json",
+                "retrieval/05.json",
+                "retrieval/06.json",
+                "retrieval/07.json",
+                "retrieval/08.json",
+                "retrieval/11.json"
+              ]
+            },
+            "model_type": {
+              "primary_url": "https://arxiv.org/html/2611.30013v1",
+              "evidence": "Agent annotates parts across views.",
+              "locator": "Sections 4.1, 5.2",
+              "level": "derived",
+              "reasoning": "This described mechanism maps to VLM.",
+              "raw_evidence_archives": [
+                "retrieval/04.json",
+                "retrieval/05.json",
+                "retrieval/06.json",
+                "retrieval/07.json",
+                "retrieval/08.json",
+                "retrieval/11.json"
+              ]
+            },
+            "planning": {
+              "primary_url": "https://arxiv.org/html/2611.30013v1",
+              "evidence": "Agent sets phases within rig/motion stages.",
+              "locator": "Section 4.2",
+              "level": "derived",
+              "reasoning": "This described mechanism maps to PO-2.",
+              "raw_evidence_archives": [
+                "retrieval/04.json",
+                "retrieval/05.json",
+                "retrieval/06.json",
+                "retrieval/07.json",
+                "retrieval/08.json",
+                "retrieval/11.json"
+              ]
+            },
+            "workflow": {
+              "primary_url": "https://arxiv.org/html/2611.30013v1",
+              "evidence": "Rigging precedes motion; supplied rigs bypass it.",
+              "locator": "Section 4, Figure 4",
+              "level": "derived",
+              "reasoning": "This described mechanism maps to Sequential.",
+              "raw_evidence_archives": [
+                "retrieval/04.json",
+                "retrieval/05.json",
+                "retrieval/06.json",
+                "retrieval/07.json",
+                "retrieval/08.json",
+                "retrieval/11.json"
+              ]
+            },
+            "update_strategy": {
+              "primary_url": "https://arxiv.org/html/2611.30013v1",
+              "evidence": "Executor adjusts motion parameters.",
+              "locator": "Section 4.2, Execution and validation",
+              "level": "derived",
+              "reasoning": "This described mechanism maps to Local Patch.",
+              "raw_evidence_archives": [
+                "retrieval/04.json",
+                "retrieval/05.json",
+                "retrieval/06.json",
+                "retrieval/07.json",
+                "retrieval/08.json",
+                "retrieval/11.json"
+              ]
+            },
+            "verifier": {
+              "primary_url": "https://arxiv.org/html/2611.30013v1",
+              "evidence": "Executor checks deformations and residuals.",
+              "locator": "Sections 4.1–4.2",
+              "level": "derived",
+              "reasoning": "This described mechanism maps to Programmatic.",
+              "raw_evidence_archives": [
+                "retrieval/04.json",
+                "retrieval/05.json",
+                "retrieval/06.json",
+                "retrieval/07.json",
+                "retrieval/08.json",
+                "retrieval/11.json"
+              ]
+            },
+            "feedback_observation": {
+              "primary_url": "https://arxiv.org/html/2611.30013v1",
+              "evidence": "Mesh feedback guides corrections.",
+              "locator": "Section 4.2",
+              "level": "derived",
+              "reasoning": "This described mechanism maps to Structural Scene State.",
+              "raw_evidence_archives": [
+                "retrieval/04.json",
+                "retrieval/05.json",
+                "retrieval/06.json",
+                "retrieval/07.json",
+                "retrieval/08.json",
+                "retrieval/11.json"
+              ]
+            },
+            "action_type": {
+              "primary_url": "https://arxiv.org/html/2611.30013v1",
+              "evidence": "Agent invokes parameterized Python executor.",
+              "locator": "Section 4.2",
+              "level": "derived",
+              "reasoning": "This described mechanism maps to Code/Script, Tool/Function Call.",
+              "raw_evidence_archives": [
+                "retrieval/04.json",
+                "retrieval/05.json",
+                "retrieval/06.json",
+                "retrieval/07.json",
+                "retrieval/08.json",
+                "retrieval/11.json"
+              ]
+            },
+            "tools": {
+              "primary_url": "https://arxiv.org/html/2611.30013v1",
+              "evidence": "Rigging and constrained kinematic solving.",
+              "locator": "Sections 4.1–4.2",
+              "level": "derived",
+              "reasoning": "This described mechanism maps to Graphics Operations, Solver Validator.",
+              "raw_evidence_archives": [
+                "retrieval/04.json",
+                "retrieval/05.json",
+                "retrieval/06.json",
+                "retrieval/07.json",
+                "retrieval/08.json",
+                "retrieval/11.json"
+              ]
+            },
+            "representation": {
+              "primary_url": "https://arxiv.org/html/2611.30013v1",
+              "evidence": "Programs, meshes, evolving joint poses.",
+              "locator": "Section 4",
+              "level": "derived",
+              "reasoning": "This described mechanism maps to Code, Geometry, Dynamic State.",
+              "raw_evidence_archives": [
+                "retrieval/04.json",
+                "retrieval/05.json",
+                "retrieval/06.json",
+                "retrieval/07.json",
+                "retrieval/08.json",
+                "retrieval/11.json"
+              ]
+            }
+          },
+          "limitations": "Selected method passages read; empirical results not reproduced. Evaluation scoring is separate from executor feedback. Repository connection to this exact paper was not confirmed in the opened README.",
+          "authors": [
+            "Bohan Zeng",
+            "Kaixin Zhu",
+            "Yifan Yang",
+            "Dongge Yu",
+            "Zihao Wu",
+            "Yifan Dai",
+            "Zhou Liu",
+            "Junbo Niu",
+            "Xiaochen Ma",
+            "Shiran Ge",
+            "Zimo Meng",
+            "Junzhu Liang",
+            "Huanyao Zhang",
+            "Jinhang Liu",
+            "Tianqi Xiao",
+            "Jinhao Zhang",
+            "Tianyi Bai",
+            "Zhixiong Zeng",
+            "Penghao Zhao",
+            "Yuanbo Peng",
+            "Key Zhang",
+            "Wentao Zhang"
+          ],
+          "application": "Dynamic / Articulated assets",
+          "publication": {
+            "date": "2026-11-23",
+            "timestamp": "2026-11-23T04:16:51+00:00",
+            "precision": "day",
+            "source": "https://arxiv.org/abs/2611.30013",
+            "basis": "arxiv_first_submission"
+          }
+        },
+        {
+          "id": "2611.28197",
+          "title": "From Point Clouds to Engineering Models: Benchmarking Agentic 3D Reconstruction in the Built Environment",
+          "shortTitle": "From Point Clouds to Engineering Models: Benchmarking Agentic 3D Reconstruction in the Built Environment",
+          "url": "https://arxiv.org/abs/2611.28197",
+          "eventType": "first_submission",
+          "eventDate": "2026-11-20T10:26:09-06:00",
+          "sourceEventTime": "2026-11-20T16:26:09+00:00",
+          "eventLabel": "New submission",
+          "bucket": "late_discovery",
+          "scope": "core",
+          "scopeLabel": "Core",
+          "scopeReason": "Coding agents reconstruct semantic CAD/BIM components from scans using execution, geometry checks and rendered feedback.",
+          "evidence": [
+            {
+              "primary_url": "https://arxiv.org/html/2611.28197v1",
+              "evidence": "Coding agents reconstruct semantic CAD/BIM components from scans using execution, geometry checks and rendered feedback.",
+              "locator": "Abstract and selected method sections"
+            }
+          ],
+          "summary": "Coding agents reconstruct semantic CAD/BIM components from scans using execution, geometry checks and rendered feedback.",
+          "applications": [
+            "Static / CAD",
+            "Static / Scene",
+            "Datasets and Benchmarks"
+          ],
+          "operations": [
+            "Reconstruction"
+          ],
+          "tags": [],
+          "taxonomy": {
+            "task": [
+              "Modeling"
+            ],
+            "input_form": [
+              "3D Representation",
+              "Language"
+            ],
+            "output": [
+              "Program",
+              "Graphics Artifact"
+            ],
+            "model_type": [
+              "VLM"
+            ],
+            "model_training": [
+              "Unclear"
+            ],
+            "planning": [
+              "PO-3"
+            ],
+            "workflow": [
+              "Sequential",
+              "Parallel"
+            ],
+            "update_strategy": [
+              "Local Patch"
+            ],
+            "verifier": [
+              "Programmatic"
+            ],
+            "feedback_assessment": [
+              "Diagnosis"
+            ],
+            "feedback_observation": [
+              "Visual",
+              "Structural Scene State",
+              "Runtime"
+            ],
+            "memory_time": [
+              "Unclear"
+            ],
+            "memory_reach": [
+              "Unclear"
+            ],
+            "action_type": [
+              "Code/Script"
+            ],
+            "graphics_software": [
+              "Agent-Adapted"
+            ],
+            "tools": [
+              "Graphics Operations",
+              "Static Validator"
+            ],
+            "resources": [
+              "Documentation & Rules"
+            ],
+            "representation": [
+              "Code",
+              "Geometry"
+            ]
+          },
+          "taxonomyEvidence": {
+            "task": {
+              "primary_url": "https://arxiv.org/html/2611.28197v1",
+              "evidence": "Reconstructs CAD/BIM components.",
+              "locator": "Sections 3.1, 4",
+              "level": "derived",
+              "reasoning": "This described mechanism maps to Modeling.",
+              "raw_evidence_archives": [
+                "retrieval/05.json",
+                "retrieval/06.json",
+                "retrieval/07.json",
+                "retrieval/08.json",
+                "retrieval/11.json"
+              ]
+            },
+            "input_form": {
+              "primary_url": "https://arxiv.org/html/2611.28197v1",
+              "evidence": "Scans, class vocabulary and task prompt.",
+              "locator": "Sections 3.1, 4.1",
+              "level": "derived",
+              "reasoning": "This described mechanism maps to 3D Representation, Language.",
+              "raw_evidence_archives": [
+                "retrieval/05.json",
+                "retrieval/06.json",
+                "retrieval/07.json",
+                "retrieval/08.json",
+                "retrieval/11.json"
+              ]
+            },
+            "output": {
+              "primary_url": "https://arxiv.org/html/2611.28197v1",
+              "evidence": "Exports program, native model and IFC.",
+              "locator": "Section 3.1",
+              "level": "derived",
+              "reasoning": "This described mechanism maps to Program, Graphics Artifact.",
+              "raw_evidence_archives": [
+                "retrieval/05.json",
+                "retrieval/06.json",
+                "retrieval/07.json",
+                "retrieval/08.json",
+                "retrieval/11.json"
+              ]
+            },
+            "model_type": {
+              "primary_url": "https://arxiv.org/html/2611.28197v1",
+              "evidence": "Coding agents inspect rendered views.",
+              "locator": "Sections 4.1–4.2",
+              "level": "derived",
+              "reasoning": "This described mechanism maps to VLM.",
+              "raw_evidence_archives": [
+                "retrieval/05.json",
+                "retrieval/06.json",
+                "retrieval/07.json",
+                "retrieval/08.json",
+                "retrieval/11.json"
+              ]
+            },
+            "planning": {
+              "primary_url": "https://arxiv.org/html/2611.28197v1",
+              "evidence": "Agent freely interleaves steps and delegation.",
+              "locator": "Section 4.2",
+              "level": "derived",
+              "reasoning": "This described mechanism maps to PO-3.",
+              "raw_evidence_archives": [
+                "retrieval/05.json",
+                "retrieval/06.json",
+                "retrieval/07.json",
+                "retrieval/08.json",
+                "retrieval/11.json"
+              ]
+            },
+            "workflow": {
+              "primary_url": "https://arxiv.org/html/2611.28197v1",
+              "evidence": "Single-agent loop or asynchronous team.",
+              "locator": "Section 4.2",
+              "level": "derived",
+              "reasoning": "This described mechanism maps to Sequential, Parallel.",
+              "raw_evidence_archives": [
+                "retrieval/05.json",
+                "retrieval/06.json",
+                "retrieval/07.json",
+                "retrieval/08.json",
+                "retrieval/11.json"
+              ]
+            },
+            "update_strategy": {
+              "primary_url": "https://arxiv.org/html/2611.28197v1",
+              "evidence": "Revises modeling code after measurements.",
+              "locator": "Section 4.2",
+              "level": "derived",
+              "reasoning": "This described mechanism maps to Local Patch.",
+              "raw_evidence_archives": [
+                "retrieval/05.json",
+                "retrieval/06.json",
+                "retrieval/07.json",
+                "retrieval/08.json",
+                "retrieval/11.json"
+              ]
+            },
+            "verifier": {
+              "primary_url": "https://arxiv.org/html/2611.28197v1",
+              "evidence": "Automatic checks and validate assertions.",
+              "locator": "Section 4.1",
+              "level": "derived",
+              "reasoning": "This described mechanism maps to Programmatic.",
+              "raw_evidence_archives": [
+                "retrieval/05.json",
+                "retrieval/06.json",
+                "retrieval/07.json",
+                "retrieval/08.json",
+                "retrieval/11.json"
+              ]
+            },
+            "feedback_assessment": {
+              "primary_url": "https://arxiv.org/html/2611.28197v1",
+              "evidence": "Errors and invalid geometry are returned.",
+              "locator": "Section 4.1",
+              "level": "derived",
+              "reasoning": "This described mechanism maps to Diagnosis.",
+              "raw_evidence_archives": [
+                "retrieval/05.json",
+                "retrieval/06.json",
+                "retrieval/07.json",
+                "retrieval/08.json",
+                "retrieval/11.json"
+              ]
+            },
+            "feedback_observation": {
+              "primary_url": "https://arxiv.org/html/2611.28197v1",
+              "evidence": "Views, geometry checks and execution errors.",
+              "locator": "Section 4.1",
+              "level": "derived",
+              "reasoning": "This described mechanism maps to Visual, Structural Scene State, Runtime.",
+              "raw_evidence_archives": [
+                "retrieval/05.json",
+                "retrieval/06.json",
+                "retrieval/07.json",
+                "retrieval/08.json",
+                "retrieval/11.json"
+              ]
+            },
+            "action_type": {
+              "primary_url": "https://arxiv.org/html/2611.28197v1",
+              "evidence": "Python measurements and modeling programs.",
+              "locator": "Sections 4.1–4.2",
+              "level": "derived",
+              "reasoning": "This described mechanism maps to Code/Script.",
+              "raw_evidence_archives": [
+                "retrieval/05.json",
+                "retrieval/06.json",
+                "retrieval/07.json",
+                "retrieval/08.json",
+                "retrieval/11.json"
+              ]
+            },
+            "graphics_software": {
+              "primary_url": "https://arxiv.org/html/2611.28197v1",
+              "evidence": "Adapters connect harness and Rhino backend.",
+              "locator": "Section 4.1",
+              "level": "derived",
+              "reasoning": "This described mechanism maps to Agent-Adapted.",
+              "raw_evidence_archives": [
+                "retrieval/05.json",
+                "retrieval/06.json",
+                "retrieval/07.json",
+                "retrieval/08.json",
+                "retrieval/11.json"
+              ]
+            },
+            "tools": {
+              "primary_url": "https://arxiv.org/html/2611.28197v1",
+              "evidence": "Model execution and geometric predicates.",
+              "locator": "Section 4.1",
+              "level": "derived",
+              "reasoning": "This described mechanism maps to Graphics Operations, Static Validator.",
+              "raw_evidence_archives": [
+                "retrieval/05.json",
+                "retrieval/06.json",
+                "retrieval/07.json",
+                "retrieval/08.json",
+                "retrieval/11.json"
+              ]
+            },
+            "resources": {
+              "primary_url": "https://arxiv.org/html/2611.28197v1",
+              "evidence": "Shared API/workflow manual.",
+              "locator": "Section 4.1",
+              "level": "derived",
+              "reasoning": "This described mechanism maps to Documentation & Rules.",
+              "raw_evidence_archives": [
+                "retrieval/05.json",
+                "retrieval/06.json",
+                "retrieval/07.json",
+                "retrieval/08.json",
+                "retrieval/11.json"
+              ]
+            },
+            "representation": {
+              "primary_url": "https://arxiv.org/html/2611.28197v1",
+              "evidence": "Programs maintain scan-aligned components.",
+              "locator": "Sections 3.1, 4.1",
+              "level": "derived",
+              "reasoning": "This described mechanism maps to Code, Geometry.",
+              "raw_evidence_archives": [
+                "retrieval/05.json",
+                "retrieval/06.json",
+                "retrieval/07.json",
+                "retrieval/08.json",
+                "retrieval/11.json"
+              ]
+            }
+          },
+          "limitations": "Selected Sections 3–5 read. Held-out labels and engineering checker are offline evaluation, not in-loop verifiers. No empirical replication.",
+          "authors": [
+            "Changyu Du",
+            "Stavros Nousias",
+            "Syed Salman Ahmed",
+            "Kai Dietmair",
+            "Mohammad Alrabab'h",
+            "André Borrmann"
+          ],
+          "application": "Static / CAD",
+          "publication": {
+            "date": "2026-11-20",
+            "timestamp": "2026-11-20T16:26:09+00:00",
+            "precision": "day",
+            "source": "https://arxiv.org/abs/2611.28197",
+            "basis": "arxiv_first_submission"
+          }
+        },
+        {
+          "id": "2611.26003",
+          "title": "AI agents can redesign engineering parts with more than a thousand CAD parameters and nonlinear simulations",
+          "shortTitle": "AI agents can redesign engineering parts with more than a thousand CAD parameters and nonlinear simulations",
+          "url": "https://arxiv.org/abs/2611.26003",
+          "eventType": "revision",
+          "eventDate": "2026-11-22T10:46:09-06:00",
+          "sourceEventTime": "2026-11-22T16:46:09+00:00",
+          "eventLabel": "Revision",
+          "bucket": "late_discovery",
+          "scope": "core",
+          "scopeLabel": "Core",
+          "scopeReason": "An LLM changes CAD parameters, receives finite-element scores and feature-level results, and proposes further designs.",
+          "evidence": [
+            {
+              "primary_url": "https://arxiv.org/html/2611.26003v2",
+              "evidence": "An LLM changes CAD parameters, receives finite-element scores and feature-level results, and proposes further designs.",
+              "locator": "Abstract and selected method sections"
+            }
+          ],
+          "summary": "An LLM changes CAD parameters, receives finite-element scores and feature-level results, and proposes further designs.",
+          "applications": [
+            "Static / CAD"
+          ],
+          "operations": [
+            "Editing"
+          ],
+          "tags": [],
+          "taxonomy": {
+            "task": [
+              "Modeling"
+            ],
+            "input_form": [
+              "Language"
+            ],
+            "output": [
+              "Structured Specification",
+              "Graphics Artifact"
+            ],
+            "model_type": [
+              "LLM"
+            ],
+            "model_training": [
+              "Unclear"
+            ],
+            "planning": [
+              "PO-2"
+            ],
+            "workflow": [
+              "Sequential",
+              "Parallel"
+            ],
+            "update_strategy": [
+              "Local Patch",
+              "Candidate Selection"
+            ],
+            "verifier": [
+              "Programmatic",
+              "Environment"
+            ],
+            "feedback_assessment": [
+              "Binary",
+              "Score",
+              "Diagnosis"
+            ],
+            "feedback_observation": [
+              "Structural Scene State"
+            ],
+            "memory_time": [
+              "Short-Term Memory"
+            ],
+            "memory_reach": [
+              "Unclear"
+            ],
+            "action_type": [
+              "Structured Specification",
+              "Tool/Function Call"
+            ],
+            "graphics_software": [
+              "Agent-Adapted"
+            ],
+            "tools": [
+              "Graphics Operations",
+              "Solver Validator",
+              "Static Validator"
+            ],
+            "resources": [
+              "Documentation & Rules"
+            ],
+            "representation": [
+              "Geometry"
+            ]
+          },
+          "taxonomyEvidence": {
+            "task": {
+              "primary_url": "https://arxiv.org/html/2611.26003v2",
+              "evidence": "Edits engineering geometry.",
+              "locator": "Section 3.2",
+              "level": "derived",
+              "reasoning": "This described mechanism maps to Modeling.",
+              "raw_evidence_archives": [
+                "retrieval/04.json",
+                "retrieval/07.json",
+                "retrieval/08.json",
+                "retrieval/09.json",
+                "retrieval/10.json",
+                "retrieval/11.json"
+              ]
+            },
+            "input_form": {
+              "primary_url": "https://arxiv.org/html/2611.26003v2",
+              "evidence": "Opening message specifies problem and constraints.",
+              "locator": "Section 3.1",
+              "level": "derived",
+              "reasoning": "This described mechanism maps to Language.",
+              "raw_evidence_archives": [
+                "retrieval/04.json",
+                "retrieval/07.json",
+                "retrieval/08.json",
+                "retrieval/09.json",
+                "retrieval/10.json",
+                "retrieval/11.json"
+              ]
+            },
+            "output": {
+              "primary_url": "https://arxiv.org/html/2611.26003v2",
+              "evidence": "JSON changes compile into CAD solids.",
+              "locator": "Section 3.2",
+              "level": "derived",
+              "reasoning": "This described mechanism maps to Structured Specification, Graphics Artifact.",
+              "raw_evidence_archives": [
+                "retrieval/04.json",
+                "retrieval/07.json",
+                "retrieval/08.json",
+                "retrieval/09.json",
+                "retrieval/10.json",
+                "retrieval/11.json"
+              ]
+            },
+            "model_type": {
+              "primary_url": "https://arxiv.org/html/2611.26003v2",
+              "evidence": "LLM proposes design files.",
+              "locator": "Section 3, Figure 2",
+              "level": "derived",
+              "reasoning": "This described mechanism maps to LLM.",
+              "raw_evidence_archives": [
+                "retrieval/04.json",
+                "retrieval/07.json",
+                "retrieval/08.json",
+                "retrieval/09.json",
+                "retrieval/10.json",
+                "retrieval/11.json"
+              ]
+            },
+            "planning": {
+              "primary_url": "https://arxiv.org/html/2611.26003v2",
+              "evidence": "Agent chooses candidates within fixed rounds.",
+              "locator": "Section 3.3",
+              "level": "derived",
+              "reasoning": "This described mechanism maps to PO-2.",
+              "raw_evidence_archives": [
+                "retrieval/04.json",
+                "retrieval/07.json",
+                "retrieval/08.json",
+                "retrieval/09.json",
+                "retrieval/10.json",
+                "retrieval/11.json"
+              ]
+            },
+            "workflow": {
+              "primary_url": "https://arxiv.org/html/2611.26003v2",
+              "evidence": "Rounds; candidates can simulate concurrently.",
+              "locator": "Section 3.3",
+              "level": "derived",
+              "reasoning": "This described mechanism maps to Sequential, Parallel.",
+              "raw_evidence_archives": [
+                "retrieval/04.json",
+                "retrieval/07.json",
+                "retrieval/08.json",
+                "retrieval/09.json",
+                "retrieval/10.json",
+                "retrieval/11.json"
+              ]
+            },
+            "update_strategy": {
+              "primary_url": "https://arxiv.org/html/2611.26003v2",
+              "evidence": "Parameter changes; returns best design.",
+              "locator": "Sections 3.2–3.3",
+              "level": "derived",
+              "reasoning": "This described mechanism maps to Local Patch, Candidate Selection.",
+              "raw_evidence_archives": [
+                "retrieval/04.json",
+                "retrieval/07.json",
+                "retrieval/08.json",
+                "retrieval/09.json",
+                "retrieval/10.json",
+                "retrieval/11.json"
+              ]
+            },
+            "verifier": {
+              "primary_url": "https://arxiv.org/html/2611.26003v2",
+              "evidence": "Checks, simulation and scoring judge.",
+              "locator": "Sections 3.2–3.4",
+              "level": "derived",
+              "reasoning": "This described mechanism maps to Programmatic, Environment.",
+              "raw_evidence_archives": [
+                "retrieval/04.json",
+                "retrieval/07.json",
+                "retrieval/08.json",
+                "retrieval/09.json",
+                "retrieval/10.json",
+                "retrieval/11.json"
+              ]
+            },
+            "feedback_assessment": {
+              "primary_url": "https://arxiv.org/html/2611.26003v2",
+              "evidence": "Validity, objective and constraint margins.",
+              "locator": "Sections 3.1–3.4",
+              "level": "derived",
+              "reasoning": "This described mechanism maps to Binary, Score, Diagnosis.",
+              "raw_evidence_archives": [
+                "retrieval/04.json",
+                "retrieval/07.json",
+                "retrieval/08.json",
+                "retrieval/09.json",
+                "retrieval/10.json",
+                "retrieval/11.json"
+              ]
+            },
+            "feedback_observation": {
+              "primary_url": "https://arxiv.org/html/2611.26003v2",
+              "evidence": "Feature-indexed simulation results.",
+              "locator": "Section 3.1",
+              "level": "derived",
+              "reasoning": "This described mechanism maps to Structural Scene State.",
+              "raw_evidence_archives": [
+                "retrieval/04.json",
+                "retrieval/07.json",
+                "retrieval/08.json",
+                "retrieval/09.json",
+                "retrieval/10.json",
+                "retrieval/11.json"
+              ]
+            },
+            "memory_time": {
+              "primary_url": "https://arxiv.org/html/2611.26003v2",
+              "evidence": "Retains session messages and results.",
+              "locator": "Section 3.1",
+              "level": "derived",
+              "reasoning": "This described mechanism maps to Short-Term Memory.",
+              "raw_evidence_archives": [
+                "retrieval/04.json",
+                "retrieval/07.json",
+                "retrieval/08.json",
+                "retrieval/09.json",
+                "retrieval/10.json",
+                "retrieval/11.json"
+              ]
+            },
+            "action_type": {
+              "primary_url": "https://arxiv.org/html/2611.26003v2",
+              "evidence": "Design JSON and check_design calls.",
+              "locator": "Section 3.2; Appendix B tools table",
+              "level": "derived",
+              "reasoning": "This described mechanism maps to Structured Specification, Tool/Function Call.",
+              "raw_evidence_archives": [
+                "retrieval/04.json",
+                "retrieval/07.json",
+                "retrieval/08.json",
+                "retrieval/09.json",
+                "retrieval/10.json",
+                "retrieval/11.json"
+              ]
+            },
+            "graphics_software": {
+              "primary_url": "https://arxiv.org/html/2611.26003v2",
+              "evidence": "Pipeline builds, meshes and solves designs.",
+              "locator": "Section 3.4",
+              "level": "derived",
+              "reasoning": "This described mechanism maps to Agent-Adapted.",
+              "raw_evidence_archives": [
+                "retrieval/04.json",
+                "retrieval/07.json",
+                "retrieval/08.json",
+                "retrieval/09.json",
+                "retrieval/10.json",
+                "retrieval/11.json"
+              ]
+            },
+            "tools": {
+              "primary_url": "https://arxiv.org/html/2611.26003v2",
+              "evidence": "CAD builder, simulation and free checks.",
+              "locator": "Sections 3.2–3.4",
+              "level": "derived",
+              "reasoning": "This described mechanism maps to Graphics Operations, Solver Validator, Static Validator.",
+              "raw_evidence_archives": [
+                "retrieval/04.json",
+                "retrieval/07.json",
+                "retrieval/08.json",
+                "retrieval/09.json",
+                "retrieval/10.json",
+                "retrieval/11.json"
+              ]
+            },
+            "resources": {
+              "primary_url": "https://arxiv.org/html/2611.26003v2",
+              "evidence": "Parameter rules and readable design code.",
+              "locator": "Section 3.2",
+              "level": "derived",
+              "reasoning": "This described mechanism maps to Documentation & Rules.",
+              "raw_evidence_archives": [
+                "retrieval/04.json",
+                "retrieval/07.json",
+                "retrieval/08.json",
+                "retrieval/09.json",
+                "retrieval/10.json",
+                "retrieval/11.json"
+              ]
+            },
+            "representation": {
+              "primary_url": "https://arxiv.org/html/2611.26003v2",
+              "evidence": "Parameterized CAD solids.",
+              "locator": "Section 3.2",
+              "level": "derived",
+              "reasoning": "This described mechanism maps to Geometry.",
+              "raw_evidence_archives": [
+                "retrieval/04.json",
+                "retrieval/07.json",
+                "retrieval/08.json",
+                "retrieval/09.json",
+                "retrieval/10.json",
+                "retrieval/11.json"
+              ]
+            }
+          },
+          "limitations": "Selected protocol passages read; revision differences not compared. Engineering optimization is in scope through CAD editing; this is not a clinical recommendation or independently validated design.",
+          "authors": [
+            "Alexandra Starostina",
+            "Alexander Hermann",
+            "Mahish Guru",
+            "Kartik Bali",
+            "Roland Aydin",
+            "Christian C. Cyron"
+          ],
+          "application": "Static / CAD",
+          "publication": {
+            "date": "2026-11-19",
+            "timestamp": "2026-11-19T12:21:21+00:00",
+            "precision": "day",
+            "source": "https://arxiv.org/abs/2611.26003",
+            "basis": "arxiv_first_submission"
+          }
+        }
+      ],
+      "counts": {
+        "papers": 3,
+        "new": 0,
+        "updates": 0,
+        "catchUp": 3,
+        "alreadyReported": 2,
+        "core": 3,
+        "scopeDependent": 0,
+        "adjacent": 0
+      },
+      "coverage": {
+        "label": "Bounded CLI skill source coverage",
+        "validationPassed": true,
+        "sources": [
+          {
+            "family": "arxiv",
+            "status": "partial",
+            "checks": [
+              {
+                "query_or_url": "agent SVG diagram slide poster editable visual feedback November 2026",
+                "operation": "search_query",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:05:49+00:00",
+                "tool_call_started_at": "2026-11-24T20:05:48+00:00",
+                "outcome": "Reached cs.GR new and cs.CV recent; HF date open failed. Broad queries included repository/product signals. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/01.json"
+              },
+              {
+                "query_or_url": "agent 3D object procedural modeling Blender material after:2026-11-23 before:2026-11-25",
+                "operation": "search_query",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:05:49+00:00",
+                "tool_call_started_at": "2026-11-24T20:05:48+00:00",
+                "outcome": "Reached cs.GR new and cs.CV recent; HF date open failed. Broad queries included repository/product signals. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/01.json"
+              },
+              {
+                "query_or_url": "agent CAD generation repair visual feedback November 24 2026",
+                "operation": "search_query",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:05:49+00:00",
+                "tool_call_started_at": "2026-11-24T20:05:48+00:00",
+                "outcome": "Reached cs.GR new and cs.CV recent; HF date open failed. Broad queries included repository/product signals. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/01.json"
+              },
+              {
+                "query_or_url": "https://arxiv.org/list/cs.GR/new",
+                "operation": "open",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:05:49+00:00",
+                "tool_call_started_at": "2026-11-24T20:05:48+00:00",
+                "outcome": "Reached cs.GR new and cs.CV recent; HF date open failed. Broad queries included repository/product signals. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/01.json"
+              },
+              {
+                "query_or_url": "https://arxiv.org/list/cs.CV/recent",
+                "operation": "open",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:05:49+00:00",
+                "tool_call_started_at": "2026-11-24T20:05:48+00:00",
+                "outcome": "Reached cs.GR new and cs.CV recent; HF date open failed. Broad queries included repository/product signals. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/01.json"
+              },
+              {
+                "query_or_url": "https://huggingface.co/papers/date/2026-11-24",
+                "operation": "open",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:05:49+00:00",
+                "tool_call_started_at": "2026-11-24T20:05:48+00:00",
+                "outcome": "Reached cs.GR new and cs.CV recent; HF date open failed. Broad queries included repository/product signals. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/01.json"
+              },
+              {
+                "query_or_url": "site:arxiv.org \"agent\" \"scene\" \"Nov\" \"2026\"",
+                "operation": "search_query",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:05:56+00:00",
+                "tool_call_started_at": "2026-11-24T20:05:55+00:00",
+                "outcome": "Reached cs.RO and HF root; OpenReview search open failed. Selected listing matches inspected. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/02.json"
+              },
+              {
+                "query_or_url": "agent articulated asset joint rig generation November 2026",
+                "operation": "search_query",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:05:56+00:00",
+                "tool_call_started_at": "2026-11-24T20:05:55+00:00",
+                "outcome": "Reached cs.RO and HF root; OpenReview search open failed. Selected listing matches inspected. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/02.json"
+              },
+              {
+                "query_or_url": "agent animation cutscene cinematography \"2026\" research",
+                "operation": "search_query",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:05:56+00:00",
+                "tool_call_started_at": "2026-11-24T20:05:55+00:00",
+                "outcome": "Reached cs.RO and HF root; OpenReview search open failed. Selected listing matches inspected. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/02.json"
+              },
+              {
+                "query_or_url": "https://arxiv.org/list/cs.RO/new",
+                "operation": "open",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:05:56+00:00",
+                "tool_call_started_at": "2026-11-24T20:05:55+00:00",
+                "outcome": "Reached cs.RO and HF root; OpenReview search open failed. Selected listing matches inspected. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/02.json"
+              },
+              {
+                "query_or_url": "https://openreview.net/search?term=graphics%20agent",
+                "operation": "open",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:05:56+00:00",
+                "tool_call_started_at": "2026-11-24T20:05:55+00:00",
+                "outcome": "Reached cs.RO and HF root; OpenReview search open failed. Selected listing matches inspected. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/02.json"
+              },
+              {
+                "query_or_url": "https://huggingface.co/papers",
+                "operation": "open",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:05:56+00:00",
+                "tool_call_started_at": "2026-11-24T20:05:55+00:00",
+                "outcome": "Reached cs.RO and HF root; OpenReview search open failed. Selected listing matches inspected. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/02.json"
+              },
+              {
+                "query_or_url": "turn0view0 [find: Title:]",
+                "operation": "find",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:05:56+00:00",
+                "tool_call_started_at": "2026-11-24T20:05:55+00:00",
+                "outcome": "Reached cs.RO and HF root; OpenReview search open failed. Selected listing matches inspected. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/02.json"
+              },
+              {
+                "query_or_url": "turn0view1 [find: agent]",
+                "operation": "find",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:05:56+00:00",
+                "tool_call_started_at": "2026-11-24T20:05:55+00:00",
+                "outcome": "Reached cs.RO and HF root; OpenReview search open failed. Selected listing matches inspected. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/02.json"
+              },
+              {
+                "query_or_url": "site:arxiv.org agent physical simulation particle effects November 2026",
+                "operation": "search_query",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:06:05+00:00",
+                "tool_call_started_at": "2026-11-24T20:06:03+00:00",
+                "outcome": "Reached cs.AI and SIGGRAPH Asia agentic workshop; CVPR index returned 403. HF root heading confirmed Nov 24. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/03.json"
+              },
+              {
+                "query_or_url": "site:arxiv.org agent graphics benchmark world auditing \"2026\"",
+                "operation": "search_query",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:06:05+00:00",
+                "tool_call_started_at": "2026-11-24T20:06:03+00:00",
+                "outcome": "Reached cs.AI and SIGGRAPH Asia agentic workshop; CVPR index returned 403. HF root heading confirmed Nov 24. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/03.json"
+              },
+              {
+                "query_or_url": "graphics agent memory replanning tool interface feedback program synthesis \"November\" \"2026\"",
+                "operation": "search_query",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:06:05+00:00",
+                "tool_call_started_at": "2026-11-24T20:06:03+00:00",
+                "outcome": "Reached cs.AI and SIGGRAPH Asia agentic workshop; CVPR index returned 403. HF root heading confirmed Nov 24. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/03.json"
+              },
+              {
+                "query_or_url": "https://arxiv.org/list/cs.AI/new",
+                "operation": "open",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:06:05+00:00",
+                "tool_call_started_at": "2026-11-24T20:06:03+00:00",
+                "outcome": "Reached cs.AI and SIGGRAPH Asia agentic workshop; CVPR index returned 403. HF root heading confirmed Nov 24. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/03.json"
+              },
+              {
+                "query_or_url": "https://siga26.agentic-graphics.com/",
+                "operation": "open",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:06:05+00:00",
+                "tool_call_started_at": "2026-11-24T20:06:03+00:00",
+                "outcome": "Reached cs.AI and SIGGRAPH Asia agentic workshop; CVPR index returned 403. HF root heading confirmed Nov 24. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/03.json"
+              },
+              {
+                "query_or_url": "https://openaccess.thecvf.com/CVPR2026?day=all",
+                "operation": "open",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:06:05+00:00",
+                "tool_call_started_at": "2026-11-24T20:06:03+00:00",
+                "outcome": "Reached cs.AI and SIGGRAPH Asia agentic workshop; CVPR index returned 403. HF root heading confirmed Nov 24. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/03.json"
+              },
+              {
+                "query_or_url": "turn0view0 [find: Agent]",
+                "operation": "find",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:06:05+00:00",
+                "tool_call_started_at": "2026-11-24T20:06:03+00:00",
+                "outcome": "Reached cs.AI and SIGGRAPH Asia agentic workshop; CVPR index returned 403. HF root heading confirmed Nov 24. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/03.json"
+              },
+              {
+                "query_or_url": "turn1view2 [find: Nov 24]",
+                "operation": "find",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:06:05+00:00",
+                "tool_call_started_at": "2026-11-24T20:06:03+00:00",
+                "outcome": "Reached cs.AI and SIGGRAPH Asia agentic workshop; CVPR index returned 403. HF root heading confirmed Nov 24. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/03.json"
+              },
+              {
+                "query_or_url": "turn1view2 [find: 3D]",
+                "operation": "find",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:06:05+00:00",
+                "tool_call_started_at": "2026-11-24T20:06:03+00:00",
+                "outcome": "Reached cs.AI and SIGGRAPH Asia agentic workshop; CVPR index returned 403. HF root heading confirmed Nov 24. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/03.json"
+              },
+              {
+                "query_or_url": "turn1view0 [find: generation]",
+                "operation": "find",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:06:05+00:00",
+                "tool_call_started_at": "2026-11-24T20:06:03+00:00",
+                "outcome": "Reached cs.AI and SIGGRAPH Asia agentic workshop; CVPR index returned 403. HF root heading confirmed Nov 24. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/03.json"
+              },
+              {
+                "query_or_url": "\"3AGameFactory-Motion\"",
+                "operation": "search_query",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:06:13+00:00",
+                "tool_call_started_at": "2026-11-24T20:06:11+00:00",
+                "outcome": "Reached cs.HC/cs.MM; searches resolved 3AGameFactory-Motion identity and returned older OpenReview PDFs. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/04.json"
+              },
+              {
+                "query_or_url": "site:openreview.net \"graphics\" \"agent\" \"2026\"",
+                "operation": "search_query",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:06:13+00:00",
+                "tool_call_started_at": "2026-11-24T20:06:11+00:00",
+                "outcome": "Reached cs.HC/cs.MM; searches resolved 3AGameFactory-Motion identity and returned older OpenReview PDFs. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/04.json"
+              },
+              {
+                "query_or_url": "site:arxiv.org \"24 Nov 2026\" \"agent\" graphics",
+                "operation": "search_query",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:06:13+00:00",
+                "tool_call_started_at": "2026-11-24T20:06:11+00:00",
+                "outcome": "Reached cs.HC/cs.MM; searches resolved 3AGameFactory-Motion identity and returned older OpenReview PDFs. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/04.json"
+              },
+              {
+                "query_or_url": "https://arxiv.org/list/cs.HC/new",
+                "operation": "open",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:06:13+00:00",
+                "tool_call_started_at": "2026-11-24T20:06:11+00:00",
+                "outcome": "Reached cs.HC/cs.MM; searches resolved 3AGameFactory-Motion identity and returned older OpenReview PDFs. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/04.json"
+              },
+              {
+                "query_or_url": "https://arxiv.org/list/cs.MM/new",
+                "operation": "open",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:06:13+00:00",
+                "tool_call_started_at": "2026-11-24T20:06:11+00:00",
+                "outcome": "Reached cs.HC/cs.MM; searches resolved 3AGameFactory-Motion identity and returned older OpenReview PDFs. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/04.json"
+              },
+              {
+                "query_or_url": "turn2view0 [find: 3AGame]",
+                "operation": "find",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:06:13+00:00",
+                "tool_call_started_at": "2026-11-24T20:06:11+00:00",
+                "outcome": "Reached cs.HC/cs.MM; searches resolved 3AGameFactory-Motion identity and returned older OpenReview PDFs. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/04.json"
+              },
+              {
+                "query_or_url": "turn2view0 [find: CAD]",
+                "operation": "find",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:06:13+00:00",
+                "tool_call_started_at": "2026-11-24T20:06:11+00:00",
+                "outcome": "Reached cs.HC/cs.MM; searches resolved 3AGameFactory-Motion identity and returned older OpenReview PDFs. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/04.json"
+              },
+              {
+                "query_or_url": "turn2view0 [find: visualization]",
+                "operation": "find",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:06:13+00:00",
+                "tool_call_started_at": "2026-11-24T20:06:11+00:00",
+                "outcome": "Reached cs.HC/cs.MM; searches resolved 3AGameFactory-Motion identity and returned older OpenReview PDFs. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/04.json"
+              },
+              {
+                "query_or_url": "turn0view0 [find: [1]]",
+                "operation": "find",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:06:13+00:00",
+                "tool_call_started_at": "2026-11-24T20:06:11+00:00",
+                "outcome": "Reached cs.HC/cs.MM; searches resolved 3AGameFactory-Motion identity and returned older OpenReview PDFs. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/04.json"
+              },
+              {
+                "query_or_url": "\"agents\" \"scans\" \"CAD/BIM\" \"2026\"",
+                "operation": "search_query",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:06:26+00:00",
+                "tool_call_started_at": "2026-11-24T20:06:24+00:00",
+                "outcome": "Reached motion paper history/full text and eess.IV. Search resolved S2Bench; venue results describe schedules, not verified paper events. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/05.json"
+              },
+              {
+                "query_or_url": "site:asia.siggraph.org/2026 agent graphics papers November",
+                "operation": "search_query",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:06:26+00:00",
+                "tool_call_started_at": "2026-11-24T20:06:24+00:00",
+                "outcome": "Reached motion paper history/full text and eess.IV. Search resolved S2Bench; venue results describe schedules, not verified paper events. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/05.json"
+              },
+              {
+                "query_or_url": "\"WorldAct\" \"November\" \"2026\"",
+                "operation": "search_query",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:06:26+00:00",
+                "tool_call_started_at": "2026-11-24T20:06:24+00:00",
+                "outcome": "Reached motion paper history/full text and eess.IV. Search resolved S2Bench; venue results describe schedules, not verified paper events. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/05.json"
+              },
+              {
+                "query_or_url": "https://arxiv.org/abs/2611.30013",
+                "operation": "open",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:06:26+00:00",
+                "tool_call_started_at": "2026-11-24T20:06:24+00:00",
+                "outcome": "Reached motion paper history/full text and eess.IV. Search resolved S2Bench; venue results describe schedules, not verified paper events. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/05.json"
+              },
+              {
+                "query_or_url": "https://arxiv.org/html/2611.30013v1",
+                "operation": "open",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:06:26+00:00",
+                "tool_call_started_at": "2026-11-24T20:06:24+00:00",
+                "outcome": "Reached motion paper history/full text and eess.IV. Search resolved S2Bench; venue results describe schedules, not verified paper events. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/05.json"
+              },
+              {
+                "query_or_url": "https://arxiv.org/list/eess.IV/new",
+                "operation": "open",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:06:26+00:00",
+                "tool_call_started_at": "2026-11-24T20:06:24+00:00",
+                "outcome": "Reached motion paper history/full text and eess.IV. Search resolved S2Bench; venue results describe schedules, not verified paper events. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/05.json"
+              },
+              {
+                "query_or_url": "turn2view0 [find: shared framework]",
+                "operation": "find",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:06:26+00:00",
+                "tool_call_started_at": "2026-11-24T20:06:24+00:00",
+                "outcome": "Reached motion paper history/full text and eess.IV. Search resolved S2Bench; venue results describe schedules, not verified paper events. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/05.json"
+              },
+              {
+                "query_or_url": "turn3view0 [find: graphics]",
+                "operation": "find",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:06:26+00:00",
+                "tool_call_started_at": "2026-11-24T20:06:24+00:00",
+                "outcome": "Reached motion paper history/full text and eess.IV. Search resolved S2Bench; venue results describe schedules, not verified paper events. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/05.json"
+              },
+              {
+                "query_or_url": "turn3view1 [find: agent]",
+                "operation": "find",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:06:26+00:00",
+                "tool_call_started_at": "2026-11-24T20:06:24+00:00",
+                "outcome": "Reached motion paper history/full text and eess.IV. Search resolved S2Bench; venue results describe schedules, not verified paper events. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/05.json"
+              },
+              {
+                "query_or_url": "agent SVG diagram chart slide poster editable visual feedback",
+                "operation": "search_query",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:06:36+00:00",
+                "tool_call_started_at": "2026-11-24T20:06:34+00:00",
+                "outcome": "Reached S2Bench history/full text and GameFactory repository. Motion v1 timestamp was Nov 23 UTC, Nov 22 Chicago. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/06.json"
+              },
+              {
+                "query_or_url": "site:arxiv.org \"2026-11-24\" \"CAD\"",
+                "operation": "search_query",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:06:36+00:00",
+                "tool_call_started_at": "2026-11-24T20:06:34+00:00",
+                "outcome": "Reached S2Bench history/full text and GameFactory repository. Motion v1 timestamp was Nov 23 UTC, Nov 22 Chicago. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/06.json"
+              },
+              {
+                "query_or_url": "site:huggingface.co/papers/date/2026-11-24 graphics",
+                "operation": "search_query",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:06:36+00:00",
+                "tool_call_started_at": "2026-11-24T20:06:34+00:00",
+                "outcome": "Reached S2Bench history/full text and GameFactory repository. Motion v1 timestamp was Nov 23 UTC, Nov 22 Chicago. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/06.json"
+              },
+              {
+                "query_or_url": "https://arxiv.org/abs/2611.28197",
+                "operation": "open",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:06:36+00:00",
+                "tool_call_started_at": "2026-11-24T20:06:34+00:00",
+                "outcome": "Reached S2Bench history/full text and GameFactory repository. Motion v1 timestamp was Nov 23 UTC, Nov 22 Chicago. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/06.json"
+              },
+              {
+                "query_or_url": "https://arxiv.org/html/2611.28197v1",
+                "operation": "open",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:06:36+00:00",
+                "tool_call_started_at": "2026-11-24T20:06:34+00:00",
+                "outcome": "Reached S2Bench history/full text and GameFactory repository. Motion v1 timestamp was Nov 23 UTC, Nov 22 Chicago. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/06.json"
+              },
+              {
+                "query_or_url": "https://github.com/wangjazz/gamefactory-3a",
+                "operation": "open",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:06:36+00:00",
+                "tool_call_started_at": "2026-11-24T20:06:34+00:00",
+                "outcome": "Reached S2Bench history/full text and GameFactory repository. Motion v1 timestamp was Nov 23 UTC, Nov 22 Chicago. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/06.json"
+              },
+              {
+                "query_or_url": "turn4view0 [find: Submission history]",
+                "operation": "find",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:06:36+00:00",
+                "tool_call_started_at": "2026-11-24T20:06:34+00:00",
+                "outcome": "Reached S2Bench history/full text and GameFactory repository. Motion v1 timestamp was Nov 23 UTC, Nov 22 Chicago. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/06.json"
+              },
+              {
+                "query_or_url": "turn4view1 [find: 3 Agentic]",
+                "operation": "find",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:06:36+00:00",
+                "tool_call_started_at": "2026-11-24T20:06:34+00:00",
+                "outcome": "Reached S2Bench history/full text and GameFactory repository. Motion v1 timestamp was Nov 23 UTC, Nov 22 Chicago. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/06.json"
+              },
+              {
+                "query_or_url": "turn4view1 [find: feedback]",
+                "operation": "find",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:06:36+00:00",
+                "tool_call_started_at": "2026-11-24T20:06:34+00:00",
+                "outcome": "Reached S2Bench history/full text and GameFactory repository. Motion v1 timestamp was Nov 23 UTC, Nov 22 Chicago. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/06.json"
+              },
+              {
+                "query_or_url": "turn4view2 [find: agent]",
+                "operation": "find",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:06:36+00:00",
+                "tool_call_started_at": "2026-11-24T20:06:34+00:00",
+                "outcome": "Reached S2Bench history/full text and GameFactory repository. Motion v1 timestamp was Nov 23 UTC, Nov 22 Chicago. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/06.json"
+              },
+              {
+                "query_or_url": "agent physical simulation deformable world after:2026-11-23 before:2026-11-25",
+                "operation": "search_query",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:06:44+00:00",
+                "tool_call_started_at": "2026-11-24T20:06:43+00:00",
+                "outcome": "Reached engineering-CAD history/full text; inspected S2Bench feedback and motion framework passages. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/07.json"
+              },
+              {
+                "query_or_url": "agent animation articulated rig after:2026-11-23 before:2026-11-25",
+                "operation": "search_query",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:06:44+00:00",
+                "tool_call_started_at": "2026-11-24T20:06:43+00:00",
+                "outcome": "Reached engineering-CAD history/full text; inspected S2Bench feedback and motion framework passages. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/07.json"
+              },
+              {
+                "query_or_url": "\"Articraft\" OR \"VIGA\" \"November\" \"2026\" agent",
+                "operation": "search_query",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:06:44+00:00",
+                "tool_call_started_at": "2026-11-24T20:06:43+00:00",
+                "outcome": "Reached engineering-CAD history/full text; inspected S2Bench feedback and motion framework passages. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/07.json"
+              },
+              {
+                "query_or_url": "https://arxiv.org/abs/2611.26003",
+                "operation": "open",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:06:44+00:00",
+                "tool_call_started_at": "2026-11-24T20:06:43+00:00",
+                "outcome": "Reached engineering-CAD history/full text; inspected S2Bench feedback and motion framework passages. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/07.json"
+              },
+              {
+                "query_or_url": "https://arxiv.org/html/2611.26003v2",
+                "operation": "open",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:06:44+00:00",
+                "tool_call_started_at": "2026-11-24T20:06:43+00:00",
+                "outcome": "Reached engineering-CAD history/full text; inspected S2Bench feedback and motion framework passages. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/07.json"
+              },
+              {
+                "query_or_url": "turn5view0 [find: Submission history]",
+                "operation": "find",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:06:44+00:00",
+                "tool_call_started_at": "2026-11-24T20:06:43+00:00",
+                "outcome": "Reached engineering-CAD history/full text; inspected S2Bench feedback and motion framework passages. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/07.json"
+              },
+              {
+                "query_or_url": "turn5view1 [find: 3.]",
+                "operation": "find",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:06:44+00:00",
+                "tool_call_started_at": "2026-11-24T20:06:43+00:00",
+                "outcome": "Reached engineering-CAD history/full text; inspected S2Bench feedback and motion framework passages. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/07.json"
+              },
+              {
+                "query_or_url": "turn5view1 [find: feedback]",
+                "operation": "find",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:06:44+00:00",
+                "tool_call_started_at": "2026-11-24T20:06:43+00:00",
+                "outcome": "Reached engineering-CAD history/full text; inspected S2Bench feedback and motion framework passages. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/07.json"
+              },
+              {
+                "query_or_url": "turn4view1 [find: Agentic Motion Framework]",
+                "operation": "find",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:06:44+00:00",
+                "tool_call_started_at": "2026-11-24T20:06:43+00:00",
+                "outcome": "Reached engineering-CAD history/full text; inspected S2Bench feedback and motion framework passages. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/07.json"
+              },
+              {
+                "query_or_url": "turn5view2 [find: 2611.30013]",
+                "operation": "find",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:06:44+00:00",
+                "tool_call_started_at": "2026-11-24T20:06:43+00:00",
+                "outcome": "Reached engineering-CAD history/full text; inspected S2Bench feedback and motion framework passages. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/07.json"
+              },
+              {
+                "query_or_url": "site:arxiv.org \"agent\" \"visualization\" after:2026-11-17 before:2026-11-25",
+                "operation": "search_query",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:06:53+00:00",
+                "tool_call_started_at": "2026-11-24T20:06:52+00:00",
+                "outcome": "Reached WorldAct and Next Best Move histories; inspected CAD and motion verifier mechanisms. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/08.json"
+              },
+              {
+                "query_or_url": "site:openreview.net \"CAD\" \"2026\" \"agent\"",
+                "operation": "search_query",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:06:53+00:00",
+                "tool_call_started_at": "2026-11-24T20:06:52+00:00",
+                "outcome": "Reached WorldAct and Next Best Move histories; inspected CAD and motion verifier mechanisms. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/08.json"
+              },
+              {
+                "query_or_url": "site:arxiv.org \"agent\" \"world auditing\"",
+                "operation": "search_query",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:06:53+00:00",
+                "tool_call_started_at": "2026-11-24T20:06:52+00:00",
+                "outcome": "Reached WorldAct and Next Best Move histories; inspected CAD and motion verifier mechanisms. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/08.json"
+              },
+              {
+                "query_or_url": "https://arxiv.org/abs/2605.15843",
+                "operation": "open",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:06:53+00:00",
+                "tool_call_started_at": "2026-11-24T20:06:52+00:00",
+                "outcome": "Reached WorldAct and Next Best Move histories; inspected CAD and motion verifier mechanisms. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/08.json"
+              },
+              {
+                "query_or_url": "https://arxiv.org/abs/2611.30879",
+                "operation": "open",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:06:53+00:00",
+                "tool_call_started_at": "2026-11-24T20:06:52+00:00",
+                "outcome": "Reached WorldAct and Next Best Move histories; inspected CAD and motion verifier mechanisms. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/08.json"
+              },
+              {
+                "query_or_url": "turn6view0 [find: Submission history]",
+                "operation": "find",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:06:53+00:00",
+                "tool_call_started_at": "2026-11-24T20:06:52+00:00",
+                "outcome": "Reached WorldAct and Next Best Move histories; inspected CAD and motion verifier mechanisms. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/08.json"
+              },
+              {
+                "query_or_url": "turn6view1 [find: 2.1]",
+                "operation": "find",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:06:53+00:00",
+                "tool_call_started_at": "2026-11-24T20:06:52+00:00",
+                "outcome": "Reached WorldAct and Next Best Move histories; inspected CAD and motion verifier mechanisms. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/08.json"
+              },
+              {
+                "query_or_url": "turn6view1 [find: feedback]",
+                "operation": "find",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:06:53+00:00",
+                "tool_call_started_at": "2026-11-24T20:06:52+00:00",
+                "outcome": "Reached WorldAct and Next Best Move histories; inspected CAD and motion verifier mechanisms. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/08.json"
+              },
+              {
+                "query_or_url": "turn4view1 [find: Execution and validation.]",
+                "operation": "find",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:06:53+00:00",
+                "tool_call_started_at": "2026-11-24T20:06:52+00:00",
+                "outcome": "Reached WorldAct and Next Best Move histories; inspected CAD and motion verifier mechanisms. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/08.json"
+              },
+              {
+                "query_or_url": "turn4view1 [find: Skinning and validation.]",
+                "operation": "find",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:06:53+00:00",
+                "tool_call_started_at": "2026-11-24T20:06:52+00:00",
+                "outcome": "Reached WorldAct and Next Best Move histories; inspected CAD and motion verifier mechanisms. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/08.json"
+              },
+              {
+                "query_or_url": "turn5view1 [find: Parallel asynchronous]",
+                "operation": "find",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:06:53+00:00",
+                "tool_call_started_at": "2026-11-24T20:06:52+00:00",
+                "outcome": "Reached WorldAct and Next Best Move histories; inspected CAD and motion verifier mechanisms. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/08.json"
+              },
+              {
+                "query_or_url": "\"ChatAtom\" \"simulation\" \"visualization\"",
+                "operation": "search_query",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:07:02+00:00",
+                "tool_call_started_at": "2026-11-24T20:07:01+00:00",
+                "outcome": "Reached ChatAtom history/full text; inspected WorldAct and Next Best Move dates and CAD design rounds. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/09.json"
+              },
+              {
+                "query_or_url": "\"agent\" \"graphics\" \"24 Nov 2026\"",
+                "operation": "search_query",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:07:02+00:00",
+                "tool_call_started_at": "2026-11-24T20:07:01+00:00",
+                "outcome": "Reached ChatAtom history/full text; inspected WorldAct and Next Best Move dates and CAD design rounds. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/09.json"
+              },
+              {
+                "query_or_url": "site:arxiv.org \"Blender\" after:2026-11-17 before:2026-11-25",
+                "operation": "search_query",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:07:02+00:00",
+                "tool_call_started_at": "2026-11-24T20:07:01+00:00",
+                "outcome": "Reached ChatAtom history/full text; inspected WorldAct and Next Best Move dates and CAD design rounds. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/09.json"
+              },
+              {
+                "query_or_url": "https://arxiv.org/abs/2611.26782",
+                "operation": "open",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:07:02+00:00",
+                "tool_call_started_at": "2026-11-24T20:07:01+00:00",
+                "outcome": "Reached ChatAtom history/full text; inspected WorldAct and Next Best Move dates and CAD design rounds. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/09.json"
+              },
+              {
+                "query_or_url": "https://arxiv.org/html/2611.26782v1",
+                "operation": "open",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:07:02+00:00",
+                "tool_call_started_at": "2026-11-24T20:07:01+00:00",
+                "outcome": "Reached ChatAtom history/full text; inspected WorldAct and Next Best Move dates and CAD design rounds. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/09.json"
+              },
+              {
+                "query_or_url": "turn7view1 [find: Abstract]",
+                "operation": "find",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:07:02+00:00",
+                "tool_call_started_at": "2026-11-24T20:07:01+00:00",
+                "outcome": "Reached ChatAtom history/full text; inspected WorldAct and Next Best Move dates and CAD design rounds. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/09.json"
+              },
+              {
+                "query_or_url": "turn7view1 [find: Submission history]",
+                "operation": "find",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:07:02+00:00",
+                "tool_call_started_at": "2026-11-24T20:07:01+00:00",
+                "outcome": "Reached ChatAtom history/full text; inspected WorldAct and Next Best Move dates and CAD design rounds. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/09.json"
+              },
+              {
+                "query_or_url": "turn7view0 [find: Abstract]",
+                "operation": "find",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:07:02+00:00",
+                "tool_call_started_at": "2026-11-24T20:07:01+00:00",
+                "outcome": "Reached ChatAtom history/full text; inspected WorldAct and Next Best Move dates and CAD design rounds. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/09.json"
+              },
+              {
+                "query_or_url": "turn7view0 [find: Submission history]",
+                "operation": "find",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:07:02+00:00",
+                "tool_call_started_at": "2026-11-24T20:07:01+00:00",
+                "outcome": "Reached ChatAtom history/full text; inspected WorldAct and Next Best Move dates and CAD design rounds. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/09.json"
+              },
+              {
+                "query_or_url": "turn6view1 [find: ## 3]",
+                "operation": "find",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:07:02+00:00",
+                "tool_call_started_at": "2026-11-24T20:07:01+00:00",
+                "outcome": "Reached ChatAtom history/full text; inspected WorldAct and Next Best Move dates and CAD design rounds. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/09.json"
+              },
+              {
+                "query_or_url": "turn6view1 [find: JSON]",
+                "operation": "find",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:07:02+00:00",
+                "tool_call_started_at": "2026-11-24T20:07:01+00:00",
+                "outcome": "Reached ChatAtom history/full text; inspected WorldAct and Next Best Move dates and CAD design rounds. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/09.json"
+              },
+              {
+                "query_or_url": "site:arxiv.org \"agent\" \"scene\" after:2026-11-23 before:2026-11-25",
+                "operation": "search_query",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:07:13+00:00",
+                "tool_call_started_at": "2026-11-24T20:07:12+00:00",
+                "outcome": "Date-filtered searches returned no results. Reached WorldAct v2; inspected ChatAtom review/memory and CAD session context. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/10.json"
+              },
+              {
+                "query_or_url": "site:arxiv.org \"graphics\" \"benchmark\" after:2026-11-23 before:2026-11-25",
+                "operation": "search_query",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:07:13+00:00",
+                "tool_call_started_at": "2026-11-24T20:07:12+00:00",
+                "outcome": "Date-filtered searches returned no results. Reached WorldAct v2; inspected ChatAtom review/memory and CAD session context. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/10.json"
+              },
+              {
+                "query_or_url": "site:arxiv.org \"Manim\" OR \"PosterMELD\" after:2026-11-17 before:2026-11-25",
+                "operation": "search_query",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:07:13+00:00",
+                "tool_call_started_at": "2026-11-24T20:07:12+00:00",
+                "outcome": "Date-filtered searches returned no results. Reached WorldAct v2; inspected ChatAtom review/memory and CAD session context. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/10.json"
+              },
+              {
+                "query_or_url": "https://arxiv.org/html/2605.15843v2",
+                "operation": "open",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:07:13+00:00",
+                "tool_call_started_at": "2026-11-24T20:07:12+00:00",
+                "outcome": "Date-filtered searches returned no results. Reached WorldAct v2; inspected ChatAtom review/memory and CAD session context. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/10.json"
+              },
+              {
+                "query_or_url": "turn8view0 [find: Submission history]",
+                "operation": "find",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:07:13+00:00",
+                "tool_call_started_at": "2026-11-24T20:07:12+00:00",
+                "outcome": "Date-filtered searches returned no results. Reached WorldAct v2; inspected ChatAtom review/memory and CAD session context. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/10.json"
+              },
+              {
+                "query_or_url": "turn8view1 [find: reviewer]",
+                "operation": "find",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:07:13+00:00",
+                "tool_call_started_at": "2026-11-24T20:07:12+00:00",
+                "outcome": "Date-filtered searches returned no results. Reached WorldAct v2; inspected ChatAtom review/memory and CAD session context. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/10.json"
+              },
+              {
+                "query_or_url": "turn8view1 [find: memory]",
+                "operation": "find",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:07:13+00:00",
+                "tool_call_started_at": "2026-11-24T20:07:12+00:00",
+                "outcome": "Date-filtered searches returned no results. Reached WorldAct v2; inspected ChatAtom review/memory and CAD session context. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/10.json"
+              },
+              {
+                "query_or_url": "turn7view1 [find: We evaluate]",
+                "operation": "find",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:07:13+00:00",
+                "tool_call_started_at": "2026-11-24T20:07:12+00:00",
+                "outcome": "Date-filtered searches returned no results. Reached WorldAct v2; inspected ChatAtom review/memory and CAD session context. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/10.json"
+              },
+              {
+                "query_or_url": "turn6view1 [find: 3.1]",
+                "operation": "find",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:07:13+00:00",
+                "tool_call_started_at": "2026-11-24T20:07:12+00:00",
+                "outcome": "Date-filtered searches returned no results. Reached WorldAct v2; inspected ChatAtom review/memory and CAD session context. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/10.json"
+              },
+              {
+                "query_or_url": "turn6view1 [find: fine-tun]",
+                "operation": "find",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:07:13+00:00",
+                "tool_call_started_at": "2026-11-24T20:07:12+00:00",
+                "outcome": "Date-filtered searches returned no results. Reached WorldAct v2; inspected ChatAtom review/memory and CAD session context. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/10.json"
+              },
+              {
+                "query_or_url": "turn9view0 [find: Memory Module]",
+                "operation": "find",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:07:31+00:00",
+                "tool_call_started_at": "2026-11-24T20:07:30+00:00",
+                "outcome": "Final finds verified author lists, WorldAct inventory memory, motion rigging and game-task scope of Next Best Move; no additional searches or opens. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/11.json"
+              },
+              {
+                "query_or_url": "turn9view0 [find: 4.2.1]",
+                "operation": "find",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:07:31+00:00",
+                "tool_call_started_at": "2026-11-24T20:07:30+00:00",
+                "outcome": "Final finds verified author lists, WorldAct inventory memory, motion rigging and game-task scope of Next Best Move; no additional searches or opens. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/11.json"
+              },
+              {
+                "query_or_url": "turn9view0 [find: 4.3.2]",
+                "operation": "find",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:07:31+00:00",
+                "tool_call_started_at": "2026-11-24T20:07:30+00:00",
+                "outcome": "Final finds verified author lists, WorldAct inventory memory, motion rigging and game-task scope of Next Best Move; no additional searches or opens. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/11.json"
+              },
+              {
+                "query_or_url": "turn7view1 [find: demonstrate]",
+                "operation": "find",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:07:31+00:00",
+                "tool_call_started_at": "2026-11-24T20:07:30+00:00",
+                "outcome": "Final finds verified author lists, WorldAct inventory memory, motion rigging and game-task scope of Next Best Move; no additional searches or opens. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/11.json"
+              },
+              {
+                "query_or_url": "turn4view0 [find: Authors:]",
+                "operation": "find",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:07:31+00:00",
+                "tool_call_started_at": "2026-11-24T20:07:30+00:00",
+                "outcome": "Final finds verified author lists, WorldAct inventory memory, motion rigging and game-task scope of Next Best Move; no additional searches or opens. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/11.json"
+              },
+              {
+                "query_or_url": "turn5view0 [find: Authors:]",
+                "operation": "find",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:07:31+00:00",
+                "tool_call_started_at": "2026-11-24T20:07:30+00:00",
+                "outcome": "Final finds verified author lists, WorldAct inventory memory, motion rigging and game-task scope of Next Best Move; no additional searches or opens. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/11.json"
+              },
+              {
+                "query_or_url": "turn6view0 [find: Authors:]",
+                "operation": "find",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:07:31+00:00",
+                "tool_call_started_at": "2026-11-24T20:07:30+00:00",
+                "outcome": "Final finds verified author lists, WorldAct inventory memory, motion rigging and game-task scope of Next Best Move; no additional searches or opens. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/11.json"
+              },
+              {
+                "query_or_url": "turn8view0 [find: Authors:]",
+                "operation": "find",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:07:31+00:00",
+                "tool_call_started_at": "2026-11-24T20:07:30+00:00",
+                "outcome": "Final finds verified author lists, WorldAct inventory memory, motion rigging and game-task scope of Next Best Move; no additional searches or opens. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/11.json"
+              },
+              {
+                "query_or_url": "turn4view1 [find: Skeleton construction.]",
+                "operation": "find",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:07:31+00:00",
+                "tool_call_started_at": "2026-11-24T20:07:30+00:00",
+                "outcome": "Final finds verified author lists, WorldAct inventory memory, motion rigging and game-task scope of Next Best Move; no additional searches or opens. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/11.json"
+              }
+            ],
+            "limitations": "Seven category pages reached, selected matches only; histories and selected full-text passages for six candidates."
+          },
+          {
+            "family": "hugging_face",
+            "status": "partial",
+            "checks": [
+              {
+                "query_or_url": "agent SVG diagram slide poster editable visual feedback November 2026",
+                "operation": "search_query",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:05:49+00:00",
+                "tool_call_started_at": "2026-11-24T20:05:48+00:00",
+                "outcome": "Reached cs.GR new and cs.CV recent; HF date open failed. Broad queries included repository/product signals. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/01.json"
+              },
+              {
+                "query_or_url": "agent 3D object procedural modeling Blender material after:2026-11-23 before:2026-11-25",
+                "operation": "search_query",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:05:49+00:00",
+                "tool_call_started_at": "2026-11-24T20:05:48+00:00",
+                "outcome": "Reached cs.GR new and cs.CV recent; HF date open failed. Broad queries included repository/product signals. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/01.json"
+              },
+              {
+                "query_or_url": "agent CAD generation repair visual feedback November 24 2026",
+                "operation": "search_query",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:05:49+00:00",
+                "tool_call_started_at": "2026-11-24T20:05:48+00:00",
+                "outcome": "Reached cs.GR new and cs.CV recent; HF date open failed. Broad queries included repository/product signals. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/01.json"
+              },
+              {
+                "query_or_url": "https://arxiv.org/list/cs.GR/new",
+                "operation": "open",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:05:49+00:00",
+                "tool_call_started_at": "2026-11-24T20:05:48+00:00",
+                "outcome": "Reached cs.GR new and cs.CV recent; HF date open failed. Broad queries included repository/product signals. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/01.json"
+              },
+              {
+                "query_or_url": "https://arxiv.org/list/cs.CV/recent",
+                "operation": "open",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:05:49+00:00",
+                "tool_call_started_at": "2026-11-24T20:05:48+00:00",
+                "outcome": "Reached cs.GR new and cs.CV recent; HF date open failed. Broad queries included repository/product signals. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/01.json"
+              },
+              {
+                "query_or_url": "https://huggingface.co/papers/date/2026-11-24",
+                "operation": "open",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:05:49+00:00",
+                "tool_call_started_at": "2026-11-24T20:05:48+00:00",
+                "outcome": "Reached cs.GR new and cs.CV recent; HF date open failed. Broad queries included repository/product signals. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/01.json"
+              },
+              {
+                "query_or_url": "site:arxiv.org \"agent\" \"scene\" \"Nov\" \"2026\"",
+                "operation": "search_query",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:05:56+00:00",
+                "tool_call_started_at": "2026-11-24T20:05:55+00:00",
+                "outcome": "Reached cs.RO and HF root; OpenReview search open failed. Selected listing matches inspected. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/02.json"
+              },
+              {
+                "query_or_url": "agent articulated asset joint rig generation November 2026",
+                "operation": "search_query",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:05:56+00:00",
+                "tool_call_started_at": "2026-11-24T20:05:55+00:00",
+                "outcome": "Reached cs.RO and HF root; OpenReview search open failed. Selected listing matches inspected. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/02.json"
+              },
+              {
+                "query_or_url": "agent animation cutscene cinematography \"2026\" research",
+                "operation": "search_query",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:05:56+00:00",
+                "tool_call_started_at": "2026-11-24T20:05:55+00:00",
+                "outcome": "Reached cs.RO and HF root; OpenReview search open failed. Selected listing matches inspected. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/02.json"
+              },
+              {
+                "query_or_url": "https://arxiv.org/list/cs.RO/new",
+                "operation": "open",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:05:56+00:00",
+                "tool_call_started_at": "2026-11-24T20:05:55+00:00",
+                "outcome": "Reached cs.RO and HF root; OpenReview search open failed. Selected listing matches inspected. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/02.json"
+              },
+              {
+                "query_or_url": "https://openreview.net/search?term=graphics%20agent",
+                "operation": "open",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:05:56+00:00",
+                "tool_call_started_at": "2026-11-24T20:05:55+00:00",
+                "outcome": "Reached cs.RO and HF root; OpenReview search open failed. Selected listing matches inspected. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/02.json"
+              },
+              {
+                "query_or_url": "https://huggingface.co/papers",
+                "operation": "open",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:05:56+00:00",
+                "tool_call_started_at": "2026-11-24T20:05:55+00:00",
+                "outcome": "Reached cs.RO and HF root; OpenReview search open failed. Selected listing matches inspected. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/02.json"
+              },
+              {
+                "query_or_url": "turn0view0 [find: Title:]",
+                "operation": "find",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:05:56+00:00",
+                "tool_call_started_at": "2026-11-24T20:05:55+00:00",
+                "outcome": "Reached cs.RO and HF root; OpenReview search open failed. Selected listing matches inspected. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/02.json"
+              },
+              {
+                "query_or_url": "turn0view1 [find: agent]",
+                "operation": "find",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:05:56+00:00",
+                "tool_call_started_at": "2026-11-24T20:05:55+00:00",
+                "outcome": "Reached cs.RO and HF root; OpenReview search open failed. Selected listing matches inspected. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/02.json"
+              },
+              {
+                "query_or_url": "site:arxiv.org agent physical simulation particle effects November 2026",
+                "operation": "search_query",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:06:05+00:00",
+                "tool_call_started_at": "2026-11-24T20:06:03+00:00",
+                "outcome": "Reached cs.AI and SIGGRAPH Asia agentic workshop; CVPR index returned 403. HF root heading confirmed Nov 24. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/03.json"
+              },
+              {
+                "query_or_url": "site:arxiv.org agent graphics benchmark world auditing \"2026\"",
+                "operation": "search_query",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:06:05+00:00",
+                "tool_call_started_at": "2026-11-24T20:06:03+00:00",
+                "outcome": "Reached cs.AI and SIGGRAPH Asia agentic workshop; CVPR index returned 403. HF root heading confirmed Nov 24. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/03.json"
+              },
+              {
+                "query_or_url": "graphics agent memory replanning tool interface feedback program synthesis \"November\" \"2026\"",
+                "operation": "search_query",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:06:05+00:00",
+                "tool_call_started_at": "2026-11-24T20:06:03+00:00",
+                "outcome": "Reached cs.AI and SIGGRAPH Asia agentic workshop; CVPR index returned 403. HF root heading confirmed Nov 24. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/03.json"
+              },
+              {
+                "query_or_url": "https://arxiv.org/list/cs.AI/new",
+                "operation": "open",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:06:05+00:00",
+                "tool_call_started_at": "2026-11-24T20:06:03+00:00",
+                "outcome": "Reached cs.AI and SIGGRAPH Asia agentic workshop; CVPR index returned 403. HF root heading confirmed Nov 24. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/03.json"
+              },
+              {
+                "query_or_url": "https://siga26.agentic-graphics.com/",
+                "operation": "open",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:06:05+00:00",
+                "tool_call_started_at": "2026-11-24T20:06:03+00:00",
+                "outcome": "Reached cs.AI and SIGGRAPH Asia agentic workshop; CVPR index returned 403. HF root heading confirmed Nov 24. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/03.json"
+              },
+              {
+                "query_or_url": "https://openaccess.thecvf.com/CVPR2026?day=all",
+                "operation": "open",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:06:05+00:00",
+                "tool_call_started_at": "2026-11-24T20:06:03+00:00",
+                "outcome": "Reached cs.AI and SIGGRAPH Asia agentic workshop; CVPR index returned 403. HF root heading confirmed Nov 24. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/03.json"
+              },
+              {
+                "query_or_url": "turn0view0 [find: Agent]",
+                "operation": "find",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:06:05+00:00",
+                "tool_call_started_at": "2026-11-24T20:06:03+00:00",
+                "outcome": "Reached cs.AI and SIGGRAPH Asia agentic workshop; CVPR index returned 403. HF root heading confirmed Nov 24. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/03.json"
+              },
+              {
+                "query_or_url": "turn1view2 [find: Nov 24]",
+                "operation": "find",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:06:05+00:00",
+                "tool_call_started_at": "2026-11-24T20:06:03+00:00",
+                "outcome": "Reached cs.AI and SIGGRAPH Asia agentic workshop; CVPR index returned 403. HF root heading confirmed Nov 24. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/03.json"
+              },
+              {
+                "query_or_url": "turn1view2 [find: 3D]",
+                "operation": "find",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:06:05+00:00",
+                "tool_call_started_at": "2026-11-24T20:06:03+00:00",
+                "outcome": "Reached cs.AI and SIGGRAPH Asia agentic workshop; CVPR index returned 403. HF root heading confirmed Nov 24. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/03.json"
+              },
+              {
+                "query_or_url": "turn1view0 [find: generation]",
+                "operation": "find",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:06:05+00:00",
+                "tool_call_started_at": "2026-11-24T20:06:03+00:00",
+                "outcome": "Reached cs.AI and SIGGRAPH Asia agentic workshop; CVPR index returned 403. HF root heading confirmed Nov 24. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/03.json"
+              },
+              {
+                "query_or_url": "agent SVG diagram chart slide poster editable visual feedback",
+                "operation": "search_query",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:06:36+00:00",
+                "tool_call_started_at": "2026-11-24T20:06:34+00:00",
+                "outcome": "Reached S2Bench history/full text and GameFactory repository. Motion v1 timestamp was Nov 23 UTC, Nov 22 Chicago. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/06.json"
+              },
+              {
+                "query_or_url": "site:arxiv.org \"2026-11-24\" \"CAD\"",
+                "operation": "search_query",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:06:36+00:00",
+                "tool_call_started_at": "2026-11-24T20:06:34+00:00",
+                "outcome": "Reached S2Bench history/full text and GameFactory repository. Motion v1 timestamp was Nov 23 UTC, Nov 22 Chicago. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/06.json"
+              },
+              {
+                "query_or_url": "site:huggingface.co/papers/date/2026-11-24 graphics",
+                "operation": "search_query",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:06:36+00:00",
+                "tool_call_started_at": "2026-11-24T20:06:34+00:00",
+                "outcome": "Reached S2Bench history/full text and GameFactory repository. Motion v1 timestamp was Nov 23 UTC, Nov 22 Chicago. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/06.json"
+              },
+              {
+                "query_or_url": "https://arxiv.org/abs/2611.28197",
+                "operation": "open",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:06:36+00:00",
+                "tool_call_started_at": "2026-11-24T20:06:34+00:00",
+                "outcome": "Reached S2Bench history/full text and GameFactory repository. Motion v1 timestamp was Nov 23 UTC, Nov 22 Chicago. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/06.json"
+              },
+              {
+                "query_or_url": "https://arxiv.org/html/2611.28197v1",
+                "operation": "open",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:06:36+00:00",
+                "tool_call_started_at": "2026-11-24T20:06:34+00:00",
+                "outcome": "Reached S2Bench history/full text and GameFactory repository. Motion v1 timestamp was Nov 23 UTC, Nov 22 Chicago. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/06.json"
+              },
+              {
+                "query_or_url": "https://github.com/wangjazz/gamefactory-3a",
+                "operation": "open",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:06:36+00:00",
+                "tool_call_started_at": "2026-11-24T20:06:34+00:00",
+                "outcome": "Reached S2Bench history/full text and GameFactory repository. Motion v1 timestamp was Nov 23 UTC, Nov 22 Chicago. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/06.json"
+              },
+              {
+                "query_or_url": "turn4view0 [find: Submission history]",
+                "operation": "find",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:06:36+00:00",
+                "tool_call_started_at": "2026-11-24T20:06:34+00:00",
+                "outcome": "Reached S2Bench history/full text and GameFactory repository. Motion v1 timestamp was Nov 23 UTC, Nov 22 Chicago. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/06.json"
+              },
+              {
+                "query_or_url": "turn4view1 [find: 3 Agentic]",
+                "operation": "find",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:06:36+00:00",
+                "tool_call_started_at": "2026-11-24T20:06:34+00:00",
+                "outcome": "Reached S2Bench history/full text and GameFactory repository. Motion v1 timestamp was Nov 23 UTC, Nov 22 Chicago. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/06.json"
+              },
+              {
+                "query_or_url": "turn4view1 [find: feedback]",
+                "operation": "find",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:06:36+00:00",
+                "tool_call_started_at": "2026-11-24T20:06:34+00:00",
+                "outcome": "Reached S2Bench history/full text and GameFactory repository. Motion v1 timestamp was Nov 23 UTC, Nov 22 Chicago. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/06.json"
+              },
+              {
+                "query_or_url": "turn4view2 [find: agent]",
+                "operation": "find",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:06:36+00:00",
+                "tool_call_started_at": "2026-11-24T20:06:34+00:00",
+                "outcome": "Reached S2Bench history/full text and GameFactory repository. Motion v1 timestamp was Nov 23 UTC, Nov 22 Chicago. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/06.json"
+              }
+            ],
+            "limitations": "Date URL open blocked; root Nov 24 heading and date-page search fallback reached."
+          },
+          {
+            "family": "openreview",
+            "status": "partial",
+            "checks": [
+              {
+                "query_or_url": "site:arxiv.org \"agent\" \"scene\" \"Nov\" \"2026\"",
+                "operation": "search_query",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:05:56+00:00",
+                "tool_call_started_at": "2026-11-24T20:05:55+00:00",
+                "outcome": "Reached cs.RO and HF root; OpenReview search open failed. Selected listing matches inspected. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/02.json"
+              },
+              {
+                "query_or_url": "agent articulated asset joint rig generation November 2026",
+                "operation": "search_query",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:05:56+00:00",
+                "tool_call_started_at": "2026-11-24T20:05:55+00:00",
+                "outcome": "Reached cs.RO and HF root; OpenReview search open failed. Selected listing matches inspected. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/02.json"
+              },
+              {
+                "query_or_url": "agent animation cutscene cinematography \"2026\" research",
+                "operation": "search_query",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:05:56+00:00",
+                "tool_call_started_at": "2026-11-24T20:05:55+00:00",
+                "outcome": "Reached cs.RO and HF root; OpenReview search open failed. Selected listing matches inspected. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/02.json"
+              },
+              {
+                "query_or_url": "https://arxiv.org/list/cs.RO/new",
+                "operation": "open",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:05:56+00:00",
+                "tool_call_started_at": "2026-11-24T20:05:55+00:00",
+                "outcome": "Reached cs.RO and HF root; OpenReview search open failed. Selected listing matches inspected. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/02.json"
+              },
+              {
+                "query_or_url": "https://openreview.net/search?term=graphics%20agent",
+                "operation": "open",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:05:56+00:00",
+                "tool_call_started_at": "2026-11-24T20:05:55+00:00",
+                "outcome": "Reached cs.RO and HF root; OpenReview search open failed. Selected listing matches inspected. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/02.json"
+              },
+              {
+                "query_or_url": "https://huggingface.co/papers",
+                "operation": "open",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:05:56+00:00",
+                "tool_call_started_at": "2026-11-24T20:05:55+00:00",
+                "outcome": "Reached cs.RO and HF root; OpenReview search open failed. Selected listing matches inspected. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/02.json"
+              },
+              {
+                "query_or_url": "turn0view0 [find: Title:]",
+                "operation": "find",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:05:56+00:00",
+                "tool_call_started_at": "2026-11-24T20:05:55+00:00",
+                "outcome": "Reached cs.RO and HF root; OpenReview search open failed. Selected listing matches inspected. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/02.json"
+              },
+              {
+                "query_or_url": "turn0view1 [find: agent]",
+                "operation": "find",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:05:56+00:00",
+                "tool_call_started_at": "2026-11-24T20:05:55+00:00",
+                "outcome": "Reached cs.RO and HF root; OpenReview search open failed. Selected listing matches inspected. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/02.json"
+              },
+              {
+                "query_or_url": "\"3AGameFactory-Motion\"",
+                "operation": "search_query",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:06:13+00:00",
+                "tool_call_started_at": "2026-11-24T20:06:11+00:00",
+                "outcome": "Reached cs.HC/cs.MM; searches resolved 3AGameFactory-Motion identity and returned older OpenReview PDFs. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/04.json"
+              },
+              {
+                "query_or_url": "site:openreview.net \"graphics\" \"agent\" \"2026\"",
+                "operation": "search_query",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:06:13+00:00",
+                "tool_call_started_at": "2026-11-24T20:06:11+00:00",
+                "outcome": "Reached cs.HC/cs.MM; searches resolved 3AGameFactory-Motion identity and returned older OpenReview PDFs. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/04.json"
+              },
+              {
+                "query_or_url": "site:arxiv.org \"24 Nov 2026\" \"agent\" graphics",
+                "operation": "search_query",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:06:13+00:00",
+                "tool_call_started_at": "2026-11-24T20:06:11+00:00",
+                "outcome": "Reached cs.HC/cs.MM; searches resolved 3AGameFactory-Motion identity and returned older OpenReview PDFs. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/04.json"
+              },
+              {
+                "query_or_url": "https://arxiv.org/list/cs.HC/new",
+                "operation": "open",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:06:13+00:00",
+                "tool_call_started_at": "2026-11-24T20:06:11+00:00",
+                "outcome": "Reached cs.HC/cs.MM; searches resolved 3AGameFactory-Motion identity and returned older OpenReview PDFs. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/04.json"
+              },
+              {
+                "query_or_url": "https://arxiv.org/list/cs.MM/new",
+                "operation": "open",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:06:13+00:00",
+                "tool_call_started_at": "2026-11-24T20:06:11+00:00",
+                "outcome": "Reached cs.HC/cs.MM; searches resolved 3AGameFactory-Motion identity and returned older OpenReview PDFs. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/04.json"
+              },
+              {
+                "query_or_url": "turn2view0 [find: 3AGame]",
+                "operation": "find",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:06:13+00:00",
+                "tool_call_started_at": "2026-11-24T20:06:11+00:00",
+                "outcome": "Reached cs.HC/cs.MM; searches resolved 3AGameFactory-Motion identity and returned older OpenReview PDFs. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/04.json"
+              },
+              {
+                "query_or_url": "turn2view0 [find: CAD]",
+                "operation": "find",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:06:13+00:00",
+                "tool_call_started_at": "2026-11-24T20:06:11+00:00",
+                "outcome": "Reached cs.HC/cs.MM; searches resolved 3AGameFactory-Motion identity and returned older OpenReview PDFs. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/04.json"
+              },
+              {
+                "query_or_url": "turn2view0 [find: visualization]",
+                "operation": "find",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:06:13+00:00",
+                "tool_call_started_at": "2026-11-24T20:06:11+00:00",
+                "outcome": "Reached cs.HC/cs.MM; searches resolved 3AGameFactory-Motion identity and returned older OpenReview PDFs. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/04.json"
+              },
+              {
+                "query_or_url": "turn0view0 [find: [1]]",
+                "operation": "find",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:06:13+00:00",
+                "tool_call_started_at": "2026-11-24T20:06:11+00:00",
+                "outcome": "Reached cs.HC/cs.MM; searches resolved 3AGameFactory-Motion identity and returned older OpenReview PDFs. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/04.json"
+              },
+              {
+                "query_or_url": "site:arxiv.org \"agent\" \"visualization\" after:2026-11-17 before:2026-11-25",
+                "operation": "search_query",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:06:53+00:00",
+                "tool_call_started_at": "2026-11-24T20:06:52+00:00",
+                "outcome": "Reached WorldAct and Next Best Move histories; inspected CAD and motion verifier mechanisms. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/08.json"
+              },
+              {
+                "query_or_url": "site:openreview.net \"CAD\" \"2026\" \"agent\"",
+                "operation": "search_query",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:06:53+00:00",
+                "tool_call_started_at": "2026-11-24T20:06:52+00:00",
+                "outcome": "Reached WorldAct and Next Best Move histories; inspected CAD and motion verifier mechanisms. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/08.json"
+              },
+              {
+                "query_or_url": "site:arxiv.org \"agent\" \"world auditing\"",
+                "operation": "search_query",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:06:53+00:00",
+                "tool_call_started_at": "2026-11-24T20:06:52+00:00",
+                "outcome": "Reached WorldAct and Next Best Move histories; inspected CAD and motion verifier mechanisms. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/08.json"
+              },
+              {
+                "query_or_url": "https://arxiv.org/abs/2605.15843",
+                "operation": "open",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:06:53+00:00",
+                "tool_call_started_at": "2026-11-24T20:06:52+00:00",
+                "outcome": "Reached WorldAct and Next Best Move histories; inspected CAD and motion verifier mechanisms. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/08.json"
+              },
+              {
+                "query_or_url": "https://arxiv.org/abs/2611.30879",
+                "operation": "open",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:06:53+00:00",
+                "tool_call_started_at": "2026-11-24T20:06:52+00:00",
+                "outcome": "Reached WorldAct and Next Best Move histories; inspected CAD and motion verifier mechanisms. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/08.json"
+              },
+              {
+                "query_or_url": "turn6view0 [find: Submission history]",
+                "operation": "find",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:06:53+00:00",
+                "tool_call_started_at": "2026-11-24T20:06:52+00:00",
+                "outcome": "Reached WorldAct and Next Best Move histories; inspected CAD and motion verifier mechanisms. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/08.json"
+              },
+              {
+                "query_or_url": "turn6view1 [find: 2.1]",
+                "operation": "find",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:06:53+00:00",
+                "tool_call_started_at": "2026-11-24T20:06:52+00:00",
+                "outcome": "Reached WorldAct and Next Best Move histories; inspected CAD and motion verifier mechanisms. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/08.json"
+              },
+              {
+                "query_or_url": "turn6view1 [find: feedback]",
+                "operation": "find",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:06:53+00:00",
+                "tool_call_started_at": "2026-11-24T20:06:52+00:00",
+                "outcome": "Reached WorldAct and Next Best Move histories; inspected CAD and motion verifier mechanisms. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/08.json"
+              },
+              {
+                "query_or_url": "turn4view1 [find: Execution and validation.]",
+                "operation": "find",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:06:53+00:00",
+                "tool_call_started_at": "2026-11-24T20:06:52+00:00",
+                "outcome": "Reached WorldAct and Next Best Move histories; inspected CAD and motion verifier mechanisms. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/08.json"
+              },
+              {
+                "query_or_url": "turn4view1 [find: Skinning and validation.]",
+                "operation": "find",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:06:53+00:00",
+                "tool_call_started_at": "2026-11-24T20:06:52+00:00",
+                "outcome": "Reached WorldAct and Next Best Move histories; inspected CAD and motion verifier mechanisms. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/08.json"
+              },
+              {
+                "query_or_url": "turn5view1 [find: Parallel asynchronous]",
+                "operation": "find",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:06:53+00:00",
+                "tool_call_started_at": "2026-11-24T20:06:52+00:00",
+                "outcome": "Reached WorldAct and Next Best Move histories; inspected CAD and motion verifier mechanisms. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/08.json"
+              }
+            ],
+            "limitations": "Direct search URL blocked; restricted searches reached older PDF results without same-day primary verification."
+          },
+          {
+            "family": "official_venues",
+            "status": "partial",
+            "checks": [
+              {
+                "query_or_url": "site:arxiv.org agent physical simulation particle effects November 2026",
+                "operation": "search_query",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:06:05+00:00",
+                "tool_call_started_at": "2026-11-24T20:06:03+00:00",
+                "outcome": "Reached cs.AI and SIGGRAPH Asia agentic workshop; CVPR index returned 403. HF root heading confirmed Nov 24. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/03.json"
+              },
+              {
+                "query_or_url": "site:arxiv.org agent graphics benchmark world auditing \"2026\"",
+                "operation": "search_query",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:06:05+00:00",
+                "tool_call_started_at": "2026-11-24T20:06:03+00:00",
+                "outcome": "Reached cs.AI and SIGGRAPH Asia agentic workshop; CVPR index returned 403. HF root heading confirmed Nov 24. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/03.json"
+              },
+              {
+                "query_or_url": "graphics agent memory replanning tool interface feedback program synthesis \"November\" \"2026\"",
+                "operation": "search_query",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:06:05+00:00",
+                "tool_call_started_at": "2026-11-24T20:06:03+00:00",
+                "outcome": "Reached cs.AI and SIGGRAPH Asia agentic workshop; CVPR index returned 403. HF root heading confirmed Nov 24. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/03.json"
+              },
+              {
+                "query_or_url": "https://arxiv.org/list/cs.AI/new",
+                "operation": "open",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:06:05+00:00",
+                "tool_call_started_at": "2026-11-24T20:06:03+00:00",
+                "outcome": "Reached cs.AI and SIGGRAPH Asia agentic workshop; CVPR index returned 403. HF root heading confirmed Nov 24. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/03.json"
+              },
+              {
+                "query_or_url": "https://siga26.agentic-graphics.com/",
+                "operation": "open",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:06:05+00:00",
+                "tool_call_started_at": "2026-11-24T20:06:03+00:00",
+                "outcome": "Reached cs.AI and SIGGRAPH Asia agentic workshop; CVPR index returned 403. HF root heading confirmed Nov 24. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/03.json"
+              },
+              {
+                "query_or_url": "https://openaccess.thecvf.com/CVPR2026?day=all",
+                "operation": "open",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:06:05+00:00",
+                "tool_call_started_at": "2026-11-24T20:06:03+00:00",
+                "outcome": "Reached cs.AI and SIGGRAPH Asia agentic workshop; CVPR index returned 403. HF root heading confirmed Nov 24. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/03.json"
+              },
+              {
+                "query_or_url": "turn0view0 [find: Agent]",
+                "operation": "find",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:06:05+00:00",
+                "tool_call_started_at": "2026-11-24T20:06:03+00:00",
+                "outcome": "Reached cs.AI and SIGGRAPH Asia agentic workshop; CVPR index returned 403. HF root heading confirmed Nov 24. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/03.json"
+              },
+              {
+                "query_or_url": "turn1view2 [find: Nov 24]",
+                "operation": "find",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:06:05+00:00",
+                "tool_call_started_at": "2026-11-24T20:06:03+00:00",
+                "outcome": "Reached cs.AI and SIGGRAPH Asia agentic workshop; CVPR index returned 403. HF root heading confirmed Nov 24. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/03.json"
+              },
+              {
+                "query_or_url": "turn1view2 [find: 3D]",
+                "operation": "find",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:06:05+00:00",
+                "tool_call_started_at": "2026-11-24T20:06:03+00:00",
+                "outcome": "Reached cs.AI and SIGGRAPH Asia agentic workshop; CVPR index returned 403. HF root heading confirmed Nov 24. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/03.json"
+              },
+              {
+                "query_or_url": "turn1view0 [find: generation]",
+                "operation": "find",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:06:05+00:00",
+                "tool_call_started_at": "2026-11-24T20:06:03+00:00",
+                "outcome": "Reached cs.AI and SIGGRAPH Asia agentic workshop; CVPR index returned 403. HF root heading confirmed Nov 24. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/03.json"
+              },
+              {
+                "query_or_url": "\"agents\" \"scans\" \"CAD/BIM\" \"2026\"",
+                "operation": "search_query",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:06:26+00:00",
+                "tool_call_started_at": "2026-11-24T20:06:24+00:00",
+                "outcome": "Reached motion paper history/full text and eess.IV. Search resolved S2Bench; venue results describe schedules, not verified paper events. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/05.json"
+              },
+              {
+                "query_or_url": "site:asia.siggraph.org/2026 agent graphics papers November",
+                "operation": "search_query",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:06:26+00:00",
+                "tool_call_started_at": "2026-11-24T20:06:24+00:00",
+                "outcome": "Reached motion paper history/full text and eess.IV. Search resolved S2Bench; venue results describe schedules, not verified paper events. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/05.json"
+              },
+              {
+                "query_or_url": "\"WorldAct\" \"November\" \"2026\"",
+                "operation": "search_query",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:06:26+00:00",
+                "tool_call_started_at": "2026-11-24T20:06:24+00:00",
+                "outcome": "Reached motion paper history/full text and eess.IV. Search resolved S2Bench; venue results describe schedules, not verified paper events. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/05.json"
+              },
+              {
+                "query_or_url": "https://arxiv.org/abs/2611.30013",
+                "operation": "open",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:06:26+00:00",
+                "tool_call_started_at": "2026-11-24T20:06:24+00:00",
+                "outcome": "Reached motion paper history/full text and eess.IV. Search resolved S2Bench; venue results describe schedules, not verified paper events. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/05.json"
+              },
+              {
+                "query_or_url": "https://arxiv.org/html/2611.30013v1",
+                "operation": "open",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:06:26+00:00",
+                "tool_call_started_at": "2026-11-24T20:06:24+00:00",
+                "outcome": "Reached motion paper history/full text and eess.IV. Search resolved S2Bench; venue results describe schedules, not verified paper events. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/05.json"
+              },
+              {
+                "query_or_url": "https://arxiv.org/list/eess.IV/new",
+                "operation": "open",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:06:26+00:00",
+                "tool_call_started_at": "2026-11-24T20:06:24+00:00",
+                "outcome": "Reached motion paper history/full text and eess.IV. Search resolved S2Bench; venue results describe schedules, not verified paper events. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/05.json"
+              },
+              {
+                "query_or_url": "turn2view0 [find: shared framework]",
+                "operation": "find",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:06:26+00:00",
+                "tool_call_started_at": "2026-11-24T20:06:24+00:00",
+                "outcome": "Reached motion paper history/full text and eess.IV. Search resolved S2Bench; venue results describe schedules, not verified paper events. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/05.json"
+              },
+              {
+                "query_or_url": "turn3view0 [find: graphics]",
+                "operation": "find",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:06:26+00:00",
+                "tool_call_started_at": "2026-11-24T20:06:24+00:00",
+                "outcome": "Reached motion paper history/full text and eess.IV. Search resolved S2Bench; venue results describe schedules, not verified paper events. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/05.json"
+              },
+              {
+                "query_or_url": "turn3view1 [find: agent]",
+                "operation": "find",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:06:26+00:00",
+                "tool_call_started_at": "2026-11-24T20:06:24+00:00",
+                "outcome": "Reached motion paper history/full text and eess.IV. Search resolved S2Bench; venue results describe schedules, not verified paper events. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/05.json"
+              }
+            ],
+            "limitations": "Workshop page reached; CVPR index 403; venue search results do not establish paper-specific publication events."
+          },
+          {
+            "family": "project_author_lab",
+            "status": "partial",
+            "checks": [
+              {
+                "query_or_url": "\"agents\" \"scans\" \"CAD/BIM\" \"2026\"",
+                "operation": "search_query",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:06:26+00:00",
+                "tool_call_started_at": "2026-11-24T20:06:24+00:00",
+                "outcome": "Reached motion paper history/full text and eess.IV. Search resolved S2Bench; venue results describe schedules, not verified paper events. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/05.json"
+              },
+              {
+                "query_or_url": "site:asia.siggraph.org/2026 agent graphics papers November",
+                "operation": "search_query",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:06:26+00:00",
+                "tool_call_started_at": "2026-11-24T20:06:24+00:00",
+                "outcome": "Reached motion paper history/full text and eess.IV. Search resolved S2Bench; venue results describe schedules, not verified paper events. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/05.json"
+              },
+              {
+                "query_or_url": "\"WorldAct\" \"November\" \"2026\"",
+                "operation": "search_query",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:06:26+00:00",
+                "tool_call_started_at": "2026-11-24T20:06:24+00:00",
+                "outcome": "Reached motion paper history/full text and eess.IV. Search resolved S2Bench; venue results describe schedules, not verified paper events. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/05.json"
+              },
+              {
+                "query_or_url": "https://arxiv.org/abs/2611.30013",
+                "operation": "open",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:06:26+00:00",
+                "tool_call_started_at": "2026-11-24T20:06:24+00:00",
+                "outcome": "Reached motion paper history/full text and eess.IV. Search resolved S2Bench; venue results describe schedules, not verified paper events. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/05.json"
+              },
+              {
+                "query_or_url": "https://arxiv.org/html/2611.30013v1",
+                "operation": "open",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:06:26+00:00",
+                "tool_call_started_at": "2026-11-24T20:06:24+00:00",
+                "outcome": "Reached motion paper history/full text and eess.IV. Search resolved S2Bench; venue results describe schedules, not verified paper events. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/05.json"
+              },
+              {
+                "query_or_url": "https://arxiv.org/list/eess.IV/new",
+                "operation": "open",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:06:26+00:00",
+                "tool_call_started_at": "2026-11-24T20:06:24+00:00",
+                "outcome": "Reached motion paper history/full text and eess.IV. Search resolved S2Bench; venue results describe schedules, not verified paper events. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/05.json"
+              },
+              {
+                "query_or_url": "turn2view0 [find: shared framework]",
+                "operation": "find",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:06:26+00:00",
+                "tool_call_started_at": "2026-11-24T20:06:24+00:00",
+                "outcome": "Reached motion paper history/full text and eess.IV. Search resolved S2Bench; venue results describe schedules, not verified paper events. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/05.json"
+              },
+              {
+                "query_or_url": "turn3view0 [find: graphics]",
+                "operation": "find",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:06:26+00:00",
+                "tool_call_started_at": "2026-11-24T20:06:24+00:00",
+                "outcome": "Reached motion paper history/full text and eess.IV. Search resolved S2Bench; venue results describe schedules, not verified paper events. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/05.json"
+              },
+              {
+                "query_or_url": "turn3view1 [find: agent]",
+                "operation": "find",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:06:26+00:00",
+                "tool_call_started_at": "2026-11-24T20:06:24+00:00",
+                "outcome": "Reached motion paper history/full text and eess.IV. Search resolved S2Bench; venue results describe schedules, not verified paper events. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/05.json"
+              },
+              {
+                "query_or_url": "agent SVG diagram chart slide poster editable visual feedback",
+                "operation": "search_query",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:06:36+00:00",
+                "tool_call_started_at": "2026-11-24T20:06:34+00:00",
+                "outcome": "Reached S2Bench history/full text and GameFactory repository. Motion v1 timestamp was Nov 23 UTC, Nov 22 Chicago. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/06.json"
+              },
+              {
+                "query_or_url": "site:arxiv.org \"2026-11-24\" \"CAD\"",
+                "operation": "search_query",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:06:36+00:00",
+                "tool_call_started_at": "2026-11-24T20:06:34+00:00",
+                "outcome": "Reached S2Bench history/full text and GameFactory repository. Motion v1 timestamp was Nov 23 UTC, Nov 22 Chicago. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/06.json"
+              },
+              {
+                "query_or_url": "site:huggingface.co/papers/date/2026-11-24 graphics",
+                "operation": "search_query",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:06:36+00:00",
+                "tool_call_started_at": "2026-11-24T20:06:34+00:00",
+                "outcome": "Reached S2Bench history/full text and GameFactory repository. Motion v1 timestamp was Nov 23 UTC, Nov 22 Chicago. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/06.json"
+              },
+              {
+                "query_or_url": "https://arxiv.org/abs/2611.28197",
+                "operation": "open",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:06:36+00:00",
+                "tool_call_started_at": "2026-11-24T20:06:34+00:00",
+                "outcome": "Reached S2Bench history/full text and GameFactory repository. Motion v1 timestamp was Nov 23 UTC, Nov 22 Chicago. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/06.json"
+              },
+              {
+                "query_or_url": "https://arxiv.org/html/2611.28197v1",
+                "operation": "open",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:06:36+00:00",
+                "tool_call_started_at": "2026-11-24T20:06:34+00:00",
+                "outcome": "Reached S2Bench history/full text and GameFactory repository. Motion v1 timestamp was Nov 23 UTC, Nov 22 Chicago. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/06.json"
+              },
+              {
+                "query_or_url": "https://github.com/wangjazz/gamefactory-3a",
+                "operation": "open",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:06:36+00:00",
+                "tool_call_started_at": "2026-11-24T20:06:34+00:00",
+                "outcome": "Reached S2Bench history/full text and GameFactory repository. Motion v1 timestamp was Nov 23 UTC, Nov 22 Chicago. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/06.json"
+              },
+              {
+                "query_or_url": "turn4view0 [find: Submission history]",
+                "operation": "find",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:06:36+00:00",
+                "tool_call_started_at": "2026-11-24T20:06:34+00:00",
+                "outcome": "Reached S2Bench history/full text and GameFactory repository. Motion v1 timestamp was Nov 23 UTC, Nov 22 Chicago. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/06.json"
+              },
+              {
+                "query_or_url": "turn4view1 [find: 3 Agentic]",
+                "operation": "find",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:06:36+00:00",
+                "tool_call_started_at": "2026-11-24T20:06:34+00:00",
+                "outcome": "Reached S2Bench history/full text and GameFactory repository. Motion v1 timestamp was Nov 23 UTC, Nov 22 Chicago. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/06.json"
+              },
+              {
+                "query_or_url": "turn4view1 [find: feedback]",
+                "operation": "find",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:06:36+00:00",
+                "tool_call_started_at": "2026-11-24T20:06:34+00:00",
+                "outcome": "Reached S2Bench history/full text and GameFactory repository. Motion v1 timestamp was Nov 23 UTC, Nov 22 Chicago. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/06.json"
+              },
+              {
+                "query_or_url": "turn4view2 [find: agent]",
+                "operation": "find",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:06:36+00:00",
+                "tool_call_started_at": "2026-11-24T20:06:34+00:00",
+                "outcome": "Reached S2Bench history/full text and GameFactory repository. Motion v1 timestamp was Nov 23 UTC, Nov 22 Chicago. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/06.json"
+              },
+              {
+                "query_or_url": "agent physical simulation deformable world after:2026-11-23 before:2026-11-25",
+                "operation": "search_query",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:06:44+00:00",
+                "tool_call_started_at": "2026-11-24T20:06:43+00:00",
+                "outcome": "Reached engineering-CAD history/full text; inspected S2Bench feedback and motion framework passages. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/07.json"
+              },
+              {
+                "query_or_url": "agent animation articulated rig after:2026-11-23 before:2026-11-25",
+                "operation": "search_query",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:06:44+00:00",
+                "tool_call_started_at": "2026-11-24T20:06:43+00:00",
+                "outcome": "Reached engineering-CAD history/full text; inspected S2Bench feedback and motion framework passages. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/07.json"
+              },
+              {
+                "query_or_url": "\"Articraft\" OR \"VIGA\" \"November\" \"2026\" agent",
+                "operation": "search_query",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:06:44+00:00",
+                "tool_call_started_at": "2026-11-24T20:06:43+00:00",
+                "outcome": "Reached engineering-CAD history/full text; inspected S2Bench feedback and motion framework passages. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/07.json"
+              },
+              {
+                "query_or_url": "https://arxiv.org/abs/2611.26003",
+                "operation": "open",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:06:44+00:00",
+                "tool_call_started_at": "2026-11-24T20:06:43+00:00",
+                "outcome": "Reached engineering-CAD history/full text; inspected S2Bench feedback and motion framework passages. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/07.json"
+              },
+              {
+                "query_or_url": "https://arxiv.org/html/2611.26003v2",
+                "operation": "open",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:06:44+00:00",
+                "tool_call_started_at": "2026-11-24T20:06:43+00:00",
+                "outcome": "Reached engineering-CAD history/full text; inspected S2Bench feedback and motion framework passages. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/07.json"
+              },
+              {
+                "query_or_url": "turn5view0 [find: Submission history]",
+                "operation": "find",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:06:44+00:00",
+                "tool_call_started_at": "2026-11-24T20:06:43+00:00",
+                "outcome": "Reached engineering-CAD history/full text; inspected S2Bench feedback and motion framework passages. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/07.json"
+              },
+              {
+                "query_or_url": "turn5view1 [find: 3.]",
+                "operation": "find",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:06:44+00:00",
+                "tool_call_started_at": "2026-11-24T20:06:43+00:00",
+                "outcome": "Reached engineering-CAD history/full text; inspected S2Bench feedback and motion framework passages. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/07.json"
+              },
+              {
+                "query_or_url": "turn5view1 [find: feedback]",
+                "operation": "find",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:06:44+00:00",
+                "tool_call_started_at": "2026-11-24T20:06:43+00:00",
+                "outcome": "Reached engineering-CAD history/full text; inspected S2Bench feedback and motion framework passages. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/07.json"
+              },
+              {
+                "query_or_url": "turn4view1 [find: Agentic Motion Framework]",
+                "operation": "find",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:06:44+00:00",
+                "tool_call_started_at": "2026-11-24T20:06:43+00:00",
+                "outcome": "Reached engineering-CAD history/full text; inspected S2Bench feedback and motion framework passages. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/07.json"
+              },
+              {
+                "query_or_url": "turn5view2 [find: 2611.30013]",
+                "operation": "find",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:06:44+00:00",
+                "tool_call_started_at": "2026-11-24T20:06:43+00:00",
+                "outcome": "Reached engineering-CAD history/full text; inspected S2Bench feedback and motion framework passages. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/07.json"
+              },
+              {
+                "query_or_url": "\"ChatAtom\" \"simulation\" \"visualization\"",
+                "operation": "search_query",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:07:02+00:00",
+                "tool_call_started_at": "2026-11-24T20:07:01+00:00",
+                "outcome": "Reached ChatAtom history/full text; inspected WorldAct and Next Best Move dates and CAD design rounds. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/09.json"
+              },
+              {
+                "query_or_url": "\"agent\" \"graphics\" \"24 Nov 2026\"",
+                "operation": "search_query",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:07:02+00:00",
+                "tool_call_started_at": "2026-11-24T20:07:01+00:00",
+                "outcome": "Reached ChatAtom history/full text; inspected WorldAct and Next Best Move dates and CAD design rounds. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/09.json"
+              },
+              {
+                "query_or_url": "site:arxiv.org \"Blender\" after:2026-11-17 before:2026-11-25",
+                "operation": "search_query",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:07:02+00:00",
+                "tool_call_started_at": "2026-11-24T20:07:01+00:00",
+                "outcome": "Reached ChatAtom history/full text; inspected WorldAct and Next Best Move dates and CAD design rounds. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/09.json"
+              },
+              {
+                "query_or_url": "https://arxiv.org/abs/2611.26782",
+                "operation": "open",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:07:02+00:00",
+                "tool_call_started_at": "2026-11-24T20:07:01+00:00",
+                "outcome": "Reached ChatAtom history/full text; inspected WorldAct and Next Best Move dates and CAD design rounds. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/09.json"
+              },
+              {
+                "query_or_url": "https://arxiv.org/html/2611.26782v1",
+                "operation": "open",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:07:02+00:00",
+                "tool_call_started_at": "2026-11-24T20:07:01+00:00",
+                "outcome": "Reached ChatAtom history/full text; inspected WorldAct and Next Best Move dates and CAD design rounds. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/09.json"
+              },
+              {
+                "query_or_url": "turn7view1 [find: Abstract]",
+                "operation": "find",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:07:02+00:00",
+                "tool_call_started_at": "2026-11-24T20:07:01+00:00",
+                "outcome": "Reached ChatAtom history/full text; inspected WorldAct and Next Best Move dates and CAD design rounds. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/09.json"
+              },
+              {
+                "query_or_url": "turn7view1 [find: Submission history]",
+                "operation": "find",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:07:02+00:00",
+                "tool_call_started_at": "2026-11-24T20:07:01+00:00",
+                "outcome": "Reached ChatAtom history/full text; inspected WorldAct and Next Best Move dates and CAD design rounds. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/09.json"
+              },
+              {
+                "query_or_url": "turn7view0 [find: Abstract]",
+                "operation": "find",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:07:02+00:00",
+                "tool_call_started_at": "2026-11-24T20:07:01+00:00",
+                "outcome": "Reached ChatAtom history/full text; inspected WorldAct and Next Best Move dates and CAD design rounds. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/09.json"
+              },
+              {
+                "query_or_url": "turn7view0 [find: Submission history]",
+                "operation": "find",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:07:02+00:00",
+                "tool_call_started_at": "2026-11-24T20:07:01+00:00",
+                "outcome": "Reached ChatAtom history/full text; inspected WorldAct and Next Best Move dates and CAD design rounds. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/09.json"
+              },
+              {
+                "query_or_url": "turn6view1 [find: ## 3]",
+                "operation": "find",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:07:02+00:00",
+                "tool_call_started_at": "2026-11-24T20:07:01+00:00",
+                "outcome": "Reached ChatAtom history/full text; inspected WorldAct and Next Best Move dates and CAD design rounds. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/09.json"
+              },
+              {
+                "query_or_url": "turn6view1 [find: JSON]",
+                "operation": "find",
+                "checked_at": null,
+                "time_basis": "recorded_only",
+                "recorded_at": "2026-11-24T20:07:02+00:00",
+                "tool_call_started_at": "2026-11-24T20:07:01+00:00",
+                "outcome": "Reached ChatAtom history/full text; inspected WorldAct and Next Best Move dates and CAD design rounds. Per-page retrieval time is not exposed; recorded after tool return.",
+                "raw_journal": "retrieval/09.json"
+              }
+            ],
+            "limitations": "GameFactory official repository reached; exact motion-paper linkage absent from inspected README. Other repository hits remain signals."
+          }
+        ],
+        "limitations": [
+          "Today means November 24, 2026 00:00–14:05:08 America/Chicago. Later retrieval times do not extend the frozen as-of cutoff.",
+          "No qualifying same-day event was verified; indexing lag, unpublished work, and uninspected sources prevent a field-wide absence claim.",
+          "The 10 search-batch and 24 attempted page-open caps were reached before the approximate six-minute retrieval allowance. Elapsed retrieval is measured from journals, not padded.",
+          "All nine query families and five source families were attempted. Broad and date-filtered queries are discovery aids, not date evidence.",
+          "arXiv cs.GR new, cs.CV recent, cs.AI/cs.RO/cs.HC/cs.MM/eess.IV new pages were reached. Only returned excerpts and selected keyword matches were inspected; these are not exhaustive category or title screens.",
+          "Hugging Face date URL failed to open; its root page displayed Nov 24 and the date page also appeared in search results. Curation dates do not establish paper events.",
+          "OpenReview search URL was inaccessible; site-restricted searches returned older PDFs. CVPR2026 index returned 403. SIGGRAPH Asia workshop and search results were reached, without a paper-level proceedings sweep.",
+          "Six plausible candidates received fresh screening: five retained relevant/scope-dependent records and one exclusion. Other research leads remain queued. Full texts were inspected selectively, not read exhaustively.",
+          "November 17–23 is a separate catch-up lane. WorldAct was rechecked outside that lane to resolve a prior verification lead. ChatAtom and WorldAct were previously reported, not new discoveries.",
+          "Main daily reports and the supplied website history are compared non-recursively; archived run copies are not current evidence. Historical classifications alone do not verify carried leads.",
+          "No revision-content comparison or empirical reproduction was performed. Unclear cells reflect insufficient inspected evidence; no adaptation or verifier is inferred from model names.",
+          "The bundled October 15 snapshot was not live refreshed. Tools labels remain provisional, and the source memory definition remains internally inconsistent.",
+          "Queries and finds are grouped by invocation for family coverage. A batch association does not mean every returned result belongs to each associated family."
+        ]
+      },
+      "artifacts": {
+        "report": "data/2026-11-24/report.md",
+        "data": "data/2026-11-24/run.json",
+        "audit": "data/2026-11-24/audit.json"
       }
     }
   ],

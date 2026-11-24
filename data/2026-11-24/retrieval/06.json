@@ -1,0 +1,62 @@
+{
+  "id": "06",
+  "tool": "web.run",
+  "started_at": "2026-11-24T20:06:34+00:00",
+  "recorded_at": "2026-11-24T20:06:36+00:00",
+  "source_families": [
+    "arxiv",
+    "hugging_face",
+    "project_author_lab"
+  ],
+  "query_families": [
+    "2d",
+    "cad",
+    "benchmark",
+    "articulation",
+    "animation"
+  ],
+  "request": {
+    "search_query": [
+      {
+        "q": "agent SVG diagram chart slide poster editable visual feedback"
+      },
+      {
+        "q": "site:arxiv.org \"2026-11-24\" \"CAD\""
+      },
+      {
+        "q": "site:huggingface.co/papers/date/2026-11-24 graphics"
+      }
+    ],
+    "open": [
+      {
+        "ref_id": "https://arxiv.org/abs/2611.28197"
+      },
+      {
+        "ref_id": "https://arxiv.org/html/2611.28197v1"
+      },
+      {
+        "ref_id": "https://github.com/wangjazz/gamefactory-3a"
+      }
+    ],
+    "find": [
+      {
+        "ref_id": "turn4view0",
+        "pattern": "Submission history"
+      },
+      {
+        "ref_id": "turn4view1",
+        "pattern": "3 Agentic"
+      },
+      {
+        "ref_id": "turn4view1",
+        "pattern": "feedback"
+      },
+      {
+        "ref_id": "turn4view2",
+        "pattern": "agent"
+      }
+    ],
+    "response_length": "long"
+  },
+  "response_storage": "Full tool responses retained in the local run; public records include requests, timings, and report evidence."
+}

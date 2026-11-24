@@ -1,0 +1,232 @@
+{
+  "passed": true,
+  "errors": [],
+  "validation_scope": "Structural/date/label checks only; primary evidence truth and retrieval recall require agent review.",
+  "primary_date_audit": {
+    "passed": true,
+    "checks": [
+      {
+        "arxiv": "2611.30013",
+        "version": "v1",
+        "raw_source_value": "Mon, 23 Nov 2026 04:16:51 UTC",
+        "utc": "2026-11-23T04:16:51+00:00",
+        "chicago": "2026-11-22T22:16:51-06:00",
+        "journal": "retrieval/06.json",
+        "raw_primary_history_match": true,
+        "at_or_before_as_of": true
+      },
+      {
+        "arxiv": "2611.28197",
+        "version": "v1",
+        "raw_source_value": "Fri, 20 Nov 2026 16:26:09 UTC",
+        "utc": "2026-11-20T16:26:09+00:00",
+        "chicago": "2026-11-20T10:26:09-06:00",
+        "journal": "retrieval/07.json",
+        "raw_primary_history_match": true,
+        "at_or_before_as_of": true
+      },
+      {
+        "arxiv": "2611.26003",
+        "version": "v1",
+        "raw_source_value": "Thu, 19 Nov 2026 12:21:21 UTC",
+        "utc": "2026-11-19T12:21:21+00:00",
+        "chicago": "2026-11-19T06:21:21-06:00",
+        "journal": "retrieval/08.json",
+        "raw_primary_history_match": true,
+        "at_or_before_as_of": true
+      },
+      {
+        "arxiv": "2611.26003",
+        "version": "v2",
+        "raw_source_value": "Sun, 22 Nov 2026 16:46:09 UTC",
+        "utc": "2026-11-22T16:46:09+00:00",
+        "chicago": "2026-11-22T10:46:09-06:00",
+        "journal": "retrieval/08.json",
+        "raw_primary_history_match": true,
+        "at_or_before_as_of": true
+      },
+      {
+        "arxiv": "2611.26782",
+        "version": "v1",
+        "raw_source_value": "Thu, 19 Nov 2026 20:18:15 UTC",
+        "utc": "2026-11-19T20:18:15+00:00",
+        "chicago": "2026-11-19T14:18:15-06:00",
+        "journal": "retrieval/10.json",
+        "raw_primary_history_match": true,
+        "at_or_before_as_of": true
+      },
+      {
+        "arxiv": "2605.15843",
+        "version": "v1",
+        "raw_source_value": "Fri, 15 May 2026 10:56:23 UTC",
+        "utc": "2026-05-15T10:56:23+00:00",
+        "chicago": "2026-05-15T05:56:23-05:00",
+        "journal": "retrieval/09.json",
+        "raw_primary_history_match": true,
+        "at_or_before_as_of": true
+      },
+      {
+        "arxiv": "2605.15843",
+        "version": "v2",
+        "raw_source_value": "Thu, 5 Nov 2026 07:15:15 UTC",
+        "utc": "2026-11-05T07:15:15+00:00",
+        "chicago": "2026-11-05T01:15:15-06:00",
+        "journal": "retrieval/09.json",
+        "raw_primary_history_match": true,
+        "at_or_before_as_of": true
+      },
+      {
+        "arxiv": "2611.30879",
+        "version": "v1",
+        "raw_source_value": "Mon, 23 Nov 2026 15:46:19 UTC",
+        "utc": "2026-11-23T15:46:19+00:00",
+        "chicago": "2026-11-23T09:46:19-06:00",
+        "journal": "retrieval/09.json",
+        "raw_primary_history_match": true,
+        "at_or_before_as_of": true
+      }
+    ]
+  },
+  "ledger_count_audit": {
+    "passed": true,
+    "actual": {
+      "search_batches": 10,
+      "search_queries": 30,
+      "primary_opens": 24,
+      "find_operations": 49,
+      "web_tool_invocations": 11
+    },
+    "count_basis": "Requests in retrieval/*.json; find operations do not consume page-open count."
+  },
+  "screening_cap_audit": {
+    "passed": true,
+    "fresh_screened": 6,
+    "carried_unresolved": 9
+  },
+  "history_audit": {
+    "passed": true,
+    "main_reports": 16,
+    "website_records": 493,
+    "archives_recursed": false,
+    "comparisons": [
+      {
+        "title": "3AGameFactory-Motion: Agentic Rigging and Reliable Complex Motion Generation for Diverse 3D Assets",
+        "arxiv": "2611.30013",
+        "discovery_status": "new_to_us_catch_up",
+        "events": [
+          {
+            "type": "first_submission",
+            "version": "v1",
+            "utc": "2026-11-23T04:16:51+00:00",
+            "chicago": "2026-11-22T22:16:51-06:00",
+            "prior_event_status": "not_seen_in_supplied_history"
+          }
+        ]
+      },
+      {
+        "title": "From Point Clouds to Engineering Models: Benchmarking Agentic 3D Reconstruction in the Built Environment",
+        "arxiv": "2611.28197",
+        "discovery_status": "new_to_us_catch_up",
+        "events": [
+          {
+            "type": "first_submission",
+            "version": "v1",
+            "utc": "2026-11-20T16:26:09+00:00",
+            "chicago": "2026-11-20T10:26:09-06:00",
+            "prior_event_status": "not_seen_in_supplied_history"
+          }
+        ]
+      },
+      {
+        "title": "AI agents can redesign engineering parts with more than a thousand CAD parameters and nonlinear simulations",
+        "arxiv": "2611.26003",
+        "discovery_status": "new_to_us_catch_up",
+        "events": [
+          {
+            "type": "first_submission",
+            "version": "v1",
+            "utc": "2026-11-19T12:21:21+00:00",
+            "chicago": "2026-11-19T06:21:21-06:00",
+            "prior_event_status": "not_seen_in_supplied_history"
+          },
+          {
+            "type": "revision",
+            "version": "v2",
+            "utc": "2026-11-22T16:46:09+00:00",
+            "chicago": "2026-11-22T10:46:09-06:00",
+            "prior_event_status": "not_seen_in_supplied_history"
+          }
+        ]
+      },
+      {
+        "title": "ChatAtom: A Multi-Agent LLM System for Molecular Dynamics Simulation and Visualization",
+        "arxiv": "2611.26782",
+        "discovery_status": "previously_reported_event_reverified",
+        "events": [
+          {
+            "type": "first_submission",
+            "version": "v1",
+            "utc": "2026-11-19T20:18:15+00:00",
+            "chicago": "2026-11-19T14:18:15-06:00",
+            "prior_event_status": "already_seen"
+          }
+        ]
+      },
+      {
+        "title": "WorldAct: Activating Monolithic 3D Worlds into Interactive-Ready Object-Centric Scenes",
+        "arxiv": "2605.15843",
+        "discovery_status": "previously_reported_event_reverified",
+        "events": [
+          {
+            "type": "first_submission",
+            "version": "v1",
+            "utc": "2026-05-15T10:56:23+00:00",
+            "chicago": "2026-05-15T05:56:23-05:00",
+            "prior_event_status": "already_seen"
+          },
+          {
+            "type": "revision",
+            "version": "v2",
+            "utc": "2026-11-05T07:15:15+00:00",
+            "chicago": "2026-11-05T01:15:15-06:00",
+            "prior_event_status": "already_seen"
+          }
+        ]
+      },
+      {
+        "title": "Learning the Next Best Move with Visual Diffusion Models",
+        "arxiv": "2611.30879",
+        "discovery_status": "excluded",
+        "events": [
+          {
+            "type": "first_submission",
+            "version": "v1",
+            "utc": "2026-11-23T15:46:19+00:00",
+            "chicago": "2026-11-23T09:46:19-06:00",
+            "prior_event_status": "not_seen_in_supplied_history"
+          }
+        ]
+      }
+    ]
+  },
+  "portable_bundle_validation": {
+    "passed": true,
+    "basis": "validate_portable_skill.py executed before research with supplied Python 3.12; 18 fields and 259 corpus occurrences validated."
+  },
+  "daily_helper_tests": {
+    "command": "python3.12 -m unittest discover -s agentic-literature-system/skill/scripts -p test_daily_report.py",
+    "runs": 1,
+    "recorded_at": "2026-11-24T20:12:00+00:00",
+    "result": {
+      "status": "fulfilled",
+      "value": {
+        "chunk_id": "f570b1",
+        "wall_time_seconds": 1.125e-06,
+        "exit_code": 0,
+        "original_token_count": 30,
+        "output": "....................\n----------------------------------------------------------------------\nRan 20 tests in 0.007s\n\nOK\n"
+      }
+    }
+  },
+  "limitations": "Structural and raw-history checks do not establish recall or independent empirical truth."
+}

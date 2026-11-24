@@ -1,0 +1,57 @@
+{
+  "id": "05",
+  "tool": "web.run",
+  "started_at": "2026-11-24T20:06:24+00:00",
+  "recorded_at": "2026-11-24T20:06:26+00:00",
+  "source_families": [
+    "arxiv",
+    "official_venues",
+    "project_author_lab"
+  ],
+  "query_families": [
+    "articulation",
+    "animation",
+    "cad",
+    "scene"
+  ],
+  "request": {
+    "search_query": [
+      {
+        "q": "\"agents\" \"scans\" \"CAD/BIM\" \"2026\""
+      },
+      {
+        "q": "site:asia.siggraph.org/2026 agent graphics papers November"
+      },
+      {
+        "q": "\"WorldAct\" \"November\" \"2026\""
+      }
+    ],
+    "open": [
+      {
+        "ref_id": "https://arxiv.org/abs/2611.30013"
+      },
+      {
+        "ref_id": "https://arxiv.org/html/2611.30013v1"
+      },
+      {
+        "ref_id": "https://arxiv.org/list/eess.IV/new"
+      }
+    ],
+    "find": [
+      {
+        "ref_id": "turn2view0",
+        "pattern": "shared framework"
+      },
+      {
+        "ref_id": "turn3view0",
+        "pattern": "graphics"
+      },
+      {
+        "ref_id": "turn3view1",
+        "pattern": "agent"
+      }
+    ],
+    "response_length": "long"
+  },
+  "response_storage": "Full tool responses retained in the local run; public records include requests, timings, and report evidence."
+}

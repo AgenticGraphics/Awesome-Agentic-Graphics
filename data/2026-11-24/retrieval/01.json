@@ -1,0 +1,41 @@
+{
+  "id": "01",
+  "tool": "web.run",
+  "started_at": "2026-11-24T20:05:48+00:00",
+  "recorded_at": "2026-11-24T20:05:49+00:00",
+  "source_families": [
+    "arxiv",
+    "hugging_face"
+  ],
+  "query_families": [
+    "2d",
+    "object",
+    "cad"
+  ],
+  "request": {
+    "search_query": [
+      {
+        "q": "agent SVG diagram slide poster editable visual feedback November 2026"
+      },
+      {
+        "q": "agent 3D object procedural modeling Blender material after:2026-11-23 before:2026-11-25"
+      },
+      {
+        "q": "agent CAD generation repair visual feedback November 24 2026"
+      }
+    ],
+    "open": [
+      {
+        "ref_id": "https://arxiv.org/list/cs.GR/new"
+      },
+      {
+        "ref_id": "https://arxiv.org/list/cs.CV/recent"
+      },
+      {
+        "ref_id": "https://huggingface.co/papers/date/2026-11-24"
+      }
+    ],
+    "response_length": "long"
+  },
+  "response_storage": "Full tool responses retained in the local run; public records include requests, timings, and report evidence."
+}
