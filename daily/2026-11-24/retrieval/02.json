@@ -1,0 +1,52 @@
+{
+  "id": "02",
+  "tool": "web.run",
+  "started_at": "2026-11-24T20:05:55+00:00",
+  "recorded_at": "2026-11-24T20:05:56+00:00",
+  "source_families": [
+    "arxiv",
+    "openreview",
+    "hugging_face"
+  ],
+  "query_families": [
+    "scene",
+    "articulation",
+    "animation"
+  ],
+  "request": {
+    "search_query": [
+      {
+        "q": "site:arxiv.org \"agent\" \"scene\" \"Nov\" \"2026\""
+      },
+      {
+        "q": "agent articulated asset joint rig generation November 2026"
+      },
+      {
+        "q": "agent animation cutscene cinematography \"2026\" research"
+      }
+    ],
+    "open": [
+      {
+        "ref_id": "https://arxiv.org/list/cs.RO/new"
+      },
+      {
+        "ref_id": "https://openreview.net/search?term=graphics%20agent"
+      },
+      {
+        "ref_id": "https://huggingface.co/papers"
+      }
+    ],
+    "find": [
+      {
+        "ref_id": "turn0view0",
+        "pattern": "Title:"
+      },
+      {
+        "ref_id": "turn0view1",
+        "pattern": "agent"
+      }
+    ],
+    "response_length": "long"
+  },
+  "response_storage": "Full tool responses retained in the local run; public records include requests, timings, and report evidence."
+}

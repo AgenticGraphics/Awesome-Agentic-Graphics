@@ -1,0 +1,157 @@
+{
+  "target_date": "2026-11-24",
+  "timezone": "America/Chicago",
+  "as_of": "2026-11-24T20:05:08+00:00",
+  "as_of_local": "2026-11-24T14:05:08-06:00",
+  "window_start": "2026-11-24T00:00:00-06:00",
+  "window_end_local": "2026-11-24T14:05:08-06:00",
+  "snapshot_status": "bundled_snapshot_not_live_refreshed",
+  "bucket_counts": {
+    "same_day_new": 0,
+    "same_day_updates": 0,
+    "already_reported": 0,
+    "late_discovery": 5,
+    "date_unresolved": 0,
+    "unresolved": 9,
+    "excluded": 1
+  },
+  "discovery_counts": {
+    "new_to_us_catch_up": 3,
+    "previously_reported_event_reverified": 2
+  },
+  "screening": {
+    "fresh": 6,
+    "carried_unresolved": 9,
+    "pending_queue": 21
+  },
+  "retrieval_counts": {
+    "search_batches": 10,
+    "search_queries": 30,
+    "primary_opens": 24,
+    "find_operations": 49,
+    "web_tool_invocations": 11
+  },
+  "retrieval_started_at": "2026-11-24T20:05:48+00:00",
+  "retrieval_ended_at": "2026-11-24T20:07:31+00:00",
+  "retrieval_wall_seconds": 103.0,
+  "stop_reason": "10_search_batches_and_24_primary_open_caps_reached",
+  "source_statuses": {
+    "arxiv": {
+      "status": "partial",
+      "limits": "Seven category pages reached, selected matches only; histories and selected full-text passages for six candidates."
+    },
+    "hugging_face": {
+      "status": "partial",
+      "limits": "Date URL open blocked; root Nov 24 heading and date-page search fallback reached."
+    },
+    "openreview": {
+      "status": "partial",
+      "limits": "Direct search URL blocked; restricted searches reached older PDF results without same-day primary verification."
+    },
+    "official_venues": {
+      "status": "partial",
+      "limits": "Workshop page reached; CVPR index 403; venue search results do not establish paper-specific publication events."
+    },
+    "project_author_lab": {
+      "status": "partial",
+      "limits": "GameFactory official repository reached; exact motion-paper linkage absent from inspected README. Other repository hits remain signals."
+    }
+  },
+  "finding": "No qualifying same-day Agentic Graphics paper was verified in the browsed source set.",
+  "catch_up": [
+    {
+      "title": "3AGameFactory-Motion: Agentic Rigging and Reliable Complex Motion Generation for Diverse 3D Assets",
+      "arxiv": "2611.30013",
+      "discovery_status": "new_to_us_catch_up",
+      "events": [
+        {
+          "type": "first_submission",
+          "version": "v1",
+          "utc": "2026-11-23T04:16:51+00:00",
+          "chicago": "2026-11-22T22:16:51-06:00",
+          "prior_event_status": "not_seen_in_supplied_history"
+        }
+      ]
+    },
+    {
+      "title": "From Point Clouds to Engineering Models: Benchmarking Agentic 3D Reconstruction in the Built Environment",
+      "arxiv": "2611.28197",
+      "discovery_status": "new_to_us_catch_up",
+      "events": [
+        {
+          "type": "first_submission",
+          "version": "v1",
+          "utc": "2026-11-20T16:26:09+00:00",
+          "chicago": "2026-11-20T10:26:09-06:00",
+          "prior_event_status": "not_seen_in_supplied_history"
+        }
+      ]
+    },
+    {
+      "title": "AI agents can redesign engineering parts with more than a thousand CAD parameters and nonlinear simulations",
+      "arxiv": "2611.26003",
+      "discovery_status": "new_to_us_catch_up",
+      "events": [
+        {
+          "type": "first_submission",
+          "version": "v1",
+          "utc": "2026-11-19T12:21:21+00:00",
+          "chicago": "2026-11-19T06:21:21-06:00",
+          "prior_event_status": "not_seen_in_supplied_history"
+        },
+        {
+          "type": "revision",
+          "version": "v2",
+          "utc": "2026-11-22T16:46:09+00:00",
+          "chicago": "2026-11-22T10:46:09-06:00",
+          "prior_event_status": "not_seen_in_supplied_history"
+        }
+      ]
+    }
+  ],
+  "known_events": [
+    {
+      "title": "ChatAtom: A Multi-Agent LLM System for Molecular Dynamics Simulation and Visualization",
+      "arxiv": "2611.26782",
+      "discovery_status": "previously_reported_event_reverified",
+      "events": [
+        {
+          "type": "first_submission",
+          "version": "v1",
+          "utc": "2026-11-19T20:18:15+00:00",
+          "chicago": "2026-11-19T14:18:15-06:00",
+          "prior_event_status": "already_seen"
+        }
+      ]
+    },
+    {
+      "title": "WorldAct: Activating Monolithic 3D Worlds into Interactive-Ready Object-Centric Scenes",
+      "arxiv": "2605.15843",
+      "discovery_status": "previously_reported_event_reverified",
+      "events": [
+        {
+          "type": "first_submission",
+          "version": "v1",
+          "utc": "2026-05-15T10:56:23+00:00",
+          "chicago": "2026-05-15T05:56:23-05:00",
+          "prior_event_status": "already_seen"
+        },
+        {
+          "type": "revision",
+          "version": "v2",
+          "utc": "2026-11-05T07:15:15+00:00",
+          "chicago": "2026-11-05T01:15:15-06:00",
+          "prior_event_status": "already_seen"
+        }
+      ]
+    }
+  ],
+  "audit_passed": true,
+  "limits": [
+    "Partial day through actual start cutoff; bounded selective retrieval with indexing and access gaps.",
+    "Six screened candidates; no claim of exhaustive recall or empirical replication.",
+    "Known older events remain in renderer late_discovery bucket; discovery_status and event_comparison separate them from new-to-us catch-up."
+  ],
+  "publication": "Reviewed local CLI skill run, synchronized to GitHub and the website by the authorized publishing workflow.",
+  "completed_at": "2026-11-24T20:12:00.519896+00:00"
+}

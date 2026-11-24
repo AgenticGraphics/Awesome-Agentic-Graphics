@@ -1,0 +1,65 @@
+{
+  "id": "09",
+  "tool": "web.run",
+  "started_at": "2026-11-24T20:07:01+00:00",
+  "recorded_at": "2026-11-24T20:07:02+00:00",
+  "source_families": [
+    "arxiv",
+    "project_author_lab"
+  ],
+  "query_families": [
+    "simulation",
+    "2d",
+    "object",
+    "scene"
+  ],
+  "request": {
+    "search_query": [
+      {
+        "q": "\"ChatAtom\" \"simulation\" \"visualization\""
+      },
+      {
+        "q": "\"agent\" \"graphics\" \"24 Nov 2026\""
+      },
+      {
+        "q": "site:arxiv.org \"Blender\" after:2026-11-17 before:2026-11-25"
+      }
+    ],
+    "open": [
+      {
+        "ref_id": "https://arxiv.org/abs/2611.26782"
+      },
+      {
+        "ref_id": "https://arxiv.org/html/2611.26782v1"
+      }
+    ],
+    "find": [
+      {
+        "ref_id": "turn7view1",
+        "pattern": "Abstract"
+      },
+      {
+        "ref_id": "turn7view1",
+        "pattern": "Submission history"
+      },
+      {
+        "ref_id": "turn7view0",
+        "pattern": "Abstract"
+      },
+      {
+        "ref_id": "turn7view0",
+        "pattern": "Submission history"
+      },
+      {
+        "ref_id": "turn6view1",
+        "pattern": "## 3"
+      },
+      {
+        "ref_id": "turn6view1",
+        "pattern": "JSON"
+      }
+    ],
+    "response_length": "long"
+  },
+  "response_storage": "Full tool responses retained in the local run; public records include requests, timings, and report evidence."
+}

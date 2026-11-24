@@ -1,0 +1,62 @@
+{
+  "id": "10",
+  "tool": "web.run",
+  "started_at": "2026-11-24T20:07:12+00:00",
+  "recorded_at": "2026-11-24T20:07:13+00:00",
+  "source_families": [
+    "arxiv"
+  ],
+  "query_families": [
+    "scene",
+    "benchmark",
+    "2d",
+    "harness",
+    "simulation"
+  ],
+  "request": {
+    "search_query": [
+      {
+        "q": "site:arxiv.org \"agent\" \"scene\" after:2026-11-23 before:2026-11-25"
+      },
+      {
+        "q": "site:arxiv.org \"graphics\" \"benchmark\" after:2026-11-23 before:2026-11-25"
+      },
+      {
+        "q": "site:arxiv.org \"Manim\" OR \"PosterMELD\" after:2026-11-17 before:2026-11-25"
+      }
+    ],
+    "open": [
+      {
+        "ref_id": "https://arxiv.org/html/2605.15843v2"
+      }
+    ],
+    "find": [
+      {
+        "ref_id": "turn8view0",
+        "pattern": "Submission history"
+      },
+      {
+        "ref_id": "turn8view1",
+        "pattern": "reviewer"
+      },
+      {
+        "ref_id": "turn8view1",
+        "pattern": "memory"
+      },
+      {
+        "ref_id": "turn7view1",
+        "pattern": "We evaluate"
+      },
+      {
+        "ref_id": "turn6view1",
+        "pattern": "3.1"
+      },
+      {
+        "ref_id": "turn6view1",
+        "pattern": "fine-tun"
+      }
+    ],
+    "response_length": "long"
+  },
+  "response_storage": "Full tool responses retained in the local run; public records include requests, timings, and report evidence."
+}

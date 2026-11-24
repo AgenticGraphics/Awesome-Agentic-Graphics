@@ -1,0 +1,57 @@
+{
+  "id": "04",
+  "tool": "web.run",
+  "started_at": "2026-11-24T20:06:11+00:00",
+  "recorded_at": "2026-11-24T20:06:13+00:00",
+  "source_families": [
+    "arxiv",
+    "openreview"
+  ],
+  "query_families": [
+    "2d",
+    "articulation",
+    "harness",
+    "cad"
+  ],
+  "request": {
+    "search_query": [
+      {
+        "q": "\"3AGameFactory-Motion\""
+      },
+      {
+        "q": "site:openreview.net \"graphics\" \"agent\" \"2026\""
+      },
+      {
+        "q": "site:arxiv.org \"24 Nov 2026\" \"agent\" graphics"
+      }
+    ],
+    "open": [
+      {
+        "ref_id": "https://arxiv.org/list/cs.HC/new"
+      },
+      {
+        "ref_id": "https://arxiv.org/list/cs.MM/new"
+      }
+    ],
+    "find": [
+      {
+        "ref_id": "turn2view0",
+        "pattern": "3AGame"
+      },
+      {
+        "ref_id": "turn2view0",
+        "pattern": "CAD"
+      },
+      {
+        "ref_id": "turn2view0",
+        "pattern": "visualization"
+      },
+      {
+        "ref_id": "turn0view0",
+        "pattern": "[1]"
+      }
+    ],
+    "response_length": "long"
+  },
+  "response_storage": "Full tool responses retained in the local run; public records include requests, timings, and report evidence."
+}

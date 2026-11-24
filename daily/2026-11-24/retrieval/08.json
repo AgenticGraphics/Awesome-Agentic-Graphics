@@ -1,0 +1,66 @@
+{
+  "id": "08",
+  "tool": "web.run",
+  "started_at": "2026-11-24T20:06:52+00:00",
+  "recorded_at": "2026-11-24T20:06:53+00:00",
+  "source_families": [
+    "arxiv",
+    "openreview"
+  ],
+  "query_families": [
+    "2d",
+    "cad",
+    "benchmark",
+    "scene",
+    "object"
+  ],
+  "request": {
+    "search_query": [
+      {
+        "q": "site:arxiv.org \"agent\" \"visualization\" after:2026-11-17 before:2026-11-25"
+      },
+      {
+        "q": "site:openreview.net \"CAD\" \"2026\" \"agent\""
+      },
+      {
+        "q": "site:arxiv.org \"agent\" \"world auditing\""
+      }
+    ],
+    "open": [
+      {
+        "ref_id": "https://arxiv.org/abs/2605.15843"
+      },
+      {
+        "ref_id": "https://arxiv.org/abs/2611.30879"
+      }
+    ],
+    "find": [
+      {
+        "ref_id": "turn6view0",
+        "pattern": "Submission history"
+      },
+      {
+        "ref_id": "turn6view1",
+        "pattern": "2.1"
+      },
+      {
+        "ref_id": "turn6view1",
+        "pattern": "feedback"
+      },
+      {
+        "ref_id": "turn4view1",
+        "pattern": "Execution and validation."
+      },
+      {
+        "ref_id": "turn4view1",
+        "pattern": "Skinning and validation."
+      },
+      {
+        "ref_id": "turn5view1",
+        "pattern": "Parallel asynchronous"
+      }
+    ],
+    "response_length": "long"
+  },
+  "response_storage": "Full tool responses retained in the local run; public records include requests, timings, and report evidence."
+}

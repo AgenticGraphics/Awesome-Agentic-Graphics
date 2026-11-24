@@ -1,0 +1,57 @@
+{
+  "id": "11",
+  "tool": "web.run",
+  "started_at": "2026-11-24T20:07:30+00:00",
+  "recorded_at": "2026-11-24T20:07:31+00:00",
+  "source_families": [
+    "arxiv"
+  ],
+  "query_families": [
+    "scene",
+    "object",
+    "harness",
+    "articulation"
+  ],
+  "request": {
+    "find": [
+      {
+        "ref_id": "turn9view0",
+        "pattern": "Memory Module"
+      },
+      {
+        "ref_id": "turn9view0",
+        "pattern": "4.2.1"
+      },
+      {
+        "ref_id": "turn9view0",
+        "pattern": "4.3.2"
+      },
+      {
+        "ref_id": "turn7view1",
+        "pattern": "demonstrate"
+      },
+      {
+        "ref_id": "turn4view0",
+        "pattern": "Authors:"
+      },
+      {
+        "ref_id": "turn5view0",
+        "pattern": "Authors:"
+      },
+      {
+        "ref_id": "turn6view0",
+        "pattern": "Authors:"
+      },
+      {
+        "ref_id": "turn8view0",
+        "pattern": "Authors:"
+      },
+      {
+        "ref_id": "turn4view1",
+        "pattern": "Skeleton construction."
+      }
+    ],
+    "response_length": "long"
+  },
+  "response_storage": "Full tool responses retained in the local run; public records include requests, timings, and report evidence."
+}
