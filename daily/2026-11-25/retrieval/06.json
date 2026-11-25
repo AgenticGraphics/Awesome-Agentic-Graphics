@@ -1,0 +1,60 @@
+{
+  "id": "06",
+  "started_at": "2026-11-25T20:03:19.964Z",
+  "recorded_at": "2026-11-25T20:03:21.279Z",
+  "request": {
+    "search_query": [
+      {
+        "q": "site:arxiv.org \"PartAgent\""
+      },
+      {
+        "q": "site:arxiv.org agent graphics CAD SVG after:2026-11-24 before:2026-11-26"
+      },
+      {
+        "q": "site:openreview.net \"graphics\" \"Nov 2026\""
+      }
+    ],
+    "open": [
+      {
+        "ref_id": "https://arxiv.org/html/2611.28783v1"
+      },
+      {
+        "ref_id": "https://arxiv.org/abs/2611.26516"
+      },
+      {
+        "ref_id": "https://arxiv.org/html/2611.26516v1"
+      }
+    ],
+    "find": [
+      {
+        "ref_id": "turn4view0",
+        "pattern": "Submission history"
+      },
+      {
+        "ref_id": "turn4view2",
+        "pattern": "Submission history"
+      },
+      {
+        "ref_id": "turn4view1",
+        "pattern": "planner"
+      },
+      {
+        "ref_id": "turn4view1",
+        "pattern": "memory"
+      }
+    ],
+    "response_length": "long"
+  },
+  "source_families": [
+    "arxiv",
+    "openreview"
+  ],
+  "query_families": [
+    "object",
+    "cad",
+    "2d",
+    "harness",
+    "animation"
+  ],
+  "response_storage": "Full tool responses retained in the local run; public records include requests, timings, and report evidence."
+}

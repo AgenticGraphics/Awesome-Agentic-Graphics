@@ -1,0 +1,62 @@
+{
+  "id": "11",
+  "started_at": "2026-11-25T20:04:14.831Z",
+  "recorded_at": "2026-11-25T20:04:16.111Z",
+  "request": {
+    "find": [
+      {
+        "ref_id": "turn7view1",
+        "pattern": "Agent state"
+      },
+      {
+        "ref_id": "turn7view1",
+        "pattern": "Action space"
+      },
+      {
+        "ref_id": "turn7view1",
+        "pattern": "Partition verification"
+      },
+      {
+        "ref_id": "turn7view1",
+        "pattern": "training-free"
+      },
+      {
+        "ref_id": "turn8view1",
+        "pattern": "Deterministic checker"
+      },
+      {
+        "ref_id": "turn8view1",
+        "pattern": "Off-the-shelf"
+      },
+      {
+        "ref_id": "turn8view1",
+        "pattern": "3.1 Object"
+      },
+      {
+        "ref_id": "turn8view1",
+        "pattern": "memory"
+      },
+      {
+        "ref_id": "turn5view0",
+        "pattern": "Trajectory"
+      },
+      {
+        "ref_id": "turn4view1",
+        "pattern": "3.1 Layout"
+      }
+    ],
+    "response_length": "long"
+  },
+  "source_families": [
+    "arxiv"
+  ],
+  "query_families": [
+    "object",
+    "simulation",
+    "articulation",
+    "harness",
+    "scene",
+    "animation"
+  ],
+  "response_storage": "Full tool responses retained in the local run; public records include requests, timings, and report evidence."
+}

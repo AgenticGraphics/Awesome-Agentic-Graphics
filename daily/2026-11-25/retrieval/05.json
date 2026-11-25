@@ -1,0 +1,55 @@
+{
+  "id": "05",
+  "started_at": "2026-11-25T20:03:07.851Z",
+  "recorded_at": "2026-11-25T20:03:10.364Z",
+  "request": {
+    "search_query": [
+      {
+        "q": "\"PartAgent\" \"3D Part Segmentation\""
+      },
+      {
+        "q": "\"3DCodeFactory\" agent"
+      },
+      {
+        "q": "\"ShaderAgent\" paper SIGGRAPH 2026"
+      }
+    ],
+    "open": [
+      {
+        "ref_id": "https://arxiv.org/abs/2611.31239"
+      },
+      {
+        "ref_id": "https://arxiv.org/html/2611.31239v1"
+      },
+      {
+        "ref_id": "https://arxiv.org/abs/2611.28783"
+      }
+    ],
+    "find": [
+      {
+        "ref_id": "turn3view0",
+        "pattern": "Title:"
+      },
+      {
+        "ref_id": "turn3view1",
+        "pattern": "Title:"
+      },
+      {
+        "ref_id": "turn2view2",
+        "pattern": "Designer"
+      }
+    ],
+    "response_length": "long"
+  },
+  "source_families": [
+    "arxiv",
+    "project_author_lab"
+  ],
+  "query_families": [
+    "object",
+    "harness",
+    "animation",
+    "2d"
+  ],
+  "response_storage": "Full tool responses retained in the local run; public records include requests, timings, and report evidence."
+}

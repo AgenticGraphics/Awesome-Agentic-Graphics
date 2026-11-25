@@ -1,0 +1,60 @@
+{
+  "id": "04",
+  "started_at": "2026-11-25T20:02:53.083Z",
+  "recorded_at": "2026-11-25T20:02:54.645Z",
+  "request": {
+    "search_query": [
+      {
+        "q": "\"Plan4D: Generative Plannable 4D Worlds\""
+      },
+      {
+        "q": "\"Lyris\" \"Layout-Guided\""
+      },
+      {
+        "q": "site:arxiv.org \"agent\" \"Nov 24, 2026\" graphics"
+      },
+      {
+        "q": "site:openaccess.thecvf.com 2026 agent graphics generation"
+      }
+    ],
+    "open": [
+      {
+        "ref_id": "https://arxiv.org/list/cs.HC/new"
+      },
+      {
+        "ref_id": "https://arxiv.org/list/cs.MM/new"
+      },
+      {
+        "ref_id": "https://arxiv.org/list/eess.IV/new"
+      }
+    ],
+    "find": [
+      {
+        "ref_id": "turn2view2",
+        "pattern": "arxiv"
+      },
+      {
+        "ref_id": "turn1view1",
+        "pattern": "3D"
+      },
+      {
+        "ref_id": "turn2view0",
+        "pattern": "graphics"
+      }
+    ],
+    "response_length": "long"
+  },
+  "source_families": [
+    "arxiv",
+    "hugging_face",
+    "official_venues",
+    "project_author_lab"
+  ],
+  "query_families": [
+    "animation",
+    "scene",
+    "2d",
+    "benchmark"
+  ],
+  "response_storage": "Full tool responses retained in the local run; public records include requests, timings, and report evidence."
+}

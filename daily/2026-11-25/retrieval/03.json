@@ -1,0 +1,58 @@
+{
+  "id": "03",
+  "started_at": "2026-11-25T20:02:43.227Z",
+  "recorded_at": "2026-11-25T20:02:44.740Z",
+  "request": {
+    "search_query": [
+      {
+        "q": "site:arxiv.org agent physical simulation particle effects November 2026"
+      },
+      {
+        "q": "site:arxiv.org agent graphics benchmark harness feedback \"Nov\" \"2026\""
+      },
+      {
+        "q": "site:openreview.net graphics agent 2026 memory planning"
+      }
+    ],
+    "open": [
+      {
+        "ref_id": "https://arxiv.org/list/cs.AI/new"
+      },
+      {
+        "ref_id": "https://asia.siggraph.org/2026/program/technical-papers/"
+      },
+      {
+        "ref_id": "https://github.com/VAST-AI-Research/ShaderAgent"
+      }
+    ],
+    "find": [
+      {
+        "ref_id": "turn1view1",
+        "pattern": "Nov 25"
+      },
+      {
+        "ref_id": "turn0view0",
+        "pattern": "Agent"
+      },
+      {
+        "ref_id": "turn1view1",
+        "pattern": "Plan4D"
+      }
+    ],
+    "response_length": "long"
+  },
+  "source_families": [
+    "arxiv",
+    "openreview",
+    "official_venues",
+    "project_author_lab",
+    "hugging_face"
+  ],
+  "query_families": [
+    "simulation",
+    "benchmark",
+    "harness",
+    "object"
+  ],
+  "response_storage": "Full tool responses retained in the local run; public records include requests, timings, and report evidence."
+}

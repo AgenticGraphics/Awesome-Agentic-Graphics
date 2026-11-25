@@ -1,0 +1,68 @@
+{
+  "id": "10",
+  "started_at": "2026-11-25T20:04:02.562Z",
+  "recorded_at": "2026-11-25T20:04:04.106Z",
+  "request": {
+    "search_query": [
+      {
+        "q": "\"MAGPIE: Agentic Multi-Reference Image Generation\""
+      },
+      {
+        "q": "\"AdProducer: Towards Agentic Advertising Video Generation\""
+      },
+      {
+        "q": "agent CAD SVG scene simulation \"November 25, 2026\""
+      }
+    ],
+    "find": [
+      {
+        "ref_id": "turn8view0",
+        "pattern": "Submission history"
+      },
+      {
+        "ref_id": "turn8view0",
+        "pattern": "Authors:"
+      },
+      {
+        "ref_id": "turn8view1",
+        "pattern": "Evaluator Agent"
+      },
+      {
+        "ref_id": "turn7view1",
+        "pattern": "Verification"
+      },
+      {
+        "ref_id": "turn7view1",
+        "pattern": "state"
+      },
+      {
+        "ref_id": "turn5view0",
+        "pattern": "3.4 Artifact"
+      },
+      {
+        "ref_id": "turn3view2",
+        "pattern": "Title:"
+      },
+      {
+        "ref_id": "turn1view0",
+        "pattern": "CodeHOI"
+      }
+    ],
+    "response_length": "long"
+  },
+  "source_families": [
+    "arxiv",
+    "project_author_lab"
+  ],
+  "query_families": [
+    "2d",
+    "animation",
+    "harness",
+    "cad",
+    "scene",
+    "simulation",
+    "articulation",
+    "object"
+  ],
+  "response_storage": "Full tool responses retained in the local run; public records include requests, timings, and report evidence."
+}

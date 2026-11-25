@@ -1,0 +1,71 @@
+{
+  "id": "09",
+  "started_at": "2026-11-25T20:03:52.166Z",
+  "recorded_at": "2026-11-25T20:03:53.581Z",
+  "request": {
+    "search_query": [
+      {
+        "q": "site:huggingface.co/papers/date/2026-11-25 graphics agent"
+      },
+      {
+        "q": "site:dl.acm.org agent graphics \"November 2026\""
+      },
+      {
+        "q": "site:arxiv.org agent CAD constraint solver November 2026"
+      }
+    ],
+    "open": [
+      {
+        "ref_id": "https://arxiv.org/abs/2611.31976"
+      },
+      {
+        "ref_id": "https://arxiv.org/html/2611.31976v1"
+      }
+    ],
+    "find": [
+      {
+        "ref_id": "turn7view0",
+        "pattern": "Submission history"
+      },
+      {
+        "ref_id": "turn7view1",
+        "pattern": "refinement"
+      },
+      {
+        "ref_id": "turn5view0",
+        "pattern": "3.2"
+      },
+      {
+        "ref_id": "turn4view0",
+        "pattern": "Authors:"
+      },
+      {
+        "ref_id": "turn4view2",
+        "pattern": "Authors:"
+      },
+      {
+        "ref_id": "turn7view0",
+        "pattern": "Authors:"
+      },
+      {
+        "ref_id": "turn5view1",
+        "pattern": "Authors:"
+      }
+    ],
+    "response_length": "long"
+  },
+  "source_families": [
+    "arxiv",
+    "hugging_face",
+    "official_venues"
+  ],
+  "query_families": [
+    "cad",
+    "object",
+    "simulation",
+    "articulation",
+    "benchmark",
+    "harness"
+  ],
+  "response_storage": "Full tool responses retained in the local run; public records include requests, timings, and report evidence."
+}
