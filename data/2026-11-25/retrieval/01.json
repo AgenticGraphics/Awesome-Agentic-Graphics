@@ -1,0 +1,41 @@
+{
+  "id": "01",
+  "started_at": "2026-11-25T20:02:17.264Z",
+  "recorded_at": "2026-11-25T20:02:18.587Z",
+  "request": {
+    "search_query": [
+      {
+        "q": "agent SVG diagram poster slide visual feedback November 2026"
+      },
+      {
+        "q": "agent procedural 3D modeling material ShaderAgent November 2026"
+      },
+      {
+        "q": "agent CAD geometry editing \"2026-11-25\""
+      }
+    ],
+    "open": [
+      {
+        "ref_id": "https://arxiv.org/list/cs.GR/new"
+      },
+      {
+        "ref_id": "https://arxiv.org/list/cs.CV/recent"
+      },
+      {
+        "ref_id": "https://huggingface.co/papers/date/2026-11-25"
+      }
+    ],
+    "response_length": "long"
+  },
+  "source_families": [
+    "arxiv",
+    "hugging_face",
+    "project_author_lab"
+  ],
+  "query_families": [
+    "2d",
+    "object",
+    "cad"
+  ],
+  "response_storage": "Full tool responses retained in the local run; public records include requests, timings, and report evidence."
+}

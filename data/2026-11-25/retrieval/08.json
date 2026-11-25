@@ -1,0 +1,59 @@
+{
+  "id": "08",
+  "started_at": "2026-11-25T20:03:39.985Z",
+  "recorded_at": "2026-11-25T20:03:41.481Z",
+  "request": {
+    "search_query": [
+      {
+        "q": "\"CodeHOI\" agent"
+      },
+      {
+        "q": "site:dl.acm.org \"ShaderAgent\""
+      },
+      {
+        "q": "site:arxiv.org \"agent\" \"25 Nov 2026\" CAD graphics"
+      }
+    ],
+    "open": [
+      {
+        "ref_id": "https://arxiv.org/abs/2611.32554"
+      },
+      {
+        "ref_id": "https://arxiv.org/html/2611.32554v1"
+      }
+    ],
+    "find": [
+      {
+        "ref_id": "turn5view0",
+        "pattern": "feedback"
+      },
+      {
+        "ref_id": "turn6view1",
+        "pattern": "Abstract"
+      },
+      {
+        "ref_id": "turn6view1",
+        "pattern": "Submission history"
+      },
+      {
+        "ref_id": "turn2view2",
+        "pattern": "Citation"
+      }
+    ],
+    "response_length": "long"
+  },
+  "source_families": [
+    "arxiv",
+    "official_venues",
+    "project_author_lab"
+  ],
+  "query_families": [
+    "articulation",
+    "animation",
+    "simulation",
+    "object",
+    "cad",
+    "harness"
+  ],
+  "response_storage": "Full tool responses retained in the local run; public records include requests, timings, and report evidence."
+}
