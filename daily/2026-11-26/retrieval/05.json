@@ -1,0 +1,56 @@
+{
+  "id": "05",
+  "tool": "web.run",
+  "started_at": "2026-11-26T20:04:53+00:00",
+  "recorded_at": "2026-11-26T20:04:54+00:00",
+  "request": {
+    "search_query": [
+      {
+        "q": "\"MAGPIE\" \"Executable Scene Construction\""
+      },
+      {
+        "q": "\"PreferenceScene\" personalized"
+      },
+      {
+        "q": "\"Lab2Sim\" \"2611.33705\""
+      }
+    ],
+    "open": [
+      {
+        "ref_id": "https://arxiv.org/html/2611.34783v1"
+      },
+      {
+        "ref_id": "https://arxiv.org/abs/2611.32099"
+      },
+      {
+        "ref_id": "https://arxiv.org/abs/2611.32462"
+      }
+    ],
+    "find": [
+      {
+        "ref_id": "turn3view0",
+        "pattern": "Title:"
+      },
+      {
+        "ref_id": "turn3view1",
+        "pattern": "Title:"
+      },
+      {
+        "ref_id": "turn3view2",
+        "pattern": "agent"
+      }
+    ],
+    "response_length": "long"
+  },
+  "source_families": [
+    "arxiv",
+    "project_author_lab"
+  ],
+  "query_families": [
+    "scene",
+    "object",
+    "articulation",
+    "animation"
+  ],
+  "response_storage": "Full tool responses retained in the local run; public records include requests, timings, and report evidence."
+}

@@ -1,0 +1,59 @@
+{
+  "id": "04",
+  "tool": "web.run",
+  "started_at": "2026-11-26T20:04:46+00:00",
+  "recorded_at": "2026-11-26T20:04:47+00:00",
+  "request": {
+    "search_query": [
+      {
+        "q": "site:arxiv.org \"agent\" \"SVG\" \"Nov\" \"2026\""
+      },
+      {
+        "q": "site:openreview.net \"graphics\" \"agent\" \"2026\""
+      },
+      {
+        "q": "site:dl.acm.org \"agent\" \"November 2026\" graphics"
+      }
+    ],
+    "open": [
+      {
+        "ref_id": "https://arxiv.org/list/cs.HC/new"
+      },
+      {
+        "ref_id": "https://arxiv.org/list/cs.MM/new"
+      },
+      {
+        "ref_id": "https://arxiv.org/list/eess.IV/new"
+      }
+    ],
+    "find": [
+      {
+        "ref_id": "turn1view1",
+        "pattern": "Agent"
+      },
+      {
+        "ref_id": "turn2view2",
+        "pattern": "Submission history"
+      },
+      {
+        "ref_id": "turn1view0",
+        "pattern": "generation"
+      }
+    ],
+    "response_length": "long"
+  },
+  "source_families": [
+    "arxiv",
+    "hugging_face",
+    "openreview",
+    "official_venues"
+  ],
+  "query_families": [
+    "2d",
+    "object",
+    "cad",
+    "harness",
+    "articulation"
+  ],
+  "response_storage": "Full tool responses retained in the local run; public records include requests, timings, and report evidence."
+}

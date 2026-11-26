@@ -1,0 +1,61 @@
+{
+  "id": "08",
+  "tool": "web.run",
+  "started_at": "2026-11-26T20:05:22+00:00",
+  "recorded_at": "2026-11-26T20:05:23+00:00",
+  "request": {
+    "search_query": [
+      {
+        "q": "\"ManimAgent\" \"agent\" \"November 2026\""
+      },
+      {
+        "q": "\"SceneSmith\" \"SceneDesigner3D\""
+      },
+      {
+        "q": "\"agent\" \"physical simulation\" \"November 26, 2026\""
+      }
+    ],
+    "open": [
+      {
+        "ref_id": "https://arxiv.org/html/2611.33705v1"
+      },
+      {
+        "ref_id": "https://arxiv.org/abs/2611.32820"
+      },
+      {
+        "ref_id": "https://arxiv.org/abs/2611.28010"
+      }
+    ],
+    "find": [
+      {
+        "ref_id": "turn6view0",
+        "pattern": "Submission history"
+      },
+      {
+        "ref_id": "turn5view0",
+        "pattern": "### 4.1"
+      },
+      {
+        "ref_id": "turn5view1",
+        "pattern": "verification"
+      },
+      {
+        "ref_id": "turn6view1",
+        "pattern": "## 3"
+      }
+    ],
+    "response_length": "long"
+  },
+  "source_families": [
+    "arxiv",
+    "project_author_lab"
+  ],
+  "query_families": [
+    "2d",
+    "scene",
+    "simulation",
+    "animation",
+    "harness"
+  ],
+  "response_storage": "Full tool responses retained in the local run; public records include requests, timings, and report evidence."
+}

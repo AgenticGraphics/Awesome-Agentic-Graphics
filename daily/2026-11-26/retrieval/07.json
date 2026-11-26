@@ -1,0 +1,62 @@
+{
+  "id": "07",
+  "tool": "web.run",
+  "started_at": "2026-11-26T20:05:13+00:00",
+  "recorded_at": "2026-11-26T20:05:14+00:00",
+  "request": {
+    "search_query": [
+      {
+        "q": "site:huggingface.co/papers/date/2026-11-26 graphics agent"
+      },
+      {
+        "q": "site:arxiv.org \"agent\" \"CAD\" \"Nov 2026\""
+      },
+      {
+        "q": "site:openaccess.thecvf.com \"agent\" \"graphics\" \"2026\""
+      }
+    ],
+    "open": [
+      {
+        "ref_id": "https://arxiv.org/abs/2611.33705"
+      },
+      {
+        "ref_id": "https://arxiv.org/html/2611.31466v1"
+      },
+      {
+        "ref_id": "https://lky-ang.github.io/AdProducer-page/"
+      }
+    ],
+    "find": [
+      {
+        "ref_id": "turn5view2",
+        "pattern": "Submission history"
+      },
+      {
+        "ref_id": "turn4view0",
+        "pattern": "validity"
+      },
+      {
+        "ref_id": "turn5view0",
+        "pattern": "## 3"
+      },
+      {
+        "ref_id": "turn5view1",
+        "pattern": "## 3"
+      }
+    ],
+    "response_length": "long"
+  },
+  "source_families": [
+    "arxiv",
+    "hugging_face",
+    "official_venues",
+    "project_author_lab"
+  ],
+  "query_families": [
+    "cad",
+    "benchmark",
+    "scene",
+    "animation"
+  ],
+  "response_storage": "Full tool responses retained in the local run; public records include requests, timings, and report evidence."
+}

@@ -1,0 +1,56 @@
+{
+  "id": "06",
+  "tool": "web.run",
+  "started_at": "2026-11-26T20:05:02+00:00",
+  "recorded_at": "2026-11-26T20:05:03+00:00",
+  "request": {
+    "search_query": [
+      {
+        "q": "\"AdProducer\" \"video\" project"
+      },
+      {
+        "q": "\"SceneDesigner3D\" project"
+      },
+      {
+        "q": "site:arxiv.org \"agent\" \"2026-11-26\" graphics Blender"
+      }
+    ],
+    "open": [
+      {
+        "ref_id": "https://arxiv.org/html/2611.32099v1"
+      },
+      {
+        "ref_id": "https://arxiv.org/html/2611.32462v1"
+      },
+      {
+        "ref_id": "https://arxiv.org/abs/2611.31466"
+      }
+    ],
+    "find": [
+      {
+        "ref_id": "turn4view1",
+        "pattern": "Submission history"
+      },
+      {
+        "ref_id": "turn4view2",
+        "pattern": "Submission history"
+      },
+      {
+        "ref_id": "turn4view0",
+        "pattern": "3."
+      }
+    ],
+    "response_length": "long"
+  },
+  "source_families": [
+    "arxiv",
+    "project_author_lab"
+  ],
+  "query_families": [
+    "scene",
+    "object",
+    "animation",
+    "harness"
+  ],
+  "response_storage": "Full tool responses retained in the local run; public records include requests, timings, and report evidence."
+}

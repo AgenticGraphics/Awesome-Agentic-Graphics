@@ -1,0 +1,66 @@
+{
+  "id": "10",
+  "tool": "web.run",
+  "started_at": "2026-11-26T20:05:41+00:00",
+  "recorded_at": "2026-11-26T20:05:42+00:00",
+  "request": {
+    "search_query": [
+      {
+        "q": "\"agentic\" \"graphics\" \"2026-11-26\" arxiv"
+      },
+      {
+        "q": "\"agent\" \"rig\" \"Nov\" \"2026\" arxiv"
+      },
+      {
+        "q": "\"agent\" \"simulation\" \"2026-11-26\" arxiv"
+      }
+    ],
+    "find": [
+      {
+        "ref_id": "turn7view0",
+        "pattern": "The Asset Agent"
+      },
+      {
+        "ref_id": "turn7view0",
+        "pattern": "feedback"
+      },
+      {
+        "ref_id": "turn5view1",
+        "pattern": "### 3.1"
+      },
+      {
+        "ref_id": "turn5view1",
+        "pattern": "verifier"
+      },
+      {
+        "ref_id": "turn5view0",
+        "pattern": "At each turn"
+      },
+      {
+        "ref_id": "turn5view0",
+        "pattern": "Blender"
+      },
+      {
+        "ref_id": "turn4view0",
+        "pattern": "### 3.1"
+      },
+      {
+        "ref_id": "turn1view1",
+        "pattern": "###"
+      }
+    ],
+    "response_length": "long"
+  },
+  "source_families": [
+    "arxiv",
+    "hugging_face"
+  ],
+  "query_families": [
+    "harness",
+    "articulation",
+    "simulation",
+    "scene",
+    "object"
+  ],
+  "response_storage": "Full tool responses retained in the local run; public records include requests, timings, and report evidence."
+}
