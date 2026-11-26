@@ -1,0 +1,65 @@
+{
+  "id": "09",
+  "tool": "web.run",
+  "started_at": "2026-11-26T20:05:30+00:00",
+  "recorded_at": "2026-11-26T20:05:32+00:00",
+  "request": {
+    "search_query": [
+      {
+        "q": "site:arxiv.org \"agent\" \"Blender\" after:2026-11-19 before:2026-11-27"
+      },
+      {
+        "q": "site:arxiv.org \"agent\" \"CAD\" after:2026-11-19 before:2026-11-27"
+      },
+      {
+        "q": "\"agent\" \"graphics\" \"26 November 2026\""
+      }
+    ],
+    "find": [
+      {
+        "ref_id": "turn7view1",
+        "pattern": "Abstract:"
+      },
+      {
+        "ref_id": "turn7view1",
+        "pattern": "Submission history"
+      },
+      {
+        "ref_id": "turn7view2",
+        "pattern": "Abstract:"
+      },
+      {
+        "ref_id": "turn7view2",
+        "pattern": "Submission history"
+      },
+      {
+        "ref_id": "turn7view0",
+        "pattern": "## 3"
+      },
+      {
+        "ref_id": "turn5view1",
+        "pattern": "### 3.2"
+      },
+      {
+        "ref_id": "turn5view0",
+        "pattern": "### 4.2"
+      },
+      {
+        "ref_id": "turn4view0",
+        "pattern": "### 3.4"
+      }
+    ],
+    "response_length": "long"
+  },
+  "source_families": [
+    "arxiv"
+  ],
+  "query_families": [
+    "object",
+    "cad",
+    "harness",
+    "animation",
+    "scene"
+  ],
+  "response_storage": "Full tool responses retained in the local run; public records include requests, timings, and report evidence."
+}

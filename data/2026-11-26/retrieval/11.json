@@ -1,0 +1,58 @@
+{
+  "id": "11",
+  "tool": "web.run",
+  "started_at": "2026-11-26T20:05:48+00:00",
+  "recorded_at": "2026-11-26T20:05:50+00:00",
+  "request": {
+    "find": [
+      {
+        "ref_id": "turn2view2",
+        "pattern": "Authors:"
+      },
+      {
+        "ref_id": "turn4view1",
+        "pattern": "Authors:"
+      },
+      {
+        "ref_id": "turn4view2",
+        "pattern": "Authors:"
+      },
+      {
+        "ref_id": "turn5view2",
+        "pattern": "Authors:"
+      },
+      {
+        "ref_id": "turn6view0",
+        "pattern": "Authors:"
+      },
+      {
+        "ref_id": "turn5view1",
+        "pattern": "The vision"
+      },
+      {
+        "ref_id": "turn5view1",
+        "pattern": "Cross-Example Harness"
+      },
+      {
+        "ref_id": "turn4view0",
+        "pattern": "We represent"
+      },
+      {
+        "ref_id": "turn5view0",
+        "pattern": "The scene instantiation"
+      }
+    ],
+    "response_length": "long"
+  },
+  "source_families": [
+    "arxiv"
+  ],
+  "query_families": [
+    "object",
+    "scene",
+    "animation",
+    "articulation",
+    "harness"
+  ],
+  "response_storage": "Full tool responses retained in the local run; public records include requests, timings, and report evidence."
+}

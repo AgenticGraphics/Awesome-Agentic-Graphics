@@ -1,0 +1,57 @@
+{
+  "id": "03",
+  "tool": "web.run",
+  "started_at": "2026-11-26T20:04:37+00:00",
+  "recorded_at": "2026-11-26T20:04:38+00:00",
+  "request": {
+    "search_query": [
+      {
+        "q": "agent physical simulation particle deformable graphics November 2026 arxiv"
+      },
+      {
+        "q": "agent graphics benchmark world auditing verification \"2026-11\""
+      },
+      {
+        "q": "site:openreview.net graphics agent memory replanning tool feedback 2026"
+      }
+    ],
+    "open": [
+      {
+        "ref_id": "https://arxiv.org/list/cs.AI/new"
+      },
+      {
+        "ref_id": "https://asia.siggraph.org/2026/program/technical-papers/"
+      },
+      {
+        "ref_id": "https://arxiv.org/abs/2611.34783"
+      }
+    ],
+    "find": [
+      {
+        "ref_id": "turn0view0",
+        "pattern": "Agent"
+      },
+      {
+        "ref_id": "turn1view1",
+        "pattern": "Nov 26"
+      },
+      {
+        "ref_id": "turn1view1",
+        "pattern": "SceneDesigner"
+      }
+    ],
+    "response_length": "long"
+  },
+  "source_families": [
+    "arxiv",
+    "openreview",
+    "official_venues",
+    "hugging_face"
+  ],
+  "query_families": [
+    "simulation",
+    "benchmark",
+    "harness"
+  ],
+  "response_storage": "Full tool responses retained in the local run; public records include requests, timings, and report evidence."
+}
