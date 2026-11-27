@@ -1,0 +1,273 @@
+{
+  "passed": true,
+  "errors": [],
+  "validation_scope": "Structural/date/label checks only; primary evidence truth and retrieval recall require agent review.",
+  "primary_date_audit": {
+    "passed": true,
+    "checks": [
+      {
+        "arxiv": "2611.31358",
+        "version": "v1",
+        "raw_source_value": "Mon, 23 Nov 2026 18:57:41 UTC",
+        "utc": "2026-11-23T18:57:41+00:00",
+        "chicago": "2026-11-23T12:57:41-06:00",
+        "journal": "retrieval/04.json",
+        "raw_primary_history_match": true,
+        "at_or_before_as_of": true
+      },
+      {
+        "arxiv": "2611.34907",
+        "version": "v1",
+        "raw_source_value": "Wed, 25 Nov 2026 18:54:03 UTC",
+        "utc": "2026-11-25T18:54:03+00:00",
+        "chicago": "2026-11-25T12:54:03-06:00",
+        "journal": "retrieval/06.json",
+        "raw_primary_history_match": true,
+        "at_or_before_as_of": true
+      },
+      {
+        "arxiv": "2611.34414",
+        "version": "v1",
+        "raw_source_value": "Wed, 25 Nov 2026 14:08:05 UTC",
+        "utc": "2026-11-25T14:08:05+00:00",
+        "chicago": "2026-11-25T08:08:05-06:00",
+        "journal": "retrieval/06.json",
+        "raw_primary_history_match": true,
+        "at_or_before_as_of": true
+      },
+      {
+        "arxiv": "2611.33926",
+        "version": "v1",
+        "raw_source_value": "Wed, 25 Nov 2026 07:46:35 UTC",
+        "utc": "2026-11-25T07:46:35+00:00",
+        "chicago": "2026-11-25T01:46:35-06:00",
+        "journal": "retrieval/07.json",
+        "raw_primary_history_match": true,
+        "at_or_before_as_of": true
+      },
+      {
+        "arxiv": "2611.34849",
+        "version": "v1",
+        "raw_source_value": "Wed, 25 Nov 2026 18:23:41 UTC",
+        "utc": "2026-11-25T18:23:41+00:00",
+        "chicago": "2026-11-25T12:23:41-06:00",
+        "journal": "retrieval/08.json",
+        "raw_primary_history_match": true,
+        "at_or_before_as_of": true
+      },
+      {
+        "arxiv": "2611.34884",
+        "version": "v1",
+        "raw_source_value": "Wed, 25 Nov 2026 18:40:47 UTC",
+        "utc": "2026-11-25T18:40:47+00:00",
+        "chicago": "2026-11-25T12:40:47-06:00",
+        "journal": "retrieval/09.json",
+        "raw_primary_history_match": true,
+        "at_or_before_as_of": true
+      }
+    ]
+  },
+  "ledger_count_audit": {
+    "passed": true,
+    "actual": {
+      "search_batches": 10,
+      "search_queries": 30,
+      "primary_opens": 24,
+      "find_operations": 57,
+      "web_tool_invocations": 11
+    },
+    "count_basis": "Requests in retrieval/*.json; find operations do not consume page-open count."
+  },
+  "screening_cap_audit": {
+    "passed": true,
+    "fresh_screened": 6,
+    "carried_unresolved": 10
+  },
+  "history_audit": {
+    "passed": true,
+    "main_reports": 19,
+    "website_records": 507,
+    "archives_recursed": false,
+    "comparisons": [
+      {
+        "title": "Nemotron-Labs-VisualCreation: Pixel as Code for Agentic Visual Creation",
+        "arxiv": "2611.31358",
+        "discovery_status": "new_to_us_catch_up",
+        "events": [
+          {
+            "type": "first_submission",
+            "version": "v1",
+            "utc": "2026-11-23T18:57:41+00:00",
+            "chicago": "2026-11-23T12:57:41-06:00",
+            "prior_event_status": "not_seen_in_supplied_history"
+          }
+        ]
+      },
+      {
+        "title": "Agentic LongLive: Asynchronous Agentic Memory for Long Video Generation",
+        "arxiv": "2611.34907",
+        "discovery_status": "new_to_us_catch_up",
+        "events": [
+          {
+            "type": "first_submission",
+            "version": "v1",
+            "utc": "2026-11-25T18:54:03+00:00",
+            "chicago": "2026-11-25T12:54:03-06:00",
+            "prior_event_status": "not_seen_in_supplied_history"
+          }
+        ]
+      },
+      {
+        "title": "SemProxy: Semantic 3D Proxies for Controllable Agentic 3D Modeling",
+        "arxiv": "2611.34414",
+        "discovery_status": "new_to_us_catch_up",
+        "events": [
+          {
+            "type": "first_submission",
+            "version": "v1",
+            "utc": "2026-11-25T14:08:05+00:00",
+            "chicago": "2026-11-25T08:08:05-06:00",
+            "prior_event_status": "not_seen_in_supplied_history"
+          }
+        ]
+      },
+      {
+        "title": "Connecting AI Agents to Live Discrete Element Simulations via the Model Context Protocol",
+        "arxiv": "2611.33926",
+        "discovery_status": "new_to_us_catch_up",
+        "events": [
+          {
+            "type": "first_submission",
+            "version": "v1",
+            "utc": "2026-11-25T07:46:35+00:00",
+            "chicago": "2026-11-25T01:46:35-06:00",
+            "prior_event_status": "not_seen_in_supplied_history"
+          }
+        ]
+      },
+      {
+        "title": "Real2SimLab: A Unified Platform for Real-to-Simulation Transfer",
+        "arxiv": "2611.34849",
+        "discovery_status": "new_to_us_catch_up",
+        "events": [
+          {
+            "type": "first_submission",
+            "version": "v1",
+            "utc": "2026-11-25T18:23:41+00:00",
+            "chicago": "2026-11-25T12:23:41-06:00",
+            "prior_event_status": "not_seen_in_supplied_history"
+          }
+        ]
+      },
+      {
+        "title": "FineDex: Bridging Fine-Grained Human-Object Interaction Generation to Dexterous Humanoid Manipulation",
+        "arxiv": "2611.34884",
+        "discovery_status": "new_to_us_catch_up",
+        "events": [
+          {
+            "type": "first_submission",
+            "version": "v1",
+            "utc": "2026-11-25T18:40:47+00:00",
+            "chicago": "2026-11-25T12:40:47-06:00",
+            "prior_event_status": "not_seen_in_supplied_history"
+          }
+        ]
+      }
+    ]
+  },
+  "portable_bundle_validation": {
+    "passed": true,
+    "basis": "validate_portable_skill.py executed before research with supplied Python 3.12; 18 fields and 259 corpus occurrences validated."
+  },
+  "daily_helper_tests": {
+    "passed": true,
+    "tests": 20,
+    "suite_runs": 1,
+    "python": "supplied CPython 3.12.16",
+    "evidence": "test-output.txt"
+  },
+  "limitations": "Structural and raw-history checks do not establish recall or independent empirical truth.",
+  "identity_dedup_audit": {
+    "passed": true,
+    "basis": "Versionless identifiers, canonical URLs and normalized titles compared by daily helper; no fuzzy acronym merges."
+  },
+  "carried_unverified_date_anomalies": [
+    {
+      "title": "EvoDesign first-submission date anomaly",
+      "url": "https://arxiv.org/abs/2604.09568",
+      "reason": "The primary page reports February 20 first submission under an identifier beginning 2604. Revised method was read, but the first date remains unresolved.",
+      "freshly_verified": false
+    },
+    {
+      "title": "SlidesWeaver first-submission date anomaly",
+      "url": "https://arxiv.org/abs/2611.28010",
+      "reason": "Primary history reports September 8 v1 under a November identifier. Retained v2 revision separately; first event needs versioned metadata confirmation.",
+      "freshly_verified": false
+    }
+  ],
+  "date_anomalies": [],
+  "existing_daily_files_unchanged": {
+    "passed": true,
+    "basis": "All existing daily files hashed before offline assembly."
+  },
+  "final_cross_checks": {
+    "passed": true,
+    "checks": [
+      {
+        "name": "required_artifacts",
+        "passed": true,
+        "detail": "All six requested outputs populated."
+      },
+      {
+        "name": "actual_ledger_counts",
+        "passed": true,
+        "detail": "10 actual search calls; 24 attempted opens."
+      },
+      {
+        "name": "window",
+        "passed": true,
+        "detail": "Actual first clock cutoff is 13:58:40 CST."
+      },
+      {
+        "name": "18_exact_keys",
+        "passed": true,
+        "detail": "All retained and carried unresolved records have 18 exact keys."
+      },
+      {
+        "name": "primary_dates",
+        "passed": true,
+        "detail": "Each raw submission timestamp found in current journal and independently converted to Chicago."
+      },
+      {
+        "name": "journal_time_order",
+        "passed": true,
+        "detail": "Actual start and post-return times ordered."
+      },
+      {
+        "name": "five_sources_nine_queries",
+        "passed": true,
+        "detail": "All five/nine attempted; all remain partial."
+      },
+      {
+        "name": "identities_unique",
+        "passed": true,
+        "detail": "16 unique curated/carried records."
+      },
+      {
+        "name": "jsonl_consistency",
+        "passed": true,
+        "detail": "JSONL matches finalized records."
+      },
+      {
+        "name": "prior_daily_unchanged",
+        "passed": true,
+        "detail": "Existing daily files unchanged."
+      },
+      {
+        "name": "no_resolved_pending_resurrection",
+        "passed": true,
+        "detail": "Freshly resolved identities removed from pending; full-method follow-up retained on scope-dependent paper."
+      }
+    ]
+  }
+}

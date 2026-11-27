@@ -1,0 +1,65 @@
+{
+  "id": "08",
+  "started_at": "2026-11-27T20:00:18+00:00",
+  "recorded_at": "2026-11-27T20:00:19+00:00",
+  "tool": "web__run",
+  "request": {
+    "search_query": [
+      {
+        "q": "\"VibeVideoAgent\""
+      },
+      {
+        "q": "site:arxiv.org agent CAD \"26 Nov 2026\""
+      },
+      {
+        "q": "site:openreview.net \"SemProxy\""
+      }
+    ],
+    "open": [
+      {
+        "ref_id": "https://arxiv.org/html/2611.34849v1"
+      },
+      {
+        "ref_id": "https://arxiv.org/abs/2611.34884"
+      },
+      {
+        "ref_id": "https://real2simhub.github.io/real2simlab/"
+      }
+    ],
+    "find": [
+      {
+        "ref_id": "turn6view0",
+        "pattern": "Submission history"
+      },
+      {
+        "ref_id": "turn5view0",
+        "pattern": "planner"
+      },
+      {
+        "ref_id": "turn5view1",
+        "pattern": "3.3"
+      },
+      {
+        "ref_id": "turn6view1",
+        "pattern": "tools"
+      },
+      {
+        "ref_id": "turn6view1",
+        "pattern": "feedback"
+      }
+    ],
+    "response_length": "long"
+  },
+  "source_families": [
+    "arxiv",
+    "openreview",
+    "project_author_lab"
+  ],
+  "query_families": [
+    "cad",
+    "animation",
+    "simulation",
+    "benchmark"
+  ],
+  "response_storage": "Full tool responses retained in the local run; public records include requests, timings, and report evidence."
+}

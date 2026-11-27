@@ -1,0 +1,85 @@
+{
+  "id": "10",
+  "started_at": "2026-11-27T20:00:36+00:00",
+  "recorded_at": "2026-11-27T20:00:38+00:00",
+  "tool": "web__run",
+  "request": {
+    "search_query": [
+      {
+        "q": "agent scientific illustration Manim animation code recent research"
+      },
+      {
+        "q": "agent graphics benchmark \"November 27\" \"2026\""
+      },
+      {
+        "q": "\"SemProxy\" \"Agentic LongLive\""
+      }
+    ],
+    "find": [
+      {
+        "ref_id": "turn7view1",
+        "pattern": "We"
+      },
+      {
+        "ref_id": "turn5view0",
+        "pattern": "We run"
+      },
+      {
+        "ref_id": "turn5view0",
+        "pattern": "checks"
+      },
+      {
+        "ref_id": "turn5view0",
+        "pattern": "versioned"
+      },
+      {
+        "ref_id": "turn7view0",
+        "pattern": "Real2SimLab"
+      },
+      {
+        "ref_id": "turn4view0",
+        "pattern": "harness"
+      },
+      {
+        "ref_id": "turn6view1",
+        "pattern": "Abstract"
+      },
+      {
+        "ref_id": "turn2view2",
+        "pattern": "Authors:"
+      },
+      {
+        "ref_id": "turn4view1",
+        "pattern": "Authors:"
+      },
+      {
+        "ref_id": "turn4view2",
+        "pattern": "Authors:"
+      },
+      {
+        "ref_id": "turn5view2",
+        "pattern": "Authors:"
+      },
+      {
+        "ref_id": "turn6view0",
+        "pattern": "Authors:"
+      },
+      {
+        "ref_id": "turn7view1",
+        "pattern": "Authors:"
+      }
+    ],
+    "response_length": "long"
+  },
+  "source_families": [
+    "arxiv",
+    "project_author_lab"
+  ],
+  "query_families": [
+    "2d",
+    "animation",
+    "benchmark",
+    "harness"
+  ],
+  "response_storage": "Full tool responses retained in the local run; public records include requests, timings, and report evidence."
+}

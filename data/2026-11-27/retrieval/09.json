@@ -1,0 +1,68 @@
+{
+  "id": "09",
+  "started_at": "2026-11-27T20:00:27+00:00",
+  "recorded_at": "2026-11-27T20:00:28+00:00",
+  "tool": "web__run",
+  "request": {
+    "search_query": [
+      {
+        "q": "agent 3D object procedural modeling Blender material"
+      },
+      {
+        "q": "agent articulated asset joint mechanism rig generation \"27\" \"November 2026\""
+      },
+      {
+        "q": "agent physical simulation effects \"November 2026\" arxiv"
+      }
+    ],
+    "find": [
+      {
+        "ref_id": "turn7view1",
+        "pattern": "Abstract:"
+      },
+      {
+        "ref_id": "turn7view1",
+        "pattern": "Submission history"
+      },
+      {
+        "ref_id": "turn7view0",
+        "pattern": "offline"
+      },
+      {
+        "ref_id": "turn7view0",
+        "pattern": "agent"
+      },
+      {
+        "ref_id": "turn5view0",
+        "pattern": "Refinement."
+      },
+      {
+        "ref_id": "turn5view0",
+        "pattern": "2.2 Asynchronous agentic memory"
+      },
+      {
+        "ref_id": "turn4view0",
+        "pattern": "3 Framework"
+      },
+      {
+        "ref_id": "turn6view1",
+        "pattern": "case study"
+      },
+      {
+        "ref_id": "turn7view2",
+        "pattern": "offline"
+      }
+    ],
+    "response_length": "long"
+  },
+  "source_families": [
+    "arxiv",
+    "project_author_lab"
+  ],
+  "query_families": [
+    "object",
+    "articulation",
+    "simulation"
+  ],
+  "response_storage": "Full tool responses retained in the local run; public records include requests, timings, and report evidence."
+}
