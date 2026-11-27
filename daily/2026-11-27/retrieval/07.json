@@ -1,0 +1,64 @@
+{
+  "id": "07",
+  "started_at": "2026-11-27T20:00:10+00:00",
+  "recorded_at": "2026-11-27T20:00:12+00:00",
+  "tool": "web__run",
+  "request": {
+    "search_query": [
+      {
+        "q": "site:huggingface.co/papers/date/2026-11-27"
+      },
+      {
+        "q": "agent animation cinematography temporal scene recent paper"
+      },
+      {
+        "q": "site:arxiv.org \"graphics\" \"27 Nov 2026\""
+      }
+    ],
+    "open": [
+      {
+        "ref_id": "https://arxiv.org/abs/2611.34849"
+      },
+      {
+        "ref_id": "https://arxiv.org/html/2611.33926v1"
+      },
+      {
+        "ref_id": "https://nvlabs.github.io/LongLive/Agentic-LongLive/"
+      }
+    ],
+    "find": [
+      {
+        "ref_id": "turn5view2",
+        "pattern": "Submission history"
+      },
+      {
+        "ref_id": "turn5view0",
+        "pattern": "asynchronous"
+      },
+      {
+        "ref_id": "turn5view0",
+        "pattern": "memory bank"
+      },
+      {
+        "ref_id": "turn5view1",
+        "pattern": "feedback"
+      },
+      {
+        "ref_id": "turn5view1",
+        "pattern": "ProxyStudio"
+      }
+    ],
+    "response_length": "long"
+  },
+  "source_families": [
+    "arxiv",
+    "hugging_face",
+    "project_author_lab"
+  ],
+  "query_families": [
+    "animation",
+    "scene",
+    "harness"
+  ],
+  "response_storage": "Full tool responses retained in the local run; public records include requests, timings, and report evidence."
+}

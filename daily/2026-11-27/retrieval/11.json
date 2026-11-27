@@ -1,0 +1,53 @@
+{
+  "id": "11",
+  "started_at": "2026-11-27T20:00:47+00:00",
+  "recorded_at": "2026-11-27T20:00:49+00:00",
+  "tool": "web__run",
+  "request": {
+    "find": [
+      {
+        "ref_id": "turn7view1",
+        "pattern": "FineDex is"
+      },
+      {
+        "ref_id": "turn7view1",
+        "pattern": "Abstract"
+      },
+      {
+        "ref_id": "turn5view0",
+        "pattern": "entity"
+      },
+      {
+        "ref_id": "turn7view0",
+        "pattern": "freeze"
+      },
+      {
+        "ref_id": "turn7view0",
+        "pattern": "sandbox"
+      },
+      {
+        "ref_id": "turn6view1",
+        "pattern": "modeler"
+      },
+      {
+        "ref_id": "turn4view0",
+        "pattern": "planning"
+      },
+      {
+        "ref_id": "turn5view0",
+        "pattern": "image model"
+      }
+    ],
+    "response_length": "long"
+  },
+  "source_families": [
+    "arxiv"
+  ],
+  "query_families": [
+    "animation",
+    "simulation",
+    "benchmark",
+    "harness"
+  ],
+  "response_storage": "Full tool responses retained in the local run; public records include requests, timings, and report evidence."
+}

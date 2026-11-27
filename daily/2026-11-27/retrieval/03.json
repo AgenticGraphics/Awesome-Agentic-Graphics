@@ -1,0 +1,57 @@
+{
+  "id": "03",
+  "started_at": "2026-11-27T19:59:30+00:00",
+  "recorded_at": "2026-11-27T19:59:31+00:00",
+  "tool": "web__run",
+  "request": {
+    "search_query": [
+      {
+        "q": "agent articulated asset joint rig generation November 2026"
+      },
+      {
+        "q": "agent physical simulation particle effects November 27 2026"
+      },
+      {
+        "q": "site:openreview.net graphics agent 2026"
+      }
+    ],
+    "open": [
+      {
+        "ref_id": "https://arxiv.org/list/cs.AI/new"
+      },
+      {
+        "ref_id": "https://asia.siggraph.org/2026/program/technical-papers/"
+      },
+      {
+        "ref_id": "https://arxiv.org/abs/2611.31358"
+      }
+    ],
+    "find": [
+      {
+        "ref_id": "turn1view1",
+        "pattern": "Nov"
+      },
+      {
+        "ref_id": "turn1view1",
+        "pattern": "Real2Sim"
+      },
+      {
+        "ref_id": "turn1view0",
+        "pattern": "Agent"
+      }
+    ],
+    "response_length": "long"
+  },
+  "source_families": [
+    "arxiv",
+    "openreview",
+    "official_venues",
+    "hugging_face"
+  ],
+  "query_families": [
+    "articulation",
+    "simulation",
+    "harness"
+  ],
+  "response_storage": "Full tool responses retained in the local run; public records include requests, timings, and report evidence."
+}

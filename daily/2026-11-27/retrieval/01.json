@@ -1,0 +1,42 @@
+{
+  "id": "01",
+  "started_at": "2026-11-27T19:59:15+00:00",
+  "recorded_at": "2026-11-27T19:59:16+00:00",
+  "tool": "web__run",
+  "request": {
+    "search_query": [
+      {
+        "q": "agentic graphics 3D scene CAD November 27 2026"
+      },
+      {
+        "q": "\"agent\" \"SVG\" \"November\" \"2026\""
+      },
+      {
+        "q": "\"Nemotron-Labs-VisualCreation\""
+      }
+    ],
+    "open": [
+      {
+        "ref_id": "https://arxiv.org/list/cs.GR/new"
+      },
+      {
+        "ref_id": "https://arxiv.org/list/cs.CV/recent"
+      },
+      {
+        "ref_id": "https://huggingface.co/papers/date/2026-11-27"
+      }
+    ],
+    "response_length": "long"
+  },
+  "source_families": [
+    "arxiv",
+    "hugging_face",
+    "project_author_lab"
+  ],
+  "query_families": [
+    "2d_graphics",
+    "static_scene",
+    "static_cad"
+  ],
+  "response_storage": "Full tool responses retained in the local run; public records include requests, timings, and report evidence."
+}

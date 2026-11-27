@@ -1,0 +1,56 @@
+{
+  "id": "04",
+  "started_at": "2026-11-27T19:59:37+00:00",
+  "recorded_at": "2026-11-27T19:59:38+00:00",
+  "tool": "web__run",
+  "request": {
+    "search_query": [
+      {
+        "q": "agent graphics benchmark world auditing verification November 2026"
+      },
+      {
+        "q": "graphics agent memory replanning tool interface feedback program synthesis"
+      },
+      {
+        "q": "site:dl.acm.org agent graphics \"2026\" \"November\""
+      }
+    ],
+    "open": [
+      {
+        "ref_id": "https://arxiv.org/list/cs.HC/new"
+      },
+      {
+        "ref_id": "https://arxiv.org/list/cs.MM/new"
+      },
+      {
+        "ref_id": "https://arxiv.org/list/eess.IV/new"
+      }
+    ],
+    "find": [
+      {
+        "ref_id": "turn2view2",
+        "pattern": "Submission history"
+      },
+      {
+        "ref_id": "turn1view1",
+        "pattern": "###"
+      },
+      {
+        "ref_id": "turn2view0",
+        "pattern": "simulation"
+      }
+    ],
+    "response_length": "long"
+  },
+  "source_families": [
+    "arxiv",
+    "official_venues",
+    "hugging_face"
+  ],
+  "query_families": [
+    "benchmark",
+    "harness",
+    "simulation"
+  ],
+  "response_storage": "Full tool responses retained in the local run; public records include requests, timings, and report evidence."
+}

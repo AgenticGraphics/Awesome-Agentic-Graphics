@@ -1,0 +1,127 @@
+{
+  "target_date": "2026-11-27",
+  "timezone": "America/Chicago",
+  "as_of": "2026-11-27T19:58:40+00:00",
+  "as_of_local": "2026-11-27T13:58:40-06:00",
+  "window_start": "2026-11-27T00:00:00-06:00",
+  "window_end_local": "2026-11-27T13:58:40-06:00",
+  "snapshot_status": "bundled_snapshot_not_live_refreshed",
+  "bucket_counts": {
+    "same_day_new": 0,
+    "same_day_updates": 0,
+    "already_reported": 0,
+    "late_discovery": 6,
+    "date_unresolved": 0,
+    "unresolved": 10,
+    "excluded": 0
+  },
+  "discovery_counts": {
+    "new_to_us_catch_up": 6,
+    "previously_reported_event_reverified": 0
+  },
+  "screening": {
+    "fresh": 6,
+    "carried_unresolved": 10,
+    "pending_queue": 25
+  },
+  "retrieval_counts": {
+    "search_batches": 10,
+    "search_queries": 30,
+    "primary_opens": 24,
+    "find_operations": 57,
+    "web_tool_invocations": 11
+  },
+  "retrieval_started_at": "2026-11-27T19:59:15+00:00",
+  "retrieval_ended_at": "2026-11-27T20:00:49+00:00",
+  "retrieval_wall_seconds": 94.0,
+  "stop_reason": "10_search_batches_and_24_primary_open_caps_reached",
+  "source_statuses": {
+    "arxiv": {
+      "status": "partial",
+      "limits": "Seven category pages, six canonical pages and five method pages reached. Only selected excerpts read; CV recent first 50 entries; new category headings remain Nov 26."
+    },
+    "hugging_face": {
+      "status": "partial",
+      "limits": "Nov 27 dated URL blocked. Root reached with Nov 27 heading; search fallback returned Nov 26 and other pages. Curation dates are not event evidence."
+    },
+    "openreview": {
+      "status": "partial",
+      "limits": "Direct search blocked; restricted queries returned older sources, without a verified target-day paper."
+    },
+    "official_venues": {
+      "status": "partial",
+      "limits": "SIGGRAPH Asia overview reached; ACM/CVF queries executed; no proceedings-wide or same-day paper verification."
+    },
+    "project_author_lab": {
+      "status": "partial",
+      "limits": "LongLive and Real2SimLab official projects reached; other project/repository search signals remain unscreened."
+    }
+  },
+  "finding": "No qualifying same-day Agentic Graphics paper was verified in the browsed source set.",
+  "catch_up": [
+    {
+      "title": "Nemotron-Labs-VisualCreation: Pixel as Code for Agentic Visual Creation",
+      "arxiv": "2611.31358",
+      "chicago_event": "2026-11-23T12:57:41-06:00",
+      "scope": "core"
+    },
+    {
+      "title": "Agentic LongLive: Asynchronous Agentic Memory for Long Video Generation",
+      "arxiv": "2611.34907",
+      "chicago_event": "2026-11-25T12:54:03-06:00",
+      "scope": "core"
+    },
+    {
+      "title": "SemProxy: Semantic 3D Proxies for Controllable Agentic 3D Modeling",
+      "arxiv": "2611.34414",
+      "chicago_event": "2026-11-25T08:08:05-06:00",
+      "scope": "core"
+    },
+    {
+      "title": "Connecting AI Agents to Live Discrete Element Simulations via the Model Context Protocol",
+      "arxiv": "2611.33926",
+      "chicago_event": "2026-11-25T01:46:35-06:00",
+      "scope": "core"
+    },
+    {
+      "title": "Real2SimLab: A Unified Platform for Real-to-Simulation Transfer",
+      "arxiv": "2611.34849",
+      "chicago_event": "2026-11-25T12:23:41-06:00",
+      "scope": "core"
+    },
+    {
+      "title": "FineDex: Bridging Fine-Grained Human-Object Interaction Generation to Dexterous Humanoid Manipulation",
+      "arxiv": "2611.34884",
+      "chicago_event": "2026-11-25T12:40:47-06:00",
+      "scope": "scope_dependent"
+    }
+  ],
+  "known_events": [],
+  "known_identity_signals": 16,
+  "audit_passed": true,
+  "paper_scope_counts": {
+    "core": 5,
+    "enabling_or_adjacent": 0,
+    "scope_dependent": 1,
+    "excluded": 0,
+    "unresolved": 0
+  },
+  "limits": [
+    "Partial day through actual start cutoff; bounded selective retrieval with indexing and access gaps.",
+    "Six freshly screened candidates: five core and one abstract-only scope-dependent record; selected reading only.",
+    "Previously reported events and new-to-us catch-up are separated in event_comparison; no event is inferred from listing dates."
+  ],
+  "publication": "Reviewed local CLI skill run, synchronized to GitHub and the website by the authorized publishing workflow.",
+  "completed_at": "2026-11-27T20:04:01.093460+00:00",
+  "historical_exclusion_records": 10,
+  "primary_access_counts": {
+    "reached": 22,
+    "blocked": 2
+  },
+  "validation": {
+    "portable_bundle": true,
+    "structural_and_primary_dates": true,
+    "daily_helper_tests_passed": 20,
+    "test_suite_runs": 1
+  }
+}

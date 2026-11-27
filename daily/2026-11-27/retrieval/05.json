@@ -1,0 +1,61 @@
+{
+  "id": "05",
+  "started_at": "2026-11-27T19:59:48+00:00",
+  "recorded_at": "2026-11-27T19:59:49+00:00",
+  "tool": "web__run",
+  "request": {
+    "search_query": [
+      {
+        "q": "agent 3D scene layout generation November 27 2026 arxiv"
+      },
+      {
+        "q": "\"Real2SimLab\" "
+      },
+      {
+        "q": "site:openreview.net \"agent\" \"graphics\" \"2026-11\""
+      }
+    ],
+    "open": [
+      {
+        "ref_id": "https://arxiv.org/html/2611.31358v1"
+      },
+      {
+        "ref_id": "https://arxiv.org/abs/2611.34907"
+      },
+      {
+        "ref_id": "https://arxiv.org/abs/2611.34414"
+      }
+    ],
+    "find": [
+      {
+        "ref_id": "turn3view0",
+        "pattern": "Title:"
+      },
+      {
+        "ref_id": "turn3view1",
+        "pattern": "agent"
+      },
+      {
+        "ref_id": "turn3view2",
+        "pattern": "agent"
+      },
+      {
+        "ref_id": "turn1view1",
+        "pattern": "Creation"
+      }
+    ],
+    "response_length": "long"
+  },
+  "source_families": [
+    "arxiv",
+    "openreview",
+    "project_author_lab",
+    "hugging_face"
+  ],
+  "query_families": [
+    "scene",
+    "2d",
+    "harness"
+  ],
+  "response_storage": "Full tool responses retained in the local run; public records include requests, timings, and report evidence."
+}
